@@ -1,12 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { createClient } from "../lib/supabase/client";
+import type { UserRole } from "../lib/auth/dal";
 
 const navItems = [
   {
-    href: "/avanzamento-progetti",
-    label: "Avanzamento progetti",
+    href: "/pipeline-commerciale",
+    label: "Pipeline Commerciale",
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -42,8 +44,16 @@ const navItems = [
   },
 ];
 
-export default function Sidebar() {
+export default function Sidebar({ role }: { role: UserRole }) {
   const pathname = usePathname();
+  const router = useRouter();
+
+  async function handleLogout() {
+    const supabase = createClient();
+    await supabase.auth.signOut();
+    router.push("/login");
+    router.refresh();
+  }
 
   return (
     <aside className="flex h-full w-60 shrink-0 flex-col border-r border-gray-200 bg-gray-50">
@@ -71,6 +81,53 @@ export default function Sidebar() {
           );
         })}
       </nav>
+      {role === "superadmin" && (
+        <div className="border-t border-gray-200 px-2 py-4">
+          <Link
+            href="/amministrazione"
+            className={`flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium transition-colors ${
+              pathname === "/amministrazione"
+                ? "bg-violet-50 text-violet-700"
+                : "text-gray-600 hover:bg-gray-100 hover:text-gray-900"
+            }`}
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={1.75}
+              className="h-4 w-4"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="8" r="3" />
+              <path d="M5 20c0-3.3 3.1-6 7-6s7 2.7 7 6" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M19 8h2M20 7v2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+            Amministrazione
+          </Link>
+        </div>
+      )}
+      <div className="border-t border-gray-200 px-2 py-4">
+        <button
+          type="button"
+          onClick={handleLogout}
+          className="flex w-full items-center gap-3 rounded-md px-3 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-900"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={1.75}
+            className="h-4 w-4"
+            aria-hidden="true"
+          >
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M16 17l5-5-5-5" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M21 12H9" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+          Esci
+        </button>
+      </div>
     </aside>
   );
 }

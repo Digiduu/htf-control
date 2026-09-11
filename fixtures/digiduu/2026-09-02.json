@@ -1,0 +1,5204 @@
+{
+  "dual_mode": true,
+  "generated_at": "2026-09-02T10:55:47.139155+00:00",
+  "headers": [
+    "Account",
+    "Project Leader",
+    "Cliente",
+    "Origine",
+    "Ordinato"
+  ],
+  "label": "Digiduu",
+  "overall": {
+    "months": [
+      107205.08,
+      135995.1,
+      173307.68000000002,
+      130105.73000000001,
+      118415.54999999999,
+      72460.08,
+      184021.84000000003,
+      174871.97999999998,
+      304315,
+      244935,
+      217055,
+      153030
+    ],
+    "ordinato": 1333193.0400000003,
+    "totale": 2015718.0399999998
+  },
+  "revenue_summary": {
+    "as_of": "2026-09-04",
+    "by_project_leader": {
+      "Andrea Menegotto": [
+        {
+          "label": "Fatturato (fatture registrate)",
+          "op": null,
+          "value": 131459.75
+        },
+        {
+          "label": "Fatture competenza anni diversi",
+          "op": "-",
+          "value": 0
+        },
+        {
+          "label": "Note di credito",
+          "op": "-",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "label": "Fatturato competenziato",
+          "op": "=",
+          "value": 131459.75
+        },
+        {
+          "label": "Bozze non sospese",
+          "op": "+",
+          "value": 31120
+        },
+        {
+          "bold": true,
+          "label": "Forecast acquisito",
+          "op": "=",
+          "value": 162579.75
+        },
+        {
+          "label": "Fatturato probabile",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "label": "Previsione consuntivi",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "label": "Forecast actual",
+          "op": "=",
+          "value": 162579.75
+        },
+        {
+          "label": "Fatturato possibile",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "highlight": true,
+          "label": "Forecast budget",
+          "op": "=",
+          "value": 162579.75
+        }
+      ],
+      "Antonio Maddalena": [
+        {
+          "label": "Fatturato (fatture registrate)",
+          "op": null,
+          "value": 154468.63
+        },
+        {
+          "label": "Fatture competenza anni diversi",
+          "op": "-",
+          "value": 0
+        },
+        {
+          "label": "Note di credito",
+          "op": "-",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "label": "Fatturato competenziato",
+          "op": "=",
+          "value": 154468.63
+        },
+        {
+          "label": "Bozze non sospese",
+          "op": "+",
+          "value": 23100
+        },
+        {
+          "bold": true,
+          "label": "Forecast acquisito",
+          "op": "=",
+          "value": 177568.63
+        },
+        {
+          "label": "Fatturato probabile",
+          "op": "+",
+          "value": 47775
+        },
+        {
+          "label": "Previsione consuntivi",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "label": "Forecast actual",
+          "op": "=",
+          "value": 225343.63
+        },
+        {
+          "label": "Fatturato possibile",
+          "op": "+",
+          "value": 20000
+        },
+        {
+          "bold": true,
+          "highlight": true,
+          "label": "Forecast budget",
+          "op": "=",
+          "value": 245343.63
+        }
+      ],
+      "Chiara Rossetto": [
+        {
+          "label": "Fatturato (fatture registrate)",
+          "op": null,
+          "value": 1900
+        },
+        {
+          "label": "Fatture competenza anni diversi",
+          "op": "-",
+          "value": 0
+        },
+        {
+          "label": "Note di credito",
+          "op": "-",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "label": "Fatturato competenziato",
+          "op": "=",
+          "value": 1900
+        },
+        {
+          "label": "Bozze non sospese",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "label": "Forecast acquisito",
+          "op": "=",
+          "value": 1900
+        },
+        {
+          "label": "Fatturato probabile",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "label": "Previsione consuntivi",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "label": "Forecast actual",
+          "op": "=",
+          "value": 1900
+        },
+        {
+          "label": "Fatturato possibile",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "highlight": true,
+          "label": "Forecast budget",
+          "op": "=",
+          "value": 1900
+        }
+      ],
+      "Enrico Bianco": [
+        {
+          "label": "Fatturato (fatture registrate)",
+          "op": null,
+          "value": 48268.92
+        },
+        {
+          "label": "Fatture competenza anni diversi",
+          "op": "-",
+          "value": 0
+        },
+        {
+          "label": "Note di credito",
+          "op": "-",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "label": "Fatturato competenziato",
+          "op": "=",
+          "value": 48268.92
+        },
+        {
+          "label": "Bozze non sospese",
+          "op": "+",
+          "value": 10500
+        },
+        {
+          "bold": true,
+          "label": "Forecast acquisito",
+          "op": "=",
+          "value": 58768.92
+        },
+        {
+          "label": "Fatturato probabile",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "label": "Previsione consuntivi",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "label": "Forecast actual",
+          "op": "=",
+          "value": 58768.92
+        },
+        {
+          "label": "Fatturato possibile",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "highlight": true,
+          "label": "Forecast budget",
+          "op": "=",
+          "value": 58768.92
+        }
+      ],
+      "Erika Pettenuzzo": [
+        {
+          "label": "Fatturato (fatture registrate)",
+          "op": null,
+          "value": 1306.26
+        },
+        {
+          "label": "Fatture competenza anni diversi",
+          "op": "-",
+          "value": 653.13
+        },
+        {
+          "label": "Note di credito",
+          "op": "-",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "label": "Fatturato competenziato",
+          "op": "=",
+          "value": 653.13
+        },
+        {
+          "label": "Bozze non sospese",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "label": "Forecast acquisito",
+          "op": "=",
+          "value": 653.13
+        },
+        {
+          "label": "Fatturato probabile",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "label": "Previsione consuntivi",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "label": "Forecast actual",
+          "op": "=",
+          "value": 653.13
+        },
+        {
+          "label": "Fatturato possibile",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "highlight": true,
+          "label": "Forecast budget",
+          "op": "=",
+          "value": 653.13
+        }
+      ],
+      "Ettore Lampertico": [
+        {
+          "label": "Fatturato (fatture registrate)",
+          "op": null,
+          "value": 32168
+        },
+        {
+          "label": "Fatture competenza anni diversi",
+          "op": "-",
+          "value": 0
+        },
+        {
+          "label": "Note di credito",
+          "op": "-",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "label": "Fatturato competenziato",
+          "op": "=",
+          "value": 32168
+        },
+        {
+          "label": "Bozze non sospese",
+          "op": "+",
+          "value": 51052.82
+        },
+        {
+          "bold": true,
+          "label": "Forecast acquisito",
+          "op": "=",
+          "value": 83220.82
+        },
+        {
+          "label": "Fatturato probabile",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "label": "Previsione consuntivi",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "label": "Forecast actual",
+          "op": "=",
+          "value": 83220.82
+        },
+        {
+          "label": "Fatturato possibile",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "highlight": true,
+          "label": "Forecast budget",
+          "op": "=",
+          "value": 83220.82
+        }
+      ],
+      "Fabiano Mason": [
+        {
+          "label": "Fatturato (fatture registrate)",
+          "op": null,
+          "value": 0
+        },
+        {
+          "label": "Fatture competenza anni diversi",
+          "op": "-",
+          "value": 0
+        },
+        {
+          "label": "Note di credito",
+          "op": "-",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "label": "Fatturato competenziato",
+          "op": "=",
+          "value": 0
+        },
+        {
+          "label": "Bozze non sospese",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "label": "Forecast acquisito",
+          "op": "=",
+          "value": 0
+        },
+        {
+          "label": "Fatturato probabile",
+          "op": "+",
+          "value": 20000
+        },
+        {
+          "label": "Previsione consuntivi",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "label": "Forecast actual",
+          "op": "=",
+          "value": 20000
+        },
+        {
+          "label": "Fatturato possibile",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "highlight": true,
+          "label": "Forecast budget",
+          "op": "=",
+          "value": 20000
+        }
+      ],
+      "Fabrizio Benefazio": [
+        {
+          "label": "Fatturato (fatture registrate)",
+          "op": null,
+          "value": 16807.5
+        },
+        {
+          "label": "Fatture competenza anni diversi",
+          "op": "-",
+          "value": 0
+        },
+        {
+          "label": "Note di credito",
+          "op": "-",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "label": "Fatturato competenziato",
+          "op": "=",
+          "value": 16807.5
+        },
+        {
+          "label": "Bozze non sospese",
+          "op": "+",
+          "value": 1200
+        },
+        {
+          "bold": true,
+          "label": "Forecast acquisito",
+          "op": "=",
+          "value": 18007.5
+        },
+        {
+          "label": "Fatturato probabile",
+          "op": "+",
+          "value": 750
+        },
+        {
+          "label": "Previsione consuntivi",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "label": "Forecast actual",
+          "op": "=",
+          "value": 18757.5
+        },
+        {
+          "label": "Fatturato possibile",
+          "op": "+",
+          "value": 7500
+        },
+        {
+          "bold": true,
+          "highlight": true,
+          "label": "Forecast budget",
+          "op": "=",
+          "value": 26257.5
+        }
+      ],
+      "Gianluca Geremia": [
+        {
+          "label": "Fatturato (fatture registrate)",
+          "op": null,
+          "value": 19918.75
+        },
+        {
+          "label": "Fatture competenza anni diversi",
+          "op": "-",
+          "value": 0
+        },
+        {
+          "label": "Note di credito",
+          "op": "-",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "label": "Fatturato competenziato",
+          "op": "=",
+          "value": 19918.75
+        },
+        {
+          "label": "Bozze non sospese",
+          "op": "+",
+          "value": 18000
+        },
+        {
+          "bold": true,
+          "label": "Forecast acquisito",
+          "op": "=",
+          "value": 37918.75
+        },
+        {
+          "label": "Fatturato probabile",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "label": "Previsione consuntivi",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "label": "Forecast actual",
+          "op": "=",
+          "value": 37918.75
+        },
+        {
+          "label": "Fatturato possibile",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "highlight": true,
+          "label": "Forecast budget",
+          "op": "=",
+          "value": 37918.75
+        }
+      ],
+      "Marco Laghetto": [
+        {
+          "label": "Fatturato (fatture registrate)",
+          "op": null,
+          "value": 108111.28
+        },
+        {
+          "label": "Fatture competenza anni diversi",
+          "op": "-",
+          "value": 0
+        },
+        {
+          "label": "Note di credito",
+          "op": "-",
+          "value": 13000
+        },
+        {
+          "bold": true,
+          "label": "Fatturato competenziato",
+          "op": "=",
+          "value": 95111.28
+        },
+        {
+          "label": "Bozze non sospese",
+          "op": "+",
+          "value": 18800
+        },
+        {
+          "bold": true,
+          "label": "Forecast acquisito",
+          "op": "=",
+          "value": 113911.28
+        },
+        {
+          "label": "Fatturato probabile",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "label": "Previsione consuntivi",
+          "op": "+",
+          "value": 29600
+        },
+        {
+          "bold": true,
+          "label": "Forecast actual",
+          "op": "=",
+          "value": 143511.28
+        },
+        {
+          "label": "Fatturato possibile",
+          "op": "+",
+          "value": 10000
+        },
+        {
+          "bold": true,
+          "highlight": true,
+          "label": "Forecast budget",
+          "op": "=",
+          "value": 153511.28
+        }
+      ],
+      "Nicola Sartore": [
+        {
+          "label": "Fatturato (fatture registrate)",
+          "op": null,
+          "value": 22706.1
+        },
+        {
+          "label": "Fatture competenza anni diversi",
+          "op": "-",
+          "value": 0
+        },
+        {
+          "label": "Note di credito",
+          "op": "-",
+          "value": 181
+        },
+        {
+          "bold": true,
+          "label": "Fatturato competenziato",
+          "op": "=",
+          "value": 22525.1
+        },
+        {
+          "label": "Bozze non sospese",
+          "op": "+",
+          "value": 6825
+        },
+        {
+          "bold": true,
+          "label": "Forecast acquisito",
+          "op": "=",
+          "value": 29350.1
+        },
+        {
+          "label": "Fatturato probabile",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "label": "Previsione consuntivi",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "label": "Forecast actual",
+          "op": "=",
+          "value": 29350.1
+        },
+        {
+          "label": "Fatturato possibile",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "highlight": true,
+          "label": "Forecast budget",
+          "op": "=",
+          "value": 29350.1
+        }
+      ],
+      "Nicoletta Piazzetta": [
+        {
+          "label": "Fatturato (fatture registrate)",
+          "op": null,
+          "value": 128990
+        },
+        {
+          "label": "Fatture competenza anni diversi",
+          "op": "-",
+          "value": 0
+        },
+        {
+          "label": "Note di credito",
+          "op": "-",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "label": "Fatturato competenziato",
+          "op": "=",
+          "value": 128990
+        },
+        {
+          "label": "Bozze non sospese",
+          "op": "+",
+          "value": 50800
+        },
+        {
+          "bold": true,
+          "label": "Forecast acquisito",
+          "op": "=",
+          "value": 179790
+        },
+        {
+          "label": "Fatturato probabile",
+          "op": "+",
+          "value": 23600
+        },
+        {
+          "label": "Previsione consuntivi",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "label": "Forecast actual",
+          "op": "=",
+          "value": 203390
+        },
+        {
+          "label": "Fatturato possibile",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "highlight": true,
+          "label": "Forecast budget",
+          "op": "=",
+          "value": 203390
+        }
+      ],
+      "Nicolò Danese": [
+        {
+          "label": "Fatturato (fatture registrate)",
+          "op": null,
+          "value": 176606.96
+        },
+        {
+          "label": "Fatture competenza anni diversi",
+          "op": "-",
+          "value": 0
+        },
+        {
+          "label": "Note di credito",
+          "op": "-",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "label": "Fatturato competenziato",
+          "op": "=",
+          "value": 176606.96
+        },
+        {
+          "label": "Bozze non sospese",
+          "op": "+",
+          "value": 23420
+        },
+        {
+          "bold": true,
+          "label": "Forecast acquisito",
+          "op": "=",
+          "value": 200026.96
+        },
+        {
+          "label": "Fatturato probabile",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "label": "Previsione consuntivi",
+          "op": "+",
+          "value": 74300
+        },
+        {
+          "bold": true,
+          "label": "Forecast actual",
+          "op": "=",
+          "value": 274326.96
+        },
+        {
+          "label": "Fatturato possibile",
+          "op": "+",
+          "value": 0
+        },
+        {
+          "bold": true,
+          "highlight": true,
+          "label": "Forecast budget",
+          "op": "=",
+          "value": 274326.96
+        }
+      ],
+      "Non assegnato": [
+        {
+          "label": "Fatturato (fatture registrate)",
+          "op": null,
+          "value": 228848.08
+        },
+        {
+          "label": "Fatture competenza anni diversi",
+          "op": "-",
+          "value": 28152.47
+        },
+        {
+          "label": "Note di credito",
+          "op": "-",
+          "value": 9750
+        },
+        {
+          "bold": true,
+          "label": "Fatturato competenziato",
+          "op": "=",
+          "value": 190945.61
+        },
+        {
+          "label": "Bozze non sospese",
+          "op": "+",
+          "value": 44695
+        },
+        {
+          "bold": true,
+          "label": "Forecast acquisito",
+          "op": "=",
+          "value": 235640.61
+        },
+        {
+          "label": "Fatturato probabile",
+          "op": "+",
+          "value": 110000
+        },
+        {
+          "label": "Previsione consuntivi",
+          "op": "+",
+          "value": 35000
+        },
+        {
+          "bold": true,
+          "label": "Forecast actual",
+          "op": "=",
+          "value": 380640.61
+        },
+        {
+          "label": "Fatturato possibile",
+          "op": "+",
+          "value": 218000
+        },
+        {
+          "bold": true,
+          "highlight": true,
+          "label": "Forecast budget",
+          "op": "=",
+          "value": 598640.61
+        }
+      ]
+    },
+    "source_note": "Calcolato con le stesse query della bacheca Odoo \"Previsione fatturato 2026\" (gruppo Bacheche Chiara): fatture confermate, bozze non sospese, note di credito e piano di fatturazione (x_piano_fatturazione_d) per l'anno 2026, filtrati per azienda.",
+    "steps": [
+      {
+        "label": "Fatturato (fatture registrate)",
+        "op": null,
+        "value": 1071560.23
+      },
+      {
+        "label": "Fatture competenza anni diversi",
+        "op": "-",
+        "value": 28805.6
+      },
+      {
+        "label": "Note di credito",
+        "op": "-",
+        "value": 22931
+      },
+      {
+        "bold": true,
+        "label": "Fatturato competenziato",
+        "op": "=",
+        "value": 1019823.63
+      },
+      {
+        "label": "Bozze non sospese",
+        "op": "+",
+        "value": 279512.82
+      },
+      {
+        "bold": true,
+        "label": "Forecast acquisito",
+        "op": "=",
+        "value": 1299336.45
+      },
+      {
+        "label": "Fatturato probabile",
+        "op": "+",
+        "value": 202125
+      },
+      {
+        "label": "Previsione consuntivi",
+        "op": "+",
+        "value": 138900
+      },
+      {
+        "bold": true,
+        "label": "Forecast actual",
+        "op": "=",
+        "value": 1640361.45
+      },
+      {
+        "label": "Fatturato possibile",
+        "op": "+",
+        "value": 255500
+      },
+      {
+        "bold": true,
+        "highlight": true,
+        "label": "Forecast budget",
+        "op": "=",
+        "value": 1895861.45
+      }
+    ],
+    "year": 2026
+  },
+  "rows": [
+    {
+      "account": "Fabiano Mason",
+      "cliente": "MIPU MACHINE CARE S.R.L. SOCIETA' BENEFIT",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        26000,
+        17000,
+        17000,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 60000,
+      "origine": "DD10157",
+      "project_leader": "Marco Laghetto",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 60000
+    },
+    {
+      "account": "Fabiano Mason",
+      "cliente": "MIPU MACHINE CARE S.R.L. SOCIETA' BENEFIT",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        309.4,
+        4500,
+        4500,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 9309.4,
+      "origine": "DD10157",
+      "project_leader": "Marco Laghetto",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 9309.4
+    },
+    {
+      "account": "Gianluca Geremia",
+      "cliente": "Adami Teloni",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        468.75,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 468.75,
+      "origine": "DD10320",
+      "project_leader": "Gianluca Geremia",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 468.75
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Alba S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        5000,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 5000,
+      "origine": "DD10227",
+      "project_leader": "Nicoletta Piazzetta",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 5000
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Alba S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        600,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 600,
+      "origine": "DD10279",
+      "project_leader": "Nicoletta Piazzetta",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 600
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Alba S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        600,
+        600,
+        1200,
+        600,
+        600
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10287",
+      "project_leader": "Nicoletta Piazzetta",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": 3600
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Alfieri S.r.l.",
+      "crm_comment": "Opportunità CRM \"Alfieri Autonoleggio - Gestionale BT\" - fase \"Fare preventivo\". Importo stimato 100.000 EUR. ma la riga resta senza valori: è ancora una stima non quotata. non un ordine o un piano di fatturazione.",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "Alfieri Autonoleggio - Gestionale BT (opp. CRM)",
+      "project_leader": "Andrea Menegotto",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": null
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "AMG S.p.A.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        40000,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 40000,
+      "origine": "DD10218",
+      "project_leader": "Andrea Menegotto",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 40000
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "AMG S.p.A.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        17000,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 17000,
+      "origine": "DD10218",
+      "project_leader": "Andrea Menegotto",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 17000
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "AMG S.p.A.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        40000,
+        11000,
+        11000,
+        11000
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10340",
+      "project_leader": "Andrea Menegotto",
+      "referente": null,
+      "stato": "Target",
+      "totale": 73000
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Arky Srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        11600,
+        600,
+        600,
+        600,
+        600,
+        600,
+        600,
+        600,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 15800,
+      "origine": "DD10105",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 15800
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Arky Srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        600,
+        600,
+        600,
+        600
+      ],
+      "nota": null,
+      "ordinato": 2400,
+      "origine": "DD10105",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 2400
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Arky Srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3000,
+        null,
+        10000
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10105",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Target",
+      "totale": 13000
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Arky Srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        12000,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 12000,
+      "origine": "DD10183",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 12000
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Arky Srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        5000,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 5000,
+      "origine": "DD10209",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 5000
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Arky Srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        9278.13,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 9278.13,
+      "origine": "DD10231",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 9278.13
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Arky Srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        850,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 850,
+      "origine": "DD10253",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 850
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Arky Srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        2600,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 2600,
+      "origine": "DD10254",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 2600
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Arky Srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        17513,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 17513,
+      "origine": "DD10263",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 17513
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Arky Srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        400,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 400,
+      "origine": "DD10269",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 400
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Arky Srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        2153,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 2153,
+      "origine": "DD10280",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 2153
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Arky Srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        1900,
+        1900,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 3800,
+      "origine": "DD10290",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 3800
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Arky Srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2500,
+        2500,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10298",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": 5000
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Arky Srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1225,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10299",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": 1225
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Arky Srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        4000,
+        7950,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10301",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": 11950
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Arky Srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        4500,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 4500,
+      "origine": "DD10308",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 4500
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "B.F. Automation S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        8400,
+        8400,
+        9192.9,
+        8488.1,
+        8444.05,
+        8532.15,
+        8796.45,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 60253.65,
+      "origine": "DD10145",
+      "project_leader": "Andrea Menegotto",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 60253.65000000001
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "B.F. Automation S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        88.1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 88.1,
+      "origine": "DD10145",
+      "project_leader": "Andrea Menegotto",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 88.1
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "B.F. Automation S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        10000,
+        10000,
+        10000,
+        10000,
+        null
+      ],
+      "nota": null,
+      "ordinato": 40000,
+      "origine": "DD10243",
+      "project_leader": "Andrea Menegotto",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 40000
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "B4C S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        300,
+        300,
+        300,
+        300,
+        300,
+        300,
+        300,
+        300,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 2400,
+      "origine": "DD10147",
+      "project_leader": "Marco Laghetto",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 2400
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "B4C S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        300,
+        300,
+        300,
+        300
+      ],
+      "nota": null,
+      "ordinato": 1200,
+      "origine": "DD10147",
+      "project_leader": "Marco Laghetto",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 1200
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "BERTI PAVIMENTI LEGNO S.A.S. DI BERTI HOLDING S.R.L.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        4900,
+        4900,
+        300,
+        300,
+        300,
+        300,
+        300,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 11300,
+      "origine": "DD10101",
+      "project_leader": "Nicoletta Piazzetta",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 11300
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "BERTI PAVIMENTI LEGNO S.A.S. DI BERTI HOLDING S.R.L.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        300,
+        300,
+        300,
+        300
+      ],
+      "nota": null,
+      "ordinato": 1200,
+      "origine": "DD10101",
+      "project_leader": "Nicoletta Piazzetta",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 1200
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Bordignon S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        10000,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10130",
+      "project_leader": "Marco Laghetto",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": 10000
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "EDILKLIMA GROUP S.p.A.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        237.5,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 237.5,
+      "origine": "DD10303",
+      "project_leader": "Chiara Rossetto",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 237.5
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "EDILKLIMA GROUP S.p.A.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1662.5,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 1662.5,
+      "origine": "DD10303",
+      "project_leader": "Chiara Rossetto",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 1662.5
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "G.M.A. S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        8500,
+        17000,
+        null,
+        null,
+        182,
+        7382,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 33064,
+      "origine": "DD10118",
+      "project_leader": "Nicoletta Piazzetta",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 33064
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "G.M.A. S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        5000,
+        5000,
+        5000,
+        5000
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10309",
+      "project_leader": "Nicoletta Piazzetta",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": 20000
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Gap Service S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        440,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 440,
+      "origine": "DD10004",
+      "project_leader": "Nicoletta Piazzetta",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 440
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Gruppo E43",
+      "crm_comment": "Opportunità CRM \"Gruppo E43 - Implementazione Odoo\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "Gruppo E43 - Implementazione Odoo (opp. CRM)",
+      "project_leader": "Guido Tessari",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": null
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Hidromec srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        10000,
+        10000,
+        10000,
+        10000
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10270",
+      "project_leader": "Non assegnato",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": 40000
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "HubTec S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        1878,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 1878,
+      "origine": "DD10139",
+      "project_leader": "Andrea Menegotto",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 1878
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "HubTec S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        560,
+        280,
+        280,
+        280,
+        280,
+        280,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 1960,
+      "origine": "DD10178",
+      "project_leader": "Andrea Menegotto",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 1960
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "HubTec S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        280,
+        280,
+        280,
+        280,
+        280
+      ],
+      "nota": null,
+      "ordinato": 1400,
+      "origine": "DD10178",
+      "project_leader": "Andrea Menegotto",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 1400
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "IMA SERVIZI",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3500,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 3500,
+      "origine": "DD10306",
+      "project_leader": "Nicoletta Piazzetta",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 3500
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Irontech S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        11293,
+        11250,
+        11250,
+        43,
+        11250,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 45086,
+      "origine": "DD10143",
+      "project_leader": "Nicoletta Piazzetta",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 45086
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Irontech S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        9600,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 9600,
+      "origine": "DD10259",
+      "project_leader": "Nicoletta Piazzetta",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 9600
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Irontech S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        9600,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 9600,
+      "origine": "DD10259",
+      "project_leader": "Nicoletta Piazzetta",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 9600
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Irontech S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        20000,
+        10000,
+        10000,
+        10000,
+        10000
+      ],
+      "nota": null,
+      "ordinato": 60000,
+      "origine": "DD10342",
+      "project_leader": "Nicoletta Piazzetta",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 60000
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Mcallinn",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3500,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10302",
+      "project_leader": "Non assegnato",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": 3500
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Officine Zoppelletto S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        300,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 300,
+      "origine": "DD10113",
+      "project_leader": "Marco Laghetto",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 300
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Pietre di Rapolano",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        5000,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10262",
+      "project_leader": "Non assegnato",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": 5000
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Secco Sistemi S.p.A.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        9500,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 9500,
+      "origine": "DD10030",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 9500
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Secco Sistemi S.p.A.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        2574.5,
+        2500,
+        2500,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 7574.5,
+      "origine": "DD10100",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 7574.5
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Secco Sistemi S.p.A.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2500,
+        2500,
+        2500,
+        null
+      ],
+      "nota": null,
+      "ordinato": 7500,
+      "origine": "DD10100",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 7500
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Secco Sistemi S.p.A.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2400,
+        2500,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10322",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": 4900
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Secco Sistemi S.p.A.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3000,
+        2500,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10323",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": 5500
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Secco Sistemi S.p.A.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        4000,
+        4700,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10324",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": 8700
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Smart Future",
+      "crm_comment": "Opportunità CRM \"Implementazione Odoo\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "Implementazione Odoo (opp. CRM)",
+      "project_leader": "Guido Tessari",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": null
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Wow Solution S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        6150,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 6150,
+      "origine": "DD10005",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 6150
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "FCF Impianti S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        5010.94,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 5010.94,
+      "origine": "DD10215",
+      "project_leader": "Marco Laghetto",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 5010.94
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "FCF Impianti S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3610.94,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 3610.94,
+      "origine": "DD10215",
+      "project_leader": "Marco Laghetto",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 3610.94
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "FCF Impianti S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        4000,
+        6400,
+        6400,
+        6400,
+        6400
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10215",
+      "project_leader": "Marco Laghetto",
+      "referente": null,
+      "stato": "Consuntivi",
+      "totale": 29600
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "Mondeo S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        11856.15,
+        15518.25,
+        13519.35,
+        10403.55,
+        12879.9,
+        11869.7,
+        16583.45,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 92630.35,
+      "origine": "DD10161",
+      "project_leader": "Nicolò Danese",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 92630.35
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "Mondeo S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        8300,
+        18000,
+        18000,
+        15000,
+        15000
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10200",
+      "project_leader": "Nicolò Danese",
+      "referente": null,
+      "stato": "Consuntivi",
+      "totale": 74300
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "Montec S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        1700.5,
+        3403.5,
+        8493.5,
+        10989,
+        5094,
+        1006.25,
+        1481.25,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 32168,
+      "origine": "DD10041",
+      "project_leader": "Nicolò Danese",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 32168
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "OCRA Srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        5040,
+        540,
+        540,
+        540,
+        5040,
+        540,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 12240,
+      "origine": "DD10131",
+      "project_leader": "Marco Laghetto",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 12240
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "OCRA Srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        540,
+        540,
+        540,
+        540,
+        540
+      ],
+      "nota": null,
+      "ordinato": 2700,
+      "origine": "DD10131",
+      "project_leader": "Marco Laghetto",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 2700
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "OCRA Srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        2700,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 2700,
+      "origine": "DD10152",
+      "project_leader": "Nicoletta Piazzetta",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 2700
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "Schueco PWS Italia S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        500,
+        500,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 1000,
+      "origine": "DD10046",
+      "project_leader": "Marco Laghetto",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 1000
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "Schueco PWS Italia S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        500,
+        500,
+        500,
+        500,
+        500,
+        500,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 3000,
+      "origine": "DD10177",
+      "project_leader": "Marco Laghetto",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 3000
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "Schueco PWS Italia S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        500,
+        500,
+        500,
+        500
+      ],
+      "nota": null,
+      "ordinato": 2000,
+      "origine": "DD10177",
+      "project_leader": "Marco Laghetto",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 2000
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "Schueco PWS Italia S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        1650,
+        1650,
+        1650,
+        1650,
+        1650,
+        1650,
+        1650,
+        1650,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 13200,
+      "origine": "DD10199",
+      "project_leader": "Marco Laghetto",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 13200
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "Schueco PWS Italia S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1650,
+        1650,
+        1650,
+        1650
+      ],
+      "nota": null,
+      "ordinato": 6600,
+      "origine": "DD10199",
+      "project_leader": "Marco Laghetto",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 6600
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "Schueco PWS Italia S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        6240,
+        null,
+        6240,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 12480,
+      "origine": "DD10205",
+      "project_leader": "Marco Laghetto",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 12480
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "Schueco PWS Italia S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        2000,
+        1800,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 3800,
+      "origine": "DD10220",
+      "project_leader": "Marco Laghetto",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 3800
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "Serramenti Brombal S.r.l",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        4401.5,
+        3159.81,
+        6411.38,
+        4223.88,
+        4259,
+        3805.35,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 26260.920000000002,
+      "origine": "DD10013",
+      "project_leader": "Enrico Bianco",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 26260.92
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "Serramenti Brombal S.r.l",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        7000,
+        7000,
+        7000,
+        7000,
+        7000
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10013",
+      "project_leader": "Enrico Bianco",
+      "referente": null,
+      "stato": "Consuntivi",
+      "totale": 35000
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "Serramenti Brombal S.r.l",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        6500,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 6500,
+      "origine": "DD10201",
+      "project_leader": "Enrico Bianco",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 6500
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "Serramenti Brombal S.r.l",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        7402,
+        5552,
+        5552,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 18506,
+      "origine": "DD10203",
+      "project_leader": "Enrico Bianco",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 18506
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "Serramenti Brombal S.r.l",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        3502,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 3502,
+      "origine": "DD10314",
+      "project_leader": "Enrico Bianco",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 3502
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "Serramenti Brombal S.r.l",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        4000,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 4000,
+      "origine": "DD10314",
+      "project_leader": "Enrico Bianco",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 4000
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "Trasporti e Servizi Mastrotto S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        4900,
+        null,
+        619.55,
+        null,
+        29.05,
+        300,
+        300,
+        300,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 6448.6,
+      "origine": "DD10126",
+      "project_leader": "Nicolò Danese",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 6448.6
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "Trasporti e Servizi Mastrotto S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        300,
+        300,
+        300,
+        300
+      ],
+      "nota": null,
+      "ordinato": 1200,
+      "origine": "DD10126",
+      "project_leader": "Nicolò Danese",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 1200
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "Trasporti e Servizi Mastrotto S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        5600,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 5600,
+      "origine": "DD10244",
+      "project_leader": "Nicolò Danese",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 5600
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "Trasporti e Servizi Mastrotto S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        5600,
+        11200,
+        2800,
+        null,
+        2800
+      ],
+      "nota": null,
+      "ordinato": 22400,
+      "origine": "DD10244",
+      "project_leader": "Nicolò Danese",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 22400
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "Union Plus S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        4250,
+        15200,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 19450,
+      "origine": "DD10025",
+      "project_leader": "Gianluca Geremia",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 19450
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "Union Plus S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        18000,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 18000,
+      "origine": "DD10025",
+      "project_leader": "Gianluca Geremia",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 18000
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "Yuppy S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        9840,
+        null,
+        9840,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 19680,
+      "origine": "DD10179",
+      "project_leader": "Nicolò Danese",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 19680
+    },
+    {
+      "account": "Luca Realdon",
+      "cliente": "Yuppy S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        4920,
+        500,
+        null
+      ],
+      "nota": null,
+      "ordinato": 5420,
+      "origine": "DD10179",
+      "project_leader": "Nicolò Danese",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 5420
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "AdHoc S.r.l. Unipersonale",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        4750,
+        null,
+        4750,
+        null,
+        null,
+        300,
+        300,
+        300,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 10400,
+      "origine": "DD10107",
+      "project_leader": "Nicola Sartore",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 10400
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "AdHoc S.r.l. Unipersonale",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        300,
+        300,
+        300,
+        300
+      ],
+      "nota": null,
+      "ordinato": 1200,
+      "origine": "DD10107",
+      "project_leader": "Nicola Sartore",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 1200
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Ahrcos",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3500,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10304",
+      "project_leader": "Non assegnato",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": 3500
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "B2B 72 Srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        15000,
+        15000,
+        15000,
+        15000
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10327",
+      "project_leader": "Fabiano Mason",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": 60000
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "B2B 72 Srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10330",
+      "project_leader": "Fabiano Mason",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": 5000
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Cabbia Group S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        181,
+        2325.05,
+        2925.05,
+        null,
+        300,
+        300,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 6031.1,
+      "origine": "DD10058",
+      "project_leader": "Nicola Sartore",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 6031.1
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Cabbia Group S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        300,
+        300,
+        300,
+        300
+      ],
+      "nota": null,
+      "ordinato": 1200,
+      "origine": "DD10058",
+      "project_leader": "Nicola Sartore",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 1200
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Cabbia Group S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        950,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 950,
+      "origine": "DD10277",
+      "project_leader": "Nicola Sartore",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 950
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Cabbia Group S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3225,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 3225,
+      "origine": "DD10321",
+      "project_leader": "Nicola Sartore",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 3225
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Cabbia Group S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3225,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 3225,
+      "origine": "DD10321",
+      "project_leader": "Nicola Sartore",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 3225
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Clever Agency",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3920,
+        3920,
+        null,
+        2160
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10195",
+      "project_leader": "Fabiano Mason",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": 10000
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Dyaqua Srls",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        300,
+        300,
+        300,
+        300,
+        300,
+        300,
+        300,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 2100,
+      "origine": "DD10136",
+      "project_leader": "Nicola Sartore",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 2100
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Dyaqua Srls",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        300,
+        300,
+        300,
+        300
+      ],
+      "nota": null,
+      "ordinato": 1200,
+      "origine": "DD10136",
+      "project_leader": "Nicola Sartore",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 1200
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Esse Music Store s.a.s.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2500,
+        2500,
+        2500
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10217",
+      "project_leader": "Fabrizio Benefazio",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": 7500
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Esse Solutions S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        653.13,
+        null,
+        null,
+        null,
+        null,
+        653.13,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 1306.26,
+      "origine": "DD10016",
+      "project_leader": "Erika Pettenuzzo",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 1306.26
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Essemec S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        500,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 500,
+      "origine": "DD10250",
+      "project_leader": "Luca Realdon",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 500
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Essemec S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        7735,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 7735,
+      "origine": "DD10276",
+      "project_leader": "Fabrizio Benefazio",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 7735
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Essemec S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        7735,
+        null
+      ],
+      "nota": null,
+      "ordinato": 7735,
+      "origine": "DD10276",
+      "project_leader": "Fabrizio Benefazio",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 7735
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "IMO SRL",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        3500,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 3500,
+      "origine": "DD10171",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 3500
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "IMO SRL",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        5000,
+        5000,
+        5000,
+        5000
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10171",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": 20000
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "INFINITY FLY DI ANTONIO SQUAQUARA",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        4500,
+        4000,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10307",
+      "project_leader": "Non assegnato",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": 8500
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "ISAAC srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        3500,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 3500,
+      "origine": "DD10228",
+      "project_leader": "Ettore Lampertico",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 3500
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "ISAAC srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        4168,
+        16000,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 20168,
+      "origine": "DD10252",
+      "project_leader": "Ettore Lampertico",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 20168
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "ISAAC srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        8552.82,
+        14000,
+        14000,
+        14000,
+        9000
+      ],
+      "nota": null,
+      "ordinato": 59552.82,
+      "origine": "DD10252",
+      "project_leader": "Ettore Lampertico",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 59552.82
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Odorizzi Soluzioni In Pietra Srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        11400,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 11400,
+      "origine": "DD10221",
+      "project_leader": "Marco Laghetto",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 11400
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Odorizzi Soluzioni In Pietra Srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        11400,
+        11400,
+        11400,
+        11400,
+        600
+      ],
+      "nota": null,
+      "ordinato": 46200,
+      "origine": "DD10221",
+      "project_leader": "Marco Laghetto",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 46200
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Palazzani Industrie S.p.A.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        10000,
+        10000,
+        10000,
+        10000,
+        10000
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10214",
+      "project_leader": "Non assegnato",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": 50000
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Penta Formazione S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        3300,
+        3300,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 6600,
+      "origine": "DD10241",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 6600
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Penta Formazione S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        8250,
+        3300,
+        3300,
+        3300,
+        3300
+      ],
+      "nota": null,
+      "ordinato": 21450,
+      "origine": "DD10241",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 21450
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Si Vola S.r.l. Unipersonale",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        22920,
+        null,
+        null,
+        null,
+        null,
+        null,
+        60000,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 82920,
+      "origine": "DD10109",
+      "project_leader": "Fabiano Mason",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 82920
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Si Vola S.r.l. Unipersonale",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        10000,
+        10000,
+        10000,
+        10000,
+        10000
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10328",
+      "project_leader": "Fabiano Mason",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": 50000
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Si Vola S.r.l. Unipersonale",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10329",
+      "project_leader": "Fabiano Mason",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": 5000
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Soul Srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        9750,
+        null,
+        9750,
+        9750,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 29250,
+      "origine": "DD10194",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 29250
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Soul Srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        9750,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 9750,
+      "origine": "DD10194",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 9750
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Soul Srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2100,
+        8400,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10332",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": 10500
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Synethik Engineering S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        7411.5,
+        null,
+        7534.5,
+        300,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 15246,
+      "origine": "DD10193",
+      "project_leader": "Fabrizio Benefazio",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 15246
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Synethik Engineering S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        61.5,
+        300,
+        300,
+        300,
+        300
+      ],
+      "nota": null,
+      "ordinato": 1261.5,
+      "origine": "DD10193",
+      "project_leader": "Fabrizio Benefazio",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 1261.5
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Synethik Engineering S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        750,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10193",
+      "project_leader": "Fabrizio Benefazio",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": 750
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Synethik Engineering S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1500,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 1500,
+      "origine": "DD10316",
+      "project_leader": "Fabrizio Benefazio",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 1500
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "v-moto",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        16000,
+        16000,
+        32000,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10283",
+      "project_leader": "Non assegnato",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": 64000
+    },
+    {
+      "account": "Non assegnato",
+      "cliente": "Bertoletti group",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        10000,
+        10000,
+        10000,
+        10000
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10281",
+      "project_leader": "Non assegnato",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": 40000
+    },
+    {
+      "account": "Non assegnato",
+      "cliente": "Cre engineering srl",
+      "crm_comment": "Opportunità CRM \"CRE - Richiesta quotazione gestionale\" - fase \"Fare preventivo\". Importo stimato 130.000 EUR. ma la riga resta senza valori: è ancora una stima non quotata. non un ordine o un piano di fatturazione.",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "CRE - Richiesta quotazione gestionale (opp. CRM)",
+      "project_leader": "Luca Realdon",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": null
+    },
+    {
+      "account": "Non assegnato",
+      "cliente": "Dynamin",
+      "crm_comment": "Opportunità CRM \"Analisi\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "Analisi (opp. CRM)",
+      "project_leader": "Luca Realdon",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": null
+    },
+    {
+      "account": "Non assegnato",
+      "cliente": "GD EDUCA cooperativa Sociale",
+      "crm_comment": "Opportunità CRM \"Assistenza\" - fase \"Fare preventivo\". Importo stimato 3.600 EUR. ma la riga resta senza valori: è ancora una stima non quotata. non un ordine o un piano di fatturazione.",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "Assistenza (opp. CRM)",
+      "project_leader": "Nicoletta Piazzetta",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": null
+    },
+    {
+      "account": "Non assegnato",
+      "cliente": "GEON srl",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3500,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "DD10311",
+      "project_leader": "Non assegnato",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": 3500
+    },
+    {
+      "account": "Non assegnato",
+      "cliente": "Odoo IT s.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        3409.1400000000003,
+        null,
+        12695.34,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 16104.48,
+      "origine": "DD10036",
+      "project_leader": "Non assegnato",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 16104.48
+    },
+    {
+      "account": "Non assegnato",
+      "cliente": "Odoo IT s.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        27219.719999999998,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 27219.719999999998,
+      "origine": "DD10036",
+      "project_leader": "Non assegnato",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 27219.719999999998
+    },
+    {
+      "account": "Non assegnato",
+      "cliente": "ODOO S.A.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        28965.4,
+        null,
+        9402.68,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 38368.08,
+      "origine": "DD10017",
+      "project_leader": "Non assegnato",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 38368.08
+    },
+    {
+      "account": "Non assegnato",
+      "cliente": "Oriens Consulting S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        247,
+        247,
+        null,
+        247,
+        247,
+        247,
+        247,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 1482,
+      "origine": "DD10057",
+      "project_leader": "Erika Pettenuzzo",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 1482
+    },
+    {
+      "account": "Non assegnato",
+      "cliente": "Oriens Consulting S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        247,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 247,
+      "origine": "DD10057",
+      "project_leader": "Erika Pettenuzzo",
+      "referente": null,
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 247
+    },
+    {
+      "account": "Non assegnato",
+      "cliente": "Oriens Consulting S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        12391.8,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 12391.8,
+      "origine": "DD10170",
+      "project_leader": "Erika Pettenuzzo",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 12391.8
+    },
+    {
+      "account": "Non assegnato",
+      "cliente": "Oriens Consulting S.r.l.",
+      "crm_comment": null,
+      "is_crm": false,
+      "months": [
+        1800,
+        null,
+        null,
+        null,
+        null,
+        1800,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": 3600,
+      "origine": "DD10192",
+      "project_leader": "Erika Pettenuzzo",
+      "referente": null,
+      "stato": "Confermata - Fatturato",
+      "totale": 3600
+    },
+    {
+      "account": "Non assegnato",
+      "cliente": "Silla Industries",
+      "crm_comment": "Opportunità CRM \"Cambio Partner\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "Cambio Partner (opp. CRM)",
+      "project_leader": "Guido Tessari",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": null
+    },
+    {
+      "account": "Non assegnato",
+      "cliente": "Stimm",
+      "crm_comment": "Opportunità CRM \"Odoo\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "Odoo (opp. CRM)",
+      "project_leader": "Luca Realdon",
+      "referente": null,
+      "stato": "Previsione - Offerta",
+      "totale": null
+    }
+  ],
+  "stato_summary": [
+    {
+      "color": "BDD7EE",
+      "months": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        124871.98,
+        113895,
+        69090,
+        65105,
+        31370
+      ],
+      "stato": "Bozza - Contrattualizzato",
+      "totale": 404331.98
+    },
+    {
+      "color": "C6E0B4",
+      "months": [
+        107205.08,
+        135995.1,
+        173307.68000000002,
+        130105.73000000001,
+        118415.54999999999,
+        72460.08,
+        184021.84000000003,
+        7350,
+        0,
+        0,
+        0,
+        0
+      ],
+      "stato": "Confermata - Fatturato",
+      "totale": 928861.0599999998
+    },
+    {
+      "color": "FFC000",
+      "months": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        23350,
+        119020,
+        130445,
+        112550,
+        72260
+      ],
+      "stato": "Previsione - Offerta",
+      "totale": 457625
+    },
+    {
+      "color": "FFFF00",
+      "months": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        19300,
+        31400,
+        31400,
+        28400,
+        28400
+      ],
+      "stato": "Consuntivi",
+      "totale": 138900
+    },
+    {
+      "color": "CCC0DA",
+      "months": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        40000,
+        14000,
+        11000,
+        21000
+      ],
+      "stato": "Target",
+      "totale": 86000
+    }
+  ],
+  "target_table": [
+    {
+      "cliente": "MIPU MACHINE CARE S.R.L. SOCIETA' BENEFIT",
+      "differenza": 1590.6000000000058,
+      "ordinato": 69309.4,
+      "target": 70900
+    },
+    {
+      "cliente": "Alba S.r.l.",
+      "differenza": 3600,
+      "ordinato": 5600,
+      "target": 9200
+    },
+    {
+      "cliente": "AMG S.p.A.",
+      "differenza": 73000,
+      "ordinato": 57000,
+      "target": 130000
+    },
+    {
+      "cliente": "Arky Srl",
+      "differenza": 27724.869999999995,
+      "ordinato": 76294.13,
+      "target": 104019
+    },
+    {
+      "cliente": "B.F. Automation S.r.l.",
+      "differenza": 18983.25,
+      "ordinato": 100341.75,
+      "target": 119325
+    },
+    {
+      "cliente": "B4C S.r.l.",
+      "differenza": 0,
+      "ordinato": 3600,
+      "target": 3600
+    },
+    {
+      "cliente": "BERTI PAVIMENTI LEGNO S.A.S. DI BERTI HOLDING S.R.L.",
+      "differenza": -300,
+      "ordinato": 12500,
+      "target": 12200
+    },
+    {
+      "cliente": "Bordignon S.r.l.",
+      "differenza": 7000,
+      "ordinato": 0,
+      "target": 7000
+    },
+    {
+      "cliente": "G.M.A. S.r.l.",
+      "differenza": 31136,
+      "ordinato": 33064,
+      "target": 64200
+    },
+    {
+      "cliente": "Gap Service S.r.l.",
+      "differenza": 0,
+      "ordinato": 440,
+      "target": 440
+    },
+    {
+      "cliente": "HubTec S.r.l.",
+      "differenza": 3000,
+      "ordinato": 5238,
+      "target": 8238
+    },
+    {
+      "cliente": "Irontech S.r.l.",
+      "differenza": -28400,
+      "ordinato": 124286,
+      "target": 95886
+    },
+    {
+      "cliente": "Officine Zoppelletto S.r.l.",
+      "differenza": 1700,
+      "ordinato": 300,
+      "target": 2000
+    },
+    {
+      "cliente": "Secco Sistemi S.p.A.",
+      "differenza": 10425.5,
+      "ordinato": 24574.5,
+      "target": 35000
+    },
+    {
+      "cliente": "Wow Solution S.r.l.",
+      "differenza": 10800,
+      "ordinato": 6150,
+      "target": 16950
+    },
+    {
+      "cliente": "FCF Impianti S.r.l.",
+      "differenza": 27878.120000000003,
+      "ordinato": 8621.88,
+      "target": 36500
+    },
+    {
+      "cliente": "Mondeo S.r.l.",
+      "differenza": 79546.65,
+      "ordinato": 92630.35,
+      "target": 172177
+    },
+    {
+      "cliente": "Montec S.r.l.",
+      "differenza": 14513,
+      "ordinato": 32168,
+      "target": 46681
+    },
+    {
+      "cliente": "OCRA Srl",
+      "differenza": 6000,
+      "ordinato": 17640,
+      "target": 23640
+    },
+    {
+      "cliente": "Schueco PWS Italia S.r.l.",
+      "differenza": 0,
+      "ordinato": 42080,
+      "target": 42080
+    },
+    {
+      "cliente": "Serramenti Brombal S.r.l",
+      "differenza": 51231.08,
+      "ordinato": 58768.92,
+      "target": 110000
+    },
+    {
+      "cliente": "Trasporti e Servizi Mastrotto S.r.l.",
+      "differenza": -6099.5999999999985,
+      "ordinato": 35648.6,
+      "target": 29549
+    },
+    {
+      "cliente": "Union Plus S.r.l.",
+      "differenza": 12000,
+      "ordinato": 37450,
+      "target": 49450
+    },
+    {
+      "cliente": "Yuppy S.r.l.",
+      "differenza": 480,
+      "ordinato": 25100,
+      "target": 25580
+    },
+    {
+      "cliente": "AdHoc S.r.l. Unipersonale",
+      "differenza": 3400,
+      "ordinato": 11600,
+      "target": 15000
+    },
+    {
+      "cliente": "Cabbia Group S.r.l.",
+      "differenza": 2368.8999999999996,
+      "ordinato": 14631.1,
+      "target": 17000
+    },
+    {
+      "cliente": "Dyaqua Srls",
+      "differenza": 2700,
+      "ordinato": 3300,
+      "target": 6000
+    },
+    {
+      "cliente": "Esse Music Store s.a.s.",
+      "differenza": 20000,
+      "ordinato": 0,
+      "target": 20000
+    },
+    {
+      "cliente": "Esse Solutions S.r.l.",
+      "differenza": 2293.74,
+      "ordinato": 1306.26,
+      "target": 3600
+    },
+    {
+      "cliente": "Essemec S.r.l.",
+      "differenza": -5970,
+      "ordinato": 15970,
+      "target": 10000
+    },
+    {
+      "cliente": "IMO SRL",
+      "differenza": 26500,
+      "ordinato": 3500,
+      "target": 30000
+    },
+    {
+      "cliente": "ISAAC srl",
+      "differenza": 6779.179999999993,
+      "ordinato": 83220.82,
+      "target": 90000
+    },
+    {
+      "cliente": "Odorizzi Soluzioni In Pietra Srl",
+      "differenza": 0,
+      "ordinato": 57600,
+      "target": 57600
+    },
+    {
+      "cliente": "Penta Formazione S.r.l.",
+      "differenza": -8250,
+      "ordinato": 28050,
+      "target": 19800
+    },
+    {
+      "cliente": "Si Vola S.r.l. Unipersonale",
+      "differenza": 87080,
+      "ordinato": 82920,
+      "target": 170000
+    },
+    {
+      "cliente": "Soul Srl",
+      "differenza": 12000,
+      "ordinato": 39000,
+      "target": 51000
+    },
+    {
+      "cliente": "Synethik Engineering S.r.l.",
+      "differenza": 1992.5,
+      "ordinato": 18007.5,
+      "target": 20000
+    },
+    {
+      "cliente": "Odoo IT s.r.l.",
+      "differenza": 56675.8,
+      "ordinato": 43324.2,
+      "target": 100000
+    },
+    {
+      "cliente": "ODOO S.A.",
+      "differenza": -38368.08,
+      "ordinato": 38368.08,
+      "target": 0
+    },
+    {
+      "cliente": "Oriens Consulting S.r.l.",
+      "differenza": 0.2000000000007276,
+      "ordinato": 17720.8,
+      "target": 17721
+    },
+    {
+      "cliente": null,
+      "differenza": 300000,
+      "label": "Altri (Domus, IMA, ecc.)",
+      "ordinato": 0,
+      "target": 300000
+    }
+  ],
+  "year": 2026
+}

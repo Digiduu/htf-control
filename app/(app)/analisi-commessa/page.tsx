@@ -1,4 +1,4 @@
-import ModulePlaceholder from "../components/ModulePlaceholder";
+import ModulePlaceholder from "../../components/ModulePlaceholder";
 
 export default function AnalisiCommessaPage() {
   return (
