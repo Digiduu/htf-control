@@ -1,7 +1,7 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { requireSuperadmin, type UserRole, type VisibilityGroup } from "../../lib/auth/dal";
+import { requireSuperadmin, type ModuleAccess, type UserRole, type VisibilityGroup } from "../../lib/auth/dal";
 import { createAdminClient } from "../../lib/supabase/admin";
 import type { ActionResult } from "./lib/types";
 
@@ -28,6 +28,10 @@ function resolveVisibility(
   return { visibilityGroup, projectLeaderName: null };
 }
 
+function resolveModuleAccess(value: string): ModuleAccess {
+  return value === "pipeline_commerciale_only" ? "pipeline_commerciale_only" : "all";
+}
+
 // Ogni Server Action ri-verifica requireSuperadmin() in modo indipendente
 // dalla pagina che la invoca: una richiesta può arrivare qui bypassando la UI
 // (vedi il commento in app/lib/auth/dal.ts).
@@ -43,6 +47,7 @@ export async function createUser(_prevState: ActionResult | undefined, formData:
   const password = String(formData.get("password") ?? "");
   const visibilityGroup = String(formData.get("visibilityGroup") ?? "global") as VisibilityGroup;
   const projectLeaderName = String(formData.get("projectLeaderName") ?? "");
+  const moduleAccess = resolveModuleAccess(String(formData.get("moduleAccess") ?? "all"));
 
   if (!isValidEmail(email)) {
     return { error: "Indirizzo email non valido." };
@@ -71,7 +76,11 @@ export async function createUser(_prevState: ActionResult | undefined, formData:
   // std_user, gruppo global di default): qui scriviamo solo il gruppo scelto.
   const { error: profileError } = await admin
     .from("profiles")
-    .update({ visibility_group: visibility.visibilityGroup, project_leader_name: visibility.projectLeaderName })
+    .update({
+      visibility_group: visibility.visibilityGroup,
+      project_leader_name: visibility.projectLeaderName,
+      module_access: moduleAccess,
+    })
     .eq("id", data.user.id);
 
   if (profileError) {
@@ -84,7 +93,13 @@ export async function createUser(_prevState: ActionResult | undefined, formData:
 
 export async function updateUser(
   userId: string,
-  patch: { fullName: string; role: UserRole; visibilityGroup: VisibilityGroup; projectLeaderName: string }
+  patch: {
+    fullName: string;
+    role: UserRole;
+    visibilityGroup: VisibilityGroup;
+    projectLeaderName: string;
+    moduleAccess: ModuleAccess;
+  }
 ): Promise<ActionResult> {
   const actingProfile = await requireSuperadmin();
 
@@ -95,6 +110,10 @@ export async function updateUser(
   if ("error" in visibility) {
     return visibility;
   }
+  // Un superadmin vede comunque tutto: forziamo "all" anche se il form
+  // inviasse altro, per coerenza con lo stesso trattamento già riservato a
+  // visibilityGroup quando role === "superadmin" (vedi UserAdminTable.tsx).
+  const moduleAccess = patch.role === "superadmin" ? "all" : resolveModuleAccess(patch.moduleAccess);
 
   const admin = createAdminClient();
   const { error } = await admin
@@ -104,6 +123,7 @@ export async function updateUser(
       role: patch.role,
       visibility_group: visibility.visibilityGroup,
       project_leader_name: visibility.projectLeaderName,
+      module_access: moduleAccess,
     })
     .eq("id", userId);
 

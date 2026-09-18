@@ -10,6 +10,11 @@ export type UserRole = "std_user" | "superadmin";
 // vede comunque tutto a prescindere da questo campo.
 export type VisibilityGroup = "global" | "commerciale_digiduu" | "project_leader";
 
+// Ortogonale a role/visibility_group: quali PAGINE del sito un utente può
+// raggiungere (visibility_group decide invece quali DATI vede dentro una
+// pagina). Vedi migration 20260918100000_module_access.sql.
+export type ModuleAccess = "all" | "pipeline_commerciale_only";
+
 export type Profile = {
   id: string;
   email: string;
@@ -17,6 +22,7 @@ export type Profile = {
   role: UserRole;
   visibility_group: VisibilityGroup;
   project_leader_name: string | null;
+  module_access: ModuleAccess;
   banned_until: string | null;
   created_at: string;
 };
@@ -34,7 +40,7 @@ export const getCurrentProfile = cache(async (): Promise<Profile | null> => {
 
   const { data: profile } = await supabase
     .from("profiles")
-    .select("id, email, full_name, role, visibility_group, project_leader_name, banned_until, created_at")
+    .select("id, email, full_name, role, visibility_group, project_leader_name, module_access, banned_until, created_at")
     .eq("id", user.id)
     .single();
 

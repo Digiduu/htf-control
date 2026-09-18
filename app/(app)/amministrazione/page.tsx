@@ -12,7 +12,9 @@ export default async function AmministrazionePage() {
   const [{ data, error }, { data: projectLeaderRows, error: plError }] = await Promise.all([
     supabase
       .from("profiles")
-      .select("id, email, full_name, role, visibility_group, project_leader_name, banned_until, created_at")
+      .select(
+        "id, email, full_name, role, visibility_group, project_leader_name, module_access, banned_until, created_at"
+      )
       .order("created_at", { ascending: false }),
     supabase.rpc("digiduu_project_leaders"),
   ]);

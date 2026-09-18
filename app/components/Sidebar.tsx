@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { createClient } from "../lib/supabase/client";
-import type { UserRole } from "../lib/auth/dal";
+import type { ModuleAccess, UserRole } from "../lib/auth/dal";
 
 const navItems = [
   {
@@ -26,6 +26,24 @@ const navItems = [
     ),
   },
   {
+    href: "/report-progetti",
+    label: "Report Progetti Digiduu",
+    icon: (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={1.75}
+        className="h-4 w-4"
+        aria-hidden="true"
+      >
+        <path d="M7 3h8l4 4v14H7z" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M15 3v4h4" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M10 12h6M10 15.5h6M10 8.5h2" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+  },
+  {
     href: "/analisi-commessa",
     label: "Analisi commessa",
     icon: (
@@ -44,9 +62,24 @@ const navItems = [
   },
 ];
 
-export default function Sidebar({ role }: { role: UserRole }) {
+export default function Sidebar({
+  role,
+  moduleAccess = "all",
+}: {
+  role: UserRole;
+  moduleAccess?: ModuleAccess;
+}) {
   const pathname = usePathname();
   const router = useRouter();
+
+  // Un superadmin vede comunque tutto, come per visibility_group. Per gli
+  // altri, "pipeline_commerciale_only" nasconde le altre voci di modulo (le
+  // pagine restano comunque protette da un redirect proprio — vedi il
+  // commento in migration 20260918100000_module_access.sql).
+  const visibleNavItems =
+    role === "superadmin" || moduleAccess === "all"
+      ? navItems
+      : navItems.filter((item) => item.href === "/pipeline-commerciale");
 
   async function handleLogout() {
     const supabase = createClient();
@@ -63,8 +96,8 @@ export default function Sidebar({ role }: { role: UserRole }) {
         </span>
       </div>
       <nav className="flex-1 space-y-1 px-2 py-4">
-        {navItems.map((item) => {
-          const isActive = pathname === item.href;
+        {visibleNavItems.map((item) => {
+          const isActive = pathname === item.href || pathname.startsWith(`${item.href}/`);
           return (
             <Link
               key={item.href}

@@ -2,7 +2,7 @@
 
 import { useActionState, useState, useTransition } from "react";
 import { createUser, deleteUser, resetUserPassword, setUserBanned, updateUser } from "./actions";
-import type { Profile, UserRole, VisibilityGroup } from "./lib/types";
+import type { ModuleAccess, Profile, UserRole, VisibilityGroup } from "./lib/types";
 
 const inputClass =
   "w-full rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-900 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500";
@@ -17,6 +17,11 @@ const VISIBILITY_LABEL: Record<VisibilityGroup, string> = {
   global: "Globale",
   commerciale_digiduu: "Commerciale Digiduu",
   project_leader: "Project Leader",
+};
+
+const MODULE_ACCESS_LABEL: Record<ModuleAccess, string> = {
+  all: "Tutti i moduli",
+  pipeline_commerciale_only: "Solo Pipeline Commerciale",
 };
 
 function isBanned(profile: Profile) {
@@ -42,6 +47,7 @@ export default function UserAdminTable({
               <th className="px-4 py-3">Utente</th>
               <th className="px-4 py-3">Ruolo</th>
               <th className="px-4 py-3">Visibilità</th>
+              <th className="px-4 py-3">Moduli</th>
               <th className="px-4 py-3">Stato</th>
               <th className="px-4 py-3">Creato il</th>
               <th className="px-4 py-3">Azioni</th>
@@ -58,7 +64,7 @@ export default function UserAdminTable({
             ))}
             {users.length === 0 && (
               <tr>
-                <td colSpan={6} className="px-4 py-6 text-center text-sm text-gray-500">
+                <td colSpan={7} className="px-4 py-6 text-center text-sm text-gray-500">
                   Nessun utente.
                 </td>
               </tr>
@@ -136,10 +142,45 @@ function VisibilityFields({
   );
 }
 
+// Select "Accesso moduli": quali pagine del sito l'utente può raggiungere
+// (ortogonale al Gruppo di visualizzazione, che decide invece quali dati vede
+// dentro una pagina — vedi migration 20260918100000_module_access.sql).
+function ModuleAccessField({
+  idPrefix,
+  value,
+  onChange,
+  disabled,
+}: {
+  idPrefix: string;
+  value: ModuleAccess;
+  onChange: (value: ModuleAccess) => void;
+  disabled?: boolean;
+}) {
+  return (
+    <div className="flex-1">
+      <label className="block text-xs font-medium text-gray-700" htmlFor={`${idPrefix}-moduleAccess`}>
+        Accesso moduli
+      </label>
+      <select
+        id={`${idPrefix}-moduleAccess`}
+        name="moduleAccess"
+        value={value}
+        disabled={disabled}
+        onChange={(event) => onChange(event.target.value as ModuleAccess)}
+        className={`mt-1 ${inputClass}`}
+      >
+        <option value="all">Tutti i moduli</option>
+        <option value="pipeline_commerciale_only">Solo Pipeline Commerciale</option>
+      </select>
+    </div>
+  );
+}
+
 function CreateUserForm({ projectLeaderOptions }: { projectLeaderOptions: string[] }) {
   const [state, formAction, pending] = useActionState(createUser, undefined);
   const [group, setGroup] = useState<VisibilityGroup>("global");
   const [projectLeaderName, setProjectLeaderName] = useState("");
+  const [moduleAccess, setModuleAccess] = useState<ModuleAccess>("all");
 
   return (
     <div className="rounded-lg border border-gray-200 bg-white p-5 shadow-sm">
@@ -176,14 +217,17 @@ function CreateUserForm({ projectLeaderOptions }: { projectLeaderOptions: string
             />
           </div>
         </div>
-        <VisibilityFields
-          idPrefix="new"
-          group={group}
-          onGroupChange={setGroup}
-          projectLeaderName={projectLeaderName}
-          onProjectLeaderNameChange={setProjectLeaderName}
-          projectLeaderOptions={projectLeaderOptions}
-        />
+        <div className="flex flex-col gap-2 sm:flex-row">
+          <VisibilityFields
+            idPrefix="new"
+            group={group}
+            onGroupChange={setGroup}
+            projectLeaderName={projectLeaderName}
+            onProjectLeaderNameChange={setProjectLeaderName}
+            projectLeaderOptions={projectLeaderOptions}
+          />
+          <ModuleAccessField idPrefix="new" value={moduleAccess} onChange={setModuleAccess} />
+        </div>
         <div>
           <button type="submit" disabled={pending} className={primaryButtonClass}>
             {pending ? "Creazione in corso…" : "Crea utente"}
@@ -212,6 +256,7 @@ function UserRow({
   const [role, setRole] = useState<UserRole>(user.role);
   const [group, setGroup] = useState<VisibilityGroup>(user.visibility_group);
   const [projectLeaderName, setProjectLeaderName] = useState(user.project_leader_name ?? "");
+  const [moduleAccess, setModuleAccess] = useState<ModuleAccess>(user.module_access);
   const [newPassword, setNewPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
 
@@ -222,6 +267,7 @@ function UserRow({
     setRole(user.role);
     setGroup(user.visibility_group);
     setProjectLeaderName(user.project_leader_name ?? "");
+    setModuleAccess(user.module_access);
   }
 
   function saveEdit() {
@@ -232,6 +278,7 @@ function UserRow({
         role,
         visibilityGroup: role === "superadmin" ? "global" : group,
         projectLeaderName,
+        moduleAccess: role === "superadmin" ? "all" : moduleAccess,
       });
       if ("error" in result) {
         setError(result.error);
@@ -329,6 +376,27 @@ function UserRow({
             {user.visibility_group === "project_leader" && user.project_leader_name
               ? ` · ${user.project_leader_name}`
               : ""}
+          </span>
+        )}
+      </td>
+      <td className="px-4 py-3">
+        {editing ? (
+          role === "superadmin" ? (
+            <span className="text-xs text-gray-400">non applicabile</span>
+          ) : (
+            <ModuleAccessField idPrefix={`edit-${user.id}`} value={moduleAccess} onChange={setModuleAccess} />
+          )
+        ) : user.role === "superadmin" ? (
+          <span className="text-xs text-gray-400">—</span>
+        ) : (
+          <span
+            className={`rounded-full px-2 py-0.5 text-xs font-medium ${
+              user.module_access === "pipeline_commerciale_only"
+                ? "bg-amber-50 text-amber-700"
+                : "bg-gray-100 text-gray-600"
+            }`}
+          >
+            {MODULE_ACCESS_LABEL[user.module_access]}
           </span>
         )}
       </td>

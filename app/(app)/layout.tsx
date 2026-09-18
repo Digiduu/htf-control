@@ -20,7 +20,7 @@ export default async function AuthenticatedLayout({
 
   return (
     <>
-      <Sidebar role={profile?.role ?? "std_user"} />
+      <Sidebar role={profile?.role ?? "std_user"} moduleAccess={profile?.module_access ?? "all"} />
       <main className="flex-1 overflow-y-auto bg-white">{children}</main>
     </>
   );
