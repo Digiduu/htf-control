@@ -2,7 +2,8 @@
 
 import { Fragment, useEffect, useMemo, useState, type CSSProperties } from "react";
 import { createClient } from "../../lib/supabase/client";
-import type { VisibilityGroup } from "../../lib/auth/dal";
+import type { UserRole, VisibilityGroup } from "../../lib/auth/dal";
+import { saveSnapshot } from "./actions";
 import type { Company, PipelineDoc, RevenueStep } from "./lib/types";
 import {
   STATE_COLOR,
@@ -71,9 +72,14 @@ export default function PipelineCommercialePage() {
   const supabase = useMemo(() => createClient(), []);
 
   const [company, setCompany] = useState<Company | null>(null);
-  const [scope, setScope] = useState<{ visibilityGroup: VisibilityGroup; projectLeaderName: string | null } | null>(
-    null
-  );
+  const [scope, setScope] = useState<{
+    visibilityGroup: VisibilityGroup;
+    projectLeaderName: string | null;
+    role: UserRole;
+  } | null>(null);
+  const [snapshotPending, setSnapshotPending] = useState(false);
+  const [snapshotMessage, setSnapshotMessage] = useState<string | null>(null);
+  const [snapshotError, setSnapshotError] = useState<string | null>(null);
   const [datesByCompany, setDatesByCompany] = useState<Record<Company, string[]>>({ oriens: [], digiduu: [] });
   const [selectedDate, setSelectedDate] = useState("");
   const [doc, setDoc] = useState<PipelineDoc | null>(null);
@@ -98,13 +104,14 @@ export default function PipelineCommercialePage() {
       if (cancelled || !user) return;
       const { data: profile } = await supabase
         .from("profiles")
-        .select("visibility_group, project_leader_name")
+        .select("visibility_group, project_leader_name, role")
         .eq("id", user.id)
         .single();
       if (cancelled) return;
       const visibilityGroup = (profile?.visibility_group ?? "global") as VisibilityGroup;
       const projectLeaderName = profile?.project_leader_name ?? null;
-      setScope({ visibilityGroup, projectLeaderName });
+      const role = (profile?.role ?? "std_user") as UserRole;
+      setScope({ visibilityGroup, projectLeaderName, role });
       setCompany(visibilityGroup === "global" ? "oriens" : "digiduu");
     }
     loadScope();
@@ -252,6 +259,44 @@ export default function PipelineCommercialePage() {
     [datesByCompany, company]
   );
 
+  // Duplica l'ultima generazione disponibile sotto la data di oggi (vedi
+  // actions.ts: non esiste un collegamento live a Odoo da qui, quindi
+  // "fotografare la situazione di oggi" significa portare avanti l'ultimo
+  // dato noto). Il controllo "esiste già una versione di oggi?" avviene qui,
+  // lato client, usando le date già caricate, per poter chiedere conferma
+  // PRIMA di sovrascrivere — la action stessa sovrascrive senza ulteriori
+  // domande una volta invocata.
+  async function handleSaveSnapshot() {
+    if (!company) return;
+    const today = new Date().toISOString().slice(0, 10);
+    const alreadyExists = (datesByCompany[company] || []).includes(today);
+    if (alreadyExists) {
+      const proceed = window.confirm(
+        `Esiste già una versione salvata per oggi (${fmtDateLabel(today)}). Sovrascriverla con i dati più recenti?`
+      );
+      if (!proceed) return;
+    }
+    setSnapshotPending(true);
+    setSnapshotMessage(null);
+    setSnapshotError(null);
+    const result = await saveSnapshot(company);
+    setSnapshotPending(false);
+    if ("error" in result) {
+      setSnapshotError(result.error);
+      return;
+    }
+    setDatesByCompany((prev) => {
+      const existing = (prev[company] || []).filter((d) => d !== result.date);
+      return { ...prev, [company]: [...existing, result.date].sort() };
+    });
+    setSelectedDate(result.date);
+    setSnapshotMessage(
+      result.overwritten
+        ? `Versione di oggi (${fmtDateLabel(result.date)}) aggiornata.`
+        : `Nuova versione salvata per il ${fmtDateLabel(result.date)}.`
+    );
+  }
+
   return (
     <div className="p-6">
       <div className="mb-1 flex items-center justify-between">
@@ -305,6 +350,18 @@ export default function PipelineCommercialePage() {
           ))}
         </select>
 
+        {scope?.role === "superadmin" && (
+          <button
+            type="button"
+            onClick={handleSaveSnapshot}
+            disabled={snapshotPending || !doc}
+            title="Salva una copia dei dati più recenti con la data di oggi, per tenerne traccia nello storico"
+            className="rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-semibold text-gray-700 shadow-sm hover:border-violet-400 hover:text-violet-700 disabled:opacity-50"
+          >
+            {snapshotPending ? "Salvataggio…" : "📸 Salva versione di oggi"}
+          </button>
+        )}
+
         {dual && plNames.length > 0 && scope?.visibilityGroup !== "project_leader" && (
           <select
             value={plFilter}
@@ -339,6 +396,16 @@ export default function PipelineCommercialePage() {
       {error && (
         <div className="mb-4 rounded-lg border border-red-200 bg-red-50 p-3 text-sm text-red-700">
           Errore nel leggere i dati: {error}
+        </div>
+      )}
+      {snapshotError && (
+        <div className="mb-4 rounded-lg border border-red-200 bg-red-50 p-3 text-sm text-red-700">
+          Errore nel salvare lo snapshot: {snapshotError}
+        </div>
+      )}
+      {snapshotMessage && (
+        <div className="mb-4 rounded-lg border border-emerald-200 bg-emerald-50 p-3 text-sm text-emerald-700">
+          {snapshotMessage}
         </div>
       )}
 
