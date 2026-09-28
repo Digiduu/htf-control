@@ -1,11 +1,12 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 
-const PUBLIC_PATHS = ["/login"];
+const PUBLIC_PATHS = ["/login", "/auth/sso"];
 
 // Rinfresca la sessione Supabase ad ogni richiesta e protegge tutte le route
-// tranne quelle pubbliche (per ora solo /login): senza sessione valida si
-// viene rimandati al login, con sessione valida non si può tornare al login.
+// tranne quelle pubbliche (/login e /auth/sso, l'ingresso SSO dall'iframe
+// Odoo — vedi app/auth/sso/route.ts): senza sessione valida si viene
+// rimandati al login, con sessione valida non si può tornare al login.
 export async function updateSession(request: NextRequest) {
   let supabaseResponse = NextResponse.next({ request });
 
