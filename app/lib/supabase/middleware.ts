@@ -1,5 +1,6 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
+import { forCrossSiteIframe } from "./cookie-options";
 
 const PUBLIC_PATHS = ["/login", "/auth/sso"];
 
@@ -22,7 +23,7 @@ export async function updateSession(request: NextRequest) {
           cookiesToSet.forEach(({ name, value }) => request.cookies.set(name, value));
           supabaseResponse = NextResponse.next({ request });
           cookiesToSet.forEach(({ name, value, options }) =>
-            supabaseResponse.cookies.set(name, value, options)
+            supabaseResponse.cookies.set(name, value, forCrossSiteIframe(options))
           );
         },
       },

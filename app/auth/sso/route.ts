@@ -2,6 +2,7 @@ import "server-only";
 import { NextResponse, type NextRequest } from "next/server";
 import { createServerClient } from "@supabase/ssr";
 import { createAdminClient } from "@/app/lib/supabase/admin";
+import { forCrossSiteIframe } from "@/app/lib/supabase/cookie-options";
 import { verifySsoToken } from "@/app/lib/auth/sso";
 
 // Serve la service role key: deve girare col runtime Node, non Edge.
@@ -116,7 +117,7 @@ export async function GET(request: NextRequest) {
         },
         setAll(cookiesToSet) {
           cookiesToSet.forEach(({ name, value, options }) =>
-            response.cookies.set(name, value, options)
+            response.cookies.set(name, value, forCrossSiteIframe(options))
           );
         },
       },

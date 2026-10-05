@@ -1,5 +1,6 @@
 import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
+import { forCrossSiteIframe } from "./cookie-options";
 
 // Client Supabase per Server Components / Route Handlers: legge e riscrive i
 // cookie di sessione tramite l'API `cookies()` di Next.js. Il blocco try/catch
@@ -20,7 +21,7 @@ export async function createClient() {
         setAll(cookiesToSet) {
           try {
             cookiesToSet.forEach(({ name, value, options }) =>
-              cookieStore.set(name, value, options)
+              cookieStore.set(name, value, forCrossSiteIframe(options))
             );
           } catch {
             // Chiamato da un Server Component: ignorabile, vedi commento sopra.
