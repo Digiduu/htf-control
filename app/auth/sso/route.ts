@@ -17,7 +17,9 @@ const TARGET_PATHS: Record<string, string> = {
 // Pagina di errore coerente con lo stile dell'app (stessa card del login):
 // questo endpoint viene aperto dentro l'iframe di Odoo, non da un utente che
 // naviga a mano, quindi un JSON grezzo non aiuta nessuno — meglio un
-// messaggio leggibile con l'azione da fare.
+// messaggio leggibile con l'azione da fare. "html,body{height:100%}" è
+// necessario per centrare davvero la card nell'iframe: senza, il body alto
+// quanto il solo contenuto lascia la card a galla in alto a sinistra.
 function ssoErrorPage(message: string, status: number) {
   const html = `<!doctype html>
 <html lang="it">
@@ -26,11 +28,24 @@ function ssoErrorPage(message: string, status: number) {
     <title>HTF Control</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-  <body style="margin:0;display:flex;min-height:100vh;width:100%;align-items:center;justify-content:center;background:#fff;padding:0 16px;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;">
-    <div style="width:100%;max-width:24rem;border:1px solid #e5e7eb;border-radius:0.5rem;padding:2rem;box-shadow:0 1px 2px rgba(0,0,0,0.05);">
-      <h1 style="margin:0 0 0.25rem;font-size:1.125rem;font-weight:600;color:#111827;">HTF Control</h1>
-      <p style="margin:0 0 1rem;font-size:0.875rem;color:#6b7280;">Accesso non riuscito</p>
-      <p style="margin:0;font-size:0.875rem;color:#b91c1c;">${message}</p>
+  <body style="height:100%;margin:0;display:flex;align-items:center;justify-content:center;background:#fafafa;padding:16px;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;box-sizing:border-box;">
+    <div style="width:100%;max-width:26rem;background:#fff;border:1px solid #e5e7eb;border-radius:0.75rem;padding:2rem;box-shadow:0 1px 3px rgba(0,0,0,0.06);">
+      <div style="display:flex;align-items:flex-start;gap:0.75rem;">
+        <div style="flex:none;display:flex;height:2.5rem;width:2.5rem;align-items:center;justify-content:center;border-radius:9999px;background:#fef2f2;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9" />
+            <line x1="12" y1="8" x2="12" y2="13" />
+            <line x1="12" y1="16" x2="12.01" y2="16" />
+          </svg>
+        </div>
+        <div>
+          <p style="margin:0;font-size:0.75rem;font-weight:600;letter-spacing:0.03em;text-transform:uppercase;color:#9ca3af;">HTF Control</p>
+          <h1 style="margin:0.125rem 0 0;font-size:1.0625rem;font-weight:600;color:#111827;">Accesso non riuscito</h1>
+        </div>
+      </div>
+      <div style="margin-top:1.25rem;border-radius:0.5rem;background:#fef2f2;border:1px solid #fecaca;padding:0.875rem 1rem;">
+        <p style="margin:0;font-size:0.875rem;line-height:1.5;color:#991b1b;">${message}</p>
+      </div>
     </div>
   </body>
 </html>`;
