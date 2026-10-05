@@ -12,11 +12,14 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Nessun componente dell'app è pensato per il tema scuro (sfondi dei
+   riquadri sempre chiari, hardcoded): un body scuro con testo chiaro per
+   prefers-color-scheme: dark faceva sparire il testo nei punti che non
+   impostano un colore esplicito (ereditavano il grigio chiarissimo del
+   body su sfondo chiaro del riquadro). Tema forzato sempre chiaro finché
+   l'app non ha un vero supporto dark mode end-to-end. */
+:root {
+  color-scheme: light;
 }
 
 body {
