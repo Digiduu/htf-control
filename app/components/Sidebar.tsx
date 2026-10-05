@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { createClient } from "../lib/supabase/client";
@@ -78,7 +78,14 @@ export default function Sidebar({
   // un modo per l'utente di rientrare se non ricliccando il menu su Odoo, e
   // comunque non è lui a "possedere" quella sessione in quel contesto —
   // quindi il pulsante va nascosto solo lì, non per chi usa l'app diretta.
-  const [isEmbedded] = useState(() => typeof window !== "undefined" && window.self !== window.top);
+  // window.top non è noto in SSR: va letto dopo il mount, altrimenti l'HTML
+  // del server (sempre isEmbedded=false) non combacerebbe con quello del
+  // client dentro l'iframe, causando un hydration mismatch.
+  const [isEmbedded, setIsEmbedded] = useState(false);
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- vedi commento sopra, serve leggere window dopo il mount
+    setIsEmbedded(window.self !== window.top);
+  }, []);
 
   // Un superadmin vede comunque tutto, come per visibility_group. Per gli
   // altri, "pipeline_commerciale_only" nasconde le altre voci di modulo (le
