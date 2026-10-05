@@ -14,6 +14,29 @@ const TARGET_PATHS: Record<string, string> = {
   amministrazione: "/amministrazione",
 };
 
+// Pagina di errore coerente con lo stile dell'app (stessa card del login):
+// questo endpoint viene aperto dentro l'iframe di Odoo, non da un utente che
+// naviga a mano, quindi un JSON grezzo non aiuta nessuno — meglio un
+// messaggio leggibile con l'azione da fare.
+function ssoErrorPage(message: string, status: number) {
+  const html = `<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTF Control</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body style="margin:0;display:flex;min-height:100vh;width:100%;align-items:center;justify-content:center;background:#fff;padding:0 16px;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;">
+    <div style="width:100%;max-width:24rem;border:1px solid #e5e7eb;border-radius:0.5rem;padding:2rem;box-shadow:0 1px 2px rgba(0,0,0,0.05);">
+      <h1 style="margin:0 0 0.25rem;font-size:1.125rem;font-weight:600;color:#111827;">HTF Control</h1>
+      <p style="margin:0 0 1rem;font-size:0.875rem;color:#6b7280;">Accesso non riuscito</p>
+      <p style="margin:0;font-size:0.875rem;color:#b91c1c;">${message}</p>
+    </div>
+  </body>
+</html>`;
+  return new NextResponse(html, { status, headers: { "Content-Type": "text/html; charset=utf-8" } });
+}
+
 // Punto di ingresso SSO per l'iframe incastonato in Odoo (modulo
 // oriens_htf_control): riceve un token HS256 di breve durata firmato dal
 // controller Odoo con lo stesso secret condiviso (HTF_CONTROL_SSO_SECRET),
@@ -29,12 +52,15 @@ const TARGET_PATHS: Record<string, string> = {
 export async function GET(request: NextRequest) {
   const token = request.nextUrl.searchParams.get("token");
   if (!token) {
-    return NextResponse.json({ error: "missing token" }, { status: 400 });
+    return ssoErrorPage("Link di accesso non valido: manca il token.", 400);
   }
 
   const payload = verifySsoToken(token);
   if (!payload) {
-    return NextResponse.json({ error: "invalid or expired token" }, { status: 401 });
+    return ssoErrorPage(
+      "Link di accesso scaduto o non valido: torna su Odoo e riapri il menu HTF Control.",
+      401
+    );
   }
 
   const admin = createAdminClient();
@@ -46,12 +72,10 @@ export async function GET(request: NextRequest) {
     .maybeSingle();
 
   if (!profile) {
-    return NextResponse.json(
-      {
-        error:
-          "nessun profilo htf-control per questa email: crealo prima dall'area Amministrazione",
-      },
-      { status: 403 }
+    return ssoErrorPage(
+      `Nessun profilo HTF Control per l'email <strong>${payload.email}</strong>. ` +
+        "Chiedi a un amministratore di crearlo dall'area Amministrazione.",
+      403
     );
   }
 
@@ -61,7 +85,7 @@ export async function GET(request: NextRequest) {
   });
 
   if (linkError || !linkData?.properties?.hashed_token) {
-    return NextResponse.json({ error: "sso link generation failed" }, { status: 500 });
+    return ssoErrorPage("Errore tecnico nella generazione dell'accesso. Riprova tra poco.", 500);
   }
 
   const redirectPath = TARGET_PATHS[payload.target] ?? "/pipeline-commerciale";
@@ -90,7 +114,7 @@ export async function GET(request: NextRequest) {
   });
 
   if (verifyError) {
-    return NextResponse.json({ error: "sso session exchange failed" }, { status: 401 });
+    return ssoErrorPage("Errore tecnico nell'apertura della sessione. Riprova tra poco.", 401);
   }
 
   return response;
