@@ -4,13 +4,54 @@
 // direttamente contro i fixture in fixtures/.
 import type { PipelineDoc, PipelineRow } from "./types";
 
+// Palette di riserva, usata solo quando una generazione non porta con sé i
+// propri colori in stato_summary (vedi buildColorMap). "Previsione - Offerta"
+// (valore storico, ancora presente nelle generazioni pre-05/10/2026) è stato
+// sostituito da due stati distinti ("Previsione - Probabile" e "Previsione -
+// Possibile", in base alla Fattibilità Odoo) — schema colori confermato
+// nell'Artifact claude.ai di riferimento del 05/10/2026.
 export const STATE_COLOR: Record<string, string> = {
   "Bozza - Contrattualizzato": "#BDD7EE",
   "Confermata - Fatturato": "#C6E0B4",
   "Previsione - Offerta": "#FFC000",
+  "Previsione - Probabile": "#FFC000",
+  "Previsione - Possibile": "#FFF2CC",
   Consuntivi: "#FFFF00",
   Target: "#CCC0DA",
 };
+
+// Nei dati (stato_summary[].color) l'hex arriva "nudo", senza #, es. "FFC000":
+// il CSS lo accetta solo col prefisso, altrimenti il colore è semplicemente
+// ignorato come non valido (nessuno sfondo, non un errore visibile).
+export function normalizeHexColor(color: string): string {
+  return color.startsWith("#") ? color : `#${color}`;
+}
+
+// Mappa stato -> colore per la generazione corrente. I colori sono ormai
+// registrati nei dati stessi (doc.stato_summary[].color), non in una mappa
+// statica: questo permette a generazioni storiche con uno schema di stati
+// diverso (es. il vecchio "Previsione - Offerta" unico, o Consuntivi giallo)
+// di continuare a mostrare i propri colori originali invece di essere
+// ricolorate con la palette corrente. STATE_COLOR resta solo come riserva per
+// uno stato che, per qualche motivo, non comparisse nel riepilogo.
+export function buildColorMap(doc: PipelineDoc | null | undefined): Record<string, string> {
+  const map: Record<string, string> = { ...STATE_COLOR };
+  for (const s of doc?.stato_summary || []) {
+    map[s.stato] = normalizeHexColor(s.color);
+  }
+  return map;
+}
+
+// Totale annuo di un singolo stato in una generazione, per le viste di
+// sintesi (es. Sintesi Pipeline). Restituisce null — non 0 — quando lo stato
+// non compare affatto in questa generazione (es. "Previsione - Possibile" in
+// una generazione con lo schema di stati precedente allo split
+// Probabile/Possibile), per poterlo distinguere da un valore effettivamente
+// pari a zero.
+export function statoTotale(doc: PipelineDoc | null | undefined, stato: string): number | null {
+  const entry = doc?.stato_summary?.find((s) => s.stato === stato);
+  return entry ? entry.totale : null;
+}
 
 export const MESI = ["Gen", "Feb", "Mar", "Apr", "Mag", "Giu", "Lug", "Ago", "Set", "Ott", "Nov", "Dic"];
 
@@ -62,110 +103,104 @@ export function hasOrderCodes(doc: PipelineDoc): boolean {
   return (doc.rows || []).some((r) => !r.is_crm && !!r.origine);
 }
 
-// Confronta i 12 mesi di una riga tra due generazioni e descrive il cambiamento
-// in parole (spostamento, annullamento, aggiunta, variazione) invece di un
-// semplice elenco di numeri — vedi HANDOFF.md 3.3.
-export function diffMonths(monthsNew: (number | null)[], monthsOld: (number | null)[]): string | null {
-  const fn = (x: number) => new Intl.NumberFormat("it-IT", { maximumFractionDigits: 0 }).format(Math.round(x));
-  const round2 = (x: number | null | undefined) => Math.round((x || 0) * 100) / 100;
-  const removed: { i: number; val: number }[] = [];
-  const added: { i: number; val: number }[] = [];
-  const changed: { i: number; vo: number; vn: number }[] = [];
-  for (let i = 0; i < 12; i++) {
-    const vn = round2(monthsNew[i]);
-    const vo = round2(monthsOld[i]);
-    if (vn === vo) continue;
-    if (!vo) added.push({ i, val: vn });
-    else if (!vn) removed.push({ i, val: vo });
-    else changed.push({ i, vo, vn });
-  }
-  const usedAdded = new Set<number>();
-  const parts: { key: number; text: string }[] = [];
-  for (const r of removed) {
-    let bestIdx = -1;
-    let bestDist = Infinity;
-    added.forEach((a, ai) => {
-      if (usedAdded.has(ai) || Math.abs(a.val - r.val) >= 0.01) return;
-      const dist = Math.abs(a.i - r.i);
-      if (dist < bestDist) {
-        bestDist = dist;
-        bestIdx = ai;
-      }
-    });
-    if (bestIdx >= 0) {
-      usedAdded.add(bestIdx);
-      const a = added[bestIdx];
-      parts.push({ key: Math.min(r.i, a.i), text: `${MESI[r.i]}→${MESI[a.i]} spostato (${fn(r.val)}€)` });
-    } else {
-      parts.push({ key: r.i, text: `annullato ${MESI[r.i]} (${fn(r.val)}€)` });
-    }
-  }
-  added.forEach((a, ai) => {
-    if (usedAdded.has(ai)) return;
-    parts.push({ key: a.i, text: `aggiunto ${MESI[a.i]} (${fn(a.val)}€)` });
-  });
-  for (const c of changed) {
-    parts.push({ key: c.i, text: `variato ${MESI[c.i]} (${fn(c.vo)}€→${fn(c.vn)}€)` });
-  }
-  if (!parts.length) return null;
-  parts.sort((a, b) => a.key - b.key);
-  return parts.map((p) => p.text).join("; ");
+
+export interface PrevCurrentEntry {
+  cliente: string;
+  origine: string | null;
+  // Project Leader dell'ordine nella generazione di confronto: serve solo a
+  // filtrare questa tabellina quando il selettore Project Leader della
+  // pagina è attivo (vedi page.tsx) — Oriens e le generazioni senza
+  // dettaglio ordine non lo valorizzano.
+  projectLeader: string | null;
+  prevVal: number | null;
+  curVal: number | null;
+  // "Confermata" = quella previsione risulta ancora presente (non nulla) per
+  // lo stesso ordine/cliente nello stesso mese della generazione ATTUALE: il
+  // dato ha retto. "Non confermata" = è sparita/è cambiata rispetto a quanto
+  // diceva la generazione di confronto — da colorare come avviso.
+  prevConfirmed: boolean;
+  curConfirmed: boolean;
 }
 
-// Match "sfumato" tra nomi cliente (solo per il fallback per-cliente): stessa
-// chiave se una è sottostringa dell'altra, a parità si preferisce il rapporto
-// lunghezza-corta/lunga più alto.
-export function fuzzyClientKey(key: string, keys: string[]): string | null {
-  if (!key || key.length < 3) return null;
-  let best: string | null = null;
-  let bestRatio = 0;
-  for (const k of keys) {
-    if (k === key || k.length < 3) continue;
-    if (k.includes(key) || key.includes(k)) {
-      const shorter = Math.min(key.length, k.length);
-      const longer = Math.max(key.length, k.length);
-      const ratio = shorter / longer;
-      if (ratio > bestRatio) {
-        bestRatio = ratio;
-        best = k;
-      }
+// Tabellina "Mese precedente / Mese attuale": cosa diceva la generazione di
+// confronto sui due mesi CALENDARIO REALI di oggi (non il mese in cui quella
+// generazione è stata creata) — es. se oggi è ottobre, confrontando con una
+// generazione di settembre si vogliono comunque i valori di settembre e
+// ottobre così come li riportava quella generazione, non agosto/settembre.
+// Se oggi è gennaio il "mese precedente" ricadrebbe nell'anno prima, fuori
+// dall'array months[12] di una singola annualità: in quel caso non c'è
+// nulla da mostrare (null). Stessa idea del mese usato per aprire la
+// tabella principale (vedi l'effect di scroll in page.tsx).
+export function buildPrevCurrentTable(doc: PipelineDoc, compareDoc: PipelineDoc): PrevCurrentEntry[] | null {
+  if (compareDoc.year !== new Date().getFullYear()) return null;
+  const curIdx = new Date().getMonth(); // 0 = Gennaio
+  if (curIdx < 1) return null;
+  const prevIdx = curIdx - 1;
+  const entries: PrevCurrentEntry[] = [];
+  if (hasOrderCodes(compareDoc)) {
+    const labels = new Map<string, { cliente: string; origine: string; projectLeader: string | null }>();
+    for (const r of compareDoc.rows || []) {
+      if (r.is_crm || !r.origine) continue;
+      labels.set(orderKey(r.cliente, r.origine), { cliente: r.cliente, origine: r.origine, projectLeader: r.project_leader });
+    }
+    const orders = aggregateOrders(compareDoc);
+    const currentOrders = aggregateOrders(doc);
+    for (const [k, months] of Object.entries(orders)) {
+      const prevVal = months[prevIdx] || null;
+      const curVal = months[curIdx] || null;
+      if (!prevVal && !curVal) continue;
+      const label = labels.get(k);
+      const currentMonths = currentOrders[k];
+      entries.push({
+        cliente: label?.cliente || k,
+        origine: label?.origine || null,
+        projectLeader: label?.projectLeader ?? null,
+        prevVal,
+        curVal,
+        prevConfirmed: !!currentMonths?.[prevIdx],
+        curConfirmed: !!currentMonths?.[curIdx],
+      });
+    }
+  } else {
+    const clients = aggregateClients(compareDoc);
+    const currentClients = aggregateClients(doc);
+    const labels = new Map<string, { cliente: string; projectLeader: string | null }>();
+    for (const r of compareDoc.rows || []) {
+      if (r.is_crm) continue;
+      const k = normKey(r.cliente);
+      if (k && !labels.has(k)) labels.set(k, { cliente: r.cliente, projectLeader: r.project_leader });
+    }
+    for (const [k, months] of Object.entries(clients)) {
+      const prevVal = months[prevIdx] || null;
+      const curVal = months[curIdx] || null;
+      if (!prevVal && !curVal) continue;
+      const currentMonths = currentClients[k];
+      const label = labels.get(k);
+      entries.push({
+        cliente: label?.cliente || k,
+        origine: null,
+        projectLeader: label?.projectLeader ?? null,
+        prevVal,
+        curVal,
+        prevConfirmed: !!currentMonths?.[prevIdx],
+        curConfirmed: !!currentMonths?.[curIdx],
+      });
     }
   }
-  return best;
-}
-
-export function buildNoteLookup(doc: PipelineDoc, prevDoc: PipelineDoc | null): (r: PipelineRow) => string | null {
-  const cache: Record<string, string | null> = {};
-  if (!prevDoc) return () => null;
-  const curOrders = aggregateOrders(doc);
-  const prevOrders = aggregateOrders(prevDoc);
-  const prevDual = hasOrderCodes(prevDoc);
-  const curClients = prevDual ? null : aggregateClients(doc);
-  const prevClients = prevDual ? null : aggregateClients(prevDoc);
-  const prevClientKeys = prevDual ? null : Object.keys(prevClients!);
-  return (r: PipelineRow) => {
-    if (r.is_crm) return null;
-    if (prevDual) {
-      if (!r.origine) return null;
-      const k = orderKey(r.cliente, r.origine);
-      if (!(k in cache)) {
-        cache[k] = k in prevOrders ? diffMonths(curOrders[k], prevOrders[k]) : "Nuovo";
-      }
-      return cache[k];
-    }
-    const ck = normKey(r.cliente);
-    if (!ck) return null;
-    if (!(ck in cache)) {
-      const matchKey = ck in prevClients! ? ck : fuzzyClientKey(ck, prevClientKeys!);
-      cache[ck] = matchKey ? diffMonths(curClients![ck], prevClients![matchKey]) : "Nuovo";
-    }
-    return cache[ck];
-  };
+  entries.sort((a, b) => a.cliente.localeCompare(b.cliente, "it"));
+  return entries;
 }
 
 export interface CellState {
   stato: string | null;
   val: number;
+}
+
+// Filtro "Tipologia" della toolbar: esclude gli stati disattivati da un
+// elenco di CellState di una cella, così la cifra mostrata e il colore
+// riflettono solo le tipologie che l'utente ha lasciato spuntate.
+export function visibleCellStates(states: CellState[], disabled: Set<string>): CellState[] {
+  return disabled.size ? states.filter((s) => !disabled.has(s.stato || "")) : states;
 }
 
 export interface MergedRow extends PipelineRow {
@@ -198,6 +233,7 @@ export function mergeOrderRows(rows: PipelineRow[]): MergedRow[] {
         project_leader: r.project_leader,
         referente: r.referente,
         stato: null,
+        origine_titolo: r.origine_titolo || null,
         ordinato: 0,
         months: new Array(12).fill(0),
         totale: 0,
@@ -207,6 +243,9 @@ export function mergeOrderRows(rows: PipelineRow[]): MergedRow[] {
       idx.set(k, g);
       groups.push(g);
     }
+    // Il titolo è proprietà dell'ordine, non del singolo stato: può arrivare
+    // su una qualsiasi delle righe con lo stesso codice origine.
+    if (!g.origine_titolo && r.origine_titolo) g.origine_titolo = r.origine_titolo;
     g.ordinato = (g.ordinato || 0) + (r.ordinato || 0);
     g.totale = (g.totale || 0) + (r.totale || 0);
     for (let i = 0; i < 12; i++) {

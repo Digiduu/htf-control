@@ -12,6 +12,11 @@ export interface PipelineRow {
   project_leader: string | null;
   referente: string | null;
   stato: string | null;
+  // Titolo/oggetto del preventivo o ordine (es. "Fornitura e posa reti
+  // anticaduta"), mostrato al passaggio del mouse sul codice in colonna
+  // Origine. Non ancora presente in nessuna generazione storica esistente:
+  // resta null finché la generazione da Odoo non lo porta.
+  origine_titolo?: string | null;
   ordinato: number | null;
   months: (number | null)[];
   totale: number | null;
