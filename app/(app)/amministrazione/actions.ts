@@ -29,7 +29,7 @@ function resolveVisibility(
 }
 
 function resolveModuleAccess(value: string): ModuleAccess {
-  return value === "pipeline_commerciale_only" ? "pipeline_commerciale_only" : "all";
+  return value === "pipeline_commerciale_only" || value === "digiduu" || value === "oriens" ? value : "all";
 }
 
 // Ogni Server Action ri-verifica requireSuperadmin() in modo indipendente

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { createClient } from "../lib/supabase/client";
-import type { ModuleAccess, UserRole } from "../lib/auth/dal";
+import type { ModuleAccess, UserRole, VisibilityGroup } from "../lib/auth/dal";
 
 const navItems = [
   {
@@ -27,8 +27,32 @@ const navItems = [
     ),
   },
   {
-    href: "/report-progetti",
-    label: "Report Progetti Digiduu",
+    href: "/portfolio-progetti-digiduu",
+    label: "Portfolio Progetti Digiduu",
+    // Sostituisce "Report Progetti Digiduu" (rimosso dal menu): qui la
+    // sicurezza per Project Leader è imposta anche da RLS reali, non solo
+    // dal redirect applicativo.
+    icon: (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={1.75}
+        className="h-4 w-4"
+        aria-hidden="true"
+      >
+        <rect x="3.5" y="3.5" width="17" height="17" rx="2" />
+        <path d="M8 8h3M8 12h8M8 16h8" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+  },
+  {
+    href: "/report-progetti-oriens",
+    label: "Report Progetti Oriens",
+    // Stesso principio di "Sintesi Pipeline": riservata a chi ha visibilità
+    // "global" o è superadmin, controllo reale in requireGlobalVisibility()
+    // dentro la pagina e nella RLS della tabella.
+    requiresGlobal: true,
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -40,24 +64,8 @@ const navItems = [
       >
         <path d="M7 3h8l4 4v14H7z" strokeLinecap="round" strokeLinejoin="round" />
         <path d="M15 3v4h4" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M10 12h6M10 15.5h6M10 8.5h2" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    ),
-  },
-  {
-    href: "/analisi-commessa",
-    label: "Analisi commessa",
-    icon: (
-      <svg
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth={1.75}
-        className="h-4 w-4"
-        aria-hidden="true"
-      >
-        <circle cx="10.5" cy="10.5" r="6.5" />
-        <path d="M20 20l-4.35-4.35" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="12.5" cy="13" r="2.2" />
+        <path d="M12.5 10.8v.5M12.5 14.7v.5M10.3 13h.5M14.2 13h.5" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -66,9 +74,11 @@ const navItems = [
 export default function Sidebar({
   role,
   moduleAccess = "all",
+  visibilityGroup = "global",
 }: {
   role: UserRole;
   moduleAccess?: ModuleAccess;
+  visibilityGroup?: VisibilityGroup;
 }) {
   const pathname = usePathname();
   const router = useRouter();
@@ -88,13 +98,21 @@ export default function Sidebar({
   }, []);
 
   // Un superadmin vede comunque tutto, come per visibility_group. Per gli
-  // altri, "pipeline_commerciale_only" nasconde le altre voci di modulo (le
-  // pagine restano comunque protette da un redirect proprio — vedi il
-  // commento in migration 20260918100000_module_access.sql).
-  const visibleNavItems =
-    role === "superadmin" || moduleAccess === "all"
-      ? navItems
-      : navItems.filter((item) => item.href === "/pipeline-commerciale");
+  // altri, "Accesso moduli" restringe le voci di menu (le pagine restano
+  // comunque protette da un redirect proprio — vedi il commento in migration
+  // 20260918100000_module_access.sql): "pipeline_commerciale_only" mostra
+  // solo la Pipeline Commerciale; "digiduu"/"oriens" aggiungono anche il
+  // modulo della rispettiva azienda.
+  const allowedHrefsByModuleAccess: Record<ModuleAccess, string[] | null> = {
+    all: null, // null = nessuna restrizione
+    pipeline_commerciale_only: ["/pipeline-commerciale"],
+    digiduu: ["/pipeline-commerciale", "/portfolio-progetti-digiduu"],
+    oriens: ["/pipeline-commerciale", "/report-progetti-oriens"],
+  };
+  const allowedHrefs = role === "superadmin" ? null : allowedHrefsByModuleAccess[moduleAccess];
+  const visibleNavItems = (allowedHrefs ? navItems.filter((item) => allowedHrefs.includes(item.href)) : navItems).filter(
+    (item) => !item.requiresGlobal || role === "superadmin" || visibilityGroup === "global"
+  );
 
   async function handleLogout() {
     const supabase = createClient();
