@@ -99,7 +99,11 @@ export default function GroupRow({ group }: { group: Group }) {
   );
 }
 
-function GroupDetail({ group: g }: { group: Group }) {
+// Esportata (oltre a essere usata internamente da GroupRow sopra) perché
+// Portfolio Progetti Digiduu la riusa identica per la propria pagina di
+// dettaglio progetto, invece di duplicare ~300 righe di JSX quasi identico —
+// modifica puramente additiva, nessun cambiamento di comportamento qui.
+export function GroupDetail({ group: g }: { group: Group }) {
   const forecastDays = g.act_days + g.plan_days;
   const baselineAvg = g.prop_days ? fmtEUR2(g.prop_price / g.prop_days) : "—";
   const actAvg = g.act_days ? fmtEUR2(g.act_rev / g.act_days) : "—";
