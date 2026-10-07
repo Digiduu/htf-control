@@ -3,10 +3,12 @@
 import { useRef, useState } from "react";
 import type { Group } from "../lib/types";
 import {
+  aggregateDaysBarFromScoped,
   aggregateDaysBarInfo,
   buildMonthlyCalendarForClient,
   buildMonthlyCalendarForGroup,
   computeSharedStartMonth,
+  computeYearScopedMetrics,
   daysBarInfo,
   fmtDays,
   fmtEUR,
@@ -34,17 +36,34 @@ export default function MonthlyCalendarTable({
   monthlyDaysByGroupId,
   todayISO,
   analysisNoteByGroupId,
+  yearFilter,
+  onYearFilterChange,
 }: {
   groups: Group[];
   monthlyDaysByGroupId: Record<number, Record<string, number>>;
   todayISO: string;
   analysisNoteByGroupId: Record<number, string>;
+  // null = finestra scorrevole di sempre (ultimi 12 mesi + futuro); un anno
+  // specifico sostituisce la finestra con Gennaio-Dicembre di quell'anno, e
+  // ricalcola anche le colonne di sintesi (vedi computeYearScopedMetrics) —
+  // stato tenuto dal genitore (PortfolioClient) perché serve anche ai KPI.
+  yearFilter: number | null;
+  onYearFilterChange: (year: number | null) => void;
 }) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [expandedId, setExpandedId] = useState<number | null>(null);
 
   const { startMonth, extended } = computeSharedStartMonth(groups, todayISO);
+  const calendarOptions = yearFilter ? { yearFilter } : { forcedStartMonth: startMonth };
   const clientGroups = groupAndSortByClient(groups);
+
+  const currentYear = Number(todayISO.slice(0, 4));
+  const earliestYear = groups.reduce((min, g) => {
+    const y = g.date_start ? Number(g.date_start.slice(0, 4)) : currentYear;
+    return y < min ? y : min;
+  }, currentYear);
+  const availableYears: number[] = [];
+  for (let y = currentYear; y >= earliestYear; y--) availableYears.push(y);
 
   if (!groups.length) {
     return (
@@ -59,29 +78,56 @@ export default function MonthlyCalendarTable({
 
   // Intestazioni mese: calcolate una sola volta da un calendario "modello"
   // (qualunque riga va bene, le colonne sono le stesse per costruzione).
-  const headerColumns = buildMonthlyCalendarForClient(groups, monthlyDaysByGroupId, todayISO, startMonth).columns;
+  const headerColumns = buildMonthlyCalendarForClient(groups, monthlyDaysByGroupId, todayISO, calendarOptions).columns;
 
   return (
     <div>
       <Legend />
 
-      <div className="mb-2 flex items-center gap-2">
+      <div className="mb-2 flex flex-wrap items-center gap-2">
+        <span className="text-[11px] font-semibold text-gray-500">Anno:</span>
         <button
           type="button"
-          onClick={scrollToStart}
-          className="rounded-full border border-gray-300 bg-white px-2.5 py-1 text-[11px] font-semibold text-gray-600 hover:border-violet-400 hover:text-violet-700"
+          onClick={() => onYearFilterChange(null)}
+          className={`rounded-full px-2.5 py-1 text-[11px] font-semibold ${
+            yearFilter === null ? "bg-violet-600 text-white" : "border border-gray-300 bg-white text-gray-600 hover:border-violet-400 hover:text-violet-700"
+          }`}
         >
-          ● Mese corrente
+          Tutti (ultimi 12 mesi)
         </button>
-        <button
-          type="button"
-          onClick={scrollBack}
-          className="rounded-full border border-gray-300 bg-white px-2.5 py-1 text-[11px] font-semibold text-gray-600 hover:border-violet-400 hover:text-violet-700"
-        >
-          Indietro nel tempo →
-        </button>
-        {extended && <span className="text-[11px] text-amber-700">Calendario esteso all&apos;inizio del progetto più vecchio mostrato (mesi in arancio)</span>}
+        {availableYears.map((y) => (
+          <button
+            key={y}
+            type="button"
+            onClick={() => onYearFilterChange(y)}
+            className={`rounded-full px-2.5 py-1 text-[11px] font-semibold ${
+              yearFilter === y ? "bg-violet-600 text-white" : "border border-gray-300 bg-white text-gray-600 hover:border-violet-400 hover:text-violet-700"
+            }`}
+          >
+            {y}
+          </button>
+        ))}
       </div>
+
+      {yearFilter === null && (
+        <div className="mb-2 flex items-center gap-2">
+          <button
+            type="button"
+            onClick={scrollToStart}
+            className="rounded-full border border-gray-300 bg-white px-2.5 py-1 text-[11px] font-semibold text-gray-600 hover:border-violet-400 hover:text-violet-700"
+          >
+            ● Mese corrente
+          </button>
+          <button
+            type="button"
+            onClick={scrollBack}
+            className="rounded-full border border-gray-300 bg-white px-2.5 py-1 text-[11px] font-semibold text-gray-600 hover:border-violet-400 hover:text-violet-700"
+          >
+            Indietro nel tempo →
+          </button>
+          {extended && <span className="text-[11px] text-amber-700">Calendario esteso all&apos;inizio del progetto più vecchio mostrato (mesi in arancio)</span>}
+        </div>
+      )}
 
       <div className="@container overflow-x-auto rounded-lg border border-gray-200 bg-white shadow-sm" ref={scrollRef}>
         <div className="min-w-max">
@@ -100,7 +146,7 @@ export default function MonthlyCalendarTable({
               <div
                 key={c.month}
                 className={`w-28 shrink-0 border-l border-gray-200 px-1.5 py-2 ${
-                  isBeforeNormalWindow(c.month, todayISO) ? "text-amber-700" : c.isCurrent ? "text-violet-700" : ""
+                  yearFilter === null && isBeforeNormalWindow(c.month, todayISO) ? "text-amber-700" : c.isCurrent ? "text-violet-700" : ""
                 }`}
               >
                 {c.isFutureBucket ? `DA ${fmtMonth(c.month).toUpperCase()}` : fmtMonth(c.month).toUpperCase()}
@@ -110,13 +156,28 @@ export default function MonthlyCalendarTable({
           </div>
 
           {clientGroups.map(({ clientName, groups: clientProjects }) => {
-            const clientCalendar = buildMonthlyCalendarForClient(clientProjects, monthlyDaysByGroupId, todayISO, startMonth);
-            const bar = aggregateDaysBarInfo(clientProjects);
-            const propDays = clientProjects.reduce((a, g) => a + (g.prop_days || 0), 0);
-            const propPrice = clientProjects.reduce((a, g) => a + (g.prop_price || 0), 0);
-            const actDays = clientProjects.reduce((a, g) => a + (g.act_days || 0), 0);
-            const actRev = clientProjects.reduce((a, g) => a + (g.act_rev || 0), 0);
-            const fcRev = clientProjects.reduce((a, g) => a + (g.fc_rev || 0), 0);
+            const clientCalendar = buildMonthlyCalendarForClient(clientProjects, monthlyDaysByGroupId, todayISO, calendarOptions);
+            const clientYearScoped = yearFilter
+              ? clientProjects.map((g) => computeYearScopedMetrics(g, monthlyDaysByGroupId[g.id] || {}, yearFilter))
+              : null;
+            const bar = clientYearScoped
+              ? aggregateDaysBarFromScoped(clientYearScoped)
+              : aggregateDaysBarInfo(clientProjects);
+            const propDays = clientYearScoped
+              ? clientYearScoped.reduce((a, s) => a + s.propDays, 0)
+              : clientProjects.reduce((a, g) => a + (g.prop_days || 0), 0);
+            const propPrice = clientYearScoped
+              ? clientYearScoped.reduce((a, s) => a + s.propPrice, 0)
+              : clientProjects.reduce((a, g) => a + (g.prop_price || 0), 0);
+            const actDays = clientYearScoped
+              ? clientYearScoped.reduce((a, s) => a + s.actDays, 0)
+              : clientProjects.reduce((a, g) => a + (g.act_days || 0), 0);
+            const actRev = clientYearScoped
+              ? clientYearScoped.reduce((a, s) => a + s.actRev, 0)
+              : clientProjects.reduce((a, g) => a + (g.act_rev || 0), 0);
+            const fcRev = clientYearScoped
+              ? clientYearScoped.reduce((a, s) => a + s.fcRev, 0)
+              : clientProjects.reduce((a, g) => a + (g.fc_rev || 0), 0);
             const barColor =
               bar.className === "good" ? "bg-emerald-600" : bar.className === "warning" ? "bg-amber-500" : bar.className === "critical" ? "bg-red-600" : "bg-gray-300";
 
@@ -151,8 +212,26 @@ export default function MonthlyCalendarTable({
 
                 {/* Progetti del cliente */}
                 {clientProjects.map((g) => {
-                  const calendar = buildMonthlyCalendarForGroup(g, monthlyDaysByGroupId[g.id] || {}, todayISO, startMonth);
-                  const gBar = daysBarInfo(g);
+                  const calendar = buildMonthlyCalendarForGroup(g, monthlyDaysByGroupId[g.id] || {}, todayISO, calendarOptions);
+                  // Con un anno selezionato, le colonne di sintesi (barra,
+                  // Baseline/Actual/Forecast) e la scheda di dettaglio sotto
+                  // mostrano i valori ripartiti per quell'anno invece di
+                  // quelli sull'intera vita del progetto — vedi
+                  // computeYearScopedMetrics per come vengono ricalcolati.
+                  const yearScoped = yearFilter ? computeYearScopedMetrics(g, monthlyDaysByGroupId[g.id] || {}, yearFilter) : null;
+                  const displayGroup: Group = yearScoped
+                    ? {
+                        ...g,
+                        prop_days: yearScoped.propDays,
+                        prop_price: yearScoped.propPrice,
+                        act_days: yearScoped.actDays,
+                        act_rev: yearScoped.actRev,
+                        draft_rev: yearScoped.draftRev,
+                        plan_days: yearScoped.planDays,
+                        fc_rev: yearScoped.fcRev,
+                      }
+                    : g;
+                  const gBar = daysBarInfo(displayGroup);
                   const alerts = getAlerts(g);
                   const gBarColor =
                     gBar.className === "good" ? "bg-emerald-600" : gBar.className === "warning" ? "bg-amber-500" : gBar.className === "critical" ? "bg-red-600" : "bg-gray-300";
@@ -214,13 +293,13 @@ export default function MonthlyCalendarTable({
                               <div className={`h-full rounded-full ${gBarColor}`} style={{ width: `${gBar.widthPct}%` }} />
                             </div>
                             <div className="mt-0.5 font-mono text-[10.5px] text-gray-500">
-                              {fmtDays(g.act_days)} / {g.prop_days ? fmtDays(g.prop_days) : "—"} gg
+                              {fmtDays(displayGroup.act_days)} / {displayGroup.prop_days ? fmtDays(displayGroup.prop_days) : "—"} gg
                               {gBar.ratio != null ? ` (${Math.round(gBar.ratio * 100)}%)` : ""}
                             </div>
                           </div>
-                          <div className="w-[90px] px-2 py-3 text-right font-mono tabular-nums text-gray-700">{fmtEUR(g.prop_price)}</div>
-                          <div className="w-[90px] px-2 py-3 text-right font-mono tabular-nums text-gray-700">{fmtEUR(g.act_rev)}</div>
-                          <div className="w-[90px] px-2 py-3 text-right font-mono tabular-nums text-gray-700">{fmtEUR(g.fc_rev)}</div>
+                          <div className="w-[90px] px-2 py-3 text-right font-mono tabular-nums text-gray-700">{fmtEUR(displayGroup.prop_price)}</div>
+                          <div className="w-[90px] px-2 py-3 text-right font-mono tabular-nums text-gray-700">{fmtEUR(displayGroup.act_rev)}</div>
+                          <div className="w-[90px] px-2 py-3 text-right font-mono tabular-nums text-gray-700">{fmtEUR(displayGroup.fc_rev)}</div>
                         </div>
                         {calendar.columns.map((c) => (
                           <MonthCell key={c.month} column={c} />
@@ -272,7 +351,14 @@ export default function MonthlyCalendarTable({
                                 </>
                               );
                             })()}
-                            <GroupDetail group={g} />
+                            {yearFilter && (
+                              <p className="rounded-md bg-violet-50 px-3 py-2 text-xs text-violet-700">
+                                Schede economiche ricalcolate per il {yearFilter}: giornate ordinate, baseline e
+                                forecast sono ripartite in proporzione allo sforzo di quell&apos;anno (sono valori
+                                sull&apos;intera vita del progetto, non hanno una data mese per mese).
+                              </p>
+                            )}
+                            <GroupDetail group={displayGroup} />
                           </div>
                         </div>
                       )}

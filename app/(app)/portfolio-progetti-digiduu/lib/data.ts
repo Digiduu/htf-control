@@ -156,6 +156,8 @@ export async function fetchVisibleGroups(supabase: SupabaseClient, onlyGroupId?:
       cert_docs: docs.filter((d) => d.kind === "certificato").map((d) => ({ name: d.name, location: d.location, date: d.doc_date, note: d.note })),
       overdue_total: g.overdue_total,
       overdue_count: g.overdue_count,
+      omaggio_days: g.omaggio_days,
+      sospese_days: g.sospese_days,
     } satisfies Group;
 
     const monthlyDays: Record<string, number> = {};
