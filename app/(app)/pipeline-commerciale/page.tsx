@@ -693,7 +693,7 @@ export default function PipelineCommercialePage() {
         </div>
       )}
 
-      {doc?.revenue_summary && !plActive && <RevenueSummaryPanel doc={doc} />}
+      {doc?.revenue_summary && !plActive && (scope?.visibilityGroup === "global" || scope?.role === "superadmin") && <RevenueSummaryPanel doc={doc} />}
 
       <Legend doc={doc} />
 
