@@ -7,12 +7,14 @@ per evitare corruzioni di encoding — vedi nota in `scripts/import-pipeline-fix
 fixtures/oriens/2026-09-02.json
 fixtures/oriens/2026-09-11.json
 fixtures/oriens/2026-10-05.json
+fixtures/oriens/2026-10-08.json
 fixtures/digiduu/2026-07-03.json
 fixtures/digiduu/2026-07-29.json
 fixtures/digiduu/2026-08-07.json
 fixtures/digiduu/2026-09-02.json
 fixtures/digiduu/2026-09-11.json
 fixtures/digiduu/2026-10-05.json
+fixtures/digiduu/2026-10-08.json
 ```
 
 La generazione del 2026-10-05 è la prima con la distinzione "Previsione - Probabile" /
@@ -110,22 +112,27 @@ Fixture e tabella separati dal resto del modulo, perché qui si contano i
 unire più progetti con fase diversa):
 
 ```
-fixtures/portfolio-progetti-digiduu/active-projects-by-phase-2026-10-06.json
+fixtures/portfolio-progetti-digiduu/active-projects-by-phase-2026-10-08.json
 ```
 
-Dati recuperati dal vivo da Odoo (sessione Claude + MCP) il 06/10/2026,
-riferiti allo stesso `ppd_sync_runs` di quella data. **Nota su "Assistenza"**:
-per coerenza con il prompt di handoff (§1.1, §6.3) "Con etichetta Assistenza"
-conta tutti i progetti con l'etichetta Odoo "Assistenza", **33** in questo
-aggiornamento — diverso dai **26** del riferimento storico del 01/10/2026
-(che a un controllo risulta aver contato solo il sottoinsieme "assistenza" nel
-nome del progetto, cioè la sola categoria "contratti di assistenza" di §6.3
-punto 4c, non tutta l'etichetta). Il numero totale di progetti attivi è anche
-salito da 52 a 84 nei 5 giorni tra le due generazioni: più probabile crescita
-reale (si riconoscono diversi progetti nuovi già visti nella sincronizzazione
-del resto del modulo, es. AMG, Essemec, Edilklima) che un errore di perimetro
-— non è stato trovato nessun progetto con l'etichetta o la fase "Non
-aggiornare" da escludere ulteriormente.
+Dati recuperati dal vivo da Odoo (sessione Claude + MCP) il 06/10/2026 e poi
+di nuovo l'08/10/2026, ciascuno riferito allo stesso `ppd_sync_runs` di quella
+data. **Nota su "Assistenza"**: per coerenza con il prompt di handoff (§1.1,
+§6.3) "Con etichetta Assistenza" conta tutti i progetti con l'etichetta Odoo
+"Assistenza" (id 71) — **33** sia nell'aggiornamento del 06/10/2026 sia in
+quello dell'08/10/2026 — diverso dai **26** del riferimento storico del
+01/10/2026 (che a un controllo risulta aver contato solo il sottoinsieme
+"assistenza" nel nome del progetto, cioè la sola categoria "contratti di
+assistenza" di §6.3 punto 4c, non tutta l'etichetta). Il numero totale di
+progetti attivi era salito da 52 a 84 nei 5 giorni tra la generazione storica
+e quella del 06/10/2026 (più probabile crescita reale, es. AMG, Essemec,
+Edilklima, che un errore di perimetro); nei 2 giorni tra il 06/10/2026 e
+l'08/10/2026 l'insieme dei progetti attivi è invece rimasto identico
+(stessi 84 id, stesse fasi, stesso PL, stessa etichetta Assistenza — 10 Da
+fare / 74 In corso, 26 senza PL assegnato), coerente con un periodo breve e
+senza eventi di sincronizzazione nel mezzo. Non è stato trovato nessun
+progetto con l'etichetta o la fase "Non aggiornare" da escludere
+ulteriormente (confermato anche nell'aggiornamento dell'08/10/2026).
 
 ```bash
 node scripts/import-ppd-active-projects-by-phase.mjs
