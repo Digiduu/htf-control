@@ -5,7 +5,13 @@ import { requireSuperadmin } from "../../lib/auth/dal";
 import { createAdminClient } from "../../lib/supabase/admin";
 import type { Company, PipelineDoc } from "./lib/types";
 
-export type SaveSnapshotResult = { error: string } | { success: true; date: string; overwritten: boolean };
+export type SaveSnapshotResult = { error: string } | { success: true; date: string; overwritten: boolean; label: string | null };
+
+// Funzione riservata a un singolo utente (non a "tutti i superadmin"): per
+// ora solo chi la usa davvero per congelare uno snapshot etichettato a mano,
+// non un workflow pensato per l'intero team. Stesso indirizzo controllato
+// lato pagina per nascondere il pulsante a chiunque altro.
+const SNAPSHOT_LABEL_USER_EMAIL = "c.rossetto@oriens.consulting";
 
 // Crea (o sovrascrive) una generazione storica datata "oggi" per l'azienda
 // indicata, ricopiando i dati dell'ultima generazione disponibile — non
@@ -14,8 +20,11 @@ export type SaveSnapshotResult = { error: string } | { success: true; date: stri
 // odierna, con generated_at aggiornato al momento reale dello snapshot.
 // Riverifica requireSuperadmin() in modo indipendente dal pulsante che la
 // invoca (vedi lo stesso pattern in amministrazione/actions.ts).
-export async function saveSnapshot(company: Company): Promise<SaveSnapshotResult> {
-  await requireSuperadmin();
+export async function saveSnapshot(company: Company, label: string): Promise<SaveSnapshotResult> {
+  const profile = await requireSuperadmin();
+  if (profile.email !== SNAPSHOT_LABEL_USER_EMAIL) {
+    return { error: "Funzione non disponibile per questo utente." };
+  }
 
   const admin = createAdminClient();
 
@@ -44,14 +53,16 @@ export async function saveSnapshot(company: Company): Promise<SaveSnapshotResult
     .eq("date", today)
     .maybeSingle();
 
+  const trimmedLabel = label.trim() || null;
+
   const { error: upsertError } = await admin
     .from("pipeline_generations")
-    .upsert({ company, date: today, data: snapshotDoc }, { onConflict: "company,date" });
+    .upsert({ company, date: today, data: snapshotDoc, snapshot_label: trimmedLabel }, { onConflict: "company,date" });
 
   if (upsertError) {
     return { error: upsertError.message };
   }
 
   revalidatePath("/pipeline-commerciale");
-  return { success: true, date: today, overwritten: !!existingToday };
+  return { success: true, date: today, overwritten: !!existingToday, label: trimmedLabel };
 }

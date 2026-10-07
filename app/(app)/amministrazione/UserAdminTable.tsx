@@ -22,6 +22,8 @@ const VISIBILITY_LABEL: Record<VisibilityGroup, string> = {
 const MODULE_ACCESS_LABEL: Record<ModuleAccess, string> = {
   all: "Tutti i moduli",
   pipeline_commerciale_only: "Solo Pipeline Commerciale",
+  digiduu: "Digiduu (Pipeline + Portfolio Progetti Digiduu)",
+  oriens: "Oriens (Pipeline + Report Progetti Oriens)",
 };
 
 function isBanned(profile: Profile) {
@@ -171,6 +173,8 @@ function ModuleAccessField({
       >
         <option value="all">Tutti i moduli</option>
         <option value="pipeline_commerciale_only">Solo Pipeline Commerciale</option>
+        <option value="digiduu">Digiduu (Pipeline + Portfolio Progetti Digiduu)</option>
+        <option value="oriens">Oriens (Pipeline + Report Progetti Oriens)</option>
       </select>
     </div>
   );
@@ -393,7 +397,11 @@ function UserRow({
             className={`rounded-full px-2 py-0.5 text-xs font-medium ${
               user.module_access === "pipeline_commerciale_only"
                 ? "bg-amber-50 text-amber-700"
-                : "bg-gray-100 text-gray-600"
+                : user.module_access === "digiduu"
+                  ? "bg-violet-50 text-violet-700"
+                  : user.module_access === "oriens"
+                    ? "bg-orange-50 text-orange-700"
+                    : "bg-gray-100 text-gray-600"
             }`}
           >
             {MODULE_ACCESS_LABEL[user.module_access]}
