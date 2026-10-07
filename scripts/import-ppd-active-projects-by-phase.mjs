@@ -17,7 +17,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-const DATA_AS_OF = "2026-10-06";
+const DATA_AS_OF = "2026-10-08";
 const FIXTURE_PATH = join("fixtures", "portfolio-progetti-digiduu", `active-projects-by-phase-${DATA_AS_OF}.json`);
 
 function sqlStr(s) {

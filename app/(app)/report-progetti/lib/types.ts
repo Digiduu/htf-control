@@ -96,6 +96,11 @@ export interface Group {
   cert_docs: Doc[];
   overdue_total: number;
   overdue_count: number;
+  // Giornate a foglio ore con nota Odoo "Omaggio"/"Sospese" (x_studio_nota),
+  // sull'intera vita del progetto — non hanno un dettaglio mensile, solo il
+  // totale (vedi migration 20261009140000_ppd_omaggio_sospese.sql).
+  omaggio_days: number;
+  sospese_days: number;
 }
 
 export interface ProjectLeaderReport {

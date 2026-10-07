@@ -161,6 +161,26 @@ export function GroupDetail({ group: g }: { group: Group }) {
           stesso ordine di vendita di un altro conto del gruppo
         </div>
       )}
+      {(g.omaggio_days > 0 || g.sospese_days > 0) && (
+        <div className="flex flex-wrap gap-1.5">
+          {g.omaggio_days > 0 && (
+            <span
+              title="Giornate a foglio ore con nota Odoo &quot;Omaggio&quot; — totale sull'intera vita del progetto"
+              className="rounded-full bg-violet-50 px-2.5 py-1 text-xs font-semibold text-violet-700"
+            >
+              🎁 {fmtDays(g.omaggio_days)} gg omaggio
+            </span>
+          )}
+          {g.sospese_days > 0 && (
+            <span
+              title="Giornate a foglio ore con nota Odoo &quot;Sospese&quot; — totale sull'intera vita del progetto"
+              className="rounded-full bg-amber-50 px-2.5 py-1 text-xs font-semibold text-amber-700"
+            >
+              ⏸ {fmtDays(g.sospese_days)} gg sospese
+            </span>
+          )}
+        </div>
+      )}
 
       <div className="flex flex-wrap gap-x-6 gap-y-1.5 border-t border-dashed border-gray-300 pt-3 text-xs text-gray-500">
         <span>

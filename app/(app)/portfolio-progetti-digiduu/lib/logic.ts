@@ -148,6 +148,68 @@ export function computeSharedStartMonth(groups: Group[], todayISO: string): { st
   return { startMonth, extended };
 }
 
+// Opzioni di `buildMonthlyCalendar`: o la finestra scorrevole di sempre
+// (ultimi 12 mesi + colonna futura), o un anno solare fisso (Gennaio-Dicembre
+// di `yearFilter`) quando l'utente sceglie un anno dal selettore — vedi
+// `PortfolioClient`/`MonthlyCalendarTable`.
+export interface MonthlyCalendarOptions {
+  forcedStartMonth?: string;
+  yearFilter?: number;
+}
+
+// Un'unica colonna mese: fatturato/giornate/ricavo medio/milestone, più
+// l'aggiornamento (in place) dei contatori cumulativi del chiamante — estratta
+// per essere riusata sia dalla finestra scorrevole sia dalla vista per anno
+// solare, che condividono lo stesso identico calcolo per mese.
+function buildOneMonthColumn(
+  m: string,
+  input: MonthlyCalendarInput,
+  todayISO: string,
+  dateEndMonth: string | null,
+  planningByMonth: Map<string, number>,
+  milestonesByMonth: Map<string, Milestone[]>,
+  cum: { emesso: number; giornate: number }
+): MonthColumn {
+  const currentMonth = monthKey(todayISO);
+  const invoicesInMonth = (input.invoices || []).filter((inv) => monthKey(inv.date) === m);
+  const emesso = invoicesInMonth.filter((inv) => inv.state === "posted").reduce((a, inv) => a + (inv.is_credit_note ? -inv.amount : inv.amount), 0);
+  const bozza = invoicesInMonth.filter((inv) => inv.state === "draft").reduce((a, inv) => a + inv.amount, 0);
+  const giornateRegistrate = Object.prototype.hasOwnProperty.call(input.monthlyDays, m) ? input.monthlyDays[m] : null;
+  const giornatePianificate = planningByMonth.has(m) ? planningByMonth.get(m)! : null;
+
+  const ricavoMedioMese = giornateRegistrate && giornateRegistrate > 0 ? (emesso + bozza) / giornateRegistrate : null;
+
+  // Cumulato: solo sul confermato (emesso), non sulle bozze — vedi §5.3 punto 5.
+  cum.emesso += emesso;
+  cum.giornate += giornateRegistrate || 0;
+  const ricavoMedioCumulato = cum.giornate > 0 ? cum.emesso / cum.giornate : null;
+
+  const msInMonth = milestonesByMonth.get(m) || [];
+
+  return {
+    month: m,
+    isCurrent: m === currentMonth,
+    isFuture: m > currentMonth,
+    isFutureBucket: false,
+    fatturatoEmesso: emesso,
+    fatturatoBozza: bozza,
+    invoiceTooltip: invoicesInMonth.map((inv) => `${inv.number ?? "bozza"}: ${inv.amount}€`),
+    giornateRegistrate,
+    giornatePianificate,
+    ricavoMedioMese,
+    ricavoMedioCumulato,
+    fineProgetto: !!dateEndMonth && dateEndMonth === m,
+    fineProgettoLabel: null,
+    milestones: msInMonth.map((ms) => ({
+      name: ms.name,
+      isReached: ms.is_reached,
+      isOverdue: !ms.is_reached && !!ms.deadline && ms.deadline < todayISO,
+      isBeyondEnd: !!dateEndMonth && !!ms.deadline && monthKey(ms.deadline) > dateEndMonth,
+      deadline: ms.deadline,
+    })),
+  };
+}
+
 // Calendario mensile (§5.3, "cuore del report"): dal mese corrente indietro di
 // 12 mesi, esteso fino all'inizio del progetto se più vecchio, più una
 // colonna futura aggregata ("da <mese successivo>"). Il cumulato (punto 5
@@ -156,28 +218,19 @@ export function computeSharedStartMonth(groups: Group[], todayISO: string): { st
 // per la visualizzazione richiesta (mese corrente → passato).
 // `forcedStartMonth` permette a più righe (progetti di uno stesso cliente, o
 // l'intera tabella) di condividere esattamente le stesse colonne — vedi
-// `computeSharedStartMonth`.
-export function buildMonthlyCalendar(input: MonthlyCalendarInput, todayISO: string, forcedStartMonth?: string): MonthlyCalendar {
+// `computeSharedStartMonth`. `yearFilter` sostituisce del tutto la finestra
+// scorrevole con un anno solare fisso (Gennaio→Dicembre, ordine cronologico
+// normale, nessuna colonna futura aggregata): il cumulato continua comunque a
+// partire dall'inizio vero del progetto, solo le colonne dell'anno scelto
+// vengono mostrate.
+export function buildMonthlyCalendar(input: MonthlyCalendarInput, todayISO: string, options?: string | MonthlyCalendarOptions): MonthlyCalendar {
+  // Compatibilità con le chiamate esistenti che passano `forcedStartMonth`
+  // come stringa al posto di un oggetto opzioni.
+  const opts: MonthlyCalendarOptions = typeof options === "string" ? { forcedStartMonth: options } : (options ?? {});
+  const { forcedStartMonth, yearFilter } = opts;
+
   const currentMonth = monthKey(todayISO);
   const projectStartMonth = input.dateStart ? monthKey(input.dateStart) : null;
-
-  let startMonth: string;
-  let extended: boolean;
-  if (forcedStartMonth) {
-    startMonth = forcedStartMonth;
-    extended = forcedStartMonth < normalWindowStartMonth(todayISO);
-  } else {
-    startMonth = normalWindowStartMonth(todayISO);
-    extended = false;
-    if (projectStartMonth && projectStartMonth < startMonth) {
-      startMonth = projectStartMonth;
-      extended = true;
-    }
-  }
-
-  const chronological: string[] = [];
-  for (let m = startMonth; m <= currentMonth; m = addMonths(m, 1)) chronological.push(m);
-  const futureBucketMonth = addMonths(currentMonth, 1);
 
   const planningByMonth = new Map<string, number>();
   for (const r of input.planningByResource || []) {
@@ -197,50 +250,44 @@ export function buildMonthlyCalendar(input: MonthlyCalendarInput, todayISO: stri
 
   const dateEndMonth = input.dateEnd ? monthKey(input.dateEnd) : null;
 
-  const toMilestoneView = (ms: Milestone, isFutureBucket: boolean) => ({
-    name: ms.name,
-    isReached: ms.is_reached,
-    isOverdue: !isFutureBucket && !ms.is_reached && !!ms.deadline && ms.deadline < todayISO,
-    isBeyondEnd: !!dateEndMonth && !!ms.deadline && monthKey(ms.deadline) > dateEndMonth,
-    deadline: ms.deadline,
-  });
+  if (yearFilter) {
+    const yearStart = `${yearFilter}-01`;
+    const yearEnd = `${yearFilter}-12`;
+    // Il cumulato deve comunque partire dall'inizio vero del progetto (o da
+    // gennaio dell'anno scelto se il progetto è iniziato dopo): le colonne
+    // precedenti all'anno scelto vengono calcolate ma non mostrate.
+    const chronoStart = projectStartMonth && projectStartMonth < yearStart ? projectStartMonth : yearStart;
 
-  let cumEmesso = 0;
-  let cumGiornate = 0;
+    const cum = { emesso: 0, giornate: 0 };
+    const columns: MonthColumn[] = [];
+    for (let m = chronoStart; m <= yearEnd; m = addMonths(m, 1)) {
+      const col = buildOneMonthColumn(m, input, todayISO, dateEndMonth, planningByMonth, milestonesByMonth, cum);
+      if (m >= yearStart && m <= yearEnd) columns.push(col);
+    }
 
-  const builtChrono: MonthColumn[] = chronological.map((m) => {
-    const invoicesInMonth = (input.invoices || []).filter((inv) => monthKey(inv.date) === m);
-    const emesso = invoicesInMonth.filter((inv) => inv.state === "posted").reduce((a, inv) => a + (inv.is_credit_note ? -inv.amount : inv.amount), 0);
-    const bozza = invoicesInMonth.filter((inv) => inv.state === "draft").reduce((a, inv) => a + inv.amount, 0);
-    const giornateRegistrate = Object.prototype.hasOwnProperty.call(input.monthlyDays, m) ? input.monthlyDays[m] : null;
-    const giornatePianificate = planningByMonth.has(m) ? planningByMonth.get(m)! : null;
+    return { columns, startMonth: yearStart, extendedForOlderProject: false };
+  }
 
-    const ricavoMedioMese = giornateRegistrate && giornateRegistrate > 0 ? (emesso + bozza) / giornateRegistrate : null;
+  let startMonth: string;
+  let extended: boolean;
+  if (forcedStartMonth) {
+    startMonth = forcedStartMonth;
+    extended = forcedStartMonth < normalWindowStartMonth(todayISO);
+  } else {
+    startMonth = normalWindowStartMonth(todayISO);
+    extended = false;
+    if (projectStartMonth && projectStartMonth < startMonth) {
+      startMonth = projectStartMonth;
+      extended = true;
+    }
+  }
 
-    // Cumulato: solo sul confermato (emesso), non sulle bozze — vedi §5.3 punto 5.
-    cumEmesso += emesso;
-    cumGiornate += giornateRegistrate || 0;
-    const ricavoMedioCumulato = cumGiornate > 0 ? cumEmesso / cumGiornate : null;
+  const chronological: string[] = [];
+  for (let m = startMonth; m <= currentMonth; m = addMonths(m, 1)) chronological.push(m);
+  const futureBucketMonth = addMonths(currentMonth, 1);
 
-    const msInMonth = milestonesByMonth.get(m) || [];
-
-    return {
-      month: m,
-      isCurrent: m === currentMonth,
-      isFuture: false,
-      isFutureBucket: false,
-      fatturatoEmesso: emesso,
-      fatturatoBozza: bozza,
-      invoiceTooltip: invoicesInMonth.map((inv) => `${inv.number ?? "bozza"}: ${inv.amount}€`),
-      giornateRegistrate,
-      giornatePianificate,
-      ricavoMedioMese,
-      ricavoMedioCumulato,
-      fineProgetto: !!dateEndMonth && dateEndMonth === m,
-      fineProgettoLabel: null,
-      milestones: msInMonth.map((ms) => toMilestoneView(ms, false)),
-    };
-  });
+  const cum = { emesso: 0, giornate: 0 };
+  const builtChrono: MonthColumn[] = chronological.map((m) => buildOneMonthColumn(m, input, todayISO, dateEndMonth, planningByMonth, milestonesByMonth, cum));
 
   // Colonna futura aggregata: tutto ciò che viene dopo il mese corrente, non
   // solo il mese immediatamente successivo (§5.3: "somma delle bozze di
@@ -276,7 +323,13 @@ export function buildMonthlyCalendar(input: MonthlyCalendarInput, todayISO: stri
     ricavoMedioCumulato: null,
     fineProgetto: futureEndsLater,
     fineProgettoLabel: futureEndsLater ? fmtMonthYearShort(dateEndMonth!) : null,
-    milestones: futureMilestones.map((ms) => toMilestoneView(ms, true)),
+    milestones: futureMilestones.map((ms) => ({
+      name: ms.name,
+      isReached: ms.is_reached,
+      isOverdue: false,
+      isBeyondEnd: !!dateEndMonth && !!ms.deadline && monthKey(ms.deadline) > dateEndMonth,
+      deadline: ms.deadline,
+    })),
   };
 
   // Ordine di visualizzazione richiesto: colonna futura, mese corrente, poi
@@ -287,7 +340,12 @@ export function buildMonthlyCalendar(input: MonthlyCalendarInput, todayISO: stri
   return { columns, startMonth, extendedForOlderProject: extended };
 }
 
-export function buildMonthlyCalendarForGroup(g: Group, monthlyDays: Record<string, number>, todayISO: string, forcedStartMonth?: string): MonthlyCalendar {
+export function buildMonthlyCalendarForGroup(
+  g: Group,
+  monthlyDays: Record<string, number>,
+  todayISO: string,
+  options?: string | MonthlyCalendarOptions
+): MonthlyCalendar {
   return buildMonthlyCalendar(
     {
       dateStart: g.date_start,
@@ -298,7 +356,7 @@ export function buildMonthlyCalendarForGroup(g: Group, monthlyDays: Record<strin
       monthlyDays,
     },
     todayISO,
-    forcedStartMonth
+    options
   );
 }
 
@@ -308,7 +366,7 @@ export function buildMonthlyCalendarForClient(
   groups: Group[],
   monthlyDaysByGroupId: Record<number, Record<string, number>>,
   todayISO: string,
-  forcedStartMonth?: string
+  options?: string | MonthlyCalendarOptions
 ): MonthlyCalendar {
   const dateStart = groups.reduce<string | null>((min, g) => (g.date_start && (!min || g.date_start < min) ? g.date_start : min), null);
   const dateEndCandidates = groups.map((g) => g.date_end).filter((d): d is string => !!d);
@@ -331,7 +389,7 @@ export function buildMonthlyCalendarForClient(
       monthlyDays,
     },
     todayISO,
-    forcedStartMonth
+    options
   );
 }
 
@@ -395,6 +453,25 @@ export function aggregateDaysBarInfo(groups: Group[]): { ratio: number | null; c
   return { ratio, className, widthPct };
 }
 
+// Stessa barra di `aggregateDaysBarInfo`, ma su metriche già ripartite per
+// anno (vedi `computeYearScopedMetrics`) invece che sui valori lifetime dei
+// gruppi — per la riga di totale cliente quando è attivo il filtro anno.
+export function aggregateDaysBarFromScoped(
+  metrics: YearScopedMetrics[]
+): { ratio: number | null; className: "good" | "warning" | "critical" | "neutral"; widthPct: number } {
+  const propDays = metrics.reduce((a, s) => a + s.propDays, 0);
+  const actDays = metrics.reduce((a, s) => a + s.actDays, 0);
+  const ratio = propDays ? actDays / propDays : null;
+  let className: "good" | "warning" | "critical" | "neutral" = "neutral";
+  if (ratio != null) {
+    if (ratio <= 1) className = "good";
+    else if (ratio <= 1.2) className = "warning";
+    else className = "critical";
+  }
+  const widthPct = ratio != null ? Math.min(ratio * 100, 100) : 0;
+  return { ratio, className, widthPct };
+}
+
 // "Progetti attivi per fase" (§6.3): ricompone la tabella per PL, i KPI e i
 // quattro elenchi apribili a partire dall'elenco piatto dei singoli progetti
 // Odoo (ppd_active_projects_by_phase) — qui, a differenza del resto del
@@ -442,5 +519,62 @@ export function computeActivePhaseSummary(projects: ActivePhaseProject[]): Activ
     inCorsoList,
     contrattiAssistenzaList,
     affiancamentiList,
+  };
+}
+
+export interface YearScopedMetrics {
+  propDays: number;
+  propPrice: number;
+  actDays: number;
+  actRev: number;
+  draftRev: number;
+  planDays: number;
+  fcRev: number;
+}
+
+// Versione "per anno" delle metriche di un gruppo, per il filtro anno della
+// vista progetti. Giornate spese (actDays) e Actual (actRev/draftRev) si
+// calcolano in modo esatto, perché derivano da dati con una data precisa
+// (foglio ore mensile, fatture). Giornate ordinate, Baseline e Forecast
+// invece vengono dall'ordine di vendita/da una stima Odoo "per tutta la vita
+// del progetto": non hanno una data mese per mese, quindi qui si ripartiscono
+// in proporzione a quanto lavoro (giornate spese) è stato fatto in
+// quell'anno rispetto al totale — un'approssimazione dichiarata, non un dato
+// esatto come gli altri, ma l'unica ripartizione sensata con i dati
+// disponibili (l'alternativa "tutto nell'anno di inizio progetto" sarebbe
+// sbagliata per i progetti pluriennali come Brombal).
+export function computeYearScopedMetrics(g: Group, monthlyDays: Record<string, number>, year: number): YearScopedMetrics {
+  const yearStart = `${year}-01`;
+  const yearEnd = `${year}-12`;
+  const inYear = (m: string) => m >= yearStart && m <= yearEnd;
+
+  const totalActDays = Object.values(monthlyDays).reduce((a, d) => a + d, 0);
+  const actDays = Object.entries(monthlyDays).reduce((sum, [m, d]) => (inYear(m) ? sum + d : sum), 0);
+
+  const invoicesInYear = (g.invoices || []).filter((inv) => inYear(inv.date.slice(0, 7)));
+  const actRev = invoicesInYear.filter((inv) => inv.state === "posted").reduce((a, inv) => a + (inv.is_credit_note ? -inv.amount : inv.amount), 0);
+  const draftRev = invoicesInYear.filter((inv) => inv.state === "draft").reduce((a, inv) => a + inv.amount, 0);
+
+  let planDays = 0;
+  for (const r of g.planning_future?.by_resource || []) {
+    for (const [m, d] of Object.entries(r.days || {})) {
+      if (inYear(m)) planDays += d;
+    }
+  }
+
+  // Quota di sforzo di quest'anno sul totale del progetto: se non c'è ancora
+  // nessuna giornata registrata (progetto appena partito), attribuisce tutto
+  // all'anno di inizio progetto invece di azzerare baseline/forecast ovunque.
+  const startYear = g.date_start ? g.date_start.slice(0, 4) : null;
+  const ratio = totalActDays > 0 ? actDays / totalActDays : startYear === String(year) ? 1 : 0;
+
+  return {
+    propDays: g.prop_days * ratio,
+    propPrice: g.prop_price * ratio,
+    actDays,
+    actRev,
+    draftRev,
+    planDays,
+    fcRev: g.fc_rev * ratio,
   };
 }

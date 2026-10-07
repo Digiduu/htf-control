@@ -101,9 +101,9 @@ function buildInserts(report, dataAsOf) {
 
     for (const g of pl.groups) {
       statements.push(
-        `insert into public.ppd_project_groups (id, sync_run_id, pl_name, client_name, name, active, stage, date_start, date_end, chiusura, prop_days, prop_price, act_days, act_rev, draft_rev, plan_days, fc_rev, member_ids, member_names, baseline_excluded, tags, invoiced_total, draft_total, paid_total, overdue_total, overdue_count, task_total)\n` +
-          `values (${sqlNum(g.id)}, ${syncRunVar}, ${sqlStr(pl.pl_name)}, ${sqlStr(g.partner)}, ${sqlStr(g.name)}, ${sqlBool(g.active)}, ${sqlStr(g.stage)}, ${sqlDate(g.date_start)}, ${sqlDate(g.date_end)}, ${sqlDate(g.chiusura)}, ${sqlNum(g.prop_days)}, ${sqlNum(g.prop_price)}, ${sqlNum(g.act_days)}, ${sqlNum(g.act_rev)}, ${sqlNum(g.draft_rev)}, ${sqlNum(g.plan_days)}, ${sqlNum(g.fc_rev)}, ${sqlIntArray(g.ids)}, ${sqlTextArray(g.members)}, ${sqlTextArray(g.baseline_excluded)}, ${sqlTextArray(g.tags)}, ${sqlNum(g.invoiced_total)}, ${sqlNum(g.draft_total)}, ${sqlNum(g.paid_total)}, ${sqlNum(g.overdue_total)}, ${sqlNum(g.overdue_count)}, ${sqlNum(g.task_total)})\n` +
-          `on conflict (id) do update set sync_run_id = excluded.sync_run_id, pl_name = excluded.pl_name, client_name = excluded.client_name, name = excluded.name, active = excluded.active, stage = excluded.stage, date_start = excluded.date_start, date_end = excluded.date_end, chiusura = excluded.chiusura, prop_days = excluded.prop_days, prop_price = excluded.prop_price, act_days = excluded.act_days, act_rev = excluded.act_rev, draft_rev = excluded.draft_rev, plan_days = excluded.plan_days, fc_rev = excluded.fc_rev, member_ids = excluded.member_ids, member_names = excluded.member_names, baseline_excluded = excluded.baseline_excluded, tags = excluded.tags, invoiced_total = excluded.invoiced_total, draft_total = excluded.draft_total, paid_total = excluded.paid_total, overdue_total = excluded.overdue_total, overdue_count = excluded.overdue_count, task_total = excluded.task_total;`
+        `insert into public.ppd_project_groups (id, sync_run_id, pl_name, client_name, name, active, stage, date_start, date_end, chiusura, prop_days, prop_price, act_days, act_rev, draft_rev, plan_days, fc_rev, member_ids, member_names, baseline_excluded, tags, invoiced_total, draft_total, paid_total, overdue_total, overdue_count, task_total, omaggio_days, sospese_days)\n` +
+          `values (${sqlNum(g.id)}, ${syncRunVar}, ${sqlStr(pl.pl_name)}, ${sqlStr(g.partner)}, ${sqlStr(g.name)}, ${sqlBool(g.active)}, ${sqlStr(g.stage)}, ${sqlDate(g.date_start)}, ${sqlDate(g.date_end)}, ${sqlDate(g.chiusura)}, ${sqlNum(g.prop_days)}, ${sqlNum(g.prop_price)}, ${sqlNum(g.act_days)}, ${sqlNum(g.act_rev)}, ${sqlNum(g.draft_rev)}, ${sqlNum(g.plan_days)}, ${sqlNum(g.fc_rev)}, ${sqlIntArray(g.ids)}, ${sqlTextArray(g.members)}, ${sqlTextArray(g.baseline_excluded)}, ${sqlTextArray(g.tags)}, ${sqlNum(g.invoiced_total)}, ${sqlNum(g.draft_total)}, ${sqlNum(g.paid_total)}, ${sqlNum(g.overdue_total)}, ${sqlNum(g.overdue_count)}, ${sqlNum(g.task_total)}, ${sqlNum(g.omaggio_days ?? 0)}, ${sqlNum(g.sospese_days ?? 0)})\n` +
+          `on conflict (id) do update set sync_run_id = excluded.sync_run_id, pl_name = excluded.pl_name, client_name = excluded.client_name, name = excluded.name, active = excluded.active, stage = excluded.stage, date_start = excluded.date_start, date_end = excluded.date_end, chiusura = excluded.chiusura, prop_days = excluded.prop_days, prop_price = excluded.prop_price, act_days = excluded.act_days, act_rev = excluded.act_rev, draft_rev = excluded.draft_rev, plan_days = excluded.plan_days, fc_rev = excluded.fc_rev, member_ids = excluded.member_ids, member_names = excluded.member_names, baseline_excluded = excluded.baseline_excluded, tags = excluded.tags, invoiced_total = excluded.invoiced_total, draft_total = excluded.draft_total, paid_total = excluded.paid_total, overdue_total = excluded.overdue_total, overdue_count = excluded.overdue_count, task_total = excluded.task_total, omaggio_days = excluded.omaggio_days, sospese_days = excluded.sospese_days;`
       );
 
       statements.push(`delete from public.ppd_timesheet_monthly where group_id = ${sqlNum(g.id)};`);
@@ -189,7 +189,10 @@ function main() {
     process.exit(1);
   }
 
-  const files = readdirSync(FIXTURES_DIR).filter((f) => f.endsWith(".json"));
+  // Solo fixture datate "YYYY-MM-DD.json": la cartella contiene anche
+  // "active-projects-by-phase-*.json" (dati di un'altra sezione, forma
+  // diversa — §6.3), che qui andrebbe saltato, non processato come generazione.
+  const files = readdirSync(FIXTURES_DIR).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f));
   if (!files.length) {
     console.error(`❌ Nessun fixture .json trovato in ${FIXTURES_DIR}.`);
     process.exit(1);

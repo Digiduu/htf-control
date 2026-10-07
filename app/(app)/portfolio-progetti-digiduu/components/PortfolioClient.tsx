@@ -2,11 +2,15 @@
 
 import { useMemo, useState } from "react";
 import type { ProjectLeaderReport } from "../lib/types";
-import { FILTERS, type FilterKey, fmtDays, fmtEUR, fmtEUR2, getAlerts } from "../lib/logic";
+import { computeYearScopedMetrics, FILTERS, type FilterKey, fmtDays, fmtEUR, fmtEUR2, getAlerts } from "../lib/logic";
 import { Kpi, KpiGrid } from "../../report-progetti/components/Kpis";
 import FilterTabs from "../../report-progetti/components/FilterTabs";
 import MonthlyCalendarTable from "./MonthlyCalendarTable";
 import MethodNotes from "./MethodNotes";
+
+function sumOf(groups: ProjectLeaderReport["groups"], key: "omaggio_days" | "sospese_days") {
+  return groups.reduce((a, g) => a + (g[key] || 0), 0);
+}
 
 // "Il mio portfolio" (prompt di handoff §6.1): un Project Leader vede solo il
 // proprio (allPls ha già un solo elemento, filtrato dalla RLS stessa a monte
@@ -29,6 +33,11 @@ export default function PortfolioClient({
 }) {
   const [selectedPl, setSelectedPl] = useState<string | null>(initialPlName ?? allPls[0]?.pl_name ?? null);
   const [filter, setFilter] = useState<FilterKey>("attivi");
+  // null = nessun filtro anno (valori sull'intera vita del progetto, come
+  // sempre); un anno specifico ricalcola ogni metrica per quell'anno solo —
+  // vedi computeYearScopedMetrics per come vengono ripartite le metriche
+  // "per tutta la vita del progetto" (giornate ordinate, baseline, forecast).
+  const [yearFilter, setYearFilter] = useState<number | null>(null);
 
   const pl = useMemo(() => allPls.find((p) => p.pl_name === selectedPl) ?? null, [allPls, selectedPl]);
 
@@ -39,6 +48,20 @@ export default function PortfolioClient({
   }, [pl, filter]);
 
   const totals = useMemo(() => {
+    if (yearFilter) {
+      const scoped = filteredGroups.map((g) => computeYearScopedMetrics(g, monthlyDaysByGroupId[g.id] || {}, yearFilter));
+      const sum = (key: keyof (typeof scoped)[number]) => scoped.reduce((a, s) => a + (s[key] || 0), 0);
+      const propDays = sum("propDays");
+      const propPrice = sum("propPrice");
+      const actRev = sum("actRev");
+      const actDays = sum("actDays");
+      const fcRev = sum("fcRev");
+      const fcDays = scoped.reduce((a, s) => a + s.actDays + s.planDays, 0);
+      const alertCount = filteredGroups.filter((g) => getAlerts(g).length > 0).length;
+      const omaggioDays = sumOf(filteredGroups, "omaggio_days");
+      const sospeseDays = sumOf(filteredGroups, "sospese_days");
+      return { propDays, propPrice, actRev, actDays, fcRev, fcDays, alertCount, omaggioDays, sospeseDays };
+    }
     const sum = (key: "prop_days" | "prop_price" | "act_rev" | "act_days" | "plan_days" | "fc_rev") =>
       filteredGroups.reduce((a, g) => a + (g[key] || 0), 0);
     const propDays = sum("prop_days");
@@ -48,8 +71,10 @@ export default function PortfolioClient({
     const fcRev = sum("fc_rev");
     const fcDays = filteredGroups.reduce((a, g) => a + g.act_days + g.plan_days, 0);
     const alertCount = filteredGroups.filter((g) => getAlerts(g).length > 0).length;
-    return { propDays, propPrice, actRev, actDays, fcRev, fcDays, alertCount };
-  }, [filteredGroups]);
+    const omaggioDays = sumOf(filteredGroups, "omaggio_days");
+    const sospeseDays = sumOf(filteredGroups, "sospese_days");
+    return { propDays, propPrice, actRev, actDays, fcRev, fcDays, alertCount, omaggioDays, sospeseDays };
+  }, [filteredGroups, yearFilter, monthlyDaysByGroupId]);
 
   if (!allPls.length) {
     return (
@@ -94,6 +119,16 @@ export default function PortfolioClient({
       <p className="mb-3 max-w-3xl text-sm text-gray-500">
         Progetti Odoo Digiduu in cui {pl.pl_name} risulta Project Leader, raggruppati per Progetto Padre del conto
         analitico. {pl.groups.length} progetti padre ({activeCount} attivi).
+        {yearFilter && (
+          <>
+            {" "}
+            <b className="text-violet-700">
+              Dati del {yearFilter}: giornate spese e ricavi actual sono esatti; giornate ordinate, baseline e
+              forecast sono ripartiti in proporzione allo sforzo di quell&apos;anno (sono valori sull&apos;intera
+              vita del progetto, non hanno una data mese per mese).
+            </b>
+          </>
+        )}
       </p>
 
       <KpiGrid>
@@ -112,6 +147,11 @@ export default function PortfolioClient({
           sub="giornate sforate · SAL/Certificato assenti"
           critical={totals.alertCount > 0}
         />
+        <Kpi
+          label="Giornate omaggio/sospese"
+          value={`${fmtDays(totals.omaggioDays)} / ${fmtDays(totals.sospeseDays)} gg`}
+          sub="totale sull'intera vita progetto, non filtrabile per anno"
+        />
       </KpiGrid>
 
       <div className="mb-3.5 flex flex-wrap items-center justify-between gap-3">
@@ -127,6 +167,8 @@ export default function PortfolioClient({
         monthlyDaysByGroupId={monthlyDaysByGroupId}
         todayISO={todayISO}
         analysisNoteByGroupId={analysisNoteByGroupId}
+        yearFilter={yearFilter}
+        onYearFilterChange={setYearFilter}
       />
 
       <MethodNotes plName={pl.pl_name} plNotes={pl.notes} />
