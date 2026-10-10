@@ -184,6 +184,10 @@ export default function PipelineCommercialePage() {
     if (!company) return;
     const activeCompany = company;
     let cancelled = false;
+    // Il filtro Project Leader si azzera solo cambiando AZIENDA (un PL di
+    // Oriens non esiste in Digiduu e viceversa): cambiare solo la versione/
+    // generazione selezionata non deve farlo perdere, vedi effect sotto.
+    setPlFilter("");
     async function loadDates() {
       setError(null);
       // Via RPC, non una lettura diretta della tabella: la funzione calcola da
@@ -247,7 +251,6 @@ export default function PipelineCommercialePage() {
       const currentDoc = row?.data;
       setDoc(currentDoc ?? null);
       setDocSnapshotLabel(row?.snapshot_label ?? null);
-      setPlFilter("");
 
       const asc = datesByCompany[activeCompany] || [];
       const idx = asc.indexOf(selectedDate);
@@ -1010,13 +1013,13 @@ function RevenueSummaryPanel({ doc }: { doc: PipelineDoc }) {
   );
 }
 
-// Verde tenue se il valore è ancora presente nella generazione corrente
-// (previsione confermata), rosso tenue se è sparito/cambiato rispetto a
-// quanto diceva la generazione di confronto. Nessun colore su una cella
-// vuota: non c'è nulla da confermare o smentire.
+// Verde tenue se il valore è identico nella generazione corrente (previsione
+// confermata), arancione tenue se è diverso (sparito, ridotto, aumentato...)
+// rispetto a quanto diceva la generazione di confronto. Nessun colore su una
+// cella vuota: non c'è nulla da confermare o smentire.
 function confirmBg(v: number | null, confirmed: boolean): string {
   if (!v) return "";
-  return confirmed ? "bg-emerald-50" : "bg-red-50";
+  return confirmed ? "bg-emerald-50" : "bg-amber-50";
 }
 
 // Tabellina "Mese precedente/Mese attuale": cosa diceva la generazione di
@@ -1070,13 +1073,13 @@ function PrevCurrentPanel({ entries, compareDate }: { entries: PrevCurrentEntry[
                 <td className="border-b border-gray-100 px-2.5 py-1.5 text-gray-500">{e.origine || ""}</td>
                 <td
                   className={`border-b border-gray-100 px-2.5 py-1.5 text-right tabular-nums ${confirmBg(e.prevVal, e.prevConfirmed)}`}
-                  title={e.prevVal ? (e.prevConfirmed ? "Confermato nella generazione attuale" : "Non più presente nella generazione attuale") : undefined}
+                  title={e.prevVal ? (e.prevConfirmed ? "Confermato nella generazione attuale" : "Diverso nella generazione attuale") : undefined}
                 >
                   {fmt(e.prevVal)}
                 </td>
                 <td
                   className={`border-b border-gray-100 px-2.5 py-1.5 text-right tabular-nums ${confirmBg(e.curVal, e.curConfirmed)}`}
-                  title={e.curVal ? (e.curConfirmed ? "Confermato nella generazione attuale" : "Non più presente nella generazione attuale") : undefined}
+                  title={e.curVal ? (e.curConfirmed ? "Confermato nella generazione attuale" : "Diverso nella generazione attuale") : undefined}
                 >
                   {fmt(e.curVal)}
                 </td>

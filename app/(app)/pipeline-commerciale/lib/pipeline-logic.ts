@@ -114,10 +114,13 @@ export interface PrevCurrentEntry {
   projectLeader: string | null;
   prevVal: number | null;
   curVal: number | null;
-  // "Confermata" = quella previsione risulta ancora presente (non nulla) per
-  // lo stesso ordine/cliente nello stesso mese della generazione ATTUALE: il
-  // dato ha retto. "Non confermata" = è sparita/è cambiata rispetto a quanto
-  // diceva la generazione di confronto — da colorare come avviso.
+  // "Confermata" = la generazione ATTUALE riporta per lo stesso ordine/
+  // cliente e lo stesso mese esattamente lo stesso valore della generazione
+  // di confronto: il dato non è cambiato. "Non confermata" = il valore
+  // attuale è diverso (sparito, ridotto, aumentato...) da quanto diceva la
+  // generazione di confronto — da colorare come avviso, non basta che il
+  // valore attuale sia "presente" (un valore diverso da zero ma diverso dal
+  // precedente non conta come confermato).
   prevConfirmed: boolean;
   curConfirmed: boolean;
 }
@@ -157,8 +160,8 @@ export function buildPrevCurrentTable(doc: PipelineDoc, compareDoc: PipelineDoc)
         projectLeader: label?.projectLeader ?? null,
         prevVal,
         curVal,
-        prevConfirmed: !!currentMonths?.[prevIdx],
-        curConfirmed: !!currentMonths?.[curIdx],
+        prevConfirmed: (currentMonths?.[prevIdx] || null) === prevVal,
+        curConfirmed: (currentMonths?.[curIdx] || null) === curVal,
       });
     }
   } else {
@@ -182,8 +185,8 @@ export function buildPrevCurrentTable(doc: PipelineDoc, compareDoc: PipelineDoc)
         projectLeader: label?.projectLeader ?? null,
         prevVal,
         curVal,
-        prevConfirmed: !!currentMonths?.[prevIdx],
-        curConfirmed: !!currentMonths?.[curIdx],
+        prevConfirmed: (currentMonths?.[prevIdx] || null) === prevVal,
+        curConfirmed: (currentMonths?.[curIdx] || null) === curVal,
       });
     }
   }

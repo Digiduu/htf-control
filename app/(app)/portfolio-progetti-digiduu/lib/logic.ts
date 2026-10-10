@@ -220,9 +220,12 @@ function buildOneMonthColumn(
 // l'intera tabella) di condividere esattamente le stesse colonne — vedi
 // `computeSharedStartMonth`. `yearFilter` sostituisce del tutto la finestra
 // scorrevole con un anno solare fisso (Gennaio→Dicembre, ordine cronologico
-// normale, nessuna colonna futura aggregata): il cumulato continua comunque a
-// partire dall'inizio vero del progetto, solo le colonne dell'anno scelto
-// vengono mostrate.
+// normale, nessuna colonna futura aggregata): il cumulato riparte da zero a
+// gennaio dell'anno scelto (non dall'inizio vero del progetto), perché deve
+// coincidere con il KPI "Ricavi actual" di quell'anno (anch'esso ricalcolato
+// solo sui dati dell'anno, vedi computeYearScopedMetrics in PortfolioClient) —
+// altrimenti il "cum." di un mese includerebbe anche fatturato/giornate di
+// anni precedenti che il KPI dell'anno non conta, come segnalato per Brombal.
 export function buildMonthlyCalendar(input: MonthlyCalendarInput, todayISO: string, options?: string | MonthlyCalendarOptions): MonthlyCalendar {
   // Compatibilità con le chiamate esistenti che passano `forcedStartMonth`
   // come stringa al posto di un oggetto opzioni.
@@ -253,17 +256,18 @@ export function buildMonthlyCalendar(input: MonthlyCalendarInput, todayISO: stri
   if (yearFilter) {
     const yearStart = `${yearFilter}-01`;
     const yearEnd = `${yearFilter}-12`;
-    // Il cumulato deve comunque partire dall'inizio vero del progetto (o da
-    // gennaio dell'anno scelto se il progetto è iniziato dopo): le colonne
-    // precedenti all'anno scelto vengono calcolate ma non mostrate.
-    const chronoStart = projectStartMonth && projectStartMonth < yearStart ? projectStartMonth : yearStart;
 
     const cum = { emesso: 0, giornate: 0 };
-    const columns: MonthColumn[] = [];
-    for (let m = chronoStart; m <= yearEnd; m = addMonths(m, 1)) {
-      const col = buildOneMonthColumn(m, input, todayISO, dateEndMonth, planningByMonth, milestonesByMonth, cum);
-      if (m >= yearStart && m <= yearEnd) columns.push(col);
+    const builtChrono: MonthColumn[] = [];
+    for (let m = yearStart; m <= yearEnd; m = addMonths(m, 1)) {
+      builtChrono.push(buildOneMonthColumn(m, input, todayISO, dateEndMonth, planningByMonth, milestonesByMonth, cum));
     }
+
+    // Stessa convenzione di visualizzazione della finestra scorrevole (vedi
+    // sotto): il calcolo del cumulato va in ordine cronologico, ma a schermo
+    // il mese più recente dell'anno scelto sta a sinistra, i precedenti
+    // scorrendo a destra.
+    const columns = [...builtChrono].reverse();
 
     return { columns, startMonth: yearStart, extendedForOlderProject: false };
   }

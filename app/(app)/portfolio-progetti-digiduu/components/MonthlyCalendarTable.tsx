@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { Group } from "../lib/types";
 import {
   aggregateDaysBarFromScoped,
@@ -73,12 +73,26 @@ export default function MonthlyCalendarTable({
     );
   }
 
-  const scrollToStart = () => scrollRef.current?.scrollTo({ left: 0, behavior: "smooth" });
-  const scrollBack = () => scrollRef.current?.scrollBy({ left: COLUMN_WIDTH * 3, behavior: "smooth" });
-
   // Intestazioni mese: calcolate una sola volta da un calendario "modello"
   // (qualunque riga va bene, le colonne sono le stesse per costruzione).
   const headerColumns = buildMonthlyCalendarForClient(groups, monthlyDaysByGroupId, todayISO, calendarOptions).columns;
+
+  // Il mese corrente deve essere la prima colonna visibile (a sinistra i mesi
+  // successivi/futuri, a destra i precedenti): con o senza filtro anno, le
+  // colonne sono ordinate dal più recente al più vecchio, quindi basta
+  // scorrere fino all'indice del mese "in corso" (se nell'anno filtrato non
+  // c'è un mese corrente, es. un anno passato, si resta all'inizio dell'array,
+  // cioè dicembre di quell'anno).
+  const currentMonthIndex = headerColumns.findIndex((c) => c.isCurrent);
+  const currentMonthScrollLeft = currentMonthIndex >= 0 ? currentMonthIndex * COLUMN_WIDTH : 0;
+
+  const scrollToStart = () => scrollRef.current?.scrollTo({ left: currentMonthScrollLeft, behavior: "smooth" });
+  const scrollBack = () => scrollRef.current?.scrollBy({ left: COLUMN_WIDTH * 3, behavior: "smooth" });
+
+  useEffect(() => {
+    scrollRef.current?.scrollTo({ left: currentMonthScrollLeft });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [yearFilter, currentMonthScrollLeft]);
 
   return (
     <div>
