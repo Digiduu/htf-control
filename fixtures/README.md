@@ -143,3 +143,32 @@ nell'SQL Editor di Supabase Studio **dopo** aver applicato la migration
 `20261009090000_ppd_active_projects_by_phase.sql` e dopo aver già incollato il
 seed principale del modulo qui sopra (che crea la riga `ppd_sync_runs`
 referenziata).
+
+# Aggiornamento da Odoo (dal 14/10/2026)
+
+Pipeline Commerciale (Oriens + Digiduu) e Portfolio Progetti Digiduu si
+rigenerano da zero leggendo Odoo via MCP in una sessione Claude, senza
+ricopiare numeri dalle generazioni precedenti. Gli scarichi grezzi
+(risultati di `search_records`/`aggregate_records` salvati su disco dal tool,
+mai ritrascritti a mano) vanno in una cartella temporanea; l'elenco dei file
+e dei campi attesi è in testa a ciascuno script, insieme alle regole di
+calcolo (verificate gruppo per gruppo contro la generazione del 08/10/2026).
+
+```bash
+node scripts/build-pipeline-fixture.mjs <cartella-scarichi-pipeline> <YYYY-MM-DD>
+node scripts/build-portfolio-fixture.mjs <cartella-scarichi-portfolio> <YYYY-MM-DD>
+```
+
+Il caricamento su Supabase avviene poi direttamente con la service role (da
+`.env.local`), senza SQL da incollare — è una scrittura in produzione, va
+lanciato solo dopo conferma:
+
+```bash
+node scripts/load-odoo-sync.mjs --pipeline <YYYY-MM-DD> --portfolio <YYYY-MM-DD>
+```
+
+Lo script non sovrascrive le versioni Pipeline salvate a mano (con
+`snapshot_label`) e non tocca le note di analisi/PL scritte nell'app. Non
+vengono da Odoo, e quindi sono riprese dalla generazione precedente: il
+target annuo per cliente della Pipeline Digiduu e i documenti
+SAL/Certificato del Portfolio.
