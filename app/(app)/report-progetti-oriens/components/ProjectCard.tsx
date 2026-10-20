@@ -149,6 +149,18 @@ export default function ProjectCard({ progetto: p }: { progetto: Progetto }) {
               <p className="text-xs text-gray-400">Nessuna anomalia rilevata.</p>
             )}
             {p.nota && <p className="mt-2 text-xs italic text-gray-500">{p.nota}</p>}
+            {p.noteStoriche && p.noteStoriche.length > 0 && (
+              <>
+                <h4 className="mb-1.5 mt-3 text-[11px] font-semibold uppercase tracking-wide text-gray-500">
+                  Note scritte a mano{p.noteStoricheData ? ` il ${p.noteStoricheData}` : ""} (non ricalcolate)
+                </h4>
+                <ul className="list-disc space-y-0.5 pl-4 text-xs text-gray-500">
+                  {p.noteStoriche.map((n, i) => (
+                    <li key={i}>{n}</li>
+                  ))}
+                </ul>
+              </>
+            )}
           </>
         )}
       </div>

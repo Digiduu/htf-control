@@ -25,17 +25,20 @@ const args = process.argv.slice(2);
 const pipelineDates = [];
 let portfolioDate = null;
 let capacityDate = null;
+let oriensDate = null;
 for (let i = 0, mode = null; i < args.length; i++) {
   if (args[i] === "--local") continue;
   if (args[i] === "--pipeline") mode = "pipeline";
   else if (args[i] === "--portfolio") mode = "portfolio";
   else if (args[i] === "--capacity") mode = "capacity";
+  else if (args[i] === "--oriens-report") mode = "oriens";
+  else if (mode === "oriens") oriensDate = args[i];
   else if (mode === "pipeline") pipelineDates.push(args[i]);
   else if (mode === "portfolio") portfolioDate = args[i];
   else if (mode === "capacity") capacityDate = args[i];
 }
-if (!pipelineDates.length && !portfolioDate && !capacityDate) {
-  console.error("Uso: node scripts/load-odoo-sync.mjs [--pipeline <data>...] [--portfolio <data>] [--capacity <data>]");
+if (!pipelineDates.length && !portfolioDate && !capacityDate && !oriensDate) {
+  console.error("Uso: node scripts/load-odoo-sync.mjs [--pipeline <data>...] [--portfolio <data>] [--capacity <data>] [--oriens-report <data>]");
   process.exit(1);
 }
 
@@ -215,6 +218,18 @@ async function loadCapacity(date) {
   console.log(`✅ Capacity Digiduu ${date}: ${data.people.length} persone, ${data.items.length} righe`);
 }
 
+async function loadOriensReport(date) {
+  const data = readJson(join("fixtures", "report-progetti-oriens", `${date}.json`));
+  check(
+    await supabase
+      .from("report_progetti_oriens_generations")
+      .upsert({ date, data, generated_by: "Sessione Claude + MCP Odoo (scripts/build-oriens-report-fixture.mjs)" }, { onConflict: "date" }),
+    "upsert report_progetti_oriens_generations"
+  );
+  console.log(`✅ Report Progetti Oriens ${date}: ${data.kpi.progettiAttivi} progetti, ${data.kpi.anomalieRilevate} anomalie`);
+}
+
 for (const d of pipelineDates) await loadPipeline(d);
 if (portfolioDate) await loadPortfolio(portfolioDate);
 if (capacityDate) await loadCapacity(capacityDate);
+if (oriensDate) await loadOriensReport(oriensDate);

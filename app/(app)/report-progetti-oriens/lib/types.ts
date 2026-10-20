@@ -52,6 +52,10 @@ export interface Progetto {
   altriCosti?: string[];
   anomalie?: string[];
   nota?: string;
+  // Note scritte a mano nella generazione precedente (non ricalcolabili da
+  // Odoo), riportate così come erano: vedi scripts/build-oriens-report-fixture.mjs.
+  noteStoriche?: string[];
+  noteStoricheData?: string;
 }
 
 export interface PmGroup {
