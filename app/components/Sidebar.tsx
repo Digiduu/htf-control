@@ -69,16 +69,40 @@ const navItems = [
       </svg>
     ),
   },
+  {
+    href: "/capacity-digiduu",
+    label: "Capacity Digiduu",
+    // Modulo in anteprima: visibile solo a chi passa canSeeCapacityPreview()
+    // (vedi app/lib/auth/dal.ts), controllo reale in requireCapacityAccess()
+    // dentro la pagina e nella RLS della tabella.
+    previewOnly: true,
+    icon: (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={1.75}
+        className="h-4 w-4"
+        aria-hidden="true"
+      >
+        <rect x="3.5" y="5" width="17" height="15" rx="2" />
+        <path d="M3.5 9.5h17M8 3v4M16 3v4" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M7.5 13.5h4M7.5 16.5h7" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+  },
 ];
 
 export default function Sidebar({
   role,
   moduleAccess = "all",
   visibilityGroup = "global",
+  canSeeCapacity = false,
 }: {
   role: UserRole;
   moduleAccess?: ModuleAccess;
   visibilityGroup?: VisibilityGroup;
+  canSeeCapacity?: boolean;
 }) {
   const pathname = usePathname();
   const router = useRouter();
@@ -110,9 +134,9 @@ export default function Sidebar({
     oriens: ["/pipeline-commerciale", "/report-progetti-oriens"],
   };
   const allowedHrefs = role === "superadmin" ? null : allowedHrefsByModuleAccess[moduleAccess];
-  const visibleNavItems = (allowedHrefs ? navItems.filter((item) => allowedHrefs.includes(item.href)) : navItems).filter(
-    (item) => !item.requiresGlobal || role === "superadmin" || visibilityGroup === "global"
-  );
+  const visibleNavItems = (allowedHrefs ? navItems.filter((item) => allowedHrefs.includes(item.href)) : navItems)
+    .filter((item) => !item.requiresGlobal || role === "superadmin" || visibilityGroup === "global")
+    .filter((item) => !item.previewOnly || canSeeCapacity);
 
   async function handleLogout() {
     const supabase = createClient();

@@ -82,6 +82,31 @@ export async function requireGlobalVisibility(): Promise<Profile> {
   return profile;
 }
 
+// Moduli in anteprima: visibili solo a questi utenti (e solo se superadmin),
+// finché non si decide a chi aprirli. Per aprirli a tutti i superadmin basta
+// svuotare il controllo sull'email in canSeeCapacityPreview.
+const CAPACITY_PREVIEW_EMAILS = ["c.rossetto@digiduu.it", "c.rossetto@oriens.consulting"];
+
+export function canSeeCapacityPreview(profile: Profile | null): boolean {
+  return !!profile && profile.role === "superadmin" && CAPACITY_PREVIEW_EMAILS.includes(profile.email.toLowerCase());
+}
+
+// Confine di sicurezza reale di Capacity Digiduu (la Sidebar nasconde la
+// voce solo per comodità visiva); la RLS della tabella limita comunque la
+// lettura ai superadmin (vedi migration 20261020100000_capacity_digiduu_generations.sql).
+export async function requireCapacityAccess(): Promise<Profile> {
+  const profile = await getCurrentProfile();
+
+  if (!profile) {
+    redirect("/login");
+  }
+  if (!canSeeCapacityPreview(profile)) {
+    redirect("/pipeline-commerciale");
+  }
+
+  return profile;
+}
+
 // Stesso principio di requireSuperadmin/requireGlobalVisibility, ma per
 // moduli riservati a chi ha un "Accesso moduli" tra quelli passati (o "all",
 // sempre ammesso) — un superadmin vede comunque tutto. Va richiamato
