@@ -93,6 +93,8 @@ const navItems = [
   },
 ];
 
+const PINNED_KEY = "htf-sidebar-pinned";
+
 export default function Sidebar({
   role,
   moduleAccess = "all",
@@ -140,6 +142,34 @@ export default function Sidebar({
       : (!allowedHrefs || allowedHrefs.includes(item.href)) && (!item.requiresGlobal || role === "superadmin" || visibilityGroup === "global")
   );
 
+  // Barra fissata aperta (default) o richiusa a sole icone: da richiusa si
+  // apre temporaneamente al passaggio del mouse o con il focus da tastiera,
+  // sovrapposta alla pagina senza spostarla. La scelta è una comodità per
+  // browser (localStorage), letta dopo il mount per lo stesso motivo di
+  // isEmbedded qui sopra.
+  const [pinned, setPinned] = useState(true);
+  const [peek, setPeek] = useState(false);
+  useEffect(() => {
+    try {
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- preferenza salvata, leggibile solo dopo il mount
+      if (localStorage.getItem(PINNED_KEY) === "0") setPinned(false);
+    } catch {
+      // storage non disponibile: resta aperta
+    }
+  }, []);
+  function togglePinned() {
+    const next = !pinned;
+    setPinned(next);
+    setPeek(false);
+    try {
+      localStorage.setItem(PINNED_KEY, next ? "1" : "0");
+    } catch {
+      // preferenza non salvata, nessun effetto sul resto
+    }
+  }
+  const expanded = pinned || peek;
+  const labelClass = `whitespace-nowrap transition-opacity ${expanded ? "opacity-100" : "opacity-0"}`;
+
   async function handleLogout() {
     const supabase = createClient();
     await supabase.auth.signOut();
@@ -148,11 +178,40 @@ export default function Sidebar({
   }
 
   return (
-    <aside className="flex h-full w-60 shrink-0 flex-col border-r border-gray-200 bg-gray-50">
-      <div className="border-b border-gray-200 px-5 py-4">
-        <span className="text-base font-semibold tracking-tight text-gray-900">
-          HTF Control
-        </span>
+    <div className={`relative h-full shrink-0 transition-[width] duration-200 ${pinned ? "w-60" : "w-14"}`}>
+    <aside
+      onMouseEnter={() => !pinned && setPeek(true)}
+      onMouseLeave={() => setPeek(false)}
+      onFocusCapture={() => !pinned && setPeek(true)}
+      onBlurCapture={(e) => {
+        if (!e.currentTarget.contains(e.relatedTarget as Node | null)) setPeek(false);
+      }}
+      className={`absolute inset-y-0 left-0 z-30 flex flex-col overflow-hidden border-r border-gray-200 bg-gray-50 transition-[width,box-shadow] duration-200 ${
+        expanded ? "w-60" : "w-14"
+      } ${!pinned && peek ? "shadow-xl" : ""}`}
+    >
+      <div
+        className={`flex items-center gap-2 border-b border-gray-200 py-3 ${expanded ? "justify-between pl-5 pr-2.5" : "justify-center"}`}
+      >
+        {expanded && <span className="whitespace-nowrap text-base font-semibold tracking-tight text-gray-900">HTF Control</span>}
+        <button
+          type="button"
+          onClick={togglePinned}
+          aria-pressed={pinned}
+          aria-label={pinned ? "Richiudi la barra laterale" : "Fissa la barra laterale aperta"}
+          title={pinned ? "Richiudi la barra laterale" : "Fissa la barra laterale aperta"}
+          className="shrink-0 rounded-md p-1.5 text-gray-500 transition-colors hover:bg-gray-200 hover:text-gray-900 focus-visible:outline-2 focus-visible:outline-violet-500"
+        >
+          {pinned ? (
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.75} className="h-4 w-4" aria-hidden="true">
+              <path d="M11 17l-5-5 5-5M18 17l-5-5 5-5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          ) : (
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.75} className="h-4 w-4" aria-hidden="true">
+              <path d="M9 4h6l-1 6 3 3H7l3-3-1-6zM12 13v7" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          )}
+        </button>
       </div>
       <nav className="flex-1 space-y-1 px-2 py-4">
         {visibleNavItems.map((item) => {
@@ -161,14 +220,15 @@ export default function Sidebar({
             <Link
               key={item.href}
               href={item.href}
+              title={expanded ? undefined : item.label}
               className={`flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium transition-colors ${
                 isActive
                   ? "bg-violet-50 text-violet-700"
                   : "text-gray-600 hover:bg-gray-100 hover:text-gray-900"
               }`}
             >
-              {item.icon}
-              {item.label}
+              <span className="shrink-0">{item.icon}</span>
+              <span className={labelClass}>{item.label}</span>
             </Link>
           );
         })}
@@ -177,6 +237,7 @@ export default function Sidebar({
         <div className="border-t border-gray-200 px-2 py-4">
           <Link
             href="/amministrazione"
+            title={expanded ? undefined : "Amministrazione"}
             className={`flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium transition-colors ${
               pathname === "/amministrazione"
                 ? "bg-violet-50 text-violet-700"
@@ -188,14 +249,14 @@ export default function Sidebar({
               fill="none"
               stroke="currentColor"
               strokeWidth={1.75}
-              className="h-4 w-4"
+              className="h-4 w-4 shrink-0"
               aria-hidden="true"
             >
               <circle cx="12" cy="8" r="3" />
               <path d="M5 20c0-3.3 3.1-6 7-6s7 2.7 7 6" strokeLinecap="round" strokeLinejoin="round" />
               <path d="M19 8h2M20 7v2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-            Amministrazione
+            <span className={labelClass}>Amministrazione</span>
           </Link>
         </div>
       )}
@@ -204,6 +265,7 @@ export default function Sidebar({
           <button
             type="button"
             onClick={handleLogout}
+            title={expanded ? undefined : "Esci"}
             className="flex w-full items-center gap-3 rounded-md px-3 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-900"
           >
             <svg
@@ -211,17 +273,18 @@ export default function Sidebar({
               fill="none"
               stroke="currentColor"
               strokeWidth={1.75}
-              className="h-4 w-4"
+              className="h-4 w-4 shrink-0"
               aria-hidden="true"
             >
               <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" strokeLinecap="round" strokeLinejoin="round" />
               <path d="M16 17l5-5-5-5" strokeLinecap="round" strokeLinejoin="round" />
               <path d="M21 12H9" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-            Esci
+            <span className={labelClass}>Esci</span>
           </button>
         </div>
       )}
     </aside>
+    </div>
   );
 }
