@@ -24,15 +24,18 @@ import { execSync } from "node:child_process";
 const args = process.argv.slice(2);
 const pipelineDates = [];
 let portfolioDate = null;
+let capacityDate = null;
 for (let i = 0, mode = null; i < args.length; i++) {
   if (args[i] === "--local") continue;
   if (args[i] === "--pipeline") mode = "pipeline";
   else if (args[i] === "--portfolio") mode = "portfolio";
+  else if (args[i] === "--capacity") mode = "capacity";
   else if (mode === "pipeline") pipelineDates.push(args[i]);
   else if (mode === "portfolio") portfolioDate = args[i];
+  else if (mode === "capacity") capacityDate = args[i];
 }
-if (!pipelineDates.length && !portfolioDate) {
-  console.error("Uso: node scripts/load-odoo-sync.mjs [--pipeline <data>...] [--portfolio <data>]");
+if (!pipelineDates.length && !portfolioDate && !capacityDate) {
+  console.error("Uso: node scripts/load-odoo-sync.mjs [--pipeline <data>...] [--portfolio <data>] [--capacity <data>]");
   process.exit(1);
 }
 
@@ -201,5 +204,17 @@ async function loadPortfolio(date) {
   console.log(`✅ ppd_active_projects_by_phase: ${active.length} progetti`);
 }
 
+async function loadCapacity(date) {
+  const data = readJson(join("fixtures", "capacity-digiduu", `${date}.json`));
+  check(
+    await supabase
+      .from("capacity_digiduu_generations")
+      .upsert({ date, data, generated_by: "Sessione Claude + MCP Odoo (scripts/build-capacity-fixture.mjs)" }, { onConflict: "date" }),
+    "upsert capacity_digiduu_generations"
+  );
+  console.log(`✅ Capacity Digiduu ${date}: ${data.people.length} persone, ${data.items.length} righe`);
+}
+
 for (const d of pipelineDates) await loadPipeline(d);
 if (portfolioDate) await loadPortfolio(portfolioDate);
+if (capacityDate) await loadCapacity(capacityDate);

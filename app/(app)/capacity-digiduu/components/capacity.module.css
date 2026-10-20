@@ -1,0 +1,418 @@
+/* Palette Digiduu del modulo Capacity: token propri, così non dipende dalle
+   classi Tailwind del resto del sito. Solo tema chiaro, come tutto il sito
+   (vedi il commento in app/globals.css). */
+.root {
+  --bg: #f7f5fb;
+  --surface: #ffffff;
+  --fg: #1d1430;
+  --fg2: #534a66;
+  --muted: #80779a;
+  --line: #e4ddf0;
+  --grid: #efeaf6;
+  --plan: #6b2fc4;
+  --sel: #efe7fb;
+  --chip: #f1ecf8;
+  --ok: #f0e8fc;
+  --ok-fg: #5a24a8;
+  --prop: #f7f1fe;
+  --prop-fg: #7a3fd6;
+  --over: #fde6d4;
+  --over-fg: #c2410c;
+  --mono: var(--font-ibm-plex-mono), ui-monospace, monospace;
+
+  min-width: 0;
+  background: var(--bg);
+  color: var(--fg);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.num {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.header {
+  border-radius: 14px;
+  background: linear-gradient(120deg, #4b1d96, #7b3fe0);
+  color: #fff;
+  padding: 20px 22px;
+}
+.header h1 {
+  font-family: inherit;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+.header p {
+  margin: 6px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+  max-width: 900px;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 16px;
+  margin: 14px 0 10px;
+  font-size: 13px;
+}
+.switch {
+  display: inline-flex;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  padding: 2px;
+}
+.switch button {
+  border: 0;
+  background: transparent;
+  color: var(--fg2);
+  padding: 5px 12px;
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.switch button[aria-pressed="true"] {
+  background: var(--plan);
+  color: #fff;
+}
+.toolbar select {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--fg);
+  padding: 5px 8px;
+  font: inherit;
+}
+.toolbar label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--fg2);
+}
+.linkBtn {
+  border: 0;
+  background: none;
+  color: var(--plan);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+.linkBtn:hover {
+  text-decoration: underline;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  font-size: 12px;
+  color: var(--fg2);
+  margin-bottom: 12px;
+}
+.legend > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.swatchNd {
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  border: 1.5px dashed var(--muted);
+  border-radius: 3px;
+}
+
+.chipP,
+.chipS {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 0 4px;
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 11px;
+  line-height: 16px;
+}
+.chipP {
+  background: var(--ok);
+  color: var(--ok-fg);
+  border: 1px solid var(--ok);
+}
+.chipS {
+  background: var(--prop);
+  color: var(--prop-fg);
+  border: 1px dashed var(--prop-fg);
+}
+.badgeOver {
+  display: inline-block;
+  background: var(--over-fg);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0 6px;
+  font-family: var(--mono);
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 600;
+}
+.badge {
+  display: inline-block;
+  background: var(--ok);
+  color: var(--ok-fg);
+  border-radius: 999px;
+  padding: 0 7px;
+  font-family: var(--mono);
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+}
+
+.panel {
+  overflow: auto;
+  max-height: calc(100vh - 140px);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 13px;
+  min-width: 100%;
+}
+.table th,
+.table td {
+  border-bottom: 1px solid var(--grid);
+  padding: 6px 8px;
+  vertical-align: middle;
+}
+.table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--fg);
+  white-space: nowrap;
+}
+.table thead th small {
+  display: block;
+  font-weight: 500;
+  color: var(--muted);
+  font-size: 11px;
+}
+.stickyCol {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: var(--surface);
+  min-width: 250px;
+  max-width: 300px;
+  width: 280px;
+  text-align: left;
+  border-right: 1px solid var(--line);
+}
+.table thead th.stickyCol {
+  z-index: 3;
+  text-align: left;
+}
+
+.groupRow th {
+  background: var(--chip);
+  color: var(--fg2);
+  font-variant: small-caps;
+  text-transform: lowercase;
+  letter-spacing: 0.04em;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: left;
+  position: sticky;
+  left: 0;
+}
+.teamRow th,
+.teamRow td {
+  background: var(--sel);
+  font-weight: 600;
+}
+
+.rowHead {
+  cursor: pointer;
+  outline: none;
+}
+.rowHead:focus-visible {
+  box-shadow: inset 0 0 0 2px var(--plan);
+}
+.rowHead:hover {
+  background: var(--sel);
+}
+.caret {
+  display: inline-block;
+  width: 14px;
+  color: var(--muted);
+  transition: transform 0.15s;
+}
+.caretOpen {
+  transform: rotate(90deg);
+}
+.name {
+  font-weight: 600;
+}
+.sub {
+  display: block;
+  color: var(--muted);
+  font-size: 11.5px;
+  margin-left: 14px;
+}
+.subOver {
+  display: block;
+  color: var(--over-fg);
+  font-weight: 700;
+  font-size: 11.5px;
+  margin-left: 14px;
+}
+.subNd {
+  display: block;
+  color: var(--muted);
+  font-style: italic;
+  font-size: 11.5px;
+  margin-left: 14px;
+}
+.childRow th {
+  font-weight: 400;
+  padding-left: 30px;
+  background: #fcfbfe;
+}
+.childRow td {
+  background: #fcfbfe;
+}
+
+.cell {
+  text-align: center;
+  white-space: nowrap;
+  min-width: 92px;
+}
+.cellOver {
+  background: var(--over);
+  box-shadow: inset 0 0 0 1px var(--over-fg);
+}
+.cellNd {
+  box-shadow: inset 0 0 0 1.5px var(--line);
+}
+.big {
+  font-weight: 700;
+}
+.goal {
+  color: var(--muted);
+}
+.zero {
+  color: var(--muted);
+}
+.line2 {
+  display: block;
+  margin-top: 2px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.dot {
+  color: var(--muted);
+}
+.res {
+  display: block;
+  margin-top: 2px;
+  font-size: 11px;
+  color: var(--plan);
+  white-space: nowrap;
+}
+.resZero {
+  color: var(--muted);
+}
+.resNeg {
+  color: var(--over-fg);
+  font-weight: 700;
+}
+.overText {
+  color: var(--over-fg);
+  font-weight: 700;
+  font-size: 12px;
+}
+.mutedText {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 50;
+  pointer-events: none;
+  background: var(--surface);
+  color: var(--fg);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgb(29 20 48 / 0.16);
+  padding: 10px 12px;
+  font-size: 12px;
+  min-width: 220px;
+  max-width: 300px;
+}
+.tooltip strong {
+  display: block;
+  margin-bottom: 6px;
+}
+.tipRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.tipRow span:last-child {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+}
+.tipDraft {
+  color: var(--prop-fg);
+}
+.tipOver {
+  color: var(--over-fg);
+  font-weight: 700;
+}
+
+.notes {
+  margin-top: 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px 18px;
+  font-size: 13px;
+  color: var(--fg2);
+}
+.notes h2 {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--fg);
+  margin: 0 0 6px;
+}
+.notes ul {
+  list-style: disc;
+  padding-left: 18px;
+  margin: 0;
+}
+.notes li {
+  margin: 3px 0;
+}
+
+@media (max-width: 640px) {
+  .root {
+    padding: 10px;
+  }
+  .stickyCol {
+    min-width: 170px;
+    width: 170px;
+  }
+}
