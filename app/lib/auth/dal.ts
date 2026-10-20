@@ -82,18 +82,24 @@ export async function requireGlobalVisibility(): Promise<Profile> {
   return profile;
 }
 
-// Moduli in anteprima: visibili solo a questi utenti (e solo se superadmin),
-// finché non si decide a chi aprirli. Per aprirli a tutti i superadmin basta
-// svuotare il controllo sull'email in canSeeCapacityPreview.
-const CAPACITY_PREVIEW_EMAILS = ["c.rossetto@digiduu.it", "c.rossetto@oriens.consulting"];
+// Modulo in anteprima: visibile solo a questi utenti (a prescindere da ruolo
+// e "Accesso moduli"), finché non si decide a chi aprirlo.
+const CAPACITY_PREVIEW_EMAILS = [
+  "c.rossetto@digiduu.it",
+  "c.rossetto@oriens.consulting",
+  "l.dambrosio@digiduu.it",
+  "l.realdon@oriens.consulting",
+  "g.piazza@oriens.consulting",
+];
 
 export function canSeeCapacityPreview(profile: Profile | null): boolean {
-  return !!profile && profile.role === "superadmin" && CAPACITY_PREVIEW_EMAILS.includes(profile.email.toLowerCase());
+  return !!profile && CAPACITY_PREVIEW_EMAILS.includes(profile.email.toLowerCase());
 }
 
 // Confine di sicurezza reale di Capacity Digiduu (la Sidebar nasconde la
-// voce solo per comodità visiva); la RLS della tabella limita comunque la
-// lettura ai superadmin (vedi migration 20261020100000_capacity_digiduu_generations.sql).
+// voce solo per comodità visiva). La RLS della tabella resta limitata ai
+// superadmin: la pagina legge i dati con il client service role solo dopo
+// questo controllo (vedi app/(app)/capacity-digiduu/page.tsx).
 export async function requireCapacityAccess(): Promise<Profile> {
   const profile = await getCurrentProfile();
 

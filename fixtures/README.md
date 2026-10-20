@@ -172,3 +172,19 @@ Lo script non sovrascrive le versioni Pipeline salvate a mano (con
 vengono da Odoo, e quindi sono riprese dalla generazione precedente: il
 target annuo per cliente della Pipeline Digiduu e i documenti
 SAL/Certificato del Portfolio.
+
+## Report Progetti Oriens e Capacity Digiduu (dal 20/10/2026)
+
+Anche il Report Progetti Oriens si rigenera da Odoo, non più per trascrizione
+manuale: baseline dall'ordine di vendita, actual/bozza da fatture cliente e
+fornitore imputate al conto analitico del progetto e dai fogli ore, dettaglio
+per consulente dalle righe d'ordine "CONSULENZA A PROGETTO X.COGNOME". Le
+anomalie sono regole automatiche; le note scritte a mano nella generazione
+precedente restano allegate a ogni progetto come "note storiche". File grezzi
+e regole in testa allo script.
+
+```bash
+node scripts/build-oriens-report-fixture.mjs <cartella-scarichi-oriens> <YYYY-MM-DD>
+node scripts/build-capacity-fixture.mjs <cartella-scarichi-capacity> <YYYY-MM-DD>
+node scripts/load-odoo-sync.mjs --oriens-report <YYYY-MM-DD> --capacity <YYYY-MM-DD>
+```

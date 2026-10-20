@@ -74,7 +74,7 @@ const navItems = [
     label: "Capacity Digiduu",
     // Modulo in anteprima: visibile solo a chi passa canSeeCapacityPreview()
     // (vedi app/lib/auth/dal.ts), controllo reale in requireCapacityAccess()
-    // dentro la pagina e nella RLS della tabella.
+    // dentro la pagina. Vale anche per chi ha "Accesso moduli" ristretto.
     previewOnly: true,
     icon: (
       <svg
@@ -134,9 +134,11 @@ export default function Sidebar({
     oriens: ["/pipeline-commerciale", "/report-progetti-oriens"],
   };
   const allowedHrefs = role === "superadmin" ? null : allowedHrefsByModuleAccess[moduleAccess];
-  const visibleNavItems = (allowedHrefs ? navItems.filter((item) => allowedHrefs.includes(item.href)) : navItems)
-    .filter((item) => !item.requiresGlobal || role === "superadmin" || visibilityGroup === "global")
-    .filter((item) => !item.previewOnly || canSeeCapacity);
+  const visibleNavItems = navItems.filter((item) =>
+    item.previewOnly
+      ? canSeeCapacity
+      : (!allowedHrefs || allowedHrefs.includes(item.href)) && (!item.requiresGlobal || role === "superadmin" || visibilityGroup === "global")
+  );
 
   async function handleLogout() {
     const supabase = createClient();

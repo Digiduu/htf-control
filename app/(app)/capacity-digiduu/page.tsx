@@ -1,19 +1,20 @@
 import { Figtree } from "next/font/google";
 import { requireCapacityAccess } from "../../lib/auth/dal";
-import { createClient } from "../../lib/supabase/server";
+import { createAdminClient } from "../../lib/supabase/admin";
 import type { CapacityDoc } from "./lib/types";
 import CapacityClient from "./components/CapacityClient";
 
 const figtree = Figtree({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
 // Modulo in anteprima, visibile solo a chi passa requireCapacityAccess()
-// (vedi app/lib/auth/dal.ts); la RLS della tabella limita comunque la
-// lettura ai superadmin. Legge l'ultima generazione caricata con
-// scripts/load-odoo-sync.mjs --capacity <data>.
+// (lista di email in app/lib/auth/dal.ts, anche utenti non superadmin). La
+// RLS della tabella ammette solo i superadmin, quindi la lettura usa il
+// client service role, e solo dopo il controllo qui sotto. Legge l'ultima
+// generazione caricata con scripts/load-odoo-sync.mjs --capacity <data>.
 export default async function CapacityDigiduuPage() {
   await requireCapacityAccess();
 
-  const supabase = await createClient();
+  const supabase = createAdminClient();
   const { data: rows, error } = await supabase
     .from("capacity_digiduu_generations")
     .select("date, data")
