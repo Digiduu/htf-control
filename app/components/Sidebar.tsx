@@ -75,7 +75,7 @@ const navItems = [
     // Modulo in anteprima: visibile solo a chi passa canSeeCapacityPreview()
     // (vedi app/lib/auth/dal.ts), controllo reale in requireCapacityAccess()
     // dentro la pagina. Vale anche per chi ha "Accesso moduli" ristretto.
-    previewOnly: true,
+    previewOnly: "capacity" as const,
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -91,6 +91,28 @@ const navItems = [
       </svg>
     ),
   },
+  {
+    href: "/report-assistenza",
+    label: "Report Assistenza",
+    // Come Capacity: visibile solo a chi passa canSeeReportAssistenza(),
+    // controllo reale in requireReportAssistenzaAccess() dentro la pagina.
+    previewOnly: "assistenza" as const,
+    icon: (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={1.75}
+        className="h-4 w-4"
+        aria-hidden="true"
+      >
+        <path d="M4.5 13v-1.5a7.5 7.5 0 0 1 15 0V13" strokeLinecap="round" strokeLinejoin="round" />
+        <rect x="3.5" y="13" width="4" height="6" rx="1.5" />
+        <rect x="16.5" y="13" width="4" height="6" rx="1.5" />
+        <path d="M18.5 19c0 1.2-1.5 2-4 2h-1.5" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+  },
 ];
 
 const PINNED_KEY = "htf-sidebar-pinned";
@@ -100,11 +122,13 @@ export default function Sidebar({
   moduleAccess = "all",
   visibilityGroup = "global",
   canSeeCapacity = false,
+  canSeeReportAssistenza = false,
 }: {
   role: UserRole;
   moduleAccess?: ModuleAccess;
   visibilityGroup?: VisibilityGroup;
   canSeeCapacity?: boolean;
+  canSeeReportAssistenza?: boolean;
 }) {
   const pathname = usePathname();
   const router = useRouter();
@@ -134,11 +158,13 @@ export default function Sidebar({
     pipeline_commerciale_only: ["/pipeline-commerciale"],
     digiduu: ["/pipeline-commerciale", "/portfolio-progetti-digiduu"],
     oriens: ["/pipeline-commerciale", "/report-progetti-oriens"],
+    // Solo le voci in anteprima concesse per email (Report Assistenza)
+    report_assistenza_only: [],
   };
   const allowedHrefs = role === "superadmin" ? null : allowedHrefsByModuleAccess[moduleAccess];
   const visibleNavItems = navItems.filter((item) =>
     item.previewOnly
-      ? canSeeCapacity
+      ? (item.previewOnly === "capacity" ? canSeeCapacity : canSeeReportAssistenza)
       : (!allowedHrefs || allowedHrefs.includes(item.href)) && (!item.requiresGlobal || role === "superadmin" || visibilityGroup === "global")
   );
 

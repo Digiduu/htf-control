@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import Sidebar from "../components/Sidebar";
-import { canSeeCapacityPreview, getCurrentProfile } from "../lib/auth/dal";
+import { canSeeCapacityPreview, canSeeReportAssistenza, getCurrentProfile } from "../lib/auth/dal";
 
 // Layout condiviso da tutte le route autenticate (Pipeline Commerciale,
 // Analisi Commessa, e i moduli futuri): la sidebar vive qui, non nel root
@@ -25,6 +25,7 @@ export default async function AuthenticatedLayout({
         moduleAccess={profile?.module_access ?? "all"}
         visibilityGroup={profile?.visibility_group ?? "global"}
         canSeeCapacity={canSeeCapacityPreview(profile)}
+        canSeeReportAssistenza={canSeeReportAssistenza(profile)}
       />
       <main className="flex-1 overflow-y-auto bg-white">{children}</main>
     </>

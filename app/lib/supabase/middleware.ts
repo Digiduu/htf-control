@@ -45,7 +45,8 @@ export async function updateSession(request: NextRequest) {
 
   if (user && isPublicPath) {
     const url = request.nextUrl.clone();
-    url.pathname = "/pipeline-commerciale";
+    // "/" smista sulla pagina d'ingresso dell'utente (vedi homePath in dal.ts)
+    url.pathname = "/";
     return NextResponse.redirect(url);
   }
 
