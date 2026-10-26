@@ -1,0 +1,3532 @@
+{
+ "sottotitolo": "Report a consuntivo per Strategist → Project Manager → progetto, ricalcolato da Odoo il 23/10/2026 (ordini di vendita, fatture cliente e fornitore, fogli ore, Planning).",
+ "perimetro": "Perimetro: 32 progetti attivi (fase \"In corso\"/\"Da fare\", con cliente, non interni) al 23/10/2026.",
+ "kpi": {
+  "progettiAttivi": 32,
+  "fatturatoActual": "888.987 €",
+  "costoActual": "420.386 €",
+  "margineActual": "468.600 €",
+  "margineActualPct": "52,7%",
+  "anomalieRilevate": 80,
+  "progettiZero": 2
+ },
+ "strategists": [
+  {
+   "slug": "luca-realdon",
+   "nome": "Luca Realdon",
+   "navCount": 14,
+   "riepilogo": "14 progetti · fatturato 322.580 € · costo 180.556 € · margine 142.024 € (44,0%)",
+   "pmGroups": [
+    {
+     "slug": "luca-realdon-stefano-franceschi",
+     "nome": "Stefano Franceschi",
+     "countLabel": "4 progetti · 212.538 € fatturato",
+     "progetti": [
+      {
+       "codice": "CC21037",
+       "nome": "Brombal — TG Fase 2 GenAI Project NPAI 5 Window is Glass",
+       "cliente": "Serramenti Brombal S.r.l.",
+       "stato": "In corso",
+       "fatturatoLabel": "85.012 €",
+       "margineLabel": "26.003 € (30,6%)",
+       "margineNeg": false,
+       "nAnomalie": 5,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "128.000,00 €",
+         "giornate": "29",
+         "ricavoMedio": "4.413,79 €",
+         "costo": "29.350,00 €",
+         "margine": "98.650,00 € (77,1%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "85.012,00 €",
+         "giornate": "9,95",
+         "ricavoMedio": "8.545,71 €",
+         "costo": "59.009,00 €",
+         "margine": "26.003,00 € (30,6%)"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "12.000,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "9.200,00 €",
+         "margine": "2.800,00 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "97.012,00 €",
+         "giornate": "9,95",
+         "ricavoMedio": "9.751,99 €",
+         "costo": "68.209,00 €",
+         "margine": "28.803,00 € (29,7%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Nicolas Bertoldi (esterno)",
+         "ordinate": "1",
+         "registrate": "4,82",
+         "fatturate": "25,60 confermate",
+         "costo": "1.600,00 €",
+         "ricavoProQuota": "46.903,17 €",
+         "margine": "45.303,17 €",
+         "fatturateDq": "warn"
+        },
+        {
+         "consulente": "Denis Bianchini (esterno)",
+         "ordinate": "14",
+         "registrate": "1,94",
+         "fatturate": "12 confermate / 2 bozza (1.000 €)",
+         "costo": "6.000,00 € actual · 1.000,00 € bozza",
+         "ricavoProQuota": "21.985,86 €",
+         "margine": "15.985,86 €",
+         "fatturateDq": "warn"
+        },
+        {
+         "consulente": "Andrea Bertoldi (esterno)",
+         "ordinate": "8",
+         "registrate": "3,19",
+         "fatturate": "4,80 confermate / 1,60 bozza (800 €)",
+         "costo": "2.400,00 € actual · 800,00 € bozza",
+         "ricavoProQuota": "8.794,34 €",
+         "margine": "6.394,34 €",
+         "fatturateDq": "warn"
+        },
+        {
+         "consulente": "Stefano Franceschi (esterno)",
+         "ordinate": "6",
+         "registrate": "—",
+         "fatturate": "4 confermate / 2 bozza (1.200 €)",
+         "costo": "2.400,00 € actual · 1.200,00 € bozza",
+         "ricavoProQuota": "7.328,62 €",
+         "margine": "4.928,62 €"
+        }
+       ],
+       "altriCosti": [
+        "Stefano Franceschi — Success Fee PB Businee Unit - Tech Garage S.FRANCESCHI: 0,00 € confermati · 6.200,00 € in bozza",
+        "PRODES di Bianchini Denis e S.N.C. — Rimborso spesa: 80,00 € confermati",
+        "It+Robotics (It Robotics) — FORNITORI TECH GARAGE (IT+Robotics): 34.500,00 € confermati",
+        "PRODES di Bianchini Denis e S.N.C. — Rimborsi spesa: 29,00 € confermati",
+        "Plumake S.r.l. — FORNITORI TECH GARAGE (Plumake): 12.000,00 € confermati"
+       ],
+       "anomalie": [
+        "Margine forecast 29,7% sotto il margine di baseline 77,1% di oltre 10 punti.",
+        "Costi fornitore in bozza per 9.200,00 € (fatture da ricevere/confermare).",
+        "Nicolas Bertoldi: registrate a foglio ore 4,82 gg, fatturate dal fornitore 25,60 gg.",
+        "Denis Bianchini: registrate a foglio ore 1,94 gg, fatturate dal fornitore 14 gg.",
+        "Andrea Bertoldi: registrate a foglio ore 3,19 gg, fatturate dal fornitore 6,40 gg."
+       ],
+       "noteStoriche": [
+        "Margine forecast 29,7% sotto il margine di baseline 77,1% di oltre 10 punti.",
+        "Costi fornitore in bozza per 9.200,00 € (fatture da ricevere/confermare).",
+        "Nicolas Bertoldi: registrate a foglio ore 4,82 gg, fatturate dal fornitore 25,60 gg.",
+        "Denis Bianchini: registrate a foglio ore 1,94 gg, fatturate dal fornitore 14 gg.",
+        "Andrea Bertoldi: registrate a foglio ore 3,19 gg, fatturate dal fornitore 6,40 gg."
+       ],
+       "noteStoricheData": "20/10/2026"
+      },
+      {
+       "codice": "CC21036",
+       "nome": "Brombal — TG Fase 2 GenAI Project NPAI 4 Intelligent Welding",
+       "cliente": "Serramenti Brombal S.r.l.",
+       "stato": "In corso",
+       "fatturatoLabel": "76.012 €",
+       "margineLabel": "37.360 € (49,2%)",
+       "margineNeg": false,
+       "nAnomalie": 4,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "102.000,00 €",
+         "giornate": "30",
+         "ricavoMedio": "3.400,00 €",
+         "costo": "59.100,00 €",
+         "margine": "42.900,00 € (42,1%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "76.012,00 €",
+         "giornate": "35,81",
+         "ricavoMedio": "2.122,50 €",
+         "costo": "38.652,00 €",
+         "margine": "37.360,00 € (49,2%)"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "24.000,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "20.750,00 €",
+         "margine": "3.250,00 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "100.012,00 €",
+         "giornate": "35,81",
+         "ricavoMedio": "2.792,66 €",
+         "costo": "59.402,00 €",
+         "margine": "40.610,00 € (40,6%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Denis Bianchini (esterno)",
+         "ordinate": "14",
+         "registrate": "26,81",
+         "fatturate": "12 confermate / 2 bozza (1.000 €)",
+         "costo": "6.000,00 € actual · 1.000,00 € bozza",
+         "ricavoProQuota": "38.959,56 €",
+         "margine": "32.959,56 €",
+         "fatturateDq": "warn"
+        },
+        {
+         "consulente": "Andrea Bertoldi (esterno)",
+         "ordinate": "9",
+         "registrate": "9",
+         "fatturate": "19,50 confermate / 1,50 bozza (750 €)",
+         "costo": "4.500,00 € actual · 750,00 € bozza",
+         "ricavoProQuota": "28.334,22 €",
+         "margine": "23.834,22 €",
+         "fatturateDq": "warn"
+        },
+        {
+         "consulente": "Stefano Franceschi (esterno)",
+         "ordinate": "7",
+         "registrate": "—",
+         "fatturate": "6 confermate / 4 bozza (2.400 €)",
+         "costo": "3.600,00 € actual · 2.400,00 € bozza",
+         "ricavoProQuota": "8.718,22 €",
+         "margine": "5.118,22 €"
+        }
+       ],
+       "altriCosti": [
+        "Stefano Franceschi — Success Fee PB Businee Unit - Tech Garage S.FRANCESCHI: 0,00 € confermati · 6.600,00 € in bozza",
+        "Plumake S.r.l. — FORNITORI TECH GARAGE (Plumake): 15.506,00 € confermati · 9.994,00 € in bozza",
+        "Plumake S.r.l. — Arrotondamento: 0,00 € confermati · 6,00 € in bozza",
+        "It+Robotics (It Robotics) — FORNITORI TECH GARAGE (IT+Robotics): 8.500,00 € confermati",
+        "PRODES di Bianchini Denis e S.N.C. — Rimborsi spesa: 29,00 € confermati",
+        "Andrea Bertoldi — Rimborsi spesa: 190,00 € confermati",
+        "PRODES di Bianchini Denis e S.N.C. — Trasferta Italia: 72,00 € confermati",
+        "Andrea Bertoldi — Rimborso KM Brombal - TG Fase 2 // Rimborso KM Progetto CC21036 - Brombal - TG Fase 2: 255,00 € confermati"
+       ],
+       "anomalie": [
+        "Giornate registrate (35,81) oltre le giornate ordinate (30): +5,81 gg.",
+        "Costi fornitore in bozza per 20.750,00 € (fatture da ricevere/confermare).",
+        "Denis Bianchini: registrate a foglio ore 26,81 gg, fatturate dal fornitore 14 gg.",
+        "Andrea Bertoldi: registrate a foglio ore 9 gg, fatturate dal fornitore 21 gg."
+       ],
+       "noteStoriche": [
+        "Giornate registrate (35,81) oltre le giornate ordinate (30): +5,81 gg.",
+        "Costi fornitore in bozza per 19.470,00 € (fatture da ricevere/confermare).",
+        "Denis Bianchini: registrate a foglio ore 26,81 gg, fatturate dal fornitore 14 gg.",
+        "Andrea Bertoldi: registrate a foglio ore 9 gg, fatturate dal fornitore 19,50 gg."
+       ],
+       "noteStoricheData": "20/10/2026"
+      },
+      {
+       "codice": "CC21035",
+       "nome": "Brombal — TG Fase 2 GenAI Project NPAI 3 Working Together",
+       "cliente": "Serramenti Brombal S.r.l.",
+       "stato": "In corso",
+       "fatturatoLabel": "50.012 €",
+       "margineLabel": "37.366 € (74,7%)",
+       "margineNeg": false,
+       "nAnomalie": 2,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "78.000,00 €",
+         "giornate": "26",
+         "ricavoMedio": "3.000,00 €",
+         "costo": "56.950,00 €",
+         "margine": "21.050,00 € (27,0%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "50.012,00 €",
+         "giornate": "5,38",
+         "ricavoMedio": "9.304,56 €",
+         "costo": "12.646,50 €",
+         "margine": "37.365,50 € (74,7%)"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "22.000,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "11.225,40 €",
+         "margine": "10.774,60 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "72.012,00 €",
+         "giornate": "5,38",
+         "ricavoMedio": "13.397,58 €",
+         "costo": "23.871,90 €",
+         "margine": "48.140,10 € (66,9%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Daniele Fogale (esterno)",
+         "ordinate": "12",
+         "registrate": "1,75",
+         "fatturate": "1,75 confermate / 10,25 bozza (4.100 €)",
+         "costo": "700,00 € actual · 4.100,00 € bozza",
+         "ricavoProQuota": "9.833,82 €",
+         "margine": "9.133,82 €",
+         "fatturateDq": "warn"
+        },
+        {
+         "consulente": "Stefano Franceschi (esterno)",
+         "ordinate": "5",
+         "registrate": "—",
+         "fatturate": "3,50 confermate / 1,83 bozza (1.100 €)",
+         "costo": "2.000,00 € actual · 1.100,40 € bozza",
+         "ricavoProQuota": "19.667,64 €",
+         "margine": "17.667,64 €"
+        },
+        {
+         "consulente": "Federico Tapparello (esterno)",
+         "ordinate": "4",
+         "registrate": "3,63",
+         "fatturate": "3,65 confermate / 0,35 bozza (175 €)",
+         "costo": "1.825,00 € actual · 175,00 € bozza",
+         "ricavoProQuota": "20.510,54 €",
+         "margine": "18.685,54 €",
+         "fatturateDq": "ok"
+        },
+        {
+         "consulente": "Digiduu S.r.l. (esterno)",
+         "ordinate": "—",
+         "registrate": "—",
+         "fatturate": "0 confermate / 5 bozza (2.250 €)",
+         "costo": "0,00 € actual · 2.250,00 € bozza",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        }
+       ],
+       "altriCosti": [
+        "Stefano Franceschi — Success Fee PB Businee Unit - Tech Garage S.FRANCESCHI: 0,00 € confermati · 3.600,00 € in bozza",
+        "Federico Tapparello — rimborso: 121,50 € confermati",
+        "AISENT S.R.L. — Attività di consulenza - Progetto TG Fase 2 GenAI Project NPAI 3 Working Together - Vs. Riferimento contratto N. CC21035 20% acconto all'ordine: 8.000,00 € confermati"
+       ],
+       "anomalie": [
+        "Costi fornitore in bozza per 11.225,40 € (fatture da ricevere/confermare).",
+        "Daniele Fogale: registrate a foglio ore 1,75 gg, fatturate dal fornitore 12 gg."
+       ],
+       "noteStoriche": [
+        "Costi fornitore in bozza per 8.550,40 € (fatture da ricevere/confermare).",
+        "Daniele Fogale: registrate a foglio ore 1,75 gg, fatturate dal fornitore 5,75 gg."
+       ],
+       "noteStoricheData": "20/10/2026"
+      },
+      {
+       "codice": "CC21034",
+       "nome": "Brombal — TG Fase 2 GenAI Project NPAI 1 Design Acceletator",
+       "cliente": "Serramenti Brombal S.r.l.",
+       "stato": "In corso",
+       "fatturatoLabel": "1.502 €",
+       "margineLabel": "1.502 € (100,0%)",
+       "margineNeg": false,
+       "nAnomalie": 2,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "12.000,00 €",
+         "giornate": "10",
+         "ricavoMedio": "1.200,00 €",
+         "costo": "6.450,00 €",
+         "margine": "5.550,00 € (46,3%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "1.502,00 €",
+         "giornate": "0",
+         "ricavoMedio": "—",
+         "costo": "0,00 €",
+         "margine": "1.502,00 € (100,0%)"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "10.500,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "3.600,00 €",
+         "margine": "6.900,00 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "12.002,00 €",
+         "giornate": "0",
+         "ricavoMedio": "—",
+         "costo": "3.600,00 €",
+         "margine": "8.402,00 € (70,0%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Luca Realdon (interno)",
+         "ordinate": "5",
+         "registrate": "—",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "consulente": "Stefano Franceschi (esterno)",
+         "ordinate": "5",
+         "registrate": "—",
+         "fatturate": "0 confermate / 4 bozza (2.400 €)",
+         "costo": "0,00 € actual · 2.400,00 € bozza",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        }
+       ],
+       "altriCosti": [
+        "Stefano Franceschi — Success Fee PB Businee Unit - Tech Garage S.FRANCESCHI: 0,00 € confermati · 1.200,00 € in bozza"
+       ],
+       "anomalie": [
+        "Ricavi forecast 12.002 € superiori alla baseline 12.000 € (+2 €).",
+        "Costi fornitore in bozza per 3.600,00 € (fatture da ricevere/confermare)."
+       ],
+       "noteStoriche": [
+        "Ricavi forecast 12.002 € superiori alla baseline 12.000 € (+2 €).",
+        "Costi fornitore in bozza per 3.600,00 € (fatture da ricevere/confermare)."
+       ],
+       "noteStoricheData": "20/10/2026"
+      }
+     ]
+    },
+    {
+     "slug": "luca-realdon-andrea-bertoldi",
+     "nome": "Andrea Bertoldi",
+     "countLabel": "2 progetti · 40.840 € fatturato",
+     "progetti": [
+      {
+       "codice": "CC21059",
+       "nome": "Zanatta — Affiancamento marzo — dicembre 2026",
+       "cliente": "Zanatta Vetro S.r.l.",
+       "stato": "In corso",
+       "fatturatoLabel": "37.000 €",
+       "margineLabel": "5.841 € (15,8%)",
+       "margineNeg": false,
+       "nAnomalie": 4,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "4.500,00 €",
+         "giornate": "4",
+         "ricavoMedio": "1.125,00 €",
+         "costo": "2.000,00 €",
+         "margine": "2.500,00 € (55,6%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "37.000,00 €",
+         "giornate": "37",
+         "ricavoMedio": "1.000,00 €",
+         "costo": "31.159,00 €",
+         "margine": "5.841,00 € (15,8%)"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "0,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "37.000,00 €",
+         "giornate": "37",
+         "ricavoMedio": "1.000,00 €",
+         "costo": "31.159,00 €",
+         "margine": "5.841,00 € (15,8%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Nicolas Bertoldi (esterno)",
+         "ordinate": "2",
+         "registrate": "18",
+         "fatturate": "32 confermate",
+         "costo": "16.000,00 €",
+         "ricavoProQuota": "23.215,69 €",
+         "margine": "7.215,69 €",
+         "fatturateDq": "warn"
+        },
+        {
+         "consulente": "Andrea Bertoldi (esterno)",
+         "ordinate": "2",
+         "registrate": "19",
+         "fatturate": "19 confermate",
+         "costo": "9.500,00 €",
+         "ricavoProQuota": "13.784,31 €",
+         "margine": "4.284,31 €",
+         "fatturateDq": "ok"
+        }
+       ],
+       "altriCosti": [
+        "Andrea Bertoldi — Rimborso spesa: 700,00 € confermati",
+        "Andrea Bertoldi — rimborso: 1.029,50 € confermati",
+        "Andrea Bertoldi — Rimborso KM ZANATTA // Rimborso KM Progetto CC21059 - ZANATTA: 1.530,00 € confermati",
+        "Nicolas Bertoldi — rimborso: 2.399,50 € confermati"
+       ],
+       "anomalie": [
+        "Giornate registrate (37) oltre le giornate ordinate (4): +33 gg.",
+        "Ricavi forecast 37.000 € superiori alla baseline 4.500 € (+32.500 €).",
+        "Margine forecast 15,8% sotto il margine di baseline 55,6% di oltre 10 punti.",
+        "Nicolas Bertoldi: registrate a foglio ore 18 gg, fatturate dal fornitore 32 gg."
+       ],
+       "noteStoriche": [
+        "Giornate registrate (37) oltre le giornate ordinate (4): +33 gg.",
+        "Ricavi forecast 37.000 € superiori alla baseline 4.500 € (+32.500 €).",
+        "Margine forecast 25,2% sotto il margine di baseline 55,6% di oltre 10 punti.",
+        "Nicolas Bertoldi: registrate a foglio ore 18 gg, fatturate dal fornitore 60 gg.",
+        "Andrea Bertoldi: registrate a foglio ore 19 gg, fatturate dal fornitore 43 gg."
+       ],
+       "noteStoricheData": "20/10/2026"
+      },
+      {
+       "codice": "CC21074",
+       "nome": "Colombo — Affiancamento Direzionale",
+       "cliente": "Colombo S.r.l.",
+       "stato": "In corso",
+       "fatturatoLabel": "3.840 €",
+       "margineLabel": "2.630 € (68,5%)",
+       "margineNeg": false,
+       "nAnomalie": 2,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "8.540,00 €",
+         "giornate": "4,38",
+         "ricavoMedio": "1.952,00 €",
+         "costo": "2.500,00 €",
+         "margine": "6.040,00 € (70,7%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "3.840,00 €",
+         "giornate": "3",
+         "ricavoMedio": "1.280,00 €",
+         "costo": "1.210,50 €",
+         "margine": "2.629,50 € (68,5%)"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "0,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "3.840,00 €",
+         "giornate": "3",
+         "ricavoMedio": "1.280,00 €",
+         "costo": "1.210,50 €",
+         "margine": "2.629,50 € (68,5%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Andrea Bertoldi (esterno)",
+         "ordinate": "1",
+         "registrate": "2",
+         "fatturate": "1 confermate",
+         "costo": "500,00 €",
+         "ricavoProQuota": "2.560,00 €",
+         "margine": "2.060,00 €",
+         "fatturateDq": "warn"
+        },
+        {
+         "consulente": "Alessandra Corradini (interno)",
+         "ordinate": "1",
+         "registrate": "1",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "1.280,00 €",
+         "margine": "1.280,00 €"
+        },
+        {
+         "consulente": "Nicolas Bertoldi (interno)",
+         "ordinate": "1",
+         "registrate": "—",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "consulente": "A. Longhini (interno)",
+         "ordinate": "1",
+         "registrate": "—",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "consulente": "Valerio Mangano (interno)",
+         "ordinate": "0,25",
+         "registrate": "—",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        }
+       ],
+       "altriCosti": [
+        "Andrea Bertoldi — Colombo // Colombo - Coordinamento progetto Colombo 11/09/2026: 500,00 € confermati",
+        "Andrea Bertoldi — rimborso: 210,50 € confermati"
+       ],
+       "anomalie": [
+        "Andrea Bertoldi: registrate a foglio ore 2 gg, fatturate dal fornitore 1 gg.",
+        "Alessandra Corradini: 1 gg registrate senza costo (né costo standard a foglio ore né fatture fornitore imputate al progetto): margine sovrastimato."
+       ],
+       "noteStoriche": [
+        "Andrea Bertoldi: registrate a foglio ore 2 gg, fatturate dal fornitore 1 gg.",
+        "Alessandra Corradini: 1 gg registrate senza costo (né costo standard a foglio ore né fatture fornitore imputate al progetto): margine sovrastimato."
+       ],
+       "noteStoricheData": "20/10/2026"
+      }
+     ]
+    },
+    {
+     "slug": "luca-realdon-giovanni-de-bei",
+     "nome": "Giovanni De Bei",
+     "countLabel": "1 progetto · 21.700 € fatturato",
+     "progetti": [
+      {
+       "codice": "CC21033",
+       "nome": "Officine Zoppelletto — Affiancamento 2026",
+       "cliente": "Officine Zoppelletto S.r.l.",
+       "stato": "In corso",
+       "fatturatoLabel": "21.700 €",
+       "margineLabel": "12.855 € (59,2%)",
+       "margineNeg": false,
+       "nAnomalie": 3,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "29.300,00 €",
+         "giornate": "20,50",
+         "ricavoMedio": "1.429,27 €",
+         "costo": "11.625,00 €",
+         "margine": "17.675,00 € (60,3%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "21.700,00 €",
+         "giornate": "6,25",
+         "ricavoMedio": "3.472,00 €",
+         "costo": "8.845,40 €",
+         "margine": "12.854,60 € (59,2%)"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "7.500,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "8.535,40 €",
+         "margine": "-1.035,40 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "29.200,00 €",
+         "giornate": "6,25",
+         "ricavoMedio": "4.672,00 €",
+         "costo": "17.380,80 €",
+         "margine": "11.819,20 € (40,5%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Giovanni De Bei (esterno)",
+         "ordinate": "20,50",
+         "registrate": "6,25",
+         "fatturate": "9,70 confermate / 10,80 bozza (7.020 €)",
+         "costo": "6.305,00 € actual · 7.020,00 € bozza",
+         "ricavoProQuota": "21.700,00 €",
+         "margine": "15.395,00 €",
+         "fatturateDq": "warn"
+        }
+       ],
+       "altriCosti": [
+        "R2 Studio — Compenso Commerciale Riccardo Rossato: 0,00 € confermati · 1.375,00 € in bozza",
+        "Giovanni De Bei — Rivalsa Inps: 140,40 € confermati · 140,40 € in bozza",
+        "Giovanni De Bei — Rimborso spesa: 1.000,00 € confermati",
+        "Giovanni De Bei — rimborso: 1.400,00 € confermati"
+       ],
+       "anomalie": [
+        "Margine forecast 40,5% sotto il margine di baseline 60,3% di oltre 10 punti.",
+        "Costi fornitore in bozza per 8.535,40 € (fatture da ricevere/confermare).",
+        "Giovanni De Bei: registrate a foglio ore 6,25 gg, fatturate dal fornitore 20,50 gg."
+       ],
+       "noteStoriche": [
+        "Margine forecast 40,5% sotto il margine di baseline 60,3% di oltre 10 punti.",
+        "Costi fornitore in bozza per 8.535,40 € (fatture da ricevere/confermare).",
+        "Giovanni De Bei: registrate a foglio ore 6,25 gg, fatturate dal fornitore 20,50 gg."
+       ],
+       "noteStoricheData": "20/10/2026"
+      }
+     ]
+    },
+    {
+     "slug": "luca-realdon-elena-trento",
+     "nome": "Elena Trento",
+     "countLabel": "1 progetto · 20.500 € fatturato",
+     "progetti": [
+      {
+       "codice": "CC20968",
+       "nome": "Tim per Trivellato — Analisi per efficientamento service",
+       "cliente": "Tim S.p.A.",
+       "stato": "In corso",
+       "fatturatoLabel": "20.500 €",
+       "margineLabel": "6.799 € (33,2%)",
+       "margineNeg": false,
+       "nAnomalie": 3,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "41.000,00 €",
+         "giornate": "35",
+         "ricavoMedio": "1.171,43 €",
+         "costo": "16.500,00 €",
+         "margine": "24.500,00 € (59,8%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "20.500,00 €",
+         "giornate": "29,75",
+         "ricavoMedio": "689,08 €",
+         "costo": "13.701,20 €",
+         "margine": "6.798,80 € (33,2%)"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "20.500,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "2.437,50 €",
+         "margine": "18.062,50 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "41.000,00 €",
+         "giornate": "29,75",
+         "ricavoMedio": "1.378,15 €",
+         "costo": "16.138,70 €",
+         "margine": "24.861,30 € (60,6%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Elena Trento (interno)",
+         "ordinate": "15",
+         "registrate": "12,94",
+         "fatturate": "—",
+         "costo": "5.827,05 € (interno)",
+         "ricavoProQuota": "8.914,92 €",
+         "margine": "3.087,87 €"
+        },
+        {
+         "consulente": "Federico Tapparello (esterno)",
+         "ordinate": "15",
+         "registrate": "11,13",
+         "fatturate": "10,63 confermate / 4,88 bozza (2.438 €)",
+         "costo": "5.312,50 € actual · 2.437,50 € bozza",
+         "ricavoProQuota": "7.665,97 €",
+         "margine": "2.353,47 €",
+         "fatturateDq": "warn"
+        },
+        {
+         "consulente": "Marco Perillo (interno)",
+         "ordinate": "5",
+         "registrate": "5,69",
+         "fatturate": "—",
+         "costo": "2.561,65 € (interno)",
+         "ricavoProQuota": "3.919,12 €",
+         "margine": "1.357,47 €"
+        }
+       ],
+       "altriCosti": [],
+       "anomalie": [
+        "Costi fornitore in bozza per 2.437,50 € (fatture da ricevere/confermare).",
+        "Federico Tapparello: registrate a foglio ore 11,13 gg, fatturate dal fornitore 15,50 gg.",
+        "Marco Perillo: registrate 5,69 gg su 5 ordinate."
+       ],
+       "noteStoriche": [
+        "Costi fornitore in bozza per 250,00 € (fatture da ricevere/confermare).",
+        "Federico Tapparello: registrate a foglio ore 11,13 gg, fatturate dal fornitore 9,13 gg.",
+        "Marco Perillo: registrate 5,69 gg su 5 ordinate."
+       ],
+       "noteStoricheData": "20/10/2026"
+      }
+     ]
+    },
+    {
+     "slug": "luca-realdon-francesca-galasso",
+     "nome": "Francesca Galasso",
+     "countLabel": "1 progetto · 8.002 € fatturato",
+     "progetti": [
+      {
+       "codice": "CC21064",
+       "nome": "Brombal — Contratto di rete",
+       "cliente": "Serramenti Brombal S.r.l.",
+       "stato": "In corso",
+       "fatturatoLabel": "8.002 €",
+       "margineLabel": "8.002 € (100,0%)",
+       "margineNeg": false,
+       "nAnomalie": 0,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "16.001,00 €",
+         "giornate": "2",
+         "ricavoMedio": "8.000,50 €",
+         "costo": "13.000,00 €",
+         "margine": "3.001,00 € (18,8%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "8.002,00 €",
+         "giornate": "0,13",
+         "ricavoMedio": "64.016,00 €",
+         "costo": "0,00 €",
+         "margine": "8.002,00 € (100,0%)"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "8.000,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "0,00 €",
+         "margine": "8.000,00 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "16.002,00 €",
+         "giornate": "0,13",
+         "ricavoMedio": "128.016,00 €",
+         "costo": "0,00 €",
+         "margine": "16.002,00 € (100,0%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Francesca Galasso (interno)",
+         "ordinate": "2",
+         "registrate": "0,13",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "8.002,00 €",
+         "margine": "8.002,00 €"
+        }
+       ],
+       "altriCosti": [],
+       "anomalie": []
+      }
+     ]
+    },
+    {
+     "slug": "luca-realdon-marco-perillo",
+     "nome": "Marco Perillo",
+     "countLabel": "1 progetto · 6.600 € fatturato",
+     "progetti": [
+      {
+       "codice": "CC21028",
+       "nome": "Tim per Locapal — Analisi",
+       "cliente": "Tim S.p.A.",
+       "stato": "In corso",
+       "fatturatoLabel": "6.600 €",
+       "margineLabel": "970 € (14,7%)",
+       "margineNeg": false,
+       "nAnomalie": 0,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "33.000,00 €",
+         "giornate": "24",
+         "ricavoMedio": "1.375,00 €",
+         "costo": "10.800,00 €",
+         "margine": "22.200,00 € (67,3%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "6.600,00 €",
+         "giornate": "12,50",
+         "ricavoMedio": "528,00 €",
+         "costo": "5.630,00 €",
+         "margine": "970,00 € (14,7%)"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "26.400,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "0,00 €",
+         "margine": "26.400,00 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "33.000,00 €",
+         "giornate": "12,50",
+         "ricavoMedio": "2.640,00 €",
+         "costo": "5.630,00 €",
+         "margine": "27.370,00 € (82,9%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Elena Trento (interno)",
+         "ordinate": "10",
+         "registrate": "10,50",
+         "fatturate": "—",
+         "costo": "4.729,20 € (interno)",
+         "ricavoProQuota": "5.544,00 €",
+         "margine": "814,80 €"
+        },
+        {
+         "consulente": "Marco Perillo (interno)",
+         "ordinate": "10",
+         "registrate": "2",
+         "fatturate": "—",
+         "costo": "900,80 € (interno)",
+         "ricavoProQuota": "1.056,00 €",
+         "margine": "155,20 €"
+        },
+        {
+         "consulente": "Luca Realdon (interno)",
+         "ordinate": "4",
+         "registrate": "—",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        }
+       ],
+       "altriCosti": [],
+       "anomalie": []
+      }
+     ]
+    },
+    {
+     "slug": "luca-realdon-gianluca-geremia",
+     "nome": "Gianluca Geremia",
+     "countLabel": "1 progetto · 6.250 € fatturato",
+     "progetti": [
+      {
+       "codice": "CC21069",
+       "nome": "Digital Automations per Gruppo BEA — Affiancamento",
+       "cliente": "Digital Automations S.r.l.",
+       "stato": "In corso",
+       "fatturatoLabel": "6.250 €",
+       "margineLabel": "3.037 € (48,6%)",
+       "margineNeg": false,
+       "nAnomalie": 3,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "8.750,00 €",
+         "giornate": "7",
+         "ricavoMedio": "1.250,00 €",
+         "costo": "3.500,00 €",
+         "margine": "5.250,00 € (60,0%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "6.250,00 €",
+         "giornate": "5",
+         "ricavoMedio": "1.250,00 €",
+         "costo": "3.212,80 €",
+         "margine": "3.037,20 € (48,6%)"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "0,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "6.250,00 €",
+         "giornate": "5",
+         "ricavoMedio": "1.250,00 €",
+         "costo": "3.212,80 €",
+         "margine": "3.037,20 € (48,6%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Gianluca Geremia (interno)",
+         "ordinate": "7",
+         "registrate": "5",
+         "fatturate": "—",
+         "costo": "2.500,00 € (interno)",
+         "ricavoProQuota": "6.250,00 €",
+         "margine": "3.750,00 €"
+        }
+       ],
+       "altriCosti": [
+        "Gianluca Geremia — rimborso: 712,80 € confermati"
+       ],
+       "anomalie": [
+        "Progetto scaduto con 2.500 € dell'ordine non ancora fatturati né in bozza (forecast 6.250 € su baseline 8.750 €).",
+        "Margine forecast 48,6% sotto il margine di baseline 60,0% di oltre 10 punti.",
+        "Data di fine progetto (30/09/2026) già passata con il progetto ancora \"In corso\"."
+       ],
+       "noteStoriche": [
+        "Progetto scaduto con 2.500 € dell'ordine non ancora fatturati né in bozza (forecast 6.250 € su baseline 8.750 €).",
+        "Margine forecast 48,6% sotto il margine di baseline 60,0% di oltre 10 punti.",
+        "Data di fine progetto (30/09/2026) già passata con il progetto ancora \"In corso\"."
+       ],
+       "noteStoricheData": "20/10/2026"
+      }
+     ]
+    },
+    {
+     "slug": "luca-realdon-chiara-rossetto",
+     "nome": "Chiara Rossetto",
+     "countLabel": "2 progetti · 6.150 € fatturato",
+     "progetti": [
+      {
+       "codice": "CC21073",
+       "nome": "FCF Impianti S.r.l. — Affiancamento Direzionale",
+       "cliente": "FCF Impianti S.r.l.",
+       "stato": "In corso",
+       "fatturatoLabel": "5.000 €",
+       "margineLabel": "3.000 € (60,0%)",
+       "margineNeg": false,
+       "nAnomalie": 2,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "1.250,00 €",
+         "giornate": "1",
+         "ricavoMedio": "1.250,00 €",
+         "costo": "500,00 €",
+         "margine": "750,00 € (60,0%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "5.000,00 €",
+         "giornate": "4",
+         "ricavoMedio": "1.250,00 €",
+         "costo": "2.000,00 €",
+         "margine": "3.000,00 € (60,0%)"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "0,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "5.000,00 €",
+         "giornate": "4",
+         "ricavoMedio": "1.250,00 €",
+         "costo": "2.000,00 €",
+         "margine": "3.000,00 € (60,0%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Massimo Vincenzi (esterno)",
+         "ordinate": "1",
+         "registrate": "4",
+         "fatturate": "3,50 confermate",
+         "costo": "2.000,00 €",
+         "ricavoProQuota": "5.000,00 €",
+         "margine": "3.000,00 €",
+         "fatturateDq": "ok"
+        }
+       ],
+       "altriCosti": [],
+       "anomalie": [
+        "Giornate registrate (4) oltre le giornate ordinate (1): +3 gg.",
+        "Ricavi forecast 5.000 € superiori alla baseline 1.250 € (+3.750 €)."
+       ],
+       "noteStoriche": [
+        "Giornate registrate (4) oltre le giornate ordinate (1): +3 gg.",
+        "Ricavi forecast 5.000 € superiori alla baseline 1.250 € (+3.750 €)."
+       ],
+       "noteStoricheData": "20/10/2026"
+      },
+      {
+       "codice": "CC21065",
+       "nome": "Colombo — Affiancamento Business Intelligence 2026",
+       "cliente": "Colombo S.r.l.",
+       "stato": "In corso",
+       "fatturatoLabel": "1.150 €",
+       "margineLabel": "994 € (86,4%)",
+       "margineNeg": false,
+       "nAnomalie": 1,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "1.150,00 €",
+         "giornate": "1",
+         "ricavoMedio": "1.150,00 €",
+         "costo": "500,00 €",
+         "margine": "650,00 € (56,5%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "1.150,00 €",
+         "giornate": "1",
+         "ricavoMedio": "1.150,00 €",
+         "costo": "156,50 €",
+         "margine": "993,50 € (86,4%)"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "0,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "1.150,00 €",
+         "giornate": "1",
+         "ricavoMedio": "1.150,00 €",
+         "costo": "156,50 €",
+         "margine": "993,50 € (86,4%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Alberto Gugel (esterno)",
+         "ordinate": "1",
+         "registrate": "1",
+         "fatturate": "0,31 confermate",
+         "costo": "156,50 €",
+         "ricavoProQuota": "1.150,00 €",
+         "margine": "993,50 €",
+         "fatturateDq": "warn"
+        }
+       ],
+       "altriCosti": [],
+       "anomalie": [
+        "Alberto Gugel: registrate a foglio ore 1 gg, fatturate dal fornitore 0,31 gg."
+       ],
+       "noteStoriche": [
+        "Alberto Gugel: registrate a foglio ore 1 gg, fatturate dal fornitore 0,31 gg."
+       ],
+       "noteStoricheData": "20/10/2026"
+      }
+     ]
+    },
+    {
+     "slug": "luca-realdon-camilla-tartaria",
+     "nome": "Camilla Tartaria",
+     "countLabel": "1 progetto · 0 € fatturato",
+     "progetti": [
+      {
+       "codice": "CC21056",
+       "nome": "Brombal — Parità di genere",
+       "cliente": "Serramenti Brombal S.r.l.",
+       "stato": "In corso",
+       "fatturatoLabel": "0 €",
+       "margineLabel": "-4.333 €",
+       "margineNeg": true,
+       "nAnomalie": 2,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "6.200,00 €",
+         "giornate": "4",
+         "ricavoMedio": "1.550,00 €",
+         "costo": "12.300,00 €",
+         "margine": "-6.100,00 € (-98,4%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "0,00 €",
+         "giornate": "0",
+         "ricavoMedio": "—",
+         "costo": "4.333,00 €",
+         "margine": "-4.333,00 €"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "17.000,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "7.875,00 €",
+         "margine": "9.125,00 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "17.000,00 €",
+         "giornate": "0",
+         "ricavoMedio": "—",
+         "costo": "12.208,00 €",
+         "margine": "4.792,00 € (28,2%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Francesca Galasso (esterno)",
+         "ordinate": "2",
+         "registrate": "—",
+         "fatturate": "58 confermate / 126 bozza (7.875 €)",
+         "costo": "3.625,00 € actual · 7.875,00 € bozza",
+         "ricavoProQuota": "0,00 €",
+         "margine": "-3.625,00 €"
+        },
+        {
+         "consulente": "Camilla Tartaria (interno)",
+         "ordinate": "2",
+         "registrate": "—",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        }
+       ],
+       "altriCosti": [
+        "G&C Consulting S.r.l. — Rimborsi spesa: 413,00 € confermati",
+        "G&C Consulting S.r.l. — RIMBORSI SPESA: 295,00 € confermati"
+       ],
+       "anomalie": [
+        "Ricavi forecast 17.000 € superiori alla baseline 6.200 € (+10.800 €).",
+        "Costi fornitore in bozza per 7.875,00 € (fatture da ricevere/confermare)."
+       ],
+       "noteStoriche": [
+        "Ricavi forecast 17.000 € superiori alla baseline 6.200 € (+10.800 €)."
+       ],
+       "noteStoricheData": "20/10/2026"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "giuseppe-piazza",
+   "nome": "Giuseppe Piazza",
+   "navCount": 9,
+   "riepilogo": "9 progetti · fatturato 170.250 € · costo 82.615 € · margine 87.635 € (51,5%)",
+   "pmGroups": [
+    {
+     "slug": "giuseppe-piazza-andrea-menegotto",
+     "nome": "Andrea Menegotto",
+     "countLabel": "2 progetti · 72.000 € fatturato",
+     "progetti": [
+      {
+       "codice": "CC21019",
+       "nome": "Mondeo — E-commerce 2026",
+       "cliente": "Mondeo S.r.l.",
+       "stato": "In corso",
+       "fatturatoLabel": "72.000 €",
+       "margineLabel": "40.498 € (56,2%)",
+       "margineNeg": false,
+       "nAnomalie": 2,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "72.000,00 €",
+         "giornate": "120",
+         "ricavoMedio": "600,00 €",
+         "costo": "42.000,00 €",
+         "margine": "30.000,00 € (41,7%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "72.000,00 €",
+         "giornate": "82,50",
+         "ricavoMedio": "872,73 €",
+         "costo": "31.502,00 €",
+         "margine": "40.498,00 € (56,2%)"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "0,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "10.500,00 €",
+         "margine": "-10.500,00 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "72.000,00 €",
+         "giornate": "82,50",
+         "ricavoMedio": "872,73 €",
+         "costo": "42.002,00 €",
+         "margine": "29.998,00 € (41,7%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Andrea Menegotto (esterno)",
+         "ordinate": "120",
+         "registrate": "82,50",
+         "fatturate": "90 confermate / 30 bozza (10.500 €)",
+         "costo": "31.500,00 € actual · 10.500,00 € bozza",
+         "ricavoProQuota": "72.000,00 €",
+         "margine": "40.500,00 €",
+         "fatturateDq": "warn"
+        }
+       ],
+       "altriCosti": [
+        "Andrea Menegotto — Imposta di bollo 2 euro: 2,00 € confermati"
+       ],
+       "anomalie": [
+        "Costi fornitore in bozza per 10.500,00 € (fatture da ricevere/confermare).",
+        "Andrea Menegotto: registrate a foglio ore 82,50 gg, fatturate dal fornitore 120 gg."
+       ],
+       "noteStoriche": [
+        "Costi fornitore in bozza per 10.500,00 € (fatture da ricevere/confermare).",
+        "Andrea Menegotto: registrate a foglio ore 82,50 gg, fatturate dal fornitore 120 gg."
+       ],
+       "noteStoricheData": "20/10/2026"
+      },
+      {
+       "codice": "CC21087",
+       "nome": "Mondeo — E-commerce 2027",
+       "cliente": "Mondeo S.r.l.",
+       "stato": "Da fare",
+       "fatturatoLabel": "0 €",
+       "margineLabel": "0 €",
+       "margineNeg": false,
+       "nAnomalie": 0,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "72.000,00 €",
+         "giornate": "120",
+         "ricavoMedio": "600,00 €",
+         "costo": "42.000,00 €",
+         "margine": "30.000,00 € (41,7%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "0,00 €",
+         "giornate": "0",
+         "ricavoMedio": "—",
+         "costo": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "72.000,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "0,00 €",
+         "margine": "72.000,00 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "72.000,00 €",
+         "giornate": "0",
+         "ricavoMedio": "—",
+         "costo": "0,00 €",
+         "margine": "72.000,00 € (100,0%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Andrea Menegotto (interno)",
+         "ordinate": "120",
+         "registrate": "—",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        }
+       ],
+       "altriCosti": [],
+       "anomalie": []
+      }
+     ]
+    },
+    {
+     "slug": "giuseppe-piazza-marco-laghetto",
+     "nome": "Marco Laghetto",
+     "countLabel": "1 progetto · 60.300 € fatturato",
+     "progetti": [
+      {
+       "codice": "CC20907",
+       "nome": "Mondeo — Affiancamento Ufficio Tecnico",
+       "cliente": "Mondeo S.r.l.",
+       "stato": "In corso",
+       "fatturatoLabel": "60.300 €",
+       "margineLabel": "25.019 € (41,5%)",
+       "margineNeg": false,
+       "nAnomalie": 4,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "62.000,00 €",
+         "giornate": "65",
+         "ricavoMedio": "953,85 €",
+         "costo": "32.500,00 €",
+         "margine": "29.500,00 € (47,6%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "60.300,00 €",
+         "giornate": "76,50",
+         "ricavoMedio": "788,24 €",
+         "costo": "35.281,14 €",
+         "margine": "25.018,86 € (41,5%)"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "0,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "60.300,00 €",
+         "giornate": "76,50",
+         "ricavoMedio": "788,24 €",
+         "costo": "35.281,14 €",
+         "margine": "25.018,86 € (41,5%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Nicola Tiozzo (esterno)",
+         "ordinate": "65",
+         "registrate": "76,50",
+         "fatturate": "151,25 confermate",
+         "costo": "33.109,26 €",
+         "ricavoProQuota": "60.300,00 €",
+         "margine": "27.190,74 €",
+         "fatturateDq": "warn"
+        }
+       ],
+       "altriCosti": [
+        "Nicola Tiozzo — rimborso: 1.918,50 € confermati",
+        "Nicola Tiozzo — Imposta di bollo 2 euro: 4,00 € confermati",
+        "Nicola Tiozzo — Rivalsa Inps: 248,03 € confermati",
+        "Nicola Tiozzo — Arrotondamento: 1,35 € confermati"
+       ],
+       "anomalie": [
+        "Giornate registrate (76,50) oltre le giornate ordinate (65): +11,50 gg.",
+        "Progetto scaduto con 1.700 € dell'ordine non ancora fatturati né in bozza (forecast 60.300 € su baseline 62.000 €).",
+        "Nicola Tiozzo: registrate a foglio ore 76,50 gg, fatturate dal fornitore 151,25 gg.",
+        "Data di fine progetto (31/01/2026) già passata con il progetto ancora \"In corso\"."
+       ],
+       "noteStoriche": [
+        "Giornate registrate (73,19) oltre le giornate ordinate (65): +8,19 gg.",
+        "Progetto scaduto con 1.700 € dell'ordine non ancora fatturati né in bozza (forecast 60.300 € su baseline 62.000 €).",
+        "Nicola Tiozzo: registrate a foglio ore 73,19 gg, fatturate dal fornitore 151,25 gg.",
+        "Data di fine progetto (31/01/2026) già passata con il progetto ancora \"In corso\"."
+       ],
+       "noteStoricheData": "20/10/2026"
+      }
+     ]
+    },
+    {
+     "slug": "giuseppe-piazza-marco-perillo",
+     "nome": "Marco Perillo",
+     "countLabel": "2 progetti · 29.000 € fatturato",
+     "progetti": [
+      {
+       "codice": "CC21030",
+       "nome": "Caoduro Impianti — Envisioning e assessment persone, processi, digital",
+       "cliente": "Caoduro Impianti S.r.l.",
+       "stato": "In corso",
+       "fatturatoLabel": "23.000 €",
+       "margineLabel": "11.069 € (48,1%)",
+       "margineNeg": false,
+       "nAnomalie": 5,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "23.000,00 €",
+         "giornate": "26,50",
+         "ricavoMedio": "867,92 €",
+         "costo": "13.725,00 €",
+         "margine": "9.275,00 € (40,3%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "23.000,00 €",
+         "giornate": "25,21",
+         "ricavoMedio": "912,25 €",
+         "costo": "11.931,41 €",
+         "margine": "11.068,59 € (48,1%)"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "0,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "2.650,00 €",
+         "margine": "-2.650,00 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "23.000,00 €",
+         "giornate": "25,21",
+         "ricavoMedio": "912,25 €",
+         "costo": "14.581,41 €",
+         "margine": "8.418,59 € (36,6%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Marco Perillo (interno)",
+         "ordinate": "10",
+         "registrate": "14,46",
+         "fatturate": "—",
+         "costo": "6.513,91 € (interno)",
+         "ricavoProQuota": "11.790,43 €",
+         "margine": "5.276,52 €"
+        },
+        {
+         "consulente": "Gianluca Geremia (interno)",
+         "ordinate": "3",
+         "registrate": "3,75",
+         "fatturate": "—",
+         "costo": "1.875,00 € (interno)",
+         "ricavoProQuota": "3.057,16 €",
+         "margine": "1.182,16 €"
+        },
+        {
+         "consulente": "Elena Trento (interno)",
+         "ordinate": "3",
+         "registrate": "3,13",
+         "fatturate": "—",
+         "costo": "1.407,50 € (interno)",
+         "ricavoProQuota": "2.547,63 €",
+         "margine": "1.140,13 €"
+        },
+        {
+         "consulente": "Stefano Franceschi (esterno)",
+         "ordinate": "3",
+         "registrate": "—",
+         "fatturate": "2,25 confermate",
+         "costo": "1.350,00 €",
+         "ricavoProQuota": "1.834,29 €",
+         "margine": "484,29 €"
+        },
+        {
+         "consulente": "Mauro Brunello (esterno)",
+         "ordinate": "2",
+         "registrate": "3,13",
+         "fatturate": "0 confermate / 4 bozza (2.400 €)",
+         "costo": "0,00 € actual · 2.400,00 € bozza",
+         "ricavoProQuota": "2.547,63 €",
+         "margine": "2.547,63 €",
+         "fatturateDq": "warn"
+        },
+        {
+         "consulente": "Giuseppe Piazza (interno)",
+         "ordinate": "3,50",
+         "registrate": "—",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "consulente": "Giovanni De Bei (esterno)",
+         "ordinate": "1",
+         "registrate": "0,25",
+         "fatturate": "1 confermate",
+         "costo": "500,00 €",
+         "ricavoProQuota": "815,24 €",
+         "margine": "315,24 €",
+         "fatturateDq": "warn"
+        },
+        {
+         "consulente": "Federico Tapparello (esterno)",
+         "ordinate": "1",
+         "registrate": "0,50",
+         "fatturate": "0,50 confermate / 0,50 bozza (250 €)",
+         "costo": "250,00 € actual · 250,00 € bozza",
+         "ricavoProQuota": "407,62 €",
+         "margine": "157,62 €",
+         "fatturateDq": "ok"
+        }
+       ],
+       "altriCosti": [
+        "Federico Tapparello — rimborso: 15,00 € confermati",
+        "Giovanni De Bei — Rivalsa Inps: 20,00 € confermati"
+       ],
+       "anomalie": [
+        "Costi fornitore in bozza per 2.650,00 € (fatture da ricevere/confermare).",
+        "Marco Perillo: registrate 14,46 gg su 10 ordinate.",
+        "Gianluca Geremia: registrate 3,75 gg su 3 ordinate.",
+        "Mauro Brunello: registrate a foglio ore 3,13 gg, fatturate dal fornitore 4 gg.",
+        "Giovanni De Bei: registrate a foglio ore 0,25 gg, fatturate dal fornitore 1 gg."
+       ],
+       "noteStoriche": [
+        "Costi fornitore in bozza per 1.700,00 € (fatture da ricevere/confermare).",
+        "Marco Perillo: registrate 14,46 gg su 10 ordinate.",
+        "Gianluca Geremia: registrate 3,75 gg su 3 ordinate.",
+        "Mauro Brunello: registrate a foglio ore 3,13 gg, fatturate dal fornitore 2 gg.",
+        "Giovanni De Bei: registrate a foglio ore 0,25 gg, fatturate dal fornitore 1 gg."
+       ],
+       "noteStoricheData": "20/10/2026"
+      },
+      {
+       "codice": "CC21061",
+       "nome": "Servizi Ospedalieri — Progetto Formazione",
+       "cliente": "Servizi Ospedalieri S.p.A.",
+       "stato": "In corso",
+       "fatturatoLabel": "6.000 €",
+       "margineLabel": "6.000 € (100,0%)",
+       "margineNeg": false,
+       "nAnomalie": 0,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "18.600,00 €",
+         "giornate": "15",
+         "ricavoMedio": "1.240,00 €",
+         "costo": "8.450,00 €",
+         "margine": "10.150,00 € (54,6%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "6.000,00 €",
+         "giornate": "0,38",
+         "ricavoMedio": "16.000,00 €",
+         "costo": "0,00 €",
+         "margine": "6.000,00 € (100,0%)"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "11.000,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "0,00 €",
+         "margine": "11.000,00 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "17.000,00 €",
+         "giornate": "0,38",
+         "ricavoMedio": "45.333,33 €",
+         "costo": "0,00 €",
+         "margine": "17.000,00 € (100,0%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Mauro Brunello (interno)",
+         "ordinate": "8",
+         "registrate": "0,38",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "6.000,00 €",
+         "margine": "6.000,00 €"
+        },
+        {
+         "consulente": "Alessandra Veronese (interno)",
+         "ordinate": "6",
+         "registrate": "—",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "consulente": "Marco Perillo (interno)",
+         "ordinate": "1",
+         "registrate": "—",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "consulente": "Stefano Aio (interno)",
+         "ordinate": "—",
+         "registrate": "—",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "consulente": "Enrica Bernacchi (interno)",
+         "ordinate": "—",
+         "registrate": "—",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "consulente": "Michele Prete (interno)",
+         "ordinate": "—",
+         "registrate": "—",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "consulente": "Stefano Franceschi (interno)",
+         "ordinate": "—",
+         "registrate": "—",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        }
+       ],
+       "altriCosti": [],
+       "anomalie": []
+      }
+     ]
+    },
+    {
+     "slug": "giuseppe-piazza-gianluca-geremia",
+     "nome": "Gianluca Geremia",
+     "countLabel": "1 progetto · 5.000 € fatturato",
+     "progetti": [
+      {
+       "codice": "CC20922",
+       "nome": "Montec — Affiancamento 2025",
+       "cliente": "Montec S.r.l.",
+       "stato": "In corso",
+       "fatturatoLabel": "5.000 €",
+       "margineLabel": "3.500 € (70,0%)",
+       "margineNeg": false,
+       "nAnomalie": 4,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "2.500,00 €",
+         "giornate": "2",
+         "ricavoMedio": "1.250,00 €",
+         "costo": "1.000,00 €",
+         "margine": "1.500,00 € (60,0%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "5.000,00 €",
+         "giornate": "4",
+         "ricavoMedio": "1.250,00 €",
+         "costo": "1.500,00 €",
+         "margine": "3.500,00 € (70,0%)"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "0,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "5.000,00 €",
+         "giornate": "4",
+         "ricavoMedio": "1.250,00 €",
+         "costo": "1.500,00 €",
+         "margine": "3.500,00 € (70,0%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Gianluca Geremia (interno)",
+         "ordinate": "1",
+         "registrate": "3",
+         "fatturate": "—",
+         "costo": "1.500,00 € (interno)",
+         "ricavoProQuota": "3.750,00 €",
+         "margine": "2.250,00 €"
+        },
+        {
+         "consulente": "Marco Businaro (interno)",
+         "ordinate": "—",
+         "registrate": "1",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "1.250,00 €",
+         "margine": "1.250,00 €"
+        }
+       ],
+       "altriCosti": [],
+       "anomalie": [
+        "Giornate registrate (4) oltre le giornate ordinate (2): +2 gg.",
+        "Ricavi forecast 5.000 € superiori alla baseline 2.500 € (+2.500 €).",
+        "Gianluca Geremia: registrate 3 gg su 1 ordinate.",
+        "Marco Businaro: 1 gg registrate senza costo (né costo standard a foglio ore né fatture fornitore imputate al progetto): margine sovrastimato."
+       ],
+       "noteStoriche": [
+        "Giornate registrate (4) oltre le giornate ordinate (2): +2 gg.",
+        "Ricavi forecast 5.000 € superiori alla baseline 2.500 € (+2.500 €).",
+        "Gianluca Geremia: registrate 3 gg su 1 ordinate.",
+        "Marco Businaro: 1 gg registrate senza costo (né costo standard a foglio ore né fatture fornitore imputate al progetto): margine sovrastimato."
+       ],
+       "noteStoricheData": "20/10/2026"
+      }
+     ]
+    },
+    {
+     "slug": "giuseppe-piazza-chiara-rossetto",
+     "nome": "Chiara Rossetto",
+     "countLabel": "3 progetti · 3.950 € fatturato",
+     "progetti": [
+      {
+       "codice": "CC21062",
+       "nome": "Secco — Formazione comunicazione",
+       "cliente": "Secco Sistemi S.p.A.",
+       "stato": "In corso",
+       "fatturatoLabel": "2.000 €",
+       "margineLabel": "800 € (40,0%)",
+       "margineNeg": false,
+       "nAnomalie": 2,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "3.800,00 €",
+         "giornate": "1",
+         "ricavoMedio": "3.800,00 €",
+         "costo": "2.400,00 €",
+         "margine": "1.400,00 € (36,8%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "2.000,00 €",
+         "giornate": "0",
+         "ricavoMedio": "—",
+         "costo": "1.200,00 €",
+         "margine": "800,00 € (40,0%)"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "1.800,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "1.200,00 €",
+         "margine": "600,00 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "3.800,00 €",
+         "giornate": "0",
+         "ricavoMedio": "—",
+         "costo": "2.400,00 €",
+         "margine": "1.400,00 € (36,8%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Alessandra Veronese (esterno)",
+         "ordinate": "1",
+         "registrate": "—",
+         "fatturate": "0,50 confermate / 0,50 bozza (1.200 €)",
+         "costo": "1.200,00 € actual · 1.200,00 € bozza",
+         "ricavoProQuota": "2.000,00 €",
+         "margine": "800,00 €"
+        }
+       ],
+       "altriCosti": [],
+       "anomalie": [
+        "Costi fornitore in bozza per 1.200,00 € (fatture da ricevere/confermare).",
+        "Data di fine progetto (30/09/2026) già passata con il progetto ancora \"In corso\"."
+       ],
+       "noteStoriche": [
+        "Costi fornitore in bozza per 1.200,00 € (fatture da ricevere/confermare).",
+        "Data di fine progetto (30/09/2026) già passata con il progetto ancora \"In corso\"."
+       ],
+       "noteStoricheData": "20/10/2026"
+      },
+      {
+       "codice": "CC21048",
+       "nome": "Secco — Sessioni di coaching",
+       "cliente": "Secco Sistemi S.p.A.",
+       "stato": "In corso",
+       "fatturatoLabel": "1.950 €",
+       "margineLabel": "750 € (38,5%)",
+       "margineNeg": false,
+       "nAnomalie": 2,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "1.950,00 €",
+         "giornate": "3",
+         "ricavoMedio": "650,00 €",
+         "costo": "0,00 €",
+         "margine": "1.950,00 € (100,0%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "1.950,00 €",
+         "giornate": "0,50",
+         "ricavoMedio": "3.900,00 €",
+         "costo": "1.200,00 €",
+         "margine": "750,00 € (38,5%)"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "0,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "1.950,00 €",
+         "giornate": "0,50",
+         "ricavoMedio": "3.900,00 €",
+         "costo": "1.200,00 €",
+         "margine": "750,00 € (38,5%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Alessandra Veronese (esterno)",
+         "ordinate": "3",
+         "registrate": "0,50",
+         "fatturate": "3 confermate",
+         "costo": "1.200,00 €",
+         "ricavoProQuota": "1.950,00 €",
+         "margine": "750,00 €",
+         "fatturateDq": "warn"
+        }
+       ],
+       "altriCosti": [],
+       "anomalie": [
+        "Margine forecast 38,5% sotto il margine di baseline 100,0% di oltre 10 punti.",
+        "Alessandra Veronese: registrate a foglio ore 0,50 gg, fatturate dal fornitore 3 gg."
+       ],
+       "noteStoriche": [
+        "Margine forecast 38,5% sotto il margine di baseline 100,0% di oltre 10 punti.",
+        "Alessandra Veronese: registrate a foglio ore 0,50 gg, fatturate dal fornitore 2 gg."
+       ],
+       "noteStoricheData": "20/10/2026"
+      },
+      {
+       "codice": "CC21089",
+       "nome": "Bordignon — Affiancamento ott-nov-dic26",
+       "cliente": "Bordignon S.r.l.",
+       "stato": "In corso",
+       "fatturatoLabel": "0 €",
+       "margineLabel": "0 €",
+       "margineNeg": false,
+       "nAnomalie": 0,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "5.100,00 €",
+         "giornate": "4",
+         "ricavoMedio": "1.275,00 €",
+         "costo": "1.500,00 €",
+         "margine": "3.600,00 € (70,6%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "0,00 €",
+         "giornate": "0",
+         "ricavoMedio": "—",
+         "costo": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "0,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "0,00 €",
+         "giornate": "0",
+         "ricavoMedio": "—",
+         "costo": "0,00 €",
+         "margine": "0,00 €"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Andrea Bertoldi (interno)",
+         "ordinate": "2",
+         "registrate": "—",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "consulente": "Nicolas Bertoldi (interno)",
+         "ordinate": "2",
+         "registrate": "—",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        }
+       ],
+       "altriCosti": [],
+       "anomalie": [],
+       "noteStoriche": [
+        "Responsabile progetto (PM) non assegnato in Odoo."
+       ],
+       "noteStoricheData": "20/10/2026"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "stefano-franceschi",
+   "nome": "Stefano Franceschi",
+   "navCount": 3,
+   "riepilogo": "3 progetti · fatturato 92.400 € · costo 31.908 € · margine 60.492 € (65,5%)",
+   "pmGroups": [
+    {
+     "slug": "stefano-franceschi-stefano-franceschi",
+     "nome": "Stefano Franceschi",
+     "countLabel": "1 progetto · 48.500 € fatturato",
+     "progetti": [
+      {
+       "codice": "CC21012",
+       "nome": "Mastrotto — Nuova proposta di valore e posizionamento",
+       "cliente": "Trasporti e Servizi Mastrotto S.r.l.",
+       "stato": "In corso",
+       "fatturatoLabel": "48.500 €",
+       "margineLabel": "27.360 € (56,4%)",
+       "margineNeg": false,
+       "nAnomalie": 3,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "48.500,00 €",
+         "giornate": "31",
+         "ricavoMedio": "1.564,52 €",
+         "costo": "22.350,00 €",
+         "margine": "26.150,00 € (53,9%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "48.500,00 €",
+         "giornate": "7",
+         "ricavoMedio": "6.928,57 €",
+         "costo": "21.140,00 €",
+         "margine": "27.360,00 € (56,4%)"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "0,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "4.850,00 €",
+         "margine": "-4.850,00 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "48.500,00 €",
+         "giornate": "7",
+         "ricavoMedio": "6.928,57 €",
+         "costo": "25.990,00 €",
+         "margine": "22.510,00 € (46,4%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "D. Favaretto (esterno)",
+         "ordinate": "12",
+         "registrate": "—",
+         "fatturate": "14 confermate",
+         "costo": "10.700,00 €",
+         "ricavoProQuota": "20.892,31 €",
+         "margine": "10.192,31 €"
+        },
+        {
+         "consulente": "Stefano Franceschi (esterno)",
+         "ordinate": "7",
+         "registrate": "—",
+         "fatturate": "7 confermate",
+         "costo": "4.200,00 €",
+         "ricavoProQuota": "10.446,15 €",
+         "margine": "6.246,15 €"
+        },
+        {
+         "consulente": "Alberto Capuzzo (esterno)",
+         "ordinate": "7",
+         "registrate": "7",
+         "fatturate": "6 confermate",
+         "costo": "3.500,00 €",
+         "ricavoProQuota": "10.446,15 €",
+         "margine": "6.946,15 €",
+         "fatturateDq": "warn"
+        },
+        {
+         "consulente": "Daniele Fogale (esterno)",
+         "ordinate": "3",
+         "registrate": "—",
+         "fatturate": "4,50 confermate",
+         "costo": "1.420,00 €",
+         "ricavoProQuota": "6.715,38 €",
+         "margine": "5.295,38 €"
+        },
+        {
+         "consulente": "Nicolò Danese (interno)",
+         "ordinate": "2",
+         "registrate": "—",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        }
+       ],
+       "altriCosti": [
+        "Multi Level Consulting — Trasferta Italia: 1.320,00 € confermati",
+        "Nicolò Danese — Success Fee Standard N.DANESE: 0,00 € confermati · 2.425,00 € in bozza",
+        "Stefano Franceschi — Success Fee BP Strategist S.FRANCESCHI: 0,00 € confermati · 2.425,00 € in bozza"
+       ],
+       "anomalie": [
+        "Costi fornitore in bozza per 4.850,00 € (fatture da ricevere/confermare).",
+        "Alberto Capuzzo: registrate a foglio ore 7 gg, fatturate dal fornitore 6 gg.",
+        "Data di fine progetto (30/06/2026) già passata con il progetto ancora \"In corso\"."
+       ],
+       "noteStoriche": [
+        "Costi fornitore in bozza per 4.850,00 € (fatture da ricevere/confermare).",
+        "Alberto Capuzzo: registrate a foglio ore 7 gg, fatturate dal fornitore 6 gg.",
+        "Data di fine progetto (30/06/2026) già passata con il progetto ancora \"In corso\"."
+       ],
+       "noteStoricheData": "20/10/2026"
+      }
+     ]
+    },
+    {
+     "slug": "stefano-franceschi-chiara-regazzi",
+     "nome": "Chiara Regazzi",
+     "countLabel": "1 progetto · 26.000 € fatturato",
+     "progetti": [
+      {
+       "codice": "CC21063",
+       "nome": "Trasporti e Servizi Mastrotto — Presidio, Formazione, Sviluppo",
+       "cliente": "Trasporti e Servizi Mastrotto S.r.l.",
+       "stato": "In corso",
+       "fatturatoLabel": "26.000 €",
+       "margineLabel": "17.400 € (66,9%)",
+       "margineNeg": false,
+       "nAnomalie": 3,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "53.000,00 €",
+         "giornate": "38,50",
+         "ricavoMedio": "1.376,62 €",
+         "costo": "26.700,00 €",
+         "margine": "26.300,00 € (49,6%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "26.000,00 €",
+         "giornate": "15,50",
+         "ricavoMedio": "1.677,42 €",
+         "costo": "8.600,00 €",
+         "margine": "17.400,00 € (66,9%)"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "27.000,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "750,00 €",
+         "margine": "26.250,00 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "53.000,00 €",
+         "giornate": "15,50",
+         "ricavoMedio": "3.419,35 €",
+         "costo": "9.350,00 €",
+         "margine": "43.650,00 € (82,4%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Alberto Capuzzo (esterno)",
+         "ordinate": "16",
+         "registrate": "10",
+         "fatturate": "5 confermate",
+         "costo": "4.000,00 €",
+         "ricavoProQuota": "12.410,50 €",
+         "margine": "8.410,50 €",
+         "fatturateDq": "warn"
+        },
+        {
+         "consulente": "Daniele Fogale (esterno)",
+         "ordinate": "8",
+         "registrate": "5,50",
+         "fatturate": "3 confermate",
+         "costo": "840,00 €",
+         "ricavoProQuota": "6.825,78 €",
+         "margine": "5.985,78 €",
+         "fatturateDq": "warn"
+        },
+        {
+         "consulente": "D. Favaretto (esterno)",
+         "ordinate": "7",
+         "registrate": "—",
+         "fatturate": "4,20 confermate",
+         "costo": "2.350,00 €",
+         "ricavoProQuota": "5.212,41 €",
+         "margine": "2.862,41 €"
+        },
+        {
+         "consulente": "Stefano Franceschi (esterno)",
+         "ordinate": "7,50",
+         "registrate": "—",
+         "fatturate": "1,25 confermate / 1,25 bozza (750 €)",
+         "costo": "750,00 € actual · 750,00 € bozza",
+         "ricavoProQuota": "1.551,31 €",
+         "margine": "801,31 €"
+        }
+       ],
+       "altriCosti": [
+        "Multi Level Consulting — Trasferta Italia: 660,00 € confermati"
+       ],
+       "anomalie": [
+        "Costi fornitore in bozza per 750,00 € (fatture da ricevere/confermare).",
+        "Alberto Capuzzo: registrate a foglio ore 10 gg, fatturate dal fornitore 5 gg.",
+        "Daniele Fogale: registrate a foglio ore 5,50 gg, fatturate dal fornitore 3 gg."
+       ],
+       "noteStoriche": [
+        "Costi fornitore in bozza per 750,00 € (fatture da ricevere/confermare).",
+        "Alberto Capuzzo: registrate a foglio ore 9 gg, fatturate dal fornitore 5 gg.",
+        "Daniele Fogale: registrate a foglio ore 5,50 gg, fatturate dal fornitore 3 gg.",
+        "Progetto ancora \"Da fare\" ma con fatture."
+       ],
+       "noteStoricheData": "20/10/2026"
+      }
+     ]
+    },
+    {
+     "slug": "stefano-franceschi-marco-laghetto",
+     "nome": "Marco Laghetto",
+     "countLabel": "1 progetto · 17.900 € fatturato",
+     "progetti": [
+      {
+       "codice": "CC21071",
+       "nome": "MFT Italia — Analisi di governance e sviluppo interno",
+       "cliente": "MFT Italia S.r.l. Unipersonale",
+       "stato": "In corso",
+       "fatturatoLabel": "17.900 €",
+       "margineLabel": "15.732 € (87,9%)",
+       "margineNeg": false,
+       "nAnomalie": 3,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "33.500,00 €",
+         "giornate": "21",
+         "ricavoMedio": "1.595,24 €",
+         "costo": "14.250,00 €",
+         "margine": "19.250,00 € (57,5%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "17.900,00 €",
+         "giornate": "9,84",
+         "ricavoMedio": "1.818,41 €",
+         "costo": "2.168,30 €",
+         "margine": "15.731,70 € (87,9%)"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "15.600,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "700,20 €",
+         "margine": "14.899,80 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "33.500,00 €",
+         "giornate": "9,84",
+         "ricavoMedio": "3.403,17 €",
+         "costo": "2.868,50 €",
+         "margine": "30.631,50 € (91,4%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Marco Laghetto (esterno)",
+         "ordinate": "5,50",
+         "registrate": "8,22",
+         "fatturate": "4,22 confermate",
+         "costo": "2.112,00 €",
+         "ricavoProQuota": "14.945,08 €",
+         "margine": "12.833,08 €",
+         "fatturateDq": "warn"
+        },
+        {
+         "consulente": "Elena Trento (interno)",
+         "ordinate": "5,50",
+         "registrate": "0,13",
+         "fatturate": "—",
+         "costo": "56,30 € (interno)",
+         "ricavoProQuota": "227,30 €",
+         "margine": "171,00 €"
+        },
+        {
+         "consulente": "Mauro Brunello (interno)",
+         "ordinate": "3,50",
+         "registrate": "1,50",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "2.727,62 €",
+         "margine": "2.727,62 €"
+        },
+        {
+         "consulente": "Stefano Franceschi (esterno)",
+         "ordinate": "4,50",
+         "registrate": "—",
+         "fatturate": "0 confermate / 1,17 bozza (700 €)",
+         "costo": "0,00 € actual · 700,20 € bozza",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "consulente": "Giuseppe Piazza (interno)",
+         "ordinate": "2",
+         "registrate": "—",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        }
+       ],
+       "altriCosti": [],
+       "anomalie": [
+        "Costi fornitore in bozza per 700,20 € (fatture da ricevere/confermare).",
+        "Marco Laghetto: registrate a foglio ore 8,22 gg, fatturate dal fornitore 4,22 gg.",
+        "Mauro Brunello: 1,50 gg registrate senza costo (né costo standard a foglio ore né fatture fornitore imputate al progetto): margine sovrastimato."
+       ],
+       "noteStoriche": [
+        "Costi fornitore in bozza per 700,20 € (fatture da ricevere/confermare).",
+        "Marco Laghetto: registrate a foglio ore 7,59 gg, fatturate dal fornitore 4,22 gg.",
+        "Mauro Brunello: 1,50 gg registrate senza costo (né costo standard a foglio ore né fatture fornitore imputate al progetto): margine sovrastimato."
+       ],
+       "noteStoricheData": "20/10/2026"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "roberto-cucchi",
+   "nome": "Roberto Cucchi",
+   "navCount": 1,
+   "riepilogo": "1 progetto · fatturato 45.410 € · costo 9.562 € · margine 35.848 € (78,9%)",
+   "pmGroups": [
+    {
+     "slug": "roberto-cucchi-chiara-regazzi",
+     "nome": "Chiara Regazzi",
+     "countLabel": "1 progetto · 45.410 € fatturato",
+     "progetti": [
+      {
+       "codice": "CC21045",
+       "nome": "Rete — Governance Processi Inter-Company",
+       "cliente": "Rete S.p.A.",
+       "stato": "In corso",
+       "fatturatoLabel": "45.410 €",
+       "margineLabel": "35.848 € (78,9%)",
+       "margineNeg": false,
+       "nAnomalie": 6,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "52.409,59 €",
+         "giornate": "32",
+         "ricavoMedio": "1.637,80 €",
+         "costo": "22.700,00 €",
+         "margine": "29.709,59 € (56,7%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "45.409,59 €",
+         "giornate": "27,38",
+         "ricavoMedio": "1.658,80 €",
+         "costo": "9.561,60 €",
+         "margine": "35.847,99 € (78,9%)"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "7.000,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "7.406,10 €",
+         "margine": "-406,10 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "52.409,59 €",
+         "giornate": "27,38",
+         "ricavoMedio": "1.914,51 €",
+         "costo": "16.967,70 €",
+         "margine": "35.441,89 € (67,6%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Elena Trento (interno)",
+         "ordinate": "3",
+         "registrate": "9,81",
+         "fatturate": "—",
+         "costo": "4.419,55 € (interno)",
+         "ricavoProQuota": "14.277,34 €",
+         "margine": "9.857,79 €"
+        },
+        {
+         "consulente": "Alessandra Corradini (esterno)",
+         "ordinate": "6",
+         "registrate": "6,06",
+         "fatturate": "0 confermate / 6,06 bozza (3.032 €)",
+         "costo": "0,00 € actual · 3.031,50 € bozza",
+         "ricavoProQuota": "8.821,03 €",
+         "margine": "8.821,03 €",
+         "fatturateDq": "ok"
+        },
+        {
+         "consulente": "Marco Perillo (interno)",
+         "ordinate": "3",
+         "registrate": "5,94",
+         "fatturate": "—",
+         "costo": "2.674,25 € (interno)",
+         "ricavoProQuota": "8.639,16 €",
+         "margine": "5.964,91 €"
+        },
+        {
+         "consulente": "Stefano Franceschi (esterno)",
+         "ordinate": "5,50",
+         "registrate": "—",
+         "fatturate": "1,83 confermate / 3,67 bozza (2.200 €)",
+         "costo": "1.100,40 € actual · 2.199,60 € bozza",
+         "ricavoProQuota": "2.668,50 €",
+         "margine": "1.568,10 €"
+        },
+        {
+         "consulente": "Mauro Brunello (interno)",
+         "ordinate": "2",
+         "registrate": "3,56",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "5.183,49 €",
+         "margine": "5.183,49 €"
+        },
+        {
+         "consulente": "R. Cucchi (interno)",
+         "ordinate": "5,50",
+         "registrate": "—",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "consulente": "Daniele Fogale (esterno)",
+         "ordinate": "2",
+         "registrate": "2",
+         "fatturate": "3 confermate",
+         "costo": "867,80 €",
+         "ricavoProQuota": "4.365,05 €",
+         "margine": "3.497,25 €",
+         "fatturateDq": "warn"
+        },
+        {
+         "consulente": "Chiara Regazzi (esterno)",
+         "ordinate": "3",
+         "registrate": "—",
+         "fatturate": "1 confermate / 2 bozza (1.000 €)",
+         "costo": "500,00 € actual · 1.000,00 € bozza",
+         "ricavoProQuota": "1.455,02 €",
+         "margine": "955,02 €"
+        },
+        {
+         "consulente": "Luca Realdon (interno)",
+         "ordinate": "1",
+         "registrate": "—",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "consulente": "Giuseppe Piazza (interno)",
+         "ordinate": "1",
+         "registrate": "—",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        }
+       ],
+       "altriCosti": [
+        "Stefano Franceschi — Success Fee BP Strategist S.FRANCESCHI: 0,00 € confermati · 1.175,00 € in bozza",
+        "Stefano Franceschi — Arrotondamento: -0,40 € confermati"
+       ],
+       "anomalie": [
+        "Costi fornitore in bozza per 7.406,10 € (fatture da ricevere/confermare).",
+        "Elena Trento: registrate 9,81 gg su 3 ordinate.",
+        "Marco Perillo: registrate 5,94 gg su 3 ordinate.",
+        "Mauro Brunello: registrate 3,56 gg su 2 ordinate.",
+        "Mauro Brunello: 3,56 gg registrate senza costo (né costo standard a foglio ore né fatture fornitore imputate al progetto): margine sovrastimato.",
+        "Daniele Fogale: registrate a foglio ore 2 gg, fatturate dal fornitore 3 gg."
+       ],
+       "noteStoriche": [
+        "Costi fornitore in bozza per 5.131,30 € (fatture da ricevere/confermare).",
+        "Elena Trento: registrate 9,81 gg su 3 ordinate.",
+        "Marco Perillo: registrate 5,94 gg su 3 ordinate.",
+        "Mauro Brunello: registrate 3,56 gg su 2 ordinate.",
+        "Mauro Brunello: 3,56 gg registrate senza costo (né costo standard a foglio ore né fatture fornitore imputate al progetto): margine sovrastimato.",
+        "Daniele Fogale: registrate a foglio ore 2 gg, fatturate dal fornitore 3 gg."
+       ],
+       "noteStoricheData": "20/10/2026"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "nicolo-danese",
+   "nome": "Nicolò Danese",
+   "navCount": 1,
+   "riepilogo": "1 progetto · fatturato 10.589 € · costo 1.720 € · margine 8.869 € (83,8%)",
+   "pmGroups": [
+    {
+     "slug": "nicolo-danese-nicolo-danese",
+     "nome": "Nicolò Danese",
+     "countLabel": "1 progetto · 10.589 € fatturato",
+     "progetti": [
+      {
+       "codice": "CC20100",
+       "nome": "Artigianlegno — fareRetail",
+       "cliente": "Artigianlegno srl",
+       "stato": "In corso",
+       "fatturatoLabel": "10.589 €",
+       "margineLabel": "8.869 € (83,8%)",
+       "margineNeg": false,
+       "nAnomalie": 3,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "10.423,20 €",
+         "giornate": "2",
+         "ricavoMedio": "5.211,60 €",
+         "costo": "800,00 €",
+         "margine": "9.623,20 € (92,3%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "10.588,80 €",
+         "giornate": "2,44",
+         "ricavoMedio": "4.344,12 €",
+         "costo": "1.720,21 €",
+         "margine": "8.868,59 € (83,8%)"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "440,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "0,00 €",
+         "margine": "440,00 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "11.028,80 €",
+         "giornate": "2,44",
+         "ricavoMedio": "4.524,64 €",
+         "costo": "1.720,21 €",
+         "margine": "9.308,59 € (84,4%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Federico Candiago (interno)",
+         "ordinate": "1",
+         "registrate": "1,94",
+         "fatturate": "—",
+         "costo": "871,91 € (interno)",
+         "ricavoProQuota": "8.416,74 €",
+         "margine": "7.544,83 €"
+        },
+        {
+         "consulente": "Nicolò Danese (interno)",
+         "ordinate": "1",
+         "registrate": "0,38",
+         "fatturate": "—",
+         "costo": "168,00 € (interno)",
+         "ricavoProQuota": "1.629,05 €",
+         "margine": "1.461,05 €"
+        },
+        {
+         "consulente": "Debora Scanferla (interno)",
+         "ordinate": "—",
+         "registrate": "0,13",
+         "fatturate": "—",
+         "costo": "56,30 € (interno)",
+         "ricavoProQuota": "543,02 €",
+         "margine": "486,72 €"
+        }
+       ],
+       "altriCosti": [
+        "Genius4u Limited — scontrini: 312,00 € confermati",
+        "GrinMark Limited — scontrini: 312,00 € confermati"
+       ],
+       "anomalie": [
+        "Giornate registrate (2,44) oltre le giornate ordinate (2): +0,44 gg.",
+        "Ricavi forecast 11.029 € superiori alla baseline 10.423 € (+606 €).",
+        "Federico Candiago: registrate 1,94 gg su 1 ordinate."
+       ],
+       "noteStoriche": [
+        "Giornate registrate (2,44) oltre le giornate ordinate (2): +0,44 gg.",
+        "Ricavi forecast 11.029 € superiori alla baseline 10.423 € (+606 €).",
+        "Federico Candiago: registrate 1,94 gg su 1 ordinate."
+       ],
+       "noteStoricheData": "20/10/2026"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "annalisa-callarelli",
+   "nome": "Annalisa Callarelli",
+   "navCount": 1,
+   "riepilogo": "1 progetto · fatturato 10.000 € · costo 0 € · margine 10.000 € (100,0%)",
+   "pmGroups": [
+    {
+     "slug": "annalisa-callarelli-chiara-regazzi",
+     "nome": "Chiara Regazzi",
+     "countLabel": "1 progetto · 10.000 € fatturato",
+     "progetti": [
+      {
+       "codice": "CC21070",
+       "nome": "Analisi settore servizi",
+       "cliente": "C.N.A. Servizi Bologna S.c.r.l.",
+       "stato": "In corso",
+       "fatturatoLabel": "10.000 €",
+       "margineLabel": "10.000 € (100,0%)",
+       "margineNeg": false,
+       "nAnomalie": 0,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "35.000,00 €",
+         "giornate": "27",
+         "ricavoMedio": "1.296,30 €",
+         "costo": "38.300,00 €",
+         "margine": "-3.300,00 € (-9,4%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "10.000,00 €",
+         "giornate": "0",
+         "ricavoMedio": "—",
+         "costo": "0,00 €",
+         "margine": "10.000,00 € (100,0%)"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "25.000,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "0,00 €",
+         "margine": "25.000,00 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "35.000,00 €",
+         "giornate": "0",
+         "ricavoMedio": "—",
+         "costo": "0,00 €",
+         "margine": "35.000,00 € (100,0%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Gian Luca La Rosa (interno)",
+         "ordinate": "20",
+         "registrate": "—",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "consulente": "Marco Perillo (interno)",
+         "ordinate": "4",
+         "registrate": "—",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "consulente": "Giovanni De Bei (interno)",
+         "ordinate": "2",
+         "registrate": "—",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "consulente": "Chiara Regazzi (interno)",
+         "ordinate": "1",
+         "registrate": "—",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        }
+       ],
+       "altriCosti": [],
+       "anomalie": [],
+       "noteStoriche": [
+        "Progetto ancora \"Da fare\" ma con fatture."
+       ],
+       "noteStoricheData": "20/10/2026"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "senza-strategist-assegnato",
+   "nome": "Senza strategist assegnato",
+   "navCount": 3,
+   "riepilogo": "3 progetti · fatturato 237.758 € · costo 114.026 € · margine 123.733 € (52,0%)",
+   "pmGroups": [
+    {
+     "slug": "senza-strategist-assegnato-marco-laghetto",
+     "nome": "Marco Laghetto",
+     "countLabel": "1 progetto · 237.758 € fatturato",
+     "progetti": [
+      {
+       "codice": "CC21002",
+       "nome": "Mondeo — Affiancamento 2025",
+       "cliente": "Mondeo S.r.l.",
+       "stato": "In corso",
+       "fatturatoLabel": "237.758 €",
+       "margineLabel": "126.560 € (53,2%)",
+       "margineNeg": false,
+       "nAnomalie": 6,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "2.250,00 €",
+         "giornate": "2",
+         "ricavoMedio": "1.125,00 €",
+         "costo": "1.200,00 €",
+         "margine": "1.050,00 € (46,7%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "237.758,38 €",
+         "giornate": "215,06",
+         "ricavoMedio": "1.105,53 €",
+         "costo": "111.198,00 €",
+         "margine": "126.560,38 € (53,2%)"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "0,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "237.758,38 €",
+         "giornate": "215,06",
+         "ricavoMedio": "1.105,53 €",
+         "costo": "111.198,00 €",
+         "margine": "126.560,38 € (53,2%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Gianluca Geremia (interno)",
+         "ordinate": "1",
+         "registrate": "138,50",
+         "fatturate": "—",
+         "costo": "69.250,00 € (interno)",
+         "ricavoProQuota": "122.900,06 €",
+         "margine": "53.650,06 €"
+        },
+        {
+         "consulente": "Marco Businaro (interno)",
+         "ordinate": "—",
+         "registrate": "75",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "66.552,38 €",
+         "margine": "66.552,38 €"
+        },
+        {
+         "consulente": "Fabbrica del Valore S.r.l. (esterno)",
+         "ordinate": "—",
+         "registrate": "—",
+         "fatturate": "52,88 confermate",
+         "costo": "41.750,00 €",
+         "ricavoProQuota": "46.919,43 €",
+         "margine": "5.169,43 €"
+        },
+        {
+         "consulente": "Mauro Brunello (interno)",
+         "ordinate": "—",
+         "registrate": "1,06",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "942,83 €",
+         "margine": "942,83 €"
+        },
+        {
+         "consulente": "Marco Laghetto (interno)",
+         "ordinate": "—",
+         "registrate": "0,50",
+         "fatturate": "—",
+         "costo": "198,00 € (interno)",
+         "ricavoProQuota": "443,68 €",
+         "margine": "245,68 €"
+        }
+       ],
+       "altriCosti": [],
+       "anomalie": [
+        "Giornate registrate (215,06) oltre le giornate ordinate (2): +213,06 gg.",
+        "Ricavi forecast 237.758 € superiori alla baseline 2.250 € (+235.508 €).",
+        "Gianluca Geremia: registrate 138,50 gg su 1 ordinate.",
+        "Marco Businaro: 75 gg registrate senza costo (né costo standard a foglio ore né fatture fornitore imputate al progetto): margine sovrastimato.",
+        "Mauro Brunello: 1,06 gg registrate senza costo (né costo standard a foglio ore né fatture fornitore imputate al progetto): margine sovrastimato.",
+        "Strategist non assegnato in Odoo."
+       ],
+       "noteStoriche": [
+        "Giornate registrate (215,06) oltre le giornate ordinate (2): +213,06 gg.",
+        "Ricavi forecast 237.758 € superiori alla baseline 2.250 € (+235.508 €).",
+        "Gianluca Geremia: registrate 138,50 gg su 1 ordinate.",
+        "Marco Businaro: 75 gg registrate senza costo (né costo standard a foglio ore né fatture fornitore imputate al progetto): margine sovrastimato.",
+        "Mauro Brunello: 1,06 gg registrate senza costo (né costo standard a foglio ore né fatture fornitore imputate al progetto): margine sovrastimato.",
+        "Strategist non assegnato in Odoo."
+       ],
+       "noteStoricheData": "20/10/2026"
+      }
+     ]
+    },
+    {
+     "slug": "senza-strategist-assegnato-camilla-tartaria",
+     "nome": "Camilla Tartaria",
+     "countLabel": "1 progetto · 0 € fatturato",
+     "progetti": [
+      {
+       "codice": "CC21027",
+       "nome": "Porr — Parità di genere",
+       "cliente": "Porr",
+       "stato": "In corso",
+       "fatturatoLabel": "0 €",
+       "margineLabel": "-2.375 €",
+       "margineNeg": true,
+       "nAnomalie": 2,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "4.440,00 €",
+         "giornate": "1",
+         "ricavoMedio": "4.440,00 €",
+         "costo": "0,00 €",
+         "margine": "4.440,00 € (100,0%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "0,00 €",
+         "giornate": "0",
+         "ricavoMedio": "—",
+         "costo": "2.375,00 €",
+         "margine": "-2.375,00 €"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "4.440,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "0,00 €",
+         "margine": "4.440,00 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "4.440,00 €",
+         "giornate": "0",
+         "ricavoMedio": "—",
+         "costo": "2.375,00 €",
+         "margine": "2.065,00 € (46,5%)"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Francesca Galasso (esterno)",
+         "ordinate": "1",
+         "registrate": "—",
+         "fatturate": "4 confermate",
+         "costo": "2.375,00 €",
+         "ricavoProQuota": "0,00 €",
+         "margine": "-2.375,00 €"
+        }
+       ],
+       "altriCosti": [],
+       "anomalie": [
+        "Margine forecast 46,5% sotto il margine di baseline 100,0% di oltre 10 punti.",
+        "Strategist non assegnato in Odoo."
+       ],
+       "noteStoriche": [
+        "Margine forecast 46,5% sotto il margine di baseline 100,0% di oltre 10 punti.",
+        "Strategist non assegnato in Odoo."
+       ],
+       "noteStoricheData": "20/10/2026"
+      }
+     ]
+    },
+    {
+     "slug": "senza-strategist-assegnato-marco-perillo",
+     "nome": "Marco Perillo",
+     "countLabel": "1 progetto · 0 € fatturato",
+     "progetti": [
+      {
+       "codice": "CC21081",
+       "nome": "Alfamation — Assessment iniziale",
+       "cliente": "Alfamation S.p.A.",
+       "stato": "In corso",
+       "fatturatoLabel": "0 €",
+       "margineLabel": "-453 €",
+       "margineNeg": true,
+       "nAnomalie": 2,
+       "bafo": [
+        {
+         "riga": "Baseline",
+         "ricavi": "25.000,00 €",
+         "giornate": "21",
+         "ricavoMedio": "1.190,48 €",
+         "costo": "5.300,00 €",
+         "margine": "19.700,00 € (78,8%)"
+        },
+        {
+         "riga": "Actual",
+         "ricavi": "0,00 €",
+         "giornate": "3,19",
+         "ricavoMedio": "0,00 €",
+         "costo": "452,80 €",
+         "margine": "-452,80 €"
+        },
+        {
+         "riga": "Bozza",
+         "ricavi": "0,00 €",
+         "giornate": "—",
+         "ricavoMedio": "—",
+         "costo": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "riga": "Forecast",
+         "ricavi": "0,00 €",
+         "giornate": "3,19",
+         "ricavoMedio": "0,00 €",
+         "costo": "452,80 €",
+         "margine": "-452,80 €"
+        }
+       ],
+       "consulenti": [
+        {
+         "consulente": "Francesca Galasso (interno)",
+         "ordinate": "7",
+         "registrate": "2,31",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "consulente": "Stefano Aio (interno)",
+         "ordinate": "7",
+         "registrate": "—",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "consulente": "Marco Perillo (interno)",
+         "ordinate": "4",
+         "registrate": "—",
+         "fatturate": "—",
+         "costo": "0,00 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "0,00 €"
+        },
+        {
+         "consulente": "Erika Pettenuzzo (interno)",
+         "ordinate": "3",
+         "registrate": "0,88",
+         "fatturate": "—",
+         "costo": "394,10 € (interno)",
+         "ricavoProQuota": "0,00 €",
+         "margine": "-394,10 €"
+        }
+       ],
+       "altriCosti": [
+        "G&C Consulting S.r.l. — Viaggi: 18,70 € confermati",
+        "Stefano Aio — Viaggi: 40,00 € confermati"
+       ],
+       "anomalie": [
+        "Francesca Galasso: 2,31 gg registrate senza costo (né costo standard a foglio ore né fatture fornitore imputate al progetto): margine sovrastimato.",
+        "Strategist non assegnato in Odoo."
+       ],
+       "noteStoriche": [
+        "Francesca Galasso: 1,56 gg registrate senza costo (né costo standard a foglio ore né fatture fornitore imputate al progetto): margine sovrastimato.",
+        "Strategist non assegnato in Odoo."
+       ],
+       "noteStoricheData": "20/10/2026"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "giornateIntro": "Confronto, per ogni consulente esterno (con fatture fornitore imputate al progetto), tra le giornate ordinate a riga d'ordine, le giornate registrate a foglio ore e le giornate fatturate dal fornitore (confermate e in bozza). Il bollino segnala la coerenza tra foglio ore e fatturato fornitore.",
+ "giornate": [
+  {
+   "strategist": "Luca Realdon",
+   "rows": [
+    {
+     "codice": "CC20968",
+     "progetto": "Tim per Trivellato — Analisi per efficientamento service",
+     "pm": "Elena Trento",
+     "consulente": "Federico Tapparello (esterno)",
+     "ordinato": "15",
+     "registrato": "11,13",
+     "fatturato": "10,63 confermate / 4,88 bozza (2.438 €)",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (15,50 gg) superiore al registrato a foglio ore (11,13 gg)"
+    },
+    {
+     "codice": "CC21073",
+     "progetto": "FCF Impianti S.r.l. — Affiancamento Direzionale",
+     "pm": "Chiara Rossetto",
+     "consulente": "Massimo Vincenzi (esterno)",
+     "ordinato": "1",
+     "registrato": "4",
+     "fatturato": "3,50 confermate",
+     "fatturatoTone": "ok",
+     "fatturatoTitle": "foglio ore ≈ fatturato fornitore"
+    },
+    {
+     "codice": "CC21033",
+     "progetto": "Officine Zoppelletto — Affiancamento 2026",
+     "pm": "Giovanni De Bei",
+     "consulente": "Giovanni De Bei (esterno)",
+     "ordinato": "20,50",
+     "registrato": "6,25",
+     "fatturato": "9,70 confermate / 10,80 bozza (7.020 €)",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (20,50 gg) superiore al registrato a foglio ore (6,25 gg)"
+    },
+    {
+     "codice": "CC21074",
+     "progetto": "Colombo — Affiancamento Direzionale",
+     "pm": "Andrea Bertoldi",
+     "consulente": "Andrea Bertoldi (esterno)",
+     "ordinato": "1",
+     "registrato": "2",
+     "fatturato": "1 confermate",
+     "fatturatoTone": "under",
+     "fatturatoTitle": "registrato a foglio ore (2 gg) superiore al fatturato (1 gg): giornate lavorate non ancora fatturate dal fornitore"
+    },
+    {
+     "codice": "CC21065",
+     "progetto": "Colombo — Affiancamento Business Intelligence 2026",
+     "pm": "Chiara Rossetto",
+     "consulente": "Alberto Gugel (esterno)",
+     "ordinato": "1",
+     "registrato": "1",
+     "fatturato": "0,31 confermate",
+     "fatturatoTone": "under",
+     "fatturatoTitle": "registrato a foglio ore (1 gg) superiore al fatturato (0,31 gg): giornate lavorate non ancora fatturate dal fornitore"
+    },
+    {
+     "codice": "CC21034",
+     "progetto": "Brombal — TG Fase 2 GenAI Project NPAI 1 Design Acceletator",
+     "pm": "Stefano Franceschi",
+     "consulente": "Stefano Franceschi (esterno)",
+     "ordinato": "5",
+     "registrato": "—",
+     "fatturato": "0 confermate / 4 bozza (2.400 €)",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (4 gg) superiore al registrato a foglio ore (0 gg)"
+    },
+    {
+     "codice": "CC21036",
+     "progetto": "Brombal — TG Fase 2 GenAI Project NPAI 4 Intelligent Welding",
+     "pm": "Stefano Franceschi",
+     "consulente": "Denis Bianchini (esterno)",
+     "ordinato": "14",
+     "registrato": "26,81",
+     "fatturato": "12 confermate / 2 bozza (1.000 €)",
+     "fatturatoTone": "under",
+     "fatturatoTitle": "registrato a foglio ore (26,81 gg) superiore al fatturato (14 gg): giornate lavorate non ancora fatturate dal fornitore"
+    },
+    {
+     "codice": "CC21036",
+     "progetto": "Brombal — TG Fase 2 GenAI Project NPAI 4 Intelligent Welding",
+     "pm": "Stefano Franceschi",
+     "consulente": "Andrea Bertoldi (esterno)",
+     "ordinato": "9",
+     "registrato": "9",
+     "fatturato": "19,50 confermate / 1,50 bozza (750 €)",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (21 gg) superiore al registrato a foglio ore (9 gg)"
+    },
+    {
+     "codice": "CC21036",
+     "progetto": "Brombal — TG Fase 2 GenAI Project NPAI 4 Intelligent Welding",
+     "pm": "Stefano Franceschi",
+     "consulente": "Stefano Franceschi (esterno)",
+     "ordinato": "7",
+     "registrato": "—",
+     "fatturato": "6 confermate / 4 bozza (2.400 €)",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (10 gg) superiore al registrato a foglio ore (0 gg)"
+    },
+    {
+     "codice": "CC21035",
+     "progetto": "Brombal — TG Fase 2 GenAI Project NPAI 3 Working Together",
+     "pm": "Stefano Franceschi",
+     "consulente": "Daniele Fogale (esterno)",
+     "ordinato": "12",
+     "registrato": "1,75",
+     "fatturato": "1,75 confermate / 10,25 bozza (4.100 €)",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (12 gg) superiore al registrato a foglio ore (1,75 gg)"
+    },
+    {
+     "codice": "CC21035",
+     "progetto": "Brombal — TG Fase 2 GenAI Project NPAI 3 Working Together",
+     "pm": "Stefano Franceschi",
+     "consulente": "Stefano Franceschi (esterno)",
+     "ordinato": "5",
+     "registrato": "—",
+     "fatturato": "3,50 confermate / 1,83 bozza (1.100 €)",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (5,33 gg) superiore al registrato a foglio ore (0 gg)"
+    },
+    {
+     "codice": "CC21035",
+     "progetto": "Brombal — TG Fase 2 GenAI Project NPAI 3 Working Together",
+     "pm": "Stefano Franceschi",
+     "consulente": "Federico Tapparello (esterno)",
+     "ordinato": "4",
+     "registrato": "3,63",
+     "fatturato": "3,65 confermate / 0,35 bozza (175 €)",
+     "fatturatoTone": "ok",
+     "fatturatoTitle": "foglio ore ≈ fatturato fornitore"
+    },
+    {
+     "codice": "CC21035",
+     "progetto": "Brombal — TG Fase 2 GenAI Project NPAI 3 Working Together",
+     "pm": "Stefano Franceschi",
+     "consulente": "Digiduu S.r.l. (esterno)",
+     "ordinato": "—",
+     "registrato": "—",
+     "fatturato": "0 confermate / 5 bozza (2.250 €)",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (5 gg) superiore al registrato a foglio ore (0 gg)"
+    },
+    {
+     "codice": "CC21037",
+     "progetto": "Brombal — TG Fase 2 GenAI Project NPAI 5 Window is Glass",
+     "pm": "Stefano Franceschi",
+     "consulente": "Nicolas Bertoldi (esterno)",
+     "ordinato": "1",
+     "registrato": "4,82",
+     "fatturato": "25,60 confermate",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (25,60 gg) superiore al registrato a foglio ore (4,82 gg)"
+    },
+    {
+     "codice": "CC21037",
+     "progetto": "Brombal — TG Fase 2 GenAI Project NPAI 5 Window is Glass",
+     "pm": "Stefano Franceschi",
+     "consulente": "Denis Bianchini (esterno)",
+     "ordinato": "14",
+     "registrato": "1,94",
+     "fatturato": "12 confermate / 2 bozza (1.000 €)",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (14 gg) superiore al registrato a foglio ore (1,94 gg)"
+    },
+    {
+     "codice": "CC21037",
+     "progetto": "Brombal — TG Fase 2 GenAI Project NPAI 5 Window is Glass",
+     "pm": "Stefano Franceschi",
+     "consulente": "Andrea Bertoldi (esterno)",
+     "ordinato": "8",
+     "registrato": "3,19",
+     "fatturato": "4,80 confermate / 1,60 bozza (800 €)",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (6,40 gg) superiore al registrato a foglio ore (3,19 gg)"
+    },
+    {
+     "codice": "CC21037",
+     "progetto": "Brombal — TG Fase 2 GenAI Project NPAI 5 Window is Glass",
+     "pm": "Stefano Franceschi",
+     "consulente": "Stefano Franceschi (esterno)",
+     "ordinato": "6",
+     "registrato": "—",
+     "fatturato": "4 confermate / 2 bozza (1.200 €)",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (6 gg) superiore al registrato a foglio ore (0 gg)"
+    },
+    {
+     "codice": "CC21059",
+     "progetto": "Zanatta — Affiancamento marzo — dicembre 2026",
+     "pm": "Andrea Bertoldi",
+     "consulente": "Nicolas Bertoldi (esterno)",
+     "ordinato": "2",
+     "registrato": "18",
+     "fatturato": "32 confermate",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (32 gg) superiore al registrato a foglio ore (18 gg)"
+    },
+    {
+     "codice": "CC21059",
+     "progetto": "Zanatta — Affiancamento marzo — dicembre 2026",
+     "pm": "Andrea Bertoldi",
+     "consulente": "Andrea Bertoldi (esterno)",
+     "ordinato": "2",
+     "registrato": "19",
+     "fatturato": "19 confermate",
+     "fatturatoTone": "ok",
+     "fatturatoTitle": "foglio ore ≈ fatturato fornitore"
+    },
+    {
+     "codice": "CC21056",
+     "progetto": "Brombal — Parità di genere",
+     "pm": "Camilla Tartaria",
+     "consulente": "Francesca Galasso (esterno)",
+     "ordinato": "2",
+     "registrato": "—",
+     "fatturato": "58 confermate / 126 bozza (7.875 €)",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (184 gg) superiore al registrato a foglio ore (0 gg)"
+    }
+   ]
+  },
+  {
+   "strategist": "Giuseppe Piazza",
+   "rows": [
+    {
+     "codice": "CC21048",
+     "progetto": "Secco — Sessioni di coaching",
+     "pm": "Chiara Rossetto",
+     "consulente": "Alessandra Veronese (esterno)",
+     "ordinato": "3",
+     "registrato": "0,50",
+     "fatturato": "3 confermate",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (3 gg) superiore al registrato a foglio ore (0,50 gg)"
+    },
+    {
+     "codice": "CC21019",
+     "progetto": "Mondeo — E-commerce 2026",
+     "pm": "Andrea Menegotto",
+     "consulente": "Andrea Menegotto (esterno)",
+     "ordinato": "120",
+     "registrato": "82,50",
+     "fatturato": "90 confermate / 30 bozza (10.500 €)",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (120 gg) superiore al registrato a foglio ore (82,50 gg)"
+    },
+    {
+     "codice": "CC20907",
+     "progetto": "Mondeo — Affiancamento Ufficio Tecnico",
+     "pm": "Marco Laghetto",
+     "consulente": "Nicola Tiozzo (esterno)",
+     "ordinato": "65",
+     "registrato": "76,50",
+     "fatturato": "151,25 confermate",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (151,25 gg) superiore al registrato a foglio ore (76,50 gg)"
+    },
+    {
+     "codice": "CC21062",
+     "progetto": "Secco — Formazione comunicazione",
+     "pm": "Chiara Rossetto",
+     "consulente": "Alessandra Veronese (esterno)",
+     "ordinato": "1",
+     "registrato": "—",
+     "fatturato": "0,50 confermate / 0,50 bozza (1.200 €)",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (1 gg) superiore al registrato a foglio ore (0 gg)"
+    },
+    {
+     "codice": "CC21030",
+     "progetto": "Caoduro Impianti — Envisioning e assessment persone, processi, digital",
+     "pm": "Marco Perillo",
+     "consulente": "Stefano Franceschi (esterno)",
+     "ordinato": "3",
+     "registrato": "—",
+     "fatturato": "2,25 confermate",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (2,25 gg) superiore al registrato a foglio ore (0 gg)"
+    },
+    {
+     "codice": "CC21030",
+     "progetto": "Caoduro Impianti — Envisioning e assessment persone, processi, digital",
+     "pm": "Marco Perillo",
+     "consulente": "Mauro Brunello (esterno)",
+     "ordinato": "2",
+     "registrato": "3,13",
+     "fatturato": "0 confermate / 4 bozza (2.400 €)",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (4 gg) superiore al registrato a foglio ore (3,13 gg)"
+    },
+    {
+     "codice": "CC21030",
+     "progetto": "Caoduro Impianti — Envisioning e assessment persone, processi, digital",
+     "pm": "Marco Perillo",
+     "consulente": "Giovanni De Bei (esterno)",
+     "ordinato": "1",
+     "registrato": "0,25",
+     "fatturato": "1 confermate",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (1 gg) superiore al registrato a foglio ore (0,25 gg)"
+    },
+    {
+     "codice": "CC21030",
+     "progetto": "Caoduro Impianti — Envisioning e assessment persone, processi, digital",
+     "pm": "Marco Perillo",
+     "consulente": "Federico Tapparello (esterno)",
+     "ordinato": "1",
+     "registrato": "0,50",
+     "fatturato": "0,50 confermate / 0,50 bozza (250 €)",
+     "fatturatoTone": "ok",
+     "fatturatoTitle": "foglio ore ≈ fatturato fornitore"
+    }
+   ]
+  },
+  {
+   "strategist": "Stefano Franceschi",
+   "rows": [
+    {
+     "codice": "CC21012",
+     "progetto": "Mastrotto — Nuova proposta di valore e posizionamento",
+     "pm": "Stefano Franceschi",
+     "consulente": "D. Favaretto (esterno)",
+     "ordinato": "12",
+     "registrato": "—",
+     "fatturato": "14 confermate",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (14 gg) superiore al registrato a foglio ore (0 gg)"
+    },
+    {
+     "codice": "CC21012",
+     "progetto": "Mastrotto — Nuova proposta di valore e posizionamento",
+     "pm": "Stefano Franceschi",
+     "consulente": "Stefano Franceschi (esterno)",
+     "ordinato": "7",
+     "registrato": "—",
+     "fatturato": "7 confermate",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (7 gg) superiore al registrato a foglio ore (0 gg)"
+    },
+    {
+     "codice": "CC21012",
+     "progetto": "Mastrotto — Nuova proposta di valore e posizionamento",
+     "pm": "Stefano Franceschi",
+     "consulente": "Alberto Capuzzo (esterno)",
+     "ordinato": "7",
+     "registrato": "7",
+     "fatturato": "6 confermate",
+     "fatturatoTone": "under",
+     "fatturatoTitle": "registrato a foglio ore (7 gg) superiore al fatturato (6 gg): giornate lavorate non ancora fatturate dal fornitore"
+    },
+    {
+     "codice": "CC21012",
+     "progetto": "Mastrotto — Nuova proposta di valore e posizionamento",
+     "pm": "Stefano Franceschi",
+     "consulente": "Daniele Fogale (esterno)",
+     "ordinato": "3",
+     "registrato": "—",
+     "fatturato": "4,50 confermate",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (4,50 gg) superiore al registrato a foglio ore (0 gg)"
+    },
+    {
+     "codice": "CC21063",
+     "progetto": "Trasporti e Servizi Mastrotto — Presidio, Formazione, Sviluppo",
+     "pm": "Chiara Regazzi",
+     "consulente": "Alberto Capuzzo (esterno)",
+     "ordinato": "16",
+     "registrato": "10",
+     "fatturato": "5 confermate",
+     "fatturatoTone": "under",
+     "fatturatoTitle": "registrato a foglio ore (10 gg) superiore al fatturato (5 gg): giornate lavorate non ancora fatturate dal fornitore"
+    },
+    {
+     "codice": "CC21063",
+     "progetto": "Trasporti e Servizi Mastrotto — Presidio, Formazione, Sviluppo",
+     "pm": "Chiara Regazzi",
+     "consulente": "Daniele Fogale (esterno)",
+     "ordinato": "8",
+     "registrato": "5,50",
+     "fatturato": "3 confermate",
+     "fatturatoTone": "under",
+     "fatturatoTitle": "registrato a foglio ore (5,50 gg) superiore al fatturato (3 gg): giornate lavorate non ancora fatturate dal fornitore"
+    },
+    {
+     "codice": "CC21063",
+     "progetto": "Trasporti e Servizi Mastrotto — Presidio, Formazione, Sviluppo",
+     "pm": "Chiara Regazzi",
+     "consulente": "D. Favaretto (esterno)",
+     "ordinato": "7",
+     "registrato": "—",
+     "fatturato": "4,20 confermate",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (4,20 gg) superiore al registrato a foglio ore (0 gg)"
+    },
+    {
+     "codice": "CC21063",
+     "progetto": "Trasporti e Servizi Mastrotto — Presidio, Formazione, Sviluppo",
+     "pm": "Chiara Regazzi",
+     "consulente": "Stefano Franceschi (esterno)",
+     "ordinato": "7,50",
+     "registrato": "—",
+     "fatturato": "1,25 confermate / 1,25 bozza (750 €)",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (2,50 gg) superiore al registrato a foglio ore (0 gg)"
+    },
+    {
+     "codice": "CC21071",
+     "progetto": "MFT Italia — Analisi di governance e sviluppo interno",
+     "pm": "Marco Laghetto",
+     "consulente": "Marco Laghetto (esterno)",
+     "ordinato": "5,50",
+     "registrato": "8,22",
+     "fatturato": "4,22 confermate",
+     "fatturatoTone": "under",
+     "fatturatoTitle": "registrato a foglio ore (8,22 gg) superiore al fatturato (4,22 gg): giornate lavorate non ancora fatturate dal fornitore"
+    },
+    {
+     "codice": "CC21071",
+     "progetto": "MFT Italia — Analisi di governance e sviluppo interno",
+     "pm": "Marco Laghetto",
+     "consulente": "Stefano Franceschi (esterno)",
+     "ordinato": "4,50",
+     "registrato": "—",
+     "fatturato": "0 confermate / 1,17 bozza (700 €)",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (1,17 gg) superiore al registrato a foglio ore (0 gg)"
+    }
+   ]
+  },
+  {
+   "strategist": "Roberto Cucchi",
+   "rows": [
+    {
+     "codice": "CC21045",
+     "progetto": "Rete — Governance Processi Inter-Company",
+     "pm": "Chiara Regazzi",
+     "consulente": "Alessandra Corradini (esterno)",
+     "ordinato": "6",
+     "registrato": "6,06",
+     "fatturato": "0 confermate / 6,06 bozza (3.032 €)",
+     "fatturatoTone": "ok",
+     "fatturatoTitle": "foglio ore ≈ fatturato fornitore"
+    },
+    {
+     "codice": "CC21045",
+     "progetto": "Rete — Governance Processi Inter-Company",
+     "pm": "Chiara Regazzi",
+     "consulente": "Stefano Franceschi (esterno)",
+     "ordinato": "5,50",
+     "registrato": "—",
+     "fatturato": "1,83 confermate / 3,67 bozza (2.200 €)",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (5,50 gg) superiore al registrato a foglio ore (0 gg)"
+    },
+    {
+     "codice": "CC21045",
+     "progetto": "Rete — Governance Processi Inter-Company",
+     "pm": "Chiara Regazzi",
+     "consulente": "Daniele Fogale (esterno)",
+     "ordinato": "2",
+     "registrato": "2",
+     "fatturato": "3 confermate",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (3 gg) superiore al registrato a foglio ore (2 gg)"
+    },
+    {
+     "codice": "CC21045",
+     "progetto": "Rete — Governance Processi Inter-Company",
+     "pm": "Chiara Regazzi",
+     "consulente": "Chiara Regazzi (esterno)",
+     "ordinato": "3",
+     "registrato": "—",
+     "fatturato": "1 confermate / 2 bozza (1.000 €)",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (3 gg) superiore al registrato a foglio ore (0 gg)"
+    }
+   ]
+  },
+  {
+   "strategist": "Senza strategist assegnato",
+   "rows": [
+    {
+     "codice": "CC21027",
+     "progetto": "Porr — Parità di genere",
+     "pm": "Camilla Tartaria",
+     "consulente": "Francesca Galasso (esterno)",
+     "ordinato": "1",
+     "registrato": "—",
+     "fatturato": "4 confermate",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (4 gg) superiore al registrato a foglio ore (0 gg)"
+    },
+    {
+     "codice": "CC21002",
+     "progetto": "Mondeo — Affiancamento 2025",
+     "pm": "Marco Laghetto",
+     "consulente": "Fabbrica del Valore S.r.l. (esterno)",
+     "ordinato": "—",
+     "registrato": "—",
+     "fatturato": "52,88 confermate",
+     "fatturatoTone": "over",
+     "fatturatoTitle": "fatturato dal fornitore (52,88 gg) superiore al registrato a foglio ore (0 gg)"
+    }
+   ]
+  }
+ ],
+ "footerNotes": [
+  "Dati letti da Odoo il 23/10/2026 e ricalcolati con scripts/build-oriens-report-fixture.mjs: baseline dall'ordine di vendita, actual e bozza da fatture cliente/fornitore e fogli ore (stessa metodologia della generazione precedente, campi pf_* di project.project non utilizzati).",
+  "Giornate pianificate: nessuno slot del Planning Odoo è collegato ai progetti Oriens del perimetro, quindi il Forecast in giornate coincide con le giornate registrate.",
+  "Le anomalie sono generate da regole automatiche; le note scritte a mano nella generazione precedente sono riportate a parte in ogni progetto come note storiche.",
+  "Costo interno = costo standard del foglio ore; costo esterno = fatture fornitore imputate al conto analitico del progetto (le note spese non sono incluse).",
+  "Ogni progetto è espandibile: cliccare sulla riga per il dettaglio baseline/actual/bozza/forecast, breakdown per consulente e anomalie."
+ ]
+}
