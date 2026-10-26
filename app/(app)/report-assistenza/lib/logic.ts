@@ -37,6 +37,32 @@ export function contractMonths(p: AssistenzaProject): number | null {
   return Math.max(1, monthIndex(p.date_end) - monthIndex(p.date_start) + 1);
 }
 
+// Ore previste nel periodo scelto: ore previste al mese (sulla durata del
+// contratto) per i mesi del periodo che cadono dentro il contratto. null se
+// il progetto non ha date o ore previste.
+export function orePrevistePeriodo(p: AssistenzaProject, year: number, month: number | null): number | null {
+  const cm = contractMonths(p);
+  if (!cm || !p.ore_previste) return null;
+  const start = monthIndex(p.date_start!);
+  const end = monthIndex(p.date_end!);
+  let n = 0;
+  for (let m = month ?? 1; m <= (month ?? 12); m++) {
+    const idx = year * 12 + m - 1;
+    if (idx >= start && idx <= end) n++;
+  }
+  return n ? (p.ore_previste / cm) * n : null;
+}
+
+// Avviso ore: arancione oltre l'80% delle ore previste del periodo, rosso
+// oltre il 100%.
+export const SOGLIA_AVVISO_ORE = 0.8;
+export type AvvisoOre = "oltre" | "attenzione" | null;
+export function avvisoOre(ore: number, previste: number | null): { avviso: AvvisoOre; pct: number | null } {
+  if (!previste) return { avviso: null, pct: null };
+  const pct = ore / previste;
+  return { avviso: pct > 1 ? "oltre" : pct >= SOGLIA_AVVISO_ORE ? "attenzione" : null, pct };
+}
+
 export function emptyMonth(): AssistenzaMonth {
   return { fatturato: 0, fatturato_bozza: 0, ore: 0, ore_senza_ordine: 0 };
 }

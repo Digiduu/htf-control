@@ -4,12 +4,15 @@ import { useMemo, useState } from "react";
 import type { AssistenzaDoc } from "../lib/types";
 import {
   MESI_LUNGHI,
+  SOGLIA_AVVISO_ORE,
+  avvisoOre,
   contractMonths,
   cumulativeTotals,
   emptyMonth,
   fmtDate,
   fmtEur,
   fmtOre,
+  orePrevistePeriodo,
   periodTotals,
   ricavoMedioGg,
   semaforo,
@@ -54,11 +57,14 @@ export default function ReportAssistenzaClient({ doc }: { doc: AssistenzaDoc }) 
         const period = periodTotals(p, year, month);
         const cumul = cumulativeTotals(p, year, month);
         const cm = contractMonths(p);
+        const previste = orePrevistePeriodo(p, year, month);
         return {
           p,
           sem,
           period,
           cumul,
+          previste,
+          ...avvisoOre(period.ore, previste),
           orePrevisteMese: cm && p.ore_previste ? p.ore_previste / cm : null,
           rmMese: ricavoMedioGg(period),
           rmCumul: ricavoMedioGg(cumul),
@@ -89,6 +95,15 @@ export default function ReportAssistenzaClient({ doc }: { doc: AssistenzaDoc }) 
     const c: Record<Semaforo, number> = { rosso: 0, arancione: 0, verde: 0, nd: 0 };
     for (const r of rows) c[r.sem.stato]++;
     return c;
+  }, [rows]);
+  const oreCounts = useMemo(() => {
+    let attenzione = 0;
+    let oltre = 0;
+    for (const r of rows) {
+      if (r.avviso === "attenzione") attenzione++;
+      if (r.avviso === "oltre") oltre++;
+    }
+    return { attenzione, oltre };
   }, [rows]);
 
   const periodLabel = month ? `${MESI_LUNGHI[month - 1]} ${year}` : `Anno ${year}`;
@@ -144,6 +159,12 @@ export default function ReportAssistenzaClient({ doc }: { doc: AssistenzaDoc }) 
         <div className="flex-1" />
 
         <div className="flex flex-wrap gap-2 text-[11.5px] text-gray-600">
+          <span className="flex items-center gap-1.5 rounded-full border border-amber-200 bg-amber-50 px-2.5 py-1 text-amber-800" title={`Ore spese tra l'${SOGLIA_AVVISO_ORE * 100}% e il 100% delle ore previste del periodo`}>
+            Ore oltre {SOGLIA_AVVISO_ORE * 100}% <b className="tabular-nums">{oreCounts.attenzione}</b>
+          </span>
+          <span className="flex items-center gap-1.5 rounded-full border border-red-200 bg-red-50 px-2.5 py-1 text-red-700" title="Ore spese oltre le ore previste del periodo">
+            Ore oltre 100% <b className="tabular-nums">{oreCounts.oltre}</b>
+          </span>
           {(
             [
               ["rosso", "Ultimo mese"],
@@ -203,9 +224,8 @@ export default function ReportAssistenzaClient({ doc }: { doc: AssistenzaDoc }) 
             </tr>
           </thead>
           <tbody>
-            {rows.map(({ p, sem, period, cumul, orePrevisteMese, rmMese, rmCumul }, i) => {
+            {rows.map(({ p, sem, period, cumul, previste, avviso, pct, orePrevisteMese, rmMese, rmCumul }, i) => {
               const bg = i % 2 === 0 ? "#ffffff" : "#fafaf8";
-              const overBudget = orePrevisteMese !== null && month !== null && period.ore > orePrevisteMese + 0.01;
               return (
                 <tr key={p.id} style={{ background: bg }}>
                   <td className={`${td} text-center`} title={semaforoLabel(p.date_end, today)}>
@@ -229,8 +249,14 @@ export default function ReportAssistenzaClient({ doc }: { doc: AssistenzaDoc }) 
                     {fmtEur(period.fatturato)}
                     {period.fatturato_bozza !== 0 && <div className="text-[10.5px] text-gray-500">di cui bozza {fmtEur(period.fatturato_bozza)}</div>}
                   </td>
-                  <td className={`${td} text-right tabular-nums ${overBudget ? "font-semibold text-red-700" : "text-gray-900"}`} title={overBudget ? "Più ore delle ore previste al mese" : undefined}>
+                  <td
+                    className={`${td} text-right tabular-nums ${avviso === "oltre" ? "font-semibold text-red-700" : avviso === "attenzione" ? "font-semibold text-amber-800" : "text-gray-900"}`}
+                    style={{ background: avviso === "oltre" ? "#fee2e2" : avviso === "attenzione" ? "#fef3c7" : undefined }}
+                    title={previste !== null ? `${fmtOre(period.ore) || "0"} ore su ${fmtOre(previste)} previste nel periodo` : "Ore previste o date di contratto non impostate"}
+                  >
+                    {avviso && <span className="mr-1">⚠</span>}
                     {fmtOre(period.ore)}
+                    {pct !== null && period.ore > 0 && <span className="ml-1 text-[10.5px] font-normal">({Math.round(pct * 100)}%)</span>}
                     {period.ore_senza_ordine !== 0 && <div className="text-[10.5px] font-normal text-gray-500">di cui senza ordine {fmtOre(period.ore_senza_ordine)}</div>}
                   </td>
                   <td className={`${td} text-right tabular-nums font-semibold text-gray-900`}>{fmtEur(rmMese)}</td>
