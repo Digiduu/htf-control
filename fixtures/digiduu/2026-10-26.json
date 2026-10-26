@@ -71,6 +71,7 @@
       "project_leader": "Gianluca Geremia",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 468.75
     },
     {
@@ -98,6 +99,7 @@
       "project_leader": "Nicola Sartore",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 11000
     },
     {
@@ -125,6 +127,7 @@
       "project_leader": "Nicola Sartore",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [],
       "totale": 600
     },
     {
@@ -152,6 +155,9 @@
       "project_leader": "Non assegnato",
       "referente": null,
       "stato": "Previsione - Possibile",
+      "tipi_progetto": [
+        "Digiduu - Workshop"
+      ],
       "totale": 3500
     },
     {
@@ -179,6 +185,7 @@
       "project_leader": "Nicoletta Piazzetta",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 5000
     },
     {
@@ -206,6 +213,7 @@
       "project_leader": "Nicoletta Piazzetta",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 600
     },
     {
@@ -233,6 +241,9 @@
       "project_leader": "Nicoletta Piazzetta",
       "referente": null,
       "stato": "Previsione - Probabile",
+      "tipi_progetto": [
+        "Assistenza"
+      ],
       "totale": 1800
     },
     {
@@ -260,6 +271,9 @@
       "project_leader": "Nicoletta Piazzetta",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [
+        "Assistenza"
+      ],
       "totale": 1800
     },
     {
@@ -287,6 +301,7 @@
       "project_leader": "Andrea Menegotto",
       "referente": null,
       "stato": "Previsione - Possibile",
+      "tipi_progetto": [],
       "totale": null
     },
     {
@@ -314,6 +329,7 @@
       "project_leader": "Luca Realdon",
       "referente": null,
       "stato": "Previsione - Possibile",
+      "tipi_progetto": [],
       "totale": null
     },
     {
@@ -341,6 +357,7 @@
       "project_leader": "Andrea Menegotto",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 57000
     },
     {
@@ -368,6 +385,7 @@
       "project_leader": "Andrea Menegotto",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 44750
     },
     {
@@ -395,6 +413,7 @@
       "project_leader": "Antonio Maddalena",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 17000
     },
     {
@@ -422,6 +441,7 @@
       "project_leader": "Antonio Maddalena",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [],
       "totale": 1200
     },
     {
@@ -449,6 +469,7 @@
       "project_leader": "Antonio Maddalena",
       "referente": null,
       "stato": "Target",
+      "tipi_progetto": [],
       "totale": 3000
     },
     {
@@ -476,6 +497,7 @@
       "project_leader": "Antonio Maddalena",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 12000
     },
     {
@@ -503,6 +525,7 @@
       "project_leader": "Antonio Maddalena",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 5000
     },
     {
@@ -530,6 +553,7 @@
       "project_leader": "Antonio Maddalena",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 9278.13
     },
     {
@@ -557,6 +581,7 @@
       "project_leader": "Antonio Maddalena",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 850
     },
     {
@@ -584,6 +609,7 @@
       "project_leader": "Antonio Maddalena",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 2600
     },
     {
@@ -611,6 +637,7 @@
       "project_leader": "Antonio Maddalena",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 17513
     },
     {
@@ -638,6 +665,7 @@
       "project_leader": "Antonio Maddalena",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 400
     },
     {
@@ -665,6 +693,7 @@
       "project_leader": "Antonio Maddalena",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 2153
     },
     {
@@ -692,6 +721,7 @@
       "project_leader": "Antonio Maddalena",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 3800
     },
     {
@@ -719,6 +749,7 @@
       "project_leader": "Antonio Maddalena",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 4500
     },
     {
@@ -746,6 +777,7 @@
       "project_leader": "Antonio Maddalena",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 1250
     },
     {
@@ -773,6 +805,7 @@
       "project_leader": "Antonio Maddalena",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [],
       "totale": 3800
     },
     {
@@ -800,6 +833,7 @@
       "project_leader": "Andrea Menegotto",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 60650.1
     },
     {
@@ -827,6 +861,7 @@
       "project_leader": "Andrea Menegotto",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 10000
     },
     {
@@ -854,6 +889,7 @@
       "project_leader": "Andrea Menegotto",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [],
       "totale": 15000
     },
     {
@@ -881,6 +917,9 @@
       "project_leader": "Andrea Menegotto",
       "referente": null,
       "stato": "Previsione - Probabile",
+      "tipi_progetto": [
+        "Digiduu - Sviluppo"
+      ],
       "totale": 16000
     },
     {
@@ -908,6 +947,7 @@
       "project_leader": "Fabiano Mason",
       "referente": null,
       "stato": "Previsione - Probabile",
+      "tipi_progetto": [],
       "totale": 28000
     },
     {
@@ -935,6 +975,7 @@
       "project_leader": "Fabiano Mason",
       "referente": null,
       "stato": "Target",
+      "tipi_progetto": [],
       "totale": 30000
     },
     {
@@ -962,6 +1003,7 @@
       "project_leader": "Marco Laghetto",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 3000
     },
     {
@@ -989,6 +1031,7 @@
       "project_leader": "Marco Laghetto",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [],
       "totale": 600
     },
     {
@@ -1016,6 +1059,7 @@
       "project_leader": "Nicoletta Piazzetta",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 11900
     },
     {
@@ -1043,6 +1087,7 @@
       "project_leader": "Nicoletta Piazzetta",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [],
       "totale": 600
     },
     {
@@ -1070,6 +1115,7 @@
       "project_leader": "Nicoletta Piazzetta",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 400
     },
     {
@@ -1097,6 +1143,7 @@
       "project_leader": "Luca Realdon",
       "referente": null,
       "stato": "Previsione - Possibile",
+      "tipi_progetto": [],
       "totale": null
     },
     {
@@ -1124,6 +1171,7 @@
       "project_leader": "Nicola Sartore",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 6450.1
     },
     {
@@ -1151,6 +1199,7 @@
       "project_leader": "Nicola Sartore",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [],
       "totale": 600
     },
     {
@@ -1178,6 +1227,7 @@
       "project_leader": "Nicola Sartore",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 950
     },
     {
@@ -1205,6 +1255,7 @@
       "project_leader": "Nicola Sartore",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 6450
     },
     {
@@ -1232,6 +1283,9 @@
       "project_leader": "Fabiano Mason",
       "referente": null,
       "stato": "Previsione - Possibile",
+      "tipi_progetto": [
+        "Starter Pack"
+      ],
       "totale": 6080
     },
     {
@@ -1259,6 +1313,7 @@
       "project_leader": "Nicola Sartore",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 2700
     },
     {
@@ -1286,6 +1341,7 @@
       "project_leader": "Nicola Sartore",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [],
       "totale": 600
     },
     {
@@ -1313,6 +1369,7 @@
       "project_leader": "Luca Realdon",
       "referente": null,
       "stato": "Previsione - Possibile",
+      "tipi_progetto": [],
       "totale": null
     },
     {
@@ -1340,6 +1397,7 @@
       "project_leader": "Chiara Rossetto",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 2137.5
     },
     {
@@ -1367,6 +1425,9 @@
       "project_leader": "Non assegnato",
       "referente": null,
       "stato": "Previsione - Probabile",
+      "tipi_progetto": [
+        "Analisi"
+      ],
       "totale": 10000
     },
     {
@@ -1394,6 +1455,7 @@
       "project_leader": "Erika Pettenuzzo",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 1306.26
     },
     {
@@ -1421,6 +1483,9 @@
       "project_leader": "Non assegnato",
       "referente": null,
       "stato": "Previsione - Possibile",
+      "tipi_progetto": [
+        "Digiduu - Workshop"
+      ],
       "totale": 3500
     },
     {
@@ -1448,6 +1513,7 @@
       "project_leader": "Fabrizio Benefazio",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 500
     },
     {
@@ -1475,6 +1541,7 @@
       "project_leader": "Fabrizio Benefazio",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 7735
     },
     {
@@ -1502,6 +1569,7 @@
       "project_leader": "Fabrizio Benefazio",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [],
       "totale": 7735
     },
     {
@@ -1529,6 +1597,7 @@
       "project_leader": "Marco Laghetto",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 11559.38
     },
     {
@@ -1556,6 +1625,7 @@
       "project_leader": "Marco Laghetto",
       "referente": null,
       "stato": "Consuntivi",
+      "tipi_progetto": [],
       "totale": 19200
     },
     {
@@ -1583,6 +1653,7 @@
       "project_leader": "Nicoletta Piazzetta",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 33064
     },
     {
@@ -1610,6 +1681,7 @@
       "project_leader": "Nicoletta Piazzetta",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [],
       "totale": 5500
     },
     {
@@ -1637,6 +1709,9 @@
       "project_leader": "Nicoletta Piazzetta",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [
+        "Digiduu - Progetto custom"
+      ],
       "totale": 10000
     },
     {
@@ -1664,6 +1739,9 @@
       "project_leader": "Nicoletta Piazzetta",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [
+        "Digiduu - Progetto custom"
+      ],
       "totale": 15000
     },
     {
@@ -1691,6 +1769,9 @@
       "project_leader": "Non assegnato",
       "referente": null,
       "stato": "Previsione - Possibile",
+      "tipi_progetto": [
+        "Starter Pack"
+      ],
       "totale": 14000
     },
     {
@@ -1718,6 +1799,7 @@
       "project_leader": "Nicoletta Piazzetta",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 440
     },
     {
@@ -1745,6 +1827,7 @@
       "project_leader": "Nicoletta Piazzetta",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": -5000
     },
     {
@@ -1772,6 +1855,7 @@
       "project_leader": "Andrea Menegotto",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 1878
     },
     {
@@ -1799,6 +1883,7 @@
       "project_leader": "Andrea Menegotto",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 2520
     },
     {
@@ -1826,6 +1911,7 @@
       "project_leader": "Andrea Menegotto",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [],
       "totale": 840
     },
     {
@@ -1853,6 +1939,7 @@
       "project_leader": "Fabrizio Benefazio",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 3500
     },
     {
@@ -1880,6 +1967,7 @@
       "project_leader": "Fabrizio Benefazio",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 6300
     },
     {
@@ -1907,6 +1995,7 @@
       "project_leader": "Fabrizio Benefazio",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [],
       "totale": 29400
     },
     {
@@ -1934,6 +2023,7 @@
       "project_leader": "Antonio Maddalena",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 3500
     },
     {
@@ -1961,6 +2051,7 @@
       "project_leader": "Nicoletta Piazzetta",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 45129
     },
     {
@@ -1988,6 +2079,7 @@
       "project_leader": "Nicoletta Piazzetta",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 19200
     },
     {
@@ -2015,6 +2107,7 @@
       "project_leader": "Nicoletta Piazzetta",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 40000
     },
     {
@@ -2042,6 +2135,7 @@
       "project_leader": "Nicoletta Piazzetta",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [],
       "totale": 20000
     },
     {
@@ -2069,6 +2163,7 @@
       "project_leader": "Ettore Lampertico",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 3500
     },
     {
@@ -2096,6 +2191,7 @@
       "project_leader": "Ettore Lampertico",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 42790.82
     },
     {
@@ -2123,6 +2219,7 @@
       "project_leader": "Ettore Lampertico",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [],
       "totale": 37000
     },
     {
@@ -2150,6 +2247,7 @@
       "project_leader": "Marco Laghetto",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 56732
     },
     {
@@ -2177,6 +2275,7 @@
       "project_leader": "Nicolò Danese",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 129354.94
     },
     {
@@ -2204,6 +2303,7 @@
       "project_leader": "Nicolò Danese",
       "referente": null,
       "stato": "Consuntivi",
+      "tipi_progetto": [],
       "totale": 51000
     },
     {
@@ -2231,6 +2331,7 @@
       "project_leader": "Nicolò Danese",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 32168
     },
     {
@@ -2258,6 +2359,7 @@
       "project_leader": "Debora Scanferla",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 14400
     },
     {
@@ -2285,6 +2387,7 @@
       "project_leader": "Debora Scanferla",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [],
       "totale": 1620
     },
     {
@@ -2312,6 +2415,7 @@
       "project_leader": "Nicoletta Piazzetta",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 2700
     },
     {
@@ -2339,6 +2443,7 @@
       "project_leader": "Non assegnato",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 43324.2
     },
     {
@@ -2366,6 +2471,7 @@
       "project_leader": "Non assegnato",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 38368.08
     },
     {
@@ -2393,6 +2499,7 @@
       "project_leader": "Fabrizio Benefazio",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 34200
     },
     {
@@ -2420,6 +2527,7 @@
       "project_leader": "Fabrizio Benefazio",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [],
       "totale": 23400
     },
     {
@@ -2447,6 +2555,7 @@
       "project_leader": "Marco Laghetto",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 3300
     },
     {
@@ -2474,6 +2583,9 @@
       "project_leader": "Marco Laghetto",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [
+        "Digiduu - Sviluppo"
+      ],
       "totale": 2600
     },
     {
@@ -2501,6 +2613,7 @@
       "project_leader": "Debora Scanferla",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 1729
     },
     {
@@ -2528,6 +2641,7 @@
       "project_leader": "Erika Pettenuzzo",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 12391.8
     },
     {
@@ -2555,6 +2669,7 @@
       "project_leader": "Erika Pettenuzzo",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 3600
     },
     {
@@ -2582,6 +2697,9 @@
       "project_leader": "Non assegnato",
       "referente": null,
       "stato": "Previsione - Possibile",
+      "tipi_progetto": [
+        "Digiduu - Progetto custom"
+      ],
       "totale": 30000
     },
     {
@@ -2609,6 +2727,7 @@
       "project_leader": "Antonio Maddalena",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 14850
     },
     {
@@ -2636,6 +2755,7 @@
       "project_leader": "Antonio Maddalena",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [],
       "totale": 9900
     },
     {
@@ -2663,6 +2783,9 @@
       "project_leader": "Non assegnato",
       "referente": null,
       "stato": "Previsione - Possibile",
+      "tipi_progetto": [
+        "Digiduu - Workshop"
+      ],
       "totale": 5000
     },
     {
@@ -2690,6 +2813,7 @@
       "project_leader": "Marco Laghetto",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 1000
     },
     {
@@ -2717,6 +2841,7 @@
       "project_leader": "Marco Laghetto",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 4000
     },
     {
@@ -2744,6 +2869,7 @@
       "project_leader": "Marco Laghetto",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [],
       "totale": 1000
     },
     {
@@ -2771,6 +2897,7 @@
       "project_leader": "Marco Laghetto",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 16500
     },
     {
@@ -2798,6 +2925,7 @@
       "project_leader": "Marco Laghetto",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [],
       "totale": 3300
     },
     {
@@ -2825,6 +2953,7 @@
       "project_leader": "Marco Laghetto",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 12480
     },
     {
@@ -2852,6 +2981,7 @@
       "project_leader": "Marco Laghetto",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 3800
     },
     {
@@ -2879,6 +3009,9 @@
       "project_leader": "Marco Laghetto",
       "referente": null,
       "stato": "Previsione - Probabile",
+      "tipi_progetto": [
+        "Digiduu - Sviluppo"
+      ],
       "totale": 3500
     },
     {
@@ -2906,6 +3039,7 @@
       "project_leader": "Marco Laghetto",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 5500
     },
     {
@@ -2933,6 +3067,7 @@
       "project_leader": "Antonio Maddalena",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 9500
     },
     {
@@ -2960,6 +3095,7 @@
       "project_leader": "Antonio Maddalena",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 12574.5
     },
     {
@@ -2987,6 +3123,7 @@
       "project_leader": "Antonio Maddalena",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [],
       "totale": 2500
     },
     {
@@ -3014,6 +3151,7 @@
       "project_leader": "Enrico Bianco",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 33158.57
     },
     {
@@ -3041,6 +3179,7 @@
       "project_leader": "Enrico Bianco",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [],
       "totale": 10800
     },
     {
@@ -3068,6 +3207,7 @@
       "project_leader": "Enrico Bianco",
       "referente": null,
       "stato": "Previsione - Probabile",
+      "tipi_progetto": [],
       "totale": 5000
     },
     {
@@ -3095,6 +3235,7 @@
       "project_leader": "Enrico Bianco",
       "referente": null,
       "stato": "Consuntivi",
+      "tipi_progetto": [],
       "totale": 10500
     },
     {
@@ -3122,6 +3263,7 @@
       "project_leader": "Enrico Bianco",
       "referente": null,
       "stato": "Target",
+      "tipi_progetto": [],
       "totale": 7000
     },
     {
@@ -3149,6 +3291,7 @@
       "project_leader": "Enrico Bianco",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 6502
     },
     {
@@ -3176,6 +3319,7 @@
       "project_leader": "Enrico Bianco",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 18506
     },
     {
@@ -3203,6 +3347,7 @@
       "project_leader": "Enrico Bianco",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 3502
     },
     {
@@ -3230,6 +3375,7 @@
       "project_leader": "Enrico Bianco",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [],
       "totale": 4000
     },
     {
@@ -3257,6 +3403,9 @@
       "project_leader": "Enrico Bianco",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [
+        "Digiduu - Sviluppo"
+      ],
       "totale": 5002
     },
     {
@@ -3284,6 +3433,9 @@
       "project_leader": "Enrico Bianco",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [
+        "Digiduu - Sviluppo"
+      ],
       "totale": 4000
     },
     {
@@ -3311,6 +3463,9 @@
       "project_leader": "Nicoletta Piazzetta",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [
+        "Digiduu - Progetto custom"
+      ],
       "totale": 9000
     },
     {
@@ -3338,6 +3493,7 @@
       "project_leader": "Fabiano Mason",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 83587
     },
     {
@@ -3365,6 +3521,7 @@
       "project_leader": "Fabiano Mason",
       "referente": null,
       "stato": "Previsione - Probabile",
+      "tipi_progetto": [],
       "totale": 50000
     },
     {
@@ -3392,6 +3549,7 @@
       "project_leader": "Fabiano Mason",
       "referente": null,
       "stato": "Previsione - Probabile",
+      "tipi_progetto": [],
       "totale": 5000
     },
     {
@@ -3419,6 +3577,9 @@
       "project_leader": "Guido Tessari",
       "referente": null,
       "stato": "Previsione - Possibile",
+      "tipi_progetto": [
+        "Starter Pack"
+      ],
       "totale": null
     },
     {
@@ -3446,6 +3607,7 @@
       "project_leader": "Antonio Maddalena",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 39000
     },
     {
@@ -3473,6 +3635,9 @@
       "project_leader": "Antonio Maddalena",
       "referente": null,
       "stato": "Previsione - Probabile",
+      "tipi_progetto": [
+        "Digiduu - Progetto custom"
+      ],
       "totale": 10500
     },
     {
@@ -3500,6 +3665,7 @@
       "project_leader": "Luca Realdon",
       "referente": null,
       "stato": "Previsione - Possibile",
+      "tipi_progetto": [],
       "totale": null
     },
     {
@@ -3527,6 +3693,7 @@
       "project_leader": "Fabrizio Benefazio",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 15907.5
     },
     {
@@ -3554,6 +3721,7 @@
       "project_leader": "Fabrizio Benefazio",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [],
       "totale": 600
     },
     {
@@ -3581,6 +3749,7 @@
       "project_leader": "Fabrizio Benefazio",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 1500
     },
     {
@@ -3608,6 +3777,9 @@
       "project_leader": "Antonio Maddalena",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [
+        "Digiduu - Workshop"
+      ],
       "totale": 3500
     },
     {
@@ -3635,6 +3807,9 @@
       "project_leader": "Antonio Maddalena",
       "referente": null,
       "stato": "Previsione - Possibile",
+      "tipi_progetto": [
+        "Digiduu - Workshop"
+      ],
       "totale": 10000
     },
     {
@@ -3662,6 +3837,9 @@
       "project_leader": "Luca Realdon",
       "referente": null,
       "stato": "Previsione - Possibile",
+      "tipi_progetto": [
+        "Digiduu - Progetto custom"
+      ],
       "totale": null
     },
     {
@@ -3689,6 +3867,7 @@
       "project_leader": "Nicolò Danese",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 7048.6
     },
     {
@@ -3716,6 +3895,7 @@
       "project_leader": "Nicolò Danese",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [],
       "totale": 600
     },
     {
@@ -3743,6 +3923,7 @@
       "project_leader": "Nicolò Danese",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 22400
     },
     {
@@ -3770,6 +3951,7 @@
       "project_leader": "Nicolò Danese",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [],
       "totale": 5600
     },
     {
@@ -3797,6 +3979,7 @@
       "project_leader": "Luca Realdon",
       "referente": null,
       "stato": "Previsione - Possibile",
+      "tipi_progetto": [],
       "totale": null
     },
     {
@@ -3824,6 +4007,7 @@
       "project_leader": "Gianluca Geremia",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 19450
     },
     {
@@ -3851,6 +4035,7 @@
       "project_leader": "Non assegnato",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 10000
     },
     {
@@ -3878,6 +4063,7 @@
       "project_leader": "Non assegnato",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [],
       "totale": 5000
     },
     {
@@ -3905,6 +4091,7 @@
       "project_leader": "Luca Realdon",
       "referente": null,
       "stato": "Previsione - Possibile",
+      "tipi_progetto": [],
       "totale": null
     },
     {
@@ -3932,6 +4119,7 @@
       "project_leader": "Antonio Maddalena",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 6150
     },
     {
@@ -3959,6 +4147,7 @@
       "project_leader": "Nicolò Danese",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": 19680
     },
     {
@@ -3986,6 +4175,7 @@
       "project_leader": "Nicolò Danese",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
+      "tipi_progetto": [],
       "totale": 5420
     },
     {
@@ -4013,6 +4203,7 @@
       "project_leader": "Non assegnato",
       "referente": null,
       "stato": "Confermata - Fatturato",
+      "tipi_progetto": [],
       "totale": -4750
     }
   ],

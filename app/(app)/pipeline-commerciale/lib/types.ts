@@ -17,6 +17,10 @@ export interface PipelineRow {
   // Origine. Non ancora presente in nessuna generazione storica esistente:
   // resta null finché la generazione da Odoo non lo porta.
   origine_titolo?: string | null;
+  // Solo Digiduu, dalle etichette CRM dell'opportunità collegata ("Workshop",
+  // "Progetti custom"); vuoto = "Altri progetti". Assente nelle generazioni
+  // precedenti al 26/10/2026: lì il filtro "Tipo progetto" non compare.
+  tipi_progetto?: string[];
   ordinato: number | null;
   months: (number | null)[];
   totale: number | null;

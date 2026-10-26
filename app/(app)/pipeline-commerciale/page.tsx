@@ -15,6 +15,8 @@ import {
   buildPrevCurrentTable,
   mergeOrderRows,
   visibleCellStates,
+  rowTipiProgetto,
+  tipiProgettoOptions,
   type MergedRow,
   type PrevCurrentEntry,
 } from "./lib/pipeline-logic";
@@ -133,6 +135,8 @@ export default function PipelineCommercialePage() {
   const [filterText, setFilterText] = useState("");
   const [disabledStates, setDisabledStates] = useState<Set<string>>(new Set());
   const [tipologiaOpen, setTipologiaOpen] = useState(false);
+  const [disabledTipi, setDisabledTipi] = useState<Set<string>>(new Set());
+  const [tipoProgettoOpen, setTipoProgettoOpen] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -152,6 +156,8 @@ export default function PipelineCommercialePage() {
     setFilterResetCompany(company);
     setDisabledStates(new Set());
     setTipologiaOpen(false);
+    setDisabledTipi(new Set());
+    setTipoProgettoOpen(false);
   }
 
   // Ambito di visibilità dell'utente corrente: un utente globale vede tutto
@@ -363,6 +369,12 @@ export default function PipelineCommercialePage() {
   const previsioneFamilyVisible =
     !stateFilterActive || availableStates.some((s) => s.stato.startsWith("Previsione") && !disabledStates.has(s.stato));
 
+  // Filtro "Tipo progetto": solo Digiduu e solo per le generazioni che portano
+  // il campo tipi_progetto (dal 26/10/2026), altrimenti non compare.
+  const tipoProgettoAvailable = company === "digiduu" && (doc?.rows || []).some((r) => r.tipi_progetto !== undefined);
+  const tipoFilterActive = tipoProgettoAvailable && disabledTipi.size > 0;
+  const tipiOptions = useMemo(() => tipiProgettoOptions(doc?.rows || []), [doc]);
+
   // Col filtro Tipologia attivo spariscono anche le righe (ordini) che non
   // hanno più nessun importo in uno degli stati rimasti spuntati, invece di
   // restare in tabella come righe vuote.
@@ -371,15 +383,16 @@ export default function PipelineCommercialePage() {
       mergedRows.filter(
         (r) =>
           (!filterText || (r.cliente || "").toLowerCase().includes(filterText.toLowerCase())) &&
+          (!tipoFilterActive || rowTipiProgetto(r).some((t) => !disabledTipi.has(t))) &&
           (r.is_crm
             ? previsioneFamilyVisible
             : !stateFilterActive ||
               (r._cellStates || []).some((cell) => visibleCellStates(cell, disabledStates).some((x) => x.val)))
       ),
-    [mergedRows, filterText, previsioneFamilyVisible, stateFilterActive, disabledStates]
+    [mergedRows, filterText, previsioneFamilyVisible, stateFilterActive, disabledStates, tipoFilterActive, disabledTipi]
   );
 
-  const anyFilter = plActive || !!filterText || stateFilterActive;
+  const anyFilter = plActive || !!filterText || stateFilterActive || tipoFilterActive;
 
   const totals = useMemo(() => {
     if (!anyFilter) return doc?.overall ?? { ordinato: 0, months: new Array(12).fill(0), totale: 0 };
@@ -494,9 +507,10 @@ export default function PipelineCommercialePage() {
     const parts: string[] = [];
     if (plActive) parts.push(plFilter.toUpperCase());
     if (stateFilterActive) parts.push(`${availableStates.length - disabledStates.size}/${availableStates.length} TIPOLOGIE`);
+    if (tipoFilterActive) parts.push(`${tipiOptions.length - disabledTipi.size}/${tipiOptions.length} TIPI PROGETTO`);
     if (!parts.length) return "TOTALE GENERALE";
     return plActive ? `TOTALE ${parts.join(" · ")}` : `TOTALE GENERALE · ${parts.join(" · ")}`;
-  }, [plActive, plFilter, stateFilterActive, availableStates, disabledStates]);
+  }, [plActive, plFilter, stateFilterActive, availableStates, disabledStates, tipoFilterActive, disabledTipi, tipiOptions]);
 
   const descDates = useMemo(
     () => [...((company ? datesByCompany[company] : []) || [])].reverse(),
@@ -761,6 +775,67 @@ export default function PipelineCommercialePage() {
                     </label>
                   ))}
                 </div>
+              </div>
+            )}
+          </div>
+        )}
+
+        {tipoProgettoAvailable && (
+          <div className="relative">
+            <button
+              type="button"
+              onClick={() => setTipoProgettoOpen((v) => !v)}
+              className={`rounded-lg border px-3 py-2 text-sm font-semibold shadow-sm ${
+                tipoFilterActive
+                  ? "border-violet-300 bg-violet-50 text-violet-700"
+                  : "border-gray-200 bg-white text-gray-700 hover:border-violet-400 hover:text-violet-700"
+              }`}
+            >
+              Tipo progetto{tipoFilterActive ? ` (${tipiOptions.length - disabledTipi.size}/${tipiOptions.length})` : ""}
+            </button>
+            {tipoProgettoOpen && (
+              <div className="absolute right-0 z-20 mt-1 w-72 rounded-lg border border-gray-200 bg-white p-3 shadow-lg">
+                <div className="mb-2 flex items-center justify-between">
+                  <span className="text-[11px] font-semibold uppercase tracking-wide text-gray-500">Filtra per tipo progetto</span>
+                  <div className="flex gap-2">
+                    <button
+                      type="button"
+                      className="text-xs font-semibold text-violet-700 hover:underline"
+                      onClick={() => setDisabledTipi(new Set())}
+                    >
+                      Tutti
+                    </button>
+                    <button
+                      type="button"
+                      className="text-xs font-semibold text-violet-700 hover:underline"
+                      onClick={() => setDisabledTipi(new Set(tipiOptions))}
+                    >
+                      Nessuno
+                    </button>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-1.5">
+                  {tipiOptions.map((t) => (
+                    <label key={t} className="flex items-center gap-2 text-sm text-gray-700">
+                      <input
+                        type="checkbox"
+                        checked={!disabledTipi.has(t)}
+                        onChange={(e) =>
+                          setDisabledTipi((prev) => {
+                            const next = new Set(prev);
+                            if (e.target.checked) next.delete(t);
+                            else next.add(t);
+                            return next;
+                          })
+                        }
+                      />
+                      {t}
+                    </label>
+                  ))}
+                </div>
+                <p className="mt-2.5 text-[11px] leading-snug text-gray-500">
+                  Etichette dell&apos;opportunità CRM collegata all&apos;ordine (un ordine con più etichette compare sotto ognuna).
+                </p>
               </div>
             )}
           </div>

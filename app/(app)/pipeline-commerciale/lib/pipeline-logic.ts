@@ -206,6 +206,19 @@ export function visibleCellStates(states: CellState[], disabled: Set<string>): C
   return disabled.size ? states.filter((s) => !disabled.has(s.stato || "")) : states;
 }
 
+// Filtro "Tipo progetto" (solo Digiduu): le opzioni sono le etichette CRM
+// presenti nella generazione, più "Senza etichetta" per le righe che non ne
+// hanno nessuna.
+export const SENZA_ETICHETTA = "Senza etichetta";
+export function rowTipiProgetto(r: PipelineRow): string[] {
+  return r.tipi_progetto?.length ? r.tipi_progetto : [SENZA_ETICHETTA];
+}
+export function tipiProgettoOptions(rows: PipelineRow[]): string[] {
+  const tags = new Set<string>();
+  for (const r of rows) for (const t of r.tipi_progetto || []) tags.add(t);
+  return [...[...tags].sort((a, b) => a.localeCompare(b, "it")), SENZA_ETICHETTA];
+}
+
 export interface MergedRow extends PipelineRow {
   _cellStates: CellState[][];
 }
@@ -237,6 +250,7 @@ export function mergeOrderRows(rows: PipelineRow[]): MergedRow[] {
         referente: r.referente,
         stato: null,
         origine_titolo: r.origine_titolo || null,
+        tipi_progetto: r.tipi_progetto,
         ordinato: 0,
         months: new Array(12).fill(0),
         totale: 0,

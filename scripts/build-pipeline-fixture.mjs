@@ -20,12 +20,19 @@
 //   partners.json   res.partner di tutti i clienti coinvolti (+ loro
 //                   commercial_partner_id), con user_id, digiduu_account_id,
 //                   project_leader_id
+//   so_tipo.json    (facoltativo, solo Digiduu) sale.order company_id=6 con
+//                   tag_ids != false o opportunity_id.tag_ids != false
+//                   (name, tag_ids, opportunity_id)
+//   lead_tipo.json  (facoltativo, solo Digiduu) crm.lead company_id=6, attive
+//                   e archiviate, tag_ids != false (name, tag_ids)
+//   crm_tags.json   (facoltativo) crm.tag, tutte (name)
+//                   → campo tipi_progetto delle righe (filtro "Tipo progetto")
 //
 // Uso: node scripts/build-pipeline-fixture.mjs <raw> <data YYYY-MM-DD> "<source_note oriens>" "<source_note digiduu>"
 // Il target annuo per cliente (solo Digiduu) non viene da Odoo: è ripreso
 // dalla tabellina target_table dell'ultimo fixture Digiduu esistente.
 
-import { readFileSync, writeFileSync, readdirSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 
 const [raw, dataAsOf, noteOriens, noteDigiduu] = process.argv.slice(2);
@@ -56,6 +63,20 @@ const partners = new Map(load("partners.json").map((p) => [p.id, p]));
 const projects = load("projects.json");
 const piano = load("piano.json");
 const crm = load("crm.json");
+
+// Filtro "Tipo progetto" (solo Digiduu): tutte le etichette CRM
+// dell'opportunità collegata all'ordine e dell'ordine stesso, col nome che
+// hanno in Odoo. Righe senza etichette = tipi_progetto vuoto, cioè "Senza
+// etichetta" nella pagina.
+const hasTipo = ["so_tipo.json", "lead_tipo.json", "crm_tags.json"].every((f) => existsSync(join(raw, f)));
+const tagNames = new Map(hasTipo ? load("crm_tags.json").map((t) => [t.id, t.name.trim()]) : []);
+const toTipi = (ids) => [...new Set(ids)].map((id) => tagNames.get(id) ?? `Etichetta ${id}`).sort((a, b) => a.localeCompare(b, "it"));
+const leadTagIds = new Map(hasTipo ? load("lead_tipo.json").map((l) => [l.id, l.tag_ids]) : []);
+const orderTipi = new Map(
+  hasTipo
+    ? load("so_tipo.json").map((o) => [o.name, toTipi([...o.tag_ids, ...(o.opportunity_id ? leadTagIds.get(o.opportunity_id[0]) || [] : [])])])
+    : []
+);
 
 function commercial(pid) {
   const p = partners.get(pid);
@@ -158,6 +179,7 @@ function build(company) {
       project_leader: isDig ? partnerUser(c.partnerId, "project_leader_id") ?? fb() ?? "Non assegnato" : null,
       referente: isDig ? null : partnerUser(c.partnerId, "user_id") ?? fb() ?? "Non assegnato",
       stato: c.stato,
+      ...(isDig && hasTipo ? { tipi_progetto: orderTipi.get(c.origine) || [] } : {}),
       totale,
     });
   }
@@ -186,6 +208,7 @@ function build(company) {
       project_leader: isDig ? partnerUser(l.partner_id[0], "project_leader_id") ?? fb() ?? "Non assegnato" : null,
       referente: isDig ? null : partnerUser(l.partner_id[0], "user_id") ?? fb() ?? "Non assegnato",
       stato: "Previsione - Possibile",
+      ...(isDig && hasTipo ? { tipi_progetto: toTipi(leadTagIds.get(l.id) || []) } : {}),
       totale: null,
     };
     rows.push(row);
@@ -255,6 +278,12 @@ function build(company) {
   for (const k of isDig ? ["account", "project_leader"] : ["referente"]) {
     const na = [...new Set(rows.filter((r) => r[k] === "Non assegnato").map((r) => r.cliente))];
     if (na.length) console.log(`  ${k} "Non assegnato": ${na.join(", ")}`);
+  }
+  if (isDig && hasTipo) {
+    for (const t of [...new Set(rows.flatMap((r) => r.tipi_progetto))].sort()) {
+      const o = [...new Set(rows.filter((r) => r.tipi_progetto.includes(t)).map((r) => r.origine))];
+      console.log(`  ${t}: ${o.join(", ") || "nessuna riga"}`);
+    }
   }
   const neg = rows.filter((r) => (r.totale || 0) < 0);
   if (neg.length) console.log(`  righe con totale negativo: ${neg.map((r) => `${r.cliente} ${r.origine} ${r.totale}`).join("; ")}`);
