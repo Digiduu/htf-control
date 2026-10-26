@@ -1,0 +1,5137 @@
+{
+ "months": [
+  "2026-10",
+  "2026-11",
+  "2026-12",
+  "2027-01",
+  "2027-02",
+  "2027-03",
+  "2027-04",
+  "2027-05",
+  "2027-06",
+  "2027-07",
+  "2027-08",
+  "2027-09"
+ ],
+ "wd": [
+  22,
+  21,
+  23,
+  21,
+  20,
+  23,
+  22,
+  21,
+  22,
+  22,
+  22,
+  22
+ ],
+ "people": [
+  {
+   "name": "Alberto Gugel",
+   "ggsett": 4,
+   "roles": [
+    "Business Analyst"
+   ],
+   "avail": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Alessandra Volpato",
+   "ggsett": null,
+   "roles": [
+    "Senza ruolo"
+   ],
+   "avail": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Andrea Bertoldi",
+   "ggsett": 4,
+   "roles": [
+    "Consultant"
+   ],
+   "avail": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Andrea Menegotto",
+   "ggsett": 8,
+   "roles": [
+    "Consultant"
+   ],
+   "avail": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Antonio Maddalena",
+   "ggsett": 16,
+   "roles": [
+    "Project Leader"
+   ],
+   "avail": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Chiara Rossetto DG2",
+   "ggsett": null,
+   "roles": [
+    "PMO"
+   ],
+   "avail": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Cristian Farinello",
+   "ggsett": 16,
+   "roles": [
+    "Developer"
+   ],
+   "avail": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Daniele Fogale",
+   "ggsett": 8,
+   "roles": [
+    "Business Analyst"
+   ],
+   "avail": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Debora Scanferla",
+   "ggsett": 16,
+   "roles": [
+    "Helpdesk"
+   ],
+   "avail": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Digital Automations",
+   "ggsett": null,
+   "roles": [
+    "Developer"
+   ],
+   "avail": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Elena Trento",
+   "ggsett": 8,
+   "roles": [
+    "Business Analyst"
+   ],
+   "avail": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Enrico Bianco",
+   "ggsett": 16,
+   "roles": [
+    "Consultant"
+   ],
+   "avail": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Erika Pettenuzzo",
+   "ggsett": 10,
+   "roles": [
+    "Project Leader"
+   ],
+   "avail": [
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Ettore Lampertico",
+   "ggsett": 8,
+   "roles": [
+    "Business Analyst"
+   ],
+   "avail": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Fabiano Mason",
+   "ggsett": 8,
+   "roles": [
+    "Operations Manager"
+   ],
+   "avail": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Fabrizio Benefazio",
+   "ggsett": 16,
+   "roles": [
+    "Project Leader Senior"
+   ],
+   "avail": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Federico Candiago",
+   "ggsett": 16,
+   "roles": [
+    "Odoo Developer Senior"
+   ],
+   "avail": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Federico Tapparello",
+   "ggsett": 8,
+   "roles": [
+    "Consultant"
+   ],
+   "avail": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Francesco Corradini",
+   "ggsett": 16,
+   "roles": [
+    "Developer"
+   ],
+   "avail": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Francesco Palazzotto",
+   "ggsett": 16,
+   "roles": [
+    "Business Analyst Senior"
+   ],
+   "avail": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Gianluca Dal Maso",
+   "ggsett": 16,
+   "roles": [
+    "Developer"
+   ],
+   "avail": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Gianluca Geremia",
+   "ggsett": 8,
+   "roles": [
+    "Project Leader"
+   ],
+   "avail": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Gianluca Mamusi",
+   "ggsett": 16,
+   "roles": [
+    "Business Analyst"
+   ],
+   "avail": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Giuseppe Piazza",
+   "ggsett": null,
+   "roles": [
+    "Direzione"
+   ],
+   "avail": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Guido Tessari",
+   "ggsett": null,
+   "roles": [
+    "Growth & Success Manager"
+   ],
+   "avail": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Letizia Freda",
+   "ggsett": 4,
+   "roles": [
+    "Developer"
+   ],
+   "avail": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Luca D'Ambrosio",
+   "ggsett": 16,
+   "roles": [
+    "Developer"
+   ],
+   "avail": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Luca Realdon",
+   "ggsett": 6,
+   "roles": [
+    "Direzione"
+   ],
+   "avail": [
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Marco Laghetto",
+   "ggsett": 8,
+   "roles": [
+    "Project Leader"
+   ],
+   "avail": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Marco Perillo",
+   "ggsett": 16,
+   "roles": [
+    "Business Analyst"
+   ],
+   "avail": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Mattia Dalla Vecchia",
+   "ggsett": 8,
+   "roles": [
+    "Senza ruolo"
+   ],
+   "avail": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Michele Catera",
+   "ggsett": null,
+   "roles": [
+    "Senza ruolo"
+   ],
+   "avail": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Michele De Toni",
+   "ggsett": 20,
+   "roles": [
+    "Business Analyst"
+   ],
+   "avail": [
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Mirco Strizzi",
+   "ggsett": null,
+   "roles": [
+    "Project Leader"
+   ],
+   "avail": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Nicola Sartore",
+   "ggsett": null,
+   "roles": [
+    "Growth & Success Manager"
+   ],
+   "avail": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Nicoletta Piazzetta",
+   "ggsett": 16,
+   "roles": [
+    "Project Leader"
+   ],
+   "avail": [
+    5,
+    13,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+   ],
+   "ferie": [
+    11,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Nicolò Danese",
+   "ggsett": 16,
+   "roles": [
+    "Project Leader"
+   ],
+   "avail": [
+    12,
+    15,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+   ],
+   "ferie": [
+    4,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Odoo",
+   "ggsett": null,
+   "roles": [
+    "Senza ruolo"
+   ],
+   "avail": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Prime",
+   "ggsett": 12,
+   "roles": [
+    "Senza ruolo"
+   ],
+   "avail": [
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Risorsa App Specialist",
+   "ggsett": null,
+   "roles": [
+    "Senza ruolo"
+   ],
+   "avail": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": true
+  },
+  {
+   "name": "Risorsa PL",
+   "ggsett": null,
+   "roles": [
+    "Senza ruolo"
+   ],
+   "avail": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": true
+  },
+  {
+   "name": "Risorsa Sviluppo",
+   "ggsett": null,
+   "roles": [
+    "Senza ruolo"
+   ],
+   "avail": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": true
+  },
+  {
+   "name": "Sara De Paoli",
+   "ggsett": null,
+   "roles": [
+    "Senza ruolo"
+   ],
+   "avail": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Service",
+   "ggsett": null,
+   "roles": [
+    "Senza ruolo"
+   ],
+   "avail": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Sofia Markovic",
+   "ggsett": 16,
+   "roles": [
+    "Senza ruolo"
+   ],
+   "avail": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Stefano Aio",
+   "ggsett": 14,
+   "roles": [
+    "Business Analyst"
+   ],
+   "avail": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Unitiva",
+   "ggsett": 8,
+   "roles": [
+    "Developer"
+   ],
+   "avail": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "Utente Portale",
+   "ggsett": null,
+   "roles": [
+    "Senza ruolo"
+   ],
+   "avail": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  },
+  {
+   "name": "WSB - We Sell Brain -",
+   "ggsett": 44,
+   "roles": [
+    "Developer"
+   ],
+   "avail": [
+    44,
+    44,
+    44,
+    44,
+    44,
+    44,
+    44,
+    44,
+    44,
+    44,
+    44,
+    44
+   ],
+   "ferie": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "generic": false
+  }
+ ],
+ "items": [
+  [
+   "Andrea Menegotto",
+   "2026-10",
+   "DD10145 - BF Automations - Implementazione Odoo",
+   "p",
+   4,
+   "DD10145 · BF Automations",
+   "Implementazione Odoo"
+  ],
+  [
+   "Andrea Menegotto",
+   "2026-11",
+   "DD10145 - BF Automations - Implementazione Odoo",
+   "p",
+   4,
+   "DD10145 · BF Automations",
+   "Implementazione Odoo"
+  ],
+  [
+   "Andrea Menegotto",
+   "2026-12",
+   "DD10145 - BF Automations - Implementazione Odoo",
+   "p",
+   4,
+   "DD10145 · BF Automations",
+   "Implementazione Odoo"
+  ],
+  [
+   "Andrea Menegotto",
+   "2026-10",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   6,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Andrea Menegotto",
+   "2026-11",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   6,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Andrea Menegotto",
+   "2026-12",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   6,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Andrea Menegotto",
+   "2027-01",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   6,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Andrea Menegotto",
+   "2027-02",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   6,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Antonio Maddalena",
+   "2026-10",
+   "ARKY 2026",
+   "s",
+   2,
+   "ARKY 2026",
+   ""
+  ],
+  [
+   "Antonio Maddalena",
+   "2026-11",
+   "ARKY 2026",
+   "s",
+   4,
+   "ARKY 2026",
+   ""
+  ],
+  [
+   "Antonio Maddalena",
+   "2026-12",
+   "ARKY 2026",
+   "s",
+   4,
+   "ARKY 2026",
+   ""
+  ],
+  [
+   "Antonio Maddalena",
+   "2026-10",
+   "DD100TBD - Secco - Crescita",
+   "p",
+   1.5,
+   "DD100TBD · Secco",
+   "Crescita"
+  ],
+  [
+   "Antonio Maddalena",
+   "2026-11",
+   "DD100TBD - Secco - Crescita",
+   "p",
+   2,
+   "DD100TBD · Secco",
+   "Crescita"
+  ],
+  [
+   "Antonio Maddalena",
+   "2026-12",
+   "DD100TBD - Secco - Crescita",
+   "p",
+   2,
+   "DD100TBD · Secco",
+   "Crescita"
+  ],
+  [
+   "Antonio Maddalena",
+   "2026-10",
+   "DD10194 - Soul - Odoo",
+   "p",
+   1,
+   "DD10194 · Soul",
+   "Odoo"
+  ],
+  [
+   "Antonio Maddalena",
+   "2026-11",
+   "DD10194 - Soul - Odoo",
+   "s",
+   2,
+   "DD10194 · Soul",
+   "Odoo"
+  ],
+  [
+   "Antonio Maddalena",
+   "2026-12",
+   "DD10194 - Soul - Odoo",
+   "s",
+   2,
+   "DD10194 · Soul",
+   "Odoo"
+  ],
+  [
+   "Antonio Maddalena",
+   "2027-01",
+   "DD10194 - Soul - Odoo",
+   "s",
+   2,
+   "DD10194 · Soul",
+   "Odoo"
+  ],
+  [
+   "Antonio Maddalena",
+   "2027-02",
+   "DD10194 - Soul - Odoo",
+   "s",
+   4,
+   "DD10194 · Soul",
+   "Odoo"
+  ],
+  [
+   "Antonio Maddalena",
+   "2026-10",
+   "DD10281 - Bertoletti Group - Workshop di validazione",
+   "s",
+   0.75,
+   "DD10281 · Bertoletti Group",
+   "Workshop di validazione"
+  ],
+  [
+   "Antonio Maddalena",
+   "2026-10",
+   "DD10241 - Penta Formazione - Affiancamento alla crescita",
+   "p",
+   1,
+   "DD10241 · Penta Formazione",
+   "Affiancamento alla crescita"
+  ],
+  [
+   "Antonio Maddalena",
+   "2026-11",
+   "DD10241 - Penta Formazione - Affiancamento alla crescita",
+   "p",
+   1,
+   "DD10241 · Penta Formazione",
+   "Affiancamento alla crescita"
+  ],
+  [
+   "Antonio Maddalena",
+   "2026-12",
+   "DD10241 - Penta Formazione - Affiancamento alla crescita",
+   "p",
+   1,
+   "DD10241 · Penta Formazione",
+   "Affiancamento alla crescita"
+  ],
+  [
+   "Daniele Fogale",
+   "2026-10",
+   "DD10215 - FCF Impianti - Affiancamento 2026",
+   "p",
+   1,
+   "DD10215 · FCF Impianti",
+   "Affiancamento 2026"
+  ],
+  [
+   "Daniele Fogale",
+   "2026-11",
+   "DD10215 - FCF Impianti - Affiancamento 2026",
+   "p",
+   1,
+   "DD10215 · FCF Impianti",
+   "Affiancamento 2026"
+  ],
+  [
+   "Daniele Fogale",
+   "2026-12",
+   "DD10215 - FCF Impianti - Affiancamento 2026",
+   "p",
+   1,
+   "DD10215 · FCF Impianti",
+   "Affiancamento 2026"
+  ],
+  [
+   "Daniele Fogale",
+   "2027-01",
+   "DD10215 - FCF Impianti - Affiancamento 2026",
+   "s",
+   1,
+   "DD10215 · FCF Impianti",
+   "Affiancamento 2026"
+  ],
+  [
+   "Daniele Fogale",
+   "2027-02",
+   "DD10215 - FCF Impianti - Affiancamento 2026",
+   "s",
+   1,
+   "DD10215 · FCF Impianti",
+   "Affiancamento 2026"
+  ],
+  [
+   "Elena Trento",
+   "2026-10",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   4,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Elena Trento",
+   "2026-11",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   4,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Elena Trento",
+   "2026-12",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   4,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Elena Trento",
+   "2027-01",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   4,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Elena Trento",
+   "2027-02",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   4,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Elena Trento",
+   "2026-10",
+   "DD10347 - Service43 - Implementazione Odoo",
+   "s",
+   2,
+   "DD10347 · Service43",
+   "Implementazione Odoo"
+  ],
+  [
+   "Elena Trento",
+   "2026-11",
+   "DD10347 - Service43 - Implementazione Odoo",
+   "s",
+   4,
+   "DD10347 · Service43",
+   "Implementazione Odoo"
+  ],
+  [
+   "Elena Trento",
+   "2026-12",
+   "DD10347 - Service43 - Implementazione Odoo",
+   "s",
+   1,
+   "DD10347 · Service43",
+   "Implementazione Odoo"
+  ],
+  [
+   "Enrico Bianco",
+   "2026-11",
+   "DD10143 - Irontech - Odoo",
+   "p",
+   1.5,
+   "DD10143 · Irontech",
+   "Odoo"
+  ],
+  [
+   "Enrico Bianco",
+   "2026-12",
+   "DD10143 - Irontech - Odoo",
+   "p",
+   2,
+   "DD10143 · Irontech",
+   "Odoo"
+  ],
+  [
+   "Enrico Bianco",
+   "2027-01",
+   "DD10143 - Irontech - Odoo",
+   "s",
+   1,
+   "DD10143 · Irontech",
+   "Odoo"
+  ],
+  [
+   "Enrico Bianco",
+   "2027-02",
+   "DD10143 - Irontech - Odoo",
+   "s",
+   4,
+   "DD10143 · Irontech",
+   "Odoo"
+  ],
+  [
+   "Enrico Bianco",
+   "2026-10",
+   "DD10013 - Brombal - Affiancamento Digital",
+   "p",
+   4,
+   "DD10013 · Brombal",
+   "Affiancamento Digital"
+  ],
+  [
+   "Enrico Bianco",
+   "2026-11",
+   "DD10013 - Brombal - Affiancamento Digital",
+   "s",
+   4,
+   "DD10013 · Brombal",
+   "Affiancamento Digital"
+  ],
+  [
+   "Enrico Bianco",
+   "2026-11",
+   "DD10013 - Brombal - Affiancamento Digital",
+   "p",
+   4,
+   "DD10013 · Brombal",
+   "Affiancamento Digital"
+  ],
+  [
+   "Enrico Bianco",
+   "2026-12",
+   "DD10013 - Brombal - Affiancamento Digital",
+   "s",
+   4,
+   "DD10013 · Brombal",
+   "Affiancamento Digital"
+  ],
+  [
+   "Enrico Bianco",
+   "2026-12",
+   "DD10013 - Brombal - Affiancamento Digital",
+   "p",
+   4,
+   "DD10013 · Brombal",
+   "Affiancamento Digital"
+  ],
+  [
+   "Enrico Bianco",
+   "2027-01",
+   "DD10013 - Brombal - Affiancamento Digital",
+   "s",
+   8,
+   "DD10013 · Brombal",
+   "Affiancamento Digital"
+  ],
+  [
+   "Enrico Bianco",
+   "2027-02",
+   "DD10013 - Brombal - Affiancamento Digital",
+   "s",
+   8,
+   "DD10013 · Brombal",
+   "Affiancamento Digital"
+  ],
+  [
+   "Enrico Bianco",
+   "2026-10",
+   "DD10194 - Soul - Odoo",
+   "s",
+   2,
+   "DD10194 · Soul",
+   "Odoo"
+  ],
+  [
+   "Enrico Bianco",
+   "2026-10",
+   "DD10194 - Soul - Odoo",
+   "p",
+   1,
+   "DD10194 · Soul",
+   "Odoo"
+  ],
+  [
+   "Enrico Bianco",
+   "2026-11",
+   "DD10194 - Soul - Odoo",
+   "s",
+   2,
+   "DD10194 · Soul",
+   "Odoo"
+  ],
+  [
+   "Enrico Bianco",
+   "2026-12",
+   "DD10194 - Soul - Odoo",
+   "s",
+   2,
+   "DD10194 · Soul",
+   "Odoo"
+  ],
+  [
+   "Enrico Bianco",
+   "2027-01",
+   "DD10194 - Soul - Odoo",
+   "s",
+   2,
+   "DD10194 · Soul",
+   "Odoo"
+  ],
+  [
+   "Enrico Bianco",
+   "2027-02",
+   "DD10194 - Soul - Odoo",
+   "s",
+   4,
+   "DD10194 · Soul",
+   "Odoo"
+  ],
+  [
+   "Enrico Bianco",
+   "2026-10",
+   "DD10281 - Bertoletti Group - Workshop di validazione",
+   "s",
+   2,
+   "DD10281 · Bertoletti Group",
+   "Workshop di validazione"
+  ],
+  [
+   "Enrico Bianco",
+   "2026-10",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   8,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Enrico Bianco",
+   "2026-11",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   8,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Enrico Bianco",
+   "2026-12",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   8,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Enrico Bianco",
+   "2027-01",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   8,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Enrico Bianco",
+   "2027-02",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   8,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Enrico Bianco",
+   "2026-10",
+   "DD10241 - Penta Formazione - Affiancamento alla crescita",
+   "s",
+   1,
+   "DD10241 · Penta Formazione",
+   "Affiancamento alla crescita"
+  ],
+  [
+   "Enrico Bianco",
+   "2026-10",
+   "DD10241 - Penta Formazione - Affiancamento alla crescita",
+   "p",
+   1,
+   "DD10241 · Penta Formazione",
+   "Affiancamento alla crescita"
+  ],
+  [
+   "Enrico Bianco",
+   "2026-11",
+   "DD10241 - Penta Formazione - Affiancamento alla crescita",
+   "s",
+   1,
+   "DD10241 · Penta Formazione",
+   "Affiancamento alla crescita"
+  ],
+  [
+   "Enrico Bianco",
+   "2026-11",
+   "DD10241 - Penta Formazione - Affiancamento alla crescita",
+   "p",
+   0.5,
+   "DD10241 · Penta Formazione",
+   "Affiancamento alla crescita"
+  ],
+  [
+   "Enrico Bianco",
+   "2026-12",
+   "DD10241 - Penta Formazione - Affiancamento alla crescita",
+   "s",
+   1,
+   "DD10241 · Penta Formazione",
+   "Affiancamento alla crescita"
+  ],
+  [
+   "Enrico Bianco",
+   "2026-12",
+   "DD10241 - Penta Formazione - Affiancamento alla crescita",
+   "p",
+   1,
+   "DD10241 · Penta Formazione",
+   "Affiancamento alla crescita"
+  ],
+  [
+   "Enrico Bianco",
+   "2027-01",
+   "DD10241 - Penta Formazione - Affiancamento alla crescita",
+   "s",
+   2,
+   "DD10241 · Penta Formazione",
+   "Affiancamento alla crescita"
+  ],
+  [
+   "Enrico Bianco",
+   "2027-02",
+   "DD10241 - Penta Formazione - Affiancamento alla crescita",
+   "s",
+   2,
+   "DD10241 · Penta Formazione",
+   "Affiancamento alla crescita"
+  ],
+  [
+   "Erika Pettenuzzo",
+   "2026-10",
+   "DD10353 - IMA - Aggiornamento V19 e Contabilità",
+   "s",
+   4,
+   "DD10353 · IMA",
+   "Aggiornamento V19 e Contabilità"
+  ],
+  [
+   "Erika Pettenuzzo",
+   "2026-11",
+   "DD10353 - IMA - Aggiornamento V19 e Contabilità",
+   "s",
+   4,
+   "DD10353 · IMA",
+   "Aggiornamento V19 e Contabilità"
+  ],
+  [
+   "Erika Pettenuzzo",
+   "2026-12",
+   "DD10353 - IMA - Aggiornamento V19 e Contabilità",
+   "s",
+   4,
+   "DD10353 · IMA",
+   "Aggiornamento V19 e Contabilità"
+  ],
+  [
+   "Erika Pettenuzzo",
+   "2026-10",
+   "DD10161 - Mondeo - Affiancamento Digital",
+   "s",
+   2,
+   "DD10161 · Mondeo",
+   "Affiancamento Digital"
+  ],
+  [
+   "Erika Pettenuzzo",
+   "2026-10",
+   "DD10161 - Mondeo - Affiancamento Digital",
+   "p",
+   6,
+   "DD10161 · Mondeo",
+   "Affiancamento Digital"
+  ],
+  [
+   "Erika Pettenuzzo",
+   "2026-11",
+   "DD10161 - Mondeo - Affiancamento Digital",
+   "s",
+   2,
+   "DD10161 · Mondeo",
+   "Affiancamento Digital"
+  ],
+  [
+   "Erika Pettenuzzo",
+   "2026-11",
+   "DD10161 - Mondeo - Affiancamento Digital",
+   "p",
+   6,
+   "DD10161 · Mondeo",
+   "Affiancamento Digital"
+  ],
+  [
+   "Erika Pettenuzzo",
+   "2026-12",
+   "DD10161 - Mondeo - Affiancamento Digital",
+   "s",
+   3,
+   "DD10161 · Mondeo",
+   "Affiancamento Digital"
+  ],
+  [
+   "Erika Pettenuzzo",
+   "2026-12",
+   "DD10161 - Mondeo - Affiancamento Digital",
+   "p",
+   3,
+   "DD10161 · Mondeo",
+   "Affiancamento Digital"
+  ],
+  [
+   "Erika Pettenuzzo",
+   "2026-10",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   2,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Erika Pettenuzzo",
+   "2026-11",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   2,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Erika Pettenuzzo",
+   "2026-12",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   2,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Erika Pettenuzzo",
+   "2027-01",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   2,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Erika Pettenuzzo",
+   "2026-10",
+   "DD10179 - Yuppy per Recover - Digitalizzazione Odoo",
+   "s",
+   4,
+   "DD10179 · Yuppy per Recover",
+   "Digitalizzazione Odoo"
+  ],
+  [
+   "Erika Pettenuzzo",
+   "2026-11",
+   "DD10179 - Yuppy per Recover - Digitalizzazione Odoo",
+   "s",
+   2,
+   "DD10179 · Yuppy per Recover",
+   "Digitalizzazione Odoo"
+  ],
+  [
+   "Erika Pettenuzzo",
+   "2026-12",
+   "DD10179 - Yuppy per Recover - Digitalizzazione Odoo",
+   "s",
+   2,
+   "DD10179 · Yuppy per Recover",
+   "Digitalizzazione Odoo"
+  ],
+  [
+   "Erika Pettenuzzo",
+   "2027-01",
+   "DD10179 - Yuppy per Recover - Digitalizzazione Odoo",
+   "s",
+   2,
+   "DD10179 · Yuppy per Recover",
+   "Digitalizzazione Odoo"
+  ],
+  [
+   "Erika Pettenuzzo",
+   "2027-02",
+   "DD10179 - Yuppy per Recover - Digitalizzazione Odoo",
+   "s",
+   2,
+   "DD10179 · Yuppy per Recover",
+   "Digitalizzazione Odoo"
+  ],
+  [
+   "Ettore Lampertico",
+   "2026-10",
+   "DD10252 - ISAAC - Progetto presa in carico istanza, contabilità e supply chain",
+   "p",
+   6,
+   "DD10252 · ISAAC",
+   "Progetto presa in carico istanza, contabilità e supply chain"
+  ],
+  [
+   "Ettore Lampertico",
+   "2026-11",
+   "DD10252 - ISAAC - Progetto presa in carico istanza, contabilità e supply chain",
+   "s",
+   1,
+   "DD10252 · ISAAC",
+   "Progetto presa in carico istanza, contabilità e supply chain"
+  ],
+  [
+   "Ettore Lampertico",
+   "2026-11",
+   "DD10252 - ISAAC - Progetto presa in carico istanza, contabilità e supply chain",
+   "p",
+   5,
+   "DD10252 · ISAAC",
+   "Progetto presa in carico istanza, contabilità e supply chain"
+  ],
+  [
+   "Ettore Lampertico",
+   "2026-12",
+   "DD10252 - ISAAC - Progetto presa in carico istanza, contabilità e supply chain",
+   "s",
+   4,
+   "DD10252 · ISAAC",
+   "Progetto presa in carico istanza, contabilità e supply chain"
+  ],
+  [
+   "Ettore Lampertico",
+   "2027-01",
+   "DD10252 - ISAAC - Progetto presa in carico istanza, contabilità e supply chain",
+   "s",
+   4,
+   "DD10252 · ISAAC",
+   "Progetto presa in carico istanza, contabilità e supply chain"
+  ],
+  [
+   "Ettore Lampertico",
+   "2027-02",
+   "DD10252 - ISAAC - Progetto presa in carico istanza, contabilità e supply chain",
+   "s",
+   2,
+   "DD10252 · ISAAC",
+   "Progetto presa in carico istanza, contabilità e supply chain"
+  ],
+  [
+   "Fabiano Mason",
+   "2026-11",
+   "B2B 2026",
+   "s",
+   6,
+   "B2B 2026",
+   ""
+  ],
+  [
+   "Fabiano Mason",
+   "2026-10",
+   "DD10179 - Yuppy per Recover - Digitalizzazione Odoo",
+   "s",
+   4,
+   "DD10179 · Yuppy per Recover",
+   "Digitalizzazione Odoo"
+  ],
+  [
+   "Fabiano Mason",
+   "2026-11",
+   "DD10179 - Yuppy per Recover - Digitalizzazione Odoo",
+   "s",
+   2,
+   "DD10179 · Yuppy per Recover",
+   "Digitalizzazione Odoo"
+  ],
+  [
+   "Fabiano Mason",
+   "2026-12",
+   "DD10179 - Yuppy per Recover - Digitalizzazione Odoo",
+   "s",
+   2,
+   "DD10179 · Yuppy per Recover",
+   "Digitalizzazione Odoo"
+  ],
+  [
+   "Fabiano Mason",
+   "2027-01",
+   "DD10179 - Yuppy per Recover - Digitalizzazione Odoo",
+   "s",
+   2,
+   "DD10179 · Yuppy per Recover",
+   "Digitalizzazione Odoo"
+  ],
+  [
+   "Fabiano Mason",
+   "2027-02",
+   "DD10179 - Yuppy per Recover - Digitalizzazione Odoo",
+   "s",
+   2,
+   "DD10179 · Yuppy per Recover",
+   "Digitalizzazione Odoo"
+  ],
+  [
+   "Fabrizio Benefazio",
+   "2026-12",
+   "DD10193 - Synethik - Starter pack",
+   "p",
+   1.5,
+   "DD10193 · Synethik",
+   "Starter pack"
+  ],
+  [
+   "Fabrizio Benefazio",
+   "2026-10",
+   "DD10353 - IMA - Aggiornamento V19 e Contabilità",
+   "s",
+   4,
+   "DD10353 · IMA",
+   "Aggiornamento V19 e Contabilità"
+  ],
+  [
+   "Fabrizio Benefazio",
+   "2026-11",
+   "DD10353 - IMA - Aggiornamento V19 e Contabilità",
+   "s",
+   4,
+   "DD10353 · IMA",
+   "Aggiornamento V19 e Contabilità"
+  ],
+  [
+   "Fabrizio Benefazio",
+   "2026-12",
+   "DD10353 - IMA - Aggiornamento V19 e Contabilità",
+   "s",
+   4,
+   "DD10353 · IMA",
+   "Aggiornamento V19 e Contabilità"
+  ],
+  [
+   "Fabrizio Benefazio",
+   "2027-01",
+   "DD10353 - IMA - Aggiornamento V19 e Contabilità",
+   "s",
+   4,
+   "DD10353 · IMA",
+   "Aggiornamento V19 e Contabilità"
+  ],
+  [
+   "Fabrizio Benefazio",
+   "2027-02",
+   "DD10353 - IMA - Aggiornamento V19 e Contabilità",
+   "s",
+   4,
+   "DD10353 · IMA",
+   "Aggiornamento V19 e Contabilità"
+  ],
+  [
+   "Fabrizio Benefazio",
+   "2027-03",
+   "DD10353 - IMA - Aggiornamento V19 e Contabilità",
+   "s",
+   4,
+   "DD10353 · IMA",
+   "Aggiornamento V19 e Contabilità"
+  ],
+  [
+   "Fabrizio Benefazio",
+   "2026-10",
+   "DD10276 - Essemec - Starter Pack CRM",
+   "s",
+   8,
+   "DD10276 · Essemec",
+   "Starter Pack CRM"
+  ],
+  [
+   "Fabrizio Benefazio",
+   "2026-11",
+   "DD10276 - Essemec - Starter Pack CRM",
+   "s",
+   8,
+   "DD10276 · Essemec",
+   "Starter Pack CRM"
+  ],
+  [
+   "Fabrizio Benefazio",
+   "2026-10",
+   "DD10221 - Odorizzi - Consolidamento dei processi e rinnovo della piattaforma Odoo",
+   "s",
+   4,
+   "DD10221 · Odorizzi",
+   "Consolidamento dei processi e rinnovo della piattaforma Odoo"
+  ],
+  [
+   "Fabrizio Benefazio",
+   "2026-11",
+   "DD10221 - Odorizzi - Consolidamento dei processi e rinnovo della piattaforma Odoo",
+   "s",
+   4,
+   "DD10221 · Odorizzi",
+   "Consolidamento dei processi e rinnovo della piattaforma Odoo"
+  ],
+  [
+   "Fabrizio Benefazio",
+   "2026-12",
+   "DD10221 - Odorizzi - Consolidamento dei processi e rinnovo della piattaforma Odoo",
+   "s",
+   4,
+   "DD10221 · Odorizzi",
+   "Consolidamento dei processi e rinnovo della piattaforma Odoo"
+  ],
+  [
+   "Federico Tapparello",
+   "2026-10",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   2,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Federico Tapparello",
+   "2026-11",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   4,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Federico Tapparello",
+   "2026-12",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   4,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Federico Tapparello",
+   "2027-01",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   4,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Francesco Corradini",
+   "2026-10",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   8,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Francesco Corradini",
+   "2026-11",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   8,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Francesco Corradini",
+   "2026-12",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   8,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Francesco Corradini",
+   "2027-01",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   8,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Francesco Corradini",
+   "2027-02",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   8,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Francesco Corradini",
+   "2026-10",
+   "DD10347 - Service43 - Implementazione Odoo",
+   "s",
+   3,
+   "DD10347 · Service43",
+   "Implementazione Odoo"
+  ],
+  [
+   "Francesco Corradini",
+   "2026-11",
+   "DD10347 - Service43 - Implementazione Odoo",
+   "s",
+   4,
+   "DD10347 · Service43",
+   "Implementazione Odoo"
+  ],
+  [
+   "Francesco Corradini",
+   "2026-12",
+   "DD10347 - Service43 - Implementazione Odoo",
+   "s",
+   4,
+   "DD10347 · Service43",
+   "Implementazione Odoo"
+  ],
+  [
+   "Francesco Corradini",
+   "2027-01",
+   "DD10347 - Service43 - Implementazione Odoo",
+   "s",
+   3,
+   "DD10347 · Service43",
+   "Implementazione Odoo"
+  ],
+  [
+   "Francesco Corradini",
+   "2027-02",
+   "DD10347 - Service43 - Implementazione Odoo",
+   "s",
+   4,
+   "DD10347 · Service43",
+   "Implementazione Odoo"
+  ],
+  [
+   "Francesco Corradini",
+   "2027-03",
+   "DD10347 - Service43 - Implementazione Odoo",
+   "s",
+   4,
+   "DD10347 · Service43",
+   "Implementazione Odoo"
+  ],
+  [
+   "Francesco Corradini",
+   "2026-10",
+   "DD10241 - Penta Formazione - Affiancamento alla crescita",
+   "p",
+   2,
+   "DD10241 · Penta Formazione",
+   "Affiancamento alla crescita"
+  ],
+  [
+   "Francesco Corradini",
+   "2026-11",
+   "DD10241 - Penta Formazione - Affiancamento alla crescita",
+   "p",
+   2,
+   "DD10241 · Penta Formazione",
+   "Affiancamento alla crescita"
+  ],
+  [
+   "Francesco Corradini",
+   "2026-12",
+   "DD10241 - Penta Formazione - Affiancamento alla crescita",
+   "p",
+   2,
+   "DD10241 · Penta Formazione",
+   "Affiancamento alla crescita"
+  ],
+  [
+   "Francesco Palazzotto",
+   "2026-10",
+   "DD10215 - FCF Impianti - Affiancamento 2026",
+   "p",
+   2,
+   "DD10215 · FCF Impianti",
+   "Affiancamento 2026"
+  ],
+  [
+   "Francesco Palazzotto",
+   "2026-11",
+   "DD10215 - FCF Impianti - Affiancamento 2026",
+   "s",
+   1,
+   "DD10215 · FCF Impianti",
+   "Affiancamento 2026"
+  ],
+  [
+   "Francesco Palazzotto",
+   "2026-11",
+   "DD10215 - FCF Impianti - Affiancamento 2026",
+   "p",
+   2,
+   "DD10215 · FCF Impianti",
+   "Affiancamento 2026"
+  ],
+  [
+   "Francesco Palazzotto",
+   "2026-12",
+   "DD10215 - FCF Impianti - Affiancamento 2026",
+   "p",
+   2,
+   "DD10215 · FCF Impianti",
+   "Affiancamento 2026"
+  ],
+  [
+   "Francesco Palazzotto",
+   "2027-01",
+   "DD10215 - FCF Impianti - Affiancamento 2026",
+   "s",
+   1,
+   "DD10215 · FCF Impianti",
+   "Affiancamento 2026"
+  ],
+  [
+   "Francesco Palazzotto",
+   "2027-02",
+   "DD10215 - FCF Impianti - Affiancamento 2026",
+   "s",
+   1,
+   "DD10215 · FCF Impianti",
+   "Affiancamento 2026"
+  ],
+  [
+   "Francesco Palazzotto",
+   "2026-10",
+   "DD10244 - Mastrotto - Soluzione TMS con Odoo",
+   "s",
+   1,
+   "DD10244 · Mastrotto",
+   "Soluzione TMS con Odoo"
+  ],
+  [
+   "Francesco Palazzotto",
+   "2026-10",
+   "DD10058 - Cabbia Group - Implementazione Odoo",
+   "s",
+   1,
+   "DD10058 · Cabbia Group",
+   "Implementazione Odoo"
+  ],
+  [
+   "Francesco Palazzotto",
+   "2026-10",
+   "DD10252 - ISAAC - Progetto presa in carico istanza, contabilità e supply chain",
+   "s",
+   4,
+   "DD10252 · ISAAC",
+   "Progetto presa in carico istanza, contabilità e supply chain"
+  ],
+  [
+   "Francesco Palazzotto",
+   "2026-10",
+   "DD10252 - ISAAC - Progetto presa in carico istanza, contabilità e supply chain",
+   "p",
+   2,
+   "DD10252 · ISAAC",
+   "Progetto presa in carico istanza, contabilità e supply chain"
+  ],
+  [
+   "Francesco Palazzotto",
+   "2026-11",
+   "DD10252 - ISAAC - Progetto presa in carico istanza, contabilità e supply chain",
+   "s",
+   4,
+   "DD10252 · ISAAC",
+   "Progetto presa in carico istanza, contabilità e supply chain"
+  ],
+  [
+   "Francesco Palazzotto",
+   "2026-11",
+   "DD10252 - ISAAC - Progetto presa in carico istanza, contabilità e supply chain",
+   "p",
+   2,
+   "DD10252 · ISAAC",
+   "Progetto presa in carico istanza, contabilità e supply chain"
+  ],
+  [
+   "Francesco Palazzotto",
+   "2026-12",
+   "DD10252 - ISAAC - Progetto presa in carico istanza, contabilità e supply chain",
+   "s",
+   3,
+   "DD10252 · ISAAC",
+   "Progetto presa in carico istanza, contabilità e supply chain"
+  ],
+  [
+   "Francesco Palazzotto",
+   "2027-01",
+   "DD10252 - ISAAC - Progetto presa in carico istanza, contabilità e supply chain",
+   "s",
+   3,
+   "DD10252 · ISAAC",
+   "Progetto presa in carico istanza, contabilità e supply chain"
+  ],
+  [
+   "Francesco Palazzotto",
+   "2027-02",
+   "DD10252 - ISAAC - Progetto presa in carico istanza, contabilità e supply chain",
+   "s",
+   1,
+   "DD10252 · ISAAC",
+   "Progetto presa in carico istanza, contabilità e supply chain"
+  ],
+  [
+   "Francesco Palazzotto",
+   "2026-10",
+   "DD10221 - Odorizzi - Consolidamento dei processi e rinnovo della piattaforma Odoo",
+   "s",
+   1,
+   "DD10221 · Odorizzi",
+   "Consolidamento dei processi e rinnovo della piattaforma Odoo"
+  ],
+  [
+   "Francesco Palazzotto",
+   "2026-10",
+   "DD10221 - Odorizzi - Consolidamento dei processi e rinnovo della piattaforma Odoo",
+   "p",
+   3,
+   "DD10221 · Odorizzi",
+   "Consolidamento dei processi e rinnovo della piattaforma Odoo"
+  ],
+  [
+   "Francesco Palazzotto",
+   "2026-11",
+   "DD10221 - Odorizzi - Consolidamento dei processi e rinnovo della piattaforma Odoo",
+   "s",
+   1,
+   "DD10221 · Odorizzi",
+   "Consolidamento dei processi e rinnovo della piattaforma Odoo"
+  ],
+  [
+   "Francesco Palazzotto",
+   "2026-11",
+   "DD10221 - Odorizzi - Consolidamento dei processi e rinnovo della piattaforma Odoo",
+   "p",
+   3,
+   "DD10221 · Odorizzi",
+   "Consolidamento dei processi e rinnovo della piattaforma Odoo"
+  ],
+  [
+   "Francesco Palazzotto",
+   "2026-12",
+   "DD10221 - Odorizzi - Consolidamento dei processi e rinnovo della piattaforma Odoo",
+   "s",
+   1,
+   "DD10221 · Odorizzi",
+   "Consolidamento dei processi e rinnovo della piattaforma Odoo"
+  ],
+  [
+   "Francesco Palazzotto",
+   "2026-12",
+   "DD10221 - Odorizzi - Consolidamento dei processi e rinnovo della piattaforma Odoo",
+   "p",
+   3,
+   "DD10221 · Odorizzi",
+   "Consolidamento dei processi e rinnovo della piattaforma Odoo"
+  ],
+  [
+   "Gianluca Dal Maso",
+   "2026-10",
+   "DD10109 - Si Vola & B2B 72 - Implementazione Odoo",
+   "s",
+   2,
+   "DD10109 · Si Vola & B2B 72",
+   "Implementazione Odoo"
+  ],
+  [
+   "Gianluca Dal Maso",
+   "2026-11",
+   "DD10109 - Si Vola & B2B 72 - Implementazione Odoo",
+   "s",
+   2,
+   "DD10109 · Si Vola & B2B 72",
+   "Implementazione Odoo"
+  ],
+  [
+   "Gianluca Dal Maso",
+   "2026-12",
+   "DD10109 - Si Vola & B2B 72 - Implementazione Odoo",
+   "s",
+   0,
+   "DD10109 · Si Vola & B2B 72",
+   "Implementazione Odoo"
+  ],
+  [
+   "Gianluca Geremia",
+   "2026-10",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   2,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Gianluca Geremia",
+   "2026-11",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   4,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Gianluca Geremia",
+   "2026-12",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   4,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Gianluca Mamusi",
+   "2026-11",
+   "B2B 2026",
+   "s",
+   3,
+   "B2B 2026",
+   ""
+  ],
+  [
+   "Gianluca Mamusi",
+   "2026-12",
+   "B2B 2026",
+   "s",
+   3,
+   "B2B 2026",
+   ""
+  ],
+  [
+   "Gianluca Mamusi",
+   "2027-01",
+   "B2B 2026",
+   "s",
+   3,
+   "B2B 2026",
+   ""
+  ],
+  [
+   "Gianluca Mamusi",
+   "2027-02",
+   "B2B 2026",
+   "s",
+   3,
+   "B2B 2026",
+   ""
+  ],
+  [
+   "Gianluca Mamusi",
+   "2026-10",
+   "DD10109 - Si Vola & B2B 72 - Implementazione Odoo",
+   "s",
+   1,
+   "DD10109 · Si Vola & B2B 72",
+   "Implementazione Odoo"
+  ],
+  [
+   "Gianluca Mamusi",
+   "2026-10",
+   "DD10109 - Si Vola & B2B 72 - Implementazione Odoo",
+   "p",
+   1,
+   "DD10109 · Si Vola & B2B 72",
+   "Implementazione Odoo"
+  ],
+  [
+   "Gianluca Mamusi",
+   "2026-11",
+   "DD10109 - Si Vola & B2B 72 - Implementazione Odoo",
+   "s",
+   2,
+   "DD10109 · Si Vola & B2B 72",
+   "Implementazione Odoo"
+  ],
+  [
+   "Gianluca Mamusi",
+   "2026-12",
+   "DD10109 - Si Vola & B2B 72 - Implementazione Odoo",
+   "s",
+   0,
+   "DD10109 · Si Vola & B2B 72",
+   "Implementazione Odoo"
+  ],
+  [
+   "Gianluca Mamusi",
+   "2026-10",
+   "DD10157 - MIPU - Implementazione Primo Gestionale",
+   "p",
+   2,
+   "DD10157 · MIPU",
+   "Implementazione Primo Gestionale"
+  ],
+  [
+   "Letizia Freda",
+   "2026-10",
+   "DD10143 - Irontech - Odoo",
+   "p",
+   2,
+   "DD10143 · Irontech",
+   "Odoo"
+  ],
+  [
+   "Letizia Freda",
+   "2026-11",
+   "DD10143 - Irontech - Odoo",
+   "p",
+   2,
+   "DD10143 · Irontech",
+   "Odoo"
+  ],
+  [
+   "Letizia Freda",
+   "2026-12",
+   "DD10143 - Irontech - Odoo",
+   "p",
+   2,
+   "DD10143 · Irontech",
+   "Odoo"
+  ],
+  [
+   "Luca D'Ambrosio",
+   "2026-10",
+   "DD10143 - Irontech - Odoo",
+   "p",
+   8,
+   "DD10143 · Irontech",
+   "Odoo"
+  ],
+  [
+   "Luca D'Ambrosio",
+   "2026-11",
+   "DD10143 - Irontech - Odoo",
+   "p",
+   8,
+   "DD10143 · Irontech",
+   "Odoo"
+  ],
+  [
+   "Luca D'Ambrosio",
+   "2026-12",
+   "DD10143 - Irontech - Odoo",
+   "p",
+   8,
+   "DD10143 · Irontech",
+   "Odoo"
+  ],
+  [
+   "Luca D'Ambrosio",
+   "2026-10",
+   "DD10145 - BF Automations - Implementazione Odoo",
+   "p",
+   2,
+   "DD10145 · BF Automations",
+   "Implementazione Odoo"
+  ],
+  [
+   "Luca D'Ambrosio",
+   "2026-11",
+   "DD10145 - BF Automations - Implementazione Odoo",
+   "p",
+   2,
+   "DD10145 · BF Automations",
+   "Implementazione Odoo"
+  ],
+  [
+   "Luca D'Ambrosio",
+   "2026-12",
+   "DD10145 - BF Automations - Implementazione Odoo",
+   "p",
+   2,
+   "DD10145 · BF Automations",
+   "Implementazione Odoo"
+  ],
+  [
+   "Luca D'Ambrosio",
+   "2026-10",
+   "DD10252 - ISAAC - Progetto presa in carico istanza, contabilità e supply chain",
+   "s",
+   4,
+   "DD10252 · ISAAC",
+   "Progetto presa in carico istanza, contabilità e supply chain"
+  ],
+  [
+   "Luca D'Ambrosio",
+   "2026-11",
+   "DD10252 - ISAAC - Progetto presa in carico istanza, contabilità e supply chain",
+   "s",
+   4,
+   "DD10252 · ISAAC",
+   "Progetto presa in carico istanza, contabilità e supply chain"
+  ],
+  [
+   "Luca D'Ambrosio",
+   "2026-12",
+   "DD10252 - ISAAC - Progetto presa in carico istanza, contabilità e supply chain",
+   "s",
+   2,
+   "DD10252 · ISAAC",
+   "Progetto presa in carico istanza, contabilità e supply chain"
+  ],
+  [
+   "Luca D'Ambrosio",
+   "2027-01",
+   "DD10252 - ISAAC - Progetto presa in carico istanza, contabilità e supply chain",
+   "s",
+   2,
+   "DD10252 · ISAAC",
+   "Progetto presa in carico istanza, contabilità e supply chain"
+  ],
+  [
+   "Luca D'Ambrosio",
+   "2027-02",
+   "DD10252 - ISAAC - Progetto presa in carico istanza, contabilità e supply chain",
+   "s",
+   1,
+   "DD10252 · ISAAC",
+   "Progetto presa in carico istanza, contabilità e supply chain"
+  ],
+  [
+   "Luca D'Ambrosio",
+   "2027-02",
+   "DD10309 - G.M.A./GMA - Progetto Contabilità e BI",
+   "p",
+   1,
+   "DD10309 · G.M.A./GMA",
+   "Progetto Contabilità e BI"
+  ],
+  [
+   "Luca D'Ambrosio",
+   "2027-03",
+   "DD10309 - G.M.A./GMA - Progetto Contabilità e BI",
+   "p",
+   1,
+   "DD10309 · G.M.A./GMA",
+   "Progetto Contabilità e BI"
+  ],
+  [
+   "Luca D'Ambrosio",
+   "2026-10",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   6,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Luca D'Ambrosio",
+   "2026-11",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   6,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Luca D'Ambrosio",
+   "2026-12",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   6,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Luca D'Ambrosio",
+   "2027-01",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   6,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Luca D'Ambrosio",
+   "2027-02",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   4,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Marco Laghetto",
+   "2026-11",
+   "B2B 2026",
+   "s",
+   6,
+   "B2B 2026",
+   ""
+  ],
+  [
+   "Marco Laghetto",
+   "2026-10",
+   "DD10345 - Officine Zoppelletto - Modifica CRM: Prioritizzazione opportunità/ordini",
+   "s",
+   0.5,
+   "DD10345 · Officine Zoppelletto",
+   "Modifica CRM: Prioritizzazione opportunità/ordini"
+  ],
+  [
+   "Marco Laghetto",
+   "2026-11",
+   "DD10345 - Officine Zoppelletto - Modifica CRM: Prioritizzazione opportunità/ordini",
+   "s",
+   0.5,
+   "DD10345 · Officine Zoppelletto",
+   "Modifica CRM: Prioritizzazione opportunità/ordini"
+  ],
+  [
+   "Marco Laghetto",
+   "2026-10",
+   "DD10353 - IMA - Aggiornamento V19 e Contabilità",
+   "s",
+   4,
+   "DD10353 · IMA",
+   "Aggiornamento V19 e Contabilità"
+  ],
+  [
+   "Marco Laghetto",
+   "2026-11",
+   "DD10353 - IMA - Aggiornamento V19 e Contabilità",
+   "s",
+   4,
+   "DD10353 · IMA",
+   "Aggiornamento V19 e Contabilità"
+  ],
+  [
+   "Marco Laghetto",
+   "2026-12",
+   "DD10353 - IMA - Aggiornamento V19 e Contabilità",
+   "s",
+   4,
+   "DD10353 · IMA",
+   "Aggiornamento V19 e Contabilità"
+  ],
+  [
+   "Marco Laghetto",
+   "2027-01",
+   "DD10353 - IMA - Aggiornamento V19 e Contabilità",
+   "s",
+   4,
+   "DD10353 · IMA",
+   "Aggiornamento V19 e Contabilità"
+  ],
+  [
+   "Marco Laghetto",
+   "2027-02",
+   "DD10353 - IMA - Aggiornamento V19 e Contabilità",
+   "s",
+   2,
+   "DD10353 · IMA",
+   "Aggiornamento V19 e Contabilità"
+  ],
+  [
+   "Marco Laghetto",
+   "2027-03",
+   "DD10353 - IMA - Aggiornamento V19 e Contabilità",
+   "s",
+   2,
+   "DD10353 · IMA",
+   "Aggiornamento V19 e Contabilità"
+  ],
+  [
+   "Marco Laghetto",
+   "2026-10",
+   "DD10215 - FCF Impianti - Affiancamento 2026",
+   "p",
+   2,
+   "DD10215 · FCF Impianti",
+   "Affiancamento 2026"
+  ],
+  [
+   "Marco Laghetto",
+   "2026-11",
+   "DD10215 - FCF Impianti - Affiancamento 2026",
+   "p",
+   2,
+   "DD10215 · FCF Impianti",
+   "Affiancamento 2026"
+  ],
+  [
+   "Marco Laghetto",
+   "2026-12",
+   "DD10215 - FCF Impianti - Affiancamento 2026",
+   "p",
+   2,
+   "DD10215 · FCF Impianti",
+   "Affiancamento 2026"
+  ],
+  [
+   "Marco Laghetto",
+   "2027-01",
+   "DD10215 - FCF Impianti - Affiancamento 2026",
+   "s",
+   2,
+   "DD10215 · FCF Impianti",
+   "Affiancamento 2026"
+  ],
+  [
+   "Marco Laghetto",
+   "2027-02",
+   "DD10215 - FCF Impianti - Affiancamento 2026",
+   "s",
+   1,
+   "DD10215 · FCF Impianti",
+   "Affiancamento 2026"
+  ],
+  [
+   "Marco Laghetto",
+   "2026-10",
+   "DD10252 - ISAAC - Progetto presa in carico istanza, contabilità e supply chain",
+   "p",
+   1,
+   "DD10252 · ISAAC",
+   "Progetto presa in carico istanza, contabilità e supply chain"
+  ],
+  [
+   "Marco Laghetto",
+   "2026-11",
+   "DD10252 - ISAAC - Progetto presa in carico istanza, contabilità e supply chain",
+   "s",
+   1,
+   "DD10252 · ISAAC",
+   "Progetto presa in carico istanza, contabilità e supply chain"
+  ],
+  [
+   "Marco Laghetto",
+   "2026-12",
+   "Si Vola 2026",
+   "s",
+   3,
+   "Si Vola 2026",
+   ""
+  ],
+  [
+   "Marco Laghetto",
+   "2027-01",
+   "Si Vola 2026",
+   "s",
+   3,
+   "Si Vola 2026",
+   ""
+  ],
+  [
+   "Marco Laghetto",
+   "2027-02",
+   "Si Vola 2026",
+   "s",
+   3,
+   "Si Vola 2026",
+   ""
+  ],
+  [
+   "Marco Laghetto",
+   "2026-10",
+   "DD10157 - MIPU - Implementazione Primo Gestionale",
+   "p",
+   1.5,
+   "DD10157 · MIPU",
+   "Implementazione Primo Gestionale"
+  ],
+  [
+   "Marco Laghetto",
+   "2026-10",
+   "DD10199 - Schueco Portale - Assistenza 2026",
+   "p",
+   1.583,
+   "DD10199 · Schueco Portale",
+   "Assistenza 2026"
+  ],
+  [
+   "Marco Laghetto",
+   "2026-11",
+   "DD10199 - Schueco Portale - Assistenza 2026",
+   "p",
+   2.417,
+   "DD10199 · Schueco Portale",
+   "Assistenza 2026"
+  ],
+  [
+   "Marco Laghetto",
+   "2026-12",
+   "DD10199 - Schueco Portale - Assistenza 2026",
+   "p",
+   0.667,
+   "DD10199 · Schueco Portale",
+   "Assistenza 2026"
+  ],
+  [
+   "Mirco Strizzi",
+   "2026-10",
+   "DD10161 - Mondeo - Affiancamento Digital",
+   "p",
+   12,
+   "DD10161 · Mondeo",
+   "Affiancamento Digital"
+  ],
+  [
+   "Mirco Strizzi",
+   "2026-11",
+   "DD10161 - Mondeo - Affiancamento Digital",
+   "p",
+   12,
+   "DD10161 · Mondeo",
+   "Affiancamento Digital"
+  ],
+  [
+   "Mirco Strizzi",
+   "2026-12",
+   "DD10161 - Mondeo - Affiancamento Digital",
+   "p",
+   12,
+   "DD10161 · Mondeo",
+   "Affiancamento Digital"
+  ],
+  [
+   "Nicoletta Piazzetta",
+   "2026-10",
+   "DD10013 - Brombal - Affiancamento alla crescita",
+   "s",
+   2,
+   "DD10013 · Brombal",
+   "Affiancamento alla crescita"
+  ],
+  [
+   "Nicoletta Piazzetta",
+   "2026-11",
+   "DD10013 - Brombal - Affiancamento alla crescita",
+   "s",
+   2,
+   "DD10013 · Brombal",
+   "Affiancamento alla crescita"
+  ],
+  [
+   "Nicoletta Piazzetta",
+   "2026-10",
+   "DD10143 - Irontech - Odoo",
+   "p",
+   8,
+   "DD10143 · Irontech",
+   "Odoo"
+  ],
+  [
+   "Nicoletta Piazzetta",
+   "2026-11",
+   "DD10143 - Irontech - Odoo",
+   "s",
+   1,
+   "DD10143 · Irontech",
+   "Odoo"
+  ],
+  [
+   "Nicoletta Piazzetta",
+   "2026-11",
+   "DD10143 - Irontech - Odoo",
+   "p",
+   6,
+   "DD10143 · Irontech",
+   "Odoo"
+  ],
+  [
+   "Nicoletta Piazzetta",
+   "2026-12",
+   "DD10143 - Irontech - Odoo",
+   "p",
+   6,
+   "DD10143 · Irontech",
+   "Odoo"
+  ],
+  [
+   "Nicoletta Piazzetta",
+   "2026-10",
+   "DD10309 - G.M.A./GMA - Progetto Contabilità e BI",
+   "p",
+   2,
+   "DD10309 · G.M.A./GMA",
+   "Progetto Contabilità e BI"
+  ],
+  [
+   "Nicoletta Piazzetta",
+   "2026-11",
+   "DD10309 - G.M.A./GMA - Progetto Contabilità e BI",
+   "p",
+   2,
+   "DD10309 · G.M.A./GMA",
+   "Progetto Contabilità e BI"
+  ],
+  [
+   "Nicoletta Piazzetta",
+   "2026-12",
+   "DD10309 - G.M.A./GMA - Progetto Contabilità e BI",
+   "p",
+   2,
+   "DD10309 · G.M.A./GMA",
+   "Progetto Contabilità e BI"
+  ],
+  [
+   "Nicoletta Piazzetta",
+   "2027-01",
+   "DD10309 - G.M.A./GMA - Progetto Contabilità e BI",
+   "p",
+   2,
+   "DD10309 · G.M.A./GMA",
+   "Progetto Contabilità e BI"
+  ],
+  [
+   "Nicoletta Piazzetta",
+   "2027-03",
+   "DD10309 - G.M.A./GMA - Progetto Contabilità e BI",
+   "p",
+   2,
+   "DD10309 · G.M.A./GMA",
+   "Progetto Contabilità e BI"
+  ],
+  [
+   "Nicoletta Piazzetta",
+   "2026-10",
+   "DD10347 - Service43 - Implementazione Odoo",
+   "s",
+   2,
+   "DD10347 · Service43",
+   "Implementazione Odoo"
+  ],
+  [
+   "Nicoletta Piazzetta",
+   "2026-11",
+   "DD10347 - Service43 - Implementazione Odoo",
+   "s",
+   2,
+   "DD10347 · Service43",
+   "Implementazione Odoo"
+  ],
+  [
+   "Nicoletta Piazzetta",
+   "2026-12",
+   "DD10347 - Service43 - Implementazione Odoo",
+   "s",
+   2,
+   "DD10347 · Service43",
+   "Implementazione Odoo"
+  ],
+  [
+   "Nicoletta Piazzetta",
+   "2027-01",
+   "DD10347 - Service43 - Implementazione Odoo",
+   "s",
+   3,
+   "DD10347 · Service43",
+   "Implementazione Odoo"
+  ],
+  [
+   "Nicoletta Piazzetta",
+   "2027-02",
+   "DD10347 - Service43 - Implementazione Odoo",
+   "s",
+   3,
+   "DD10347 · Service43",
+   "Implementazione Odoo"
+  ],
+  [
+   "Nicoletta Piazzetta",
+   "2027-03",
+   "DD10347 - Service43 - Implementazione Odoo",
+   "s",
+   3,
+   "DD10347 · Service43",
+   "Implementazione Odoo"
+  ],
+  [
+   "Nicolò Danese",
+   "2026-10",
+   "DD10145 - BF Automations - Implementazione Odoo",
+   "p",
+   6,
+   "DD10145 · BF Automations",
+   "Implementazione Odoo"
+  ],
+  [
+   "Nicolò Danese",
+   "2026-11",
+   "DD10145 - BF Automations - Implementazione Odoo",
+   "p",
+   6,
+   "DD10145 · BF Automations",
+   "Implementazione Odoo"
+  ],
+  [
+   "Nicolò Danese",
+   "2026-12",
+   "DD10145 - BF Automations - Implementazione Odoo",
+   "p",
+   4,
+   "DD10145 · BF Automations",
+   "Implementazione Odoo"
+  ],
+  [
+   "Nicolò Danese",
+   "2026-10",
+   "DD10161 - Mondeo - Affiancamento Digital",
+   "p",
+   8,
+   "DD10161 · Mondeo",
+   "Affiancamento Digital"
+  ],
+  [
+   "Nicolò Danese",
+   "2026-11",
+   "DD10161 - Mondeo - Affiancamento Digital",
+   "p",
+   8,
+   "DD10161 · Mondeo",
+   "Affiancamento Digital"
+  ],
+  [
+   "Nicolò Danese",
+   "2026-12",
+   "DD10161 - Mondeo - Affiancamento Digital",
+   "s",
+   2,
+   "DD10161 · Mondeo",
+   "Affiancamento Digital"
+  ],
+  [
+   "Nicolò Danese",
+   "2026-12",
+   "DD10161 - Mondeo - Affiancamento Digital",
+   "p",
+   6,
+   "DD10161 · Mondeo",
+   "Affiancamento Digital"
+  ],
+  [
+   "Nicolò Danese",
+   "2027-01",
+   "DD10161 - Mondeo - Affiancamento Digital",
+   "s",
+   5,
+   "DD10161 · Mondeo",
+   "Affiancamento Digital"
+  ],
+  [
+   "Nicolò Danese",
+   "2027-02",
+   "DD10161 - Mondeo - Affiancamento Digital",
+   "s",
+   5,
+   "DD10161 · Mondeo",
+   "Affiancamento Digital"
+  ],
+  [
+   "Nicolò Danese",
+   "2026-10",
+   "DD10244 - Mastrotto - Soluzione TMS con Odoo",
+   "s",
+   3,
+   "DD10244 · Mastrotto",
+   "Soluzione TMS con Odoo"
+  ],
+  [
+   "Nicolò Danese",
+   "2026-11",
+   "DD10244 - Mastrotto - Soluzione TMS con Odoo",
+   "s",
+   4,
+   "DD10244 · Mastrotto",
+   "Soluzione TMS con Odoo"
+  ],
+  [
+   "Nicolò Danese",
+   "2026-12",
+   "DD10244 - Mastrotto - Soluzione TMS con Odoo",
+   "s",
+   2,
+   "DD10244 · Mastrotto",
+   "Soluzione TMS con Odoo"
+  ],
+  [
+   "Nicolò Danese",
+   "2027-01",
+   "DD10244 - Mastrotto - Soluzione TMS con Odoo",
+   "s",
+   2,
+   "DD10244 · Mastrotto",
+   "Soluzione TMS con Odoo"
+  ],
+  [
+   "Nicolò Danese",
+   "2027-02",
+   "DD10244 - Mastrotto - Soluzione TMS con Odoo",
+   "s",
+   2,
+   "DD10244 · Mastrotto",
+   "Soluzione TMS con Odoo"
+  ],
+  [
+   "Risorsa App Specialist",
+   "2026-11",
+   "DD10353 - IMA - Aggiornamento V19 e Contabilità",
+   "s",
+   1,
+   "DD10353 · IMA",
+   "Aggiornamento V19 e Contabilità"
+  ],
+  [
+   "Risorsa App Specialist",
+   "2026-12",
+   "DD10353 - IMA - Aggiornamento V19 e Contabilità",
+   "s",
+   1,
+   "DD10353 · IMA",
+   "Aggiornamento V19 e Contabilità"
+  ],
+  [
+   "Risorsa App Specialist",
+   "2027-01",
+   "DD10353 - IMA - Aggiornamento V19 e Contabilità",
+   "s",
+   1,
+   "DD10353 · IMA",
+   "Aggiornamento V19 e Contabilità"
+  ],
+  [
+   "Risorsa App Specialist",
+   "2027-02",
+   "DD10353 - IMA - Aggiornamento V19 e Contabilità",
+   "s",
+   1,
+   "DD10353 · IMA",
+   "Aggiornamento V19 e Contabilità"
+  ],
+  [
+   "Risorsa App Specialist",
+   "2027-03",
+   "DD10353 - IMA - Aggiornamento V19 e Contabilità",
+   "s",
+   1.125,
+   "DD10353 · IMA",
+   "Aggiornamento V19 e Contabilità"
+  ],
+  [
+   "Risorsa App Specialist",
+   "2027-02",
+   "DD10309 - G.M.A./GMA - Progetto Contabilità e BI",
+   "p",
+   4,
+   "DD10309 · G.M.A./GMA",
+   "Progetto Contabilità e BI"
+  ],
+  [
+   "Risorsa Sviluppo",
+   "2026-10",
+   "ARKY 2026",
+   "s",
+   2,
+   "ARKY 2026",
+   ""
+  ],
+  [
+   "Risorsa Sviluppo",
+   "2026-11",
+   "ARKY 2026",
+   "s",
+   4,
+   "ARKY 2026",
+   ""
+  ],
+  [
+   "Risorsa Sviluppo",
+   "2026-12",
+   "ARKY 2026",
+   "s",
+   4,
+   "ARKY 2026",
+   ""
+  ],
+  [
+   "Risorsa Sviluppo",
+   "2026-10",
+   "DD10345 - Officine Zoppelletto - Modifica CRM: Prioritizzazione opportunità/ordini",
+   "s",
+   0.5,
+   "DD10345 · Officine Zoppelletto",
+   "Modifica CRM: Prioritizzazione opportunità/ordini"
+  ],
+  [
+   "Risorsa Sviluppo",
+   "2026-11",
+   "DD10345 - Officine Zoppelletto - Modifica CRM: Prioritizzazione opportunità/ordini",
+   "s",
+   0.5,
+   "DD10345 · Officine Zoppelletto",
+   "Modifica CRM: Prioritizzazione opportunità/ordini"
+  ],
+  [
+   "Risorsa Sviluppo",
+   "2027-02",
+   "DD10353 - IMA - Aggiornamento V19 e Contabilità",
+   "s",
+   2,
+   "DD10353 · IMA",
+   "Aggiornamento V19 e Contabilità"
+  ],
+  [
+   "Risorsa Sviluppo",
+   "2027-03",
+   "DD10353 - IMA - Aggiornamento V19 e Contabilità",
+   "s",
+   2,
+   "DD10353 · IMA",
+   "Aggiornamento V19 e Contabilità"
+  ],
+  [
+   "Risorsa Sviluppo",
+   "2026-10",
+   "DD10013 - Brombal - Affiancamento Digital",
+   "s",
+   4,
+   "DD10013 · Brombal",
+   "Affiancamento Digital"
+  ],
+  [
+   "Risorsa Sviluppo",
+   "2026-10",
+   "DD10013 - Brombal - Affiancamento Digital",
+   "p",
+   2,
+   "DD10013 · Brombal",
+   "Affiancamento Digital"
+  ],
+  [
+   "Risorsa Sviluppo",
+   "2026-11",
+   "DD10013 - Brombal - Affiancamento Digital",
+   "s",
+   4,
+   "DD10013 · Brombal",
+   "Affiancamento Digital"
+  ],
+  [
+   "Risorsa Sviluppo",
+   "2026-12",
+   "DD10013 - Brombal - Affiancamento Digital",
+   "s",
+   2,
+   "DD10013 · Brombal",
+   "Affiancamento Digital"
+  ],
+  [
+   "Risorsa Sviluppo",
+   "2026-12",
+   "DD10013 - Brombal - Affiancamento Digital",
+   "p",
+   2,
+   "DD10013 · Brombal",
+   "Affiancamento Digital"
+  ],
+  [
+   "Risorsa Sviluppo",
+   "2027-01",
+   "DD10013 - Brombal - Affiancamento Digital",
+   "s",
+   4,
+   "DD10013 · Brombal",
+   "Affiancamento Digital"
+  ],
+  [
+   "Risorsa Sviluppo",
+   "2027-02",
+   "DD10013 - Brombal - Affiancamento Digital",
+   "s",
+   2,
+   "DD10013 · Brombal",
+   "Affiancamento Digital"
+  ],
+  [
+   "Risorsa Sviluppo",
+   "2027-02",
+   "DD10013 - Brombal - Affiancamento Digital",
+   "p",
+   2,
+   "DD10013 · Brombal",
+   "Affiancamento Digital"
+  ],
+  [
+   "Risorsa Sviluppo",
+   "2026-10",
+   "DD10215 - FCF Impianti - Affiancamento 2026",
+   "p",
+   1,
+   "DD10215 · FCF Impianti",
+   "Affiancamento 2026"
+  ],
+  [
+   "Risorsa Sviluppo",
+   "2026-12",
+   "DD10215 - FCF Impianti - Affiancamento 2026",
+   "p",
+   1,
+   "DD10215 · FCF Impianti",
+   "Affiancamento 2026"
+  ],
+  [
+   "Risorsa Sviluppo",
+   "2027-01",
+   "DD10215 - FCF Impianti - Affiancamento 2026",
+   "s",
+   1,
+   "DD10215 · FCF Impianti",
+   "Affiancamento 2026"
+  ],
+  [
+   "Risorsa Sviluppo",
+   "2027-02",
+   "DD10215 - FCF Impianti - Affiancamento 2026",
+   "s",
+   1,
+   "DD10215 · FCF Impianti",
+   "Affiancamento 2026"
+  ],
+  [
+   "Risorsa Sviluppo",
+   "2026-10",
+   "DD10221 - Odorizzi - Consolidamento dei processi e rinnovo della piattaforma Odoo",
+   "s",
+   3,
+   "DD10221 · Odorizzi",
+   "Consolidamento dei processi e rinnovo della piattaforma Odoo"
+  ],
+  [
+   "Risorsa Sviluppo",
+   "2026-11",
+   "DD10221 - Odorizzi - Consolidamento dei processi e rinnovo della piattaforma Odoo",
+   "s",
+   3,
+   "DD10221 · Odorizzi",
+   "Consolidamento dei processi e rinnovo della piattaforma Odoo"
+  ],
+  [
+   "Risorsa Sviluppo",
+   "2026-12",
+   "DD10221 - Odorizzi - Consolidamento dei processi e rinnovo della piattaforma Odoo",
+   "s",
+   3,
+   "DD10221 · Odorizzi",
+   "Consolidamento dei processi e rinnovo della piattaforma Odoo"
+  ],
+  [
+   "Risorsa Sviluppo",
+   "2026-12",
+   "Si Vola 2026",
+   "s",
+   4,
+   "Si Vola 2026",
+   ""
+  ],
+  [
+   "Risorsa Sviluppo",
+   "2026-12",
+   "DD10179 - Yuppy per Recover - Digitalizzazione Odoo",
+   "s",
+   2,
+   "DD10179 · Yuppy per Recover",
+   "Digitalizzazione Odoo"
+  ],
+  [
+   "Risorsa Sviluppo",
+   "2027-01",
+   "DD10179 - Yuppy per Recover - Digitalizzazione Odoo",
+   "s",
+   2,
+   "DD10179 · Yuppy per Recover",
+   "Digitalizzazione Odoo"
+  ],
+  [
+   "Risorsa Sviluppo",
+   "2027-02",
+   "DD10179 - Yuppy per Recover - Digitalizzazione Odoo",
+   "s",
+   2,
+   "DD10179 · Yuppy per Recover",
+   "Digitalizzazione Odoo"
+  ],
+  [
+   "Sofia Markovic",
+   "2026-10",
+   "DD10353 - IMA - Aggiornamento V19 e Contabilità",
+   "s",
+   4,
+   "DD10353 · IMA",
+   "Aggiornamento V19 e Contabilità"
+  ],
+  [
+   "Sofia Markovic",
+   "2026-11",
+   "DD10353 - IMA - Aggiornamento V19 e Contabilità",
+   "s",
+   4,
+   "DD10353 · IMA",
+   "Aggiornamento V19 e Contabilità"
+  ],
+  [
+   "Sofia Markovic",
+   "2026-12",
+   "DD10353 - IMA - Aggiornamento V19 e Contabilità",
+   "s",
+   4,
+   "DD10353 · IMA",
+   "Aggiornamento V19 e Contabilità"
+  ],
+  [
+   "Stefano Aio",
+   "2026-10",
+   "DD10161 - Mondeo - Affiancamento Digital",
+   "s",
+   6,
+   "DD10161 · Mondeo",
+   "Affiancamento Digital"
+  ],
+  [
+   "Stefano Aio",
+   "2026-10",
+   "DD10161 - Mondeo - Affiancamento Digital",
+   "p",
+   2,
+   "DD10161 · Mondeo",
+   "Affiancamento Digital"
+  ],
+  [
+   "Stefano Aio",
+   "2026-11",
+   "DD10161 - Mondeo - Affiancamento Digital",
+   "s",
+   6,
+   "DD10161 · Mondeo",
+   "Affiancamento Digital"
+  ],
+  [
+   "Stefano Aio",
+   "2026-11",
+   "DD10161 - Mondeo - Affiancamento Digital",
+   "p",
+   2,
+   "DD10161 · Mondeo",
+   "Affiancamento Digital"
+  ],
+  [
+   "Stefano Aio",
+   "2026-12",
+   "DD10161 - Mondeo - Affiancamento Digital",
+   "s",
+   6,
+   "DD10161 · Mondeo",
+   "Affiancamento Digital"
+  ],
+  [
+   "Stefano Aio",
+   "2026-12",
+   "DD10161 - Mondeo - Affiancamento Digital",
+   "p",
+   2,
+   "DD10161 · Mondeo",
+   "Affiancamento Digital"
+  ],
+  [
+   "Stefano Aio",
+   "2026-10",
+   "DD10252 - ISAAC - Progetto presa in carico istanza, contabilità e supply chain",
+   "s",
+   4,
+   "DD10252 · ISAAC",
+   "Progetto presa in carico istanza, contabilità e supply chain"
+  ],
+  [
+   "Stefano Aio",
+   "2026-11",
+   "DD10252 - ISAAC - Progetto presa in carico istanza, contabilità e supply chain",
+   "s",
+   4,
+   "DD10252 · ISAAC",
+   "Progetto presa in carico istanza, contabilità e supply chain"
+  ],
+  [
+   "Stefano Aio",
+   "2026-12",
+   "DD10252 - ISAAC - Progetto presa in carico istanza, contabilità e supply chain",
+   "s",
+   2,
+   "DD10252 · ISAAC",
+   "Progetto presa in carico istanza, contabilità e supply chain"
+  ],
+  [
+   "Stefano Aio",
+   "2027-01",
+   "DD10252 - ISAAC - Progetto presa in carico istanza, contabilità e supply chain",
+   "s",
+   3,
+   "DD10252 · ISAAC",
+   "Progetto presa in carico istanza, contabilità e supply chain"
+  ],
+  [
+   "Stefano Aio",
+   "2026-10",
+   "DD10309 - G.M.A./GMA - Progetto Contabilità e BI",
+   "p",
+   4,
+   "DD10309 · G.M.A./GMA",
+   "Progetto Contabilità e BI"
+  ],
+  [
+   "Stefano Aio",
+   "2026-11",
+   "DD10309 - G.M.A./GMA - Progetto Contabilità e BI",
+   "p",
+   3,
+   "DD10309 · G.M.A./GMA",
+   "Progetto Contabilità e BI"
+  ],
+  [
+   "Stefano Aio",
+   "2026-12",
+   "DD10309 - G.M.A./GMA - Progetto Contabilità e BI",
+   "p",
+   3,
+   "DD10309 · G.M.A./GMA",
+   "Progetto Contabilità e BI"
+  ],
+  [
+   "Stefano Aio",
+   "2027-01",
+   "DD10309 - G.M.A./GMA - Progetto Contabilità e BI",
+   "p",
+   3,
+   "DD10309 · G.M.A./GMA",
+   "Progetto Contabilità e BI"
+  ],
+  [
+   "Stefano Aio",
+   "2027-03",
+   "DD10309 - G.M.A./GMA - Progetto Contabilità e BI",
+   "p",
+   3,
+   "DD10309 · G.M.A./GMA",
+   "Progetto Contabilità e BI"
+  ],
+  [
+   "Stefano Aio",
+   "2026-10",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   3,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Stefano Aio",
+   "2026-11",
+   "DD10340 - AMG - Implementazione",
+   "s",
+   6,
+   "DD10340 · AMG",
+   "Implementazione"
+  ],
+  [
+   "Stefano Aio",
+   "2026-10",
+   "DD10221 - Odorizzi - Consolidamento dei processi e rinnovo della piattaforma Odoo",
+   "p",
+   3,
+   "DD10221 · Odorizzi",
+   "Consolidamento dei processi e rinnovo della piattaforma Odoo"
+  ],
+  [
+   "Stefano Aio",
+   "2026-11",
+   "DD10221 - Odorizzi - Consolidamento dei processi e rinnovo della piattaforma Odoo",
+   "p",
+   3,
+   "DD10221 · Odorizzi",
+   "Consolidamento dei processi e rinnovo della piattaforma Odoo"
+  ],
+  [
+   "Stefano Aio",
+   "2026-12",
+   "DD10221 - Odorizzi - Consolidamento dei processi e rinnovo della piattaforma Odoo",
+   "p",
+   3,
+   "DD10221 · Odorizzi",
+   "Consolidamento dei processi e rinnovo della piattaforma Odoo"
+  ],
+  [
+   "Stefano Aio",
+   "2026-12",
+   "Si Vola 2026",
+   "s",
+   4,
+   "Si Vola 2026",
+   ""
+  ],
+  [
+   "Stefano Aio",
+   "2026-10",
+   "DD10157 - MIPU - Implementazione Primo Gestionale",
+   "p",
+   2,
+   "DD10157 · MIPU",
+   "Implementazione Primo Gestionale"
+  ]
+ ],
+ "titles": {
+  "DD10145 · BF Automations": "Implementazione Odoo",
+  "DD10340 · AMG": "Implementazione",
+  "ARKY 2026": "",
+  "DD100TBD · Secco": "Crescita",
+  "DD10194 · Soul": "Odoo",
+  "DD10281 · Bertoletti Group": "Workshop di validazione",
+  "DD10241 · Penta Formazione": "Affiancamento alla crescita",
+  "DD10215 · FCF Impianti": "Affiancamento 2026",
+  "DD10347 · Service43": "Implementazione Odoo",
+  "DD10143 · Irontech": "Odoo",
+  "DD10013 · Brombal": "Affiancamento Digital",
+  "DD10353 · IMA": "Aggiornamento V19 e Contabilità",
+  "DD10161 · Mondeo": "Affiancamento Digital",
+  "DD10179 · Yuppy per Recover": "Digitalizzazione Odoo",
+  "DD10252 · ISAAC": "Progetto presa in carico istanza, contabilità e supply chain",
+  "B2B 2026": "",
+  "DD10193 · Synethik": "Starter pack",
+  "DD10276 · Essemec": "Starter Pack CRM",
+  "DD10221 · Odorizzi": "Consolidamento dei processi e rinnovo della piattaforma Odoo",
+  "DD10244 · Mastrotto": "Soluzione TMS con Odoo",
+  "DD10058 · Cabbia Group": "Implementazione Odoo",
+  "DD10109 · Si Vola & B2B 72": "Implementazione Odoo",
+  "DD10157 · MIPU": "Implementazione Primo Gestionale",
+  "DD10309 · G.M.A./GMA": "Progetto Contabilità e BI",
+  "DD10345 · Officine Zoppelletto": "Modifica CRM: Prioritizzazione opportunità/ordini",
+  "Si Vola 2026": "",
+  "DD10199 · Schueco Portale": "Assistenza 2026"
+ },
+ "budget": {
+  "DD10013": {
+   "ord": 9,
+   "reg": 384.823,
+   "client": "Brombal",
+   "title": "Affiancamento alla crescita"
+  },
+  "DD10025": {
+   "ord": 242,
+   "reg": 207.719,
+   "client": "Union Plus",
+   "title": "Integrazione non usato"
+  },
+  "DD10118": {
+   "ord": 90,
+   "reg": 112.178,
+   "client": "Nuovo Template Progetto Agile Digiduu",
+   "title": ""
+  },
+  "DD10193": {
+   "ord": 15,
+   "reg": 17.74,
+   "client": "Synethik",
+   "title": "Starter pack"
+  },
+  "DD101XX": {
+   "ord": null,
+   "reg": 24.282,
+   "client": "Officine Zoppelletto",
+   "title": "Dashboard"
+  },
+  "DD10243": {
+   "ord": null,
+   "reg": 0,
+   "client": "BF",
+   "title": "Implementazione (non usato)"
+  },
+  "DD10263": {
+   "ord": null,
+   "reg": 21.906,
+   "client": "Arky",
+   "title": "Ottimizzazione dei processi"
+  },
+  "DD10277": {
+   "ord": null,
+   "reg": 0,
+   "client": "Cabbia",
+   "title": "Affianamento Go-live non usato"
+  },
+  "DD10308": {
+   "ord": null,
+   "reg": 13.031,
+   "client": "Arky",
+   "title": "Righe Ordine"
+  },
+  "DD10316": {
+   "ord": null,
+   "reg": 0,
+   "client": "SVILUPPI CUSTOM",
+   "title": ""
+  },
+  "DD10345": {
+   "ord": null,
+   "reg": 0,
+   "client": "Officine Zoppelletto",
+   "title": "Modifica CRM: Prioritizzazione opportunità/ordini"
+  },
+  "DD10349": {
+   "ord": null,
+   "reg": 0.438,
+   "client": "Arky",
+   "title": "Modifica Listino"
+  },
+  "DD10353": {
+   "ord": 60,
+   "reg": 2.219,
+   "client": "IMA",
+   "title": "Aggiornamento V19 e Contabilità"
+  },
+  "DD10358": {
+   "ord": 4,
+   "reg": 1.625,
+   "client": "Arky",
+   "title": "Analisi Pagamenti"
+  },
+  "DD10XXX": {
+   "ord": null,
+   "reg": 0.25,
+   "client": "Si Vola",
+   "title": "Hypercare febbraio 2026"
+  },
+  "DD10002": {
+   "ord": 3,
+   "reg": 3,
+   "client": "PM",
+   "title": "Club di Più S.r.l. - Studio fattibilità risponditore automatico AI"
+  },
+  "DD10109": {
+   "ord": 118,
+   "reg": 357.156,
+   "client": "Si Vola & B2B 72",
+   "title": "Implementazione Odoo"
+  },
+  "DD10090": {
+   "ord": 10,
+   "reg": 7.719,
+   "client": "GD EDUCA",
+   "title": "Gestione asili nido"
+  },
+  "DD10143": {
+   "ord": 56,
+   "reg": 66.938,
+   "client": "Irontech",
+   "title": "Odoo"
+  },
+  "DD10001": {
+   "ord": 10,
+   "reg": 23.219,
+   "client": "Wow Solution S.r.l.",
+   "title": "Start-up Odoo"
+  },
+  "DD10023": {
+   "ord": null,
+   "reg": 4.438,
+   "client": "Zeta 92 S.r.l.",
+   "title": "Workshop preliminare di analisi e prototipazione"
+  },
+  "DD10030": {
+   "ord": 13,
+   "reg": 4,
+   "client": "Secco Sistemi S.p.A.",
+   "title": "Affiancamento Helpdesk"
+  },
+  "DD10228": {
+   "ord": 3,
+   "reg": 2.688,
+   "client": "ISAAC",
+   "title": "Workshop"
+  },
+  "DD": {
+   "ord": 14,
+   "reg": 17.282,
+   "client": "Berti",
+   "title": "Crescita non usare"
+  },
+  "DD10158": {
+   "ord": 8.5,
+   "reg": 6.5,
+   "client": "HubTech",
+   "title": "Controllo di Gestione"
+  },
+  "DD10171": {
+   "ord": 3,
+   "reg": 4.531,
+   "client": "IMO",
+   "title": "Workshop"
+  },
+  "DD10227": {
+   "ord": 7.5,
+   "reg": 1.813,
+   "client": "Alba",
+   "title": "Sviluppi"
+  },
+  "DD10145": {
+   "ord": 137.5,
+   "reg": 167.479,
+   "client": "BF Automations",
+   "title": "Implementazione Odoo"
+  },
+  "DD10205": {
+   "ord": 15,
+   "reg": 19.323,
+   "client": "Schueco Marketing",
+   "title": "Intranet Dipendenti"
+  },
+  "DDXXXX": {
+   "ord": null,
+   "reg": 1.813,
+   "client": "Bordignon",
+   "title": "Affiancamento Odoo"
+  },
+  "DD10019": {
+   "ord": 3,
+   "reg": 2,
+   "client": "Pubblivision",
+   "title": "Consulenza"
+  },
+  "DD10049": {
+   "ord": 10,
+   "reg": 21.344,
+   "client": "Zeta92",
+   "title": "Affiancamento"
+  },
+  "DD10057": {
+   "ord": 30,
+   "reg": 55.094,
+   "client": "Oriens per Esse Music",
+   "title": "Analisi processi e digitalizzazione con Odoo"
+  },
+  "DD10016": {
+   "ord": 5,
+   "reg": 27.854,
+   "client": "Esse Solutions",
+   "title": "Consulenza Piattaforma Digitale"
+  },
+  "DD10032": {
+   "ord": null,
+   "reg": 0.5,
+   "client": "FREETHINK BY MUSE S.R.L.",
+   "title": "Consulenza"
+  },
+  "DD10061": {
+   "ord": 5,
+   "reg": 6.031,
+   "client": "Berti",
+   "title": "Flusso Rivenditori"
+  },
+  "DD10132": {
+   "ord": null,
+   "reg": 71.688,
+   "client": "Oriens per Esse Music",
+   "title": "Implementazione Fase 3"
+  },
+  "DD100TBD": {
+   "ord": 36,
+   "reg": 19,
+   "client": "Secco",
+   "title": "Crescita"
+  },
+  "DD10107": {
+   "ord": 10,
+   "reg": 18.688,
+   "client": "AdHoc",
+   "title": "Starter Pack CRM"
+  },
+  "DD10146": {
+   "ord": null,
+   "reg": 12.188,
+   "client": "Esse Music",
+   "title": "Avviamento Amministrazione"
+  },
+  "DD10112": {
+   "ord": 8,
+   "reg": 9.719,
+   "client": "HubTec",
+   "title": "Implementazione Odoo"
+  },
+  "DD10120": {
+   "ord": 38,
+   "reg": 37.156,
+   "client": "FCF",
+   "title": "Implementazione Odoo"
+  },
+  "DD10156": {
+   "ord": 8,
+   "reg": 0,
+   "client": "Union Plus",
+   "title": "Integrazioni NON USATO"
+  },
+  "DD10161": {
+   "ord": null,
+   "reg": 374.719,
+   "client": "Mondeo",
+   "title": "Affiancamento Digital"
+  },
+  "DD10250": {
+   "ord": null,
+   "reg": 0,
+   "client": "Essemec",
+   "title": "Workshop CRM"
+  },
+  "DD10041": {
+   "ord": null,
+   "reg": 53.76,
+   "client": "Montec",
+   "title": "Affiancamento Digital 2025"
+  },
+  "DD10139": {
+   "ord": null,
+   "reg": 17.75,
+   "client": "HubTec",
+   "title": "Fase 2 e Fase 3"
+  },
+  "DD10290": {
+   "ord": 4,
+   "reg": 2.344,
+   "client": "Arky",
+   "title": "Affiancamento giugno luglio"
+  },
+  "DD10104": {
+   "ord": 48,
+   "reg": 45.063,
+   "client": "Alba",
+   "title": "Affiancamento alla crescita"
+  },
+  "DD10220": {
+   "ord": 5,
+   "reg": 2.875,
+   "client": "Schueco Portale",
+   "title": "Nuova sezione AluBright"
+  },
+  "DD10040": {
+   "ord": null,
+   "reg": 10.313,
+   "client": "Officine Zoppelletto",
+   "title": "Affiancamento Digital 2025"
+  },
+  "DD10100": {
+   "ord": 12,
+   "reg": 11.063,
+   "client": "Secco",
+   "title": "Crescita"
+  },
+  "DD10022": {
+   "ord": 10,
+   "reg": 7.625,
+   "client": "Imment",
+   "title": "Workshop, Prototipazione e validazione"
+  },
+  "DD10031": {
+   "ord": 16,
+   "reg": 17.5,
+   "client": "EuBiome",
+   "title": "Analisi per migrazione odoo 18"
+  },
+  "DD10042": {
+   "ord": null,
+   "reg": 0.969,
+   "client": "CSG-Furlan Puccini",
+   "title": "BI"
+  },
+  "DD10147": {
+   "ord": 10,
+   "reg": 6.469,
+   "client": "B4C",
+   "title": "Starter Pack Fatturazione"
+  },
+  "DD10194": {
+   "ord": 40,
+   "reg": 53.881,
+   "client": "Soul",
+   "title": "Odoo"
+  },
+  "DD10124": {
+   "ord": 16.5,
+   "reg": 1.813,
+   "client": "Rapid Plastic",
+   "title": "Contabilità"
+  },
+  "DD10201": {
+   "ord": 10,
+   "reg": 21.438,
+   "client": "Serramenti Brombal",
+   "title": "Revisione Processi"
+  },
+  "DD10215": {
+   "ord": null,
+   "reg": 14.844,
+   "client": "FCF Impianti",
+   "title": "Affiancamento 2026"
+  },
+  "DD10244": {
+   "ord": null,
+   "reg": 10.719,
+   "client": "Mastrotto",
+   "title": "Soluzione TMS con Odoo"
+  },
+  "DD10251": {
+   "ord": null,
+   "reg": 0.125,
+   "client": "CSG",
+   "title": "Affiancamento Business Intelligence"
+  },
+  "DD10TBD": {
+   "ord": 36,
+   "reg": 38.063,
+   "client": "Wow",
+   "title": "Crescita"
+  },
+  "DD10058": {
+   "ord": 12,
+   "reg": 38.094,
+   "client": "Cabbia Group",
+   "title": "Implementazione Odoo"
+  },
+  "DD10252": {
+   "ord": 80,
+   "reg": 48.469,
+   "client": "ISAAC",
+   "title": "Progetto presa in carico istanza, contabilità e supply chain"
+  },
+  "DD10039": {
+   "ord": null,
+   "reg": 5.625,
+   "client": "Mondeo",
+   "title": "Business Intelligence"
+  },
+  "DD10051": {
+   "ord": null,
+   "reg": 9.063,
+   "client": "Pubblivision",
+   "title": "Accompagnamento alla crescita"
+  },
+  "DD10276": {
+   "ord": 20,
+   "reg": 4.625,
+   "client": "Essemec",
+   "title": "Starter Pack CRM"
+  },
+  "DD10038": {
+   "ord": 10,
+   "reg": 11.938,
+   "client": "Digital System S.r.l.",
+   "title": "Configurazione e avviamento Piattaforma Odoo"
+  },
+  "DD10281": {
+   "ord": null,
+   "reg": 1.25,
+   "client": "Bertoletti Group",
+   "title": "Workshop di validazione"
+  },
+  "DD10303": {
+   "ord": null,
+   "reg": 2.438,
+   "client": "Edilklima",
+   "title": "Affiancamento Digital"
+  },
+  "DD10152": {
+   "ord": 9,
+   "reg": 17.656,
+   "client": "Ocra per Belvest",
+   "title": "POC"
+  },
+  "DD10309": {
+   "ord": 40,
+   "reg": 1.563,
+   "client": "G.M.A./GMA",
+   "title": "Progetto Contabilità e BI"
+  },
+  "DD10314": {
+   "ord": null,
+   "reg": 0,
+   "client": "Brombal",
+   "title": "Aggiornamento V19"
+  },
+  "DD10119": {
+   "ord": 9,
+   "reg": 20.813,
+   "client": "Brombal",
+   "title": "Modula"
+  },
+  "DD10321": {
+   "ord": 5,
+   "reg": 5.281,
+   "client": "Cabbia",
+   "title": "Fine Tuning istanza"
+  },
+  "DD10105": {
+   "ord": 90,
+   "reg": 142.719,
+   "client": "Arky",
+   "title": "Gestione cantiere con Odoo"
+  },
+  "DD10340": {
+   "ord": 240,
+   "reg": 5.125,
+   "client": "AMG",
+   "title": "Implementazione"
+  },
+  "DD10131": {
+   "ord": 20,
+   "reg": 53.281,
+   "client": "Ocra per DISA Impianti",
+   "title": "Starter Pack"
+  },
+  "DD10347": {
+   "ord": 40,
+   "reg": 6,
+   "client": "Service43",
+   "title": "Implementazione Odoo"
+  },
+  "DD10126": {
+   "ord": 24,
+   "reg": 38.563,
+   "client": "Mastrotto",
+   "title": "Starter Pack Contabilità"
+  },
+  "DD10352": {
+   "ord": null,
+   "reg": 0.563,
+   "client": "Proludis Giocattoli",
+   "title": "Workshop"
+  },
+  "DD10136": {
+   "ord": 10,
+   "reg": 10.844,
+   "client": "Dyaqua",
+   "title": "CRM + FATTURAZIONE"
+  },
+  "DD10355": {
+   "ord": 6,
+   "reg": 0.625,
+   "client": "Schueco PSW Italia",
+   "title": "aggiornamento e reingegnerizzazione piattaforma ordini"
+  },
+  "DD10359": {
+   "ord": 13,
+   "reg": 0.563,
+   "client": "Brombal",
+   "title": "Integrazione Odoo-Insightly Fase 2"
+  },
+  "DD10218": {
+   "ord": 60,
+   "reg": 79.823,
+   "client": "AMG Spa",
+   "title": "Efficientamento e Digitalizzazione con Odoo - Fase 1 e Fase 2"
+  },
+  "DD10306": {
+   "ord": null,
+   "reg": 2.938,
+   "client": "IMA",
+   "title": "Workshop"
+  },
+  "DD10221": {
+   "ord": 60,
+   "reg": 39.448,
+   "client": "Odorizzi",
+   "title": "Consolidamento dei processi e rinnovo della piattaforma Odoo"
+  },
+  "DD10231": {
+   "ord": null,
+   "reg": 3,
+   "client": "Arky",
+   "title": "Affiancamento alla crescita marzo"
+  },
+  "DD10342": {
+   "ord": 70,
+   "reg": 21.25,
+   "client": "Irontech",
+   "title": "Fase 3: Affiancamento alla crescita S2 - 2026"
+  },
+  "DD10253": {
+   "ord": null,
+   "reg": 0.688,
+   "client": "Arky Srl",
+   "title": "Presa lead con QR code"
+  },
+  "DD10254": {
+   "ord": null,
+   "reg": 5.469,
+   "client": "Arky",
+   "title": "Estrazione Dati"
+  },
+  "DD10269": {
+   "ord": null,
+   "reg": 0.438,
+   "client": "Arky",
+   "title": "Pulizia Allegati"
+  },
+  "DD10280": {
+   "ord": null,
+   "reg": 2.938,
+   "client": "Arky",
+   "title": "Evolutive SAL"
+  },
+  "DD10209": {
+   "ord": 7,
+   "reg": 11.188,
+   "client": "Arky",
+   "title": "Dashboard"
+  },
+  "DD10101": {
+   "ord": 8,
+   "reg": 8.156,
+   "client": "Berti",
+   "title": "Implementazione Odoo"
+  },
+  "DD10203": {
+   "ord": 30,
+   "reg": 8.563,
+   "client": "Brombal",
+   "title": "DATA INTEGRATION ODOO E INSIGHTLY"
+  },
+  "DD10179": {
+   "ord": 28,
+   "reg": 52.813,
+   "client": "Yuppy per Recover",
+   "title": "Digitalizzazione Odoo"
+  },
+  "DD10241": {
+   "ord": 36,
+   "reg": 42.406,
+   "client": "Penta Formazione",
+   "title": "Affiancamento alla crescita"
+  },
+  "DD10157": {
+   "ord": 60,
+   "reg": 84.635,
+   "client": "MIPU",
+   "title": "Implementazione Primo Gestionale"
+  }
+ },
+ "ends": {
+  "DD10193 · Synethik": "2026-12-31",
+  "DD10353 · IMA": "2027-06-30",
+  "DD10109 · Si Vola & B2B 72": "2025-12-31",
+  "DD10143 · Irontech": "2026-06-30",
+  "DD10145 · BF Automations": "2026-12-31",
+  "DD100TBD · Secco": "2026-09-14",
+  "DD10013 · Brombal": "2026-12-31",
+  "DD10161 · Mondeo": "2026-12-31",
+  "DD10194 · Soul": "2026-06-30",
+  "DD10215 · FCF Impianti": "2026-12-31",
+  "DD10244 · Mastrotto": "2026-12-31",
+  "DD10058 · Cabbia Group": "2026-08-31",
+  "DD10252 · ISAAC": "2026-10-31",
+  "DD10276 · Essemec": "2026-10-30",
+  "DD10281 · Bertoletti Group": "2026-10-30",
+  "DD10309 · G.M.A./GMA": "2027-03-31",
+  "DD10340 · AMG": "2027-09-30",
+  "DD10347 · Service43": "2027-04-30",
+  "DD10221 · Odorizzi": "2026-12-31",
+  "DD10179 · Yuppy per Recover": "2026-11-27",
+  "DD10241 · Penta Formazione": "2027-09-30",
+  "DD10157 · MIPU": "2026-10-30",
+  "DD10199 · Schueco Portale": "2026-12-31"
+ },
+ "asof": "26/10/2026"
+}

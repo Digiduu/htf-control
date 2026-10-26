@@ -1,6 +1,6 @@
 "use client";
 
-import { Fragment, useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
+import { Fragment, useEffect, useMemo, useRef, useState, type CSSProperties, type MouseEvent as ReactMouseEvent } from "react";
 import { createClient } from "../../lib/supabase/client";
 import type { UserRole, VisibilityGroup } from "../../lib/auth/dal";
 import { saveSnapshot } from "./actions";
@@ -15,6 +15,8 @@ import {
   buildPrevCurrentTable,
   mergeOrderRows,
   visibleCellStates,
+  rowTipiProgetto,
+  tipiProgettoOptions,
   type MergedRow,
   type PrevCurrentEntry,
 } from "./lib/pipeline-logic";
@@ -89,6 +91,14 @@ const STRIPE = "#fafaf8";
 // confine di sicurezza resta la riverifica dentro saveSnapshot().
 const SNAPSHOT_LABEL_USER_EMAIL = "c.rossetto@oriens.consulting";
 
+// Obiettivo di fatturato mensile per il KPI in testata (stesso valore per
+// Oriens e Digiduu).
+const MONTHLY_TARGET = 200000;
+
+// Stati del Riepilogo per stato senza dettaglio clienti al clic: sono già
+// leggibili riga per riga nella tabella principale.
+const NO_CLIENT_POPUP_STATES = ["Confermata - Fatturato", "Bozza - Contrattualizzato"];
+
 export default function PipelineCommercialePage() {
   const supabase = useMemo(() => createClient(), []);
 
@@ -125,6 +135,8 @@ export default function PipelineCommercialePage() {
   const [filterText, setFilterText] = useState("");
   const [disabledStates, setDisabledStates] = useState<Set<string>>(new Set());
   const [tipologiaOpen, setTipologiaOpen] = useState(false);
+  const [disabledTipi, setDisabledTipi] = useState<Set<string>>(new Set());
+  const [tipoProgettoOpen, setTipoProgettoOpen] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -144,6 +156,8 @@ export default function PipelineCommercialePage() {
     setFilterResetCompany(company);
     setDisabledStates(new Set());
     setTipologiaOpen(false);
+    setDisabledTipi(new Set());
+    setTipoProgettoOpen(false);
   }
 
   // Ambito di visibilità dell'utente corrente: un utente globale vede tutto
@@ -355,17 +369,30 @@ export default function PipelineCommercialePage() {
   const previsioneFamilyVisible =
     !stateFilterActive || availableStates.some((s) => s.stato.startsWith("Previsione") && !disabledStates.has(s.stato));
 
+  // Filtro "Tipo progetto": solo Digiduu e solo per le generazioni che portano
+  // il campo tipi_progetto (dal 26/10/2026), altrimenti non compare.
+  const tipoProgettoAvailable = company === "digiduu" && (doc?.rows || []).some((r) => r.tipi_progetto !== undefined);
+  const tipoFilterActive = tipoProgettoAvailable && disabledTipi.size > 0;
+  const tipiOptions = useMemo(() => tipiProgettoOptions(doc?.rows || []), [doc]);
+
+  // Col filtro Tipologia attivo spariscono anche le righe (ordini) che non
+  // hanno più nessun importo in uno degli stati rimasti spuntati, invece di
+  // restare in tabella come righe vuote.
   const visibleRows = useMemo(
     () =>
       mergedRows.filter(
         (r) =>
           (!filterText || (r.cliente || "").toLowerCase().includes(filterText.toLowerCase())) &&
-          (!r.is_crm || previsioneFamilyVisible)
+          (!tipoFilterActive || rowTipiProgetto(r).some((t) => !disabledTipi.has(t))) &&
+          (r.is_crm
+            ? previsioneFamilyVisible
+            : !stateFilterActive ||
+              (r._cellStates || []).some((cell) => visibleCellStates(cell, disabledStates).some((x) => x.val)))
       ),
-    [mergedRows, filterText, previsioneFamilyVisible]
+    [mergedRows, filterText, previsioneFamilyVisible, stateFilterActive, disabledStates, tipoFilterActive, disabledTipi]
   );
 
-  const anyFilter = plActive || !!filterText || stateFilterActive;
+  const anyFilter = plActive || !!filterText || stateFilterActive || tipoFilterActive;
 
   const totals = useMemo(() => {
     if (!anyFilter) return doc?.overall ?? { ordinato: 0, months: new Array(12).fill(0), totale: 0 };
@@ -393,15 +420,97 @@ export default function PipelineCommercialePage() {
     return { ordinato, months, totale };
   }, [anyFilter, doc, visibleRows, stateFilterActive, disabledStates]);
 
+  // Chi vede l'intera azienda (globale e commerciali, non i Project Leader
+  // bloccati sulle proprie commesse): solo per loro KPI obiettivo mese e
+  // dettaglio clienti nel Riepilogo per stato.
+  const seesAllCompany = !!scope && scope.visibilityGroup !== "project_leader";
+
+  // KPI "Obiettivo mese": confronta il mese corrente reale della riga TOTALE
+  // (quindi segue gli stessi filtri attivi sulla tabella) con l'obiettivo
+  // mensile fisso. Solo per una generazione dell'anno in corso.
+  const monthTarget = useMemo(() => {
+    if (!doc || doc.year !== new Date().getFullYear()) return null;
+    const monthIdx = new Date().getMonth();
+    const value = totals.months[monthIdx] || 0;
+    return { monthIdx, value, diff: value - MONTHLY_TARGET };
+  }, [doc, totals]);
+
+  // Righe del Riepilogo per stato: sempre tutti gli stati, il filtro
+  // Tipologia agisce solo sulla tabella principale. Più sotto la relativa
+  // riga TOTALE, somma colonna per colonna.
+  const statoSummaryRows = useMemo(() => doc?.stato_summary || [], [doc]);
+  const statoSummaryTotal = useMemo(() => {
+    const months = new Array(12).fill(0);
+    let totale = 0;
+    for (const s of statoSummaryRows) {
+      for (let i = 0; i < 12; i++) months[i] += s.months[i] || 0;
+      totale += s.totale || 0;
+    }
+    return { months, totale };
+  }, [statoSummaryRows]);
+
+  // Finestrella con i clienti che compongono una cifra del Riepilogo per
+  // stato (monthIdx null = colonna Totale anno). Posizione fissa sullo
+  // schermo, calcolata dalla cella cliccata, per non essere tagliata dallo
+  // scroll della tabella.
+  const [statoPopup, setStatoPopup] = useState<{ stato: string; monthIdx: number | null; top: number; left: number } | null>(null);
+  useEffect(() => {
+    if (!statoPopup) return;
+    const close = () => setStatoPopup(null);
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && close();
+    window.addEventListener("scroll", close, true);
+    window.addEventListener("resize", close);
+    window.addEventListener("keydown", onKey);
+    window.addEventListener("click", close);
+    return () => {
+      window.removeEventListener("scroll", close, true);
+      window.removeEventListener("resize", close);
+      window.removeEventListener("keydown", onKey);
+      window.removeEventListener("click", close);
+    };
+  }, [statoPopup]);
+  const statoPopupClients = useMemo(() => {
+    if (!statoPopup || !doc) return [];
+    const byClient = new Map<string, number>();
+    for (const r of doc.rows || []) {
+      if (r.is_crm || r.stato !== statoPopup.stato) continue;
+      const v =
+        statoPopup.monthIdx === null
+          ? r.months.reduce<number>((s, x) => s + (x || 0), 0)
+          : r.months[statoPopup.monthIdx] || 0;
+      if (!v) continue;
+      const name = r.cliente || "—";
+      byClient.set(name, (byClient.get(name) || 0) + v);
+    }
+    return [...byClient.entries()].map(([cliente, val]) => ({ cliente, val })).sort((a, b) => b.val - a.val);
+  }, [statoPopup, doc]);
+
+  function openStatoPopup(e: ReactMouseEvent<HTMLElement>, stato: string, monthIdx: number | null) {
+    e.stopPropagation();
+    if (statoPopup && statoPopup.stato === stato && statoPopup.monthIdx === monthIdx) {
+      setStatoPopup(null);
+      return;
+    }
+    const rect = e.currentTarget.getBoundingClientRect();
+    const width = 300;
+    setStatoPopup({
+      stato,
+      monthIdx,
+      top: rect.bottom + 4,
+      left: Math.max(8, Math.min(rect.right - width, window.innerWidth - width - 8)),
+    });
+  }
+
   // Etichetta della riga TOTALE: combina Project Leader e Tipologia quando
   // entrambi i filtri sono attivi (es. "TOTALE MARIO ROSSI · 3/6 TIPOLOGIE").
   const totalLabel = useMemo(() => {
     const parts: string[] = [];
     if (plActive) parts.push(plFilter.toUpperCase());
     if (stateFilterActive) parts.push(`${availableStates.length - disabledStates.size}/${availableStates.length} TIPOLOGIE`);
+    if (tipoFilterActive) parts.push(`${tipiOptions.length - disabledTipi.size}/${tipiOptions.length} TIPI PROGETTO`);
     if (!parts.length) return "TOTALE GENERALE";
     return plActive ? `TOTALE ${parts.join(" · ")}` : `TOTALE GENERALE · ${parts.join(" · ")}`;
-  }, [plActive, plFilter, stateFilterActive, availableStates, disabledStates]);
+  }, [plActive, plFilter, stateFilterActive, availableStates, disabledStates, tipoFilterActive, disabledTipi, tipiOptions]);
 
   const descDates = useMemo(
     () => [...((company ? datesByCompany[company] : []) || [])].reverse(),
@@ -671,6 +780,67 @@ export default function PipelineCommercialePage() {
           </div>
         )}
 
+        {tipoProgettoAvailable && (
+          <div className="relative">
+            <button
+              type="button"
+              onClick={() => setTipoProgettoOpen((v) => !v)}
+              className={`rounded-lg border px-3 py-2 text-sm font-semibold shadow-sm ${
+                tipoFilterActive
+                  ? "border-violet-300 bg-violet-50 text-violet-700"
+                  : "border-gray-200 bg-white text-gray-700 hover:border-violet-400 hover:text-violet-700"
+              }`}
+            >
+              Tipo progetto{tipoFilterActive ? ` (${tipiOptions.length - disabledTipi.size}/${tipiOptions.length})` : ""}
+            </button>
+            {tipoProgettoOpen && (
+              <div className="absolute right-0 z-20 mt-1 w-72 rounded-lg border border-gray-200 bg-white p-3 shadow-lg">
+                <div className="mb-2 flex items-center justify-between">
+                  <span className="text-[11px] font-semibold uppercase tracking-wide text-gray-500">Filtra per tipo progetto</span>
+                  <div className="flex gap-2">
+                    <button
+                      type="button"
+                      className="text-xs font-semibold text-violet-700 hover:underline"
+                      onClick={() => setDisabledTipi(new Set())}
+                    >
+                      Tutti
+                    </button>
+                    <button
+                      type="button"
+                      className="text-xs font-semibold text-violet-700 hover:underline"
+                      onClick={() => setDisabledTipi(new Set(tipiOptions))}
+                    >
+                      Nessuno
+                    </button>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-1.5">
+                  {tipiOptions.map((t) => (
+                    <label key={t} className="flex items-center gap-2 text-sm text-gray-700">
+                      <input
+                        type="checkbox"
+                        checked={!disabledTipi.has(t)}
+                        onChange={(e) =>
+                          setDisabledTipi((prev) => {
+                            const next = new Set(prev);
+                            if (e.target.checked) next.delete(t);
+                            else next.add(t);
+                            return next;
+                          })
+                        }
+                      />
+                      {t}
+                    </label>
+                  ))}
+                </div>
+                <p className="mt-2.5 text-[11px] leading-snug text-gray-500">
+                  Etichette dell&apos;opportunità CRM collegata all&apos;ordine (un ordine con più etichette compare sotto ognuna).
+                </p>
+              </div>
+            )}
+          </div>
+        )}
+
         <input
           type="text"
           value={filterText}
@@ -696,7 +866,34 @@ export default function PipelineCommercialePage() {
         </div>
       )}
 
-      {doc?.revenue_summary && !plActive && (scope?.visibilityGroup === "global" || scope?.role === "superadmin") && <RevenueSummaryPanel doc={doc} />}
+      {seesAllCompany && !plActive && monthTarget && (
+        <div className="mb-4 flex flex-wrap gap-3">
+          <div className="min-w-45 rounded-lg border border-gray-200 bg-white px-4 py-3 shadow-sm">
+            <div className="text-[10.5px] font-semibold uppercase tracking-wide text-gray-500">
+              {MESI[monthTarget.monthIdx]} {doc?.year}
+              {anyFilter ? " (filtrato)" : ""}
+            </div>
+            <div className="text-lg font-bold tabular-nums text-gray-900">{fmtSigned(monthTarget.value)}</div>
+          </div>
+          <div className="min-w-45 rounded-lg border border-gray-200 bg-white px-4 py-3 shadow-sm">
+            <div className="text-[10.5px] font-semibold uppercase tracking-wide text-gray-500">Obiettivo mese</div>
+            <div className="text-lg font-bold tabular-nums text-gray-900">{fmtSigned(MONTHLY_TARGET)}</div>
+          </div>
+          <div
+            className={`min-w-45 rounded-lg border px-4 py-3 shadow-sm ${
+              monthTarget.diff >= 0 ? "border-emerald-200 bg-emerald-50" : "border-red-200 bg-red-50"
+            }`}
+          >
+            <div className="text-[10.5px] font-semibold uppercase tracking-wide text-gray-500">Differenza vs obiettivo</div>
+            <div className={`text-lg font-bold tabular-nums ${monthTarget.diff >= 0 ? "text-emerald-700" : "text-red-700"}`}>
+              {monthTarget.diff > 0 ? "+" : ""}
+              {fmtSigned(monthTarget.diff)}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {doc?.revenue_summary && !plActive &&(scope?.visibilityGroup === "global" || scope?.role === "superadmin") && <RevenueSummaryPanel doc={doc} />}
 
       <Legend doc={doc} />
 
@@ -895,24 +1092,63 @@ export default function PipelineCommercialePage() {
                     </tr>
                   </thead>
                   <tbody>
-                    {(stateFilterActive ? doc.stato_summary.filter((s) => !disabledStates.has(s.stato)) : doc.stato_summary).map((s) => {
+                    {statoSummaryRows.map((s) => {
                       const color = normalizeHexColor(s.color);
+                      const withPopup = seesAllCompany && !NO_CLIENT_POPUP_STATES.includes(s.stato);
+                      const cellProps = (v: number | null | undefined, monthIdx: number | null) => {
+                        const isOpen = statoPopup?.stato === s.stato && statoPopup.monthIdx === monthIdx;
+                        return withPopup && v
+                          ? {
+                              onClick: (e: ReactMouseEvent<HTMLElement>) => openStatoPopup(e, s.stato, monthIdx),
+                              title: "Clicca per vedere i clienti",
+                              className: `cursor-pointer underline decoration-dotted underline-offset-2 hover:brightness-95 ${isOpen ? "outline outline-2 -outline-offset-2 outline-violet-500" : ""}`,
+                            }
+                          : { className: "" };
+                      };
                       return (
                       <tr key={s.stato}>
                         <td className="border-b border-gray-100 px-2.5 py-1.5 font-semibold" style={{ background: `${color}22` }}>
                           {s.stato}
                         </td>
-                        {s.months.map((v, i) => (
-                          <td key={i} className="border-b border-gray-100 px-2.5 py-1.5 text-right tabular-nums" style={{ background: v ? `${color}33` : undefined }}>
-                            {fmt(v)}
-                          </td>
-                        ))}
-                        <td className="border-b border-gray-100 px-2.5 py-1.5 text-right font-bold tabular-nums" style={{ background: `${color}33` }}>
-                          {fmt(s.totale)}
-                        </td>
+                        {s.months.map((v, i) => {
+                          const p = cellProps(v, i);
+                          return (
+                            <td
+                              key={i}
+                              onClick={p.onClick}
+                              title={p.title}
+                              className={`border-b border-gray-100 px-2.5 py-1.5 text-right tabular-nums ${p.className}`}
+                              style={{ background: v ? `${color}33` : undefined }}
+                            >
+                              {fmt(v)}
+                            </td>
+                          );
+                        })}
+                        {(() => {
+                          const p = cellProps(s.totale, null);
+                          return (
+                            <td
+                              onClick={p.onClick}
+                              title={p.title}
+                              className={`border-b border-gray-100 px-2.5 py-1.5 text-right font-bold tabular-nums ${p.className}`}
+                              style={{ background: `${color}33` }}
+                            >
+                              {fmt(s.totale)}
+                            </td>
+                          );
+                        })()}
                       </tr>
                       );
                     })}
+                    <tr className="font-bold text-white" style={{ background: TOTAL_BG }}>
+                      <td className="px-2.5 py-2">TOTALE</td>
+                      {statoSummaryTotal.months.map((v, i) => (
+                        <td key={i} className="px-2.5 py-2 text-right tabular-nums">
+                          {fmt(v)}
+                        </td>
+                      ))}
+                      <td className="px-2.5 py-2 text-right tabular-nums">{fmt(statoSummaryTotal.totale)}</td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -977,6 +1213,53 @@ export default function PipelineCommercialePage() {
             </div>
           )}
         </>
+      )}
+
+      {statoPopup && (
+        <div
+          onClick={(e) => e.stopPropagation()}
+          className="fixed z-50 w-75 rounded-lg border border-gray-200 bg-white shadow-lg"
+          style={{ top: statoPopup.top, left: statoPopup.left }}
+        >
+          <div className="flex items-start justify-between gap-2 border-b border-gray-200 px-3 py-2">
+            <div>
+              <div className="text-[11px] font-semibold uppercase tracking-wide text-gray-500">{statoPopup.stato}</div>
+              <div className="text-xs text-gray-500">
+                {statoPopup.monthIdx === null ? `Totale ${doc?.year ?? ""}` : `${MESI[statoPopup.monthIdx]} ${doc?.year ?? ""}`}
+              </div>
+            </div>
+            <button
+              type="button"
+              onClick={() => setStatoPopup(null)}
+              className="rounded px-1.5 text-sm text-gray-400 hover:bg-gray-100 hover:text-gray-700"
+              aria-label="Chiudi"
+            >
+              ✕
+            </button>
+          </div>
+          <div className="max-h-72 overflow-auto">
+            {statoPopupClients.length === 0 ? (
+              <p className="px-3 py-2.5 text-xs text-gray-500">Nessun dettaglio cliente disponibile.</p>
+            ) : (
+              <table className="w-full text-[12.5px]">
+                <tbody>
+                  {statoPopupClients.map((c) => (
+                    <tr key={c.cliente}>
+                      <td className="border-b border-gray-100 px-3 py-1.5 font-medium text-gray-900">{c.cliente}</td>
+                      <td className="whitespace-nowrap border-b border-gray-100 px-3 py-1.5 text-right tabular-nums text-gray-900">{fmt(c.val)}</td>
+                    </tr>
+                  ))}
+                  <tr className="font-bold">
+                    <td className="px-3 py-1.5">Totale</td>
+                    <td className="whitespace-nowrap px-3 py-1.5 text-right tabular-nums">
+                      {fmt(statoPopupClients.reduce((s, c) => s + c.val, 0))}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            )}
+          </div>
+        </div>
       )}
     </div>
   );
