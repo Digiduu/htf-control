@@ -13,7 +13,7 @@ export type VisibilityGroup = "global" | "commerciale_digiduu" | "project_leader
 // Ortogonale a role/visibility_group: quali PAGINE del sito un utente può
 // raggiungere (visibility_group decide invece quali DATI vede dentro una
 // pagina). Vedi migration 20260918100000_module_access.sql.
-export type ModuleAccess = "all" | "pipeline_commerciale_only" | "digiduu" | "oriens";
+export type ModuleAccess = "all" | "pipeline_commerciale_only" | "digiduu" | "oriens" | "report_assistenza_only";
 
 export type Profile = {
   id: string;
@@ -58,7 +58,7 @@ export async function requireSuperadmin(): Promise<Profile> {
     redirect("/login");
   }
   if (profile.role !== "superadmin") {
-    redirect("/pipeline-commerciale");
+    redirect(homePath(profile));
   }
 
   return profile;
@@ -76,10 +76,20 @@ export async function requireGlobalVisibility(): Promise<Profile> {
     redirect("/login");
   }
   if (profile.role !== "superadmin" && profile.visibility_group !== "global") {
-    redirect("/pipeline-commerciale");
+    redirect(homePath(profile));
   }
 
   return profile;
+}
+
+// Pagina d'ingresso dell'utente (dopo il login, da "/" e quando una pagina
+// non gli è permessa): la Pipeline Commerciale per tutti, tranne chi ha
+// accesso al solo Report Assistenza (vedi migration
+// 20261026130000_module_access_report_assistenza.sql).
+export function homePath(profile: Profile | null): string {
+  return profile?.module_access === "report_assistenza_only" && profile.role !== "superadmin"
+    ? "/report-assistenza"
+    : "/pipeline-commerciale";
 }
 
 // Modulo in anteprima: visibile solo a questi utenti (a prescindere da ruolo
@@ -107,7 +117,37 @@ export async function requireCapacityAccess(): Promise<Profile> {
     redirect("/login");
   }
   if (!canSeeCapacityPreview(profile)) {
-    redirect("/pipeline-commerciale");
+    redirect(homePath(profile));
+  }
+
+  return profile;
+}
+
+// Report Assistenza Digiduu: stessa logica di Capacity, lista di email
+// propria (anche utenti non superadmin, a prescindere da "Accesso moduli").
+const REPORT_ASSISTENZA_EMAILS = [
+  "c.rossetto@digiduu.it",
+  "c.rossetto@oriens.consulting",
+  "l.realdon@oriens.consulting",
+  "n.sartore@digiduu.it",
+  "d.scanferla@digiduu.it",
+];
+
+export function canSeeReportAssistenza(profile: Profile | null): boolean {
+  return !!profile && REPORT_ASSISTENZA_EMAILS.includes(profile.email.toLowerCase());
+}
+
+// Confine di sicurezza reale del Report Assistenza (la Sidebar nasconde la
+// voce solo per comodità visiva): la pagina legge i dati con il client
+// service role solo dopo questo controllo.
+export async function requireReportAssistenzaAccess(): Promise<Profile> {
+  const profile = await getCurrentProfile();
+
+  if (!profile) {
+    redirect("/login");
+  }
+  if (!canSeeReportAssistenza(profile)) {
+    redirect(homePath(profile));
   }
 
   return profile;
@@ -126,7 +166,7 @@ export async function requireModuleAccess(allowed: ModuleAccess[]): Promise<Prof
     redirect("/login");
   }
   if (profile.role !== "superadmin" && profile.module_access !== "all" && !allowed.includes(profile.module_access)) {
-    redirect("/pipeline-commerciale");
+    redirect(homePath(profile));
   }
 
   return profile;

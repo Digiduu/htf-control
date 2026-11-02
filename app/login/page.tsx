@@ -28,7 +28,8 @@ export default function LoginPage() {
       return;
     }
 
-    router.push("/pipeline-commerciale");
+    // "/" smista sulla pagina d'ingresso dell'utente (vedi homePath in dal.ts)
+    router.push("/");
     router.refresh();
   }
 

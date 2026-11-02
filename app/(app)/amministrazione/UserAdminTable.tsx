@@ -24,6 +24,7 @@ const MODULE_ACCESS_LABEL: Record<ModuleAccess, string> = {
   pipeline_commerciale_only: "Solo Pipeline Commerciale",
   digiduu: "Digiduu (Pipeline + Portfolio Progetti Digiduu)",
   oriens: "Oriens (Pipeline + Report Progetti Oriens)",
+  report_assistenza_only: "Solo Report Assistenza",
 };
 
 function isBanned(profile: Profile) {
@@ -175,6 +176,7 @@ function ModuleAccessField({
         <option value="pipeline_commerciale_only">Solo Pipeline Commerciale</option>
         <option value="digiduu">Digiduu (Pipeline + Portfolio Progetti Digiduu)</option>
         <option value="oriens">Oriens (Pipeline + Report Progetti Oriens)</option>
+        <option value="report_assistenza_only">Solo Report Assistenza</option>
       </select>
     </div>
   );

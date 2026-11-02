@@ -26,19 +26,22 @@ const pipelineDates = [];
 let portfolioDate = null;
 let capacityDate = null;
 let oriensDate = null;
+let assistenzaDate = null;
 for (let i = 0, mode = null; i < args.length; i++) {
   if (args[i] === "--local") continue;
   if (args[i] === "--pipeline") mode = "pipeline";
   else if (args[i] === "--portfolio") mode = "portfolio";
   else if (args[i] === "--capacity") mode = "capacity";
   else if (args[i] === "--oriens-report") mode = "oriens";
+  else if (args[i] === "--assistenza") mode = "assistenza";
+  else if (mode === "assistenza") assistenzaDate = args[i];
   else if (mode === "oriens") oriensDate = args[i];
   else if (mode === "pipeline") pipelineDates.push(args[i]);
   else if (mode === "portfolio") portfolioDate = args[i];
   else if (mode === "capacity") capacityDate = args[i];
 }
-if (!pipelineDates.length && !portfolioDate && !capacityDate && !oriensDate) {
-  console.error("Uso: node scripts/load-odoo-sync.mjs [--pipeline <data>...] [--portfolio <data>] [--capacity <data>] [--oriens-report <data>]");
+if (!pipelineDates.length && !portfolioDate && !capacityDate && !oriensDate && !assistenzaDate) {
+  console.error("Uso: node scripts/load-odoo-sync.mjs [--pipeline <data>...] [--portfolio <data>] [--capacity <data>] [--oriens-report <data>] [--assistenza <data>]");
   process.exit(1);
 }
 
@@ -229,7 +232,19 @@ async function loadOriensReport(date) {
   console.log(`✅ Report Progetti Oriens ${date}: ${data.kpi.progettiAttivi} progetti, ${data.kpi.anomalieRilevate} anomalie`);
 }
 
+async function loadAssistenza(date) {
+  const data = readJson(join("fixtures", "report-assistenza", `${date}.json`));
+  check(
+    await supabase
+      .from("report_assistenza_generations")
+      .upsert({ date, data, generated_by: "Sessione Claude + MCP Odoo (scripts/build-assistenza-fixture.mjs)" }, { onConflict: "date" }),
+    "upsert report_assistenza_generations"
+  );
+  console.log(`✅ Report Assistenza ${date}: ${data.projects.length} progetti`);
+}
+
 for (const d of pipelineDates) await loadPipeline(d);
 if (portfolioDate) await loadPortfolio(portfolioDate);
 if (capacityDate) await loadCapacity(capacityDate);
 if (oriensDate) await loadOriensReport(oriensDate);
+if (assistenzaDate) await loadAssistenza(assistenzaDate);

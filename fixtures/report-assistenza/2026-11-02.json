@@ -1,0 +1,2053 @@
+{
+  "data_as_of": "2026-11-02",
+  "generated_at": "2026-11-02T00:00:00+02:00",
+  "source_note": "Rigenerazione del 2026-11-02 da Odoo via MCP: progetti Digiduu con etichetta Assistenza in fase In corso.",
+  "projects": [
+    {
+      "id": 487,
+      "codice": null,
+      "nome": "DD - We Are Assistants Odoo Marketing",
+      "cliente": "We Are Assistants",
+      "project_leader": null,
+      "responsabile": "Nicoletta Piazzetta",
+      "ordine": null,
+      "ore_previste": 16,
+      "date_start": "2025-05-01",
+      "date_end": "2025-07-02",
+      "months": {
+        "2025-05": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 11.5,
+          "ore_senza_ordine": 11.5
+        },
+        "2025-06": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 2,
+          "ore_senza_ordine": 2
+        },
+        "2025-07": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 3.5,
+          "ore_senza_ordine": 3.5
+        },
+        "2025-09": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 0.5,
+          "ore_senza_ordine": 0.5
+        },
+        "2025-10": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 2,
+          "ore_senza_ordine": 2
+        },
+        "2025-12": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 17.5,
+          "ore_senza_ordine": 17.5
+        },
+        "2026-01": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 17,
+          "ore_senza_ordine": 17
+        },
+        "2026-02": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 34,
+          "ore_senza_ordine": 34
+        },
+        "2026-03": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 10.5,
+          "ore_senza_ordine": 10.5
+        },
+        "2026-04": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 12,
+          "ore_senza_ordine": 12
+        },
+        "2026-05": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 5,
+          "ore_senza_ordine": 5
+        }
+      }
+    },
+    {
+      "id": 340,
+      "codice": "DD10004",
+      "nome": "DD10004 - Gap Service S.r.l. - Assistenza post go-live",
+      "cliente": "Gap Service S.r.l.",
+      "project_leader": "Nicoletta Piazzetta",
+      "responsabile": "Nicoletta Piazzetta",
+      "ordine": "DD10004",
+      "ore_previste": 80,
+      "date_start": "2024-07-29",
+      "date_end": "2026-12-31",
+      "months": {
+        "2024-09": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 10,
+          "ore_senza_ordine": 0
+        },
+        "2024-10": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 18.5,
+          "ore_senza_ordine": 0
+        },
+        "2024-11": {
+          "fatturato": 3830,
+          "fatturato_bozza": 0,
+          "ore": 10.5,
+          "ore_senza_ordine": 0
+        },
+        "2025-01": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 0.5,
+          "ore_senza_ordine": 0
+        },
+        "2025-02": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 1.5,
+          "ore_senza_ordine": 0
+        },
+        "2025-03": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 0.5,
+          "ore_senza_ordine": 0
+        },
+        "2025-05": {
+          "fatturato": 692.5,
+          "fatturato_bozza": 0,
+          "ore": 4,
+          "ore_senza_ordine": 0
+        },
+        "2025-07": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 0.25,
+          "ore_senza_ordine": 0.25
+        },
+        "2026-01": {
+          "fatturato": 440,
+          "fatturato_bozza": 0,
+          "ore": 4.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-09": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 1,
+          "ore_senza_ordine": 0
+        },
+        "2026-10": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 1.5,
+          "ore_senza_ordine": 1.5
+        }
+      }
+    },
+    {
+      "id": 888,
+      "codice": "DD10013",
+      "nome": "DD10013 - Brombal - Assistenza",
+      "cliente": "Brombal",
+      "project_leader": null,
+      "responsabile": "Debora Scanferla",
+      "ordine": null,
+      "ore_previste": 16,
+      "date_start": "2026-10-01",
+      "date_end": "2027-10-29",
+      "months": {
+        "2026-10": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 18,
+          "ore_senza_ordine": 18
+        }
+      }
+    },
+    {
+      "id": 366,
+      "codice": "DD10016",
+      "nome": "DD10016 - Esse Solutions - Consulenza Piattaforma Digitale",
+      "cliente": "Esse Solutions S.r.l.",
+      "project_leader": "Erika Pettenuzzo",
+      "responsabile": "Erika Pettenuzzo",
+      "ordine": "DD10016",
+      "ore_previste": 40,
+      "date_start": "2024-10-21",
+      "date_end": "2024-12-31",
+      "months": {
+        "2024-10": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 18,
+          "ore_senza_ordine": 0
+        },
+        "2024-11": {
+          "fatturato": 3978.13,
+          "fatturato_bozza": 0,
+          "ore": 16,
+          "ore_senza_ordine": 0.5
+        },
+        "2024-12": {
+          "fatturato": 1368,
+          "fatturato_bozza": 0,
+          "ore": 11.5,
+          "ore_senza_ordine": 0
+        },
+        "2025-01": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 24.58,
+          "ore_senza_ordine": 13.58
+        },
+        "2025-02": {
+          "fatturato": 2147,
+          "fatturato_bozza": 0,
+          "ore": 12.5,
+          "ore_senza_ordine": 5.5
+        },
+        "2025-03": {
+          "fatturato": 2261,
+          "fatturato_bozza": 0,
+          "ore": 27.5,
+          "ore_senza_ordine": 8.5
+        },
+        "2025-04": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 14.5,
+          "ore_senza_ordine": 7.5
+        },
+        "2025-05": {
+          "fatturato": 356.25,
+          "fatturato_bozza": 0,
+          "ore": 17,
+          "ore_senza_ordine": 15
+        },
+        "2025-06": {
+          "fatturato": 771.88,
+          "fatturato_bozza": 0,
+          "ore": 11.5,
+          "ore_senza_ordine": 5
+        },
+        "2025-07": {
+          "fatturato": 684,
+          "fatturato_bozza": 0,
+          "ore": 9.75,
+          "ore_senza_ordine": 4
+        },
+        "2025-08": {
+          "fatturato": 771.88,
+          "fatturato_bozza": 0,
+          "ore": 6.5,
+          "ore_senza_ordine": 0
+        },
+        "2025-09": {
+          "fatturato": 1187.5,
+          "fatturato_bozza": 0,
+          "ore": 10.5,
+          "ore_senza_ordine": 0.5
+        },
+        "2025-10": {
+          "fatturato": 1187.5,
+          "fatturato_bozza": 0,
+          "ore": 11,
+          "ore_senza_ordine": 1
+        },
+        "2025-11": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 1.5,
+          "ore_senza_ordine": 1.5
+        },
+        "2025-12": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 3,
+          "ore_senza_ordine": 3
+        },
+        "2026-01": {
+          "fatturato": 653.13,
+          "fatturato_bozza": 0,
+          "ore": 5.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-02": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 1,
+          "ore_senza_ordine": 0
+        },
+        "2026-03": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 7,
+          "ore_senza_ordine": 1
+        },
+        "2026-04": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 0.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-05": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 5,
+          "ore_senza_ordine": 5
+        },
+        "2026-06": {
+          "fatturato": 653.13,
+          "fatturato_bozza": 0,
+          "ore": 2,
+          "ore_senza_ordine": 1.5
+        },
+        "2026-07": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 1.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-09": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 0.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-10": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 5,
+          "ore_senza_ordine": 0
+        }
+      }
+    },
+    {
+      "id": 395,
+      "codice": "DD10041",
+      "nome": "DD10041 - Montec - Affiancamento Digital 2025",
+      "cliente": "Montec S.r.l.",
+      "project_leader": "Nicolò Danese",
+      "responsabile": "Nicolò Danese",
+      "ordine": "DD10041",
+      "ore_previste": 8,
+      "date_start": "2025-01-06",
+      "date_end": "2026-12-31",
+      "months": {
+        "2025-01": {
+          "fatturato": 1817.5,
+          "fatturato_bozza": 0,
+          "ore": 13.5,
+          "ore_senza_ordine": 0
+        },
+        "2025-02": {
+          "fatturato": 2682,
+          "fatturato_bozza": 0,
+          "ore": 20.5,
+          "ore_senza_ordine": 0
+        },
+        "2025-03": {
+          "fatturato": 1969.5,
+          "fatturato_bozza": 0,
+          "ore": 14.5,
+          "ore_senza_ordine": 0
+        },
+        "2025-04": {
+          "fatturato": 862.5,
+          "fatturato_bozza": 0,
+          "ore": 6,
+          "ore_senza_ordine": 0
+        },
+        "2025-05": {
+          "fatturato": 1625,
+          "fatturato_bozza": 0,
+          "ore": 12,
+          "ore_senza_ordine": 0
+        },
+        "2025-06": {
+          "fatturato": 2192.5,
+          "fatturato_bozza": 0,
+          "ore": 17.5,
+          "ore_senza_ordine": 0
+        },
+        "2025-07": {
+          "fatturato": 1729.5,
+          "fatturato_bozza": 0,
+          "ore": 12.5,
+          "ore_senza_ordine": 0
+        },
+        "2025-10": {
+          "fatturato": 1463.5,
+          "fatturato_bozza": 0,
+          "ore": 11,
+          "ore_senza_ordine": 0
+        },
+        "2025-11": {
+          "fatturato": 4292,
+          "fatturato_bozza": 0,
+          "ore": 34.5,
+          "ore_senza_ordine": 0
+        },
+        "2025-12": {
+          "fatturato": 3676,
+          "fatturato_bozza": 0,
+          "ore": 49,
+          "ore_senza_ordine": 0
+        },
+        "2026-01": {
+          "fatturato": 1700.5,
+          "fatturato_bozza": 0,
+          "ore": 14.33,
+          "ore_senza_ordine": 0
+        },
+        "2026-02": {
+          "fatturato": 3403.5,
+          "fatturato_bozza": 0,
+          "ore": 28,
+          "ore_senza_ordine": 0
+        },
+        "2026-03": {
+          "fatturato": 8493.5,
+          "fatturato_bozza": 0,
+          "ore": 61.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-04": {
+          "fatturato": 10989,
+          "fatturato_bozza": 0,
+          "ore": 80.75,
+          "ore_senza_ordine": 0
+        },
+        "2026-05": {
+          "fatturato": 5094,
+          "fatturato_bozza": 0,
+          "ore": 36.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-06": {
+          "fatturato": 1006.25,
+          "fatturato_bozza": 0,
+          "ore": 7,
+          "ore_senza_ordine": 0
+        },
+        "2026-07": {
+          "fatturato": 1481.25,
+          "fatturato_bozza": 0,
+          "ore": 11,
+          "ore_senza_ordine": 0
+        },
+        "2026-10": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 0.25,
+          "ore_senza_ordine": 0.25
+        }
+      }
+    },
+    {
+      "id": 669,
+      "codice": "DD10058",
+      "nome": "DD10058 - Cabbia Group - Assistenza",
+      "cliente": "Cabbia Group S.r.l.",
+      "project_leader": "Nicola Sartore",
+      "responsabile": "Debora Scanferla",
+      "ordine": "DD10058",
+      "ore_previste": 96,
+      "date_start": "2026-05-01",
+      "date_end": "2027-04-30",
+      "months": {
+        "2026-07": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 8.75,
+          "ore_senza_ordine": 0
+        },
+        "2027-02": {
+          "fatturato": 300,
+          "fatturato_bozza": 300,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2027-01": {
+          "fatturato": 300,
+          "fatturato_bozza": 300,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-12": {
+          "fatturato": 300,
+          "fatturato_bozza": 300,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-11": {
+          "fatturato": 300,
+          "fatturato_bozza": 300,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-10": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-09": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-08": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-05": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        }
+      }
+    },
+    {
+      "id": 802,
+      "codice": "DD10100",
+      "nome": "DD10100 - Secco - Assistenza",
+      "cliente": "Secco Sistemi S.p.A.",
+      "project_leader": "Antonio Maddalena",
+      "responsabile": "Debora Scanferla",
+      "ordine": "DD10100",
+      "ore_previste": 48,
+      "date_start": "2026-06-01",
+      "date_end": "2026-12-31",
+      "months": {
+        "2026-04": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 0.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-05": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 5.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-06": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 7.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-07": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 6,
+          "ore_senza_ordine": 0
+        },
+        "2026-10": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 2.75,
+          "ore_senza_ordine": 0
+        }
+      }
+    },
+    {
+      "id": 668,
+      "codice": "DD10101",
+      "nome": "DD10101 - Berti - Assistenza",
+      "cliente": "BERTI PAVIMENTI LEGNO S.A.S. DI BERTI HOLDING S.R.L.",
+      "project_leader": "Nicoletta Piazzetta",
+      "responsabile": "Debora Scanferla",
+      "ordine": "DD10101",
+      "ore_previste": 96,
+      "date_start": "2026-04-01",
+      "date_end": "2027-03-31",
+      "months": {
+        "2026-03": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 3.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-04": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 3,
+          "ore_senza_ordine": 0
+        },
+        "2026-05": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 1,
+          "ore_senza_ordine": 0
+        },
+        "2026-09": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 1,
+          "ore_senza_ordine": 0
+        }
+      }
+    },
+    {
+      "id": 671,
+      "codice": "DD10105",
+      "nome": "DD10105 - Arky - Assistenza",
+      "cliente": "Arky Srl",
+      "project_leader": "Antonio Maddalena",
+      "responsabile": "Debora Scanferla",
+      "ordine": "DD10105",
+      "ore_previste": 96,
+      "date_start": "2026-01-01",
+      "date_end": "2027-06-30",
+      "months": {
+        "2026-01": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 31.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-02": {
+          "fatturato": 600,
+          "fatturato_bozza": 0,
+          "ore": 95.08,
+          "ore_senza_ordine": 0
+        },
+        "2026-03": {
+          "fatturato": 600,
+          "fatturato_bozza": 0,
+          "ore": 124,
+          "ore_senza_ordine": 0
+        },
+        "2026-04": {
+          "fatturato": 600,
+          "fatturato_bozza": 0,
+          "ore": 89.25,
+          "ore_senza_ordine": 0
+        },
+        "2026-05": {
+          "fatturato": 600,
+          "fatturato_bozza": 0,
+          "ore": 29.25,
+          "ore_senza_ordine": 0
+        },
+        "2026-06": {
+          "fatturato": 600,
+          "fatturato_bozza": 0,
+          "ore": 38,
+          "ore_senza_ordine": 0
+        },
+        "2026-07": {
+          "fatturato": 600,
+          "fatturato_bozza": 0,
+          "ore": 78,
+          "ore_senza_ordine": 0
+        },
+        "2026-08": {
+          "fatturato": 600,
+          "fatturato_bozza": 0,
+          "ore": 15.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-09": {
+          "fatturato": 600,
+          "fatturato_bozza": 0,
+          "ore": 4.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-10": {
+          "fatturato": 600,
+          "fatturato_bozza": 0,
+          "ore": 16,
+          "ore_senza_ordine": 0
+        },
+        "2027-05": {
+          "fatturato": 600,
+          "fatturato_bozza": 600,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2027-04": {
+          "fatturato": 600,
+          "fatturato_bozza": 600,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2027-03": {
+          "fatturato": 600,
+          "fatturato_bozza": 600,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2027-02": {
+          "fatturato": 600,
+          "fatturato_bozza": 600,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2027-01": {
+          "fatturato": 600,
+          "fatturato_bozza": 600,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-12": {
+          "fatturato": 600,
+          "fatturato_bozza": 600,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-11": {
+          "fatturato": 600,
+          "fatturato_bozza": 600,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2027-06": {
+          "fatturato": 600,
+          "fatturato_bozza": 600,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        }
+      }
+    },
+    {
+      "id": 665,
+      "codice": "DD10107",
+      "nome": "DD10107 - AdHoc - Assistenza",
+      "cliente": "AdHoc S.r.l. Unipersonale",
+      "project_leader": "Nicola Sartore",
+      "responsabile": "Debora Scanferla",
+      "ordine": "DD10107",
+      "ore_previste": 96,
+      "date_start": "2026-03-02",
+      "date_end": "2027-05-31",
+      "months": {
+        "2026-07": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 2,
+          "ore_senza_ordine": 0
+        },
+        "2026-10": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 2,
+          "ore_senza_ordine": 0
+        },
+        "2026-11": {
+          "fatturato": 300,
+          "fatturato_bozza": 300,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-09": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-08": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2027-05": {
+          "fatturato": 300,
+          "fatturato_bozza": 300,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2027-04": {
+          "fatturato": 300,
+          "fatturato_bozza": 300,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2027-03": {
+          "fatturato": 300,
+          "fatturato_bozza": 300,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2027-02": {
+          "fatturato": 300,
+          "fatturato_bozza": 300,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2027-01": {
+          "fatturato": 300,
+          "fatturato_bozza": 300,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-12": {
+          "fatturato": 300,
+          "fatturato_bozza": 300,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-06": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        }
+      }
+    },
+    {
+      "id": 674,
+      "codice": "DD10118",
+      "nome": "DD10118 - GMA - Assistenza",
+      "cliente": "G.M.A. S.r.l.",
+      "project_leader": "Nicoletta Piazzetta",
+      "responsabile": "Debora Scanferla",
+      "ordine": "DD10118",
+      "ore_previste": 96,
+      "date_start": "2026-07-31",
+      "date_end": "2027-06-30",
+      "months": {
+        "2026-09": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 6.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-10": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 8.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-07": {
+          "fatturato": 7382,
+          "fatturato_bozza": 0,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-06": {
+          "fatturato": 182,
+          "fatturato_bozza": 0,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        }
+      }
+    },
+    {
+      "id": 676,
+      "codice": "DD10126",
+      "nome": "DD10126 - Mastrotto - Assistenza",
+      "cliente": "Trasporti e Servizi Mastrotto S.r.l.",
+      "project_leader": "Nicolò Danese",
+      "responsabile": "Debora Scanferla",
+      "ordine": "DD10126",
+      "ore_previste": 96,
+      "date_start": "2026-03-02",
+      "date_end": "2027-04-30",
+      "months": {
+        "2026-05": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 22.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-06": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 24.25,
+          "ore_senza_ordine": 0
+        },
+        "2026-07": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 18,
+          "ore_senza_ordine": 0
+        },
+        "2026-08": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 11.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-09": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 12,
+          "ore_senza_ordine": 0
+        },
+        "2026-10": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 16.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-12": {
+          "fatturato": 300,
+          "fatturato_bozza": 300,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-11": {
+          "fatturato": 300,
+          "fatturato_bozza": 300,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-03": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-01": {
+          "fatturato": 4900,
+          "fatturato_bozza": 0,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2027-04": {
+          "fatturato": 300,
+          "fatturato_bozza": 300,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2027-03": {
+          "fatturato": 300,
+          "fatturato_bozza": 300,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2027-02": {
+          "fatturato": 300,
+          "fatturato_bozza": 300,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2027-01": {
+          "fatturato": 300,
+          "fatturato_bozza": 300,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        }
+      }
+    },
+    {
+      "id": 675,
+      "codice": "DD10131",
+      "nome": "DD10131 - Ocra per Disa Impianti - Assistenza",
+      "cliente": "OCRA Srl",
+      "project_leader": null,
+      "responsabile": "Debora Scanferla",
+      "ordine": "DD10131",
+      "ore_previste": 96,
+      "date_start": "2026-02-02",
+      "date_end": "2027-01-29",
+      "months": {
+        "2026-03": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 1.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-04": {
+          "fatturato": 540,
+          "fatturato_bozza": 0,
+          "ore": 5,
+          "ore_senza_ordine": 0
+        },
+        "2026-05": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 20.75,
+          "ore_senza_ordine": 0
+        },
+        "2026-06": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 12.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-07": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 13,
+          "ore_senza_ordine": 0
+        },
+        "2026-08": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 14.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-09": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 27.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-10": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 10.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-02": {
+          "fatturato": 540,
+          "fatturato_bozza": 0,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        }
+      }
+    },
+    {
+      "id": 673,
+      "codice": "DD10136",
+      "nome": "DD10136 - Dyaqua - Assistenza",
+      "cliente": "Dyaqua Srls",
+      "project_leader": "Nicola Sartore",
+      "responsabile": "Debora Scanferla",
+      "ordine": "DD10136",
+      "ore_previste": 96,
+      "date_start": "2026-01-01",
+      "date_end": "2026-12-31",
+      "months": {
+        "2026-03": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 5,
+          "ore_senza_ordine": 0
+        },
+        "2026-04": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 0.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-12": {
+          "fatturato": 300,
+          "fatturato_bozza": 300,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-11": {
+          "fatturato": 300,
+          "fatturato_bozza": 300,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-10": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-09": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-08": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-07": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-06": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-05": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-02": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        }
+      }
+    },
+    {
+      "id": 663,
+      "codice": "DD10147",
+      "nome": "DD10147 - B4C - Assistenza",
+      "cliente": "B4C S.r.l.",
+      "project_leader": "Marco Laghetto",
+      "responsabile": "Debora Scanferla",
+      "ordine": "DD10147",
+      "ore_previste": 96,
+      "date_start": "2026-01-01",
+      "date_end": "2026-12-31",
+      "months": {
+        "2026-02": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 6.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-03": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 2,
+          "ore_senza_ordine": 0
+        },
+        "2026-04": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 0.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-05": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 3,
+          "ore_senza_ordine": 0
+        },
+        "2026-06": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 4.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-07": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 3,
+          "ore_senza_ordine": 0
+        },
+        "2026-08": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 3,
+          "ore_senza_ordine": 0
+        },
+        "2026-09": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 6,
+          "ore_senza_ordine": 0
+        },
+        "2026-10": {
+          "fatturato": 300,
+          "fatturato_bozza": 0,
+          "ore": 2,
+          "ore_senza_ordine": 0
+        },
+        "2026-12": {
+          "fatturato": 300,
+          "fatturato_bozza": 300,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-11": {
+          "fatturato": 300,
+          "fatturato_bozza": 300,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        }
+      }
+    },
+    {
+      "id": 330,
+      "codice": "DD10161",
+      "nome": "DD10161 - Mondeo - Affiancamento Digital",
+      "cliente": "Mondeo S.r.l.",
+      "project_leader": "Nicolò Danese",
+      "responsabile": "Nicolò Danese",
+      "ordine": "DD10161",
+      "ore_previste": 8,
+      "date_start": "2024-08-01",
+      "date_end": "2026-12-31",
+      "months": {
+        "2024-12": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 11,
+          "ore_senza_ordine": 11
+        },
+        "2025-01": {
+          "fatturato": 7806.5,
+          "fatturato_bozza": 0,
+          "ore": 51.5,
+          "ore_senza_ordine": 0
+        },
+        "2025-02": {
+          "fatturato": 11794,
+          "fatturato_bozza": 0,
+          "ore": 85,
+          "ore_senza_ordine": 0
+        },
+        "2025-03": {
+          "fatturato": 13580,
+          "fatturato_bozza": 0,
+          "ore": 106.5,
+          "ore_senza_ordine": 0
+        },
+        "2025-04": {
+          "fatturato": 13885.5,
+          "fatturato_bozza": 0,
+          "ore": 109,
+          "ore_senza_ordine": 0
+        },
+        "2025-05": {
+          "fatturato": 13186,
+          "fatturato_bozza": 0,
+          "ore": 119.5,
+          "ore_senza_ordine": 0
+        },
+        "2025-06": {
+          "fatturato": 23421.5,
+          "fatturato_bozza": 0,
+          "ore": 191.25,
+          "ore_senza_ordine": 0
+        },
+        "2025-07": {
+          "fatturato": 18898,
+          "fatturato_bozza": 0,
+          "ore": 149.5,
+          "ore_senza_ordine": 0
+        },
+        "2025-08": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 31.5,
+          "ore_senza_ordine": 31.5
+        },
+        "2025-09": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 157,
+          "ore_senza_ordine": 151
+        },
+        "2025-10": {
+          "fatturato": 17600.4,
+          "fatturato_bozza": 0,
+          "ore": 142,
+          "ore_senza_ordine": 0
+        },
+        "2025-11": {
+          "fatturato": 9287.1,
+          "fatturato_bozza": 0,
+          "ore": 79.5,
+          "ore_senza_ordine": 0
+        },
+        "2025-12": {
+          "fatturato": 4309.65,
+          "fatturato_bozza": 0,
+          "ore": 31,
+          "ore_senza_ordine": 0
+        },
+        "2026-01": {
+          "fatturato": 11856.15,
+          "fatturato_bozza": 0,
+          "ore": 105,
+          "ore_senza_ordine": 0
+        },
+        "2026-02": {
+          "fatturato": 15518.25,
+          "fatturato_bozza": 0,
+          "ore": 128.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-03": {
+          "fatturato": 13519.35,
+          "fatturato_bozza": 0,
+          "ore": 112.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-04": {
+          "fatturato": 10403.55,
+          "fatturato_bozza": 0,
+          "ore": 87,
+          "ore_senza_ordine": 0
+        },
+        "2026-05": {
+          "fatturato": 12879.9,
+          "fatturato_bozza": 0,
+          "ore": 166,
+          "ore_senza_ordine": 59
+        },
+        "2026-06": {
+          "fatturato": 11869.7,
+          "fatturato_bozza": 0,
+          "ore": 314.5,
+          "ore_senza_ordine": 222.5
+        },
+        "2026-07": {
+          "fatturato": 16583.45,
+          "fatturato_bozza": 0,
+          "ore": 314.5,
+          "ore_senza_ordine": 180.5
+        },
+        "2026-08": {
+          "fatturato": 14480.01,
+          "fatturato_bozza": 0,
+          "ore": 134,
+          "ore_senza_ordine": 7
+        },
+        "2026-09": {
+          "fatturato": 22244.58,
+          "fatturato_bozza": 0,
+          "ore": 186,
+          "ore_senza_ordine": 0
+        },
+        "2026-10": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 350.25,
+          "ore_senza_ordine": 0
+        }
+      }
+    },
+    {
+      "id": 739,
+      "codice": "DD10177",
+      "nome": "DD10177 - Schueco Marketing - Assistenza 2026",
+      "cliente": "Schueco PWS Italia S.r.l.",
+      "project_leader": "Marco Laghetto",
+      "responsabile": "Debora Scanferla",
+      "ordine": "DD10177",
+      "ore_previste": 96,
+      "date_start": "2026-03-01",
+      "date_end": "2027-02-26",
+      "months": {
+        "2026-02": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 1.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-05": {
+          "fatturato": 500,
+          "fatturato_bozza": 0,
+          "ore": 5.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-06": {
+          "fatturato": 500,
+          "fatturato_bozza": 0,
+          "ore": 5,
+          "ore_senza_ordine": 0
+        },
+        "2026-09": {
+          "fatturato": 500,
+          "fatturato_bozza": 0,
+          "ore": 2,
+          "ore_senza_ordine": 0
+        },
+        "2026-10": {
+          "fatturato": 500,
+          "fatturato_bozza": 0,
+          "ore": 3,
+          "ore_senza_ordine": 0
+        },
+        "2027-02": {
+          "fatturato": 500,
+          "fatturato_bozza": 500,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2027-01": {
+          "fatturato": 500,
+          "fatturato_bozza": 500,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-12": {
+          "fatturato": 500,
+          "fatturato_bozza": 500,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-11": {
+          "fatturato": 500,
+          "fatturato_bozza": 500,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-08": {
+          "fatturato": 500,
+          "fatturato_bozza": 0,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-07": {
+          "fatturato": 500,
+          "fatturato_bozza": 0,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-04": {
+          "fatturato": 500,
+          "fatturato_bozza": 0,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-03": {
+          "fatturato": 500,
+          "fatturato_bozza": 0,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        }
+      }
+    },
+    {
+      "id": 649,
+      "codice": "DD10178",
+      "nome": "DD10178 - HubTech - Assistenza 2026",
+      "cliente": "HubTec S.r.l.",
+      "project_leader": "Andrea Menegotto",
+      "responsabile": "Debora Scanferla",
+      "ordine": "DD10178",
+      "ore_previste": 96,
+      "date_start": "2026-01-01",
+      "date_end": "2026-12-31",
+      "months": {
+        "2026-01": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 2,
+          "ore_senza_ordine": 2
+        },
+        "2026-03": {
+          "fatturato": 280,
+          "fatturato_bozza": 0,
+          "ore": 9.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-04": {
+          "fatturato": 280,
+          "fatturato_bozza": 0,
+          "ore": 6,
+          "ore_senza_ordine": 0
+        },
+        "2026-05": {
+          "fatturato": 280,
+          "fatturato_bozza": 0,
+          "ore": 4,
+          "ore_senza_ordine": 0
+        },
+        "2026-06": {
+          "fatturato": 280,
+          "fatturato_bozza": 0,
+          "ore": 20.25,
+          "ore_senza_ordine": 0
+        },
+        "2026-07": {
+          "fatturato": 280,
+          "fatturato_bozza": 0,
+          "ore": 13.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-08": {
+          "fatturato": 280,
+          "fatturato_bozza": 0,
+          "ore": 4,
+          "ore_senza_ordine": 0
+        },
+        "2026-09": {
+          "fatturato": 280,
+          "fatturato_bozza": 0,
+          "ore": 4.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-10": {
+          "fatturato": 280,
+          "fatturato_bozza": 280,
+          "ore": 1.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-12": {
+          "fatturato": 280,
+          "fatturato_bozza": 280,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-11": {
+          "fatturato": 280,
+          "fatturato_bozza": 280,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-02": {
+          "fatturato": 560,
+          "fatturato_bozza": 0,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        }
+      }
+    },
+    {
+      "id": 775,
+      "codice": "DD10193",
+      "nome": "DD10193 - Synethik - Assistenza",
+      "cliente": "Synethik Engineering S.r.l.",
+      "project_leader": "Fabrizio Benefazio",
+      "responsabile": "Debora Scanferla",
+      "ordine": "DD10193",
+      "ore_previste": 96,
+      "date_start": "2026-08-01",
+      "date_end": "2027-07-31",
+      "months": {
+        "2026-08": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 1,
+          "ore_senza_ordine": 0
+        }
+      }
+    },
+    {
+      "id": 761,
+      "codice": "DD10194",
+      "nome": "DD10194 - Soul - Assistenza Base",
+      "cliente": "Soul Srl",
+      "project_leader": "Antonio Maddalena",
+      "responsabile": "Debora Scanferla",
+      "ordine": "DD10194",
+      "ore_previste": 96,
+      "date_start": "2026-07-01",
+      "date_end": "2027-06-30",
+      "months": {
+        "2026-07": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 0.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-09": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 0.5,
+          "ore_senza_ordine": 0.5
+        }
+      }
+    },
+    {
+      "id": 662,
+      "codice": "DD10199",
+      "nome": "DD10199 - Schueco Portale - Assistenza 2026",
+      "cliente": "Schueco PWS Italia S.r.l.",
+      "project_leader": "Marco Laghetto",
+      "responsabile": "Debora Scanferla",
+      "ordine": "DD10199",
+      "ore_previste": 120,
+      "date_start": "2026-01-01",
+      "date_end": "2026-12-31",
+      "months": {
+        "2026-01": {
+          "fatturato": 1650,
+          "fatturato_bozza": 0,
+          "ore": 9,
+          "ore_senza_ordine": 0
+        },
+        "2026-02": {
+          "fatturato": 1650,
+          "fatturato_bozza": 0,
+          "ore": 7,
+          "ore_senza_ordine": 0
+        },
+        "2026-03": {
+          "fatturato": 1650,
+          "fatturato_bozza": 0,
+          "ore": 20,
+          "ore_senza_ordine": 1
+        },
+        "2026-04": {
+          "fatturato": 1650,
+          "fatturato_bozza": 0,
+          "ore": 22.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-05": {
+          "fatturato": 1650,
+          "fatturato_bozza": 0,
+          "ore": 12.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-06": {
+          "fatturato": 1650,
+          "fatturato_bozza": 0,
+          "ore": 26.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-07": {
+          "fatturato": 1650,
+          "fatturato_bozza": 0,
+          "ore": 17,
+          "ore_senza_ordine": 0
+        },
+        "2026-08": {
+          "fatturato": 1650,
+          "fatturato_bozza": 0,
+          "ore": 3.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-09": {
+          "fatturato": 1650,
+          "fatturato_bozza": 0,
+          "ore": 5,
+          "ore_senza_ordine": 0
+        },
+        "2026-10": {
+          "fatturato": 1650,
+          "fatturato_bozza": 0,
+          "ore": 6,
+          "ore_senza_ordine": 0
+        },
+        "2026-12": {
+          "fatturato": 1650,
+          "fatturato_bozza": 1650,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-11": {
+          "fatturato": 1650,
+          "fatturato_bozza": 1650,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        }
+      }
+    },
+    {
+      "id": 843,
+      "codice": "DD10215",
+      "nome": "DD10215 - FCF Impianti - Affiancamento 2026",
+      "cliente": "FCF Impianti S.r.l.",
+      "project_leader": "Marco Laghetto",
+      "responsabile": "Marco Laghetto",
+      "ordine": "DD10215",
+      "ore_previste": 2,
+      "date_start": "2026-07-01",
+      "date_end": "2026-12-31",
+      "months": {
+        "2026-07": {
+          "fatturato": 5010.94,
+          "fatturato_bozza": 0,
+          "ore": 43.25,
+          "ore_senza_ordine": 0
+        },
+        "2026-08": {
+          "fatturato": 3610.94,
+          "fatturato_bozza": 0,
+          "ore": 31.25,
+          "ore_senza_ordine": 0
+        },
+        "2026-09": {
+          "fatturato": 2937.5,
+          "fatturato_bozza": 0,
+          "ore": 28,
+          "ore_senza_ordine": 0
+        },
+        "2026-10": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 18.25,
+          "ore_senza_ordine": 0
+        }
+      }
+    },
+    {
+      "id": 855,
+      "codice": "DD10221",
+      "nome": "DD10221 - Odorizzi - Assistenza",
+      "cliente": "Odorizzi Soluzioni In Pietra Srl",
+      "project_leader": null,
+      "responsabile": "Debora Scanferla",
+      "ordine": "DD10221",
+      "ore_previste": 96,
+      "date_start": "2026-08-03",
+      "date_end": "2028-12-30",
+      "months": {}
+    },
+    {
+      "id": 750,
+      "codice": "DD10241",
+      "nome": "DD10241 - Penta Formazione - Assistenza",
+      "cliente": "Penta Formazione S.r.l.",
+      "project_leader": "Antonio Maddalena",
+      "responsabile": "Debora Scanferla",
+      "ordine": "DD10241",
+      "ore_previste": 96,
+      "date_start": "2026-04-01",
+      "date_end": "2027-09-30",
+      "months": {
+        "2026-06": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 0.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-07": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 4,
+          "ore_senza_ordine": 0
+        },
+        "2026-08": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 1.5,
+          "ore_senza_ordine": 1
+        },
+        "2026-09": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 48,
+          "ore_senza_ordine": 48
+        },
+        "2026-10": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 22.5,
+          "ore_senza_ordine": 22.5
+        }
+      }
+    },
+    {
+      "id": 822,
+      "codice": "DD10259",
+      "nome": "DD10259 - Irontech - Assistenza",
+      "cliente": "Irontech S.r.l.",
+      "project_leader": "Nicoletta Piazzetta",
+      "responsabile": "Debora Scanferla",
+      "ordine": "DD10259",
+      "ore_previste": 96,
+      "date_start": "2026-08-01",
+      "date_end": "2027-07-30",
+      "months": {
+        "2026-07": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 3,
+          "ore_senza_ordine": 0
+        },
+        "2026-08": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 5,
+          "ore_senza_ordine": 0
+        }
+      }
+    },
+    {
+      "id": 893,
+      "codice": "DD10287-01",
+      "nome": "DD10287-01 - Alba - Assistenza",
+      "cliente": "Alba S.r.l.",
+      "project_leader": "Nicoletta Piazzetta",
+      "responsabile": "Debora Scanferla",
+      "ordine": "DD10287-01",
+      "ore_previste": 0,
+      "date_start": "2026-10-01",
+      "date_end": "2027-09-30",
+      "months": {
+        "2027-09": {
+          "fatturato": 600,
+          "fatturato_bozza": 600,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2027-08": {
+          "fatturato": 600,
+          "fatturato_bozza": 600,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2027-07": {
+          "fatturato": 600,
+          "fatturato_bozza": 600,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2027-06": {
+          "fatturato": 600,
+          "fatturato_bozza": 600,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2027-05": {
+          "fatturato": 600,
+          "fatturato_bozza": 600,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2027-04": {
+          "fatturato": 600,
+          "fatturato_bozza": 600,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2027-03": {
+          "fatturato": 600,
+          "fatturato_bozza": 600,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2027-02": {
+          "fatturato": 600,
+          "fatturato_bozza": 600,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2027-01": {
+          "fatturato": 600,
+          "fatturato_bozza": 600,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-12": {
+          "fatturato": 600,
+          "fatturato_bozza": 600,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-11": {
+          "fatturato": 600,
+          "fatturato_bozza": 600,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-10": {
+          "fatturato": 600,
+          "fatturato_bozza": 600,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        }
+      }
+    },
+    {
+      "id": 834,
+      "codice": "DD10320",
+      "nome": "DD10320 - Adami Teloni - Assistenza",
+      "cliente": "Adami Teloni",
+      "project_leader": "Gianluca Geremia",
+      "responsabile": "Debora Scanferla",
+      "ordine": "DD10320",
+      "ore_previste": 8,
+      "date_start": "2026-07-01",
+      "date_end": "2027-12-31",
+      "months": {
+        "2026-05": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 1.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-06": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 1.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-07": {
+          "fatturato": 468.75,
+          "fatturato_bozza": 0,
+          "ore": 2,
+          "ore_senza_ordine": 0
+        },
+        "2026-09": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 0.5,
+          "ore_senza_ordine": 0
+        }
+      }
+    },
+    {
+      "id": 850,
+      "codice": "DD10342",
+      "nome": "DD10342 - Irontech - Fase 3: Affiancamento alla crescita S2 - 2026",
+      "cliente": "Irontech S.r.l.",
+      "project_leader": "Nicoletta Piazzetta",
+      "responsabile": "Nicoletta Piazzetta",
+      "ordine": "DD10342",
+      "ore_previste": 560,
+      "date_start": "2026-08-03",
+      "date_end": "2026-12-31",
+      "months": {
+        "2026-06": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 2,
+          "ore_senza_ordine": 0
+        },
+        "2026-07": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 26,
+          "ore_senza_ordine": 0
+        },
+        "2026-08": {
+          "fatturato": 20000,
+          "fatturato_bozza": 0,
+          "ore": 67,
+          "ore_senza_ordine": 0
+        },
+        "2026-09": {
+          "fatturato": 10000,
+          "fatturato_bozza": 0,
+          "ore": 39.5,
+          "ore_senza_ordine": 0
+        },
+        "2026-10": {
+          "fatturato": 10000,
+          "fatturato_bozza": 0,
+          "ore": 41,
+          "ore_senza_ordine": 3
+        },
+        "2026-12": {
+          "fatturato": 10000,
+          "fatturato_bozza": 10000,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        },
+        "2026-11": {
+          "fatturato": 10000,
+          "fatturato_bozza": 10000,
+          "ore": 0,
+          "ore_senza_ordine": 0
+        }
+      }
+    },
+    {
+      "id": 897,
+      "codice": "DD10374",
+      "nome": "DD10374 - Italplastick - Assistenza",
+      "cliente": "Italplastick Srl",
+      "project_leader": null,
+      "responsabile": "Debora Scanferla",
+      "ordine": "DD10374",
+      "ore_previste": 0,
+      "date_start": "2026-10-28",
+      "date_end": "2027-12-31",
+      "months": {}
+    },
+    {
+      "id": 624,
+      "codice": null,
+      "nome": "ISO - Assistenza 2026",
+      "cliente": "Iso Engineering S.r.l.",
+      "project_leader": "Nicolò Danese",
+      "responsabile": "Debora Scanferla",
+      "ordine": null,
+      "ore_previste": 8,
+      "date_start": "2026-01-01",
+      "date_end": "2026-12-31",
+      "months": {
+        "2026-02": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 1.5,
+          "ore_senza_ordine": 1.5
+        },
+        "2026-03": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 5.5,
+          "ore_senza_ordine": 5.5
+        },
+        "2026-04": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 3,
+          "ore_senza_ordine": 3
+        },
+        "2026-07": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 2.5,
+          "ore_senza_ordine": 2.5
+        },
+        "2026-09": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 2.5,
+          "ore_senza_ordine": 2.5
+        }
+      }
+    },
+    {
+      "id": 807,
+      "codice": null,
+      "nome": "Si Vola 2026",
+      "cliente": "Si Vola S.r.l. Unipersonale",
+      "project_leader": "Fabiano Mason",
+      "responsabile": "Fabiano Mason",
+      "ordine": null,
+      "ore_previste": 0,
+      "date_start": null,
+      "date_end": null,
+      "months": {
+        "2026-06": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 28.5,
+          "ore_senza_ordine": 28.5
+        },
+        "2026-07": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 87.5,
+          "ore_senza_ordine": 87.5
+        },
+        "2026-08": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 92.5,
+          "ore_senza_ordine": 92.5
+        },
+        "2026-09": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 9.5,
+          "ore_senza_ordine": 9.5
+        },
+        "2026-10": {
+          "fatturato": 0,
+          "fatturato_bozza": 0,
+          "ore": 19,
+          "ore_senza_ordine": 19
+        }
+      }
+    }
+  ]
+}
