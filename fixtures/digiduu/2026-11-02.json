@@ -37,12 +37,12 @@
       179021.84,
       153874.27,
       189723.58,
-      171901.32,
-      201525,
-      142130
+      153801.32,
+      207725,
+      155530
     ],
     "ordinato": 1538954.23,
-    "totale": 1757734.23
+    "totale": 1759234.23
   },
   "revenue_summary": null,
   "rows": [
@@ -129,36 +129,6 @@
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
       "totale": 600
-    },
-    {
-      "account": "Nicola Sartore",
-      "cliente": "Ahrcos",
-      "crm_comment": null,
-      "is_crm": false,
-      "months": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        3500,
-        null,
-        null
-      ],
-      "nota": null,
-      "ordinato": 0,
-      "origine": "DD10304",
-      "project_leader": "Non assegnato",
-      "referente": null,
-      "stato": "Previsione - Possibile",
-      "tipi_progetto": [
-        "Digiduu - Workshop"
-      ],
-      "totale": 3500
     },
     {
       "account": "Guido Tessari",
@@ -413,34 +383,6 @@
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
       "totale": 1200
-    },
-    {
-      "account": "Guido Tessari",
-      "cliente": "Arky Srl",
-      "crm_comment": null,
-      "is_crm": false,
-      "months": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1500,
-        null
-      ],
-      "nota": null,
-      "ordinato": 0,
-      "origine": "DD10105",
-      "project_leader": "Antonio Maddalena",
-      "referente": null,
-      "stato": "Target",
-      "tipi_progetto": [],
-      "totale": 1500
     },
     {
       "account": "Guido Tessari",
@@ -908,7 +850,7 @@
         null,
         null,
         null,
-        4500,
+        3000,
         14500
       ],
       "nota": null,
@@ -918,7 +860,7 @@
       "referente": null,
       "stato": "Previsione - Probabile",
       "tipi_progetto": [],
-      "totale": 19000
+      "totale": 17500
     },
     {
       "account": "Nicola Sartore",
@@ -936,7 +878,7 @@
         null,
         null,
         null,
-        10000,
+        18000,
         null
       ],
       "nota": null,
@@ -944,9 +886,9 @@
       "origine": "DD10327",
       "project_leader": "Fabiano Mason",
       "referente": null,
-      "stato": "Target",
+      "stato": "Previsione - Possibile",
       "tipi_progetto": [],
-      "totale": 10000
+      "totale": 18000
     },
     {
       "account": "Guido Tessari",
@@ -2685,8 +2627,8 @@
         null,
         null,
         null,
-        3300,
-        6600,
+        null,
+        9900,
         null
       ],
       "nota": null,
@@ -3105,9 +3047,9 @@
         null,
         null,
         null,
-        5000,
         null,
-        null
+        null,
+        5000
       ],
       "nota": null,
       "ordinato": 0,
@@ -3533,9 +3475,9 @@
         null,
         null,
         null,
-        6300,
-        4200,
-        null
+        null,
+        2100,
+        8400
       ],
       "nota": null,
       "ordinato": 0,
@@ -4130,8 +4072,8 @@
         0,
         0,
         0,
-        92040,
-        111505,
+        88740,
+        114805,
         56070
       ],
       "totale": 259615
@@ -4168,11 +4110,11 @@
         0,
         0,
         0,
-        11300,
-        32700,
-        38500
+        0,
+        29100,
+        51900
       ],
-      "totale": 82500
+      "totale": 81000
     },
     {
       "stato": "Previsione - Possibile",
@@ -4187,11 +4129,11 @@
         0,
         0,
         0,
-        3500,
-        14420,
+        0,
+        32420,
         19160
       ],
-      "totale": 37080
+      "totale": 51580
     },
     {
       "stato": "Consuntivi",
@@ -4226,10 +4168,10 @@
         0,
         0,
         0,
-        15000,
+        3500,
         3500
       ],
-      "totale": 18500
+      "totale": 7000
     }
   ],
   "target_table": [
