@@ -1,6 +1,6 @@
 "use client";
 
-import { Fragment, useEffect, useMemo, useRef, useState, type CSSProperties, type MouseEvent as ReactMouseEvent } from "react";
+import { Fragment, useEffect, useMemo, useRef, useState, type CSSProperties, type MouseEvent as ReactMouseEvent, type ReactNode } from "react";
 import { createClient } from "../../lib/supabase/client";
 import type { UserRole, VisibilityGroup } from "../../lib/auth/dal";
 import { saveSnapshot } from "./actions";
@@ -14,6 +14,7 @@ import {
   normalizeHexColor,
   buildPrevCurrentTable,
   mergeOrderRows,
+  summarizeClient,
   visibleCellStates,
   rowTipiProgetto,
   tipiProgettoOptions,
@@ -83,8 +84,9 @@ function fmtDateLabel(iso: string) {
 
 const HEADER_BG = "#3d4a55";
 const TOTAL_BG = "#44546a";
-const CRM_BG = "#fdebd0";
 const STRIPE = "#fafaf8";
+// Righe di dettaglio (progetti) sotto la riga riassuntiva di un cliente aperto
+const DETAIL_BG = "#f6f4fb";
 
 // Stesso indirizzo controllato lato server in actions.ts: qui serve solo a
 // nascondere il pulsante "Salva versione di oggi" a chiunque altro, il vero
@@ -394,6 +396,38 @@ export default function PipelineCommercialePage() {
 
   const anyFilter = plActive || !!filterText || stateFilterActive || tipoFilterActive;
 
+  // Tabella principale per cliente: una riga riassuntiva per cliente, che si
+  // apre sul dettaglio dei suoi progetti (ordini). Le opportunità CRM senza
+  // importo non stanno più qui ma nell'elenco "Proposte senza
+  // valorizzazione" sotto la tabella. Ordine dei clienti = prima comparsa
+  // nei dati (stesso ordinamento delle righe di prima).
+  const [openClients, setOpenClients] = useState<Set<string>>(new Set());
+  const clientGroups = useMemo(() => {
+    const map = new Map<string, MergedRow[]>();
+    for (const r of visibleRows) {
+      if (r.is_crm) continue;
+      const list = map.get(r.cliente);
+      if (list) list.push(r);
+      else map.set(r.cliente, [r]);
+    }
+    return [...map].map(([cliente, rows]) => ({ cliente, rows, summary: summarizeClient(rows) }));
+  }, [visibleRows]);
+  const multiClients = useMemo(() => clientGroups.filter((g) => g.rows.length > 1).map((g) => g.cliente), [clientGroups]);
+
+  // Proposte senza valorizzazione: opportunità CRM in "Fare preventivo" senza
+  // importo né piano di fatturazione. Seguono i filtri cliente, Project
+  // Leader e Tipo progetto, non Tipologia (non hanno uno stato).
+  const unvaluedProposals = useMemo(
+    () =>
+      mergedRows.filter(
+        (r) =>
+          r.is_crm &&
+          (!filterText || (r.cliente || "").toLowerCase().includes(filterText.toLowerCase())) &&
+          (!tipoFilterActive || rowTipiProgetto(r).some((t) => !disabledTipi.has(t)))
+      ),
+    [mergedRows, filterText, tipoFilterActive, disabledTipi]
+  );
+
   const totals = useMemo(() => {
     if (!anyFilter) return doc?.overall ?? { ordinato: 0, months: new Array(12).fill(0), totale: 0 };
     const months = new Array(12).fill(0);
@@ -538,6 +572,104 @@ export default function PipelineCommercialePage() {
   // lato client, usando le date già caricate, per poter chiedere conferma
   // PRIMA di sovrascrivere — la action stessa sovrascrive senza ulteriori
   // domande una volta invocata.
+  // Una riga della tabella principale. "single" = cliente con un solo
+  // progetto (riga normale); "client"/"client-open" = riga riassuntiva di un
+  // cliente con più progetti, chiusa o aperta; "detail" = un progetto del
+  // cliente aperto, rientrato sotto la sua riga riassuntiva.
+  function renderRow(r: MergedRow, key: string, rowBg: string, variant: "single" | "client" | "client-open" | "detail", cliente: string) {
+    const isClient = variant === "client" || variant === "client-open";
+    // Con il filtro Tipologia attivo il totale di riga si ricalcola sommando
+    // solo gli stati rimasti spuntati (non è più il totale pre-calcolato in
+    // doc.rows, che copre tutti gli stati).
+    const rowTotale = stateFilterActive
+      ? Array.from({ length: 12 }).reduce(
+          (sum: number, _, i) => sum + visibleCellStates(r._cellStates?.[i] || [], disabledStates).reduce((a, x) => a + x.val, 0),
+          0
+        ) || null
+      : r.totale;
+    const toggle = () =>
+      setOpenClients((prev) => {
+        const next = new Set(prev);
+        if (next.has(cliente)) next.delete(cliente);
+        else next.add(cliente);
+        return next;
+      });
+    return (
+      <tr
+        key={key}
+        onClick={isClient ? toggle : undefined}
+        className={isClient ? "cursor-pointer hover:brightness-[0.97]" : undefined}
+        title={isClient ? (variant === "client-open" ? "Clicca per chiudere il dettaglio" : "Clicca per vedere il dettaglio per progetto") : undefined}
+      >
+        {cols.map((c) => {
+          const isCliente = c.key === "cliente";
+          const isOrigine = c.key === "origine";
+          const isAbbreviatedName = c.key === "account" || c.key === "project_leader";
+          const rawValue = (r as unknown as Record<string, string | null>)[c.key] || "";
+          let value: ReactNode = "";
+          if (c.key === "ordinato") value = fmt(r.ordinato);
+          else if (isAbbreviatedName) value = abbreviateName(rawValue);
+          else if (isCliente && isClient)
+            value = (
+              <span className="flex items-start gap-1.5">
+                <span className="mt-px inline-block w-3 text-violet-700">{variant === "client-open" ? "▾" : "▸"}</span>
+                <span>{rawValue}</span>
+              </span>
+            );
+          else if (isCliente && variant === "detail") value = <span className="pl-4 text-gray-400">↳</span>;
+          else value = rawValue;
+          const cellTitle = isOrigine ? r.origine_titolo || undefined : isAbbreviatedName ? rawValue || undefined : undefined;
+          return (
+            <td
+              key={c.key}
+              title={cellTitle}
+              className={`border-b border-gray-200 px-2.5 py-1.5 text-gray-900 ${c.num ? "text-right font-bold tabular-nums" : ""} ${
+                isCliente ? `whitespace-normal ${isClient || variant === "single" ? "font-semibold" : ""}` : "overflow-hidden text-ellipsis"
+              } ${isOrigine ? (isClient ? "italic text-violet-700" : "text-gray-500") : ""}`}
+              style={frozenStyle(c, rowBg, {
+                zIndex: 1,
+                boxShadow: c.last ? "4px 0 6px -4px rgba(0,0,0,.28)" : undefined,
+              })}
+            >
+              {value}
+            </td>
+          );
+        })}
+        {Array.from({ length: 12 }).map((_, i) => {
+          const rawStates = r._cellStates?.[i] || [];
+          const states = stateFilterActive ? visibleCellStates(rawStates, disabledStates) : rawStates;
+          const cellVal = stateFilterActive ? states.reduce((s, x) => s + x.val, 0) || null : r.months[i];
+          // Nessuno stato in quel mese: niente sfondo di stato, resta il
+          // colore di base della riga (alternanza zebrata), non trasparente.
+          let style: CSSProperties = { background: rowBg };
+          let title: string | undefined;
+          if (states.length === 1) {
+            style = { background: colorMap[states[0].stato || ""] || "transparent" };
+          } else if (states.length > 1) {
+            const sorted = [...states].sort((a, b) => b.val - a.val);
+            const c1 = colorMap[sorted[0].stato || ""] || "transparent";
+            const c2 = colorMap[(sorted[1] || sorted[0]).stato || ""] || c1;
+            style = { background: `linear-gradient(135deg, ${c1} 50%, ${c2} 50%)` };
+            title = states.map((s) => `${s.stato}: ${fmt(s.val)}`).join(" + ");
+          }
+          return (
+            <td
+              key={i}
+              className={`border-b border-gray-200 px-2.5 py-1.5 text-right tabular-nums text-gray-900 ${isClient ? "font-semibold" : ""}`}
+              style={style}
+              title={title}
+            >
+              {fmt(cellVal)}
+            </td>
+          );
+        })}
+        <td className="border-b border-gray-200 px-2.5 py-1.5 text-right font-bold tabular-nums text-gray-900" style={{ background: rowBg }}>
+          {fmt(rowTotale)}
+        </td>
+      </tr>
+    );
+  }
+
   async function handleSaveSnapshot() {
     if (!company) return;
     const today = new Date().toISOString().slice(0, 10);
@@ -841,6 +973,17 @@ export default function PipelineCommercialePage() {
           </div>
         )}
 
+        {multiClients.length > 0 && (
+          <div className="flex overflow-hidden rounded-lg border border-gray-200 bg-white text-sm font-semibold text-gray-700 shadow-sm">
+            <button type="button" onClick={() => setOpenClients(new Set(multiClients))} className="px-3 py-2 hover:bg-gray-50 hover:text-violet-700">
+              Espandi tutti
+            </button>
+            <button type="button" onClick={() => setOpenClients(new Set())} className="border-l border-gray-200 px-3 py-2 hover:bg-gray-50 hover:text-violet-700">
+              Comprimi
+            </button>
+          </div>
+        )}
+
         <input
           type="text"
           value={filterText}
@@ -964,78 +1107,15 @@ export default function PipelineCommercialePage() {
                 </tr>
               </thead>
               <tbody>
-                {visibleRows.map((r, rowIdx) => {
-                  const rowBg = rowIdx % 2 === 0 ? "#ffffff" : STRIPE;
-                  // Con il filtro Tipologia attivo il totale di riga si ricalcola
-                  // sommando solo gli stati rimasti spuntati (non è più il totale
-                  // pre-calcolato in doc.rows, che copre tutti gli stati).
-                  const rowTotale = stateFilterActive
-                    ? Array.from({ length: 12 }).reduce(
-                        (sum: number, _, i) =>
-                          sum + visibleCellStates(r._cellStates?.[i] || [], disabledStates).reduce((a, x) => a + x.val, 0),
-                        0
-                      ) || null
-                    : r.totale;
+                {clientGroups.map((g, gIdx) => {
+                  const rowBg = gIdx % 2 === 0 ? "#ffffff" : STRIPE;
+                  const multi = g.rows.length > 1;
+                  const open = multi && openClients.has(g.cliente);
                   return (
-                    <tr key={`${r.origine ?? "x"}-${r.cliente}-${rowIdx}`} className={r.is_crm ? "" : undefined}>
-                      {cols.map((c) => {
-                        const isCliente = c.key === "cliente";
-                        const isOrigine = c.key === "origine";
-                        const isAbbreviatedName = c.key === "account" || c.key === "project_leader";
-                        const cellBg = isCliente && r.is_crm ? CRM_BG : rowBg;
-                        const rawValue = (r as unknown as Record<string, string | null>)[c.key] || "";
-                        let value: string | number | null = "";
-                        if (c.key === "ordinato") value = fmt(r.ordinato);
-                        else if (isAbbreviatedName) value = abbreviateName(rawValue);
-                        else value = rawValue;
-                        const cellTitle = isCliente && r.is_crm && r.crm_comment
-                          ? r.crm_comment
-                          : isOrigine
-                            ? r.origine_titolo || undefined
-                            : isAbbreviatedName
-                              ? rawValue || undefined
-                              : undefined;
-                        return (
-                          <td
-                            key={c.key}
-                            title={cellTitle}
-                            className={`border-b border-gray-200 px-2.5 py-1.5 text-gray-900 ${
-                              c.num ? "text-right font-bold tabular-nums" : ""
-                            } ${isCliente ? "whitespace-normal font-medium" : "overflow-hidden text-ellipsis"} ${c.key === "origine" ? "text-gray-500" : ""}`}
-                            style={frozenStyle(c, cellBg, {
-                              zIndex: 1,
-                              boxShadow: c.last ? "4px 0 6px -4px rgba(0,0,0,.28)" : undefined,
-                            })}
-                          >
-                            {value}
-                          </td>
-                        );
-                      })}
-                      {Array.from({ length: 12 }).map((_, i) => {
-                        const rawStates = r._cellStates?.[i] || [];
-                        const states = stateFilterActive ? visibleCellStates(rawStates, disabledStates) : rawStates;
-                        const cellVal = stateFilterActive ? states.reduce((s, x) => s + x.val, 0) || null : r.months[i];
-                        // Nessuno stato in quel mese: niente sfondo di stato, resta il
-                        // colore di base della riga (alternanza zebrata), non trasparente.
-                        let style: CSSProperties = { background: rowBg };
-                        let title: string | undefined;
-                        if (states.length === 1) {
-                          style = { background: colorMap[states[0].stato || ""] || "transparent" };
-                        } else if (states.length > 1) {
-                          const sorted = [...states].sort((a, b) => b.val - a.val);
-                          const c1 = colorMap[sorted[0].stato || ""] || "transparent";
-                          const c2 = colorMap[(sorted[1] || sorted[0]).stato || ""] || c1;
-                          style = { background: `linear-gradient(135deg, ${c1} 50%, ${c2} 50%)` };
-                          title = states.map((s) => `${s.stato}: ${fmt(s.val)}`).join(" + ");
-                        }
-                        return (
-                          <td key={i} className="border-b border-gray-200 px-2.5 py-1.5 text-right tabular-nums text-gray-900" style={style} title={title}>
-                            {fmt(cellVal)}
-                          </td>
-                        );
-                      })}
-                      <td className="border-b border-gray-200 px-2.5 py-1.5 text-right font-bold tabular-nums text-gray-900">{fmt(rowTotale)}</td>
-                    </tr>
+                    <Fragment key={`${g.cliente}-${gIdx}`}>
+                      {renderRow(multi ? g.summary : g.rows[0], `c-${gIdx}`, rowBg, multi ? (open ? "client-open" : "client") : "single", g.cliente)}
+                      {open && g.rows.map((r, i) => renderRow(r, `c-${gIdx}-${i}`, DETAIL_BG, "detail", g.cliente))}
+                    </Fragment>
                   );
                 })}
 
@@ -1070,6 +1150,55 @@ export default function PipelineCommercialePage() {
             <PrevCurrentPanel entries={prevCurrentTable} compareDate={compareDate} />
           )}
           </div>
+
+          {unvaluedProposals.length > 0 && (
+            <div className="mt-5 overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
+              <h2 className="border-b border-gray-200 px-3.5 py-3 text-xs font-semibold uppercase tracking-wide text-gray-500">
+                Proposte senza valorizzazione ({unvaluedProposals.length})
+                <span className="ml-2 font-normal normal-case tracking-normal text-gray-400">
+                  opportunità CRM in fase &quot;Fare preventivo&quot; senza importo né piano di fatturazione
+                </span>
+              </h2>
+              <div className="overflow-auto">
+                <table className="w-full border-separate border-spacing-0 text-[12.5px]">
+                  <thead>
+                    <tr>
+                      {(dual ? ["Account", "Project Leader"] : ["Referente"]).map((h) => (
+                        <th key={h} className="px-2.5 py-2 text-left font-semibold text-white" style={{ background: HEADER_BG }}>
+                          {h}
+                        </th>
+                      ))}
+                      <th className="px-2.5 py-2 text-left font-semibold text-white" style={{ background: HEADER_BG }}>Cliente</th>
+                      <th className="px-2.5 py-2 text-left font-semibold text-white" style={{ background: HEADER_BG }}>Opportunità</th>
+                      {tipoProgettoAvailable && (
+                        <th className="px-2.5 py-2 text-left font-semibold text-white" style={{ background: HEADER_BG }}>Tipo progetto</th>
+                      )}
+                      <th className="px-2.5 py-2 text-left font-semibold text-white" style={{ background: HEADER_BG }}>Note</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {unvaluedProposals.map((r, i) => (
+                      <tr key={`${r.cliente}-${r.origine}-${i}`} style={{ background: i % 2 === 0 ? "#ffffff" : STRIPE }}>
+                        {(dual ? [r.account, r.project_leader] : [r.referente]).map((v, j) => (
+                          <td key={j} className="whitespace-nowrap border-b border-gray-100 px-2.5 py-1.5 text-gray-700">
+                            {v || ""}
+                          </td>
+                        ))}
+                        <td className="border-b border-gray-100 px-2.5 py-1.5 font-semibold text-gray-900">{r.cliente}</td>
+                        <td className="border-b border-gray-100 px-2.5 py-1.5 text-gray-900">{(r.origine || "").replace(/ (opp. CRM)$/, "")}</td>
+                        {tipoProgettoAvailable && (
+                          <td className="border-b border-gray-100 px-2.5 py-1.5 text-gray-700">{(r.tipi_progetto || []).join(", ")}</td>
+                        )}
+                        <td className="border-b border-gray-100 px-2.5 py-1.5 text-xs text-gray-500">
+                          {(r.crm_comment || "").replace(/^Opportunità CRM "[^"]*" - fase "Fare preventivo". /, "")}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          )}
 
           {!plActive && doc.stato_summary?.length > 0 && (
             <div className="mt-5 overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
@@ -1402,10 +1531,6 @@ function Legend({ doc }: { doc: PipelineDoc | null }) {
           {label}
         </span>
       ))}
-      <span className="flex items-center gap-1.5 rounded-full border border-gray-200 bg-white px-2.5 py-1 text-[11.5px] text-gray-500">
-        <i className="inline-block h-2.5 w-2.5 rounded-sm" style={{ background: CRM_BG }} />
-        Opportunità CRM (senza importo)
-      </span>
     </div>
   );
 }

@@ -223,6 +223,43 @@ export interface MergedRow extends PipelineRow {
   _cellStates: CellState[][];
 }
 
+// Riga riassuntiva di un cliente nella tabella principale: somma dei suoi
+// progetti (ordini), mese per mese e stato per stato, così colori e filtro
+// Tipologia funzionano come sulle righe di dettaglio. Account/PL/Referente
+// compaiono solo se uguali per tutti i progetti, altrimenti "Vari".
+export function summarizeClient(rows: MergedRow[]): MergedRow {
+  const uniq = (k: "account" | "project_leader" | "referente") => {
+    const s = new Set(rows.map((r) => r[k]).filter(Boolean));
+    return s.size === 1 ? [...s][0] : s.size > 1 ? "Vari" : null;
+  };
+  const cells: CellState[][] = Array.from({ length: 12 }, () => []);
+  const months = new Array(12).fill(0);
+  for (const r of rows) {
+    for (let i = 0; i < 12; i++) {
+      for (const cs of r._cellStates?.[i] || []) {
+        const hit = cells[i].find((x) => x.stato === cs.stato);
+        if (hit) hit.val += cs.val;
+        else cells[i].push({ ...cs });
+        months[i] += cs.val;
+      }
+    }
+  }
+  const sum = (k: "ordinato" | "totale") => rows.reduce((s, r) => s + (r[k] || 0), 0) || null;
+  return {
+    ...rows[0],
+    origine: rows.length > 1 ? `${rows.length} progetti` : rows[0].origine,
+    origine_titolo: rows.length > 1 ? rows.map((r) => r.origine).join(", ") : rows[0].origine_titolo,
+    account: uniq("account"),
+    project_leader: uniq("project_leader"),
+    referente: uniq("referente"),
+    stato: null,
+    ordinato: sum("ordinato"),
+    totale: sum("totale"),
+    months: months.map((v) => v || null),
+    _cellStates: cells,
+  };
+}
+
 // Un ordine può avere più stati (righe) nell'anno; se nessuno cade sullo stesso
 // mese di un altro si accorpano in un'unica riga. Solo un vero conflitto
 // (due stati nello stesso mese) produce una cella con colore diviso.
