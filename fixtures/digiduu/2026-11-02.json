@@ -38,11 +38,11 @@
       153874.27,
       189723.58,
       153801.32,
-      207725,
-      155530
+      204425,
+      162130
     ],
-    "ordinato": 1538954.23,
-    "totale": 1759234.23
+    "ordinato": 1542254.23,
+    "totale": 1762534.23
   },
   "revenue_summary": null,
   "rows": [
@@ -2628,17 +2628,17 @@
         null,
         null,
         null,
-        9900,
-        null
+        6600,
+        6600
       ],
       "nota": null,
-      "ordinato": 9900,
+      "ordinato": 13200,
       "origine": "DD10241",
       "project_leader": "Antonio Maddalena",
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
-      "totale": 9900
+      "totale": 13200
     },
     {
       "account": "Non assegnato",
@@ -4073,10 +4073,10 @@
         0,
         0,
         88740,
-        114805,
-        56070
+        111505,
+        62670
       ],
-      "totale": 259615
+      "totale": 262915
     },
     {
       "stato": "Confermata - Fatturato",
@@ -4345,9 +4345,9 @@
     },
     {
       "cliente": "Penta Formazione S.r.l.",
-      "ordinato": 24750,
+      "ordinato": 28050,
       "target": 19800,
-      "differenza": -4950
+      "differenza": -8250
     },
     {
       "cliente": "Schueco PWS Italia S.r.l.",
