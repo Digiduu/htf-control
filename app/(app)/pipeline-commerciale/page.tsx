@@ -414,7 +414,7 @@ export default function PipelineCommercialePage() {
   }, [visibleRows]);
   const multiClients = useMemo(() => clientGroups.filter((g) => g.rows.length > 1).map((g) => g.cliente), [clientGroups]);
 
-  // Proposte senza valorizzazione: opportunità CRM in "Fare preventivo" senza
+  // Proposta in fase di valorizzazione: opportunità CRM in "Fare preventivo" senza
   // importo né piano di fatturazione. Seguono i filtri cliente, Project
   // Leader e Tipo progetto, non Tipologia (non hanno uno stato).
   const unvaluedProposals = useMemo(
@@ -1154,7 +1154,7 @@ export default function PipelineCommercialePage() {
           {unvaluedProposals.length > 0 && (
             <div className="mt-5 overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
               <h2 className="border-b border-gray-200 px-3.5 py-3 text-xs font-semibold uppercase tracking-wide text-gray-500">
-                Proposte senza valorizzazione ({unvaluedProposals.length})
+                Proposta in fase di valorizzazione ({unvaluedProposals.length})
                 <span className="ml-2 font-normal normal-case tracking-normal text-gray-400">
                   opportunità CRM in fase &quot;Fare preventivo&quot; senza importo né piano di fatturazione
                 </span>
