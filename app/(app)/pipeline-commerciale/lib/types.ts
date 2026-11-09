@@ -8,6 +8,9 @@ export interface PipelineRow {
   origine: string | null;
   is_crm: boolean;
   crm_comment: string | null;
+  // Fase CRM delle opportunità senza valorizzazione ("Fare preventivo" o
+  // "Proposta"); assente nelle generazioni prima del 09/11/2026.
+  crm_fase?: string | null;
   account: string | null;
   project_leader: string | null;
   referente: string | null;

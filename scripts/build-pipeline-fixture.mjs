@@ -27,6 +27,24 @@
 //                   e archiviate, tag_ids != false (name, tag_ids)
 //   crm_tags.json   (facoltativo) crm.tag, tutte (name)
 //                   → campo tipi_progetto delle righe (filtro "Tipo progetto")
+//   crm_proposta.json    (facoltativo, dal 09/11/2026) crm.lead type=opportunity
+//                        in fase "Proposta" (stage_id=33), company_id in [1,6]
+//                        (name, partner_id, expected_revenue, user_id,
+//                        company_id, stage_id, order_ids, tag_ids)
+//   proposta_orders.json sale.order con opportunity_id.stage_id=33
+//                        (name, opportunity_id, state, amount_untaxed,
+//                        invoice_ids, company_id)
+//   proposta_piano.json  x_piano_fatturazione_d con
+//                        x_studio_many2one_field_WPfGn.opportunity_id.stage_id=33,
+//                        tutte le date (x_studio_many2one_field_WPfGn,
+//                        x_studio_kanban_state, x_studio_date, x_studio_value,
+//                        x_active)
+//   partners_proposta.json (facoltativo) res.partner dei clienti di quelle
+//                        opportunità non già in partners.json (+ aziende madri)
+//                   → elenco "Proposta in fase di valorizzazione": opportunità
+//                     in "Proposta" non valorizzate, cioè senza fatture e
+//                     senza righe di piano attive (stato diverso da
+//                     "Bloccato") sui loro preventivi non annullati
 //
 // Uso: node scripts/build-pipeline-fixture.mjs <raw> <data YYYY-MM-DD> "<source_note oriens>" "<source_note digiduu>"
 // Il target annuo per cliente (solo Digiduu) non viene da Odoo: è ripreso
@@ -60,6 +78,25 @@ const FATTIBILITA_PROBABILE = 2;
 const round2 = (n) => Math.round(n * 100) / 100;
 
 const partners = new Map(load("partners.json").map((p) => [p.id, p]));
+if (existsSync(join(raw, "partners_proposta.json"))) {
+  for (const p of load("partners_proposta.json")) if (!partners.has(p.id)) partners.set(p.id, p);
+}
+// Opportunità in fase "Proposta" non valorizzate (vedi intestazione)
+const hasProposta = ["crm_proposta.json", "proposta_orders.json", "proposta_piano.json"].every((f) => existsSync(join(raw, f)));
+const ORDER_STATE = { draft: "bozza", sent: "inviato", sale: "confermato" };
+const unvaluedProposta = [];
+if (hasProposta) {
+  const orders = load("proposta_orders.json");
+  const pianoP = load("proposta_piano.json");
+  for (const l of load("crm_proposta.json")) {
+    const os = orders.filter((o) => o.opportunity_id?.[0] === l.id && o.state !== "cancel");
+    const ids = new Set(os.map((o) => o.id));
+    const valued =
+      os.some((o) => o.invoice_ids.length) ||
+      pianoP.some((p) => p.x_active !== false && p.x_studio_kanban_state !== "blocked" && ids.has(p.x_studio_many2one_field_WPfGn?.[0]));
+    if (!valued) unvaluedProposta.push({ ...l, orders: os });
+  }
+}
 const projects = load("projects.json");
 const piano = load("piano.json");
 const crm = load("crm.json");
@@ -200,6 +237,7 @@ function build(company) {
       account: isDig ? partnerUser(l.partner_id[0], "digiduu_account_id") ?? "Non assegnato" : null,
       cliente,
       crm_comment: `Opportunità CRM "${l.name.trim()}" - fase "Fare preventivo". ${imp}`,
+      crm_fase: "Fare preventivo",
       is_crm: true,
       months: Array(12).fill(null),
       nota: null,
@@ -209,6 +247,37 @@ function build(company) {
       referente: isDig ? null : partnerUser(l.partner_id[0], "user_id") ?? fb() ?? "Non assegnato",
       stato: "Previsione - Possibile",
       ...(isDig && hasTipo ? { tipi_progetto: toTipi(leadTagIds.get(l.id) || []) } : {}),
+      totale: null,
+    };
+    rows.push(row);
+    crmAdded.push(row);
+  }
+
+  // Opportunità in fase "Proposta" non valorizzate: tutte, anche di clienti
+  // già in pipeline (è l'opportunità a non avere previsioni, non il cliente).
+  for (const l of unvaluedProposta) {
+    if (l.company_id?.[0] !== companyId || !l.partner_id) continue;
+    const cliente = clientName(l.partner_id[0]);
+    const comm = commercial(l.partner_id[0]);
+    const prev = l.orders.length
+      ? `Preventiv${l.orders.length > 1 ? "i" : "o"} ${l.orders.map((o) => `${o.name} (${ORDER_STATE[o.state] || o.state})`).join(", ")} senza piano di fatturazione né fatture.`
+      : "Nessun preventivo collegato in Odoo.";
+    const stima = l.expected_revenue ? ` Importo stimato ${l.expected_revenue.toLocaleString("it-IT")} EUR.` : "";
+    const fb = () => projectFallback(companyId, null, comm) ?? l.user_id?.[1] ?? null;
+    const row = {
+      account: isDig ? partnerUser(l.partner_id[0], "digiduu_account_id") ?? "Non assegnato" : null,
+      cliente,
+      crm_comment: `Opportunità CRM "${l.name.trim()}" - fase "Proposta". ${prev}${stima}`,
+      crm_fase: "Proposta",
+      is_crm: true,
+      months: Array(12).fill(null),
+      nota: null,
+      ordinato: null,
+      origine: `${crmOrigin(l.name, cliente, isDig)} (opp. CRM)`,
+      project_leader: isDig ? partnerUser(l.partner_id[0], "project_leader_id") ?? fb() ?? "Non assegnato" : null,
+      referente: isDig ? null : partnerUser(l.partner_id[0], "user_id") ?? fb() ?? "Non assegnato",
+      stato: "Previsione - Possibile",
+      ...(isDig && hasTipo ? { tipi_progetto: toTipi(leadTagIds.get(l.id) || l.tag_ids || []) } : {}),
       totale: null,
     };
     rows.push(row);

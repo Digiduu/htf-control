@@ -220,6 +220,7 @@
       "account": "Non assegnato",
       "cliente": "ALUNOVA SRL",
       "crm_comment": "Opportunità CRM \"ALUNOVA SRL - Contabilità\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+      "crm_fase": "Fare preventivo",
       "is_crm": true,
       "months": [
         null,
@@ -722,6 +723,35 @@
     },
     {
       "account": "Guido Tessari",
+      "cliente": "Arky Srl",
+      "crm_comment": "Opportunità CRM \"Arky Srl - Login sso Ping Id\" - fase \"Proposta\". Preventivo DD10300 (inviato) senza piano di fatturazione né fatture. Importo stimato 4900 EUR.",
+      "crm_fase": "Proposta",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "Login sso Ping Id (opp. CRM)",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Previsione - Possibile",
+      "tipi_progetto": [],
+      "totale": null
+    },
+    {
+      "account": "Guido Tessari",
       "cliente": "B.F. Automation S.r.l.",
       "crm_comment": null,
       "is_crm": false,
@@ -891,6 +921,35 @@
       "totale": 18000
     },
     {
+      "account": "Nicola Sartore",
+      "cliente": "B2B 72 Srl",
+      "crm_comment": "Opportunità CRM \"Opportunità per B2B 72 Srl - Assistenza\" - fase \"Proposta\". Preventivo DD10330 (bozza) senza piano di fatturazione né fatture. Importo stimato 12.000 EUR.",
+      "crm_fase": "Proposta",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "Opportunità per B2B 72 Srl - Assistenza (opp. CRM)",
+      "project_leader": "Fabiano Mason",
+      "referente": null,
+      "stato": "Previsione - Possibile",
+      "tipi_progetto": [],
+      "totale": null
+    },
+    {
       "account": "Guido Tessari",
       "cliente": "B4C S.r.l.",
       "crm_comment": null,
@@ -945,6 +1004,35 @@
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
       "totale": 600
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "B4C S.r.l.",
+      "crm_comment": "Opportunità CRM \"Opportunità per B4C S.r.l.\" - fase \"Proposta\". Preventivo DD10367 (inviato) senza piano di fatturazione né fatture.",
+      "crm_fase": "Proposta",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "Opportunità per B4C S.r.l. (opp. CRM)",
+      "project_leader": "Marco Laghetto",
+      "referente": null,
+      "stato": "Previsione - Possibile",
+      "tipi_progetto": [],
+      "totale": null
     },
     {
       "account": "Guido Tessari",
@@ -1031,9 +1119,68 @@
       "totale": 400
     },
     {
+      "account": "Guido Tessari",
+      "cliente": "Bordignon S.r.l.",
+      "crm_comment": "Opportunità CRM \"Bordignon S.r.l. - Dashboard x commerciali\" - fase \"Proposta\". Preventivo DD10237 (inviato) senza piano di fatturazione né fatture.",
+      "crm_fase": "Proposta",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "Dashboard x commerciali (opp. CRM)",
+      "project_leader": "Marco Laghetto",
+      "referente": null,
+      "stato": "Previsione - Possibile",
+      "tipi_progetto": [],
+      "totale": null
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Bordignon S.r.l.",
+      "crm_comment": "Opportunità CRM \"Bordignon S.r.l. - Sync Outlook\" - fase \"Proposta\". Preventivo DD10238 (inviato) senza piano di fatturazione né fatture. Importo stimato 4000 EUR.",
+      "crm_fase": "Proposta",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "Sync Outlook (opp. CRM)",
+      "project_leader": "Marco Laghetto",
+      "referente": null,
+      "stato": "Previsione - Possibile",
+      "tipi_progetto": [],
+      "totale": null
+    },
+    {
       "account": "Non assegnato",
       "cliente": "Bucci Composites",
       "crm_comment": "Opportunità CRM \"Bucci Composites - ERP\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+      "crm_fase": "Fare preventivo",
       "is_crm": true,
       "months": [
         null,
@@ -1171,6 +1318,37 @@
       "totale": 6450
     },
     {
+      "account": "Non assegnato",
+      "cliente": "Campagnolo Packaging Systems S.r.l.",
+      "crm_comment": "Opportunità CRM \"Campagnolo Packaging Systems S.r.l.\" - fase \"Proposta\". Preventivo DD10360 (bozza) senza piano di fatturazione né fatture. Importo stimato 3500 EUR.",
+      "crm_fase": "Proposta",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "Campagnolo Packaging Systems S.r.l. (opp. CRM)",
+      "project_leader": "Nicola Sartore",
+      "referente": null,
+      "stato": "Previsione - Possibile",
+      "tipi_progetto": [
+        "Digiduu - Workshop"
+      ],
+      "totale": null
+    },
+    {
       "account": "Nicola Sartore",
       "cliente": "Clever Agency",
       "crm_comment": null,
@@ -1199,6 +1377,37 @@
         "Starter Pack"
       ],
       "totale": 6080
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Cofi srl",
+      "crm_comment": "Opportunità CRM \"Cofi srl - Presa in carico Istanza - Workshop\" - fase \"Proposta\". Preventivo DD10343 (inviato) senza piano di fatturazione né fatture. Importo stimato 3500 EUR.",
+      "crm_fase": "Proposta",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "Presa in carico Istanza - Workshop (opp. CRM)",
+      "project_leader": "Nicola Sartore",
+      "referente": null,
+      "stato": "Previsione - Possibile",
+      "tipi_progetto": [
+        "Digiduu - Workshop"
+      ],
+      "totale": null
     },
     {
       "account": "Nicola Sartore",
@@ -1260,6 +1469,7 @@
       "account": "Non assegnato",
       "cliente": "Dynamin",
       "crm_comment": "Opportunità CRM \"Dynamin - Analisi\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+      "crm_fase": "Fare preventivo",
       "is_crm": true,
       "months": [
         null,
@@ -1397,6 +1607,35 @@
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
       "totale": 1306.26
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Esse Solutions S.r.l.",
+      "crm_comment": "Opportunità CRM \"Esse Solutions S.r.l. - Assistenza\" - fase \"Proposta\". Preventivo DD10176 (bozza) senza piano di fatturazione né fatture.",
+      "crm_fase": "Proposta",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "Assistenza (opp. CRM)",
+      "project_leader": "Erika Pettenuzzo",
+      "referente": null,
+      "stato": "Previsione - Possibile",
+      "tipi_progetto": [],
+      "totale": null
     },
     {
       "account": "Guido Tessari",
@@ -1595,6 +1834,35 @@
       "stato": "Consuntivi",
       "tipi_progetto": [],
       "totale": 12800
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Frilorpelli S.r.l",
+      "crm_comment": "Opportunità CRM \"Frilorpelli S.r.l - Pacchetto assistenza\" - fase \"Proposta\". Nessun preventivo collegato in Odoo.",
+      "crm_fase": "Proposta",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "Pacchetto assistenza (opp. CRM)",
+      "project_leader": "Nicolò Danese",
+      "referente": null,
+      "stato": "Previsione - Possibile",
+      "tipi_progetto": [],
+      "totale": null
     },
     {
       "account": "Guido Tessari",
@@ -1797,6 +2065,67 @@
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
       "totale": -5000
+    },
+    {
+      "account": "Non assegnato",
+      "cliente": "Greci Alimentari S.p.A.",
+      "crm_comment": "Opportunità CRM \"Tim per Greci Alimentari S.p.A. - Demo Odoo\" - fase \"Proposta\". Preventivo DD10354 (bozza) senza piano di fatturazione né fatture. Importo stimato 18.000 EUR.",
+      "crm_fase": "Proposta",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "Tim per Greci Alimentari S.p.A. - Demo Odoo (opp. CRM)",
+      "project_leader": "Nicola Sartore",
+      "referente": null,
+      "stato": "Previsione - Possibile",
+      "tipi_progetto": [
+        "Digiduu - Progetto custom",
+        "Digiduu - Workshop"
+      ],
+      "totale": null
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Grejo Srl",
+      "crm_comment": "Opportunità CRM \"Grejo Srl - Implementazione Odoo\" - fase \"Proposta\". Preventivo DD10292 (inviato) senza piano di fatturazione né fatture.",
+      "crm_fase": "Proposta",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "Implementazione Odoo (opp. CRM)",
+      "project_leader": "Luca Realdon",
+      "referente": null,
+      "stato": "Previsione - Possibile",
+      "tipi_progetto": [],
+      "totale": null
     },
     {
       "account": "Guido Tessari",
@@ -2191,6 +2520,64 @@
       "totale": 23000
     },
     {
+      "account": "Non assegnato",
+      "cliente": "LMA S.r.l. Aerospace Technology",
+      "crm_comment": "Opportunità CRM \"LMA S.r.l. Aerospace Technology - Implementazione Odoo\" - fase \"Proposta\". Preventivo DD10371 (bozza) senza piano di fatturazione né fatture. Importo stimato 200.000 EUR.",
+      "crm_fase": "Proposta",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "Implementazione Odoo (opp. CRM)",
+      "project_leader": "Luca Realdon",
+      "referente": null,
+      "stato": "Previsione - Possibile",
+      "tipi_progetto": [],
+      "totale": null
+    },
+    {
+      "account": "Non assegnato",
+      "cliente": "Locapal S.r.l.",
+      "crm_comment": "Opportunità CRM \"Locapal S.r.l. - Odoo\" - fase \"Proposta\". Nessun preventivo collegato in Odoo.",
+      "crm_fase": "Proposta",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "Odoo (opp. CRM)",
+      "project_leader": "Luca Realdon",
+      "referente": null,
+      "stato": "Previsione - Possibile",
+      "tipi_progetto": [],
+      "totale": null
+    },
+    {
       "account": "Fabiano Mason",
       "cliente": "MIPU MACHINE CARE S.R.L. SOCIETA' BENEFIT",
       "crm_comment": null,
@@ -2273,6 +2660,35 @@
       "stato": "Consuntivi",
       "tipi_progetto": [],
       "totale": 33000
+    },
+    {
+      "account": "Non assegnato",
+      "cliente": "Monster 4D SàRL Search Marketing Agency",
+      "crm_comment": "Opportunità CRM \"Fabrizio Di Pierro - Digiduers\" - fase \"Proposta\". Nessun preventivo collegato in Odoo.",
+      "crm_fase": "Proposta",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "Fabrizio Di Pierro - Digiduers (opp. CRM)",
+      "project_leader": "Luca Realdon",
+      "referente": null,
+      "stato": "Previsione - Possibile",
+      "tipi_progetto": [],
+      "totale": null
     },
     {
       "account": "Luca Realdon",
@@ -2725,6 +3141,64 @@
       "totale": 3000
     },
     {
+      "account": "Non assegnato",
+      "cliente": "Proludis Giocattoli srl",
+      "crm_comment": "Opportunità CRM \"Proludis Giocattoli srl - ERP distribuzione\" - fase \"Proposta\". Preventivo DD10375 (bozza) senza piano di fatturazione né fatture. Importo stimato 58.000 EUR.",
+      "crm_fase": "Proposta",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "ERP distribuzione (opp. CRM)",
+      "project_leader": "Fabiano Mason",
+      "referente": null,
+      "stato": "Previsione - Possibile",
+      "tipi_progetto": [],
+      "totale": null
+    },
+    {
+      "account": "Nicola Sartore",
+      "cliente": "Rugby Vicenza",
+      "crm_comment": "Opportunità CRM \"Rugby Vicenza -\" - fase \"Proposta\". Preventivo DD10162 (inviato) senza piano di fatturazione né fatture.",
+      "crm_fase": "Proposta",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": " (opp. CRM)",
+      "project_leader": "Nicolò Danese",
+      "referente": null,
+      "stato": "Previsione - Possibile",
+      "tipi_progetto": [],
+      "totale": null
+    },
+    {
       "account": "Luca Realdon",
       "cliente": "Schueco PWS Italia S.r.l.",
       "crm_comment": null,
@@ -3031,6 +3505,68 @@
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
       "totale": 5000
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Secco Sistemi S.p.A.",
+      "crm_comment": "Opportunità CRM \"Secco Sistemi S.p.A. - Migrazione v19\" - fase \"Proposta\". Nessun preventivo collegato in Odoo. Importo stimato 4900 EUR.",
+      "crm_fase": "Proposta",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "Migrazione v19 (opp. CRM)",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Previsione - Possibile",
+      "tipi_progetto": [
+        "Digiduu - Sviluppo"
+      ],
+      "totale": null
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Secco Sistemi S.p.A.",
+      "crm_comment": "Opportunità CRM \"Secco Sistemi S.p.A. - REVISIONE PROCESSO SINCRONIZZAZIONE ORDINI\" - fase \"Proposta\". Nessun preventivo collegato in Odoo. Importo stimato 5500 EUR.",
+      "crm_fase": "Proposta",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "REVISIONE PROCESSO SINCRONIZZAZIONE ORDINI (opp. CRM)",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Previsione - Possibile",
+      "tipi_progetto": [
+        "Digiduu - Sviluppo"
+      ],
+      "totale": null
     },
     {
       "account": "Luca Realdon",
@@ -3459,9 +3995,41 @@
       "totale": 2000
     },
     {
+      "account": "Luca Realdon",
+      "cliente": "Skema S.p.A.",
+      "crm_comment": "Opportunità CRM \"Skema S.p.A. - Software Selection\" - fase \"Proposta\". Preventivo DD10295 (bozza) senza piano di fatturazione né fatture. Importo stimato 150.000 EUR.",
+      "crm_fase": "Proposta",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "Software Selection (opp. CRM)",
+      "project_leader": "Luca Realdon",
+      "referente": null,
+      "stato": "Previsione - Possibile",
+      "tipi_progetto": [
+        "Digiduu - Progetto custom"
+      ],
+      "totale": null
+    },
+    {
       "account": "Non assegnato",
       "cliente": "SMACT S.c.p.a.",
       "crm_comment": "Opportunità CRM \"SMACT S.c.p.a. - CRM\" - fase \"Fare preventivo\". Importo stimato 18.000 EUR. ma la riga resta senza valori: è ancora una stima non quotata. non un ordine o un piano di fatturazione.",
+      "crm_fase": "Fare preventivo",
       "is_crm": true,
       "months": [
         null,
@@ -3490,6 +4058,7 @@
       "account": "Guido Tessari",
       "cliente": "Smart Future",
       "crm_comment": "Opportunità CRM \"Smart Future - Implementazione Odoo\" - fase \"Fare preventivo\". Importo stimato 30.000 EUR. ma la riga resta senza valori: è ancora una stima non quotata. non un ordine o un piano di fatturazione.",
+      "crm_fase": "Fare preventivo",
       "is_crm": true,
       "months": [
         null,
@@ -3578,6 +4147,7 @@
       "account": "Non assegnato",
       "cliente": "Stimm",
       "crm_comment": "Opportunità CRM \"Stimm - Odoo\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+      "crm_fase": "Fare preventivo",
       "is_crm": true,
       "months": [
         null,
@@ -3748,8 +4318,38 @@
     },
     {
       "account": "Non assegnato",
+      "cliente": "Tim Spa",
+      "crm_comment": "Opportunità CRM \"Tim per Ambico - Digitalizzazione con Odoo\" - fase \"Proposta\". Preventivo DD10335 (inviato) senza piano di fatturazione né fatture.",
+      "crm_fase": "Proposta",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "Tim per Ambico - Digitalizzazione con Odoo (opp. CRM)",
+      "project_leader": "Luca Realdon",
+      "referente": null,
+      "stato": "Previsione - Possibile",
+      "tipi_progetto": [],
+      "totale": null
+    },
+    {
+      "account": "Non assegnato",
       "cliente": "Torino Aerospace",
       "crm_comment": "Opportunità CRM \"Torino Aerospace - ERP\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+      "crm_fase": "Fare preventivo",
       "is_crm": true,
       "months": [
         null,
@@ -3892,6 +4492,7 @@
       "account": "Non assegnato",
       "cliente": "Trendcolor",
       "crm_comment": "Opportunità CRM \"Trendcolor - Erp\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+      "crm_fase": "Fare preventivo",
       "is_crm": true,
       "months": [
         null,
@@ -3976,6 +4577,7 @@
       "account": "Non assegnato",
       "cliente": "Wedoo S.r.l.",
       "crm_comment": "Opportunità CRM \"Opportunità per Wedoo S.r.l. - Contabilità\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+      "crm_fase": "Fare preventivo",
       "is_crm": true,
       "months": [
         null,
@@ -4027,6 +4629,37 @@
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
       "totale": 6150
+    },
+    {
+      "account": "Guido Tessari",
+      "cliente": "Wow Solution S.r.l.",
+      "crm_comment": "Opportunità CRM \"Wow Solution S.r.l. - Assistenza\" - fase \"Proposta\". Nessun preventivo collegato in Odoo. Importo stimato 7200 EUR.",
+      "crm_fase": "Proposta",
+      "is_crm": true,
+      "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nota": null,
+      "ordinato": null,
+      "origine": "Assistenza (opp. CRM)",
+      "project_leader": "Antonio Maddalena",
+      "referente": null,
+      "stato": "Previsione - Possibile",
+      "tipi_progetto": [
+        "Assistenza"
+      ],
+      "totale": null
     },
     {
       "account": "Luca Realdon",
