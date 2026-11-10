@@ -415,7 +415,8 @@ export default function PipelineCommercialePage() {
   const multiClients = useMemo(() => clientGroups.filter((g) => g.rows.length > 1).map((g) => g.cliente), [clientGroups]);
 
   // Proposta in fase di valorizzazione: opportunità CRM in "Fare preventivo" senza
-  // importo né piano di fatturazione. Seguono i filtri cliente, Project
+  // importo né piano di fatturazione, e (dal 09/11/2026) opportunità in
+  // "Proposta" senza fatture né piano di fatturazione attivo. Seguono i filtri cliente, Project
   // Leader e Tipo progetto, non Tipologia (non hanno uno stato).
   const unvaluedProposals = useMemo(
     () =>
@@ -1156,7 +1157,7 @@ export default function PipelineCommercialePage() {
               <h2 className="border-b border-gray-200 px-3.5 py-3 text-xs font-semibold uppercase tracking-wide text-gray-500">
                 Proposta in fase di valorizzazione ({unvaluedProposals.length})
                 <span className="ml-2 font-normal normal-case tracking-normal text-gray-400">
-                  opportunità CRM in fase &quot;Fare preventivo&quot; senza importo né piano di fatturazione
+                  opportunità CRM in fase &quot;Fare preventivo&quot; o &quot;Proposta&quot; senza importo né piano di fatturazione
                 </span>
               </h2>
               <div className="overflow-auto">
@@ -1170,6 +1171,7 @@ export default function PipelineCommercialePage() {
                       ))}
                       <th className="px-2.5 py-2 text-left font-semibold text-white" style={{ background: HEADER_BG }}>Cliente</th>
                       <th className="px-2.5 py-2 text-left font-semibold text-white" style={{ background: HEADER_BG }}>Opportunità</th>
+                      <th className="px-2.5 py-2 text-left font-semibold text-white" style={{ background: HEADER_BG }}>Fase</th>
                       {tipoProgettoAvailable && (
                         <th className="px-2.5 py-2 text-left font-semibold text-white" style={{ background: HEADER_BG }}>Tipo progetto</th>
                       )}
@@ -1186,11 +1188,12 @@ export default function PipelineCommercialePage() {
                         ))}
                         <td className="border-b border-gray-100 px-2.5 py-1.5 font-semibold text-gray-900">{r.cliente}</td>
                         <td className="border-b border-gray-100 px-2.5 py-1.5 text-gray-900">{(r.origine || "").replace(/ (opp. CRM)$/, "")}</td>
+                        <td className="whitespace-nowrap border-b border-gray-100 px-2.5 py-1.5 text-gray-700">{r.crm_fase || "Fare preventivo"}</td>
                         {tipoProgettoAvailable && (
                           <td className="border-b border-gray-100 px-2.5 py-1.5 text-gray-700">{(r.tipi_progetto || []).join(", ")}</td>
                         )}
                         <td className="border-b border-gray-100 px-2.5 py-1.5 text-xs text-gray-500">
-                          {(r.crm_comment || "").replace(/^Opportunità CRM "[^"]*" - fase "Fare preventivo". /, "")}
+                          {(r.crm_comment || "").replace(/^Opportunità CRM "[^"]*" - fase "[^"]*". /, "")}
                         </td>
                       </tr>
                     ))}
