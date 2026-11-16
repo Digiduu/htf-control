@@ -113,6 +113,28 @@ const navItems = [
       </svg>
     ),
   },
+  {
+    href: "/allineamenti-sales",
+    label: "Allineamenti Sales",
+    // Visibile a chi passa canSeeAllineamentiSales() (superadmin, visibilità
+    // "global" e commerciali Digiduu); controllo reale in
+    // requireAllineamentiSalesAccess() dentro la pagina.
+    previewOnly: "sales" as const,
+    icon: (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={1.75}
+        className="h-4 w-4"
+        aria-hidden="true"
+      >
+        <circle cx="12" cy="12" r="8.5" />
+        <circle cx="12" cy="12" r="4.5" />
+        <circle cx="12" cy="12" r="1" fill="currentColor" />
+      </svg>
+    ),
+  },
 ];
 
 const PINNED_KEY = "htf-sidebar-pinned";
@@ -123,12 +145,14 @@ export default function Sidebar({
   visibilityGroup = "global",
   canSeeCapacity = false,
   canSeeReportAssistenza = false,
+  canSeeAllineamentiSales = false,
 }: {
   role: UserRole;
   moduleAccess?: ModuleAccess;
   visibilityGroup?: VisibilityGroup;
   canSeeCapacity?: boolean;
   canSeeReportAssistenza?: boolean;
+  canSeeAllineamentiSales?: boolean;
 }) {
   const pathname = usePathname();
   const router = useRouter();
@@ -164,7 +188,7 @@ export default function Sidebar({
   const allowedHrefs = role === "superadmin" ? null : allowedHrefsByModuleAccess[moduleAccess];
   const visibleNavItems = navItems.filter((item) =>
     item.previewOnly
-      ? (item.previewOnly === "capacity" ? canSeeCapacity : canSeeReportAssistenza)
+      ? (item.previewOnly === "capacity" ? canSeeCapacity : item.previewOnly === "sales" ? canSeeAllineamentiSales : canSeeReportAssistenza)
       : (!allowedHrefs || allowedHrefs.includes(item.href)) && (!item.requiresGlobal || role === "superadmin" || visibilityGroup === "global")
   );
 

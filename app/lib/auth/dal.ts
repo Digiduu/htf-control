@@ -153,6 +153,36 @@ export async function requireReportAssistenzaAccess(): Promise<Profile> {
   return profile;
 }
 
+// Allineamenti Sales (dashboard degli allineamenti commerciali Digiduu):
+// chi vede tutta la Pipeline Commerciale Digiduu, cioè i superadmin, la
+// visibilità "global" (direzione) e i commerciali Digiduu
+// (visibility_group "commerciale_digiduu"), a prescindere da "Accesso
+// moduli". Restano esclusi i Project Leader, che vedono solo i propri clienti.
+export function canSeeAllineamentiSales(profile: Profile | null): boolean {
+  return (
+    !!profile &&
+    (profile.role === "superadmin" ||
+      profile.visibility_group === "global" ||
+      profile.visibility_group === "commerciale_digiduu")
+  );
+}
+
+// Confine di sicurezza reale di Allineamenti Sales (la Sidebar nasconde la
+// voce solo per comodità visiva): la pagina legge i dati con il client
+// service role solo dopo questo controllo.
+export async function requireAllineamentiSalesAccess(): Promise<Profile> {
+  const profile = await getCurrentProfile();
+
+  if (!profile) {
+    redirect("/login");
+  }
+  if (!canSeeAllineamentiSales(profile)) {
+    redirect(homePath(profile));
+  }
+
+  return profile;
+}
+
 // Stesso principio di requireSuperadmin/requireGlobalVisibility, ma per
 // moduli riservati a chi ha un "Accesso moduli" tra quelli passati (o "all",
 // sempre ammesso) — un superadmin vede comunque tutto. Va richiamato
