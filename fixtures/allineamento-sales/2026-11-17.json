@@ -1,0 +1,7135 @@
+{
+  "extracted": "2026-11-17",
+  "company": "Digiduu S.r.l.",
+  "budget": 200000,
+  "odooUrl": "https://oriens-consulting.odoo.com/odoo/crm/",
+  "leads": [
+    {
+      "id": 1468,
+      "name": "Essemec Srl's opportunity",
+      "partner": "Essemec S.r.l.",
+      "user": "Luca Realdon",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2024-07-18",
+      "stageUpd": "2025-06-13",
+      "updated": "2026-09-21",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 1527,
+      "name": "Ognjen Kokorovic - Potenziale partnership",
+      "partner": "Resopt, Ognjen Kokorovic",
+      "user": "Nicoletta Piazzetta",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2024-10-18",
+      "stageUpd": "2025-03-26",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 1641,
+      "name": "Integré S.p.a. - Odoo per punto vendita",
+      "partner": "Integré S.p.a.",
+      "user": "Luca Realdon",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2025-03-06",
+      "stageUpd": "2025-06-13",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 1642,
+      "name": "Qvadra S.r.l. / Ormesani - Implementazione Odoo",
+      "partner": "Qvadra S.r.l.",
+      "user": "Nicoletta Piazzetta",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2025-03-06",
+      "stageUpd": "2025-05-26",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 1643,
+      "name": "Bigaran S.r.l. - Implementazione Odoo",
+      "partner": "Bigaran S.r.l.",
+      "user": "Luca Realdon",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2025-03-07",
+      "stageUpd": "2025-06-13",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 1676,
+      "name": "Esse Solutions S.r.l. - Integrazione Jira -odoo",
+      "partner": "Esse Solutions S.r.l.",
+      "user": "Nicoletta Piazzetta",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2025-03-18",
+      "stageUpd": "2025-05-20",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 4173,
+      "name": "Giesse Risarcimento Danni S.r.l. - Implementazione Odoo (Stefano)",
+      "partner": "Giesse Risarcimento Danni S.r.l.",
+      "user": "Chiara Rossetto",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2025-04-24",
+      "stageUpd": "2025-12-09",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 4217,
+      "name": "Iso Engineering S.r.l. - Digitalizzazione contabilità e fatturazione elettronica con odoo (Nik)",
+      "partner": "Iso Engineering S.r.l.",
+      "user": "Nicola Sartore",
+      "stage": "Segnalibro",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2025-05-21",
+      "stageUpd": "2026-06-16",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 4234,
+      "name": "Matteo Pisanu - Prenotazione Demo Odoo (DIH)",
+      "partner": "Matteo Pisanu",
+      "user": "Fabiano Mason",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2025-06-10",
+      "stageUpd": "2025-11-26",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 4278,
+      "name": "POTENZIALE SEGNALATORE",
+      "partner": "Nuviax GmbH",
+      "user": "Nicola Sartore",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2025-07-04",
+      "stageUpd": "2026-01-27",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 4320,
+      "name": "LUCIA MARIA MELCHIORI SRL - SOSTITUZIONE GESTIONALE CUSTOM",
+      "partner": "LUCIA MARIA MELCHIORI SRL",
+      "user": "Nicola Sartore",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 60000,
+      "created": "2025-07-24",
+      "stageUpd": "2026-07-27",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 4336,
+      "name": "Bordignon S.r.l. - Affiancamento alla crescita",
+      "partner": "Bordignon S.r.l.",
+      "user": "Marco Laghetto",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2025-07-31",
+      "stageUpd": "2026-08-24",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 4438,
+      "name": "IFC S.R.L. - Implementazione Odoo",
+      "partner": "IFC S.R.L.",
+      "user": "Luca Realdon",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2025-10-17",
+      "stageUpd": "2026-01-12",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 4445,
+      "name": "Luca Corazza - BEGHIN",
+      "partner": "Integré S.p.a., Luca Corazza",
+      "user": "Nicola Sartore",
+      "stage": "In analisi",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2025-10-17",
+      "stageUpd": "2025-12-12",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 4446,
+      "name": "Studio GR srl - CRM PROGETTI FATTURAZIONE",
+      "partner": "Studio GR srl",
+      "user": "Nicola Sartore",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 39000,
+      "created": "2025-10-20",
+      "stageUpd": "2025-12-17",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 4496,
+      "name": "TIM per Bocon S.r.l. - Implementazione Odoo",
+      "partner": "Bocon S.r.l.",
+      "user": "Luca Realdon",
+      "stage": "In analisi",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2025-10-31",
+      "stageUpd": "2025-10-31",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 4500,
+      "name": "ValueBiz Digital Solution - PARTNERSHIP",
+      "partner": "ValueBiz Digital Solution",
+      "user": "Nicola Sartore",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2025-11-04",
+      "stageUpd": "2026-01-27",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 4503,
+      "name": "Rugby Vicenza -",
+      "partner": "Rugby Vicenza",
+      "user": "Nicolò Danese",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2025-11-05",
+      "stageUpd": "2026-08-24",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 4542,
+      "name": "Cantiere Mancini - Digitalizzazione aziendale",
+      "partner": "Cantieri Mancini, Ganimede Mancini",
+      "user": "Nicola Sartore",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2025-11-24",
+      "stageUpd": "2026-01-09",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 4942,
+      "name": "Esse Solutions S.r.l. - Assistenza",
+      "partner": "Esse Solutions S.r.l.",
+      "user": "Erika Pettenuzzo",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2025-12-01",
+      "stageUpd": "2025-12-15",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 4944,
+      "name": "Agorà Security S.r.l. - Odoo",
+      "partner": "Agorà Security S.r.l.",
+      "user": "Luca Realdon",
+      "stage": "Fissare incontro",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2025-12-02",
+      "stageUpd": "2025-12-02",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 4946,
+      "name": "Wintech  - Demo Odoo",
+      "partner": "Wintech",
+      "user": "Luca Realdon",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2025-12-02",
+      "stageUpd": "2026-04-02",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 4964,
+      "name": "Mauro Frigo  - Odoo",
+      "partner": "Veca S.p.A., Mauro Frigo",
+      "user": "Luca Realdon",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2025-12-05",
+      "stageUpd": "2026-06-29",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 4965,
+      "name": "Piva Legno - Odoo",
+      "partner": "Piva Legno",
+      "user": "Luca Realdon",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2025-12-05",
+      "stageUpd": "2026-06-29",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 4985,
+      "name": "Niogin Italia srl - Passaggio a v18/19 + Contabilità",
+      "partner": "Niogin Italia srl",
+      "user": "Nicola Sartore",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [
+        "Digiduu - Progetto custom"
+      ],
+      "rev": 50000,
+      "created": "2025-12-10",
+      "stageUpd": "2026-04-13",
+      "updated": "2026-09-29",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 4991,
+      "name": "Oriens per Locapal S.r.l. -CRM Odoo",
+      "partner": "Oriens Consulting S.r.l.",
+      "user": "Luca Realdon",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2025-12-12",
+      "stageUpd": "2026-06-29",
+      "updated": "2026-11-12",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 4992,
+      "name": "Welding Duebi S.r.l. - Odoo",
+      "partner": "Welding Duebi S.r.l.",
+      "user": "Luca Realdon",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2025-12-12",
+      "stageUpd": "2026-02-17",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 4997,
+      "name": "GD EDUCA cooperativa Sociale  - Assistenza",
+      "partner": "GD EDUCA cooperativa Sociale",
+      "user": "Nicoletta Piazzetta",
+      "stage": "Fare preventivo",
+      "prio": 0,
+      "tags": [],
+      "rev": 3600,
+      "created": "2025-12-18",
+      "stageUpd": "2025-12-18",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5012,
+      "name": "Fabrizio Di Pierro - Digiduers",
+      "partner": "Monster 4D SàRL Search Marketing Agency, Fabrizio Di Pierro",
+      "user": "Luca Realdon",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-01-08",
+      "stageUpd": "2026-01-08",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5021,
+      "name": "Tim per Intermek - Soluzione ERP (Enrico Boato)",
+      "partner": "Tim S.p.A.",
+      "user": "Luca Realdon",
+      "stage": "Segnalibro",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-01-12",
+      "stageUpd": "2026-01-19",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5022,
+      "name": "Clever Agency - Starter Pack Progetti",
+      "partner": "Clever Agency",
+      "user": "Nicola Sartore",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [
+        "Starter Pack"
+      ],
+      "rev": 21000,
+      "created": "2026-01-12",
+      "stageUpd": "2026-07-01",
+      "updated": "2026-09-29",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5024,
+      "name": "B.F. Automation S.r.l. - Assistenza post progetto iniziale",
+      "partner": "B.F. Automation S.r.l.",
+      "user": "Nicola Sartore",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [
+        "Assistenza"
+      ],
+      "rev": 9600,
+      "created": "2026-01-13",
+      "stageUpd": "2026-11-12",
+      "updated": "2026-11-12",
+      "deadline": "2026-11-27",
+      "status": "open"
+    },
+    {
+      "id": 5026,
+      "name": "OCRA per Belvest - Next step dopo POC",
+      "partner": "OCRA Srl",
+      "user": "Guido Tessari",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-01-13",
+      "stageUpd": "2026-10-08",
+      "updated": "2026-10-08",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5039,
+      "name": "Euro Informatica  - Odoo",
+      "partner": "Euro Informatica",
+      "user": "Guido Tessari",
+      "stage": "In analisi",
+      "prio": 0,
+      "tags": [
+        "Digiduu - Workshop"
+      ],
+      "rev": 3500,
+      "created": "2026-01-19",
+      "stageUpd": "2026-01-19",
+      "updated": "2026-11-02",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5597,
+      "name": "Opportunità x MULTILCONSULT",
+      "partner": "Multiconsult",
+      "user": "Luca Realdon",
+      "stage": "Demo",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-01-29",
+      "stageUpd": "2026-08-24",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5616,
+      "name": "Esse Music Store s.a.s. - Affiancamento 2026",
+      "partner": "Esse Music Store s.a.s.",
+      "user": "Nicola Sartore",
+      "stage": "In analisi",
+      "prio": 0,
+      "tags": [],
+      "rev": 15000,
+      "created": "2026-02-09",
+      "stageUpd": "2026-09-17",
+      "updated": "2026-09-17",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5632,
+      "name": "Novacque S.r.l. - Implementazione Odoo",
+      "partner": "Novacque S.r.l.",
+      "user": "Luca Realdon",
+      "stage": "Fissare incontro",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-02-16",
+      "stageUpd": "2026-02-16",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5635,
+      "name": "Dynamin - Analisi",
+      "partner": "Dynamin",
+      "user": "Luca Realdon",
+      "stage": "Fare preventivo",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-02-17",
+      "stageUpd": "2026-03-17",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5648,
+      "name": "B.N.V S.r.l. (BNV) - Upgrade v19",
+      "partner": "B.N.V S.r.l. (BNV)",
+      "user": "Nicola Sartore",
+      "stage": "Segnalibro",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-03-02",
+      "stageUpd": "2026-06-16",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5655,
+      "name": "Bordignon S.r.l. - Dashboard x commerciali",
+      "partner": "Bordignon S.r.l.",
+      "user": "Marco Laghetto",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-03-05",
+      "stageUpd": "2026-08-24",
+      "updated": "2026-09-04",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5656,
+      "name": "Bordignon S.r.l. - Sync Outlook",
+      "partner": "Bordignon S.r.l.",
+      "user": "Marco Laghetto",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [],
+      "rev": 4000,
+      "created": "2026-03-05",
+      "stageUpd": "2026-08-24",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5658,
+      "name": "Coesa Energy - Personalizzazioni istanza odoo",
+      "partner": "Coesa Energy",
+      "user": "Nicola Sartore",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [
+        "Digiduu - Progetto custom"
+      ],
+      "rev": 0,
+      "created": "2026-03-09",
+      "stageUpd": "2026-04-02",
+      "updated": "2026-09-29",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5666,
+      "name": "Audes  - Odoo",
+      "partner": "Audes",
+      "user": "Luca Realdon",
+      "stage": "In analisi",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-03-11",
+      "stageUpd": "2026-03-16",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5678,
+      "name": "Stimm - Odoo",
+      "partner": "Stimm",
+      "user": "Luca Realdon",
+      "stage": "Fare preventivo",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-03-18",
+      "stageUpd": "2026-03-18",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5697,
+      "name": "Esse Solutions S.r.l. - Registri iva",
+      "partner": "Esse Solutions S.r.l.",
+      "user": "Erika Pettenuzzo",
+      "stage": "Fare preventivo",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-04-03",
+      "stageUpd": "2026-04-03",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5698,
+      "name": "Frilorpelli S.r.l - Pacchetto assistenza",
+      "partner": "Frilorpelli S.r.l",
+      "user": "Nicolò Danese",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-04-03",
+      "stageUpd": "2026-04-03",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5718,
+      "name": "Skema S.p.A. - Software Selection",
+      "partner": "Skema S.p.A.",
+      "user": "Luca Realdon",
+      "stage": "Proposta",
+      "prio": 3,
+      "tags": [
+        "Digiduu - Progetto custom"
+      ],
+      "rev": 150000,
+      "created": "2026-04-14",
+      "stageUpd": "2026-10-05",
+      "updated": "2026-10-05",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5725,
+      "name": "Hidromec srl - Implementazione Odoo",
+      "partner": "Hidromec srl",
+      "user": "Guido Tessari",
+      "stage": "Proposta",
+      "prio": 1,
+      "tags": [
+        "Digiduu - Progetto custom"
+      ],
+      "rev": 40000,
+      "created": "2026-04-16",
+      "stageUpd": "2026-06-08",
+      "updated": "2026-09-04",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5731,
+      "name": "SMACT S.c.p.a. - CRM",
+      "partner": "SMACT S.c.p.a.",
+      "user": "Nicola Sartore",
+      "stage": "Fare preventivo",
+      "prio": 0,
+      "tags": [],
+      "rev": 18000,
+      "created": "2026-04-20",
+      "stageUpd": "2026-11-09",
+      "updated": "2026-11-09",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5744,
+      "name": "Fabbian - Odoo",
+      "partner": "Fabbian",
+      "user": "Luca Realdon",
+      "stage": "Fissare incontro",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-04-27",
+      "stageUpd": "2026-04-27",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5749,
+      "name": "Clini-Lab S.r.l. - TIM - Software Selection",
+      "partner": "Clini-Lab S.r.l.",
+      "user": "Luca Realdon",
+      "stage": "Fissare incontro",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-05-05",
+      "stageUpd": "2026-05-05",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5753,
+      "name": "Girardini S.r.l. - Implementazione Odoo",
+      "partner": "Girardini S.r.l.",
+      "user": "Guido Tessari",
+      "stage": "Segnalibro",
+      "prio": 2,
+      "tags": [],
+      "rev": 100000,
+      "created": "2026-05-15",
+      "stageUpd": "2026-11-13",
+      "updated": "2026-11-13",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5796,
+      "name": "Ahrcos S.p.a. - workshop",
+      "partner": "Ahrcos",
+      "user": "Nicola Sartore",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [
+        "Digiduu - Workshop"
+      ],
+      "rev": 3500,
+      "created": "2026-05-25",
+      "stageUpd": "2026-10-19",
+      "updated": "2026-10-19",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5804,
+      "name": "Wow Solution S.r.l. - Assistenza",
+      "partner": "Wow Solution S.r.l.",
+      "user": "Guido Tessari",
+      "stage": "Proposta",
+      "prio": 2,
+      "tags": [
+        "Assistenza"
+      ],
+      "rev": 7200,
+      "created": "2026-05-29",
+      "stageUpd": "2026-06-08",
+      "updated": "2026-10-02",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5814,
+      "name": "SiVola - Supporto alla Crescita",
+      "partner": "Si Vola S.r.l. Unipersonale",
+      "user": "Nicola Sartore",
+      "stage": "Fare preventivo",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-06-08",
+      "stageUpd": "2026-10-20",
+      "updated": "2026-10-20",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5821,
+      "name": "Smart Future - Implementazione Odoo",
+      "partner": "Smart Future",
+      "user": "Guido Tessari",
+      "stage": "Fare preventivo",
+      "prio": 2,
+      "tags": [
+        "Starter Pack"
+      ],
+      "rev": 30000,
+      "created": "2026-06-12",
+      "stageUpd": "2026-10-05",
+      "updated": "2026-10-05",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5822,
+      "name": "Grejo Srl - Implementazione Odoo",
+      "partner": "Grejo Srl",
+      "user": "Luca Realdon",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-06-15",
+      "stageUpd": "2026-06-29",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5825,
+      "name": "Tecno Metal srl - Odoo per serramenti",
+      "partner": "Tecno Metal srl",
+      "user": "Nicola Sartore",
+      "stage": "Demo",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-06-15",
+      "stageUpd": "2026-06-15",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5827,
+      "name": "MORETOTRADE SRL e-commerce",
+      "partner": "MORETOTRADE SRL",
+      "user": "Nicola Sartore",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [
+        "Digiduu - Progetto custom"
+      ],
+      "rev": 0,
+      "created": "2026-06-15",
+      "stageUpd": "2026-07-27",
+      "updated": "2026-09-29",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5828,
+      "name": "Essegi - Workshop",
+      "partner": "EsseGi",
+      "user": "Guido Tessari",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [
+        "Digiduu - Workshop"
+      ],
+      "rev": 3500,
+      "created": "2026-06-17",
+      "stageUpd": "2026-10-02",
+      "updated": "2026-10-29",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5831,
+      "name": "RawFish - Possibile Digiduer",
+      "partner": "RawFish",
+      "user": "Guido Tessari",
+      "stage": "Fissare incontro",
+      "prio": 1,
+      "tags": [
+        "Analisi"
+      ],
+      "rev": 0,
+      "created": "2026-06-19",
+      "stageUpd": "2026-11-10",
+      "updated": "2026-11-10",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5873,
+      "name": "Arky Srl - Login sso Ping Id",
+      "partner": "Arky Srl",
+      "user": "Nicola Sartore",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [],
+      "rev": 4900,
+      "created": "2026-06-29",
+      "stageUpd": "2026-10-19",
+      "updated": "2026-11-13",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5879,
+      "name": "Digiduu x Clever: CRM e Sales per INFINITY FLY DI ANTONIO SQUAQUARA",
+      "partner": "INFINITY FLY DI ANTONIO SQUAQUARA",
+      "user": "Nicola Sartore",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [
+        "Starter Pack"
+      ],
+      "rev": 8750,
+      "created": "2026-07-01",
+      "stageUpd": "2026-07-01",
+      "updated": "2026-09-29",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5882,
+      "name": "Ireno Roncato - Prenotazione Demo Odoo",
+      "partner": "SDR Pack S.r.l.",
+      "user": "Nicola Sartore",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [
+        "Digiduu - Progetto custom"
+      ],
+      "rev": 0,
+      "created": "2026-07-02",
+      "stageUpd": "2026-07-27",
+      "updated": "2026-09-29",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5887,
+      "name": "Artigianlegno srl -From fare retail to Odoo",
+      "partner": "Artigianlegno srl",
+      "user": "Nicola Sartore",
+      "stage": "Segnalibro",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-07-03",
+      "stageUpd": "2026-07-06",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5890,
+      "name": "Ottica Lux - Digitalizzazione",
+      "partner": "Ottica Lux",
+      "user": "Luca Realdon",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-07-06",
+      "stageUpd": "2026-07-06",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5894,
+      "name": "Opportunità per MIPU MACHINE CARE S.R.L. SOCIETA' BENEFIT",
+      "partner": "MIPU MACHINE CARE S.R.L. SOCIETA' BENEFIT",
+      "user": "Nicola Sartore",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 6000,
+      "created": "2026-07-06",
+      "stageUpd": "2026-07-06",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5903,
+      "name": "Athesys S.r.l. - Workshop di validazione",
+      "partner": "Athesys S.r.l.",
+      "user": "Guido Tessari",
+      "stage": "In analisi",
+      "prio": 0,
+      "tags": [
+        "Digiduu - Workshop"
+      ],
+      "rev": 3500,
+      "created": "2026-07-14",
+      "stageUpd": "2026-07-20",
+      "updated": "2026-11-04",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5904,
+      "name": "Cabbia Group S.r.l.  - E-commerce",
+      "partner": "Cabbia Group S.r.l.",
+      "user": "Nicola Sartore",
+      "stage": "Segnalibro",
+      "prio": 0,
+      "tags": [],
+      "rev": 9000,
+      "created": "2026-07-15",
+      "stageUpd": "2026-07-20",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5908,
+      "name": "Secco Sistemi S.p.A. - Migrazione v19",
+      "partner": "Secco Sistemi S.p.A.",
+      "user": "Guido Tessari",
+      "stage": "Proposta",
+      "prio": 2,
+      "tags": [
+        "Digiduu - Sviluppo"
+      ],
+      "rev": 4900,
+      "created": "2026-07-20",
+      "stageUpd": "2026-08-24",
+      "updated": "2026-09-04",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5911,
+      "name": "Secco Sistemi S.p.A. - REVISIONE PROCESSO SINCRONIZZAZIONE ORDINI",
+      "partner": "Secco Sistemi S.p.A.",
+      "user": "Guido Tessari",
+      "stage": "Proposta",
+      "prio": 2,
+      "tags": [
+        "Digiduu - Sviluppo"
+      ],
+      "rev": 5500,
+      "created": "2026-07-20",
+      "stageUpd": "2026-07-23",
+      "updated": "2026-10-23",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5916,
+      "name": "Schueco - Modifica piattaforma ordini",
+      "partner": "Schueco PWS Italia S.r.l.",
+      "user": "Guido Tessari",
+      "stage": "Segnalibro",
+      "prio": 1,
+      "tags": [
+        "Digiduu - Sviluppo"
+      ],
+      "rev": 3500,
+      "created": "2026-07-20",
+      "stageUpd": "2026-11-13",
+      "updated": "2026-11-13",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5918,
+      "name": "Opportunità per Si Vola S.r.l. Unipersonale  - Assistenza",
+      "partner": "Si Vola S.r.l. Unipersonale",
+      "user": "Nicola Sartore",
+      "stage": "Fare preventivo",
+      "prio": 0,
+      "tags": [],
+      "rev": 9600,
+      "created": "2026-07-23",
+      "stageUpd": "2026-11-16",
+      "updated": "2026-11-16",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5920,
+      "name": "Digiduu x Clever | Analisi dei Processi e Stack Software per la Gestione di Capodannoamilano.com",
+      "partner": "Clever Agency",
+      "user": "Fabiano Mason",
+      "stage": "In analisi",
+      "prio": 0,
+      "tags": [],
+      "rev": 15000,
+      "created": "2026-07-23",
+      "stageUpd": "2026-07-24",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5924,
+      "name": "Giuseppe Rossettini - Prenotazione Demo Odoo",
+      "partner": "Giuseppe Rossettini",
+      "user": "Nicola Sartore",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [
+        "Digiduu - Digiduers"
+      ],
+      "rev": 0,
+      "created": "2026-07-25",
+      "stageUpd": "2026-09-18",
+      "updated": "2026-09-29",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5928,
+      "name": "Tim per Ambico - Digitalizzazione con Odoo",
+      "partner": "Tim Spa",
+      "user": "Luca Realdon",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-07-27",
+      "stageUpd": "2026-08-24",
+      "updated": "2026-08-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5930,
+      "name": "Emilav - Demo Odoo",
+      "partner": "Emilav",
+      "user": "Guido Tessari",
+      "stage": "Proposta",
+      "prio": 2,
+      "tags": [
+        "Analisi"
+      ],
+      "rev": 15000,
+      "created": "2026-07-28",
+      "stageUpd": "2026-09-28",
+      "updated": "2026-09-28",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5940,
+      "name": "Sebastiano Fasolini - Prenotazione Demo Odoo",
+      "partner": "Sebastiano Fasolini",
+      "user": "Nicola Sartore",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [
+        "Starter Pack"
+      ],
+      "rev": 0,
+      "created": "2026-08-04",
+      "stageUpd": "2026-09-18",
+      "updated": "2026-09-29",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5942,
+      "name": "Cofi srl - Presa in carico Istanza - Workshop",
+      "partner": "Cofi srl",
+      "user": "Nicola Sartore",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [
+        "Digiduu - Workshop"
+      ],
+      "rev": 3500,
+      "created": "2026-08-11",
+      "stageUpd": "2026-08-24",
+      "updated": "2026-09-29",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5949,
+      "name": "Tim per Greci Alimentari S.p.A. - Demo Odoo",
+      "partner": "Greci Alimentari S.p.A.",
+      "user": "Nicola Sartore",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [
+        "Digiduu - Workshop",
+        "Digiduu - Progetto custom"
+      ],
+      "rev": 18000,
+      "created": "2026-08-26",
+      "stageUpd": "2026-09-15",
+      "updated": "2026-11-09",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5950,
+      "name": "G.M.A. S.r.l. - Verifica duplicati",
+      "partner": "G.M.A. S.r.l.",
+      "user": "Guido Tessari",
+      "stage": "Da ripescare",
+      "prio": 1,
+      "tags": [
+        "Digiduu - Sviluppo"
+      ],
+      "rev": 500,
+      "created": "2026-08-27",
+      "stageUpd": "2026-10-19",
+      "updated": "2026-10-19",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5960,
+      "name": "Nikom - ERP",
+      "partner": "Nikom",
+      "user": "Nicola Sartore",
+      "stage": "Demo",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-09-03",
+      "stageUpd": "2026-09-10",
+      "updated": "2026-09-11",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5963,
+      "name": "Trendcolor - Erp",
+      "partner": "Trendcolor",
+      "user": "Luca Realdon",
+      "stage": "Fare preventivo",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-09-07",
+      "stageUpd": "2026-09-07",
+      "updated": "2026-09-07",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5966,
+      "name": "ALUNOVA SRL - Contabilità",
+      "partner": "ALUNOVA SRL",
+      "user": "Luca Realdon",
+      "stage": "Fare preventivo",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-09-07",
+      "stageUpd": "2026-09-07",
+      "updated": "2026-09-07",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5967,
+      "name": "Bucci Composites - ERP",
+      "partner": "Bucci Composites",
+      "user": "Luca Realdon",
+      "stage": "Fare preventivo",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-09-07",
+      "stageUpd": "2026-09-07",
+      "updated": "2026-09-07",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5968,
+      "name": "Torino Aerospace - ERP",
+      "partner": "Torino Aerospace",
+      "user": "Luca Realdon",
+      "stage": "Fare preventivo",
+      "prio": 0,
+      "tags": [
+        "Digiduu - Progetto custom"
+      ],
+      "rev": 0,
+      "created": "2026-09-07",
+      "stageUpd": "2026-09-07",
+      "updated": "2026-10-19",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5969,
+      "name": "G.M.A. S.r.l. - Sviluppo pianificazione veicoli e attrezzature",
+      "partner": "G.M.A. S.r.l.",
+      "user": "Guido Tessari",
+      "stage": "Segnalibro",
+      "prio": 0,
+      "tags": [
+        "Digiduu - Sviluppo"
+      ],
+      "rev": 5000,
+      "created": "2026-09-09",
+      "stageUpd": "2026-10-02",
+      "updated": "2026-11-16",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5971,
+      "name": "Campagnolo Packaging Systems S.r.l.",
+      "partner": "Campagnolo Packaging Systems S.r.l.",
+      "user": "Nicola Sartore",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [
+        "Digiduu - Workshop"
+      ],
+      "rev": 3500,
+      "created": "2026-09-10",
+      "stageUpd": "2026-10-01",
+      "updated": "2026-10-01",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5972,
+      "name": "Arena Impianti S.r.l. - Implementazione Odoo",
+      "partner": "Arena Impianti S.r.l.",
+      "user": "Nicola Sartore",
+      "stage": "In analisi",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-09-10",
+      "stageUpd": "2026-09-15",
+      "updated": "2026-09-15",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5975,
+      "name": "Potenziale cliente segnalato da Intesys - Odoo Produzione",
+      "partner": "Potenziale cliente segnalato da Intesys",
+      "user": "Luca Realdon",
+      "stage": "In analisi",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-09-15",
+      "stageUpd": "2026-09-15",
+      "updated": "2026-09-15",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5978,
+      "name": "LMA S.r.l. Aerospace Technology - Implementazione Odoo",
+      "partner": "LMA S.r.l. Aerospace Technology",
+      "user": "Luca Realdon",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [],
+      "rev": 200000,
+      "created": "2026-09-17",
+      "stageUpd": "2026-10-26",
+      "updated": "2026-10-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5988,
+      "name": "Opportunità per Fabio Civiero S.r.l.",
+      "partner": "Fabio Civiero S.r.l.",
+      "user": "Nicola Sartore",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [
+        "Starter Pack"
+      ],
+      "rev": 18000,
+      "created": "2026-09-28",
+      "stageUpd": "2026-10-14",
+      "updated": "2026-10-14",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5989,
+      "name": "Fondazione Teatro Comunale di Vicenza - Demo Odoo",
+      "partner": "Fondazione Teatro Comunale di Vicenza",
+      "user": "Nicola Sartore",
+      "stage": "Demo",
+      "prio": 0,
+      "tags": [],
+      "rev": 30000,
+      "created": "2026-09-29",
+      "stageUpd": "2026-10-26",
+      "updated": "2026-10-26",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 5994,
+      "name": "Gap Service S.r.l. - Aggiornamento versione",
+      "partner": "Gap Service S.r.l.",
+      "user": "Guido Tessari",
+      "stage": "In analisi",
+      "prio": 1,
+      "tags": [
+        "Aggiornamento di Versione"
+      ],
+      "rev": 0,
+      "created": "2026-09-29",
+      "stageUpd": "2026-10-01",
+      "updated": "2026-10-05",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6000,
+      "name": "Galileo Visionary District - Starter Pack",
+      "partner": "Galileo Visionary District",
+      "user": "Guido Tessari",
+      "stage": "Fare preventivo",
+      "prio": 1,
+      "tags": [
+        "Starter Pack"
+      ],
+      "rev": 9800,
+      "created": "2026-10-05",
+      "stageUpd": "2026-10-05",
+      "updated": "2026-10-05",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6001,
+      "name": "FRAL SRL - Implementazione Odoo",
+      "partner": "FRAL SRL",
+      "user": "Andrea Menegotto",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [
+        "Digiduu - Analisi"
+      ],
+      "rev": 0,
+      "created": "2026-10-05",
+      "stageUpd": "2026-10-05",
+      "updated": "2026-10-05",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6002,
+      "name": "Vetrate Panoramiche Italiane - Implementazione Odoo -",
+      "partner": "Vetrate Panoramiche Italiane - Implementazione Odoo",
+      "user": "Andrea Menegotto",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [
+        "Digiduu - Analisi"
+      ],
+      "rev": 0,
+      "created": "2026-10-05",
+      "stageUpd": "2026-10-05",
+      "updated": "2026-10-05",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6006,
+      "name": "Mop Ipermercati - Opportunità",
+      "partner": "Mop Ipermercati",
+      "user": "Luca Realdon",
+      "stage": "Fissare incontro",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-10-08",
+      "stageUpd": "2026-10-08",
+      "updated": "2026-10-19",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6008,
+      "name": "Alice surgelati",
+      "partner": "Alice Surgelati Srl",
+      "user": "Gianluca Mamusi",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-10-09",
+      "stageUpd": "2026-10-09",
+      "updated": "2026-10-09",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6009,
+      "name": "Lucianu Trasporti",
+      "partner": "NUOVA LOGISTICA LUCIANU S.R.L.",
+      "user": "Gianluca Mamusi",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-10-09",
+      "stageUpd": "2026-10-09",
+      "updated": "2026-10-09",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6010,
+      "name": "Treeffebi - Crm e Vendite",
+      "partner": "Treeffebi",
+      "user": "Guido Tessari",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [
+        "Starter Pack"
+      ],
+      "rev": 9800,
+      "created": "2026-10-09",
+      "stageUpd": "2026-10-09",
+      "updated": "2026-11-13",
+      "deadline": "2027-01-11",
+      "status": "open"
+    },
+    {
+      "id": 6011,
+      "name": "Opportunità per Wedoo S.r.l. - Contabilità",
+      "partner": "Wedoo S.r.l.",
+      "user": "Luca Realdon",
+      "stage": "Fare preventivo",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-10-09",
+      "stageUpd": "2026-10-09",
+      "updated": "2026-10-09",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6012,
+      "name": "Opportunità per B4C S.r.l.",
+      "partner": "B4C S.r.l.",
+      "user": "Chiara Rossetto",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-10-12",
+      "stageUpd": "2026-10-19",
+      "updated": "2026-10-19",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6022,
+      "name": "Green has Italia spa -",
+      "partner": "Green has Italia spa",
+      "user": "Nicola Sartore",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-10-15",
+      "stageUpd": "2026-10-15",
+      "updated": "2026-11-02",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6023,
+      "name": "Agile Vision srl - Presentazione Odoo (Impact)",
+      "partner": "Agile Vision srl",
+      "user": "Guido Tessari",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-10-16",
+      "stageUpd": "2026-10-16",
+      "updated": "2026-10-23",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6024,
+      "name": "Induvation - Partnership",
+      "partner": "Induvation",
+      "user": "Luca Realdon",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-10-16",
+      "stageUpd": "2026-10-16",
+      "updated": "2026-10-16",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6026,
+      "name": "Ecms - Presentazione Odoo - Workshop",
+      "partner": "Ecms",
+      "user": "Guido Tessari",
+      "stage": "Fare preventivo",
+      "prio": 0,
+      "tags": [
+        "Digiduu - Workshop"
+      ],
+      "rev": 80000,
+      "created": "2026-10-16",
+      "stageUpd": "2026-11-13",
+      "updated": "2026-11-16",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6027,
+      "name": "Music Center srl - SW Magazzino",
+      "partner": "Music Center srl",
+      "user": "Nicola Sartore",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-10-16",
+      "stageUpd": "2026-10-16",
+      "updated": "2026-10-16",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6028,
+      "name": "Tenenga srl - Cambio gestionale",
+      "partner": "Tenenga srl",
+      "user": "Nicola Sartore",
+      "stage": "Demo",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-10-16",
+      "stageUpd": "2026-10-21",
+      "updated": "2026-10-21",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6029,
+      "name": "Bplus S.r.l. - Aggiornamento di versione",
+      "partner": "Bplus S.r.l.",
+      "user": "Nicola Sartore",
+      "stage": "In analisi",
+      "prio": 0,
+      "tags": [
+        "Aggiornamento di Versione"
+      ],
+      "rev": 0,
+      "created": "2026-10-19",
+      "stageUpd": "2026-10-21",
+      "updated": "2026-10-21",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6034,
+      "name": "Gruppo BEA - Odoo",
+      "partner": "Gruppo BEA",
+      "user": "Luca Realdon",
+      "stage": "Demo",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-10-19",
+      "stageUpd": "2026-10-19",
+      "updated": "2026-10-19",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6037,
+      "name": "Opportunità per EXTRA INFORMATICA S.R.L.",
+      "partner": "EXTRA INFORMATICA S.R.L.",
+      "user": "Gianluca Mamusi",
+      "stage": "Segnalibro",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-10-21",
+      "stageUpd": "2026-10-21",
+      "updated": "2026-10-27",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6039,
+      "name": "GENERAL RAY S.R.L. -",
+      "partner": "GENERAL RAY S.R.L.",
+      "user": "Gianluca Mamusi",
+      "stage": "Segnalibro",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-10-21",
+      "stageUpd": "2026-10-21",
+      "updated": "2026-11-03",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6042,
+      "name": "B.F. Automation S.r.l. - Gestione Evolutive",
+      "partner": "B.F. Automation S.r.l.",
+      "user": "Guido Tessari",
+      "stage": "Proposta",
+      "prio": 2,
+      "tags": [
+        "Digiduu - Sviluppo"
+      ],
+      "rev": 20000,
+      "created": "2026-10-22",
+      "stageUpd": "2026-10-23",
+      "updated": "2026-11-16",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6043,
+      "name": "ABOZZI S.R.L.",
+      "partner": "ABOZZI S.R.L.",
+      "user": "Gianluca Mamusi",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-10-22",
+      "stageUpd": "2026-10-22",
+      "updated": "2026-10-22",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6044,
+      "name": "FRATELLI TESTONI S.R.L. -",
+      "partner": "FRATELLI TESTONI S.R.L.",
+      "user": "Gianluca Mamusi",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-10-22",
+      "stageUpd": "2026-10-22",
+      "updated": "2026-10-22",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6045,
+      "name": "DAGA CARNI S.R.L. -",
+      "partner": "DAGA CARNI S.R.L.",
+      "user": "Gianluca Mamusi",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-10-22",
+      "stageUpd": "2026-10-22",
+      "updated": "2026-10-22",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6046,
+      "name": "CAVE CANTIERI S.R.L. -",
+      "partner": "CAVE CANTIERI S.R.L.",
+      "user": "Gianluca Mamusi",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-10-22",
+      "stageUpd": "2026-10-22",
+      "updated": "2026-10-22",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6047,
+      "name": "CONSULENZE E GESTIONI S.R.L. -",
+      "partner": "CONSULENZE E GESTIONI S.R.L.",
+      "user": "Gianluca Mamusi",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-10-22",
+      "stageUpd": "2026-10-22",
+      "updated": "2026-10-22",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6048,
+      "name": "SAFETY ENERGY S.R.L. -",
+      "partner": "SAFETY ENERGY S.R.L.",
+      "user": "Gianluca Mamusi",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-10-22",
+      "stageUpd": "2026-10-22",
+      "updated": "2026-10-22",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6049,
+      "name": "TUTTOMOTO S.R.L. -",
+      "partner": "TUTTOMOTO S.R.L.",
+      "user": "Gianluca Mamusi",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-10-22",
+      "stageUpd": "2026-10-22",
+      "updated": "2026-10-22",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6050,
+      "name": "GTA S.R.L. -",
+      "partner": "GTA S.R.L.",
+      "user": "Gianluca Mamusi",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-10-22",
+      "stageUpd": "2026-10-22",
+      "updated": "2026-10-22",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6073,
+      "name": "Confcooperative",
+      "partner": "—",
+      "user": "Gianluca Mamusi",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-10-27",
+      "stageUpd": "2026-10-27",
+      "updated": "2026-10-27",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6075,
+      "name": "GSG S.R.L. - Presentazione odoo",
+      "partner": "GSG S.R.L.",
+      "user": "Guido Tessari",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-10-28",
+      "stageUpd": "2026-10-28",
+      "updated": "2026-10-28",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6076,
+      "name": "Stefano Marchi e Simone Carpanese - Presentazione Odoo",
+      "partner": "Mystand24",
+      "user": "Guido Tessari",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-10-28",
+      "stageUpd": "2026-10-28",
+      "updated": "2026-11-03",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6078,
+      "name": "SmartGlass- Demo std Odoo",
+      "partner": "Stefano Pasin",
+      "user": "Guido Tessari",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-11-03",
+      "stageUpd": "2026-11-10",
+      "updated": "2026-11-10",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6079,
+      "name": "Arky srl - Template Contratti Automatici",
+      "partner": "Arky Srl",
+      "user": "Nicola Sartore",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [],
+      "rev": 5925,
+      "created": "2026-11-04",
+      "stageUpd": "2026-11-09",
+      "updated": "2026-11-13",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6080,
+      "name": "Arky Srl - Esportazione Dati",
+      "partner": "Arky Srl",
+      "user": "Nicola Sartore",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [],
+      "rev": 3200,
+      "created": "2026-11-04",
+      "stageUpd": "2026-11-09",
+      "updated": "2026-11-13",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6081,
+      "name": "Arky Srl - Gestione pagamenti",
+      "partner": "Arky Srl",
+      "user": "Nicola Sartore",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [],
+      "rev": 45000,
+      "created": "2026-11-04",
+      "stageUpd": "2026-11-09",
+      "updated": "2026-11-13",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6082,
+      "name": "Proludis Giocattoli srl - ERP distribuzione",
+      "partner": "Proludis Giocattoli srl",
+      "user": "Nicola Sartore",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [],
+      "rev": 63500,
+      "created": "2026-11-04",
+      "stageUpd": "2026-11-09",
+      "updated": "2026-11-09",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6083,
+      "name": "CMF Spa - Gestionale da cambiare per produzione",
+      "partner": "C.M.F. Spa",
+      "user": "Gianluca Mamusi",
+      "stage": "Fissare incontro",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-11-04",
+      "stageUpd": "2026-11-04",
+      "updated": "2026-11-13",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6086,
+      "name": "Pure Tech - Implementazione Odoo",
+      "partner": "Pure Tech",
+      "user": "Andrea Menegotto",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-11-06",
+      "stageUpd": "2026-11-06",
+      "updated": "2026-11-10",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6087,
+      "name": "Numero protocollo su Preventivi- Sync Ordini - QlikView",
+      "partner": "Secco Sistemi S.p.A.",
+      "user": "Guido Tessari",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [],
+      "rev": 4200,
+      "created": "2026-11-06",
+      "stageUpd": "2026-11-06",
+      "updated": "2026-11-16",
+      "deadline": "2026-12-04",
+      "status": "open"
+    },
+    {
+      "id": 6091,
+      "name": "Serramenti Brombal S.r.l. -SRDP in Odoo 19",
+      "partner": "Serramenti Brombal S.r.l",
+      "user": "Nicola Sartore",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [
+        "Digiduu - Progetto custom"
+      ],
+      "rev": 11750,
+      "created": "2026-11-10",
+      "stageUpd": "2026-11-16",
+      "updated": "2026-11-16",
+      "deadline": "2026-11-30",
+      "status": "open"
+    },
+    {
+      "id": 6095,
+      "name": "Service43 S.r.l. - Contabilità",
+      "partner": "Service43 S.r.l.",
+      "user": "Guido Tessari",
+      "stage": "In analisi",
+      "prio": 0,
+      "tags": [],
+      "rev": 20000,
+      "created": "2026-11-11",
+      "stageUpd": "2026-11-13",
+      "updated": "2026-11-16",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6098,
+      "name": "Termoidraulica Roberto Bertoletti S.r.l. - Implementazione Odoo",
+      "partner": "Termoidraulica Roberto Bertoletti S.r.l.",
+      "user": "Guido Tessari",
+      "stage": "Fare preventivo",
+      "prio": 0,
+      "tags": [],
+      "rev": 70000,
+      "created": "2026-11-13",
+      "stageUpd": "2026-11-13",
+      "updated": "2026-11-16",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6102,
+      "name": "Mamilo Srl -",
+      "partner": "Mamilo Srl",
+      "user": "Nicola Sartore",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-11-16",
+      "stageUpd": "2026-11-16",
+      "updated": "2026-11-16",
+      "deadline": null,
+      "status": "open"
+    },
+    {
+      "id": 6104,
+      "name": "Schueco PWS Italia - Aggiornamento versione",
+      "partner": "Schueco PWS Italia S.r.l.",
+      "user": "Luca Realdon",
+      "stage": "Fare preventivo",
+      "prio": 2,
+      "tags": [],
+      "rev": 0,
+      "created": "2026-11-16",
+      "stageUpd": "2026-11-16",
+      "updated": "2026-11-16",
+      "deadline": "2026-11-30",
+      "status": "open"
+    },
+    {
+      "id": 4216,
+      "name": "Berti Pavimenti Legno S.n.c. - Progetto Crescita",
+      "partner": "BERTI PAVIMENTI LEGNO S.A.S. DI BERTI HOLDING S.R.L.",
+      "user": "Nicoletta Piazzetta",
+      "stage": "Vinta",
+      "prio": 0,
+      "tags": [],
+      "rev": 13400,
+      "closed": "2026-08-31",
+      "deadline": null,
+      "status": "won"
+    },
+    {
+      "id": 4953,
+      "name": "FCF Impianti S.r.l. - Affiancamento alla crescita 2026 + Assistenza",
+      "partner": "FCF Impianti S.r.l.",
+      "user": "Luca Realdon",
+      "stage": "Vinta",
+      "prio": 0,
+      "tags": [],
+      "rev": 212.5,
+      "closed": "2026-07-13",
+      "deadline": null,
+      "status": "won"
+    },
+    {
+      "id": 5025,
+      "name": "Irontech S.r.l. - Assistenza promemoria",
+      "partner": "Irontech S.r.l.",
+      "user": "Guido Tessari",
+      "stage": "Vinta",
+      "prio": 0,
+      "tags": [],
+      "rev": 7200,
+      "closed": "2026-07-07",
+      "deadline": null,
+      "status": "won"
+    },
+    {
+      "id": 5682,
+      "name": "Bertoletti group - Workshop",
+      "partner": "Termoidraulica Roberto Bertoletti S.r.l.",
+      "user": "Guido Tessari",
+      "stage": "Vinta",
+      "prio": 0,
+      "tags": [
+        "Digiduu - Workshop"
+      ],
+      "rev": 3500,
+      "closed": "2026-09-22",
+      "deadline": null,
+      "status": "won"
+    },
+    {
+      "id": 5694,
+      "name": "Adami Teloni - Continuazione",
+      "partner": "Adami Teloni",
+      "user": "Gianluca Geremia",
+      "stage": "Vinta",
+      "prio": 0,
+      "tags": [],
+      "rev": 750,
+      "closed": "2026-08-24",
+      "deadline": null,
+      "status": "won"
+    },
+    {
+      "id": 5711,
+      "name": "Irontech S.r.l. - Fase 3 di progetto da confermare",
+      "partner": "Irontech S.r.l.",
+      "user": "Guido Tessari",
+      "stage": "Vinta",
+      "prio": 0,
+      "tags": [],
+      "rev": 26400,
+      "closed": "2026-07-07",
+      "deadline": null,
+      "status": "won"
+    },
+    {
+      "id": 5732,
+      "name": "Essemec S.r.l. - Workshop CRM",
+      "partner": "Essemec S.r.l.",
+      "user": "Nicola Sartore",
+      "stage": "Vinta",
+      "prio": 0,
+      "tags": [],
+      "rev": 15470,
+      "closed": "2026-07-31",
+      "deadline": null,
+      "status": "won"
+    },
+    {
+      "id": 5801,
+      "name": "Alba S.r.l. - Assistenza + giornate a consumo",
+      "partner": "Alba S.r.l.",
+      "user": "Guido Tessari",
+      "stage": "Vinta",
+      "prio": 3,
+      "tags": [
+        "Assistenza"
+      ],
+      "rev": 7200,
+      "closed": "2026-10-19",
+      "deadline": null,
+      "status": "won"
+    },
+    {
+      "id": 5811,
+      "name": "Arky - affiancamento giugno e luglio",
+      "partner": "Arky Srl",
+      "user": "Guido Tessari",
+      "stage": "Vinta",
+      "prio": 0,
+      "tags": [],
+      "rev": 3800,
+      "closed": "2026-07-20",
+      "deadline": null,
+      "status": "won"
+    },
+    {
+      "id": 5815,
+      "name": "B2B - Istanza separata",
+      "partner": "B2B 72 Srl",
+      "user": "Nicola Sartore",
+      "stage": "Vinta",
+      "prio": 0,
+      "tags": [],
+      "rev": 55000,
+      "closed": "2026-09-23",
+      "deadline": null,
+      "status": "won"
+    },
+    {
+      "id": 5826,
+      "name": "Soul - Gestione Pratiche sulla v19",
+      "partner": "Soul Srl",
+      "user": "Nicola Sartore",
+      "stage": "Vinta",
+      "prio": 0,
+      "tags": [
+        "Digiduu - Progetto custom"
+      ],
+      "rev": 10500,
+      "closed": "2026-11-09",
+      "deadline": null,
+      "status": "won"
+    },
+    {
+      "id": 5876,
+      "name": "Edilklima - Affiancamento Digital",
+      "partner": "EDILKLIMA GROUP S.p.A.",
+      "user": "Guido Tessari",
+      "stage": "Vinta",
+      "prio": 0,
+      "tags": [],
+      "rev": 950,
+      "closed": "2026-07-15",
+      "deadline": null,
+      "status": "won"
+    },
+    {
+      "id": 5878,
+      "name": "IMA SERVIZI - Workshop di validazione",
+      "partner": "IMA SERVIZI",
+      "user": "Luca Realdon",
+      "stage": "Vinta",
+      "prio": 0,
+      "tags": [],
+      "rev": 3500,
+      "closed": "2026-07-13",
+      "deadline": null,
+      "status": "won"
+    },
+    {
+      "id": 5888,
+      "name": "Arky Srl - Righe Ordine",
+      "partner": "Arky Srl",
+      "user": "Guido Tessari",
+      "stage": "Vinta",
+      "prio": 0,
+      "tags": [],
+      "rev": 4500,
+      "closed": "2026-07-24",
+      "deadline": null,
+      "status": "won"
+    },
+    {
+      "id": 5896,
+      "name": "Gruppo E43 - Implementazione Odoo",
+      "partner": "Service43 S.r.l.",
+      "user": "Guido Tessari",
+      "stage": "Vinta",
+      "prio": 0,
+      "tags": [
+        "Digiduu - Progetto custom"
+      ],
+      "rev": 42200,
+      "closed": "2026-09-22",
+      "deadline": null,
+      "status": "won"
+    },
+    {
+      "id": 5897,
+      "name": "G.M.A. S.r.l. - Progetto Contablità",
+      "partner": "G.M.A. S.r.l.",
+      "user": "Guido Tessari",
+      "stage": "Vinta",
+      "prio": 0,
+      "tags": [
+        "Digiduu - Progetto custom"
+      ],
+      "rev": 44100,
+      "closed": "2026-09-09",
+      "deadline": null,
+      "status": "won"
+    },
+    {
+      "id": 5902,
+      "name": "Opportunità per Synethik Engineering S.r.l.",
+      "partner": "Synethik Engineering S.r.l.",
+      "user": "Nicola Sartore",
+      "stage": "Vinta",
+      "prio": 0,
+      "tags": [],
+      "rev": 1500,
+      "closed": "2026-07-24",
+      "deadline": null,
+      "status": "won"
+    },
+    {
+      "id": 5905,
+      "name": "Cabbia Group S.r.l.  - Fine tuning Istanza",
+      "partner": "Cabbia Group S.r.l.",
+      "user": "Nicola Sartore",
+      "stage": "Vinta",
+      "prio": 0,
+      "tags": [],
+      "rev": 6450,
+      "closed": "2026-07-24",
+      "deadline": null,
+      "status": "won"
+    },
+    {
+      "id": 5937,
+      "name": "Opportunità per AMG S.p.A. - Roll Out",
+      "partner": "AMG S.p.A.",
+      "user": "Luca Realdon",
+      "stage": "Vinta",
+      "prio": 0,
+      "tags": [],
+      "rev": 187900,
+      "closed": "2026-10-05",
+      "deadline": null,
+      "status": "won"
+    },
+    {
+      "id": 5939,
+      "name": "Irontech S.r.l. - INTERVENTI DI MIGLIORAMENTO",
+      "partner": "Irontech S.r.l.",
+      "user": "Guido Tessari",
+      "stage": "Vinta",
+      "prio": 0,
+      "tags": [],
+      "rev": 60000,
+      "closed": "2026-08-24",
+      "deadline": null,
+      "status": "won"
+    },
+    {
+      "id": 5945,
+      "name": "BERTI PAVIMENTI LEGNO S.A.S. DI BERTI HOLDING S.R.L.",
+      "partner": "BERTI PAVIMENTI LEGNO S.A.S. DI BERTI HOLDING S.R.L.",
+      "user": "Guido Tessari",
+      "stage": "Vinta",
+      "prio": 0,
+      "tags": [],
+      "rev": 400,
+      "closed": "2026-09-02",
+      "deadline": null,
+      "status": "won"
+    },
+    {
+      "id": 5947,
+      "name": "Officine Zoppelletto - Modifica CRM",
+      "partner": "Officine Zoppelletto S.r.l.",
+      "user": "Guido Tessari",
+      "stage": "Vinta",
+      "prio": 2,
+      "tags": [
+        "Digiduu - Sviluppo"
+      ],
+      "rev": 2900,
+      "closed": "2026-10-19",
+      "deadline": null,
+      "status": "won"
+    },
+    {
+      "id": 5961,
+      "name": "Arky Srl - Modifica Listini",
+      "partner": "Arky Srl",
+      "user": "Nicola Sartore",
+      "stage": "Vinta",
+      "prio": 1,
+      "tags": [],
+      "rev": 1250,
+      "closed": "2026-10-19",
+      "deadline": null,
+      "status": "won"
+    },
+    {
+      "id": 5973,
+      "name": "Proludis Giocattoli srl - Workshop",
+      "partner": "Proludis Giocattoli srl",
+      "user": "Nicola Sartore",
+      "stage": "Vinta",
+      "prio": 0,
+      "tags": [],
+      "rev": 3000,
+      "closed": "2026-09-18",
+      "deadline": null,
+      "status": "won"
+    },
+    {
+      "id": 5974,
+      "name": "IMA SERVIZI - Contabilità e aggiornamento",
+      "partner": "IMA SERVIZI",
+      "user": "Guido Tessari",
+      "stage": "Vinta",
+      "prio": 0,
+      "tags": [],
+      "rev": 56570,
+      "closed": "2026-10-05",
+      "deadline": null,
+      "status": "won"
+    },
+    {
+      "id": 5977,
+      "name": "Schueco PSW Italia - Aggiornamento Piattaforma Ordini",
+      "partner": "Schueco PWS Italia S.r.l.",
+      "user": "Luca Realdon",
+      "stage": "Vinta",
+      "prio": 0,
+      "tags": [],
+      "rev": 5500,
+      "closed": "2026-10-27",
+      "deadline": null,
+      "status": "won"
+    },
+    {
+      "id": 5983,
+      "name": "Serramenti Brombal S.r.l. - Integrazione Odoo-Insightly Fase 2",
+      "partner": "Serramenti Brombal S.r.l",
+      "user": "Guido Tessari",
+      "stage": "Vinta",
+      "prio": 2,
+      "tags": [
+        "Digiduu - Sviluppo"
+      ],
+      "rev": 9000,
+      "closed": "2026-09-28",
+      "deadline": null,
+      "status": "won"
+    },
+    {
+      "id": 1421,
+      "name": "Digife - Partnership",
+      "partner": "—",
+      "user": "Chiara Rossetto",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-10-19",
+      "lostReason": "—",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 1425,
+      "name": "Hevelop - Partnership",
+      "partner": "Hevelop",
+      "user": "Luca Realdon",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-10-19",
+      "lostReason": "—",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 1427,
+      "name": "Yuppi - Partnership",
+      "partner": "Yuppy S.r.l.",
+      "user": "Luca Realdon",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-10-19",
+      "lostReason": "—",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 1521,
+      "name": "Fabio Anselmi - Potenziale Partnership",
+      "partner": "Golden Group Veneto, Fabio Anselmi",
+      "user": "Chiara Rossetto",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-10-19",
+      "lostReason": "Passato troppo tempo",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 1525,
+      "name": "Ivan Gambaccini - Potenziale partner",
+      "partner": "Ivan Gambaccini",
+      "user": "Luca Realdon",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-10-19",
+      "lostReason": "Passato troppo tempo",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 4145,
+      "name": "ELITlab srl - CRM Odoo",
+      "partner": "ELITlab srl",
+      "user": "Nicoletta Piazzetta",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-11-16",
+      "lostReason": "Nessuna risposta",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 4151,
+      "name": "Autostrade Alto Adriatico - Odoo",
+      "partner": "Autostrade Alto Adriatico",
+      "user": "Luca Realdon",
+      "stage": "Chiusa persa",
+      "prio": 0,
+      "tags": [],
+      "rev": 100000,
+      "closed": "2026-10-08",
+      "lostReason": "Continuano con partner attuale",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 4389,
+      "name": "Centro Sicurezza Consulenze - Implementazione Odoo",
+      "partner": "Centro Sicurezza Consulenze",
+      "user": "Luca Realdon",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-10-28",
+      "lostReason": "Nessuna risposta",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 4424,
+      "name": "Pro S.r.l. - Odoo",
+      "partner": "Pro Srl",
+      "user": "Nicola Sartore",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 40000,
+      "closed": "2026-10-02",
+      "lostReason": "Troppo costoso",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 4426,
+      "name": "APRUTIUM PETFOOD SB srl SOCIETA' A RESPONSABILITA' LIMITATA - iper pet - amicus mangimi - Implementazione Odoo",
+      "partner": "APRUTIUM PETFOOD SB srl SOCIETA' A RESPONSABILITA' LIMITATA - iper pet - amicus mangimi",
+      "user": "Marilù Di Donato",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-10-19",
+      "lostReason": "Passato troppo tempo",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 4444,
+      "name": "Massimo Cavallari -",
+      "partner": "Studio Cavallari, massimo cavallari",
+      "user": "Nicola Sartore",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-10-02",
+      "lostReason": "Mancano persone/competenze",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 4497,
+      "name": "OCRA per Pertici - CRM",
+      "partner": "OCRA Srl",
+      "user": "Luca Realdon",
+      "stage": "In analisi",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-10-19",
+      "lostReason": "Non era cliente Digiduu",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 4934,
+      "name": "CLC Scientifc srl -",
+      "partner": "CLC Scientifc srl",
+      "user": "Guido Tessari",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 20000,
+      "closed": "2026-10-02",
+      "lostReason": "Troppo costoso",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 4957,
+      "name": "Montec S.r.l. - Affiancamento Crescita 2026",
+      "partner": "Montec S.r.l.",
+      "user": "Luca Realdon",
+      "stage": "Fare preventivo",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-10-19",
+      "lostReason": "Nuova opportunità",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 4961,
+      "name": "OCRA per Sirmax - Implementazione Odoo",
+      "partner": "Sirmax",
+      "user": "Luca Realdon",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-10-19",
+      "lostReason": "Non era cliente Digiduu",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 4983,
+      "name": "Palazzani Industrie SpA - Implementazione Odoo",
+      "partner": "Palazzani Industrie S.p.A., Francesco Zola",
+      "user": "Nicola Sartore",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [
+        "Digiduu - Progetto custom"
+      ],
+      "rev": 140000,
+      "closed": "2026-10-26",
+      "lostReason": "Mancano persone/competenze",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5013,
+      "name": "Andrea Pilotto - Digiduers",
+      "partner": "Wow Solution S.r.l., Andrea Pilotto",
+      "user": "Luca Realdon",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-10-19",
+      "lostReason": "Cambiato idea",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5030,
+      "name": "CRE - Richiesta quotazione gestionale",
+      "partner": "Cre engineering srl, Katia Visioli",
+      "user": "Luca Realdon",
+      "stage": "Fare preventivo",
+      "prio": 0,
+      "tags": [],
+      "rev": 130000,
+      "closed": "2026-10-08",
+      "lostReason": "Troppo costoso",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5608,
+      "name": "Alfieri Autonoleggio - Gestionale BT",
+      "partner": "Alfieri S.r.l.",
+      "user": "Andrea Menegotto",
+      "stage": "Fare preventivo",
+      "prio": 0,
+      "tags": [],
+      "rev": 100000,
+      "closed": "2026-10-28",
+      "lostReason": "Non è una priorità aziendale",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5614,
+      "name": "Secco Sistemi S.p.A. - Formazione Odoo",
+      "partner": "Secco Sistemi S.p.A.",
+      "user": "Luca Realdon",
+      "stage": "Fissare incontro",
+      "prio": 0,
+      "tags": [],
+      "rev": 3000,
+      "closed": "2026-10-19",
+      "lostReason": "Nuova opportunità",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5626,
+      "name": "Flavio Panato Allware -",
+      "partner": "Allware",
+      "user": "Guido Tessari",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-10-02",
+      "lostReason": "Troppo costoso",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5657,
+      "name": "Politek Srl - migrazione Zelo Erp Odoo",
+      "partner": "Politek Srl",
+      "user": "Nicola Sartore",
+      "stage": "Segnalibro",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-10-19",
+      "lostReason": "Scelto altra software house",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5663,
+      "name": "Pagnan S.r.l - Odoo",
+      "partner": "Pagnan S.r.l",
+      "user": "Guido Tessari",
+      "stage": "Demo",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-10-27",
+      "lostReason": "Nessuna risposta",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5679,
+      "name": "IND.I.A. SPA - GONZATO GROUP -",
+      "partner": "IND.I.A. SPA - GONZATO GROUP",
+      "user": "Nicola Sartore",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-09-29",
+      "lostReason": "Passato troppo tempo",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5680,
+      "name": "SIM informatica srl - Cambio Partners",
+      "partner": "SIM informatica srl",
+      "user": "Guido Tessari",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 25000,
+      "closed": "2026-09-17",
+      "lostReason": "Scelto altra software house",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5695,
+      "name": "Alba S.r.l. - Continuazione Crescita",
+      "partner": "Alba S.r.l.",
+      "user": "Nicoletta Piazzetta",
+      "stage": "Fare preventivo",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-10-26",
+      "lostReason": "Nuova opportunità",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5713,
+      "name": "Silla Industries - Cambio Partner",
+      "partner": "Silla Industries",
+      "user": "Guido Tessari",
+      "stage": "Fare preventivo",
+      "prio": 1,
+      "tags": [
+        "Analisi"
+      ],
+      "rev": 0,
+      "closed": "2026-09-15",
+      "lostReason": "Nessuna risposta",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5720,
+      "name": "Alex Di Tommaso - Prenotazione Demo Odoo",
+      "partner": "Alex Di Tommaso",
+      "user": "Nicola Sartore",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-09-29",
+      "lostReason": "Nessuna risposta",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5721,
+      "name": "Stampe Contabilità v18",
+      "partner": "DQS Italia S.r.l.",
+      "user": "Nicola Sartore",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-09-29",
+      "lostReason": "Nessuna risposta",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5734,
+      "name": "v-moto -",
+      "partner": "v-moto",
+      "user": "Nicola Sartore",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [
+        "Digiduu - Progetto custom"
+      ],
+      "rev": 64000,
+      "closed": "2026-10-19",
+      "lostReason": "Cambiato idea",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5736,
+      "name": "Pietre di Rapolano - Migrazione v10oca-v19sh",
+      "partner": "Pietre di Rapolano",
+      "user": "Guido Tessari",
+      "stage": "Proposta",
+      "prio": 1,
+      "tags": [
+        "Digiduu - Workshop"
+      ],
+      "rev": 0,
+      "closed": "2026-09-30",
+      "lostReason": "Troppo costoso",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5764,
+      "name": "IMO SRL - STR PACK CRM",
+      "partner": "IMO SRL",
+      "user": "Nicola Sartore",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 27850,
+      "closed": "2026-10-16",
+      "lostReason": "Non è una priorità aziendale",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5817,
+      "name": "UM Tools S.r.l. - Odoo",
+      "partner": "UM Tools S.r.l.",
+      "user": "Andrea Menegotto",
+      "stage": "Demo",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-10-08",
+      "lostReason": "Cambiato idea",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5867,
+      "name": "Mcallinn - Formazione Odoo",
+      "partner": "Mcallinn",
+      "user": "Guido Tessari",
+      "stage": "Qualifica",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-09-03",
+      "lostReason": "Cambiato idea",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5899,
+      "name": "GEON srl - workshop",
+      "partner": "GEON srl",
+      "user": "Nicola Sartore",
+      "stage": "Chiusa persa",
+      "prio": 0,
+      "tags": [],
+      "rev": 3500,
+      "closed": "2026-09-07",
+      "lostReason": "Scelto altro partner Odoo",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5909,
+      "name": "ANGEL MERCATONE DUE S.R.L. - Presa in carico istanza, cambio patner",
+      "partner": "ANGEL MERCATONE DUE S.R.L.",
+      "user": "Nicola Sartore",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [
+        "Digiduu - Progetto custom"
+      ],
+      "rev": 0,
+      "closed": "2026-10-19",
+      "lostReason": "Continuano con partner attuale",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5913,
+      "name": "Secco Sistemi S.p.A. - DASHBOARD UT",
+      "partner": "—",
+      "user": "Guido Tessari",
+      "stage": "Da ripescare",
+      "prio": 1,
+      "tags": [
+        "Digiduu - Sviluppo"
+      ],
+      "rev": 8700,
+      "closed": "2026-10-26",
+      "lostReason": "Troppo costoso",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5934,
+      "name": "Arky Srl - affiancamento agosto - settembre - ottobre",
+      "partner": "Arky Srl",
+      "user": "Guido Tessari",
+      "stage": "Proposta",
+      "prio": 1,
+      "tags": [
+        "Affiancamento"
+      ],
+      "rev": 5700,
+      "closed": "2026-10-19",
+      "lostReason": "Cambiato idea",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5943,
+      "name": "Nicola Pozzan - Prenotazione Demo Odoo",
+      "partner": "Nicola Pozzan",
+      "user": "Nicola Sartore",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-09-29",
+      "lostReason": "Nessuna risposta",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5944,
+      "name": "giorgio pizzone  - Prenotazione Demo Odoo",
+      "partner": "giorgio pizzone",
+      "user": "Nicola Sartore",
+      "stage": "Demo",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-11-05",
+      "lostReason": "Nessuna risposta",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5980,
+      "name": "WTS - Cambio partner",
+      "partner": "W.T.S. S.p.a.",
+      "user": "Nicola Sartore",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [
+        "Digiduu - Workshop"
+      ],
+      "rev": 10000,
+      "closed": "2026-11-05",
+      "lostReason": "Continuano con partner attuale",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5981,
+      "name": "GINEVRA MANFREDIN - Prenotazione Demo Odoo",
+      "partner": "GINEVRA MANFREDIN",
+      "user": "Guido Tessari",
+      "stage": "Da ripescare",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-10-02",
+      "lostReason": "Troppo costoso",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5984,
+      "name": "Silvia Gnecchi - Prenotazione demo",
+      "partner": "Silvia Gnecchi",
+      "user": "Guido Tessari",
+      "stage": "Nuova opportunità",
+      "prio": 1,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-09-23",
+      "lostReason": "Troppo costoso",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5990,
+      "name": "Systematica S.r.l. - Collegamento ERP",
+      "partner": "Systematica S.r.l.",
+      "user": "Guido Tessari",
+      "stage": "Nuova opportunità",
+      "prio": 1,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-10-21",
+      "lostReason": "Nessuna risposta",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5991,
+      "name": "Vlad Sustainable Food srl - Implementazione Odoo",
+      "partner": "Vlad Sustainable Food srl",
+      "user": "Guido Tessari",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-09-30",
+      "lostReason": "Troppo costoso",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5993,
+      "name": "Opportunità per Comunello Giulio SRL",
+      "partner": "Comunello Giulio SRL",
+      "user": "Nicola Sartore",
+      "stage": "Fissare incontro",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-10-28",
+      "lostReason": "Scelto altra software house",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 5998,
+      "name": "Laboratori70 - Implementazione Odoo",
+      "partner": "Laboratori70",
+      "user": "Guido Tessari",
+      "stage": "Demo",
+      "prio": 1,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-10-23",
+      "lostReason": "Nessuna risposta",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 6019,
+      "name": "Opportunità per Oliviero Tours S.r.l.",
+      "partner": "Oliviero Tours S.r.l.",
+      "user": "Chiara Rossetto",
+      "stage": "Proposta",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-10-19",
+      "lostReason": "Cambiato idea",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 6025,
+      "name": "Numeraway - Presentazione Odoo (Impact)",
+      "partner": "Numeraway",
+      "user": "Guido Tessari",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-11-09",
+      "lostReason": "Nessuna risposta",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 6030,
+      "name": "Trans HB - Presentazione Odoo (Impact)",
+      "partner": "Trans HB",
+      "user": "Guido Tessari",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-11-03",
+      "lostReason": "Nessuna risposta",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 6035,
+      "name": "Maison Bohemien Srl - Presentazione Odoo",
+      "partner": "Maison Bohemien Srl",
+      "user": "Guido Tessari",
+      "stage": "Nuova opportunità",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-11-09",
+      "lostReason": "Troppo costoso",
+      "deadline": null,
+      "status": "lost"
+    },
+    {
+      "id": 6041,
+      "name": "TECNOLOGIA MODERNA SARDA SOCIETA' A RESPONSABILITA' LIMITATA -",
+      "partner": "TECNOLOGIA MODERNA SARDA SOCIETA' A RESPONSABILITA' LIMITATA",
+      "user": "Gianluca Mamusi",
+      "stage": "Chiusa persa",
+      "prio": 0,
+      "tags": [],
+      "rev": 0,
+      "closed": "2026-10-27",
+      "lostReason": "—",
+      "deadline": null,
+      "status": "lost"
+    }
+  ],
+  "tracking": [
+    {
+      "lead": 6104,
+      "date": "2026-11-16",
+      "kind": "S",
+      "old": "Proposta",
+      "new": "Fare preventivo",
+      "author": "Chiara Rossetto"
+    },
+    {
+      "lead": 6104,
+      "date": "2026-11-16",
+      "kind": "S",
+      "old": "Nuova opportunità",
+      "new": "Proposta",
+      "author": "Chiara Rossetto"
+    },
+    {
+      "lead": 6087,
+      "date": "2026-11-16",
+      "kind": "U",
+      "old": "Antonio Maddalena",
+      "new": "Guido Tessari",
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 6042,
+      "date": "2026-11-16",
+      "kind": "R",
+      "old": 0,
+      "new": 20000,
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 6026,
+      "date": "2026-11-16",
+      "kind": "R",
+      "old": 0,
+      "new": 80000,
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 6098,
+      "date": "2026-11-16",
+      "kind": "R",
+      "old": 0,
+      "new": 70000,
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 6095,
+      "date": "2026-11-16",
+      "kind": "R",
+      "old": 0,
+      "new": 20000,
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 5969,
+      "date": "2026-11-16",
+      "kind": "R",
+      "old": 0,
+      "new": 5000,
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 5918,
+      "date": "2026-11-16",
+      "kind": "S",
+      "old": "Proposta",
+      "new": "Fare preventivo",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5918,
+      "date": "2026-11-16",
+      "kind": "R",
+      "old": 12000,
+      "new": 9600,
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5918,
+      "date": "2026-11-16",
+      "kind": "U",
+      "old": "Fabiano Mason",
+      "new": "Nicola Sartore",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6091,
+      "date": "2026-11-16",
+      "kind": "S",
+      "old": "Fare preventivo",
+      "new": "Proposta",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5753,
+      "date": "2026-11-13",
+      "kind": "S",
+      "old": "Demo",
+      "new": "Segnalibro",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5916,
+      "date": "2026-11-13",
+      "kind": "S",
+      "old": "In analisi",
+      "new": "Segnalibro",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6010,
+      "date": "2026-11-13",
+      "kind": "R",
+      "old": 0,
+      "new": 9800,
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6095,
+      "date": "2026-11-13",
+      "kind": "S",
+      "old": "Nuova opportunità",
+      "new": "In analisi",
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 6026,
+      "date": "2026-11-13",
+      "kind": "S",
+      "old": "Nuova opportunità",
+      "new": "Fare preventivo",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6026,
+      "date": "2026-11-13",
+      "kind": "U",
+      "old": "Nicola Sartore",
+      "new": "Guido Tessari",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6079,
+      "date": "2026-11-13",
+      "kind": "R",
+      "old": 5000,
+      "new": 5925,
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5024,
+      "date": "2026-11-12",
+      "kind": "S",
+      "old": "Fare preventivo",
+      "new": "Proposta",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5024,
+      "date": "2026-11-12",
+      "kind": "R",
+      "old": 0,
+      "new": 9600,
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5024,
+      "date": "2026-11-12",
+      "kind": "S",
+      "old": "Segnalibro",
+      "new": "Fare preventivo",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5024,
+      "date": "2026-11-12",
+      "kind": "U",
+      "old": "Andrea Menegotto",
+      "new": "Nicola Sartore",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6091,
+      "date": "2026-11-10",
+      "kind": "R",
+      "old": 0,
+      "new": 11750,
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6091,
+      "date": "2026-11-10",
+      "kind": "S",
+      "old": "Nuova opportunità",
+      "new": "Fare preventivo",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6078,
+      "date": "2026-11-10",
+      "kind": "S",
+      "old": "Demo",
+      "new": "Da ripescare",
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 5831,
+      "date": "2026-11-10",
+      "kind": "S",
+      "old": "Nuova opportunità",
+      "new": "Fissare incontro",
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 5831,
+      "date": "2026-11-10",
+      "kind": "S",
+      "old": "Da ripescare",
+      "new": "Nuova opportunità",
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 6079,
+      "date": "2026-11-09",
+      "kind": "S",
+      "old": "Fare preventivo",
+      "new": "Proposta",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6080,
+      "date": "2026-11-09",
+      "kind": "S",
+      "old": "Fare preventivo",
+      "new": "Proposta",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6081,
+      "date": "2026-11-09",
+      "kind": "S",
+      "old": "Fare preventivo",
+      "new": "Proposta",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6082,
+      "date": "2026-11-09",
+      "kind": "R",
+      "old": 58000,
+      "new": 63500,
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5826,
+      "date": "2026-11-09",
+      "kind": "S",
+      "old": "Proposta",
+      "new": "Vinta",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6078,
+      "date": "2026-11-09",
+      "kind": "S",
+      "old": "Nuova opportunità",
+      "new": "Demo",
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 6082,
+      "date": "2026-11-09",
+      "kind": "S",
+      "old": "Fare preventivo",
+      "new": "Proposta",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5731,
+      "date": "2026-11-09",
+      "kind": "S",
+      "old": "In analisi",
+      "new": "Fare preventivo",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5949,
+      "date": "2026-11-09",
+      "kind": "R",
+      "old": 5000,
+      "new": 18000,
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6087,
+      "date": "2026-11-06",
+      "kind": "R",
+      "old": 3500,
+      "new": 4200,
+      "author": "Antonio Maddalena"
+    },
+    {
+      "lead": 6087,
+      "date": "2026-11-06",
+      "kind": "R",
+      "old": 0,
+      "new": 3500,
+      "author": "Antonio Maddalena"
+    },
+    {
+      "lead": 6082,
+      "date": "2026-11-04",
+      "kind": "S",
+      "old": "Nuova opportunità",
+      "new": "Fare preventivo",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6081,
+      "date": "2026-11-04",
+      "kind": "S",
+      "old": "Nuova opportunità",
+      "new": "Fare preventivo",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6080,
+      "date": "2026-11-04",
+      "kind": "S",
+      "old": "Proposta",
+      "new": "Fare preventivo",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6080,
+      "date": "2026-11-04",
+      "kind": "S",
+      "old": "Fare preventivo",
+      "new": "Proposta",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6080,
+      "date": "2026-11-04",
+      "kind": "S",
+      "old": "Nuova opportunità",
+      "new": "Fare preventivo",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6079,
+      "date": "2026-11-04",
+      "kind": "R",
+      "old": 0,
+      "new": 5000,
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6079,
+      "date": "2026-11-04",
+      "kind": "S",
+      "old": "Nuova opportunità",
+      "new": "Fare preventivo",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6078,
+      "date": "2026-11-04",
+      "kind": "U",
+      "old": "Nicola Sartore",
+      "new": "Guido Tessari",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5039,
+      "date": "2026-11-02",
+      "kind": "R",
+      "old": 4500,
+      "new": 3500,
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 5039,
+      "date": "2026-10-28",
+      "kind": "R",
+      "old": 0,
+      "new": 4500,
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 5977,
+      "date": "2026-10-27",
+      "kind": "S",
+      "old": "Proposta",
+      "new": "Vinta",
+      "author": "Chiara Rossetto"
+    },
+    {
+      "lead": 6041,
+      "date": "2026-10-27",
+      "kind": "S",
+      "old": "Segnalibro",
+      "new": "Chiusa persa",
+      "author": "Gianluca Mamusi"
+    },
+    {
+      "lead": 5978,
+      "date": "2026-10-26",
+      "kind": "S",
+      "old": "Fare preventivo",
+      "new": "Proposta",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5978,
+      "date": "2026-10-26",
+      "kind": "R",
+      "old": 0,
+      "new": 200000,
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5989,
+      "date": "2026-10-26",
+      "kind": "R",
+      "old": 0,
+      "new": 30000,
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5989,
+      "date": "2026-10-26",
+      "kind": "S",
+      "old": "Fissare incontro",
+      "new": "Demo",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6042,
+      "date": "2026-10-23",
+      "kind": "S",
+      "old": "Nuova opportunità",
+      "new": "Proposta",
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 6041,
+      "date": "2026-10-21",
+      "kind": "S",
+      "old": "Nuova opportunità",
+      "new": "Segnalibro",
+      "author": "Gianluca Mamusi"
+    },
+    {
+      "lead": 6037,
+      "date": "2026-10-21",
+      "kind": "S",
+      "old": "Fissare incontro",
+      "new": "Segnalibro",
+      "author": "Gianluca Mamusi"
+    },
+    {
+      "lead": 6039,
+      "date": "2026-10-21",
+      "kind": "S",
+      "old": "Nuova opportunità",
+      "new": "Segnalibro",
+      "author": "Gianluca Mamusi"
+    },
+    {
+      "lead": 6037,
+      "date": "2026-10-21",
+      "kind": "S",
+      "old": "Nuova opportunità",
+      "new": "Fissare incontro",
+      "author": "Gianluca Mamusi"
+    },
+    {
+      "lead": 6029,
+      "date": "2026-10-21",
+      "kind": "S",
+      "old": "Nuova opportunità",
+      "new": "In analisi",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6028,
+      "date": "2026-10-21",
+      "kind": "S",
+      "old": "Nuova opportunità",
+      "new": "Demo",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5814,
+      "date": "2026-10-20",
+      "kind": "S",
+      "old": "Proposta",
+      "new": "Fare preventivo",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5814,
+      "date": "2026-10-19",
+      "kind": "S",
+      "old": "Fare preventivo",
+      "new": "Proposta",
+      "author": "Chiara Rossetto"
+    },
+    {
+      "lead": 5918,
+      "date": "2026-10-19",
+      "kind": "S",
+      "old": "Fare preventivo",
+      "new": "Proposta",
+      "author": "Chiara Rossetto"
+    },
+    {
+      "lead": 6012,
+      "date": "2026-10-19",
+      "kind": "S",
+      "old": "Fare preventivo",
+      "new": "Proposta",
+      "author": "Chiara Rossetto"
+    },
+    {
+      "lead": 5978,
+      "date": "2026-10-19",
+      "kind": "S",
+      "old": "Nuova opportunità",
+      "new": "Fare preventivo",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6034,
+      "date": "2026-10-19",
+      "kind": "S",
+      "old": "In analisi",
+      "new": "Demo",
+      "author": "Chiara Rossetto"
+    },
+    {
+      "lead": 5950,
+      "date": "2026-10-19",
+      "kind": "S",
+      "old": "Proposta",
+      "new": "Da ripescare",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5913,
+      "date": "2026-10-19",
+      "kind": "S",
+      "old": "Proposta",
+      "new": "Da ripescare",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5873,
+      "date": "2026-10-19",
+      "kind": "U",
+      "old": "Guido Tessari",
+      "new": "Nicola Sartore",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5873,
+      "date": "2026-10-19",
+      "kind": "S",
+      "old": "Da ripescare",
+      "new": "Proposta",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5961,
+      "date": "2026-10-19",
+      "kind": "U",
+      "old": "Guido Tessari",
+      "new": "Nicola Sartore",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5961,
+      "date": "2026-10-19",
+      "kind": "S",
+      "old": "Proposta",
+      "new": "Vinta",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5801,
+      "date": "2026-10-19",
+      "kind": "S",
+      "old": "Proposta",
+      "new": "Vinta",
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 5801,
+      "date": "2026-10-19",
+      "kind": "R",
+      "old": 8900,
+      "new": 7200,
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 5814,
+      "date": "2026-10-19",
+      "kind": "S",
+      "old": "In analisi",
+      "new": "Fare preventivo",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5796,
+      "date": "2026-10-19",
+      "kind": "S",
+      "old": "Proposta",
+      "new": "Da ripescare",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6029,
+      "date": "2026-10-19",
+      "kind": "U",
+      "old": "Guido Tessari",
+      "new": "Nicola Sartore",
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 5947,
+      "date": "2026-10-19",
+      "kind": "S",
+      "old": "Proposta",
+      "new": "Vinta",
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 6024,
+      "date": "2026-10-16",
+      "kind": "U",
+      "old": "Nicola Sartore",
+      "new": "Luca Realdon",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6023,
+      "date": "2026-10-16",
+      "kind": "U",
+      "old": "Nicola Sartore",
+      "new": "Guido Tessari",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5764,
+      "date": "2026-10-16",
+      "kind": "S",
+      "old": "Proposta",
+      "new": "Da ripescare",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5988,
+      "date": "2026-10-14",
+      "kind": "S",
+      "old": "Fissare incontro",
+      "new": "Da ripescare",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6019,
+      "date": "2026-10-12",
+      "kind": "S",
+      "old": "Nuova opportunità",
+      "new": "Proposta",
+      "author": "Chiara Rossetto"
+    },
+    {
+      "lead": 5039,
+      "date": "2026-10-12",
+      "kind": "U",
+      "old": "Luca Realdon",
+      "new": "Guido Tessari",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6012,
+      "date": "2026-10-12",
+      "kind": "S",
+      "old": "Nuova opportunità",
+      "new": "Fare preventivo",
+      "author": "Chiara Rossetto"
+    },
+    {
+      "lead": 6011,
+      "date": "2026-10-09",
+      "kind": "S",
+      "old": "Nuova opportunità",
+      "new": "Fare preventivo",
+      "author": "Chiara Rossetto"
+    },
+    {
+      "lead": 6011,
+      "date": "2026-10-09",
+      "kind": "U",
+      "old": "Chiara Rossetto",
+      "new": "Luca Realdon",
+      "author": "Chiara Rossetto"
+    },
+    {
+      "lead": 6010,
+      "date": "2026-10-09",
+      "kind": "U",
+      "old": "Nicola Sartore",
+      "new": "Guido Tessari",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 6010,
+      "date": "2026-10-09",
+      "kind": "U",
+      "old": "Guido Tessari",
+      "new": "Nicola Sartore",
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 5026,
+      "date": "2026-10-08",
+      "kind": "S",
+      "old": "Segnalibro",
+      "new": "Da ripescare",
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 6001,
+      "date": "2026-10-05",
+      "kind": "U",
+      "old": "Guido Tessari",
+      "new": "Andrea Menegotto",
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 6000,
+      "date": "2026-10-05",
+      "kind": "S",
+      "old": "Nuova opportunità",
+      "new": "Fare preventivo",
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 5937,
+      "date": "2026-10-05",
+      "kind": "S",
+      "old": "Proposta",
+      "new": "Vinta",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5718,
+      "date": "2026-10-05",
+      "kind": "R",
+      "old": 0,
+      "new": 150000,
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5718,
+      "date": "2026-10-05",
+      "kind": "S",
+      "old": "Fare preventivo",
+      "new": "Proposta",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5821,
+      "date": "2026-10-05",
+      "kind": "S",
+      "old": "In analisi",
+      "new": "Fare preventivo",
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 5974,
+      "date": "2026-10-05",
+      "kind": "S",
+      "old": "Proposta",
+      "new": "Vinta",
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 5974,
+      "date": "2026-10-02",
+      "kind": "R",
+      "old": 49000,
+      "new": 56570,
+      "author": "Chiara Rossetto"
+    },
+    {
+      "lead": 5753,
+      "date": "2026-10-02",
+      "kind": "S",
+      "old": "In analisi",
+      "new": "Demo",
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 5828,
+      "date": "2026-10-02",
+      "kind": "S",
+      "old": "In analisi",
+      "new": "Proposta",
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 5969,
+      "date": "2026-10-02",
+      "kind": "S",
+      "old": "Nuova opportunità",
+      "new": "Segnalibro",
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5801,
+      "date": "2026-10-02",
+      "kind": "R",
+      "old": 7200,
+      "new": 8900,
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5804,
+      "date": "2026-10-02",
+      "kind": "R",
+      "old": 0,
+      "new": 7200,
+      "author": "Nicola Sartore"
+    },
+    {
+      "lead": 5998,
+      "date": "2026-10-01",
+      "kind": "S",
+      "old": "Nuova opportunità",
+      "new": "Demo",
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 5626,
+      "date": "2026-10-01",
+      "kind": "S",
+      "old": "Segnalibro",
+      "new": "Da ripescare",
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 5934,
+      "date": "2026-10-01",
+      "kind": "S",
+      "old": "Segnalibro",
+      "new": "Proposta",
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 5994,
+      "date": "2026-10-01",
+      "kind": "S",
+      "old": "Fare preventivo",
+      "new": "In analisi",
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 5821,
+      "date": "2026-10-01",
+      "kind": "S",
+      "old": "Fare preventivo",
+      "new": "In analisi",
+      "author": "Guido Tessari"
+    },
+    {
+      "lead": 5937,
+      "date": "2026-10-01",
+      "kind": "R",
+      "old": 0,
+      "new": 187900,
+      "author": "Chiara Rossetto"
+    },
+    {
+      "lead": 5971,
+      "date": "2026-10-01",
+      "kind": "S",
+      "old": "Fare preventivo",
+      "new": "Proposta",
+      "author": "Nicola Sartore"
+    }
+  ],
+  "activities": [
+    {
+      "lead": 4217,
+      "type": "Chiamata",
+      "summary": "Onboarding e progetto migrazione da suite crm",
+      "date": "2026-09-04",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 4426,
+      "type": "Da fare",
+      "summary": "organizzare demo con Luca",
+      "date": "2025-10-17",
+      "user": "Chiara Regazzi"
+    },
+    {
+      "lead": 4438,
+      "type": "Da fare",
+      "summary": "verificare se fonte è vermaente gianluca mamusi quindi indicarlo come segnalatore interno nel relativo contatto + inserire campagna sviuppo sardegna",
+      "date": "2025-12-09",
+      "user": "Chiara Rossetto"
+    },
+    {
+      "lead": 4438,
+      "type": "E-mail",
+      "summary": "assistenza a consuntivo quando gli servirà",
+      "date": "2027-01-08",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 4446,
+      "type": "Chiamata",
+      "summary": "Chiamare se no risponde. in caso chiudere opp",
+      "date": "2026-10-26",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 4503,
+      "type": "Da fare",
+      "summary": "attività creata da Chiara - verificare con Danese se gli ha inviato documento di proposta",
+      "date": "2026-03-14",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 4934,
+      "type": "Da fare",
+      "summary": "provare a ripescare x 2028",
+      "date": "2027-09-15",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 4944,
+      "type": "E-mail",
+      "summary": "mandare mail per supporto, hanno gia odoo",
+      "date": "2026-10-09",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 4961,
+      "type": "E-mail",
+      "summary": "stanby per il momento",
+      "date": "2026-12-21",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 4964,
+      "type": "E-mail",
+      "summary": "progetto fermo, forse da riaprire in seguito",
+      "date": "2027-01-14",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 4965,
+      "type": "E-mail",
+      "summary": "progetto fermo, forse si riaprirà più avanti",
+      "date": "2027-01-14",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 4997,
+      "type": "Da fare",
+      "summary": "progetto chiuso, vedere nel 2027 se up selling",
+      "date": "2026-12-09",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 5012,
+      "type": "Da fare",
+      "summary": "Follow up con proposta starter pack",
+      "date": "2026-01-17",
+      "user": "Luca Realdon"
+    },
+    {
+      "lead": 5013,
+      "type": "Da fare",
+      "summary": "mail conferma",
+      "date": "2026-01-17",
+      "user": "Luca Realdon"
+    },
+    {
+      "lead": 5039,
+      "type": "E-mail",
+      "summary": "inviata di nuovo con modifiche",
+      "date": "2026-11-19",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 5597,
+      "type": "E-mail",
+      "summary": "da rifissare, \"si fa sentire lui\" cit",
+      "date": "2026-11-23",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 5616,
+      "type": "Da fare",
+      "summary": "CHECK ERIKA D'AMBROUS effort e fissare appuntamento con Marco",
+      "date": "2026-09-21",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 5626,
+      "type": "Da fare",
+      "summary": "incerto, paura dei costi (di licenza e hosting) e delle nostre modalità di lavoro",
+      "date": "2027-01-06",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 5632,
+      "type": "E-mail",
+      "summary": "miola non riesce a farsi ricevere e riferisce che non c'è interesse nel breve",
+      "date": "2026-12-14",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 5635,
+      "type": "Chiamata",
+      "summary": "Feedback Luca R",
+      "date": "2026-10-02",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 5648,
+      "type": "Da fare",
+      "summary": "Onboarding e valutazione nuovo progetto",
+      "date": "2026-10-30",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 5655,
+      "type": "E-mail",
+      "summary": "progetto in pausa, da capire con andrea quando vuole farlo",
+      "date": "2027-03-10",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 5656,
+      "type": "E-mail",
+      "summary": "Hanno acquistato un azienda in germania bloccando i nuovi sviluppi, da valutare a marzo 2027",
+      "date": "2027-03-10",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 5678,
+      "type": "E-mail",
+      "summary": "probabilmente 2027 ma siamo posizionati bene nella sw selection",
+      "date": "2026-11-13",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 5698,
+      "type": "Da fare",
+      "summary": "sollecitare Nik di fare feedback (e ricordargli di presentargli WSO)",
+      "date": "2026-04-08",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 5718,
+      "type": "Da fare",
+      "summary": "chiamare costa",
+      "date": "2026-04-14",
+      "user": "Luca Realdon"
+    },
+    {
+      "lead": 5718,
+      "type": "E-mail",
+      "summary": "in semifinale, ci contattano loro per proseguire",
+      "date": "2026-11-25",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 5725,
+      "type": "E-mail",
+      "summary": "da sentirci i primi di dicembre per mostrargli funzionalità della 20",
+      "date": "2026-12-03",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 5731,
+      "type": "Appuntamento",
+      "summary": "SMACT S.c.p.a. - CRM",
+      "date": "2026-10-02",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 5753,
+      "type": "E-mail",
+      "summary": "chiamato Silvio, non stanno sentendo altri sw ma sarà una decisione lunga (2027)",
+      "date": "2027-01-14",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 5764,
+      "type": "Da fare",
+      "summary": "Definire strategia alterntiva",
+      "date": "2026-07-21",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 5796,
+      "type": "Chiamata",
+      "summary": "Chiedere se ci sono novità",
+      "date": "2026-12-04",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 5804,
+      "type": "E-mail",
+      "summary": "call posticipata il 26",
+      "date": "2026-11-25",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 5814,
+      "type": "Da fare",
+      "summary": "Offerta modello b2b",
+      "date": "2026-10-20",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 5815,
+      "type": "E-mail",
+      "summary": "Mandare proposta fase 0",
+      "date": "2026-10-13",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 5817,
+      "type": "Da fare",
+      "summary": "mandare registrazione plaud",
+      "date": "2026-07-07",
+      "user": "Luca Realdon"
+    },
+    {
+      "lead": 5821,
+      "type": "E-mail",
+      "summary": "progetto probabilmente per il 2027, rimanere allerta per bandi",
+      "date": "2026-12-15",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 5822,
+      "type": "E-mail",
+      "summary": "progetto posticipato a inizio anno per budget e tempo",
+      "date": "2027-01-14",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 5827,
+      "type": "Chiamata",
+      "summary": "Chiamare se non risp e in caso chiudere opp",
+      "date": "2026-10-26",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 5828,
+      "type": "E-mail",
+      "summary": "Filippo non ne ha ancora parlato con chi di dovere ma pensa possa essergli utile",
+      "date": "2027-02-09",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 5831,
+      "type": "E-mail",
+      "summary": "confermato slot per il 23 a pranzo",
+      "date": "2026-11-23",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 5873,
+      "type": "Da fare",
+      "summary": "riparlarne con il cliente a gennaio 2027",
+      "date": "2027-01-11",
+      "user": "Antonio Maddalena"
+    },
+    {
+      "lead": 5873,
+      "type": "E-mail",
+      "summary": "forse per gennaio 2027",
+      "date": "2027-01-12",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 5882,
+      "type": "E-mail",
+      "summary": "incontro per curiosità, in contatto anche con altri sw",
+      "date": "2026-11-11",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 5887,
+      "type": "Da fare",
+      "summary": "Push Nik per info progetto e onboarding",
+      "date": "2026-09-04",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 5894,
+      "type": "Da fare",
+      "summary": "Allineamento Fabiano Marco per upsell (provv. )",
+      "date": "2026-08-31",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 5894,
+      "type": "Da fare",
+      "summary": "Assistenza gennaio 2027?",
+      "date": "2026-07-29",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 5903,
+      "type": "E-mail",
+      "summary": "spiegato discorso workshop, fa le sue valutazioni e mi richiama",
+      "date": "2026-11-10",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 5908,
+      "type": "E-mail",
+      "summary": "aspettiamo che esca il pacchetto per la 20 così i dev verificano se ci sono differenze di quotazione",
+      "date": "2026-12-10",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 5911,
+      "type": "E-mail",
+      "summary": "nessuna novità, Antonio va li lunedì",
+      "date": "2026-11-23",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 5916,
+      "type": "E-mail",
+      "summary": "tirati coi budget, da vedere più avanti (2027)",
+      "date": "2027-01-12",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 5918,
+      "type": "Da fare",
+      "summary": "Offerta",
+      "date": "2026-11-17",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 5924,
+      "type": "E-mail",
+      "summary": "ha parlato con il suo cliente..novità?",
+      "date": "2026-09-04",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 5928,
+      "type": "Da fare",
+      "summary": "recuperare feedback da Nicky",
+      "date": "2026-11-13",
+      "user": "Chiara Rossetto"
+    },
+    {
+      "lead": 5930,
+      "type": "E-mail",
+      "summary": "niente ancora, titolare preso per altro, entro il 26 dovrebbe avere una risposta",
+      "date": "2026-11-25",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 5940,
+      "type": "E-mail",
+      "summary": "Chiedere se si è confrontato con i soci",
+      "date": "2026-08-31",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 5942,
+      "type": "Chiamata",
+      "summary": "Chiama per smarcare definitivamente se mollano Odoo",
+      "date": "2026-09-23",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 5944,
+      "type": "E-mail",
+      "summary": "demo contabilità?",
+      "date": "2026-09-07",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 5960,
+      "type": "Da fare",
+      "summary": "Proporre di passare in fiera andando da lui",
+      "date": "2026-09-22",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 5966,
+      "type": "Da fare",
+      "summary": "chi deve fare cosa",
+      "date": "2026-09-12",
+      "user": "Chiara Rossetto"
+    },
+    {
+      "lead": 5969,
+      "type": "E-mail",
+      "summary": "tiziana non ha il via libera quindi per il momento attendiamo",
+      "date": "2026-11-23",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 5971,
+      "type": "E-mail",
+      "summary": "rispondere a mail con forbice e spiegare che i workshop serve a smarcare la forbice",
+      "date": "2026-10-16",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 5972,
+      "type": "Chiamata",
+      "summary": "Chiedere come è andata la call con Odoo",
+      "date": "2026-09-21",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 5975,
+      "type": "Da fare",
+      "summary": "verificare cosa fare post demo fral (intesys)",
+      "date": "2026-10-29",
+      "user": "Chiara Rossetto"
+    },
+    {
+      "lead": 5978,
+      "type": "E-mail",
+      "summary": "allineati con budget, in attesa di completamento dell'operazione interna con l'acquirente",
+      "date": "2026-11-06",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 5988,
+      "type": "Chiamata",
+      "summary": "Riapriamo il discorso odoo?",
+      "date": "2027-03-08",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 5989,
+      "type": "Appuntamento",
+      "summary": "Fondazione Teatro Comunale di Vicenza - Demo Odoo",
+      "date": "2026-11-06",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 5994,
+      "type": "E-mail",
+      "summary": "Migrazione v19 - 5 giornate + 1 gg Niky coordinamento + (?) Luca D.",
+      "date": "2026-10-19",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 6000,
+      "type": "E-mail",
+      "summary": "Periodo pieno per il cliente, se ne riparla fra 2-3 settimane",
+      "date": "2026-11-16",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 6006,
+      "type": "Da fare",
+      "summary": "verificare se Luca ha fissato incontro",
+      "date": "2026-10-13",
+      "user": "Chiara Rossetto"
+    },
+    {
+      "lead": 6010,
+      "type": "E-mail",
+      "summary": "interessati per il 2027",
+      "date": "2026-12-01",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 6022,
+      "type": "E-mail",
+      "summary": "",
+      "date": "2026-11-02",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 6023,
+      "type": "E-mail",
+      "summary": "manda mail e chiamato, riprovare",
+      "date": "2026-11-16",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 6024,
+      "type": "E-mail",
+      "summary": "presentato Luca in fiera, possibile rapporto che si verrà a creare ma per il futuro",
+      "date": "2027-01-20",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 6026,
+      "type": "E-mail",
+      "summary": "attendere sua e mail e preparare workshop",
+      "date": "2026-11-17",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 6027,
+      "type": "Chiamata",
+      "summary": "Call per capire eventuali esigenze",
+      "date": "2026-10-23",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 6028,
+      "type": "Appuntamento",
+      "summary": "Tenenga srl - Cambio gestionale",
+      "date": "2026-10-27",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 6029,
+      "type": "Da fare",
+      "summary": "offerta su indicazione effort Luca d.",
+      "date": "2026-10-28",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 6037,
+      "type": "Chiamata",
+      "summary": "Richiamare",
+      "date": "2026-10-30",
+      "user": "Gianluca Mamusi"
+    },
+    {
+      "lead": 6039,
+      "type": "Da fare",
+      "summary": "fra 1 settimana chiudere opportunità senza risposta",
+      "date": "2026-11-09",
+      "user": "Gianluca Mamusi"
+    },
+    {
+      "lead": 6042,
+      "type": "E-mail",
+      "summary": "il 30 ott. menegotto va dal cliente ma saranno attività per i prossimi mesi quindi non hanno fretta",
+      "date": "2026-11-18",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 6075,
+      "type": "E-mail",
+      "summary": "in questo periodo è pieno di attività , mi richiamerà lui quando disponibile",
+      "date": "2026-12-16",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 6076,
+      "type": "E-mail",
+      "summary": "analizzare mail di simone",
+      "date": "2026-11-19",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 6078,
+      "type": "E-mail",
+      "summary": "Budget troppo elevato per loro ad oggi",
+      "date": "2027-06-17",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 6082,
+      "type": "E-mail",
+      "summary": "Inviare offerta digitale",
+      "date": "2026-11-13",
+      "user": "Nicola Sartore"
+    },
+    {
+      "lead": 6086,
+      "type": "E-mail",
+      "summary": "completato e inviato ad Andrea",
+      "date": "2026-11-20",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 6087,
+      "type": "E-mail",
+      "summary": "Antonio sta chiarendo le ultime cose, fine mese/inizio mese prossimo dovrebbe procedere",
+      "date": "2026-11-23",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 6095,
+      "type": "E-mail",
+      "summary": "proposto martedì 24",
+      "date": "2026-11-18",
+      "user": "Guido Tessari"
+    },
+    {
+      "lead": 6098,
+      "type": "E-mail",
+      "summary": "consegna il 19",
+      "date": "2026-11-17",
+      "user": "Guido Tessari"
+    }
+  ],
+  "pipeline": [
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "AdHoc S.r.l. Unipersonale",
+      "order": "DD10107",
+      "desc": "Fattura confermata",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "AMG S.p.A.",
+      "order": "DD10340",
+      "desc": "Fattura confermata",
+      "value": 44750,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "Arky Srl",
+      "order": "DD10105",
+      "desc": "Fattura confermata",
+      "value": 600,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "B4C S.r.l.",
+      "order": "DD10147",
+      "desc": "Fattura confermata",
+      "value": 300,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "BERTI PAVIMENTI LEGNO S.A.S. DI BERTI HOLDING S.R.L.",
+      "order": "DD10101",
+      "desc": "Fattura confermata",
+      "value": 300,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "Cabbia Group S.r.l.",
+      "order": "DD10058",
+      "desc": "Fattura confermata",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "Cabbia Group S.r.l.",
+      "order": "DD10321",
+      "desc": "Fattura confermata",
+      "value": 3225,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "Dyaqua Srls",
+      "order": "DD10136",
+      "desc": "Fattura confermata",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "EDILKLIMA GROUP S.p.A.",
+      "order": "DD10303",
+      "desc": "Fattura confermata",
+      "value": 237.5,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "FCF Impianti S.r.l.",
+      "order": "DD10215",
+      "desc": "Fattura confermata",
+      "value": 2937.5,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "G.M.A. S.r.l.",
+      "order": "DD10309",
+      "desc": "Fattura confermata",
+      "value": 10000,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "HubTec S.r.l.",
+      "order": "DD10178",
+      "desc": "Fattura confermata",
+      "value": 280,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "Irontech S.r.l.",
+      "order": "DD10259",
+      "desc": "Fattura confermata",
+      "value": 9600,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "Irontech S.r.l.",
+      "order": "DD10342",
+      "desc": "Fattura confermata",
+      "value": 10000,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "ISAAC srl",
+      "order": "DD10252",
+      "desc": "Fattura confermata",
+      "value": 14000,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "MIPU MACHINE CARE S.R.L. SOCIETA' BENEFIT",
+      "order": "DD10157",
+      "desc": "Fattura confermata",
+      "value": 4875,
+      "account": "Fabiano Mason"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "Mondeo S.r.l.",
+      "order": "DD10161",
+      "desc": "Fattura confermata",
+      "value": 22244.58,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "OCRA Srl",
+      "order": "DD10131",
+      "desc": "Fattura confermata",
+      "value": 1620,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "Odorizzi Soluzioni In Pietra Srl",
+      "order": "DD10221",
+      "desc": "Fattura confermata",
+      "value": 11400,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "Schueco PWS Italia S.r.l.",
+      "order": "DD10177",
+      "desc": "Fattura confermata",
+      "value": 500,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "Schueco PWS Italia S.r.l.",
+      "order": "DD10199",
+      "desc": "Fattura confermata",
+      "value": 1650,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "Schueco PWS Italia S.r.l.",
+      "order": "DD10355",
+      "desc": "Fattura confermata",
+      "value": 5500,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "Secco Sistemi S.p.A.",
+      "order": "DD10100",
+      "desc": "Fattura confermata",
+      "value": 2500,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "Serramenti Brombal S.r.l",
+      "order": "DD10201",
+      "desc": "Fattura confermata",
+      "value": 6502,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "Serramenti Brombal S.r.l",
+      "order": "DD10359",
+      "desc": "Fattura confermata",
+      "value": 5002,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "Service43 S.r.l.",
+      "order": "DD10347",
+      "desc": "Fattura confermata",
+      "value": 9000,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "Synethik Engineering S.r.l.",
+      "order": "DD10193",
+      "desc": "Fattura confermata",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "Trasporti e Servizi Mastrotto S.r.l.",
+      "order": "DD10126",
+      "desc": "Fattura confermata",
+      "value": 300,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "Trasporti e Servizi Mastrotto S.r.l.",
+      "order": "DD10244",
+      "desc": "Fattura confermata",
+      "value": 11200,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-09",
+      "state": "Fatturato",
+      "partner": "Vela S.r.l.",
+      "order": "DD10243",
+      "desc": "Fattura confermata",
+      "value": 10000,
+      "account": "Non assegnato"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "AdHoc S.r.l. Unipersonale",
+      "order": "DD10107",
+      "desc": "Fattura confermata",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "Alba S.r.l.",
+      "order": "DD10287-01",
+      "desc": "Fattura confermata",
+      "value": 600,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "AMG S.p.A.",
+      "order": "DD10340",
+      "desc": "Fattura confermata",
+      "value": 12433.4,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "Arky Srl",
+      "order": "DD10105",
+      "desc": "Fattura confermata",
+      "value": 600,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "Arky Srl",
+      "order": "DD10349",
+      "desc": "Fattura confermata",
+      "value": 1250,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "Arky Srl",
+      "order": "DD10358",
+      "desc": "Fattura confermata",
+      "value": 3800,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "B.F. Automation S.r.l.",
+      "order": "DD10145",
+      "desc": "Fattura confermata",
+      "value": 836.95,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "B.F. Automation S.r.l.",
+      "order": "DD10243",
+      "desc": "Fattura confermata",
+      "value": 5000,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "B4C S.r.l.",
+      "order": "DD10147",
+      "desc": "Fattura confermata",
+      "value": 300,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "BERTI PAVIMENTI LEGNO S.A.S. DI BERTI HOLDING S.R.L.",
+      "order": "DD10101",
+      "desc": "Fattura confermata",
+      "value": 300,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "Cabbia Group S.r.l.",
+      "order": "DD10058",
+      "desc": "Fattura confermata",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "Dyaqua Srls",
+      "order": "DD10136",
+      "desc": "Fattura confermata",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "EDILKLIMA GROUP S.p.A.",
+      "order": "DD10303",
+      "desc": "Fattura confermata",
+      "value": 356.25,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "FCF Impianti S.r.l.",
+      "order": "DD10215",
+      "desc": "Fattura confermata",
+      "value": 2056.25,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "G.M.A. S.r.l.",
+      "order": "DD10309",
+      "desc": "Fattura confermata",
+      "value": 5000,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "HubTec S.r.l.",
+      "order": "DD10178",
+      "desc": "Fattura confermata",
+      "value": 280,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "IMA SERVIZI",
+      "order": "DD10353",
+      "desc": "Fattura confermata",
+      "value": 16100,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "Irontech S.r.l.",
+      "order": "DD10143",
+      "desc": "Fattura confermata",
+      "value": 43,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "Irontech S.r.l.",
+      "order": "DD10342",
+      "desc": "Fattura confermata",
+      "value": 10000,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "ISAAC srl",
+      "order": "DD10252",
+      "desc": "Fattura confermata",
+      "value": 14122.82,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "MIPU MACHINE CARE S.R.L. SOCIETA' BENEFIT",
+      "order": "DD10157",
+      "desc": "Fattura confermata",
+      "value": 4547.6,
+      "account": "Fabiano Mason"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "Mondeo S.r.l.",
+      "order": "DD10161",
+      "desc": "Fattura confermata",
+      "value": 29616.24,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "OCRA Srl",
+      "order": "DD10131",
+      "desc": "Fattura confermata",
+      "value": 540,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "Odorizzi Soluzioni In Pietra Srl",
+      "order": "DD10221",
+      "desc": "Fattura confermata",
+      "value": 11400,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "Officine Zoppelletto S.r.l.",
+      "order": "DD10345",
+      "desc": "Fattura confermata",
+      "value": 1300,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "Penta Formazione S.r.l.",
+      "order": "DD10241",
+      "desc": "Fattura confermata",
+      "value": 8250,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "Proludis Giocattoli srl",
+      "order": "DD10352",
+      "desc": "Fattura confermata",
+      "value": 1500,
+      "account": "Non assegnato"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "Schueco PWS Italia S.r.l.",
+      "order": "DD10177",
+      "desc": "Fattura confermata",
+      "value": 500,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "Schueco PWS Italia S.r.l.",
+      "order": "DD10199",
+      "desc": "Fattura confermata",
+      "value": 1650,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "Secco Sistemi S.p.A.",
+      "order": "DD10100",
+      "desc": "Fattura confermata",
+      "value": 2500,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "Serramenti Brombal S.r.l",
+      "order": "DD10013",
+      "desc": "Fattura confermata",
+      "value": 19227.35,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "Si Vola S.r.l. Unipersonale",
+      "order": "DD10109",
+      "desc": "Fattura confermata",
+      "value": 667,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "Synethik Engineering S.r.l.",
+      "order": "DD10193",
+      "desc": "Fattura confermata",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "Termoidraulica Roberto Bertoletti S.r.l.",
+      "order": "DD10281",
+      "desc": "Fattura confermata",
+      "value": 3500,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "Trasporti e Servizi Mastrotto S.r.l.",
+      "order": "DD10126",
+      "desc": "Fattura confermata",
+      "value": 300,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-10",
+      "state": "Fatturato",
+      "partner": "Vela S.r.l.",
+      "order": "DD10243",
+      "desc": "Fattura confermata",
+      "value": 5000,
+      "account": "Non assegnato"
+    },
+    {
+      "month": "2026-11",
+      "state": "Fatturato",
+      "partner": "AdHoc S.r.l. Unipersonale",
+      "order": "DD10107",
+      "desc": "Fattura confermata",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-11",
+      "state": "Fatturato",
+      "partner": "Alba S.r.l.",
+      "order": "DD10287-01",
+      "desc": "Fattura confermata",
+      "value": 600,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-11",
+      "state": "Fatturato",
+      "partner": "Arky Srl",
+      "order": "DD10105",
+      "desc": "Fattura confermata",
+      "value": 600,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-11",
+      "state": "Fatturato",
+      "partner": "B4C S.r.l.",
+      "order": "DD10147",
+      "desc": "Fattura confermata",
+      "value": 300,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-11",
+      "state": "Fatturato",
+      "partner": "BERTI PAVIMENTI LEGNO S.A.S. DI BERTI HOLDING S.R.L.",
+      "order": "DD10101",
+      "desc": "Fattura confermata",
+      "value": 300,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-11",
+      "state": "Fatturato",
+      "partner": "Cabbia Group S.r.l.",
+      "order": "DD10058",
+      "desc": "Fattura confermata",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-11",
+      "state": "Fatturato",
+      "partner": "Dyaqua Srls",
+      "order": "DD10136",
+      "desc": "Fattura confermata",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-11",
+      "state": "Fatturato",
+      "partner": "Irontech S.r.l.",
+      "order": "DD10342",
+      "desc": "Fattura confermata",
+      "value": 10000,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-11",
+      "state": "Fatturato",
+      "partner": "Schueco PWS Italia S.r.l.",
+      "order": "DD10177",
+      "desc": "Fattura confermata",
+      "value": 500,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-11",
+      "state": "Fatturato",
+      "partner": "Schueco PWS Italia S.r.l.",
+      "order": "DD10199",
+      "desc": "Fattura confermata",
+      "value": 1650,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-11",
+      "state": "Fatturato",
+      "partner": "Secco Sistemi S.p.A.",
+      "order": "DD10100",
+      "desc": "Fattura confermata",
+      "value": 2500,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-11",
+      "state": "Fatturato",
+      "partner": "Serramenti Brombal S.r.l",
+      "order": "DD10013",
+      "desc": "Fattura confermata",
+      "value": 602,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-11",
+      "state": "Fatturato",
+      "partner": "Synethik Engineering S.r.l.",
+      "order": "DD10193",
+      "desc": "Fattura confermata",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-11",
+      "state": "Fatturato",
+      "partner": "Trasporti e Servizi Mastrotto S.r.l.",
+      "order": "DD10126",
+      "desc": "Fattura confermata",
+      "value": 300,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-11",
+      "state": "Fatturato",
+      "partner": "Yuppy S.r.l.",
+      "order": "DD10179",
+      "desc": "Fattura confermata",
+      "value": 500,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-11",
+      "state": "Contrattualizzato",
+      "partner": "AMG S.p.A.",
+      "order": "DD10340",
+      "desc": "Fattura in bozza",
+      "value": 12000,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-11",
+      "state": "Contrattualizzato",
+      "partner": "B.F. Automation S.r.l.",
+      "order": "DD10243",
+      "desc": "Fattura in bozza",
+      "value": 10000,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-11",
+      "state": "Contrattualizzato",
+      "partner": "Essemec S.r.l.",
+      "order": "DD10276",
+      "desc": "Fattura in bozza",
+      "value": 7735,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-11",
+      "state": "Contrattualizzato",
+      "partner": "G.M.A. S.r.l.",
+      "order": "DD10118",
+      "desc": "Fattura in bozza",
+      "value": 5500,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-11",
+      "state": "Contrattualizzato",
+      "partner": "G.M.A. S.r.l.",
+      "order": "DD10309",
+      "desc": "Fattura in bozza",
+      "value": 5000,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-11",
+      "state": "Contrattualizzato",
+      "partner": "HubTec S.r.l.",
+      "order": "DD10178",
+      "desc": "Fattura in bozza",
+      "value": 280,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-11",
+      "state": "Contrattualizzato",
+      "partner": "IMA SERVIZI",
+      "order": "DD10353",
+      "desc": "Fattura in bozza",
+      "value": 9800,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-11",
+      "state": "Contrattualizzato",
+      "partner": "ISAAC srl",
+      "order": "DD10252",
+      "desc": "Fattura in bozza",
+      "value": 10000,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-11",
+      "state": "Contrattualizzato",
+      "partner": "OCRA Srl",
+      "order": "DD10131",
+      "desc": "Fattura in bozza",
+      "value": 540,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-11",
+      "state": "Contrattualizzato",
+      "partner": "Odorizzi Soluzioni In Pietra Srl",
+      "order": "DD10221",
+      "desc": "Fattura in bozza",
+      "value": 11400,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-11",
+      "state": "Contrattualizzato",
+      "partner": "Officine Zoppelletto S.r.l.",
+      "order": "DD10345",
+      "desc": "Fattura in bozza",
+      "value": 1300,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-11",
+      "state": "Contrattualizzato",
+      "partner": "Proludis Giocattoli srl",
+      "order": "DD10352",
+      "desc": "Fattura in bozza",
+      "value": 1500,
+      "account": "Non assegnato"
+    },
+    {
+      "month": "2026-11",
+      "state": "Contrattualizzato",
+      "partner": "Serramenti Brombal S.r.l",
+      "order": "DD10314",
+      "desc": "Fattura in bozza",
+      "value": 4000,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-11",
+      "state": "Contrattualizzato",
+      "partner": "Serramenti Brombal S.r.l",
+      "order": "DD10359",
+      "desc": "Fattura in bozza",
+      "value": 4000,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-11",
+      "state": "Contrattualizzato",
+      "partner": "Soul Srl",
+      "order": "DD10332",
+      "desc": "Fattura in bozza",
+      "value": 2100,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-11",
+      "state": "Contrattualizzato",
+      "partner": "Trasporti e Servizi Mastrotto S.r.l.",
+      "order": "DD10244",
+      "desc": "Fattura in bozza",
+      "value": 2800,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-11",
+      "state": "Consuntivi",
+      "partner": "FCF Impianti S.r.l.",
+      "order": "DD10215",
+      "desc": "previsione novembre",
+      "value": 2500,
+      "account": "Luca Realdon",
+      "fatt": "Possibile"
+    },
+    {
+      "month": "2026-11",
+      "state": "Consuntivi",
+      "partner": "Mondeo S.r.l.",
+      "order": "DD10200",
+      "desc": "Tranche 11",
+      "value": 25000,
+      "account": "Luca Realdon",
+      "fatt": "Probabile"
+    },
+    {
+      "month": "2026-11",
+      "state": "Consuntivi",
+      "partner": "Serramenti Brombal S.r.l",
+      "order": "DD10013",
+      "desc": "Tranche 11",
+      "value": 3500,
+      "account": "Luca Realdon",
+      "fatt": "Probabile"
+    },
+    {
+      "month": "2026-11",
+      "state": "Offerta possibile",
+      "partner": "B.F. Automation S.r.l.",
+      "order": "DD10373",
+      "desc": "tranche",
+      "value": 8000,
+      "account": "Guido Tessari",
+      "fatt": "Possibile"
+    },
+    {
+      "month": "2026-11",
+      "state": "Offerta probabile",
+      "partner": "B.F. Automation S.r.l.",
+      "order": "DD10379",
+      "desc": "Assistenza post hypercare",
+      "value": 800,
+      "account": "Guido Tessari",
+      "fatt": "Probabile"
+    },
+    {
+      "month": "2026-11",
+      "state": "Offerta probabile",
+      "partner": "Emilav",
+      "order": "DD10350",
+      "desc": "tranche",
+      "value": 5000,
+      "account": "Non assegnato",
+      "fatt": "Probabile"
+    },
+    {
+      "month": "2026-11",
+      "state": "Offerta probabile",
+      "partner": "Serramenti Brombal S.r.l",
+      "order": "DD10378",
+      "desc": "acconto",
+      "value": 5875,
+      "account": "Luca Realdon",
+      "fatt": "Probabile"
+    },
+    {
+      "month": "2026-12",
+      "state": "Contrattualizzato",
+      "partner": "AdHoc S.r.l. Unipersonale",
+      "order": "DD10107",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-12",
+      "state": "Contrattualizzato",
+      "partner": "Alba S.r.l.",
+      "order": "DD10287-01",
+      "desc": "Fattura in bozza",
+      "value": 600,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-12",
+      "state": "Contrattualizzato",
+      "partner": "AMG S.p.A.",
+      "order": "DD10340",
+      "desc": "Fattura in bozza",
+      "value": 12000,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-12",
+      "state": "Contrattualizzato",
+      "partner": "Arky Srl",
+      "order": "DD10105",
+      "desc": "Fattura in bozza",
+      "value": 600,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-12",
+      "state": "Contrattualizzato",
+      "partner": "B4C S.r.l.",
+      "order": "DD10147",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-12",
+      "state": "Contrattualizzato",
+      "partner": "BERTI PAVIMENTI LEGNO S.A.S. DI BERTI HOLDING S.R.L.",
+      "order": "DD10101",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-12",
+      "state": "Contrattualizzato",
+      "partner": "Cabbia Group S.r.l.",
+      "order": "DD10058",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-12",
+      "state": "Contrattualizzato",
+      "partner": "Dyaqua Srls",
+      "order": "DD10136",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-12",
+      "state": "Contrattualizzato",
+      "partner": "G.M.A. S.r.l.",
+      "order": "DD10309",
+      "desc": "Fattura in bozza",
+      "value": 5000,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-12",
+      "state": "Contrattualizzato",
+      "partner": "HubTec S.r.l.",
+      "order": "DD10178",
+      "desc": "Fattura in bozza",
+      "value": 280,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-12",
+      "state": "Contrattualizzato",
+      "partner": "IMA SERVIZI",
+      "order": "DD10353",
+      "desc": "Fattura in bozza",
+      "value": 9800,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-12",
+      "state": "Contrattualizzato",
+      "partner": "Irontech S.r.l.",
+      "order": "DD10342",
+      "desc": "Fattura in bozza",
+      "value": 10000,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-12",
+      "state": "Contrattualizzato",
+      "partner": "ISAAC srl",
+      "order": "DD10252",
+      "desc": "Fattura in bozza",
+      "value": 4000,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-12",
+      "state": "Contrattualizzato",
+      "partner": "OCRA Srl",
+      "order": "DD10131",
+      "desc": "Fattura in bozza",
+      "value": 540,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-12",
+      "state": "Contrattualizzato",
+      "partner": "Odorizzi Soluzioni In Pietra Srl",
+      "order": "DD10221",
+      "desc": "Fattura in bozza",
+      "value": 600,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-12",
+      "state": "Contrattualizzato",
+      "partner": "Schueco PWS Italia S.r.l.",
+      "order": "DD10177",
+      "desc": "Fattura in bozza",
+      "value": 500,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-12",
+      "state": "Contrattualizzato",
+      "partner": "Schueco PWS Italia S.r.l.",
+      "order": "DD10199",
+      "desc": "Fattura in bozza",
+      "value": 1650,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-12",
+      "state": "Contrattualizzato",
+      "partner": "Secco Sistemi S.p.A.",
+      "order": "DD10100",
+      "desc": "Fattura in bozza",
+      "value": 2500,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2026-12",
+      "state": "Contrattualizzato",
+      "partner": "Serramenti Brombal S.r.l",
+      "order": "DD10013",
+      "desc": "Fattura in bozza",
+      "value": 600,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-12",
+      "state": "Contrattualizzato",
+      "partner": "Soul Srl",
+      "order": "DD10332",
+      "desc": "Fattura in bozza",
+      "value": 4200,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-12",
+      "state": "Contrattualizzato",
+      "partner": "Synethik Engineering S.r.l.",
+      "order": "DD10193",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2026-12",
+      "state": "Contrattualizzato",
+      "partner": "Trasporti e Servizi Mastrotto S.r.l.",
+      "order": "DD10126",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-12",
+      "state": "Contrattualizzato",
+      "partner": "Trasporti e Servizi Mastrotto S.r.l.",
+      "order": "DD10244",
+      "desc": "Fattura in bozza",
+      "value": 2800,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2026-12",
+      "state": "Consuntivi",
+      "partner": "Alba S.r.l.",
+      "order": "DD10287-01",
+      "desc": "prev attività",
+      "value": 1500,
+      "account": "Guido Tessari",
+      "fatt": "Probabile"
+    },
+    {
+      "month": "2026-12",
+      "state": "Consuntivi",
+      "partner": "FCF Impianti S.r.l.",
+      "order": "DD10215",
+      "desc": "previsione dicembre",
+      "value": 2500,
+      "account": "Luca Realdon",
+      "fatt": "Possibile"
+    },
+    {
+      "month": "2026-12",
+      "state": "Consuntivi",
+      "partner": "Mondeo S.r.l.",
+      "order": "DD10200",
+      "desc": "Tranche 12",
+      "value": 20000,
+      "account": "Luca Realdon",
+      "fatt": "Probabile"
+    },
+    {
+      "month": "2026-12",
+      "state": "Consuntivi",
+      "partner": "Penta Formazione S.r.l.",
+      "order": "DD10241",
+      "desc": "attività di nov-dic",
+      "value": 6500,
+      "account": "Nicola Sartore",
+      "fatt": "Probabile"
+    },
+    {
+      "month": "2026-12",
+      "state": "Consuntivi",
+      "partner": "Secco Sistemi S.p.A.",
+      "order": "DD10100",
+      "desc": "consuntivo",
+      "value": 2500,
+      "account": "Guido Tessari",
+      "fatt": "Probabile"
+    },
+    {
+      "month": "2026-12",
+      "state": "Consuntivi",
+      "partner": "Serramenti Brombal S.r.l",
+      "order": "DD10013",
+      "desc": "Tranche 12",
+      "value": 3500,
+      "account": "Luca Realdon",
+      "fatt": "Probabile"
+    },
+    {
+      "month": "2026-12",
+      "state": "Offerta probabile",
+      "partner": "Arky Srl",
+      "order": "DD10377",
+      "desc": "Template Contratti Automatici",
+      "value": 5925,
+      "account": "Nicola Sartore",
+      "fatt": "Probabile"
+    },
+    {
+      "month": "2026-12",
+      "state": "Offerta probabile",
+      "partner": "Arky Srl",
+      "order": "DD10381",
+      "desc": "pacchetto",
+      "value": 25650,
+      "account": "Nicola Sartore",
+      "fatt": "Probabile"
+    },
+    {
+      "month": "2026-12",
+      "state": "Offerta probabile",
+      "partner": "Arky Srl",
+      "order": "DD10382",
+      "desc": "pacchetto",
+      "value": 25500,
+      "account": "Nicola Sartore",
+      "fatt": "Probabile"
+    },
+    {
+      "month": "2026-12",
+      "state": "Offerta possibile",
+      "partner": "B.F. Automation S.r.l.",
+      "order": "DD10373",
+      "desc": "tranche",
+      "value": 8000,
+      "account": "Guido Tessari",
+      "fatt": "Possibile"
+    },
+    {
+      "month": "2026-12",
+      "state": "Offerta probabile",
+      "partner": "Emilav",
+      "order": "DD10350",
+      "desc": "tranche",
+      "value": 5000,
+      "account": "Non assegnato",
+      "fatt": "Probabile"
+    },
+    {
+      "month": "2026-12",
+      "state": "Offerta probabile",
+      "partner": "Serramenti Brombal S.r.l",
+      "order": "DD10378",
+      "desc": "saldo",
+      "value": 5875,
+      "account": "Luca Realdon",
+      "fatt": "Probabile"
+    },
+    {
+      "month": "2026-12",
+      "state": "Offerta probabile",
+      "partner": "Service43 S.r.l.",
+      "order": "DD10347",
+      "desc": "sviluppi extra",
+      "value": 5000,
+      "account": "Guido Tessari",
+      "fatt": "Probabile"
+    },
+    {
+      "month": "2026-12",
+      "state": "Offerta probabile",
+      "partner": "Si Vola S.r.l. Unipersonale",
+      "order": "DD10329",
+      "desc": "canone",
+      "value": 800,
+      "account": "Nicola Sartore",
+      "fatt": "Probabile"
+    },
+    {
+      "month": "2027-01",
+      "state": "Contrattualizzato",
+      "partner": "AdHoc S.r.l. Unipersonale",
+      "order": "DD10107",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2027-01",
+      "state": "Contrattualizzato",
+      "partner": "Alba S.r.l.",
+      "order": "DD10287-01",
+      "desc": "Fattura in bozza",
+      "value": 600,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-01",
+      "state": "Contrattualizzato",
+      "partner": "AMG S.p.A.",
+      "order": "DD10340",
+      "desc": "Fattura in bozza",
+      "value": 12000,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-01",
+      "state": "Contrattualizzato",
+      "partner": "Arky Srl",
+      "order": "DD10105",
+      "desc": "Fattura in bozza",
+      "value": 600,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2027-01",
+      "state": "Contrattualizzato",
+      "partner": "BERTI PAVIMENTI LEGNO S.A.S. DI BERTI HOLDING S.R.L.",
+      "order": "DD10101",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-01",
+      "state": "Contrattualizzato",
+      "partner": "Cabbia Group S.r.l.",
+      "order": "DD10058",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2027-01",
+      "state": "Contrattualizzato",
+      "partner": "G.M.A. S.r.l.",
+      "order": "DD10309",
+      "desc": "Fattura in bozza",
+      "value": 5000,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-01",
+      "state": "Contrattualizzato",
+      "partner": "IMA SERVIZI",
+      "order": "DD10353",
+      "desc": "Fattura in bozza",
+      "value": 9800,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-01",
+      "state": "Contrattualizzato",
+      "partner": "ISAAC srl",
+      "order": "DD10252",
+      "desc": "Fattura in bozza",
+      "value": 9000,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2027-01",
+      "state": "Contrattualizzato",
+      "partner": "OCRA Srl",
+      "order": "DD10131",
+      "desc": "Fattura in bozza",
+      "value": 540,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2027-01",
+      "state": "Contrattualizzato",
+      "partner": "Odorizzi Soluzioni In Pietra Srl",
+      "order": "DD10221",
+      "desc": "Fattura in bozza",
+      "value": 600,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2027-01",
+      "state": "Contrattualizzato",
+      "partner": "Schueco PWS Italia S.r.l.",
+      "order": "DD10177",
+      "desc": "Fattura in bozza",
+      "value": 500,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2027-01",
+      "state": "Contrattualizzato",
+      "partner": "Secco Sistemi S.p.A.",
+      "order": "DD10100",
+      "desc": "Fattura in bozza",
+      "value": 2500,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-01",
+      "state": "Contrattualizzato",
+      "partner": "Serramenti Brombal S.r.l",
+      "order": "DD10013",
+      "desc": "Fattura in bozza",
+      "value": 600,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2027-01",
+      "state": "Contrattualizzato",
+      "partner": "Soul Srl",
+      "order": "DD10332",
+      "desc": "Fattura in bozza",
+      "value": 4200,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2027-01",
+      "state": "Contrattualizzato",
+      "partner": "Synethik Engineering S.r.l.",
+      "order": "DD10193",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2027-01",
+      "state": "Contrattualizzato",
+      "partner": "Trasporti e Servizi Mastrotto S.r.l.",
+      "order": "DD10126",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2027-01",
+      "state": "Contrattualizzato",
+      "partner": "Union Plus S.r.l.",
+      "order": "DD10025",
+      "desc": "Fattura in bozza",
+      "value": 18000,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2027-01",
+      "state": "Consuntivi",
+      "partner": "Mondeo S.r.l.",
+      "order": "DD10200",
+      "desc": "ipotesi",
+      "value": 10000,
+      "account": "Luca Realdon",
+      "fatt": "Probabile"
+    },
+    {
+      "month": "2027-01",
+      "state": "Consuntivi",
+      "partner": "Penta Formazione S.r.l.",
+      "order": "DD10241",
+      "desc": "attività",
+      "value": 4000,
+      "account": "Nicola Sartore",
+      "fatt": "Probabile"
+    },
+    {
+      "month": "2027-01",
+      "state": "Offerta possibile",
+      "partner": "B2B 72 Srl",
+      "order": "DD10327",
+      "desc": "tranche",
+      "value": 18000,
+      "account": "Nicola Sartore",
+      "fatt": "Possibile"
+    },
+    {
+      "month": "2027-01",
+      "state": "Offerta possibile",
+      "partner": "B2B 72 Srl",
+      "order": "DD10327",
+      "desc": "tranche",
+      "value": 3000,
+      "account": "Nicola Sartore",
+      "fatt": "Possibile"
+    },
+    {
+      "month": "2027-01",
+      "state": "Offerta probabile",
+      "partner": "Emilav",
+      "order": "DD10350",
+      "desc": "tranche",
+      "value": 5000,
+      "account": "Non assegnato",
+      "fatt": "Probabile"
+    },
+    {
+      "month": "2027-01",
+      "state": "Offerta possibile",
+      "partner": "Hidromec srl",
+      "order": "DD10270",
+      "desc": "tranche",
+      "value": 10000,
+      "account": "Guido Tessari",
+      "fatt": "Possibile"
+    },
+    {
+      "month": "2027-01",
+      "state": "Offerta possibile",
+      "partner": "Termoidraulica Roberto Bertoletti S.r.l.",
+      "order": "DD10281",
+      "desc": "tranche",
+      "value": 10000,
+      "account": "Guido Tessari",
+      "fatt": "Possibile"
+    },
+    {
+      "month": "2027-02",
+      "state": "Contrattualizzato",
+      "partner": "AdHoc S.r.l. Unipersonale",
+      "order": "DD10107",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2027-02",
+      "state": "Contrattualizzato",
+      "partner": "Alba S.r.l.",
+      "order": "DD10287-01",
+      "desc": "Fattura in bozza",
+      "value": 600,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-02",
+      "state": "Contrattualizzato",
+      "partner": "AMG S.p.A.",
+      "order": "DD10340",
+      "desc": "Fattura in bozza",
+      "value": 12000,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-02",
+      "state": "Contrattualizzato",
+      "partner": "Arky Srl",
+      "order": "DD10105",
+      "desc": "Fattura in bozza",
+      "value": 600,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2027-02",
+      "state": "Contrattualizzato",
+      "partner": "BERTI PAVIMENTI LEGNO S.A.S. DI BERTI HOLDING S.R.L.",
+      "order": "DD10101",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-02",
+      "state": "Contrattualizzato",
+      "partner": "Cabbia Group S.r.l.",
+      "order": "DD10058",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2027-02",
+      "state": "Contrattualizzato",
+      "partner": "G.M.A. S.r.l.",
+      "order": "DD10309",
+      "desc": "Fattura in bozza",
+      "value": 3600,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-02",
+      "state": "Contrattualizzato",
+      "partner": "Schueco PWS Italia S.r.l.",
+      "order": "DD10177",
+      "desc": "Fattura in bozza",
+      "value": 500,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2027-02",
+      "state": "Contrattualizzato",
+      "partner": "Secco Sistemi S.p.A.",
+      "order": "DD10100",
+      "desc": "Fattura in bozza",
+      "value": 2500,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-02",
+      "state": "Contrattualizzato",
+      "partner": "Service43 S.r.l.",
+      "order": "DD10347",
+      "desc": "Fattura in bozza",
+      "value": 12100,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-02",
+      "state": "Contrattualizzato",
+      "partner": "Synethik Engineering S.r.l.",
+      "order": "DD10193",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2027-02",
+      "state": "Contrattualizzato",
+      "partner": "Trasporti e Servizi Mastrotto S.r.l.",
+      "order": "DD10126",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2027-02",
+      "state": "Consuntivi",
+      "partner": "Mondeo S.r.l.",
+      "order": "DD10200",
+      "desc": "ipotesi",
+      "value": 10000,
+      "account": "Luca Realdon",
+      "fatt": "Probabile"
+    },
+    {
+      "month": "2027-02",
+      "state": "Consuntivi",
+      "partner": "Penta Formazione S.r.l.",
+      "order": "DD10241",
+      "desc": "attività",
+      "value": 4000,
+      "account": "Nicola Sartore",
+      "fatt": "Probabile"
+    },
+    {
+      "month": "2027-02",
+      "state": "Offerta possibile",
+      "partner": "Hidromec srl",
+      "order": "DD10270",
+      "desc": "tranche",
+      "value": 10000,
+      "account": "Guido Tessari",
+      "fatt": "Possibile"
+    },
+    {
+      "month": "2027-02",
+      "state": "Offerta possibile",
+      "partner": "Termoidraulica Roberto Bertoletti S.r.l.",
+      "order": "DD10281",
+      "desc": "tranche",
+      "value": 10000,
+      "account": "Guido Tessari",
+      "fatt": "Possibile"
+    },
+    {
+      "month": "2027-02",
+      "state": "Offerta possibile",
+      "partner": "Trasporti e Servizi Mastrotto S.r.l.",
+      "order": "DD10244",
+      "desc": "ipotesi 2027 CRM",
+      "value": 10000,
+      "account": "Luca Realdon",
+      "fatt": "Possibile"
+    },
+    {
+      "month": "2027-03",
+      "state": "Contrattualizzato",
+      "partner": "AdHoc S.r.l. Unipersonale",
+      "order": "DD10107",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2027-03",
+      "state": "Contrattualizzato",
+      "partner": "Alba S.r.l.",
+      "order": "DD10287-01",
+      "desc": "Fattura in bozza",
+      "value": 600,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-03",
+      "state": "Contrattualizzato",
+      "partner": "AMG S.p.A.",
+      "order": "DD10340",
+      "desc": "Fattura in bozza",
+      "value": 12000,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-03",
+      "state": "Contrattualizzato",
+      "partner": "Arky Srl",
+      "order": "DD10105",
+      "desc": "Fattura in bozza",
+      "value": 600,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2027-03",
+      "state": "Contrattualizzato",
+      "partner": "BERTI PAVIMENTI LEGNO S.A.S. DI BERTI HOLDING S.R.L.",
+      "order": "DD10101",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-03",
+      "state": "Contrattualizzato",
+      "partner": "G.M.A. S.r.l.",
+      "order": "DD10309",
+      "desc": "Fattura in bozza",
+      "value": 10500,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-03",
+      "state": "Contrattualizzato",
+      "partner": "Secco Sistemi S.p.A.",
+      "order": "DD10100",
+      "desc": "Fattura in bozza",
+      "value": 2500,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-03",
+      "state": "Contrattualizzato",
+      "partner": "Service43 S.r.l.",
+      "order": "DD10347",
+      "desc": "Fattura in bozza",
+      "value": 6000,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-03",
+      "state": "Contrattualizzato",
+      "partner": "Synethik Engineering S.r.l.",
+      "order": "DD10193",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2027-03",
+      "state": "Contrattualizzato",
+      "partner": "Trasporti e Servizi Mastrotto S.r.l.",
+      "order": "DD10126",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2027-03",
+      "state": "Consuntivi",
+      "partner": "Mondeo S.r.l.",
+      "order": "DD10200",
+      "desc": "ipotesi",
+      "value": 10000,
+      "account": "Luca Realdon",
+      "fatt": "Probabile"
+    },
+    {
+      "month": "2027-03",
+      "state": "Consuntivi",
+      "partner": "Penta Formazione S.r.l.",
+      "order": "DD10241",
+      "desc": "attività",
+      "value": 4000,
+      "account": "Nicola Sartore",
+      "fatt": "Probabile"
+    },
+    {
+      "month": "2027-03",
+      "state": "Offerta possibile",
+      "partner": "Hidromec srl",
+      "order": "DD10270",
+      "desc": "tranche",
+      "value": 10000,
+      "account": "Guido Tessari",
+      "fatt": "Possibile"
+    },
+    {
+      "month": "2027-03",
+      "state": "Offerta possibile",
+      "partner": "Trasporti e Servizi Mastrotto S.r.l.",
+      "order": "DD10244",
+      "desc": "ipotesi 2027 CRM",
+      "value": 10000,
+      "account": "Luca Realdon",
+      "fatt": "Possibile"
+    },
+    {
+      "month": "2027-04",
+      "state": "Contrattualizzato",
+      "partner": "AdHoc S.r.l. Unipersonale",
+      "order": "DD10107",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2027-04",
+      "state": "Contrattualizzato",
+      "partner": "Alba S.r.l.",
+      "order": "DD10287-01",
+      "desc": "Fattura in bozza",
+      "value": 600,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-04",
+      "state": "Contrattualizzato",
+      "partner": "AMG S.p.A.",
+      "order": "DD10340",
+      "desc": "Fattura in bozza",
+      "value": 12000,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-04",
+      "state": "Contrattualizzato",
+      "partner": "Arky Srl",
+      "order": "DD10105",
+      "desc": "Fattura in bozza",
+      "value": 600,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2027-04",
+      "state": "Contrattualizzato",
+      "partner": "Secco Sistemi S.p.A.",
+      "order": "DD10100",
+      "desc": "Fattura in bozza",
+      "value": 2500,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-04",
+      "state": "Contrattualizzato",
+      "partner": "Synethik Engineering S.r.l.",
+      "order": "DD10193",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2027-04",
+      "state": "Contrattualizzato",
+      "partner": "Trasporti e Servizi Mastrotto S.r.l.",
+      "order": "DD10126",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Luca Realdon"
+    },
+    {
+      "month": "2027-04",
+      "state": "Consuntivi",
+      "partner": "Mondeo S.r.l.",
+      "order": "DD10200",
+      "desc": "ipotesi",
+      "value": 10000,
+      "account": "Luca Realdon",
+      "fatt": "Probabile"
+    },
+    {
+      "month": "2027-04",
+      "state": "Consuntivi",
+      "partner": "Penta Formazione S.r.l.",
+      "order": "DD10241",
+      "desc": "attività",
+      "value": 3000,
+      "account": "Nicola Sartore",
+      "fatt": "Probabile"
+    },
+    {
+      "month": "2027-04",
+      "state": "Offerta possibile",
+      "partner": "Hidromec srl",
+      "order": "DD10270",
+      "desc": "tranche",
+      "value": 10000,
+      "account": "Guido Tessari",
+      "fatt": "Possibile"
+    },
+    {
+      "month": "2027-05",
+      "state": "Contrattualizzato",
+      "partner": "AdHoc S.r.l. Unipersonale",
+      "order": "DD10107",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2027-05",
+      "state": "Contrattualizzato",
+      "partner": "Alba S.r.l.",
+      "order": "DD10287-01",
+      "desc": "Fattura in bozza",
+      "value": 600,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-05",
+      "state": "Contrattualizzato",
+      "partner": "AMG S.p.A.",
+      "order": "DD10340",
+      "desc": "Fattura in bozza",
+      "value": 12000,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-05",
+      "state": "Contrattualizzato",
+      "partner": "Arky Srl",
+      "order": "DD10105",
+      "desc": "Fattura in bozza",
+      "value": 600,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2027-05",
+      "state": "Contrattualizzato",
+      "partner": "Secco Sistemi S.p.A.",
+      "order": "DD10100",
+      "desc": "Fattura in bozza",
+      "value": 2500,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-05",
+      "state": "Contrattualizzato",
+      "partner": "Synethik Engineering S.r.l.",
+      "order": "DD10193",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2027-05",
+      "state": "Consuntivi",
+      "partner": "Penta Formazione S.r.l.",
+      "order": "DD10241",
+      "desc": "attività",
+      "value": 3000,
+      "account": "Nicola Sartore",
+      "fatt": "Probabile"
+    },
+    {
+      "month": "2027-06",
+      "state": "Contrattualizzato",
+      "partner": "Alba S.r.l.",
+      "order": "DD10287-01",
+      "desc": "Fattura in bozza",
+      "value": 600,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-06",
+      "state": "Contrattualizzato",
+      "partner": "AMG S.p.A.",
+      "order": "DD10340",
+      "desc": "Fattura in bozza",
+      "value": 12000,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-06",
+      "state": "Contrattualizzato",
+      "partner": "Arky Srl",
+      "order": "DD10105",
+      "desc": "Fattura in bozza",
+      "value": 600,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2027-06",
+      "state": "Contrattualizzato",
+      "partner": "Service43 S.r.l.",
+      "order": "DD10347",
+      "desc": "Fattura in bozza",
+      "value": 8500,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-06",
+      "state": "Contrattualizzato",
+      "partner": "Synethik Engineering S.r.l.",
+      "order": "DD10193",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2027-07",
+      "state": "Contrattualizzato",
+      "partner": "Alba S.r.l.",
+      "order": "DD10287-01",
+      "desc": "Fattura in bozza",
+      "value": 600,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-07",
+      "state": "Contrattualizzato",
+      "partner": "AMG S.p.A.",
+      "order": "DD10340",
+      "desc": "Fattura in bozza",
+      "value": 12000,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-07",
+      "state": "Contrattualizzato",
+      "partner": "Synethik Engineering S.r.l.",
+      "order": "DD10193",
+      "desc": "Fattura in bozza",
+      "value": 300,
+      "account": "Nicola Sartore"
+    },
+    {
+      "month": "2027-08",
+      "state": "Contrattualizzato",
+      "partner": "Alba S.r.l.",
+      "order": "DD10287-01",
+      "desc": "Fattura in bozza",
+      "value": 600,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-08",
+      "state": "Contrattualizzato",
+      "partner": "AMG S.p.A.",
+      "order": "DD10340",
+      "desc": "Fattura in bozza",
+      "value": 14250,
+      "account": "Guido Tessari"
+    },
+    {
+      "month": "2027-09",
+      "state": "Contrattualizzato",
+      "partner": "Alba S.r.l.",
+      "order": "DD10287-01",
+      "desc": "Fattura in bozza",
+      "value": 600,
+      "account": "Guido Tessari"
+    }
+  ],
+  "pipeMonthly": {
+    "2026-01": 107205.08,
+    "2026-02": 135995.1,
+    "2026-03": 173307.68,
+    "2026-04": 130105.73,
+    "2026-05": 118415.55,
+    "2026-06": 72460.08,
+    "2026-07": 184021.84,
+    "2026-08": 153874.27
+  },
+  "pipeDetailFrom": "2026-09",
+  "leadOrders": {
+    "4336": [
+      [
+        "DD10130",
+        "inviato"
+      ]
+    ],
+    "4503": [
+      [
+        "DD10162",
+        "inviato"
+      ]
+    ],
+    "4942": [
+      [
+        "DD10176",
+        "bozza"
+      ]
+    ],
+    "4991": [
+      [
+        "DD10380",
+        "bozza"
+      ]
+    ],
+    "4997": [
+      [
+        "DD10184",
+        "bozza"
+      ]
+    ],
+    "5022": [
+      [
+        "DD10195",
+        "annullato"
+      ]
+    ],
+    "5024": [
+      [
+        "DD10379",
+        "inviato"
+      ]
+    ],
+    "5655": [
+      [
+        "DD10237",
+        "inviato"
+      ]
+    ],
+    "5656": [
+      [
+        "DD10238",
+        "inviato"
+      ]
+    ],
+    "5718": [
+      [
+        "DD10295",
+        "bozza"
+      ]
+    ],
+    "5725": [
+      [
+        "DD10270",
+        "inviato"
+      ]
+    ],
+    "5731": [
+      [
+        "DD10383",
+        "bozza"
+      ]
+    ],
+    "5804": [
+      [
+        "DD10288",
+        "annullato"
+      ]
+    ],
+    "5814": [
+      [
+        "DD10328",
+        "bozza"
+      ]
+    ],
+    "5821": [
+      [
+        "DD10319",
+        "bozza"
+      ]
+    ],
+    "5822": [
+      [
+        "DD10292",
+        "inviato"
+      ]
+    ],
+    "5828": [
+      [
+        "DD10305",
+        "annullato"
+      ]
+    ],
+    "5873": [
+      [
+        "DD10300",
+        "inviato"
+      ],
+      [
+        "DD10300-01",
+        "annullato"
+      ]
+    ],
+    "5879": [
+      [
+        "DD10307",
+        "inviato"
+      ]
+    ],
+    "5908": [
+      [
+        "DD10322",
+        "annullato"
+      ]
+    ],
+    "5911": [
+      [
+        "DD10323",
+        "annullato"
+      ]
+    ],
+    "5918": [
+      [
+        "DD10329",
+        "bozza"
+      ]
+    ],
+    "5928": [
+      [
+        "DD10335",
+        "inviato"
+      ]
+    ],
+    "5930": [
+      [
+        "DD10350",
+        "bozza"
+      ]
+    ],
+    "5942": [
+      [
+        "DD10343",
+        "inviato"
+      ]
+    ],
+    "5949": [
+      [
+        "DD10354",
+        "bozza"
+      ]
+    ],
+    "5963": [
+      [
+        "DD10362",
+        "bozza"
+      ]
+    ],
+    "5971": [
+      [
+        "DD10360",
+        "bozza"
+      ]
+    ],
+    "5978": [
+      [
+        "DD10371",
+        "bozza"
+      ]
+    ],
+    "6000": [
+      [
+        "DD10363",
+        "inviato"
+      ]
+    ],
+    "6011": [
+      [
+        "DD10365",
+        "bozza"
+      ]
+    ],
+    "6012": [
+      [
+        "DD10367",
+        "inviato"
+      ]
+    ],
+    "6042": [
+      [
+        "DD10373",
+        "inviato"
+      ]
+    ],
+    "6079": [
+      [
+        "DD10377",
+        "inviato"
+      ]
+    ],
+    "6081": [
+      [
+        "DD10301-01",
+        "inviato"
+      ]
+    ],
+    "6082": [
+      [
+        "DD10375",
+        "bozza"
+      ]
+    ],
+    "6091": [
+      [
+        "DD10378",
+        "bozza"
+      ]
+    ],
+    "6104": [
+      [
+        "DD10384",
+        "bozza"
+      ]
+    ]
+  },
+  "planCovered": {
+    "5024": [
+      "DD10379"
+    ],
+    "5725": [
+      "DD10270"
+    ],
+    "5918": [
+      "DD10329"
+    ],
+    "5930": [
+      "DD10350"
+    ],
+    "6042": [
+      "DD10373"
+    ],
+    "6079": [
+      "DD10377"
+    ],
+    "6091": [
+      "DD10378"
+    ]
+  },
+  "planUnlinked": [
+    {
+      "order": "DD10381",
+      "partner": "Arky Srl",
+      "value": 25650
+    },
+    {
+      "order": "DD10382",
+      "partner": "Arky Srl",
+      "value": 25500
+    }
+  ]
+}
