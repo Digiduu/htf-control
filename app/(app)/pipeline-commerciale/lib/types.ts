@@ -26,9 +26,15 @@ export interface PipelineRow {
   tipi_progetto?: string[];
   ordinato: number | null;
   months: (number | null)[];
+  // Solo righe "Confermata - Fatturato" (dal 25/11/2026): stato di pagamento
+  // delle fatture del mese — "paid" (pagate o in pagamento), "partial"
+  // (pagamento parziale o misto), "unpaid" (non pagate).
+  months_pay?: PayLevel[];
   totale: number | null;
   nota: string | null;
 }
+
+export type PayLevel = "paid" | "partial" | "unpaid" | null;
 
 export interface StatoSummaryEntry {
   stato: string;
@@ -73,4 +79,8 @@ export interface PipelineDoc {
   stato_summary: StatoSummaryEntry[];
   target_table: TargetTableEntry[];
   revenue_summary?: RevenueSummary;
+  // Anno successivo (dal 25/11/2026): stesso schema, mostrato col selettore
+  // anno della pagina. Per i Project Leader le righe arrivano già filtrate
+  // dalla funzione pipeline_generation_for_viewer.
+  next_year?: PipelineDoc | null;
 }

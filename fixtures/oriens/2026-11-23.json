@@ -66,7 +66,22 @@
       "project_leader": null,
       "referente": "Andrea Menegotto",
       "stato": "Confermata - Fatturato",
-      "totale": 9044.05
+      "totale": 9044.05,
+      "months_pay": [
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "B.F. Automation - Analisi strategica e organizzativa"
     },
     {
       "account": null,
@@ -121,7 +136,22 @@
       "project_leader": null,
       "referente": "Annalisa Callarelli",
       "stato": "Confermata - Fatturato",
-      "totale": 6740
+      "totale": 6740,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "C.N.A. Servizi Bologna S.c.r.l. - Formazione"
     },
     {
       "account": null,
@@ -148,7 +178,22 @@
       "project_leader": null,
       "referente": "Annalisa Callarelli",
       "stato": "Confermata - Fatturato",
-      "totale": 10000
+      "totale": 10000,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "unpaid",
+        null,
+        null
+      ],
+      "origine_titolo": "C.N.A. Servizi Bologna S.c.r.l. - Analisi settore servizi"
     },
     {
       "account": null,
@@ -175,7 +220,8 @@
       "project_leader": null,
       "referente": "Annalisa Callarelli",
       "stato": "Bozza - Contrattualizzato",
-      "totale": 16000
+      "totale": 16000,
+      "origine_titolo": "C.N.A. Servizi Bologna S.c.r.l. - Analisi settore servizi"
     },
     {
       "account": null,
@@ -202,7 +248,8 @@
       "project_leader": null,
       "referente": "Annalisa Callarelli",
       "stato": "Previsione - Possibile",
-      "totale": 24000
+      "totale": 24000,
+      "origine_titolo": "C.N.A. Servizi Bologna S.c.r.l. - Analisi settore servizi"
     },
     {
       "account": null,
@@ -257,7 +304,8 @@
       "project_leader": null,
       "referente": "Camilla Tartaria",
       "stato": "Bozza - Contrattualizzato",
-      "totale": 4440
+      "totale": 4440,
+      "origine_titolo": "Centro Consorzi per Porr - Parità di genere"
     },
     {
       "account": null,
@@ -340,7 +388,22 @@
       "project_leader": null,
       "referente": "Davide Cervellin",
       "stato": "Confermata - Fatturato",
-      "totale": 3300
+      "totale": 3300,
+      "months_pay": [
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "FCF Impianti S.r.l. - Amministrazione"
     },
     {
       "account": null,
@@ -367,7 +430,22 @@
       "project_leader": null,
       "referente": "Davide Cervellin",
       "stato": "Confermata - Fatturato",
-      "totale": 5600
+      "totale": 5600,
+      "months_pay": [
+        null,
+        "paid",
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "FCF Impianti S.r.l. - Mentoring"
     },
     {
       "account": null,
@@ -394,7 +472,22 @@
       "project_leader": null,
       "referente": "Davide Cervellin",
       "stato": "Confermata - Fatturato",
-      "totale": 4800
+      "totale": 4800,
+      "months_pay": [
+        "paid",
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "FCF Impianti S.r.l. - Risorse Umane"
     },
     {
       "account": null,
@@ -421,7 +514,22 @@
       "project_leader": null,
       "referente": "Davide Cervellin",
       "stato": "Confermata - Fatturato",
-      "totale": 12000
+      "totale": 12000,
+      "months_pay": [
+        "paid",
+        "paid",
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "FCF Impianti S.r.l. - Ufficio Tecnico"
     },
     {
       "account": null,
@@ -448,7 +556,22 @@
       "project_leader": null,
       "referente": "Davide Cervellin",
       "stato": "Confermata - Fatturato",
-      "totale": 5000
+      "totale": 5000,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        "paid",
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "FCF Impianti S.r.l. - Affiancamento Direzionale"
     },
     {
       "account": null,
@@ -475,7 +598,8 @@
       "project_leader": null,
       "referente": "Davide Cervellin",
       "stato": "Consuntivi",
-      "totale": 2500
+      "totale": 2500,
+      "origine_titolo": "FCF Impianti S.r.l. - Affiancamento Direzionale"
     },
     {
       "account": null,
@@ -558,7 +682,22 @@
       "project_leader": null,
       "referente": "Giuseppe Piazza",
       "stato": "Confermata - Fatturato",
-      "totale": 59147.18
+      "totale": 59147.18,
+      "months_pay": [
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "unpaid",
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Bordignon S.r.l. - Affiancamento Bertoldi - Fractional Management"
     },
     {
       "account": null,
@@ -585,7 +724,22 @@
       "project_leader": null,
       "referente": "Giuseppe Piazza",
       "stato": "Confermata - Fatturato",
-      "totale": 3752
+      "totale": 3752,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "unpaid",
+        null,
+        null
+      ],
+      "origine_titolo": "Bordignon - Affiancamento ott-nov-dic26"
     },
     {
       "account": null,
@@ -639,7 +793,22 @@
       "project_leader": null,
       "referente": "Giuseppe Piazza",
       "stato": "Confermata - Fatturato",
-      "totale": 23000
+      "totale": 23000,
+      "months_pay": [
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        "unpaid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Caoduro Impianti  - Envisioning e assessment persone, processi, digital"
     },
     {
       "account": null,
@@ -666,7 +835,22 @@
       "project_leader": null,
       "referente": "Giuseppe Piazza",
       "stato": "Confermata - Fatturato",
-      "totale": 1500
+      "totale": 1500,
+      "months_pay": [
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Fisiomedica Vicenza Srl - Workshop Analisi"
     },
     {
       "account": null,
@@ -721,7 +905,22 @@
       "project_leader": null,
       "referente": "Giuseppe Piazza",
       "stato": "Confermata - Fatturato",
-      "totale": 317.5
+      "totale": 317.5,
+      "months_pay": [
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "I.W.D.T. S.r.l. a socio unico (PB Finestre) - Riorganizzazione modello di distribuzione commerciale"
     },
     {
       "account": null,
@@ -748,7 +947,22 @@
       "project_leader": null,
       "referente": "Giuseppe Piazza",
       "stato": "Confermata - Fatturato",
-      "totale": 3000
+      "totale": 3000,
+      "months_pay": [
+        "paid",
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Immobiliare la Corte dei Miracoli Srl - Analisi modello business"
     },
     {
       "account": null,
@@ -775,7 +989,22 @@
       "project_leader": null,
       "referente": "Giuseppe Piazza",
       "stato": "Confermata - Fatturato",
-      "totale": 2800
+      "totale": 2800,
+      "months_pay": [
+        "paid",
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Immobiliare la Corte dei Miracoli Srl - Affiancamento Agile"
     },
     {
       "account": null,
@@ -802,7 +1031,22 @@
       "project_leader": null,
       "referente": "Giuseppe Piazza",
       "stato": "Confermata - Fatturato",
-      "totale": 1400
+      "totale": 1400,
+      "months_pay": [
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Immobiliare la Corte dei Miracoli Srl - Sistema di controllo di gestione"
     },
     {
       "account": null,
@@ -941,7 +1185,22 @@
       "project_leader": null,
       "referente": "Giuseppe Piazza",
       "stato": "Confermata - Fatturato",
-      "totale": 88166.25
+      "totale": 88166.25,
+      "months_pay": [
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "unpaid",
+        null,
+        null
+      ],
+      "origine_titolo": "Mondeo - Affiancamento 2025 Aggiornato"
     },
     {
       "account": null,
@@ -968,7 +1227,8 @@
       "project_leader": null,
       "referente": "Giuseppe Piazza",
       "stato": "Consuntivi",
-      "totale": 16000
+      "totale": 16000,
+      "origine_titolo": "Mondeo - Affiancamento 2025 Aggiornato"
     },
     {
       "account": null,
@@ -995,7 +1255,22 @@
       "project_leader": null,
       "referente": "Giuseppe Piazza",
       "stato": "Confermata - Fatturato",
-      "totale": 47700
+      "totale": 47700,
+      "months_pay": [
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Mondeo - E-commerce 2026"
     },
     {
       "account": null,
@@ -1022,7 +1297,8 @@
       "project_leader": null,
       "referente": "Giuseppe Piazza",
       "stato": "Bozza - Contrattualizzato",
-      "totale": 24300
+      "totale": 24300,
+      "origine_titolo": "Mondeo S.r.l. - E-commerce 2027"
     },
     {
       "account": null,
@@ -1076,7 +1352,8 @@
       "project_leader": null,
       "referente": "Giuseppe Piazza",
       "stato": "Previsione - Possibile",
-      "totale": 20000
+      "totale": 20000,
+      "origine_titolo": "Reynaers Aluminium - Sviluppo analisi di mercato per piano industriale"
     },
     {
       "account": null,
@@ -1131,7 +1408,8 @@
       "project_leader": null,
       "referente": "Giuseppe Piazza",
       "stato": "Previsione - Possibile",
-      "totale": 7200
+      "totale": 7200,
+      "origine_titolo": "Secco Sistemi S.p.A. - Rafforzamento leadership"
     },
     {
       "account": null,
@@ -1158,7 +1436,22 @@
       "project_leader": null,
       "referente": "Giuseppe Piazza",
       "stato": "Confermata - Fatturato",
-      "totale": 2600
+      "totale": 2600,
+      "months_pay": [
+        null,
+        "paid",
+        null,
+        "paid",
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        "unpaid",
+        null,
+        null
+      ],
+      "origine_titolo": "Secco - Sessioni di coaching"
     },
     {
       "account": null,
@@ -1185,7 +1478,22 @@
       "project_leader": null,
       "referente": "Giuseppe Piazza",
       "stato": "Confermata - Fatturato",
-      "totale": 2000
+      "totale": 2000,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Secco Sistemi S.p.A. - Comunicare per collaborare"
     },
     {
       "account": null,
@@ -1212,7 +1520,8 @@
       "project_leader": null,
       "referente": "Giuseppe Piazza",
       "stato": "Bozza - Contrattualizzato",
-      "totale": 1800
+      "totale": 1800,
+      "origine_titolo": "Secco Sistemi S.p.A. - Comunicare per collaborare"
     },
     {
       "account": null,
@@ -1239,7 +1548,22 @@
       "project_leader": null,
       "referente": "Giuseppe Piazza",
       "stato": "Confermata - Fatturato",
-      "totale": 12104
+      "totale": 12104,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        "unpaid",
+        null,
+        null
+      ],
+      "origine_titolo": "Servizi Ospedalieri S.p.A. - Progetto Formazione"
     },
     {
       "account": null,
@@ -1266,7 +1590,8 @@
       "project_leader": null,
       "referente": "Giuseppe Piazza",
       "stato": "Bozza - Contrattualizzato",
-      "totale": 5000
+      "totale": 5000,
+      "origine_titolo": "Servizi Ospedalieri S.p.A. - Progetto Formazione"
     },
     {
       "account": null,
@@ -1293,7 +1618,8 @@
       "project_leader": null,
       "referente": "Giuseppe Piazza",
       "stato": "Consuntivi",
-      "totale": 8000
+      "totale": 8000,
+      "origine_titolo": "Servizi Ospedalieri S.p.A. - Progetto Formazione"
     },
     {
       "account": null,
@@ -1320,7 +1646,22 @@
       "project_leader": null,
       "referente": "Giuseppe Piazza",
       "stato": "Confermata - Fatturato",
-      "totale": 9775.94
+      "totale": 9775.94,
+      "months_pay": [
+        null,
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Sirius S.p.A. -  Affiancamento magazzino 2026"
     },
     {
       "account": null,
@@ -1347,7 +1688,22 @@
       "project_leader": null,
       "referente": "Giuseppe Piazza",
       "stato": "Confermata - Fatturato",
-      "totale": 15000
+      "totale": 15000,
+      "months_pay": [
+        "paid",
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Uniform S.p.A. - Lancio nuovo prodotto"
     },
     {
       "account": null,
@@ -1430,7 +1786,22 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Confermata - Fatturato",
-      "totale": 9591.4
+      "totale": 9591.4,
+      "months_pay": [
+        null,
+        null,
+        "paid",
+        null,
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Colombo S.r.l. - Progetto organizzativo: struttura dei ruoli e posizionamento di mercato"
     },
     {
       "account": null,
@@ -1457,7 +1828,22 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Confermata - Fatturato",
-      "totale": 1150
+      "totale": 1150,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Colombo - Affiancamento Business Intelligence 2026"
     },
     {
       "account": null,
@@ -1484,7 +1870,22 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Confermata - Fatturato",
-      "totale": 3840
+      "totale": 3840,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "partial",
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Colombo S.r.l. - Affiancamento Direzionale"
     },
     {
       "account": null,
@@ -1511,7 +1912,8 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Consuntivi",
-      "totale": 3000
+      "totale": 3000,
+      "origine_titolo": "Colombo S.r.l. - Affiancamento Direzionale"
     },
     {
       "account": null,
@@ -1538,7 +1940,22 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Confermata - Fatturato",
-      "totale": 9245.5
+      "totale": 9245.5,
+      "months_pay": [
+        "paid",
+        "paid",
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Digital Automations per Gruppo BEA - Analisi processi"
     },
     {
       "account": null,
@@ -1565,7 +1982,22 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Confermata - Fatturato",
-      "totale": 7500
+      "totale": 7500,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        "paid",
+        "unpaid",
+        null,
+        null
+      ],
+      "origine_titolo": "Digital Automations per Gruppo BEA - Affiancamento"
     },
     {
       "account": null,
@@ -1620,7 +2052,22 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Confermata - Fatturato",
-      "totale": 15000
+      "totale": 15000,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "unpaid",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Esse Music - Contabilità Digiduu"
     },
     {
       "account": null,
@@ -1674,7 +2121,8 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Previsione - Probabile",
-      "totale": 500
+      "totale": 500,
+      "origine_titolo": "G.M.A. S.r.l. - Verifica duplicati"
     },
     {
       "account": null,
@@ -1701,7 +2149,22 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Confermata - Fatturato",
-      "totale": 2075.95
+      "totale": 2075.95,
+      "months_pay": [
+        "paid",
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        "unpaid",
+        null,
+        null
+      ],
+      "origine_titolo": "Metiorplan - BI Dolfin"
     },
     {
       "account": null,
@@ -1756,7 +2219,22 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Confermata - Fatturato",
-      "totale": 3000
+      "totale": 3000,
+      "months_pay": [
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Officine Zoppelletto S.r.l. - Fase 2 sviluppo commerciale"
     },
     {
       "account": null,
@@ -1783,7 +2261,22 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Confermata - Fatturato",
-      "totale": 24200
+      "totale": 24200,
+      "months_pay": [
+        null,
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "unpaid",
+        null,
+        null
+      ],
+      "origine_titolo": "Officine Zoppelletto S.r.l. - Affiancamento 2026"
     },
     {
       "account": null,
@@ -1810,7 +2303,8 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Bozza - Contrattualizzato",
-      "totale": 5000
+      "totale": 5000,
+      "origine_titolo": "Officine Zoppelletto S.r.l. - Affiancamento 2026"
     },
     {
       "account": null,
@@ -1837,7 +2331,22 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Confermata - Fatturato",
-      "totale": 1502
+      "totale": 1502,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Serramenti Brombal S.r.l. - TG Fase 2 GenAI Project NPAI 1 Design Acceletator"
     },
     {
       "account": null,
@@ -1864,7 +2373,8 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Bozza - Contrattualizzato",
-      "totale": 1500
+      "totale": 1500,
+      "origine_titolo": "Serramenti Brombal S.r.l. - TG Fase 2 GenAI Project NPAI 1 Design Acceletator"
     },
     {
       "account": null,
@@ -1891,7 +2401,22 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Confermata - Fatturato",
-      "totale": 58014
+      "totale": 58014,
+      "months_pay": [
+        null,
+        null,
+        null,
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "unpaid",
+        null
+      ],
+      "origine_titolo": "Serramenti Brombal S.r.l. - TG Fase 2 GenAI Project NPAI 3 Working Together"
     },
     {
       "account": null,
@@ -1918,7 +2443,8 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Bozza - Contrattualizzato",
-      "totale": 8000
+      "totale": 8000,
+      "origine_titolo": "Serramenti Brombal S.r.l. - TG Fase 2 GenAI Project NPAI 3 Working Together"
     },
     {
       "account": null,
@@ -1945,7 +2471,22 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Confermata - Fatturato",
-      "totale": 88014
+      "totale": 88014,
+      "months_pay": [
+        null,
+        null,
+        null,
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "unpaid",
+        null
+      ],
+      "origine_titolo": "Serramenti Brombal S.r.l. - TG Fase 2 GenAI Project NPAI 4 Intelligent Welding"
     },
     {
       "account": null,
@@ -1972,7 +2513,8 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Bozza - Contrattualizzato",
-      "totale": 12000
+      "totale": 12000,
+      "origine_titolo": "Serramenti Brombal S.r.l. - TG Fase 2 GenAI Project NPAI 4 Intelligent Welding"
     },
     {
       "account": null,
@@ -1999,7 +2541,22 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Confermata - Fatturato",
-      "totale": 97014
+      "totale": 97014,
+      "months_pay": [
+        null,
+        null,
+        null,
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "unpaid",
+        null
+      ],
+      "origine_titolo": "Serramenti Brombal S.r.l. - TG Fase 2 GenAI Project NPAI 5 Window is Glass"
     },
     {
       "account": null,
@@ -2026,7 +2583,8 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Bozza - Contrattualizzato",
-      "totale": 6200
+      "totale": 6200,
+      "origine_titolo": "Serramenti Brombal S.r.l. - Parità di genere"
     },
     {
       "account": null,
@@ -2053,7 +2611,22 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Confermata - Fatturato",
-      "totale": 8002
+      "totale": 8002,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Serramenti Brombal S.r.l. - Contratto di rete privo di soggettività giuridica"
     },
     {
       "account": null,
@@ -2080,7 +2653,8 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Bozza - Contrattualizzato",
-      "totale": 8000
+      "totale": 8000,
+      "origine_titolo": "Serramenti Brombal S.r.l. - Contratto di rete privo di soggettività giuridica"
     },
     {
       "account": null,
@@ -2107,7 +2681,8 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Previsione - Possibile",
-      "totale": 9000
+      "totale": 9000,
+      "origine_titolo": "Serramenti Brombal - Modello 231"
     },
     {
       "account": null,
@@ -2134,7 +2709,22 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Confermata - Fatturato",
-      "totale": 1560
+      "totale": 1560,
+      "months_pay": [
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "TIM per Esse Music Store s.a.s. - Analisi processi e digitalizzazione con Odoo"
     },
     {
       "account": null,
@@ -2161,7 +2751,22 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Confermata - Fatturato",
-      "totale": 41000
+      "totale": 41000,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "unpaid",
+        null,
+        null,
+        null,
+        "unpaid",
+        null
+      ],
+      "origine_titolo": "Tim per Trivellato - Analisi per efficientamento progetti service"
     },
     {
       "account": null,
@@ -2188,7 +2793,22 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Confermata - Fatturato",
-      "totale": 21522
+      "totale": 21522,
+      "months_pay": [
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Tim S.p.A. - Tim per Esse Music - Fase 3"
     },
     {
       "account": null,
@@ -2215,7 +2835,22 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Confermata - Fatturato",
-      "totale": 33000
+      "totale": 33000,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "unpaid",
+        "unpaid",
+        null
+      ],
+      "origine_titolo": "Tim per Locapal - Analisi processi e adozione Office 365"
     },
     {
       "account": null,
@@ -2354,7 +2989,22 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Confermata - Fatturato",
-      "totale": 14000
+      "totale": 14000,
+      "months_pay": [
+        "paid",
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Zanatta Vetro S.r.l. - Affiancamento gennaio-febbraio"
     },
     {
       "account": null,
@@ -2381,7 +3031,8 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Consuntivi",
-      "totale": 4000
+      "totale": 4000,
+      "origine_titolo": "Zanatta Vetro S.r.l. - Affiancamento gennaio-febbraio"
     },
     {
       "account": null,
@@ -2408,7 +3059,22 @@
       "project_leader": null,
       "referente": "Luca Realdon",
       "stato": "Confermata - Fatturato",
-      "totale": 45000
+      "totale": 45000,
+      "months_pay": [
+        null,
+        null,
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "unpaid",
+        "unpaid",
+        null,
+        null
+      ],
+      "origine_titolo": "Zanatta - Affiancamento marzo - dicembre 2026"
     },
     {
       "account": null,
@@ -2435,7 +3101,22 @@
       "project_leader": null,
       "referente": "Marco Perillo",
       "stato": "Confermata - Fatturato",
-      "totale": 12213.09
+      "totale": 12213.09,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "unpaid",
+        null,
+        null
+      ],
+      "origine_titolo": "Alfamation - Assessment iniziale"
     },
     {
       "account": null,
@@ -2462,7 +3143,8 @@
       "project_leader": null,
       "referente": "Marco Perillo",
       "stato": "Bozza - Contrattualizzato",
-      "totale": 13000
+      "totale": 13000,
+      "origine_titolo": "Alfamation - Assessment iniziale"
     },
     {
       "account": null,
@@ -2573,7 +3255,22 @@
       "project_leader": null,
       "referente": "Marco Perillo",
       "stato": "Confermata - Fatturato",
-      "totale": 25000
+      "totale": 25000,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        "paid",
+        null
+      ],
+      "origine_titolo": "WSO per River - Due Diligence"
     },
     {
       "account": null,
@@ -2600,7 +3297,8 @@
       "project_leader": null,
       "referente": "Marco Perillo",
       "stato": "Bozza - Contrattualizzato",
-      "totale": 11000
+      "totale": 11000,
+      "origine_titolo": "WSO per River - Due Diligence"
     },
     {
       "account": null,
@@ -2627,7 +3325,21 @@
       "project_leader": null,
       "referente": "Marco Perillo",
       "stato": "Confermata - Fatturato",
-      "totale": 3000
+      "totale": 3000,
+      "months_pay": [
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
     },
     {
       "account": null,
@@ -2738,7 +3450,8 @@
       "project_leader": null,
       "referente": "Monica Quaglia",
       "stato": "Previsione - Possibile",
-      "totale": 7500
+      "totale": 7500,
+      "origine_titolo": "Caseificio Donato - Analisi flussi amministrativi"
     },
     {
       "account": null,
@@ -2765,7 +3478,22 @@
       "project_leader": null,
       "referente": "Nicolò Danese",
       "stato": "Confermata - Fatturato",
-      "totale": 2420
+      "totale": 2420,
+      "months_pay": [
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "unpaid",
+        null
+      ],
+      "origine_titolo": "Artigianlegno - fareRetail"
     },
     {
       "account": null,
@@ -2792,7 +3520,8 @@
       "project_leader": null,
       "referente": "Nicolò Danese",
       "stato": "Bozza - Contrattualizzato",
-      "totale": 220
+      "totale": 220,
+      "origine_titolo": "Artigianlegno - fareRetail"
     },
     {
       "account": null,
@@ -2819,7 +3548,8 @@
       "project_leader": null,
       "referente": "Non assegnato",
       "stato": "Bozza - Contrattualizzato",
-      "totale": 10800
+      "totale": 10800,
+      "origine_titolo": "Centro Consorzi per Brombal - Parità di genere"
     },
     {
       "account": null,
@@ -2846,7 +3576,22 @@
       "project_leader": null,
       "referente": "Non assegnato",
       "stato": "Confermata - Fatturato",
-      "totale": 2760
+      "totale": 2760,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "CNA - Formazione"
     },
     {
       "account": null,
@@ -2873,7 +3618,22 @@
       "project_leader": null,
       "referente": "Non assegnato",
       "stato": "Confermata - Fatturato",
-      "totale": 50000
+      "totale": 50000,
+      "months_pay": [
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        null,
+        null
+      ],
+      "origine_titolo": "Digiduu - Rif. Contratto di prestazione di servizi"
     },
     {
       "account": null,
@@ -2900,7 +3660,8 @@
       "project_leader": null,
       "referente": "Non assegnato",
       "stato": "Bozza - Contrattualizzato",
-      "totale": 10000
+      "totale": 10000,
+      "origine_titolo": "Digiduu - Rif. Contratto di prestazione di servizi"
     },
     {
       "account": null,
@@ -2927,7 +3688,22 @@
       "project_leader": null,
       "referente": "Non assegnato",
       "stato": "Confermata - Fatturato",
-      "totale": 120000
+      "totale": 120000,
+      "months_pay": [
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        null,
+        null
+      ],
+      "origine_titolo": "Digiduu - Rif. Contratto di collaborazione"
     },
     {
       "account": null,
@@ -2954,7 +3730,8 @@
       "project_leader": null,
       "referente": "Non assegnato",
       "stato": "Bozza - Contrattualizzato",
-      "totale": 24000
+      "totale": 24000,
+      "origine_titolo": "Digiduu - Rif. Contratto di collaborazione"
     },
     {
       "account": null,
@@ -2981,7 +3758,21 @@
       "project_leader": null,
       "referente": "Non assegnato",
       "stato": "Confermata - Fatturato",
-      "totale": 30000
+      "totale": 30000,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null
+      ]
     },
     {
       "account": null,
@@ -3008,7 +3799,21 @@
       "project_leader": null,
       "referente": "Non assegnato",
       "stato": "Confermata - Fatturato",
-      "totale": 327
+      "totale": 327,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "unpaid",
+        null,
+        null,
+        null
+      ]
     },
     {
       "account": null,
@@ -3035,7 +3840,8 @@
       "project_leader": null,
       "referente": "Non assegnato",
       "stato": "Previsione - Possibile",
-      "totale": 14000
+      "totale": 14000,
+      "origine_titolo": "Laboindustria - Controllo di gestione"
     },
     {
       "account": null,
@@ -3062,7 +3868,8 @@
       "project_leader": null,
       "referente": "Non assegnato",
       "stato": "Previsione - Probabile",
-      "totale": 8000
+      "totale": 8000,
+      "origine_titolo": "MB S.p.A. - Controllo di gestione"
     },
     {
       "account": null,
@@ -3089,7 +3896,22 @@
       "project_leader": null,
       "referente": "Non assegnato",
       "stato": "Confermata - Fatturato",
-      "totale": 1750
+      "totale": 1750,
+      "months_pay": [
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Montenegro S.r.l. - Supporto Marketing e Commerciale – Nov-Dic 2025"
     },
     {
       "account": null,
@@ -3116,7 +3938,8 @@
       "project_leader": null,
       "referente": "Non assegnato",
       "stato": "Previsione - Possibile",
-      "totale": 14000
+      "totale": 14000,
+      "origine_titolo": "Proteko S.r.l. - Assessment commerciale e organizzativo"
     },
     {
       "account": null,
@@ -3143,7 +3966,22 @@
       "project_leader": null,
       "referente": "Roberto Cucchi",
       "stato": "Confermata - Fatturato",
-      "totale": 45405
+      "totale": 45405,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        null,
+        null
+      ],
+      "origine_titolo": "Rete Spa - Governance Processi Inter-Company"
     },
     {
       "account": null,
@@ -3170,7 +4008,8 @@
       "project_leader": null,
       "referente": "Roberto Cucchi",
       "stato": "Bozza - Contrattualizzato",
-      "totale": 7000
+      "totale": 7000,
+      "origine_titolo": "Rete Spa - Governance Processi Inter-Company"
     },
     {
       "account": null,
@@ -3365,7 +4204,22 @@
       "project_leader": null,
       "referente": "Stefano Franceschi",
       "stato": "Confermata - Fatturato",
-      "totale": 23100
+      "totale": 23100,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        "paid",
+        "paid",
+        "unpaid",
+        null,
+        null
+      ],
+      "origine_titolo": "MFT - Analisi di governance e sviluppo interno"
     },
     {
       "account": null,
@@ -3392,7 +4246,8 @@
       "project_leader": null,
       "referente": "Stefano Franceschi",
       "stato": "Bozza - Contrattualizzato",
-      "totale": 10400
+      "totale": 10400,
+      "origine_titolo": "MFT - Analisi di governance e sviluppo interno"
     },
     {
       "account": null,
@@ -3419,7 +4274,22 @@
       "project_leader": null,
       "referente": "Stefano Franceschi",
       "stato": "Confermata - Fatturato",
-      "totale": 211.5
+      "totale": 211.5,
+      "months_pay": [
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Ph Hotel  - Operations: Efficienza e Controllo"
     },
     {
       "account": null,
@@ -3502,7 +4372,22 @@
       "project_leader": null,
       "referente": "Stefano Franceschi",
       "stato": "Confermata - Fatturato",
-      "totale": 10800
+      "totale": 10800,
+      "months_pay": [
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Trasporti e Servizi Mastrotto S.r.l. - Supporto Strategico alla Direzione"
     },
     {
       "account": null,
@@ -3529,7 +4414,22 @@
       "project_leader": null,
       "referente": "Stefano Franceschi",
       "stato": "Confermata - Fatturato",
-      "totale": 40000
+      "totale": 40000,
+      "months_pay": [
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Trasporti e Servizi Mastrotto S.r.l. - Nuova Proposta di valore e posizionamento"
     },
     {
       "account": null,
@@ -3556,7 +4456,22 @@
       "project_leader": null,
       "referente": "Stefano Franceschi",
       "stato": "Confermata - Fatturato",
-      "totale": 35000
+      "totale": 35000,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        "paid",
+        "paid",
+        "unpaid",
+        null,
+        null
+      ],
+      "origine_titolo": "Trasporti e Servizi Mastrotto S.r.l. - Presidio, Formazione, Sviluppo."
     },
     {
       "account": null,
@@ -3583,7 +4498,8 @@
       "project_leader": null,
       "referente": "Stefano Franceschi",
       "stato": "Bozza - Contrattualizzato",
-      "totale": 18000
+      "totale": 18000,
+      "origine_titolo": "Trasporti e Servizi Mastrotto S.r.l. - Presidio, Formazione, Sviluppo."
     }
   ],
   "source_note": "Rigenerazione live del 23/11/2026 da Odoo via MCP, costruita con scripts/build-pipeline-fixture.mjs con le stesse regole del 20/10/2026.",
@@ -3704,5 +4620,1457 @@
     }
   ],
   "target_table": [],
-  "year": 2026
+  "year": 2026,
+  "next_year": {
+    "dual_mode": false,
+    "generated_at": "2026-11-23T00:00:00+02:00",
+    "headers": [
+      "Referente",
+      "Cliente",
+      "Origine",
+      "Ordinato",
+      "Gennaio",
+      "Febbraio",
+      "Marzo",
+      "Aprile",
+      "Maggio",
+      "Giugno",
+      "Luglio",
+      "Agosto",
+      "Settembre",
+      "Ottobre",
+      "Novembre",
+      "Dicembre",
+      "TOTALE 2027"
+    ],
+    "label": "Oriens Consulting",
+    "overall": {
+      "months": [
+        51400,
+        16400,
+        9400,
+        33700,
+        7000,
+        8000,
+        8000,
+        29400,
+        4000,
+        6000,
+        6000,
+        6000
+      ],
+      "ordinato": 141700,
+      "totale": 185300
+    },
+    "revenue_summary": null,
+    "rows": [
+      {
+        "account": null,
+        "cliente": "Tech.Pa S.p.A. a socio unico",
+        "crm_comment": "Opportunità CRM \"Tech.Pa S.p.A. a socio unico - Analisi strategica e organizzativa\" - fase \"Proposta\". Preventivo CC20963 (inviato) senza piano di fatturazione né fatture.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Tech.Pa S.p.A. a socio unico - Analisi strategica e organizzativa (opp. CRM)",
+        "project_leader": null,
+        "referente": "Andrea Menegotto",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "C.N.A. Servizi Bologna S.c.r.l.",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          9000,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 9000,
+        "origine": "CC21070",
+        "project_leader": null,
+        "referente": "Annalisa Callarelli",
+        "stato": "Bozza - Contrattualizzato",
+        "totale": 9000,
+        "origine_titolo": "C.N.A. Servizi Bologna S.c.r.l. - Analisi settore servizi"
+      },
+      {
+        "account": null,
+        "cliente": "Cecchini Service s.r.l.",
+        "crm_comment": "Opportunità CRM \"Cecchini Service s.r.l. - Revisione Modello 231\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Cecchini Service s.r.l. - Revisione Modello 231 (opp. CRM)",
+        "project_leader": null,
+        "referente": "Annalisa Callarelli",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "Carrozzeria Nuova Milano",
+        "crm_comment": "Opportunità CRM \"Carrozzeria Nuova Milano - Gestione Magazzino\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Carrozzeria Nuova Milano - Gestione Magazzino (opp. CRM)",
+        "project_leader": null,
+        "referente": "Chiara Rossetto",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "Tecno Metal srl",
+        "crm_comment": "Opportunità CRM \"Opportunità per Tecno Metal srl - Operations\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Opportunità per Tecno Metal srl - Operations (opp. CRM)",
+        "project_leader": null,
+        "referente": "Chiara Rossetto",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "Bendinelli S.r.l.",
+        "crm_comment": "Opportunità CRM \"Bendinelli S.r.l. -\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Bendinelli S.r.l. -  (opp. CRM)",
+        "project_leader": null,
+        "referente": "Giovanni De Bei",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "Tracked Machines Italia S.r.l.",
+        "crm_comment": "Opportunità CRM \"Tracked Machines Italia S.r.l. -\" - fase \"Proposta\". Preventivi CC21067 (inviato), CC21066 (inviato) senza piano di fatturazione né fatture.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Tracked Machines Italia S.r.l. -  (opp. CRM)",
+        "project_leader": null,
+        "referente": "Giovanni De Bei",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "Bordignon S.r.l.",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          6000,
+          4000,
+          6000,
+          6000,
+          6000
+        ],
+        "nota": null,
+        "ordinato": 70000,
+        "origine": "CC20993",
+        "project_leader": null,
+        "referente": "Giuseppe Piazza",
+        "stato": "Bozza - Contrattualizzato",
+        "totale": 70000,
+        "origine_titolo": "Bordignon S.r.l. - Affiancamento Bertoldi - Fractional Management"
+      },
+      {
+        "account": null,
+        "cliente": "FROMM Italiana S.r.l.",
+        "crm_comment": "Opportunità CRM \"FROMM Italiana srl - Controllo di Gestione\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "FROMM Italiana srl - Controllo di Gestione (opp. CRM)",
+        "project_leader": null,
+        "referente": "Giuseppe Piazza",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "Julius Meinl Italia S.p.A.",
+        "crm_comment": "Opportunità CRM \"Julius Meinl Italia S.p.A. - Analisi\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Julius Meinl Italia S.p.A. - Analisi (opp. CRM)",
+        "project_leader": null,
+        "referente": "Giuseppe Piazza",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "MCM - Martellucci Credit Management",
+        "crm_comment": "Opportunità CRM \"Andrea Martellucci - azienda cliente per analisi\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Andrea Martellucci - azienda cliente per analisi (opp. CRM)",
+        "project_leader": null,
+        "referente": "Giuseppe Piazza",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "Meccatronica Automazioni S.r.l.",
+        "crm_comment": "Opportunità CRM \"Meccatronica Automazioni S.r.l. - Coaching con Alessandra\" - fase \"Proposta\". Preventivo CC21050 (inviato) senza piano di fatturazione né fatture. Importo stimato 12.000 EUR.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Meccatronica Automazioni S.r.l. - Coaching con Alessandra (opp. CRM)",
+        "project_leader": null,
+        "referente": "Giuseppe Piazza",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "Mita Spa",
+        "crm_comment": "Opportunità CRM \"Mita Spa - HR\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Mita Spa - HR (opp. CRM)",
+        "project_leader": null,
+        "referente": "Giuseppe Piazza",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "Mondeo S.r.l.",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          null,
+          null,
+          null,
+          24300,
+          null,
+          null,
+          null,
+          23400,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 47700,
+        "origine": "CC21087",
+        "project_leader": null,
+        "referente": "Giuseppe Piazza",
+        "stato": "Bozza - Contrattualizzato",
+        "totale": 47700,
+        "origine_titolo": "Mondeo S.r.l. - E-commerce 2027"
+      },
+      {
+        "account": null,
+        "cliente": "MONDIAL INFISSI GROUP SRL",
+        "crm_comment": "Opportunità CRM \"MONDIAL INFISSI GROUP SRL - Affiancamento 2026\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "MONDIAL INFISSI GROUP SRL - Affiancamento 2026 (opp. CRM)",
+        "project_leader": null,
+        "referente": "Giuseppe Piazza",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "Rossana Fontanella",
+        "crm_comment": "Opportunità CRM \"Rossana Fontanella - Business Plan\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Rossana Fontanella - Business Plan (opp. CRM)",
+        "project_leader": null,
+        "referente": "Giuseppe Piazza",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "Secco Sistemi S.p.A.",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          2400,
+          2400,
+          2400,
+          2400,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 0,
+        "origine": "CC21016",
+        "project_leader": null,
+        "referente": "Giuseppe Piazza",
+        "stato": "Previsione - Possibile",
+        "totale": 9600,
+        "origine_titolo": "Secco Sistemi S.p.A. - Rafforzamento leadership"
+      },
+      {
+        "account": null,
+        "cliente": "Uniform S.p.A.",
+        "crm_comment": "Opportunità CRM \"Elisa Fedrigo - Supporto lancio commerciale  UNIVERSO\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Elisa Fedrigo - Supporto lancio commerciale  UNIVERSO (opp. CRM)",
+        "project_leader": null,
+        "referente": "Giuseppe Piazza",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "Uniform S.p.A.",
+        "crm_comment": "Opportunità CRM \"Uniform S.p.A. - Nuova proposta\" - fase \"Proposta\". Preventivo CC21032 (inviato) senza piano di fatturazione né fatture. Importo stimato 33.500 EUR.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Uniform S.p.A. - Nuova proposta (opp. CRM)",
+        "project_leader": null,
+        "referente": "Giuseppe Piazza",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "268r",
+        "crm_comment": "Opportunità CRM \"Luca Rigoldi - Analisi strategica\" - fase \"Proposta\". Preventivo CC21072 (inviato) senza piano di fatturazione né fatture.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Luca Rigoldi - Analisi strategica (opp. CRM)",
+        "project_leader": null,
+        "referente": "Luca Realdon",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "Dynamin",
+        "crm_comment": "Opportunità CRM \"Dynamin - Analisi processi\" - fase \"Proposta\". Preventivo CC21046 (inviato) senza piano di fatturazione né fatture.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Dynamin - Analisi processi (opp. CRM)",
+        "project_leader": null,
+        "referente": "Luca Realdon",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "Nonno Andrea",
+        "crm_comment": "Opportunità CRM \"Nonno Andrea - Analisi strategica e organizzativa\" - fase \"Proposta\". Preventivo CC21040 (inviato) senza piano di fatturazione né fatture. Importo stimato 49.000 EUR.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Nonno Andrea - Analisi strategica e organizzativa (opp. CRM)",
+        "project_leader": null,
+        "referente": "Luca Realdon",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "Serramenti Brombal S.r.l.",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          2000,
+          2000,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 9000,
+        "origine": "CC21034",
+        "project_leader": null,
+        "referente": "Luca Realdon",
+        "stato": "Bozza - Contrattualizzato",
+        "totale": 9000,
+        "origine_titolo": "Serramenti Brombal S.r.l. - TG Fase 2 GenAI Project NPAI 1 Design Acceletator"
+      },
+      {
+        "account": null,
+        "cliente": "Serramenti Brombal S.r.l.",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          6000,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 6000,
+        "origine": "CC21035",
+        "project_leader": null,
+        "referente": "Luca Realdon",
+        "stato": "Bozza - Contrattualizzato",
+        "totale": 6000,
+        "origine_titolo": "Serramenti Brombal S.r.l. - TG Fase 2 GenAI Project NPAI 3 Working Together"
+      },
+      {
+        "account": null,
+        "cliente": "Tim S.p.A.",
+        "crm_comment": "Opportunità CRM \"Tim per Italchimica - Strumento AI\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Tim per Italchimica - Strumento AI (opp. CRM)",
+        "project_leader": null,
+        "referente": "Luca Realdon",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "Tim S.p.A.",
+        "crm_comment": "Opportunità CRM \"Tim per Porto Turistico di Jesolo - Oriens-Odoo\" - fase \"Proposta\". Nessun preventivo collegato in Odoo.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Tim per Porto Turistico di Jesolo - Oriens-Odoo (opp. CRM)",
+        "project_leader": null,
+        "referente": "Luca Realdon",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "Tim S.p.A.",
+        "crm_comment": "Opportunità CRM \"Tim S.p.A. - Tim per 4 Company\" - fase \"Proposta\". Preventivo CC21009 (inviato) senza piano di fatturazione né fatture.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Tim S.p.A. - Tim per 4 Company (opp. CRM)",
+        "project_leader": null,
+        "referente": "Luca Realdon",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "Tim S.p.A.",
+        "crm_comment": "Opportunità CRM \"Tim S.p.A. - Tim per Esse Music - Fase 4\" - fase \"Proposta\". Nessun preventivo collegato in Odoo.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Tim S.p.A. - Tim per Esse Music - Fase 4 (opp. CRM)",
+        "project_leader": null,
+        "referente": "Luca Realdon",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "Tondin Serramenti",
+        "crm_comment": "Opportunità CRM \"Tondin Serramenti - Analisi\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Tondin Serramenti - Analisi (opp. CRM)",
+        "project_leader": null,
+        "referente": "Luca Realdon",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "Gilardi Realdo",
+        "crm_comment": "Opportunità CRM \"Gilardi Realdo - Assessment e Supporto alla crescita\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Gilardi Realdo - Assessment e Supporto alla crescita (opp. CRM)",
+        "project_leader": null,
+        "referente": "Marco Perillo",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "ILMA S.r.l",
+        "crm_comment": "Opportunità CRM \"ILMA S.r.l - Contract e Scouting Partner\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "ILMA S.r.l - Contract e Scouting Partner (opp. CRM)",
+        "project_leader": null,
+        "referente": "Marco Perillo",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "Locapal S.r.l.",
+        "crm_comment": "Opportunità CRM \"Locapal - Preventivatore\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Locapal - Preventivatore (opp. CRM)",
+        "project_leader": null,
+        "referente": "Marco Perillo",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "APRUTIUM PETFOOD SB srl SOCIETA' A RESPONSABILITA' LIMITATA - iper pet - amicus mangini",
+        "crm_comment": "Opportunità CRM \"APRUTIUM PETFOOD SB srl SOCIETA' A RESPONSABILITA' LIMITATA - iper pet - amicus mangini - Rating ESG\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "APRUTIUM PETFOOD SB srl SOCIETA' A RESPONSABILITA' LIMITATA - iper pet - amicus mangini - Rating ESG (opp. CRM)",
+        "project_leader": null,
+        "referente": "Marilù Di Donato",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "APRUTIUM PETFOOD SB srl SOCIETA' A RESPONSABILITA' LIMITATA - iper pet - amicus mangini",
+        "crm_comment": "Opportunità CRM \"APRUTIUM PETFOOD SB srl SOCIETA' A RESPONSABILITA' LIMITATA - iper pet - amicus mangini - Studio per revisione immagine aziendale\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "APRUTIUM PETFOOD SB srl SOCIETA' A RESPONSABILITA' LIMITATA - iper pet - amicus mangini - Studio per revisione immagine aziendale (opp. CRM)",
+        "project_leader": null,
+        "referente": "Marilù Di Donato",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "Ciok Espresso srl",
+        "crm_comment": "Opportunità CRM \"Ciok Espresso srl - Analisi strategica ed organizzativa\" - fase \"Proposta\". Preventivo CC21051 (inviato) senza piano di fatturazione né fatture. Importo stimato 52.000 EUR.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Ciok Espresso srl - Analisi strategica ed organizzativa (opp. CRM)",
+        "project_leader": null,
+        "referente": "Marilù Di Donato",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "Laboindustria S.p.A.",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          7000,
+          7000,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 0,
+        "origine": "CC21082",
+        "project_leader": null,
+        "referente": "Non assegnato",
+        "stato": "Previsione - Possibile",
+        "totale": 14000,
+        "origine_titolo": "Laboindustria - Controllo di gestione"
+      },
+      {
+        "account": null,
+        "cliente": "MB S.p.A. - MB Crusher",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          4000,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 0,
+        "origine": "CC21092",
+        "project_leader": null,
+        "referente": "Non assegnato",
+        "stato": "Previsione - Probabile",
+        "totale": 4000,
+        "origine_titolo": "MB S.p.A. - Controllo di gestione"
+      },
+      {
+        "account": null,
+        "cliente": "Proteko S.r.l.",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          16000,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 0,
+        "origine": "CC21085",
+        "project_leader": null,
+        "referente": "Non assegnato",
+        "stato": "Previsione - Possibile",
+        "totale": 16000,
+        "origine_titolo": "Proteko S.r.l. - Assessment commerciale e organizzativo"
+      },
+      {
+        "account": null,
+        "cliente": "ACI Blueteam S.p.A.",
+        "crm_comment": "Opportunità CRM \"ACI Blueteam - Assessment del modello organizzativo\" - fase \"Proposta\". Preventivo CC21083 (bozza) senza piano di fatturazione né fatture.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "ACI Blueteam - Assessment del modello organizzativo (opp. CRM)",
+        "project_leader": null,
+        "referente": "Stefano Franceschi",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "Autotrasporti Parma srl",
+        "crm_comment": "Opportunità CRM \"Autotrasporti Parma S.r.l.\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Autotrasporti Parma S.r.l. (opp. CRM)",
+        "project_leader": null,
+        "referente": "Stefano Franceschi",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "Blok - Primate S.r.l.",
+        "crm_comment": "Opportunità CRM \"Blok - Opportunità\" - fase \"Proposta\". Nessun preventivo collegato in Odoo. Importo stimato 36.000 EUR.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Blok - Opportunità (opp. CRM)",
+        "project_leader": null,
+        "referente": "Stefano Franceschi",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "Fabbrica Alta Formazione S.r.l.",
+        "crm_comment": "Opportunità CRM \"Fabbrica Alta Formazione per Clerprem - Tech Garage\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Fabbrica Alta Formazione per Clerprem - Tech Garage (opp. CRM)",
+        "project_leader": null,
+        "referente": "Stefano Franceschi",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "FROMM Italiana S.r.l.",
+        "crm_comment": "Opportunità CRM \"FROMM Italiana S.r.l. - Tech Garage\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "FROMM Italiana S.r.l. - Tech Garage (opp. CRM)",
+        "project_leader": null,
+        "referente": "Stefano Franceschi",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "It+Robotics (It Robotics)",
+        "crm_comment": "Opportunità CRM \"It+Robotics (It Robotics) - Analisi BMC e sviluppo\" - fase \"Proposta\". Nessun preventivo collegato in Odoo. Importo stimato 20.000 EUR.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "It+Robotics (It Robotics) - Analisi BMC e sviluppo (opp. CRM)",
+        "project_leader": null,
+        "referente": "Stefano Franceschi",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "PH HOTEL S.R.L",
+        "crm_comment": "Opportunità CRM \"PH HOTEL S.R.L - Flussi base sistemi informativi di settore\" - fase \"Proposta\". Preventivo CC21023 (inviato) senza piano di fatturazione né fatture.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "PH HOTEL S.R.L - Flussi base sistemi informativi di settore (opp. CRM)",
+        "project_leader": null,
+        "referente": "Stefano Franceschi",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      },
+      {
+        "account": null,
+        "cliente": "Teamservice S.r.l.",
+        "crm_comment": "Opportunità CRM \"Teamservice S.r.l. - Analisi processi e marketing\" - fase \"Proposta\". Nessun preventivo collegato in Odoo. Importo stimato 52.000 EUR.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Teamservice S.r.l. - Analisi processi e marketing (opp. CRM)",
+        "project_leader": null,
+        "referente": "Stefano Franceschi",
+        "stato": "Previsione - Possibile",
+        "totale": null
+      }
+    ],
+    "source_note": "Rigenerazione live del 23/11/2026 da Odoo via MCP, costruita con scripts/build-pipeline-fixture.mjs con le stesse regole del 20/10/2026.",
+    "stato_summary": [
+      {
+        "stato": "Bozza - Contrattualizzato",
+        "color": "BDD7EE",
+        "months": [
+          22000,
+          7000,
+          7000,
+          31300,
+          7000,
+          8000,
+          8000,
+          29400,
+          4000,
+          6000,
+          6000,
+          6000
+        ],
+        "totale": 141700
+      },
+      {
+        "stato": "Confermata - Fatturato",
+        "color": "C6E0B4",
+        "months": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "totale": 0
+      },
+      {
+        "stato": "Previsione - Probabile",
+        "color": "FFC000",
+        "months": [
+          4000,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "totale": 4000
+      },
+      {
+        "stato": "Previsione - Possibile",
+        "color": "FFF2CC",
+        "months": [
+          25400,
+          9400,
+          2400,
+          2400,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "totale": 39600
+      },
+      {
+        "stato": "Consuntivi",
+        "color": "FFFF00",
+        "months": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "totale": 0
+      },
+      {
+        "stato": "Target",
+        "color": "CCC0DA",
+        "months": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "totale": 0
+      }
+    ],
+    "target_table": [],
+    "year": 2027
+  }
 }

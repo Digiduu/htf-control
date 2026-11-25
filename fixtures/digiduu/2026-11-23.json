@@ -72,7 +72,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 468.75
+      "totale": 468.75,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Adami Teloni - Assistenza"
     },
     {
       "account": "Nicola Sartore",
@@ -100,7 +115,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 11300
+      "totale": 11300,
+      "months_pay": [
+        "paid",
+        null,
+        "paid",
+        null,
+        null,
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "unpaid",
+        null
+      ],
+      "origine_titolo": "AdHoc - CRM"
     },
     {
       "account": "Nicola Sartore",
@@ -128,7 +158,8 @@
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
-      "totale": 300
+      "totale": 300,
+      "origine_titolo": "AdHoc - CRM"
     },
     {
       "account": "Guido Tessari",
@@ -156,7 +187,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 5000
+      "totale": 5000,
+      "months_pay": [
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Alba S.r.l. - Sviluppo"
     },
     {
       "account": "Guido Tessari",
@@ -184,7 +230,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 600
+      "totale": 600,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Alba S.r.l. - Registri IVA"
     },
     {
       "account": "Guido Tessari",
@@ -214,7 +275,22 @@
       "tipi_progetto": [
         "Assistenza"
       ],
-      "totale": 1200
+      "totale": 1200,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "unpaid",
+        "unpaid",
+        null
+      ],
+      "origine_titolo": "Alba S.r.l. - Assistenza + giornate a consumo"
     },
     {
       "account": "Guido Tessari",
@@ -244,7 +320,8 @@
       "tipi_progetto": [
         "Assistenza"
       ],
-      "totale": 600
+      "totale": 600,
+      "origine_titolo": "Alba S.r.l. - Assistenza + giornate a consumo"
     },
     {
       "account": "Guido Tessari",
@@ -274,7 +351,8 @@
       "tipi_progetto": [
         "Assistenza"
       ],
-      "totale": 1500
+      "totale": 1500,
+      "origine_titolo": "Alba S.r.l. - Assistenza + giornate a consumo"
     },
     {
       "account": "Non assegnato",
@@ -331,7 +409,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 57000
+      "totale": 57000,
+      "months_pay": [
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "AMG Spa - Efficientamento e Digitalizzazione con Odoo - Fase 1 e Fase 2"
     },
     {
       "account": "Guido Tessari",
@@ -359,7 +452,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 57183.4
+      "totale": 57183.4,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        "unpaid",
+        null,
+        null
+      ],
+      "origine_titolo": "AMG S.p.A. - Roll Out"
     },
     {
       "account": "Guido Tessari",
@@ -387,7 +495,8 @@
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
-      "totale": 24000
+      "totale": 24000,
+      "origine_titolo": "AMG S.p.A. - Roll Out"
     },
     {
       "account": "Nicola Sartore",
@@ -415,7 +524,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 17600
+      "totale": 17600,
+      "months_pay": [
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        null
+      ],
+      "origine_titolo": "Arky Srl - Gestione cantiere con Odoo"
     },
     {
       "account": "Nicola Sartore",
@@ -443,7 +567,8 @@
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
-      "totale": 600
+      "totale": 600,
+      "origine_titolo": "Arky Srl - Gestione cantiere con Odoo"
     },
     {
       "account": "Nicola Sartore",
@@ -471,7 +596,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 12000
+      "totale": 12000,
+      "months_pay": [
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Arky Srl - Affiancamento alla crescita febbraio"
     },
     {
       "account": "Nicola Sartore",
@@ -499,7 +639,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 5000
+      "totale": 5000,
+      "months_pay": [
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Arky Srl - Estrazione e messa a disposizione dei dati"
     },
     {
       "account": "Nicola Sartore",
@@ -527,7 +682,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 9278.13
+      "totale": 9278.13,
+      "months_pay": [
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Arky Srl - Affiancamento alla crescita marzo"
     },
     {
       "account": "Nicola Sartore",
@@ -555,7 +725,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 850
+      "totale": 850,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Arky Srl - Presa lead con QR code"
     },
     {
       "account": "Nicola Sartore",
@@ -583,7 +768,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 2600
+      "totale": 2600,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Arky Srl - Estrazione dati"
     },
     {
       "account": "Nicola Sartore",
@@ -611,7 +811,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 17513
+      "totale": 17513,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Arky - Ottimizzazione dei processi"
     },
     {
       "account": "Nicola Sartore",
@@ -639,7 +854,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 400
+      "totale": 400,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Arky - Pulizia Allegati"
     },
     {
       "account": "Nicola Sartore",
@@ -667,7 +897,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 2153
+      "totale": 2153,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Arky Srl - Evolutive SAL"
     },
     {
       "account": "Nicola Sartore",
@@ -695,7 +940,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 3800
+      "totale": 3800,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Arky - affiancamento giugno e luglio"
     },
     {
       "account": "Nicola Sartore",
@@ -723,7 +983,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 4500
+      "totale": 4500,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Arky Srl - Righe Ordine"
     },
     {
       "account": "Nicola Sartore",
@@ -751,7 +1026,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 1250
+      "totale": 1250,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null
+      ],
+      "origine_titolo": "Arky Srl - Modifica Listini"
     },
     {
       "account": "Nicola Sartore",
@@ -779,7 +1069,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 3800
+      "totale": 3800,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null
+      ],
+      "origine_titolo": "Arky - Analisi Pagamenti"
     },
     {
       "account": "Nicola Sartore",
@@ -807,7 +1112,8 @@
       "referente": null,
       "stato": "Previsione - Probabile",
       "tipi_progetto": [],
-      "totale": 5925
+      "totale": 5925,
+      "origine_titolo": "Arky srl - Template Contratti Automatici"
     },
     {
       "account": "Nicola Sartore",
@@ -835,7 +1141,8 @@
       "referente": null,
       "stato": "Previsione - Probabile",
       "tipi_progetto": [],
-      "totale": 25650
+      "totale": 25650,
+      "origine_titolo": "Arky - Pacchetto giornate Pl/funzionale"
     },
     {
       "account": "Nicola Sartore",
@@ -863,7 +1170,8 @@
       "referente": null,
       "stato": "Previsione - Probabile",
       "tipi_progetto": [],
-      "totale": 25500
+      "totale": 25500,
+      "origine_titolo": "Arky - Pacchetto giornate sviluppo"
     },
     {
       "account": "Nicola Sartore",
@@ -978,7 +1286,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 61178.7
+      "totale": 61178.7,
+      "months_pay": [
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        null,
+        "partial",
+        null,
+        null
+      ],
+      "origine_titolo": "B.F. Automation (BF Automation) - Odoo"
     },
     {
       "account": "Guido Tessari",
@@ -1006,7 +1329,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 15000
+      "totale": 15000,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        "unpaid",
+        null,
+        null
+      ],
+      "origine_titolo": "B.F. Automation (BF Automation) - Implementazione aggiuntiva"
     },
     {
       "account": "Guido Tessari",
@@ -1034,7 +1372,8 @@
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
-      "totale": 10000
+      "totale": 10000,
+      "origine_titolo": "B.F. Automation (BF Automation) - Implementazione aggiuntiva"
     },
     {
       "account": "Guido Tessari",
@@ -1064,7 +1403,8 @@
       "tipi_progetto": [
         "Digiduu - Sviluppo"
       ],
-      "totale": 16000
+      "totale": 16000,
+      "origine_titolo": "B.F. Automation S.r.l. - Gestione Evolutive"
     },
     {
       "account": "Guido Tessari",
@@ -1094,7 +1434,8 @@
       "tipi_progetto": [
         "Assistenza"
       ],
-      "totale": 800
+      "totale": 800,
+      "origine_titolo": "B.F. Automation S.r.l. - Assistenza"
     },
     {
       "account": "Guido Tessari",
@@ -1122,7 +1463,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 3300
+      "totale": 3300,
+      "months_pay": [
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "unpaid",
+        "unpaid",
+        null
+      ],
+      "origine_titolo": "B4C Srl - Starter Pack Fatturazione"
     },
     {
       "account": "Guido Tessari",
@@ -1150,7 +1506,8 @@
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
-      "totale": 300
+      "totale": 300,
+      "origine_titolo": "B4C Srl - Starter Pack Fatturazione"
     },
     {
       "account": "Guido Tessari",
@@ -1207,7 +1564,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 12200
+      "totale": 12200,
+      "months_pay": [
+        null,
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "unpaid",
+        null
+      ],
+      "origine_titolo": "Berti Pavimenti Legno S.n.c. - Progetto Crescita"
     },
     {
       "account": "Guido Tessari",
@@ -1235,7 +1607,8 @@
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
-      "totale": 300
+      "totale": 300,
+      "origine_titolo": "Berti Pavimenti Legno S.n.c. - Progetto Crescita"
     },
     {
       "account": "Guido Tessari",
@@ -1263,7 +1636,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 400
+      "totale": 400,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Berti Pavimenti Legno - Sviluppo Form richiesta quotazione"
     },
     {
       "account": "Guido Tessari",
@@ -1407,7 +1795,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 6750.1
+      "totale": 6750.1,
+      "months_pay": [
+        null,
+        null,
+        null,
+        "paid",
+        "paid",
+        null,
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "unpaid",
+        null
+      ],
+      "origine_titolo": "Cabbia Group S.r.l.  - Implementazione Odoo"
     },
     {
       "account": "Nicola Sartore",
@@ -1435,7 +1838,8 @@
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
-      "totale": 300
+      "totale": 300,
+      "origine_titolo": "Cabbia Group S.r.l.  - Implementazione Odoo"
     },
     {
       "account": "Nicola Sartore",
@@ -1463,7 +1867,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 950
+      "totale": 950,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Cabbia Group S.r.l.  - Affiancamento go live"
     },
     {
       "account": "Nicola Sartore",
@@ -1491,7 +1910,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 6450
+      "totale": 6450,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        "paid",
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Cabbia Group S.r.l.  - Fine tuning Istanza"
     },
     {
       "account": "Non assegnato",
@@ -1581,7 +2015,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 3000
+      "totale": 3000,
+      "months_pay": [
+        null,
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "unpaid",
+        "paid",
+        null
+      ],
+      "origine_titolo": "Dyaqua Srls - CRM + FATTURAZIONE"
     },
     {
       "account": "Nicola Sartore",
@@ -1609,7 +2058,8 @@
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
-      "totale": 300
+      "totale": 300,
+      "origine_titolo": "Dyaqua Srls - CRM + FATTURAZIONE"
     },
     {
       "account": "Non assegnato",
@@ -1697,7 +2147,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 2493.75
+      "totale": 2493.75,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        "paid",
+        "paid",
+        "unpaid",
+        null,
+        null
+      ],
+      "origine_titolo": "Edilklima - Affiancamento Digital"
     },
     {
       "account": "Non assegnato",
@@ -1727,7 +2192,8 @@
       "tipi_progetto": [
         "Analisi"
       ],
-      "totale": 10000
+      "totale": 10000,
+      "origine_titolo": "Emilav - Demo Odoo"
     },
     {
       "account": "Nicola Sartore",
@@ -1757,7 +2223,8 @@
       "tipi_progetto": [
         "Digiduu - Assistenza a canone"
       ],
-      "totale": 600
+      "totale": 600,
+      "origine_titolo": "Opportunità per Esse Music Store s.a.s."
     },
     {
       "account": "Nicola Sartore",
@@ -1785,7 +2252,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 1306.26
+      "totale": 1306.26,
+      "months_pay": [
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Esse Solutions - Consulenza Piattaforma Digitale"
     },
     {
       "account": "Nicola Sartore",
@@ -1873,7 +2355,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 500
+      "totale": 500,
+      "months_pay": [
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Essemec S.r.l. - Workshop CRM"
     },
     {
       "account": "Nicola Sartore",
@@ -1901,7 +2398,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 7735
+      "totale": 7735,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Essemec S.r.l. - Starter Pack CRM"
     },
     {
       "account": "Nicola Sartore",
@@ -1929,7 +2441,8 @@
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
-      "totale": 7735
+      "totale": 7735,
+      "origine_titolo": "Essemec S.r.l. - Starter Pack CRM"
     },
     {
       "account": "Luca Realdon",
@@ -1957,7 +2470,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 13615.63
+      "totale": 13615.63,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        "paid",
+        "paid",
+        "unpaid",
+        null,
+        null
+      ],
+      "origine_titolo": "FCF Impianti S.r.l. - Affiancamento 2026"
     },
     {
       "account": "Luca Realdon",
@@ -1985,7 +2513,8 @@
       "referente": null,
       "stato": "Consuntivi",
       "tipi_progetto": [],
-      "totale": 5000
+      "totale": 5000,
+      "origine_titolo": "FCF Impianti S.r.l. - Affiancamento 2026"
     },
     {
       "account": "Nicola Sartore",
@@ -2042,7 +2571,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 33064
+      "totale": 33064,
+      "months_pay": [
+        null,
+        "paid",
+        "paid",
+        null,
+        null,
+        "paid",
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "G.M.A. S.r.l. (GMA) - Gestione commessa"
     },
     {
       "account": "Guido Tessari",
@@ -2070,7 +2614,8 @@
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
-      "totale": 5500
+      "totale": 5500,
+      "origine_titolo": "G.M.A. S.r.l. (GMA) - Gestione commessa"
     },
     {
       "account": "Guido Tessari",
@@ -2100,7 +2645,22 @@
       "tipi_progetto": [
         "Digiduu - Progetto custom"
       ],
-      "totale": 15000
+      "totale": 15000,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        "unpaid",
+        null,
+        null
+      ],
+      "origine_titolo": "G.M.A. S.r.l. - Progetto Contabilità e BI"
     },
     {
       "account": "Guido Tessari",
@@ -2130,7 +2690,8 @@
       "tipi_progetto": [
         "Digiduu - Progetto custom"
       ],
-      "totale": 10000
+      "totale": 10000,
+      "origine_titolo": "G.M.A. S.r.l. - Progetto Contabilità e BI"
     },
     {
       "account": "Non assegnato",
@@ -2189,7 +2750,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 440
+      "totale": 440,
+      "months_pay": [
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Gap Service S.r.l. - Assistenza post go-live"
     },
     {
       "account": "Non assegnato",
@@ -2217,7 +2793,8 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": -5000
+      "totale": -5000,
+      "origine_titolo": "GD EDUCA cooperativa Sociale - Gestione Asili Nido"
     },
     {
       "account": "Non assegnato",
@@ -2306,7 +2883,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 1878
+      "totale": 1878,
+      "months_pay": [
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "HubTec S.r.l. - Implementazione Odoo Fase 2 e 3"
     },
     {
       "account": "Guido Tessari",
@@ -2334,7 +2926,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 2800
+      "totale": 2800,
+      "months_pay": [
+        null,
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "unpaid",
+        "unpaid",
+        "unpaid",
+        null,
+        null
+      ],
+      "origine_titolo": "HubTec S.r.l. - Assistenza 2026"
     },
     {
       "account": "Guido Tessari",
@@ -2362,7 +2969,8 @@
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
-      "totale": 560
+      "totale": 560,
+      "origine_titolo": "HubTec S.r.l. - Assistenza 2026"
     },
     {
       "account": "Guido Tessari",
@@ -2390,7 +2998,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 3500
+      "totale": 3500,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "IMA SERVIZI - Workshop di validazione"
     },
     {
       "account": "Guido Tessari",
@@ -2418,7 +3041,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 16100
+      "totale": 16100,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "partial",
+        null,
+        null
+      ],
+      "origine_titolo": "IMA SERVIZI - Aggiornamento Odoo V19 e Contabilità"
     },
     {
       "account": "Guido Tessari",
@@ -2446,7 +3084,8 @@
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
-      "totale": 19600
+      "totale": 19600,
+      "origine_titolo": "IMA SERVIZI - Aggiornamento Odoo V19 e Contabilità"
     },
     {
       "account": "Nicola Sartore",
@@ -2474,7 +3113,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 3500
+      "totale": 3500,
+      "months_pay": [
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "IMO SRL - Analisi Processi"
     },
     {
       "account": "Nicola Sartore",
@@ -2533,7 +3187,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 45129
+      "totale": 45129,
+      "months_pay": [
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null
+      ],
+      "origine_titolo": "Irontech - Odoo"
     },
     {
       "account": "Guido Tessari",
@@ -2561,7 +3230,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 19200
+      "totale": 19200,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Irontech S.r.l. - Fase 3 di Progetto"
     },
     {
       "account": "Guido Tessari",
@@ -2589,7 +3273,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 50000
+      "totale": 50000,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        "unpaid",
+        "unpaid",
+        "unpaid",
+        null
+      ],
+      "origine_titolo": "Irontech S.r.l. - Fase 3: Affiancamento alla crescita S2-2026"
     },
     {
       "account": "Guido Tessari",
@@ -2617,7 +3316,8 @@
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
-      "totale": 10000
+      "totale": 10000,
+      "origine_titolo": "Irontech S.r.l. - Fase 3: Affiancamento alla crescita S2-2026"
     },
     {
       "account": "Nicola Sartore",
@@ -2645,7 +3345,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 3500
+      "totale": 3500,
+      "months_pay": [
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "ISAAC - Workshop di Validazione"
     },
     {
       "account": "Nicola Sartore",
@@ -2673,7 +3388,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 56790.82
+      "totale": 56790.82,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "partial",
+        null,
+        null
+      ],
+      "origine_titolo": "ISAAC - Progetto presa in carico istanza, contabilità e supply chain"
     },
     {
       "account": "Nicola Sartore",
@@ -2701,7 +3431,8 @@
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
-      "totale": 14000
+      "totale": 14000,
+      "origine_titolo": "ISAAC - Progetto presa in carico istanza, contabilità e supply chain"
     },
     {
       "account": "Non assegnato",
@@ -2758,7 +3489,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 56732
+      "totale": 56732,
+      "months_pay": [
+        null,
+        null,
+        "paid",
+        "paid",
+        "paid",
+        null,
+        null,
+        "paid",
+        "paid",
+        "partial",
+        null,
+        null
+      ],
+      "origine_titolo": "MIPU - Implementazione Primo Gestionale"
     },
     {
       "account": "Luca Realdon",
@@ -2786,7 +3532,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 158971.18
+      "totale": 158971.18,
+      "months_pay": [
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "unpaid",
+        null,
+        null
+      ],
+      "origine_titolo": "Mondeo - Affiancamento Digital 2025 Aggiornato"
     },
     {
       "account": "Luca Realdon",
@@ -2814,7 +3575,8 @@
       "referente": null,
       "stato": "Consuntivi",
       "tipi_progetto": [],
-      "totale": 45000
+      "totale": 45000,
+      "origine_titolo": "Mondeo S.r.l. - Affiancamento alla crescita 2026"
     },
     {
       "account": "Non assegnato",
@@ -2871,7 +3633,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 32168
+      "totale": 32168,
+      "months_pay": [
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Montec - Affiancamento Digital 2025"
     },
     {
       "account": "Luca Realdon",
@@ -2899,7 +3676,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 14940
+      "totale": 14940,
+      "months_pay": [
+        null,
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "unpaid",
+        "unpaid",
+        "unpaid",
+        "unpaid",
+        "unpaid",
+        null,
+        null
+      ],
+      "origine_titolo": "Ocra per Disa Ipianti - Avviamento Odoo"
     },
     {
       "account": "Luca Realdon",
@@ -2927,7 +3719,8 @@
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
-      "totale": 1080
+      "totale": 1080,
+      "origine_titolo": "Ocra per Disa Ipianti - Avviamento Odoo"
     },
     {
       "account": "Luca Realdon",
@@ -2955,7 +3748,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 2700
+      "totale": 2700,
+      "months_pay": [
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Ocra per Belvest - Proposta Proof of Concept Odoo"
     },
     {
       "account": "Non assegnato",
@@ -2983,7 +3791,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 43324.2
+      "totale": 43324.2,
+      "months_pay": [
+        null,
+        "paid",
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Odoo - Gestione partnership ITALIA"
     },
     {
       "account": "Non assegnato",
@@ -3011,7 +3834,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 38368.08
+      "totale": 38368.08,
+      "months_pay": [
+        null,
+        "paid",
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Odoo - Gestione partnership"
     },
     {
       "account": "Nicola Sartore",
@@ -3039,7 +3877,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 45600
+      "totale": 45600,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        "paid",
+        "paid",
+        "unpaid",
+        null,
+        null
+      ],
+      "origine_titolo": "Odorizzi - Consolidamento dei processi e rinnovo della piattaforma Odoo"
     },
     {
       "account": "Nicola Sartore",
@@ -3067,7 +3920,8 @@
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
-      "totale": 12000
+      "totale": 12000,
+      "origine_titolo": "Odorizzi - Consolidamento dei processi e rinnovo della piattaforma Odoo"
     },
     {
       "account": "Guido Tessari",
@@ -3095,7 +3949,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 3300
+      "totale": 3300,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Officine Zoppelletto S.r.l. - Assistenza"
     },
     {
       "account": "Guido Tessari",
@@ -3125,7 +3994,22 @@
       "tipi_progetto": [
         "Digiduu - Sviluppo"
       ],
-      "totale": 1300
+      "totale": 1300,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "unpaid",
+        null,
+        null
+      ],
+      "origine_titolo": "Officine Zoppelletto - Modifica CRM: Prioritizzazione opportunità/ordini"
     },
     {
       "account": "Guido Tessari",
@@ -3155,7 +4039,8 @@
       "tipi_progetto": [
         "Digiduu - Sviluppo"
       ],
-      "totale": 1300
+      "totale": 1300,
+      "origine_titolo": "Officine Zoppelletto - Modifica CRM: Prioritizzazione opportunità/ordini"
     },
     {
       "account": "Non assegnato",
@@ -3183,7 +4068,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 1729
+      "totale": 1729,
+      "months_pay": [
+        "paid",
+        "paid",
+        null,
+        "unpaid",
+        "unpaid",
+        "unpaid",
+        "unpaid",
+        "unpaid",
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Oriens per Esse Music - Analisi processi e digitalizzazione con Odoo - Fase 1 e Fase 2"
     },
     {
       "account": "Non assegnato",
@@ -3211,7 +4111,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 12391.8
+      "totale": 12391.8,
+      "months_pay": [
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Oriens per TIM - Fase 4"
     },
     {
       "account": "Non assegnato",
@@ -3239,7 +4154,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 3600
+      "totale": 3600,
+      "months_pay": [
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Oriens Consulting - Assistenza 2026"
     },
     {
       "account": "Non assegnato",
@@ -3296,7 +4226,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 14850
+      "totale": 14850,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        "paid",
+        null,
+        null,
+        "unpaid",
+        null,
+        null
+      ],
+      "origine_titolo": "Penta Formazione - Gestione Odoo.sh"
     },
     {
       "account": "Nicola Sartore",
@@ -3324,7 +4269,8 @@
       "referente": null,
       "stato": "Consuntivi",
       "tipi_progetto": [],
-      "totale": 6500
+      "totale": 6500,
+      "origine_titolo": "Penta Formazione - Gestione Odoo.sh"
     },
     {
       "account": "Non assegnato",
@@ -3352,7 +4298,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 1500
+      "totale": 1500,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "unpaid",
+        null,
+        null
+      ],
+      "origine_titolo": "Proludis Giocattoli srl - Workshop"
     },
     {
       "account": "Non assegnato",
@@ -3380,7 +4341,8 @@
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
-      "totale": 1500
+      "totale": 1500,
+      "origine_titolo": "Proludis Giocattoli srl - Workshop"
     },
     {
       "account": "Non assegnato",
@@ -3466,7 +4428,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 1000
+      "totale": 1000,
+      "months_pay": [
+        "paid",
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Schueco Marketing - Canone Manutenzione"
     },
     {
       "account": "Luca Realdon",
@@ -3494,7 +4471,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 4500
+      "totale": 4500,
+      "months_pay": [
+        null,
+        null,
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "unpaid",
+        null
+      ],
+      "origine_titolo": "Schueco Marketing - Assistenza 2026"
     },
     {
       "account": "Luca Realdon",
@@ -3522,7 +4514,8 @@
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
-      "totale": 500
+      "totale": 500,
+      "origine_titolo": "Schueco Marketing - Assistenza 2026"
     },
     {
       "account": "Luca Realdon",
@@ -3550,7 +4543,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 18150
+      "totale": 18150,
+      "months_pay": [
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "unpaid",
+        null
+      ],
+      "origine_titolo": "Schueco Portale - Assistenza 2026"
     },
     {
       "account": "Luca Realdon",
@@ -3578,7 +4586,8 @@
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
-      "totale": 1650
+      "totale": 1650,
+      "origine_titolo": "Schueco Portale - Assistenza 2026"
     },
     {
       "account": "Luca Realdon",
@@ -3606,7 +4615,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 12480
+      "totale": 12480,
+      "months_pay": [
+        null,
+        "paid",
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Schueco Marketing - Intranet Dipendenti"
     },
     {
       "account": "Luca Realdon",
@@ -3634,7 +4658,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 3800
+      "totale": 3800,
+      "months_pay": [
+        null,
+        "paid",
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Schueco PWS Italia S.r.l. - Nuova sezione portale AluBright"
     },
     {
       "account": "Luca Realdon",
@@ -3662,7 +4701,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 5500
+      "totale": 5500,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Schueco PSW Italia - aggiornamento e reingegnerizzazione piattaforma ordini"
     },
     {
       "account": "Guido Tessari",
@@ -3690,7 +4744,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 9500
+      "totale": 9500,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Secco Sistemi S.p.A. - Assistenza post go-live"
     },
     {
       "account": "Guido Tessari",
@@ -3718,7 +4787,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 15000
+      "totale": 15000,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "unpaid",
+        null
+      ],
+      "origine_titolo": "Secco Sistemi S.p.A. - Crescita"
     },
     {
       "account": "Guido Tessari",
@@ -3746,7 +4830,8 @@
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
-      "totale": 2500
+      "totale": 2500,
+      "origine_titolo": "Secco Sistemi S.p.A. - Crescita"
     },
     {
       "account": "Guido Tessari",
@@ -3774,7 +4859,8 @@
       "referente": null,
       "stato": "Consuntivi",
       "tipi_progetto": [],
-      "totale": 2500
+      "totale": 2500,
+      "origine_titolo": "Secco Sistemi S.p.A. - Crescita"
     },
     {
       "account": "Guido Tessari",
@@ -3893,7 +4979,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 49915.37
+      "totale": 49915.37,
+      "months_pay": [
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        null,
+        "paid",
+        null,
+        "partial",
+        "unpaid",
+        null
+      ],
+      "origine_titolo": "Brombal - Affiancamento Digital"
     },
     {
       "account": "Luca Realdon",
@@ -3921,7 +5022,8 @@
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
-      "totale": 600
+      "totale": 600,
+      "origine_titolo": "Brombal - Affiancamento Digital"
     },
     {
       "account": "Luca Realdon",
@@ -3949,7 +5051,8 @@
       "referente": null,
       "stato": "Consuntivi",
       "tipi_progetto": [],
-      "totale": 7000
+      "totale": 7000,
+      "origine_titolo": "Brombal - Affiancamento Digital"
     },
     {
       "account": "Luca Realdon",
@@ -3977,7 +5080,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 6502
+      "totale": 6502,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "unpaid",
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Serramenti Brombal S.r.l - Revisione Processi"
     },
     {
       "account": "Luca Realdon",
@@ -4005,7 +5123,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 18506
+      "totale": 18506,
+      "months_pay": [
+        "paid",
+        "paid",
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Serramenti Brombal S.r.l - Integrazione Insightly"
     },
     {
       "account": "Luca Realdon",
@@ -4033,7 +5166,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 3502
+      "totale": 3502,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Brombal - Aggiornamento v19"
     },
     {
       "account": "Luca Realdon",
@@ -4061,7 +5209,8 @@
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
-      "totale": 4000
+      "totale": 4000,
+      "origine_titolo": "Brombal - Aggiornamento v19"
     },
     {
       "account": "Luca Realdon",
@@ -4091,7 +5240,22 @@
       "tipi_progetto": [
         "Digiduu - Sviluppo"
       ],
-      "totale": 5002
+      "totale": 5002,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Serramenti Brombal S.r.l. - Integrazione Odoo-Insightly Fase 2"
     },
     {
       "account": "Luca Realdon",
@@ -4121,7 +5285,8 @@
       "tipi_progetto": [
         "Digiduu - Sviluppo"
       ],
-      "totale": 4000
+      "totale": 4000,
+      "origine_titolo": "Serramenti Brombal S.r.l. - Integrazione Odoo-Insightly Fase 2"
     },
     {
       "account": "Luca Realdon",
@@ -4151,7 +5316,8 @@
       "tipi_progetto": [
         "Digiduu - Progetto custom"
       ],
-      "totale": 11750
+      "totale": 11750,
+      "origine_titolo": "Serramenti Brombal S.r.l. - SRDP in Odoo 19"
     },
     {
       "account": "Guido Tessari",
@@ -4181,7 +5347,22 @@
       "tipi_progetto": [
         "Digiduu - Progetto custom"
       ],
-      "totale": 9000
+      "totale": 9000,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Service43 - Implementazione Odoo"
     },
     {
       "account": "Guido Tessari",
@@ -4211,7 +5392,8 @@
       "tipi_progetto": [
         "Digiduu - Progetto custom"
       ],
-      "totale": 5000
+      "totale": 5000,
+      "origine_titolo": "Service43 - Implementazione Odoo"
     },
     {
       "account": "Nicola Sartore",
@@ -4239,7 +5421,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 83587
+      "totale": 83587,
+      "months_pay": [
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        "unpaid",
+        null,
+        null
+      ],
+      "origine_titolo": "Si Vola S.r.l. - ERP per Tour Operator"
     },
     {
       "account": "Nicola Sartore",
@@ -4269,7 +5466,8 @@
       "tipi_progetto": [
         "Digiduu - Assistenza a canone"
       ],
-      "totale": 800
+      "totale": 800,
+      "origine_titolo": "Opportunità per Si Vola S.r.l. Unipersonale  - Assistenza"
     },
     {
       "account": "Nicola Sartore",
@@ -4419,7 +5617,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 39000
+      "totale": 39000,
+      "months_pay": [
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        "paid",
+        "paid",
+        "unpaid",
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Soul Srl - Governance, continuità ed evoluzione del sistema digitale commerciale"
     },
     {
       "account": "Nicola Sartore",
@@ -4449,7 +5662,8 @@
       "tipi_progetto": [
         "Digiduu - Progetto custom"
       ],
-      "totale": 6300
+      "totale": 6300,
+      "origine_titolo": "Soul - Gestione Pratiche sulla v19"
     },
     {
       "account": "Non assegnato",
@@ -4506,7 +5720,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 16207.5
+      "totale": 16207.5,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "unpaid",
+        null
+      ],
+      "origine_titolo": "Synethik Engineering S.r.l. - Starter Pack"
     },
     {
       "account": "Nicola Sartore",
@@ -4534,7 +5763,8 @@
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
-      "totale": 300
+      "totale": 300,
+      "origine_titolo": "Synethik Engineering S.r.l. - Starter Pack"
     },
     {
       "account": "Nicola Sartore",
@@ -4562,7 +5792,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 1500
+      "totale": 1500,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Synethik Engineering S.r.l. - Sviluppo Custom Sito"
     },
     {
       "account": "Guido Tessari",
@@ -4592,7 +5837,22 @@
       "tipi_progetto": [
         "Digiduu - Workshop"
       ],
-      "totale": 3500
+      "totale": 3500,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "unpaid",
+        null,
+        null
+      ],
+      "origine_titolo": "Bertoletti - Workshop di validazione"
     },
     {
       "account": "Non assegnato",
@@ -4680,7 +5940,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 7348.6
+      "totale": 7348.6,
+      "months_pay": [
+        "paid",
+        null,
+        "paid",
+        null,
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "paid",
+        "unpaid",
+        null
+      ],
+      "origine_titolo": "Trasporti e Servizi Mastrotto S.r.l. - Implementazione Odoo"
     },
     {
       "account": "Luca Realdon",
@@ -4708,7 +5983,8 @@
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
-      "totale": 300
+      "totale": 300,
+      "origine_titolo": "Trasporti e Servizi Mastrotto S.r.l. - Implementazione Odoo"
     },
     {
       "account": "Luca Realdon",
@@ -4736,7 +6012,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 22400
+      "totale": 22400,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        "paid",
+        "paid",
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Trasporti e Servizi Mastrotto S.r.l. - Soluzione TMS con Odoo"
     },
     {
       "account": "Luca Realdon",
@@ -4764,7 +6055,8 @@
       "referente": null,
       "stato": "Bozza - Contrattualizzato",
       "tipi_progetto": [],
-      "totale": 5600
+      "totale": 5600,
+      "origine_titolo": "Trasporti e Servizi Mastrotto S.r.l. - Soluzione TMS con Odoo"
     },
     {
       "account": "Non assegnato",
@@ -4821,7 +6113,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 19450
+      "totale": 19450,
+      "months_pay": [
+        null,
+        null,
+        "unpaid",
+        "unpaid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Union Plus S.r.l. - Implementazione Odoo"
     },
     {
       "account": "Non assegnato",
@@ -4849,7 +6156,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 15000
+      "totale": 15000,
+      "months_pay": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "paid",
+        "paid",
+        null,
+        null
+      ],
+      "origine_titolo": "B.F. Automation (BF Automation) - Implementazione aggiuntiva"
     },
     {
       "account": "Non assegnato",
@@ -4906,7 +6228,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 6150
+      "totale": 6150,
+      "months_pay": [
+        null,
+        null,
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Wow Solution S.r.l. - Consulenza 2025"
     },
     {
       "account": "Guido Tessari",
@@ -4965,7 +6302,22 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": 19680
+      "totale": 19680,
+      "months_pay": [
+        null,
+        null,
+        "paid",
+        null,
+        "paid",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "origine_titolo": "Yuppi per Recover - Digitalizzazione con Odoo"
     },
     {
       "account": "Non assegnato",
@@ -4993,7 +6345,8 @@
       "referente": null,
       "stato": "Confermata - Fatturato",
       "tipi_progetto": [],
-      "totale": -4750
+      "totale": -4750,
+      "origine_titolo": "Zeta 92 S.r.l. - Affiancamento"
     }
   ],
   "source_note": "Rigenerato il 23/11/2026 (refresh live da Odoo via MCP), costruito con scripts/build-pipeline-fixture.mjs con le stesse regole del 20/10/2026. Target per cliente ripresi invariati dalla generazione del 17/11 (non vengono da Odoo).",
@@ -5355,5 +6708,2160 @@
       "differenza": 300000
     }
   ],
-  "year": 2026
+  "year": 2026,
+  "next_year": {
+    "dual_mode": true,
+    "generated_at": "2026-11-23T00:00:00+02:00",
+    "headers": [
+      "Account",
+      "Project Leader",
+      "Cliente",
+      "Origine",
+      "Ordinato",
+      "Gennaio",
+      "Febbraio",
+      "Marzo",
+      "Aprile",
+      "Maggio",
+      "Giugno",
+      "Luglio",
+      "Agosto",
+      "Settembre",
+      "Ottobre",
+      "Novembre",
+      "Dicembre",
+      "TOTALE 2027",
+      "Cliente",
+      "Ordinato 2027",
+      "Target",
+      "Differenza"
+    ],
+    "label": "Digiduu",
+    "overall": {
+      "months": [
+        126240,
+        78200,
+        68200,
+        40400,
+        20100,
+        22800,
+        13700,
+        15650,
+        1400,
+        800,
+        800,
+        0
+      ],
+      "ordinato": 224290,
+      "totale": 388290
+    },
+    "revenue_summary": null,
+    "rows": [
+      {
+        "account": "Nicola Sartore",
+        "cliente": "AdHoc S.r.l. Unipersonale",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          300,
+          300,
+          300,
+          300,
+          300,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 1500,
+        "origine": "DD10107",
+        "project_leader": "Nicola Sartore",
+        "referente": null,
+        "stato": "Bozza - Contrattualizzato",
+        "tipi_progetto": [],
+        "totale": 1500,
+        "origine_titolo": "AdHoc - CRM"
+      },
+      {
+        "account": "Guido Tessari",
+        "cliente": "Alba S.r.l.",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 5400,
+        "origine": "DD10287-01",
+        "project_leader": "Nicoletta Piazzetta",
+        "referente": null,
+        "stato": "Bozza - Contrattualizzato",
+        "tipi_progetto": [
+          "Assistenza"
+        ],
+        "totale": 5400,
+        "origine_titolo": "Alba S.r.l. - Assistenza + giornate a consumo"
+      },
+      {
+        "account": "Non assegnato",
+        "cliente": "ALUNOVA SRL",
+        "crm_comment": "Opportunità CRM \"ALUNOVA SRL - Contabilità\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Contabilità (opp. CRM)",
+        "project_leader": "Luca Realdon",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": null
+      },
+      {
+        "account": "Guido Tessari",
+        "cliente": "AMG S.p.A.",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          12000,
+          12000,
+          12000,
+          12000,
+          12000,
+          12000,
+          12000,
+          14250,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 98250,
+        "origine": "DD10340",
+        "project_leader": "Andrea Menegotto",
+        "referente": null,
+        "stato": "Bozza - Contrattualizzato",
+        "tipi_progetto": [],
+        "totale": 98250,
+        "origine_titolo": "AMG S.p.A. - Roll Out"
+      },
+      {
+        "account": "Nicola Sartore",
+        "cliente": "Arky Srl",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 3600,
+        "origine": "DD10105",
+        "project_leader": "Antonio Maddalena",
+        "referente": null,
+        "stato": "Bozza - Contrattualizzato",
+        "tipi_progetto": [],
+        "totale": 3600,
+        "origine_titolo": "Arky Srl - Gestione cantiere con Odoo"
+      },
+      {
+        "account": "Nicola Sartore",
+        "cliente": "Arky Srl",
+        "crm_comment": "Opportunità CRM \"Arky Srl - Esportazione Dati\" - fase \"Proposta\". Nessun preventivo collegato in Odoo. Importo stimato 3200 EUR.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Esportazione Dati (opp. CRM)",
+        "project_leader": "Antonio Maddalena",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": null
+      },
+      {
+        "account": "Nicola Sartore",
+        "cliente": "Arky Srl",
+        "crm_comment": "Opportunità CRM \"Arky Srl - Gestione pagamenti\" - fase \"Proposta\". Preventivo DD10301-01 (inviato) senza piano di fatturazione né fatture. Importo stimato 45.000 EUR.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Gestione pagamenti (opp. CRM)",
+        "project_leader": "Antonio Maddalena",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": null
+      },
+      {
+        "account": "Nicola Sartore",
+        "cliente": "Arky Srl",
+        "crm_comment": "Opportunità CRM \"Arky Srl - Login sso Ping Id\" - fase \"Proposta\". Preventivo DD10300 (inviato) senza piano di fatturazione né fatture. Importo stimato 4900 EUR.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Login sso Ping Id (opp. CRM)",
+        "project_leader": "Antonio Maddalena",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": null
+      },
+      {
+        "account": "Guido Tessari",
+        "cliente": "B.F. Automation S.r.l.",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          800,
+          800,
+          800,
+          800,
+          800,
+          800,
+          800,
+          800,
+          800,
+          800,
+          800,
+          null
+        ],
+        "nota": null,
+        "ordinato": 8800,
+        "origine": "DD10379",
+        "project_leader": "Andrea Menegotto",
+        "referente": null,
+        "stato": "Bozza - Contrattualizzato",
+        "tipi_progetto": [
+          "Assistenza"
+        ],
+        "totale": 8800,
+        "origine_titolo": "B.F. Automation S.r.l. - Assistenza"
+      },
+      {
+        "account": "Nicola Sartore",
+        "cliente": "B2B 72 Srl",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          21000,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 0,
+        "origine": "DD10327",
+        "project_leader": "Fabiano Mason",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": 21000
+      },
+      {
+        "account": "Guido Tessari",
+        "cliente": "B4C S.r.l.",
+        "crm_comment": "Opportunità CRM \"Opportunità per B4C S.r.l.\" - fase \"Proposta\". Preventivo DD10367 (inviato) senza piano di fatturazione né fatture.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Opportunità per B4C S.r.l. (opp. CRM)",
+        "project_leader": "Marco Laghetto",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": null
+      },
+      {
+        "account": "Guido Tessari",
+        "cliente": "BERTI PAVIMENTI LEGNO S.A.S. DI BERTI HOLDING S.R.L.",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          300,
+          300,
+          300,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 900,
+        "origine": "DD10101",
+        "project_leader": "Nicoletta Piazzetta",
+        "referente": null,
+        "stato": "Bozza - Contrattualizzato",
+        "tipi_progetto": [],
+        "totale": 900,
+        "origine_titolo": "Berti Pavimenti Legno S.n.c. - Progetto Crescita"
+      },
+      {
+        "account": "Guido Tessari",
+        "cliente": "Bordignon S.r.l.",
+        "crm_comment": "Opportunità CRM \"Bordignon S.r.l. - Affiancamento alla crescita\" - fase \"Proposta\". Preventivo DD10130 (inviato) senza piano di fatturazione né fatture.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Affiancamento alla crescita (opp. CRM)",
+        "project_leader": "Marco Laghetto",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": null
+      },
+      {
+        "account": "Guido Tessari",
+        "cliente": "Bordignon S.r.l.",
+        "crm_comment": "Opportunità CRM \"Bordignon S.r.l. - Dashboard x commerciali\" - fase \"Proposta\". Preventivo DD10237 (inviato) senza piano di fatturazione né fatture.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Dashboard x commerciali (opp. CRM)",
+        "project_leader": "Marco Laghetto",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": null
+      },
+      {
+        "account": "Guido Tessari",
+        "cliente": "Bordignon S.r.l.",
+        "crm_comment": "Opportunità CRM \"Bordignon S.r.l. - Sync Outlook\" - fase \"Proposta\". Preventivo DD10238 (inviato) senza piano di fatturazione né fatture. Importo stimato 4000 EUR.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Sync Outlook (opp. CRM)",
+        "project_leader": "Marco Laghetto",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": null
+      },
+      {
+        "account": "Non assegnato",
+        "cliente": "Bucci Composites",
+        "crm_comment": "Opportunità CRM \"Bucci Composites - ERP\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "ERP (opp. CRM)",
+        "project_leader": "Luca Realdon",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": null
+      },
+      {
+        "account": "Nicola Sartore",
+        "cliente": "Cabbia Group S.r.l.",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          300,
+          300,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 600,
+        "origine": "DD10058",
+        "project_leader": "Nicola Sartore",
+        "referente": null,
+        "stato": "Bozza - Contrattualizzato",
+        "tipi_progetto": [],
+        "totale": 600,
+        "origine_titolo": "Cabbia Group S.r.l.  - Implementazione Odoo"
+      },
+      {
+        "account": "Non assegnato",
+        "cliente": "Campagnolo Packaging Systems S.r.l.",
+        "crm_comment": "Opportunità CRM \"Campagnolo Packaging Systems S.r.l.\" - fase \"Proposta\". Preventivo DD10360 (bozza) senza piano di fatturazione né fatture. Importo stimato 3500 EUR.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Campagnolo Packaging Systems S.r.l. (opp. CRM)",
+        "project_leader": "Nicola Sartore",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [
+          "Digiduu - Workshop"
+        ],
+        "totale": null
+      },
+      {
+        "account": "Nicola Sartore",
+        "cliente": "Clever Agency",
+        "crm_comment": "Opportunità CRM \"Clever Agency - Starter Pack Progetti\" - fase \"Proposta\". Nessun preventivo collegato in Odoo. Importo stimato 21.000 EUR.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Starter Pack Progetti (opp. CRM)",
+        "project_leader": "Fabiano Mason",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [
+          "Starter Pack"
+        ],
+        "totale": null
+      },
+      {
+        "account": "Non assegnato",
+        "cliente": "Dynamin",
+        "crm_comment": "Opportunità CRM \"Dynamin - Analisi\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Analisi (opp. CRM)",
+        "project_leader": "Luca Realdon",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": null
+      },
+      {
+        "account": "Non assegnato",
+        "cliente": "Ecms",
+        "crm_comment": "Opportunità CRM \"Ecms - Presentazione Odoo - Workshop\" - fase \"Fare preventivo\". Importo stimato 80.000 EUR. ma la riga resta senza valori: è ancora una stima non quotata. non un ordine o un piano di fatturazione.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Presentazione Odoo - Workshop (opp. CRM)",
+        "project_leader": "Guido Tessari",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [
+          "Digiduu - Workshop"
+        ],
+        "totale": null
+      },
+      {
+        "account": "Non assegnato",
+        "cliente": "Emilav",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          5000,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 0,
+        "origine": "DD10350",
+        "project_leader": "Non assegnato",
+        "referente": null,
+        "stato": "Previsione - Probabile",
+        "tipi_progetto": [
+          "Analisi"
+        ],
+        "totale": 5000,
+        "origine_titolo": "Emilav - Demo Odoo"
+      },
+      {
+        "account": "Nicola Sartore",
+        "cliente": "Esse Solutions S.r.l.",
+        "crm_comment": "Opportunità CRM \"Esse Solutions S.r.l. - Assistenza\" - fase \"Proposta\". Preventivo DD10176 (bozza) senza piano di fatturazione né fatture.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Assistenza (opp. CRM)",
+        "project_leader": "Erika Pettenuzzo",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": null
+      },
+      {
+        "account": "Nicola Sartore",
+        "cliente": "Esse Solutions S.r.l.",
+        "crm_comment": "Opportunità CRM \"Esse Solutions S.r.l. - Registri iva\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Registri iva (opp. CRM)",
+        "project_leader": "Erika Pettenuzzo",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": null
+      },
+      {
+        "account": "Guido Tessari",
+        "cliente": "EsseGi",
+        "crm_comment": "Opportunità CRM \"Essegi - Workshop\" - fase \"Proposta\". Nessun preventivo collegato in Odoo. Importo stimato 3500 EUR.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Workshop (opp. CRM)",
+        "project_leader": "Guido Tessari",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [
+          "Digiduu - Workshop"
+        ],
+        "totale": null
+      },
+      {
+        "account": "Nicola Sartore",
+        "cliente": "Frilorpelli S.r.l",
+        "crm_comment": "Opportunità CRM \"Frilorpelli S.r.l - Pacchetto assistenza\" - fase \"Proposta\". Nessun preventivo collegato in Odoo.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Pacchetto assistenza (opp. CRM)",
+        "project_leader": "Nicolò Danese",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": null
+      },
+      {
+        "account": "Guido Tessari",
+        "cliente": "G.M.A. S.r.l.",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          5000,
+          3600,
+          10500,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 19100,
+        "origine": "DD10309",
+        "project_leader": "Nicoletta Piazzetta",
+        "referente": null,
+        "stato": "Bozza - Contrattualizzato",
+        "tipi_progetto": [
+          "Digiduu - Progetto custom"
+        ],
+        "totale": 19100,
+        "origine_titolo": "G.M.A. S.r.l. - Progetto Contabilità e BI"
+      },
+      {
+        "account": "Non assegnato",
+        "cliente": "Galileo Visionary District",
+        "crm_comment": "Opportunità CRM \"Galileo Visionary District - Starter Pack\" - fase \"Fare preventivo\". Importo stimato 9800 EUR. ma la riga resta senza valori: è ancora una stima non quotata. non un ordine o un piano di fatturazione.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Starter Pack (opp. CRM)",
+        "project_leader": "Guido Tessari",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [
+          "Starter Pack"
+        ],
+        "totale": null
+      },
+      {
+        "account": "Non assegnato",
+        "cliente": "GD EDUCA cooperativa Sociale",
+        "crm_comment": "Opportunità CRM \"GD EDUCA cooperativa Sociale  - Assistenza\" - fase \"Fare preventivo\". Importo stimato 3600 EUR. ma la riga resta senza valori: è ancora una stima non quotata. non un ordine o un piano di fatturazione.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Assistenza (opp. CRM)",
+        "project_leader": "Nicoletta Piazzetta",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": null
+      },
+      {
+        "account": "Non assegnato",
+        "cliente": "Greci Alimentari S.p.A.",
+        "crm_comment": "Opportunità CRM \"Tim per Greci Alimentari S.p.A. - Demo Odoo\" - fase \"Proposta\". Preventivo DD10354 (bozza) senza piano di fatturazione né fatture. Importo stimato 18.000 EUR.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Tim per Greci Alimentari S.p.A. - Demo Odoo (opp. CRM)",
+        "project_leader": "Nicola Sartore",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [
+          "Digiduu - Progetto custom",
+          "Digiduu - Workshop"
+        ],
+        "totale": null
+      },
+      {
+        "account": "Guido Tessari",
+        "cliente": "Grejo Srl",
+        "crm_comment": "Opportunità CRM \"Grejo Srl - Implementazione Odoo\" - fase \"Proposta\". Preventivo DD10292 (inviato) senza piano di fatturazione né fatture.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Implementazione Odoo (opp. CRM)",
+        "project_leader": "Luca Realdon",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": null
+      },
+      {
+        "account": "Guido Tessari",
+        "cliente": "Hidromec srl",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          10000,
+          10000,
+          10000,
+          10000,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 0,
+        "origine": "DD10270",
+        "project_leader": "Non assegnato",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [
+          "Digiduu - Progetto custom"
+        ],
+        "totale": 40000
+      },
+      {
+        "account": "Guido Tessari",
+        "cliente": "IMA SERVIZI",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          9800,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 9800,
+        "origine": "DD10353",
+        "project_leader": "Fabrizio Benefazio",
+        "referente": null,
+        "stato": "Bozza - Contrattualizzato",
+        "tipi_progetto": [],
+        "totale": 9800,
+        "origine_titolo": "IMA SERVIZI - Aggiornamento Odoo V19 e Contabilità"
+      },
+      {
+        "account": "Nicola Sartore",
+        "cliente": "INFINITY FLY DI ANTONIO SQUAQUARA",
+        "crm_comment": "Opportunità CRM \"Digiduu x Clever: CRM e Sales per INFINITY FLY DI ANTONIO SQUAQUARA\" - fase \"Proposta\". Preventivo DD10307 (inviato) senza piano di fatturazione né fatture. Importo stimato 8750 EUR.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Digiduu x Clever: CRM e Sales per INFINITY FLY DI ANTONIO SQUAQUARA (opp. CRM)",
+        "project_leader": "Nicola Sartore",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [
+          "Starter Pack"
+        ],
+        "totale": null
+      },
+      {
+        "account": "Nicola Sartore",
+        "cliente": "ISAAC srl",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          9000,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 9000,
+        "origine": "DD10252",
+        "project_leader": "Ettore Lampertico",
+        "referente": null,
+        "stato": "Bozza - Contrattualizzato",
+        "tipi_progetto": [],
+        "totale": 9000,
+        "origine_titolo": "ISAAC - Progetto presa in carico istanza, contabilità e supply chain"
+      },
+      {
+        "account": "Non assegnato",
+        "cliente": "LMA S.r.l. Aerospace Technology",
+        "crm_comment": "Opportunità CRM \"LMA S.r.l. Aerospace Technology - Implementazione Odoo\" - fase \"Proposta\". Preventivo DD10371 (bozza) senza piano di fatturazione né fatture. Importo stimato 200.000 EUR.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Implementazione Odoo (opp. CRM)",
+        "project_leader": "Luca Realdon",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": null
+      },
+      {
+        "account": "Luca Realdon",
+        "cliente": "Mondeo S.r.l.",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          10000,
+          10000,
+          10000,
+          10000,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 0,
+        "origine": "DD10200",
+        "project_leader": "Nicolò Danese",
+        "referente": null,
+        "stato": "Consuntivi",
+        "tipi_progetto": [],
+        "totale": 40000,
+        "origine_titolo": "Mondeo S.r.l. - Affiancamento alla crescita 2026"
+      },
+      {
+        "account": "Non assegnato",
+        "cliente": "Monster 4D SàRL Search Marketing Agency",
+        "crm_comment": "Opportunità CRM \"Fabrizio Di Pierro - Digiduers\" - fase \"Proposta\". Nessun preventivo collegato in Odoo.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Fabrizio Di Pierro - Digiduers (opp. CRM)",
+        "project_leader": "Luca Realdon",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": null
+      },
+      {
+        "account": "Luca Realdon",
+        "cliente": "OCRA Srl",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          540,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 540,
+        "origine": "DD10131",
+        "project_leader": "Debora Scanferla",
+        "referente": null,
+        "stato": "Bozza - Contrattualizzato",
+        "tipi_progetto": [],
+        "totale": 540,
+        "origine_titolo": "Ocra per Disa Ipianti - Avviamento Odoo"
+      },
+      {
+        "account": "Nicola Sartore",
+        "cliente": "Odorizzi Soluzioni In Pietra Srl",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          600,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 600,
+        "origine": "DD10221",
+        "project_leader": "Fabrizio Benefazio",
+        "referente": null,
+        "stato": "Bozza - Contrattualizzato",
+        "tipi_progetto": [],
+        "totale": 600,
+        "origine_titolo": "Odorizzi - Consolidamento dei processi e rinnovo della piattaforma Odoo"
+      },
+      {
+        "account": "Non assegnato",
+        "cliente": "Oriens Consulting S.r.l.",
+        "crm_comment": "Opportunità CRM \"Oriens per Locapal S.r.l. -CRM Odoo\" - fase \"Proposta\". Preventivo DD10380 (bozza) senza piano di fatturazione né fatture.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Oriens per Locapal S.r.l. -CRM Odoo (opp. CRM)",
+        "project_leader": "Erika Pettenuzzo",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": null
+      },
+      {
+        "account": "Nicola Sartore",
+        "cliente": "Penta Formazione S.r.l.",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          4000,
+          4000,
+          4000,
+          3000,
+          3000,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 0,
+        "origine": "DD10241",
+        "project_leader": "Antonio Maddalena",
+        "referente": null,
+        "stato": "Consuntivi",
+        "tipi_progetto": [],
+        "totale": 18000,
+        "origine_titolo": "Penta Formazione - Gestione Odoo.sh"
+      },
+      {
+        "account": "Non assegnato",
+        "cliente": "Proludis Giocattoli srl",
+        "crm_comment": "Opportunità CRM \"Proludis Giocattoli srl - ERP distribuzione\" - fase \"Proposta\". Preventivo DD10375 (bozza) senza piano di fatturazione né fatture. Importo stimato 63.500 EUR.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "ERP distribuzione (opp. CRM)",
+        "project_leader": "Fabiano Mason",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": null
+      },
+      {
+        "account": "Nicola Sartore",
+        "cliente": "Rugby Vicenza",
+        "crm_comment": "Opportunità CRM \"Rugby Vicenza -\" - fase \"Proposta\". Preventivo DD10162 (inviato) senza piano di fatturazione né fatture.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": " (opp. CRM)",
+        "project_leader": "Nicolò Danese",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": null
+      },
+      {
+        "account": "Luca Realdon",
+        "cliente": "Schueco PWS Italia S.r.l.",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          500,
+          500,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 1000,
+        "origine": "DD10177",
+        "project_leader": "Marco Laghetto",
+        "referente": null,
+        "stato": "Bozza - Contrattualizzato",
+        "tipi_progetto": [],
+        "totale": 1000,
+        "origine_titolo": "Schueco Marketing - Assistenza 2026"
+      },
+      {
+        "account": "Guido Tessari",
+        "cliente": "Secco Sistemi S.p.A.",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          2500,
+          2500,
+          2500,
+          2500,
+          2500,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 12500,
+        "origine": "DD10100",
+        "project_leader": "Antonio Maddalena",
+        "referente": null,
+        "stato": "Bozza - Contrattualizzato",
+        "tipi_progetto": [],
+        "totale": 12500,
+        "origine_titolo": "Secco Sistemi S.p.A. - Crescita"
+      },
+      {
+        "account": "Guido Tessari",
+        "cliente": "Secco Sistemi S.p.A.",
+        "crm_comment": "Opportunità CRM \"Secco Sistemi S.p.A. - Migrazione v19\" - fase \"Proposta\". Nessun preventivo collegato in Odoo. Importo stimato 4900 EUR.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Migrazione v19 (opp. CRM)",
+        "project_leader": "Antonio Maddalena",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [
+          "Digiduu - Sviluppo"
+        ],
+        "totale": null
+      },
+      {
+        "account": "Guido Tessari",
+        "cliente": "Secco Sistemi S.p.A.",
+        "crm_comment": "Opportunità CRM \"Secco Sistemi - Numero protocollo su Preventivi- Sync Ordini - QlikView\" - fase \"Proposta\". Nessun preventivo collegato in Odoo. Importo stimato 4200 EUR.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Numero protocollo su Preventivi- Sync Ordini - QlikView (opp. CRM)",
+        "project_leader": "Antonio Maddalena",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": null
+      },
+      {
+        "account": "Guido Tessari",
+        "cliente": "Secco Sistemi S.p.A.",
+        "crm_comment": "Opportunità CRM \"Secco Sistemi S.p.A. - REVISIONE PROCESSO SINCRONIZZAZIONE ORDINI\" - fase \"Proposta\". Nessun preventivo collegato in Odoo. Importo stimato 5500 EUR.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "REVISIONE PROCESSO SINCRONIZZAZIONE ORDINI (opp. CRM)",
+        "project_leader": "Antonio Maddalena",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [
+          "Digiduu - Sviluppo"
+        ],
+        "totale": null
+      },
+      {
+        "account": "Luca Realdon",
+        "cliente": "Serramenti Brombal S.r.l",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          600,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 600,
+        "origine": "DD10013",
+        "project_leader": "Enrico Bianco",
+        "referente": null,
+        "stato": "Bozza - Contrattualizzato",
+        "tipi_progetto": [],
+        "totale": 600,
+        "origine_titolo": "Brombal - Affiancamento Digital"
+      },
+      {
+        "account": "Guido Tessari",
+        "cliente": "Service43 S.r.l.",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          null,
+          12100,
+          6000,
+          null,
+          null,
+          8500,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 26600,
+        "origine": "DD10347",
+        "project_leader": "Nicoletta Piazzetta",
+        "referente": null,
+        "stato": "Bozza - Contrattualizzato",
+        "tipi_progetto": [
+          "Digiduu - Progetto custom"
+        ],
+        "totale": 26600,
+        "origine_titolo": "Service43 - Implementazione Odoo"
+      },
+      {
+        "account": "Nicola Sartore",
+        "cliente": "Si Vola S.r.l. Unipersonale",
+        "crm_comment": "Opportunità CRM \"SiVola - Supporto alla Crescita\" - fase \"Proposta\". Preventivo DD10328 (bozza) senza piano di fatturazione né fatture. Importo stimato 40.000 EUR.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "SiVola - Supporto alla Crescita (opp. CRM)",
+        "project_leader": "Fabiano Mason",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [
+          "Digiduu - Progetto custom"
+        ],
+        "totale": null
+      },
+      {
+        "account": "Luca Realdon",
+        "cliente": "Skema S.p.A.",
+        "crm_comment": "Opportunità CRM \"Skema S.p.A. - Software Selection\" - fase \"Proposta\". Preventivo DD10295 (bozza) senza piano di fatturazione né fatture. Importo stimato 150.000 EUR.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Software Selection (opp. CRM)",
+        "project_leader": "Luca Realdon",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [
+          "Digiduu - Progetto custom"
+        ],
+        "totale": null
+      },
+      {
+        "account": "Non assegnato",
+        "cliente": "SMACT S.c.p.a.",
+        "crm_comment": "Opportunità CRM \"SMACT S.c.p.a. - CRM\" - fase \"Fare preventivo\". Importo stimato 18.000 EUR. ma la riga resta senza valori: è ancora una stima non quotata. non un ordine o un piano di fatturazione.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "CRM (opp. CRM)",
+        "project_leader": "Nicola Sartore",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": null
+      },
+      {
+        "account": "Guido Tessari",
+        "cliente": "Smart Future",
+        "crm_comment": "Opportunità CRM \"Smart Future - Implementazione Odoo\" - fase \"Fare preventivo\". Importo stimato 30.000 EUR. ma la riga resta senza valori: è ancora una stima non quotata. non un ordine o un piano di fatturazione.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Implementazione Odoo (opp. CRM)",
+        "project_leader": "Guido Tessari",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [
+          "Starter Pack"
+        ],
+        "totale": null
+      },
+      {
+        "account": "Nicola Sartore",
+        "cliente": "Soul Srl",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          4200,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 4200,
+        "origine": "DD10332",
+        "project_leader": "Antonio Maddalena",
+        "referente": null,
+        "stato": "Bozza - Contrattualizzato",
+        "tipi_progetto": [
+          "Digiduu - Progetto custom"
+        ],
+        "totale": 4200,
+        "origine_titolo": "Soul - Gestione Pratiche sulla v19"
+      },
+      {
+        "account": "Non assegnato",
+        "cliente": "Stimm",
+        "crm_comment": "Opportunità CRM \"Stimm - Odoo\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Odoo (opp. CRM)",
+        "project_leader": "Luca Realdon",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": null
+      },
+      {
+        "account": "Nicola Sartore",
+        "cliente": "Synethik Engineering S.r.l.",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          300,
+          300,
+          300,
+          300,
+          300,
+          300,
+          300,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 2100,
+        "origine": "DD10193",
+        "project_leader": "Fabrizio Benefazio",
+        "referente": null,
+        "stato": "Bozza - Contrattualizzato",
+        "tipi_progetto": [],
+        "totale": 2100,
+        "origine_titolo": "Synethik Engineering S.r.l. - Starter Pack"
+      },
+      {
+        "account": "Guido Tessari",
+        "cliente": "Termoidraulica Roberto Bertoletti S.r.l.",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          10000,
+          10000,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 0,
+        "origine": "DD10281",
+        "project_leader": "Antonio Maddalena",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [
+          "Digiduu - Workshop"
+        ],
+        "totale": 20000,
+        "origine_titolo": "Bertoletti - Workshop di validazione"
+      },
+      {
+        "account": "Non assegnato",
+        "cliente": "Tim Spa",
+        "crm_comment": "Opportunità CRM \"Tim per Ambico - Digitalizzazione con Odoo\" - fase \"Proposta\". Preventivo DD10335 (inviato) senza piano di fatturazione né fatture.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Tim per Ambico - Digitalizzazione con Odoo (opp. CRM)",
+        "project_leader": "Luca Realdon",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": null
+      },
+      {
+        "account": "Non assegnato",
+        "cliente": "Torino Aerospace",
+        "crm_comment": "Opportunità CRM \"Torino Aerospace - ERP\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "ERP (opp. CRM)",
+        "project_leader": "Luca Realdon",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [
+          "Digiduu - Progetto custom"
+        ],
+        "totale": null
+      },
+      {
+        "account": "Luca Realdon",
+        "cliente": "Trasporti e Servizi Mastrotto S.r.l.",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          300,
+          300,
+          300,
+          300,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 1200,
+        "origine": "DD10126",
+        "project_leader": "Nicolò Danese",
+        "referente": null,
+        "stato": "Bozza - Contrattualizzato",
+        "tipi_progetto": [],
+        "totale": 1200,
+        "origine_titolo": "Trasporti e Servizi Mastrotto S.r.l. - Implementazione Odoo"
+      },
+      {
+        "account": "Luca Realdon",
+        "cliente": "Trasporti e Servizi Mastrotto S.r.l.",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          null,
+          10000,
+          10000,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 0,
+        "origine": "DD10244",
+        "project_leader": "Nicolò Danese",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": 20000,
+        "origine_titolo": "Trasporti e Servizi Mastrotto S.r.l. - Soluzione TMS con Odoo"
+      },
+      {
+        "account": "Non assegnato",
+        "cliente": "Trendcolor",
+        "crm_comment": "Opportunità CRM \"Trendcolor - Erp\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Erp (opp. CRM)",
+        "project_leader": "Luca Realdon",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": null
+      },
+      {
+        "account": "Luca Realdon",
+        "cliente": "Union Plus S.r.l.",
+        "crm_comment": null,
+        "is_crm": false,
+        "months": [
+          18000,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": 18000,
+        "origine": "DD10025",
+        "project_leader": "Fabrizio Benefazio",
+        "referente": null,
+        "stato": "Bozza - Contrattualizzato",
+        "tipi_progetto": [],
+        "totale": 18000,
+        "origine_titolo": "Union Plus S.r.l. - Implementazione Odoo"
+      },
+      {
+        "account": "Non assegnato",
+        "cliente": "Wedoo S.r.l.",
+        "crm_comment": "Opportunità CRM \"Opportunità per Wedoo S.r.l. - Contabilità\" - fase \"Fare preventivo\". Nessun importo/piano di fatturazione ancora associato in Odoo.",
+        "crm_fase": "Fare preventivo",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Opportunità per Wedoo S.r.l. - Contabilità (opp. CRM)",
+        "project_leader": "Luca Realdon",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [],
+        "totale": null
+      },
+      {
+        "account": "Guido Tessari",
+        "cliente": "Wow Solution S.r.l.",
+        "crm_comment": "Opportunità CRM \"Wow Solution S.r.l. - Assistenza\" - fase \"Proposta\". Nessun preventivo collegato in Odoo. Importo stimato 7200 EUR.",
+        "crm_fase": "Proposta",
+        "is_crm": true,
+        "months": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nota": null,
+        "ordinato": null,
+        "origine": "Assistenza (opp. CRM)",
+        "project_leader": "Antonio Maddalena",
+        "referente": null,
+        "stato": "Previsione - Possibile",
+        "tipi_progetto": [
+          "Assistenza"
+        ],
+        "totale": null
+      }
+    ],
+    "source_note": "Rigenerato il 23/11/2026 (refresh live da Odoo via MCP), costruito con scripts/build-pipeline-fixture.mjs con le stesse regole del 20/10/2026. Target per cliente ripresi invariati dalla generazione del 17/11 (non vengono da Odoo).",
+    "stato_summary": [
+      {
+        "stato": "Bozza - Contrattualizzato",
+        "color": "BDD7EE",
+        "months": [
+          66240,
+          34200,
+          34200,
+          17400,
+          17100,
+          22800,
+          13700,
+          15650,
+          1400,
+          800,
+          800,
+          0
+        ],
+        "totale": 224290
+      },
+      {
+        "stato": "Confermata - Fatturato",
+        "color": "C6E0B4",
+        "months": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "totale": 0
+      },
+      {
+        "stato": "Previsione - Probabile",
+        "color": "FFC000",
+        "months": [
+          5000,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "totale": 5000
+      },
+      {
+        "stato": "Previsione - Possibile",
+        "color": "FFF2CC",
+        "months": [
+          41000,
+          30000,
+          20000,
+          10000,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "totale": 101000
+      },
+      {
+        "stato": "Consuntivi",
+        "color": "FFFF00",
+        "months": [
+          14000,
+          14000,
+          14000,
+          13000,
+          3000,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "totale": 58000
+      },
+      {
+        "stato": "Target",
+        "color": "CCC0DA",
+        "months": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "totale": 0
+      }
+    ],
+    "target_table": [],
+    "year": 2027
+  }
 }

@@ -1,9 +1,25 @@
 "use server";
 
+import { existsSync, readFileSync } from "node:fs";
+import { join } from "node:path";
 import { revalidatePath } from "next/cache";
-import { requireSuperadmin } from "../../lib/auth/dal";
+import { getCurrentProfile, requireSuperadmin } from "../../lib/auth/dal";
 import { createAdminClient } from "../../lib/supabase/admin";
 import type { Company, PipelineDoc } from "./lib/types";
+
+// Solo sviluppo locale: con PIPELINE_LOCAL_FIXTURES=1 in .env.local la pagina
+// legge il documento da fixtures/<azienda>/<data>.json (se esiste) invece che
+// da Supabase, per provare una nuova versione del builder senza caricare nulla
+// sul database condiviso con la produzione. Solo superadmin (nessun filtro per
+// Project Leader qui), e mai in produzione (NODE_ENV).
+export async function loadLocalPipelineDoc(company: Company, date: string): Promise<PipelineDoc | null> {
+  if (process.env.NODE_ENV !== "development" || process.env.PIPELINE_LOCAL_FIXTURES !== "1") return null;
+  if (!["oriens", "digiduu"].includes(company) || !/^\d{4}-\d{2}-\d{2}$/.test(date)) return null;
+  const profile = await getCurrentProfile();
+  if (profile?.role !== "superadmin") return null;
+  const file = join(process.cwd(), "fixtures", company, `${date}.json`);
+  return existsSync(file) ? (JSON.parse(readFileSync(file, "utf-8")) as PipelineDoc) : null;
+}
 
 export type SaveSnapshotResult = { error: string } | { success: true; date: string; overwritten: boolean; label: string | null };
 
