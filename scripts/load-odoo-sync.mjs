@@ -204,6 +204,25 @@ async function loadPortfolio(date) {
     await insertChunks(table, rows);
     console.log(`✅ ${table}: ${rows.length} righe`);
   }
+
+  // Gruppi non più presenti nel fixture (progetto cancellato in Odoo, oppure
+  // spostato nella fase "Non aggiornare", che per regola è fuori dal
+  // Portfolio): si tolgono, con le righe figlie. Quelli con una nota di
+  // analisi scritta a mano (ppd_analysis_notes) restano e vengono segnalati.
+  const allGroups = check(await supabase.from("ppd_project_groups").select("id, name"), "lettura ppd_project_groups");
+  const stale = allGroups.filter((g) => !ids.includes(g.id));
+  if (stale.length) {
+    const noted = new Set(
+      check(await supabase.from("ppd_analysis_notes").select("group_id").in("group_id", stale.map((g) => g.id)), "lettura ppd_analysis_notes").map((n) => n.group_id)
+    );
+    for (const g of stale.filter((g) => noted.has(g.id))) console.warn(`⚠️  Gruppo ${g.id} "${g.name}" non è più nel Portfolio ma ha una nota di analisi: lasciato, da togliere a mano.`);
+    const toDelete = stale.filter((g) => !noted.has(g.id)).map((g) => g.id);
+    if (toDelete.length) {
+      for (const table of Object.keys(children)) check(await supabase.from(table).delete().in("group_id", toDelete), `pulizia ${table}`);
+      check(await supabase.from("ppd_project_groups").delete().in("id", toDelete), "pulizia ppd_project_groups");
+      console.log(`🧹 Tolti ${toDelete.length} gruppi non più nel Portfolio: ${stale.filter((g) => toDelete.includes(g.id)).map((g) => `${g.id} "${g.name}"`).join(", ")}`);
+    }
+  }
   console.log(`✅ ppd_project_groups: ${groups.length} gruppi (sync ${date})`);
 
   check(
