@@ -6,6 +6,7 @@ import { fetchVisibleGroups, fetchAnalysisNote } from "../../lib/data";
 import {
   buildMonthlyCalendarForGroup,
   daysBarInfo,
+  fmtDate,
   fmtDays,
   fmtEUR,
   fmtMonth,
@@ -13,9 +14,12 @@ import {
   getDataChecks,
   isBeforeNormalWindow,
   odooProjectUrl,
+  overdueMilestones,
+  stageBadgeClass,
 } from "../../lib/logic";
 import { GroupDetail } from "../../../report-progetti/components/GroupRow";
 import MonthCell from "../../components/MonthCell";
+import { StatusDot } from "../../components/MonthlyCalendarTable";
 
 // Dettaglio progetto (prompt di handoff §6.4). Se la query non trova nulla,
 // per un Project Leader non autorizzato è perché la RLS di ppd_project_groups
@@ -37,7 +41,8 @@ export default async function PortfolioProgettiDigiduuGroupPage({ params }: { pa
   const todayISO = new Date().toISOString().slice(0, 10);
   const bar = daysBarInfo(group);
   const alerts = getAlerts(group);
-  const checks = getDataChecks(group, todayISO);
+  const checks = getDataChecks(group, todayISO).filter((c) => c.key !== "milestone-scadute");
+  const overdue = overdueMilestones(group, todayISO);
   const calendar = buildMonthlyCalendarForGroup(group, entry.monthlyDays, todayISO);
   const barColor =
     bar.className === "good" ? "bg-emerald-600" : bar.className === "warning" ? "bg-amber-500" : bar.className === "critical" ? "bg-red-600" : "bg-gray-300";
@@ -49,6 +54,7 @@ export default async function PortfolioProgettiDigiduuGroupPage({ params }: { pa
       </Link>
 
       <div className="mb-1 flex flex-wrap items-center gap-2">
+        <StatusDot status={group.update_status} withLabel />
         <h1 className="text-xl font-semibold text-gray-900">{group.name}</h1>
         <a
           href={odooProjectUrl(group.id)}
@@ -59,9 +65,12 @@ export default async function PortfolioProgettiDigiduuGroupPage({ params }: { pa
         >
           ↗ Odoo
         </a>
-        <span className={`rounded-full px-2.5 py-1 text-xs font-semibold ${group.stage === "Completato" ? "bg-emerald-50 text-emerald-700" : "bg-blue-50 text-blue-700"}`}>
-          {group.stage}
-        </span>
+        <span className={`rounded-full px-2.5 py-1 text-xs font-semibold ${stageBadgeClass(group.stage)}`}>{group.stage}</span>
+        {overdue.length > 0 && (
+          <span className="rounded-full bg-red-100 px-2.5 py-1 text-xs font-semibold text-red-700">
+            ⚠ {overdue.length} milestone scadut{overdue.length === 1 ? "a" : "e"}
+          </span>
+        )}
         {!group.active && <span className="rounded-full bg-gray-100 px-2.5 py-1 text-xs font-semibold text-gray-500">Archiviato</span>}
         {group.member_count > 1 && (
           <span className="rounded-full bg-violet-50 px-2.5 py-1 text-xs font-semibold text-violet-700">{group.member_count} conti uniti</span>
@@ -103,6 +112,12 @@ export default async function PortfolioProgettiDigiduuGroupPage({ params }: { pa
         </div>
       )}
 
+      {overdue.length > 0 && (
+        <div className="mb-4 rounded-md border-l-4 border-red-500 bg-red-50 px-3.5 py-2.5 text-sm text-red-800">
+          <b>Milestone scadute:</b> {overdue.map((m) => `${m.name} (${fmtDate(m.deadline)})`).join(" · ")}
+        </div>
+      )}
+
       {analysisNote && (
         <div className="mb-4 rounded-md border-l-4 border-orange-400 bg-orange-50 px-3.5 py-2.5 text-sm text-orange-900">
           <b>Nota di analisi:</b> {analysisNote}
@@ -131,7 +146,15 @@ export default async function PortfolioProgettiDigiduuGroupPage({ params }: { pa
       </div>
 
       <div className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm">
-        <GroupDetail group={group} />
+        <GroupDetail
+          group={group}
+          highlightKpis
+          planningFromMonthStart
+          spentByMonth={entry.monthlyDays}
+          currentMonth={todayISO.slice(0, 7)}
+          milestonesFirst
+          todayISO={todayISO}
+        />
       </div>
     </div>
   );

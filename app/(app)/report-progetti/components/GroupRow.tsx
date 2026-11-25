@@ -99,54 +99,117 @@ export default function GroupRow({ group }: { group: Group }) {
   );
 }
 
+// Soglia del ricavo medio giornaliero (stessa di LOW_REVENUE_THRESHOLD del Portfolio).
+const LOW_RATE = 700;
+type Tone = "good" | "bad";
+
+// Le quattro schede economiche (venduto / actual / bozze / forecast).
+// Esportate a parte perché Portfolio Progetti Digiduu le usa anche per il
+// recap di un cliente, con i valori sommati di tutti i suoi progetti.
+// toDoLabel (Portfolio): plan_days sono le giornate ancora da fare (nel mese
+// corrente pianificate meno spese, più i mesi futuri) — cambia solo l'etichetta.
+export type CashflowValues = Pick<Group, "prop_price" | "prop_days" | "act_rev" | "act_days" | "draft_rev" | "plan_days" | "fc_rev" | "fc_consuntivi"> & {
+  toDoLabel?: boolean;
+};
+
+export function CashflowCards({ values: g, highlightKpis = false }: { values: CashflowValues; highlightKpis?: boolean }) {
+  const forecastDays = g.act_days + g.plan_days;
+  const baselineAvg = g.prop_days ? fmtEUR2(g.prop_price / g.prop_days) : "—";
+  const actAvg = g.act_days ? fmtEUR2(g.act_rev / g.act_days) : "—";
+  const fcAvgValue = forecastDays ? g.fc_rev / forecastDays : null;
+  const fcAvg = fcAvgValue != null ? fmtEUR2(fcAvgValue) : "—";
+  // Con highlightKpis il ricavo medio/gg forecast ha il colore della soglia
+  // (sotto 700 €/gg rosso, sopra verde), come nel calendario del Portfolio.
+  const fcTone: Tone | undefined = highlightKpis && fcAvgValue != null ? (fcAvgValue < LOW_RATE ? "bad" : "good") : undefined;
+  const consNote = g.fc_consuntivi
+    ? `Include ${fmtEUR(g.fc_consuntivi)} di previsioni di fattura da consuntivi (piano di fatturazione), non ancora fatturate`
+    : undefined;
+  return (
+    <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-4">
+      <CashflowCard
+        title="Come è stato venduto"
+        rows={[
+          ["Ricavi baseline", fmtEUR(g.prop_price)],
+          ["Giornate ordinate", `${fmtDays(g.prop_days)} gg`],
+          ["Ricavo medio/gg baseline", baselineAvg],
+        ]}
+      />
+      <CashflowCard
+        title="Come sta andando (Actual)"
+        rows={[
+          ["Ricavi actual", fmtEUR(g.act_rev)],
+          ["Giornate spese", `${fmtDays(g.act_days)} gg`],
+          ["Ricavo medio/gg actual", actAvg],
+        ]}
+      />
+      <CashflowCard
+        title="Cosa manca (Bozze)"
+        rows={[
+          ["Ricavi in bozza", fmtEUR(g.draft_rev)],
+          [g.toDoLabel ? "Giornate pianificate da fare" : "Giornate pianificate", `${fmtDays(g.plan_days)} gg`, highlightKpis],
+        ]}
+      />
+      <CashflowCard
+        title="Come finirà (Forecast)"
+        rows={[
+          ["Ricavi forecast", fmtEUR(g.fc_rev), false, undefined, consNote],
+          ...((g.fc_consuntivi
+            ? [["di cui previsioni da consuntivi", fmtEUR(g.fc_consuntivi), false, undefined, consNote]]
+            : []) as CashflowRow[]),
+          ["Giornate forecast", `${fmtDays(forecastDays)} gg`],
+          ["Ricavo medio/gg forecast", fcAvg, highlightKpis, fcTone, consNote],
+        ]}
+      />
+    </div>
+  );
+}
+
 // Esportata (oltre a essere usata internamente da GroupRow sopra) perché
 // Portfolio Progetti Digiduu la riusa identica per la propria pagina di
 // dettaglio progetto, invece di duplicare ~300 righe di JSX quasi identico —
 // modifica puramente additiva, nessun cambiamento di comportamento qui.
-export function GroupDetail({ group: g }: { group: Group }) {
-  const forecastDays = g.act_days + g.plan_days;
-  const baselineAvg = g.prop_days ? fmtEUR2(g.prop_price / g.prop_days) : "—";
-  const actAvg = g.act_days ? fmtEUR2(g.act_rev / g.act_days) : "—";
-  const fcAvg = forecastDays ? fmtEUR2(g.fc_rev / forecastDays) : "—";
+// `highlightKpis` (solo Portfolio Progetti Digiduu): mette in evidenza le
+// giornate pianificate e il ricavo medio/gg forecast, i KPI che i PL guardano
+// per primi. `planningFromMonthStart`: nel Portfolio la pianificazione parte
+// dal 1° del mese corrente (non da oggi), per confrontarla con le giornate
+// spese del mese: con `spentByMonth` + `currentMonth` la tabella Planning
+// aggiunge le righe "Totale pianificato" e "Spese / pianificate".
+export function GroupDetail({
+  group: g,
+  highlightKpis = false,
+  planningFromMonthStart = false,
+  spentByMonth,
+  currentMonth,
+  milestonesFirst = false,
+  todayISO,
+}: {
+  group: Group;
+  highlightKpis?: boolean;
+  planningFromMonthStart?: boolean;
+  spentByMonth?: Record<string, number>;
+  currentMonth?: string;
+  // Portfolio: le milestone vanno in alto, prima delle fatture.
+  milestonesFirst?: boolean;
+  todayISO?: string;
+}) {
   const sforamento = getAlerts(g).find((a) => a.key === "sforamento");
   const zeroRevFlag = g.act_rev === 0 && g.act_days > 0;
 
   return (
     <div className="space-y-4">
-      <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-4">
-        <CashflowCard
-          title="Come è stato venduto"
-          rows={[
-            ["Ricavi baseline", fmtEUR(g.prop_price)],
-            ["Giornate ordinate", `${fmtDays(g.prop_days)} gg`],
-            ["Ricavo medio/gg baseline", baselineAvg],
-          ]}
-        />
-        <CashflowCard
-          title="Come sta andando (Actual)"
-          rows={[
-            ["Ricavi actual", fmtEUR(g.act_rev)],
-            ["Giornate spese", `${fmtDays(g.act_days)} gg`],
-            ["Ricavo medio/gg actual", actAvg],
-          ]}
-        />
-        <CashflowCard
-          title="Cosa manca (Bozze)"
-          rows={[
-            ["Ricavi in bozza", fmtEUR(g.draft_rev)],
-            ["Giornate pianificate", `${fmtDays(g.plan_days)} gg`],
-          ]}
-        />
-        <CashflowCard
-          title="Come finirà (Forecast)"
-          rows={[
-            ["Ricavi forecast", fmtEUR(g.fc_rev)],
-            ["Giornate forecast", `${fmtDays(forecastDays)} gg`],
-            ["Ricavo medio/gg forecast", fcAvg],
-          ]}
-        />
-      </div>
+      <CashflowCards
+        values={planningFromMonthStart ? { ...g, toDoLabel: true } : g}
+        highlightKpis={highlightKpis}
+      />
 
+      {!!g.fc_consuntivi && (
+        <div className="rounded-md border-l-4 border-amber-400 bg-amber-50 px-3.5 py-2.5 text-xs text-amber-900">
+          <b>
+            <span className="text-amber-500">*</span> Ricavi forecast con previsioni da consuntivi: {fmtEUR(g.fc_consuntivi)}
+          </b>{" "}
+          — {(g.fc_consuntivi_lines || []).map((c) => `${fmtDate(c.date)} ${fmtEUR(c.amount)}${c.order ? ` (${c.order}${c.name ? `, ${c.name}` : ""})` : ""}`).join(" · ")}
+        </div>
+      )}
       {sforamento && (
         <div className="rounded-md bg-red-50 px-3 py-2 text-xs font-medium text-red-700">⚠ {sforamento.detail}</div>
       )}
@@ -207,9 +270,10 @@ export function GroupDetail({ group: g }: { group: Group }) {
         )}
       </div>
 
+      {milestonesFirst && <MilestonesTable milestones={g.milestones} todayISO={todayISO} />}
       <InvoiceTable group={g} />
-      <PlanningTable group={g} />
-      <MilestonesTable milestones={g.milestones} />
+      <PlanningTable group={g} fromMonthStart={planningFromMonthStart} spentByMonth={spentByMonth} currentMonth={currentMonth} />
+      {!milestonesFirst && <MilestonesTable milestones={g.milestones} todayISO={todayISO} />}
       <TaskStagesSummary group={g} />
       <DocSection title="SAL / Stato avanzamento lavori (Teams/SharePoint)" docs={g.sal_docs} emptyIcon="📄" />
       <DocSection title="Certificato (Teams/SharePoint)" docs={g.cert_docs} emptyIcon="📜" />
@@ -217,16 +281,43 @@ export function GroupDetail({ group: g }: { group: Group }) {
   );
 }
 
-function CashflowCard({ title, rows }: { title: string; rows: [string, string][] }) {
+// Riga: [etichetta, valore, in evidenza?, colore?, nota asterisco giallo?]
+type CashflowRow = [string, string, boolean?, Tone?, string?];
+
+// Asterisco giallo: il valore include previsioni da consuntivi (nota nel title).
+export function ConsuntiviMark({ note }: { note: string }) {
+  return (
+    <span className="ml-0.5 cursor-help font-bold text-amber-500" title={note} aria-label={note}>
+      *
+    </span>
+  );
+}
+
+function CashflowCard({ title, rows }: { title: string; rows: CashflowRow[] }) {
+  const toneClass = (t?: Tone) =>
+    t === "bad" ? { row: "bg-red-50", value: "text-red-700" } : t === "good" ? { row: "bg-emerald-50", value: "text-emerald-700" } : { row: "bg-violet-50", value: "text-violet-800" };
   return (
     <div className="rounded-lg border border-gray-200 bg-white p-3">
       <h4 className="mb-2 text-[10.5px] font-semibold uppercase tracking-wide text-gray-500">{title}</h4>
-      {rows.map(([label, value]) => (
-        <div key={label} className="flex justify-between py-0.5 text-xs text-gray-600">
-          <span>{label}</span>
-          <b className="font-mono tabular-nums text-gray-900">{value}</b>
-        </div>
-      ))}
+      {rows.map(([label, value, highlight, tone, mark]) =>
+        highlight ? (
+          <div key={label} className={`-mx-1.5 my-0.5 flex justify-between rounded-md px-1.5 py-1 text-[13px] font-bold text-gray-900 ${toneClass(tone).row}`}>
+            <span>
+              {label}
+              {mark && <ConsuntiviMark note={mark} />}
+            </span>
+            <span className={`font-mono tabular-nums ${toneClass(tone).value}`}>{value}</span>
+          </div>
+        ) : (
+          <div key={label} className="flex justify-between py-0.5 text-xs text-gray-600">
+            <span>
+              {label}
+              {mark && <ConsuntiviMark note={mark} />}
+            </span>
+            <b className="font-mono tabular-nums text-gray-900">{value}</b>
+          </div>
+        )
+      )}
     </div>
   );
 }
@@ -318,12 +409,47 @@ function InvoiceTable({ group: g }: { group: Group }) {
   );
 }
 
-function PlanningTable({ group: g }: { group: Group }) {
+function PlanningTable({
+  group: g,
+  fromMonthStart = false,
+  spentByMonth,
+  currentMonth,
+}: {
+  group: Group;
+  fromMonthStart?: boolean;
+  spentByMonth?: Record<string, number>;
+  currentMonth?: string;
+}) {
   const plan = g.planning_future;
+  // Confronto (Portfolio): nel mese corrente ogni cella mostra "pianificate /
+  // spese" della persona; le spese sono verdi entro il pianificato, rosse
+  // oltre. Chi ha speso giornate senza essere pianificato ha una riga in più.
+  const showSpent = !!spentByMonth && !!currentMonth;
+  const cur = currentMonth || "";
+  const spentByRes = showSpent ? g.spent_by_resource : undefined;
+  const hasResSpent = !!spentByRes;
+  const spentOf = (name: string) => spentByRes?.[name]?.[cur] || 0;
+  const spentNow = showSpent ? spentByMonth![cur] || 0 : 0;
+  const planned = plan?.by_resource || [];
+  const plannedNames = new Set(planned.map((r) => r.resource));
+  const unplanned = hasResSpent
+    ? Object.keys(spentByRes!)
+        .filter((n) => !plannedNames.has(n) && spentOf(n) > 0)
+        .sort()
+        .map((n) => ({ resource: n, role: null as string | null, days: {} as Record<string, number>, total: 0, unplanned: true }))
+    : [];
+  const rows = [...planned.map((r) => ({ ...r, unplanned: false })), ...unplanned];
+  const months = [...new Set([...(plan?.months || []), ...(showSpent && spentNow > 0 ? [cur] : [])])].sort();
+  const plannedIn = (m: string) => planned.reduce((a, r) => a + (r.days[m] || 0), 0);
+  const title = fromMonthStart ? "Pianificazione dal mese corrente (Planning)" : "Pianificazione residua (Planning)";
+  const unit = fromMonthStart ? "gg pianificate" : "gg residue";
   return (
     <div className="border-t border-dashed border-gray-300 pt-3">
-      <SectionHeader title="Pianificazione residua (Planning)" totals={plan?.months?.length ? `${fmtDays(plan.total_days)} gg residue · ${plan.slot_count} turni` : undefined} />
-      {!plan || !plan.months.length ? (
+      <SectionHeader
+        title={title}
+        totals={plan?.months?.length ? `${fmtDays(plan.total_days)} ${unit}${plan.slot_count ? ` · ${plan.slot_count} turni` : ""}` : undefined}
+      />
+      {!plan || !months.length ? (
         <p className="text-xs italic text-gray-500">Nessun turno futuro pianificato nel modulo Planning.</p>
       ) : (
         <div className="overflow-x-auto">
@@ -331,24 +457,38 @@ function PlanningTable({ group: g }: { group: Group }) {
             <thead>
               <tr className="text-left text-[10.5px] uppercase tracking-wide text-gray-500">
                 <th className="border-b border-gray-200 px-2 py-1.5">Risorsa</th>
-                {plan.months.map((m) => (
-                  <th key={m} className="border-b border-gray-200 px-2 py-1.5 text-right">
+                {months.map((m) => (
+                  <th key={m} className={`border-b border-gray-200 px-2 py-1.5 text-right ${showSpent && m === cur ? "bg-violet-50 text-violet-700" : ""}`}>
                     {fmtMonth(m)}
+                    {showSpent && m === cur && <div className="normal-case tracking-normal">in corso · pian. / spese</div>}
                   </th>
                 ))}
-                <th className="border-b border-gray-200 px-2 py-1.5 text-right">Totale</th>
+                <th className="border-b border-gray-200 px-2 py-1.5 text-right">Totale pian.</th>
               </tr>
             </thead>
             <tbody>
-              {plan.by_resource.map((r) => (
+              {rows.map((r) => (
                 <tr key={r.resource}>
                   <td className="border-b border-gray-100 px-2 py-1.5 text-gray-700">
                     {r.resource}
-                    <div className="text-[10.5px] text-gray-400">{r.role}</div>
+                    {r.unplanned ? (
+                      <div className="text-[10.5px] font-semibold text-red-600">non pianificato</div>
+                    ) : (
+                      <div className="text-[10.5px] text-gray-400">{r.role}</div>
+                    )}
                   </td>
-                  {plan.months.map((m) => (
-                    <td key={m} className="border-b border-gray-100 px-2 py-1.5 text-right font-mono tabular-nums text-gray-600">
-                      {r.days[m] ? fmtDays(r.days[m]) : "—"}
+                  {months.map((m) => (
+                    <td
+                      key={m}
+                      className={`border-b border-gray-100 px-2 py-1.5 text-right font-mono tabular-nums text-gray-600 ${showSpent && m === cur ? "bg-violet-50/60" : ""}`}
+                    >
+                      {hasResSpent && m === cur ? (
+                        <PlanSpent planned={r.days[m] || 0} spent={spentOf(r.resource)} />
+                      ) : r.days[m] ? (
+                        <b className="text-gray-900">{fmtDays(r.days[m])}</b>
+                      ) : (
+                        "—"
+                      )}
                     </td>
                   ))}
                   <td className="border-b border-gray-100 px-2 py-1.5 text-right font-mono font-semibold tabular-nums text-gray-900">
@@ -357,6 +497,22 @@ function PlanningTable({ group: g }: { group: Group }) {
                 </tr>
               ))}
             </tbody>
+            {showSpent && (
+              <tfoot>
+                <tr className="font-semibold text-gray-900">
+                  <td className="border-t border-gray-300 px-2 py-1.5">Totale</td>
+                  {months.map((m) => (
+                    <td
+                      key={m}
+                      className={`border-t border-gray-300 px-2 py-1.5 text-right font-mono font-bold tabular-nums ${m === cur ? "bg-violet-50/60" : ""}`}
+                    >
+                      {m === cur ? <PlanSpent planned={plannedIn(m)} spent={spentNow} /> : plannedIn(m) ? fmtDays(plannedIn(m)) : "—"}
+                    </td>
+                  ))}
+                  <td className="border-t border-gray-300 px-2 py-1.5 text-right font-mono font-bold tabular-nums">{fmtDays(plan.total_days)}</td>
+                </tr>
+              </tfoot>
+            )}
           </table>
         </div>
       )}
@@ -364,8 +520,26 @@ function PlanningTable({ group: g }: { group: Group }) {
   );
 }
 
-function MilestonesTable({ milestones }: { milestones: Milestone[] }) {
+// "pianificate / spese" di un mese in una cella: le spese in verde se entro
+// le pianificate, in rosso se le superano.
+function PlanSpent({ planned, spent }: { planned: number; spent: number }) {
+  const over = spent > planned;
+  return (
+    <span
+      className="whitespace-nowrap font-mono tabular-nums"
+      title={`${fmtDays(planned)} gg pianificate, ${fmtDays(spent)} gg spese${over ? " (oltre il pianificato)" : ""}`}
+    >
+      <b className="text-gray-900">{planned ? fmtDays(planned) : "0"}</b>
+      <span className="text-gray-400"> / </span>
+      <b className={over ? "text-red-600" : "text-emerald-600"}>{spent ? fmtDays(spent) : "0"}</b>
+    </span>
+  );
+}
+
+function MilestonesTable({ milestones, todayISO }: { milestones: Milestone[]; todayISO?: string }) {
   const rows = milestones || [];
+  const today = todayISO || new Date().toISOString().slice(0, 10);
+  const isOverdue = (m: Milestone) => !m.is_reached && !!m.deadline && m.deadline < today;
   const reached = rows.filter((m) => m.is_reached).length;
   const showSource = rows.some((m) => m.source);
   return (
@@ -390,14 +564,14 @@ function MilestonesTable({ milestones }: { milestones: Milestone[] }) {
                 <tr key={i}>
                   <td className="border-b border-gray-100 px-2 py-1.5 text-gray-700">{m.name}</td>
                   {showSource && <td className="border-b border-gray-100 px-2 py-1.5 text-gray-500">{m.source || "—"}</td>}
-                  <td className="border-b border-gray-100 px-2 py-1.5 text-gray-600">{fmtDate(m.deadline)}</td>
+                  <td className={`border-b border-gray-100 px-2 py-1.5 ${isOverdue(m) ? "font-semibold text-red-700" : "text-gray-600"}`}>{fmtDate(m.deadline)}</td>
                   <td className="border-b border-gray-100 px-2 py-1.5">
                     <span
                       className={`rounded-full px-1.5 py-0.5 text-[10px] font-semibold ${
-                        m.is_reached ? "bg-emerald-50 text-emerald-700" : "bg-amber-50 text-amber-700"
+                        m.is_reached ? "bg-emerald-50 text-emerald-700" : isOverdue(m) ? "bg-red-100 text-red-700" : "bg-amber-50 text-amber-700"
                       }`}
                     >
-                      {m.is_reached ? "Raggiunta" : "Da raggiungere"}
+                      {m.is_reached ? "Raggiunta" : isOverdue(m) ? "Scaduta" : "Da raggiungere"}
                     </span>
                   </td>
                   <td className="border-b border-gray-100 px-2 py-1.5 text-gray-600">{fmtDate(m.reached_date)}</td>

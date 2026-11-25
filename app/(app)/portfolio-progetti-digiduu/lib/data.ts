@@ -1,4 +1,6 @@
 import "server-only";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import type { SupabaseClient } from "@supabase/supabase-js";
 import type { ActivePhaseProject, Group, ProjectLeaderReport } from "./types";
 
@@ -22,7 +24,27 @@ export interface GroupWithPl {
 // onlyGroupId: usato dalla pagina di dettaglio per interrogare un solo
 // gruppo invece di scaricarli tutti (la RLS si applica comunque in ogni caso:
 // qui è solo un'ottimizzazione, non un confine di sicurezza).
+// Solo sviluppo locale: con PPD_LOCAL_FIXTURE=<YYYY-MM-DD> in .env.local i
+// gruppi si leggono da fixtures/portfolio-progetti-digiduu/<data>.json invece
+// che da Supabase, per provare una nuova logica del builder senza caricare
+// nulla sul database condiviso con la produzione. Nessun filtro RLS: va usato
+// solo in locale (in produzione NODE_ENV non è "development").
+function localFixtureGroups(onlyGroupId?: number): GroupWithPl[] | null {
+  const date = process.env.PPD_LOCAL_FIXTURE?.trim();
+  if (process.env.NODE_ENV !== "development" || !date) return null;
+  const file = join(process.cwd(), "fixtures", "portfolio-progetti-digiduu", `${date}.json`);
+  const report = JSON.parse(readFileSync(file, "utf-8")) as { pl_name: string; groups: (Group & { monthlyDays?: Record<string, number> })[] }[];
+  return report.flatMap((pl) =>
+    pl.groups
+      .filter((g) => !onlyGroupId || g.id === onlyGroupId)
+      .map(({ monthlyDays, ...group }) => ({ group: group as Group, plName: pl.pl_name, monthlyDays: monthlyDays || {} }))
+  );
+}
+
 export async function fetchVisibleGroups(supabase: SupabaseClient, onlyGroupId?: number): Promise<GroupWithPl[]> {
+  const local = localFixtureGroups(onlyGroupId);
+  if (local) return local;
+
   const groupsQ = supabase.from("ppd_project_groups").select("*");
   const saleOrdersQ = supabase.from("ppd_sale_orders").select("*");
   const invoicesQ = supabase.from("ppd_invoices").select("*");
@@ -158,6 +180,12 @@ export async function fetchVisibleGroups(supabase: SupabaseClient, onlyGroupId?:
       overdue_count: g.overdue_count,
       omaggio_days: g.omaggio_days,
       sospese_days: g.sospese_days,
+      // Logica "per ordine di vendita" (migration 20261125120000_ppd_by_order_fields.sql)
+      update_status: g.update_status ?? null,
+      spent_by_resource: g.spent_by_resource ?? undefined,
+      baseline_missing: g.baseline_missing ?? undefined,
+      fc_consuntivi: g.fc_consuntivi ?? undefined,
+      fc_consuntivi_lines: g.fc_consuntivi_lines ?? undefined,
     } satisfies Group;
 
     const monthlyDays: Record<string, number> = {};

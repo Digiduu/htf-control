@@ -159,6 +159,12 @@ async function loadPortfolio(date) {
         task_total: g.task_total,
         omaggio_days: g.omaggio_days ?? 0,
         sospese_days: g.sospese_days ?? 0,
+        // Logica "per ordine di vendita" (migration 20261125120000_ppd_by_order_fields.sql)
+        update_status: g.update_status ?? null,
+        spent_by_resource: g.spent_by_resource ?? null,
+        baseline_missing: g.baseline_missing ?? null,
+        fc_consuntivi: g.fc_consuntivi ?? null,
+        fc_consuntivi_lines: g.fc_consuntivi_lines ?? null,
       })),
       { onConflict: "id" }
     ),
