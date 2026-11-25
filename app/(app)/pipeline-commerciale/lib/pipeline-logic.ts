@@ -2,7 +2,7 @@
 // (stesso algoritmo dell'Artifact claude.ai originale — vedi HANDOFF.md sezione 3.3
 // per la spiegazione della colonna Nota). Nessuna dipendenza da React: testabile
 // direttamente contro i fixture in fixtures/.
-import type { PipelineDoc, PipelineRow } from "./types";
+import type { PayLevel, PipelineDoc, PipelineRow } from "./types";
 
 // Palette di riserva, usata solo quando una generazione non porta con sé i
 // propri colori in stato_summary (vedi buildColorMap). "Previsione - Offerta"
@@ -197,6 +197,16 @@ export function buildPrevCurrentTable(doc: PipelineDoc, compareDoc: PipelineDoc)
 export interface CellState {
   stato: string | null;
   val: number;
+  // Solo "Confermata - Fatturato": stato di pagamento delle fatture del mese
+  pay?: PayLevel;
+}
+
+// Due livelli di pagamento nella stessa cella (più ordini di un cliente):
+// uguali restano tali, diversi diventano "parziale".
+export function mergePay(a: PayLevel | undefined, b: PayLevel | undefined): PayLevel {
+  if (!a) return b ?? null;
+  if (!b) return a;
+  return a === b ? a : "partial";
 }
 
 // Filtro "Tipologia" della toolbar: esclude gli stati disattivati da un
@@ -238,8 +248,10 @@ export function summarizeClient(rows: MergedRow[]): MergedRow {
     for (let i = 0; i < 12; i++) {
       for (const cs of r._cellStates?.[i] || []) {
         const hit = cells[i].find((x) => x.stato === cs.stato);
-        if (hit) hit.val += cs.val;
-        else cells[i].push({ ...cs });
+        if (hit) {
+          hit.val += cs.val;
+          if (hit.pay || cs.pay) hit.pay = mergePay(hit.pay, cs.pay);
+        } else cells[i].push({ ...cs });
         months[i] += cs.val;
       }
     }
@@ -306,7 +318,7 @@ export function mergeOrderRows(rows: PipelineRow[]): MergedRow[] {
       const v = r.months[i];
       if (v) {
         g.months[i] = (g.months[i] || 0) + v;
-        g._cellStates[i].push({ stato: r.stato, val: v });
+        g._cellStates[i].push({ stato: r.stato, val: v, ...(r.months_pay?.[i] ? { pay: r.months_pay[i] } : {}) });
       }
     }
   }

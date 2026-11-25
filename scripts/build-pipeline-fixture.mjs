@@ -78,6 +78,8 @@ const FATTIBILITA_PROBABILE = 2;
 const round2 = (n) => Math.round(n * 100) / 100;
 
 const partners = new Map(load("partners.json").map((p) => [p.id, p]));
+// partners_2027.json (facoltativo): contatti presenti solo nei dati dell'anno successivo
+for (const f of ["partners_2027.json"]) if (existsSync(join(raw, f))) for (const p of load(f)) if (!partners.has(p.id)) partners.set(p.id, p);
 if (existsSync(join(raw, "partners_proposta.json"))) {
   for (const p of load("partners_proposta.json")) if (!partners.has(p.id)) partners.set(p.id, p);
 }
@@ -97,6 +99,18 @@ if (hasProposta) {
     if (!valued) unvaluedProposta.push({ ...l, orders: os });
   }
 }
+// inv_payment.json (facoltativo): account.move delle fatture dell'anno, campi
+// id, payment_state → bollino di pagamento sulle fatture confermate.
+const paymentState = new Map(existsSync(join(raw, "inv_payment.json")) ? load("inv_payment.json").map((m) => [m.id, m.payment_state]) : []);
+// Livello di pagamento di un mese: tutte pagate/in pagamento = "paid", nessuna
+// pagata = "unpaid", altrimenti (anche pagamento parziale) = "partial".
+const payLevel = (states) => {
+  if (!states.length) return null;
+  const done = states.filter((p) => p === "paid" || p === "in_payment").length;
+  if (done === states.length) return "paid";
+  if (done === 0 && states.every((p) => p === "not_paid")) return "unpaid";
+  return "partial";
+};
 const projects = load("projects.json");
 const piano = load("piano.json");
 const crm = load("crm.json");
@@ -105,7 +119,16 @@ const crm = load("crm.json");
 // dell'opportunità collegata all'ordine e dell'ordine stesso, col nome che
 // hanno in Odoo. Righe senza etichette = tipi_progetto vuoto, cioè "Senza
 // etichetta" nella pagina.
-const hasTipo = ["so_tipo.json", "lead_tipo.json", "crm_tags.json"].every((f) => existsSync(join(raw, f)));
+// so_titoli.json (facoltativo): sale.order [company_id in (1,6), name in
+// <codici Origine delle righe>], campi name, x_studio_titolo_contratto_cliente,
+// company_id — titolo del contratto mostrato al passaggio sul codice commessa.
+const contractTitles = new Map(
+  (existsSync(join(raw, "so_titoli.json")) ? JSON.parse(readFileSync(join(raw, "so_titoli.json"), "utf-8")).records : [])
+    .filter((s) => s.x_studio_titolo_contratto_cliente)
+    .map((s) => [s.name, s.x_studio_titolo_contratto_cliente.trim()])
+);
+
+const hasTipo =["so_tipo.json", "lead_tipo.json", "crm_tags.json"].every((f) => existsSync(join(raw, f)));
 const tagNames = new Map(hasTipo ? load("crm_tags.json").map((t) => [t.id, t.name.trim()]) : []);
 const toTipi = (ids) => [...new Set(ids)].map((id) => tagNames.get(id) ?? `Etichetta ${id}`).sort((a, b) => a.localeCompare(b, "it"));
 const leadTagIds = new Map(hasTipo ? load("lead_tipo.json").map((l) => [l.id, l.tag_ids]) : []);
@@ -165,28 +188,32 @@ function crmOrigin(name, cliente, isDig) {
   return c.startsWith(head) || head.startsWith(c) ? name.slice(i + 3) : name;
 }
 
-function build(company) {
+function buildDoc(company, Y, invRecs, pianoRecs, main) {
   const isDig = company === "digiduu";
   const companyId = isDig ? 6 : 1;
   // key cliente|origine|stato → { partnerId, months[] }
   const cells = new Map();
-  const add = (partnerId, origine, stato, monthIdx, amount, isInvoice) => {
+  const add = (partnerId, origine, stato, monthIdx, amount, isInvoice, payState) => {
     const cliente = clientName(partnerId);
     const key = `${cliente}|${origine}|${stato}`;
-    if (!cells.has(key)) cells.set(key, { cliente, origine, stato, partnerId, months: Array(12).fill(0), isInvoice });
+    if (!cells.has(key)) cells.set(key, { cliente, origine, stato, partnerId, months: Array(12).fill(0), pay: Array.from({ length: 12 }, () => []), isInvoice });
     cells.get(key).months[monthIdx] += amount;
+    if (payState) cells.get(key).pay[monthIdx].push(payState);
   };
 
-  for (const inv of load(isDig ? "inv_digiduu.json" : "inv_oriens.json")) {
+  for (const inv of invRecs) {
     if (!["draft", "posted"].includes(inv.state)) continue;
     const stato = inv.state === "draft" ? "Bozza - Contrattualizzato" : "Confermata - Fatturato";
     const m = Number(inv.invoice_date.slice(5, 7)) - 1;
     const pid = (inv.partner_id || inv.commercial_partner_id)[0];
-    add(pid, inv.invoice_origin || "n.d.", stato, m, inv.amount_untaxed_signed, true);
+    // Stato di pagamento solo per le fatture confermate (non note di credito né fatture stornate)
+    const ps = inv.payment_state ?? paymentState.get(inv.id);
+    const payState = inv.state === "posted" && inv.move_type === "out_invoice" && ps && ps !== "reversed" ? ps : null;
+    add(pid, inv.invoice_origin || "n.d.", stato, m, inv.amount_untaxed_signed, true, payState);
   }
-  for (const r of piano) {
+  for (const r of pianoRecs) {
     if (r.x_studio_company_id?.[0] !== companyId) continue;
-    if (!r.x_studio_date || Number(r.x_studio_date.slice(0, 4)) !== YEAR) continue;
+    if (!r.x_studio_date || Number(r.x_studio_date.slice(0, 4)) !== Y) continue;
     let stato;
     if (r.x_studio_kanban_state === "Proposta") {
       stato = (r.x_studio_many2many_field_BuQG5 || []).includes(FATTIBILITA_PROBABILE) ? "Previsione - Probabile" : "Previsione - Possibile";
@@ -218,6 +245,7 @@ function build(company) {
       stato: c.stato,
       ...(isDig && hasTipo ? { tipi_progetto: orderTipi.get(c.origine) || [] } : {}),
       totale,
+      ...(c.stato === "Confermata - Fatturato" && c.pay.some((p) => p.length) ? { months_pay: c.pay.map(payLevel) } : {}),
     });
   }
 
@@ -307,7 +335,7 @@ function build(company) {
   };
 
   let target_table = [];
-  if (isDig) {
+  if (isDig && main) {
     const prevFile = readdirSync(join("fixtures", company)).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f) && f < `${dataAsOf}.json`).sort().pop();
     const prev = JSON.parse(readFileSync(join("fixtures", company, prevFile), "utf-8"));
     target_table = prev.target_table.map((t) => {
@@ -321,8 +349,15 @@ function build(company) {
   }
 
   const headers = isDig
-    ? ["Account", "Project Leader", "Cliente", "Origine", "Ordinato", ...MONTHS, `TOTALE ${YEAR}`, "Cliente", `Ordinato ${YEAR}`, "Target", "Differenza"]
-    : ["Referente", "Cliente", "Origine", "Ordinato", ...MONTHS, `TOTALE ${YEAR}`];
+    ? ["Account", "Project Leader", "Cliente", "Origine", "Ordinato", ...MONTHS, `TOTALE ${Y}`, "Cliente", `Ordinato ${Y}`, "Target", "Differenza"]
+    : ["Referente", "Cliente", "Origine", "Ordinato", ...MONTHS, `TOTALE ${Y}`];
+
+  // Titolo del contratto (sale.order.x_studio_titolo_contratto_cliente) per
+  // ogni codice commessa: la pagina lo mostra passando sopra la colonna
+  // Origine (campo origine_titolo delle righe).
+  for (const r of rows) {
+    if (!r.is_crm && r.origine && contractTitles.has(r.origine)) r.origine_titolo = contractTitles.get(r.origine);
+  }
 
   const out = {
     dual_mode: isDig,
@@ -335,15 +370,17 @@ function build(company) {
     source_note: (isDig ? noteDigiduu : noteOriens) || `Rigenerazione live del ${dataAsOf} da Odoo via MCP.`,
     stato_summary,
     target_table,
-    year: YEAR,
+    year: Y,
   };
-  const file = join("fixtures", company, `${dataAsOf}.json`);
-  writeFileSync(file, JSON.stringify(out, null, 2) + "\n", "utf-8");
+  if (main) logBuild(out, rows, crmAdded, isDig);
+  return out;
+}
 
-  console.log(`\n=== ${out.label} → ${file}`);
+function logBuild(out, rows, crmAdded, isDig) {
+  console.log(`\n=== ${out.label} ${out.year}`);
   console.log(`righe: ${rows.length} (di cui ${crmAdded.length} da opportunità CRM)`);
-  console.log(`ordinato: ${overall.ordinato}  totale: ${overall.totale}`);
-  for (const s of stato_summary) console.log(`  ${s.stato}: ${s.totale}`);
+  console.log(`ordinato: ${out.overall.ordinato}  totale: ${out.overall.totale}`);
+  for (const s of out.stato_summary) console.log(`  ${s.stato}: ${s.totale}`);
   for (const k of isDig ? ["account", "project_leader"] : ["referente"]) {
     const na = [...new Set(rows.filter((r) => r[k] === "Non assegnato").map((r) => r.cliente))];
     if (na.length) console.log(`  ${k} "Non assegnato": ${na.join(", ")}`);
@@ -358,5 +395,26 @@ function build(company) {
   if (neg.length) console.log(`  righe con totale negativo: ${neg.map((r) => `${r.cliente} ${r.origine} ${r.totale}`).join("; ")}`);
 }
 
-build("oriens");
-build("digiduu");
+// Anno successivo (facoltativo): inv_<anno+1>.json (account.move come sopra ma
+// invoice_date nell'anno successivo, entrambe le aziende, + company_id e
+// payment_state) e piano_<anno+1>.json (come piano.json, anno successivo).
+// Finisce nel campo next_year del documento, mostrato col selettore anno.
+const NEXT = YEAR + 1;
+const hasNext = existsSync(join(raw, `inv_${NEXT}.json`)) && existsSync(join(raw, `piano_${NEXT}.json`));
+for (const company of ["oriens", "digiduu"]) {
+  const companyId = company === "digiduu" ? 6 : 1;
+  const out = buildDoc(company, YEAR, load(company === "digiduu" ? "inv_digiduu.json" : "inv_oriens.json"), piano, true);
+  if (hasNext) {
+    out.next_year = buildDoc(
+      company,
+      NEXT,
+      load(`inv_${NEXT}.json`).filter((i) => i.company_id?.[0] === companyId),
+      load(`piano_${NEXT}.json`),
+      false
+    );
+    console.log(`   ${NEXT}: ${out.next_year.rows.filter((r) => !r.is_crm).length} righe, totale ${out.next_year.overall.totale}`);
+  }
+  const file = join("fixtures", company, `${dataAsOf}.json`);
+  writeFileSync(file, JSON.stringify(out, null, 2) + "\n", "utf-8");
+  console.log(`   → ${file}`);
+}

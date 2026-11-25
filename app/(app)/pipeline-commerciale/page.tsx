@@ -3,8 +3,8 @@
 import { Fragment, useEffect, useMemo, useRef, useState, type CSSProperties, type MouseEvent as ReactMouseEvent, type ReactNode } from "react";
 import { createClient } from "../../lib/supabase/client";
 import type { UserRole, VisibilityGroup } from "../../lib/auth/dal";
-import { saveSnapshot } from "./actions";
-import type { Company, PipelineDoc, RevenueStep } from "./lib/types";
+import { loadLocalPipelineDoc, saveSnapshot } from "./actions";
+import type { Company, PayLevel, PipelineDoc, RevenueStep } from "./lib/types";
 import {
   STATE_COLOR,
   MESI,
@@ -23,6 +23,13 @@ import {
 } from "./lib/pipeline-logic";
 
 type FrozenCol = { key: string; label: string; width: number; left: number; last: boolean; num?: boolean };
+
+// Bollino accanto alle fatture confermate del mese (stato di pagamento Odoo)
+const PAY_DOT: Record<Exclude<PayLevel, null>, { className: string; label: string }> = {
+  paid: { className: "bg-emerald-500", label: "Fatture pagate o in pagamento" },
+  partial: { className: "bg-orange-400", label: "Fatture pagate in parte" },
+  unpaid: { className: "bg-red-500", label: "Fatture non pagate" },
+};
 
 const FROZEN_DUAL: Omit<FrozenCol, "left" | "last">[] = [
   { key: "account", label: "Account", width: 78 },
@@ -125,7 +132,13 @@ export default function PipelineCommercialePage() {
     digiduu: {},
   });
   const [selectedDate, setSelectedDate] = useState("");
-  const [doc, setDoc] = useState<PipelineDoc | null>(null);
+  const [baseDoc, setDoc] = useState<PipelineDoc | null>(null);
+  // Selettore anno: l'anno della generazione o il successivo (campo
+  // next_year del documento, se c'è). Tutta la pagina lavora su `doc`.
+  const [showNextYear, setShowNextYear] = useState(false);
+  const doc = showNextYear && baseDoc?.next_year ? baseDoc.next_year : baseDoc;
+  // Anteprima locale (solo sviluppo, vedi loadLocalPipelineDoc in actions.ts)
+  const [localPreview, setLocalPreview] = useState(false);
   // compareDate è gestita separatamente da selectedDate: cambiare la data
   // principale ripropone un default ragionevole (la generazione immediatamente
   // precedente), ma l'utente può sempre scegliere un'altra generazione di
@@ -264,7 +277,12 @@ export default function PipelineCommercialePage() {
         return;
       }
       const row = data?.[0] as { data: PipelineDoc; snapshot_label: string | null } | undefined;
-      const currentDoc = row?.data;
+      // In sviluppo, con PIPELINE_LOCAL_FIXTURES=1, il documento viene dal
+      // fixture locale di quella data (se esiste) invece che da Supabase.
+      const local = await loadLocalPipelineDoc(activeCompany, selectedDate);
+      if (cancelled) return;
+      const currentDoc = local ?? row?.data;
+      setLocalPreview(!!local);
       setDoc(currentDoc ?? null);
       setDocSnapshotLabel(row?.snapshot_label ?? null);
 
@@ -349,7 +367,7 @@ export default function PipelineCommercialePage() {
   // compareDate vuoto ("Confronta con: nessuna") azzera il confronto anche se
   // compareDoc contiene ancora l'ultimo documento caricato: niente setState
   // di pulizia dentro l'effect, si ignora qui il valore non più pertinente.
-  const effectiveCompareDoc = compareDate ? compareDoc : null;
+  const effectiveCompareDoc = compareDate ? (showNextYear ? compareDoc?.next_year ?? null : compareDoc) : null;
 
   // Colori letti dalla generazione corrente (doc.stato_summary), non da una
   // mappa statica: così ogni generazione storica mostra i propri colori
@@ -644,6 +662,8 @@ export default function PipelineCommercialePage() {
           // colore di base della riga (alternanza zebrata), non trasparente.
           let style: CSSProperties = { background: rowBg };
           let title: string | undefined;
+          // Bollino di pagamento delle fatture confermate del mese
+          const pay = states.find((s) => s.stato === "Confermata - Fatturato" && s.pay)?.pay ?? null;
           if (states.length === 1) {
             style = { background: colorMap[states[0].stato || ""] || "transparent" };
           } else if (states.length > 1) {
@@ -660,6 +680,13 @@ export default function PipelineCommercialePage() {
               style={style}
               title={title}
             >
+              {pay && (
+                <span
+                  className={`mr-1 inline-block h-2 w-2 rounded-full align-middle ${PAY_DOT[pay].className}`}
+                  title={PAY_DOT[pay].label}
+                  aria-label={PAY_DOT[pay].label}
+                />
+              )}
               {fmt(cellVal)}
             </td>
           );
@@ -710,6 +737,11 @@ export default function PipelineCommercialePage() {
       <div className="mb-1 flex items-center justify-between">
         <div>
           <h1 className="text-xl font-semibold text-gray-900">Pipeline Commerciale</h1>
+          {localPreview && (
+            <p className="mt-1 rounded-md bg-amber-50 px-2.5 py-1 text-xs font-medium text-amber-800">
+              Anteprima locale: dati letti dal file in fixtures/, non da Supabase.
+            </p>
+          )}
           <p className="mt-1 text-sm text-gray-500">
             {doc
               ? `${doc.label} ${doc.year} — ${fmtDateLabel(selectedDate)}${docSnapshotLabel ? ` "${docSnapshotLabel}"` : ""}${
@@ -749,6 +781,23 @@ export default function PipelineCommercialePage() {
           <span className="rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-semibold text-gray-700 shadow-sm">
             Digiduu
           </span>
+        )}
+
+        {baseDoc?.next_year && (
+          <div className="flex overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm" role="group" aria-label="Anno">
+            {[false, true].map((next) => (
+              <button
+                key={String(next)}
+                type="button"
+                onClick={() => setShowNextYear(next)}
+                className={`px-4 py-2 text-sm font-semibold ${
+                  showNextYear === next ? "bg-violet-50 text-violet-700" : "text-gray-600 hover:bg-gray-50"
+                }`}
+              >
+                {next ? baseDoc.next_year!.year : baseDoc.year}
+              </button>
+            ))}
+          </div>
         )}
 
         <select
