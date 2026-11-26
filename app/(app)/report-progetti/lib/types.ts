@@ -68,6 +68,17 @@ export interface Group {
   partner: string;
   active: boolean;
   stage: string;
+  // Solo Portfolio Progetti Digiduu (facoltativi): stato di avanzamento Odoo
+  // del progetto (last_update_status) e giornate spese per persona dal mese
+  // corrente (nome risorsa -> YYYY-MM -> giornate).
+  update_status?: string | null;
+  spent_by_resource?: Record<string, Record<string, number>>;
+  // Ordini di vendita del gruppo senza "Prezzo indicato in proposta".
+  baseline_missing?: string[];
+  // Previsioni di fattura a consuntivo (piano di fatturazione, stato
+  // "Consuntivi") incluse nei Ricavi forecast.
+  fc_consuntivi?: number;
+  fc_consuntivi_lines?: { date: string | null; name: string; amount: number; order: string | null }[];
   date_start: string | null;
   date_end: string | null;
   chiusura: string | null;

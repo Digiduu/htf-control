@@ -53,7 +53,7 @@ export default function MonthCell({ column }: { column: MonthColumn }) {
           </div>
 
           {column.giornateRegistrate != null && <div className="text-gray-500">{fmtDays(column.giornateRegistrate)} gg</div>}
-          {column.giornatePianificate != null && <div className="text-gray-400">pian. {fmtDays(column.giornatePianificate)} gg</div>}
+          {column.giornatePianificate != null && <div className="font-bold text-gray-800">pian. {fmtDays(column.giornatePianificate)} gg</div>}
           {column.isFutureBucket && <div className="text-gray-400">da {fmtMonth(column.month)}</div>}
 
           {column.ricavoMedioMese != null && (

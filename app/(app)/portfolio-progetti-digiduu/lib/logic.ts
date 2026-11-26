@@ -31,6 +31,75 @@ export function odooProjectUrl(groupId: number): string {
   return `https://oriens-consulting.odoo.com/odoo/project/${groupId}`;
 }
 
+// Colore del badge di fase Odoo: lo stesso nella colonna "Stato" della
+// tabella, nell'anteprima espansa e nella pagina di dettaglio.
+export function stageBadgeClass(stage: string | null): string {
+  return stage === "Completato" ? "bg-emerald-50 text-emerald-700" : "bg-blue-50 text-blue-700";
+}
+
+// Stato di avanzamento Odoo (project.project.last_update_status): etichetta e
+// colore del bollino davanti al nome del progetto, come nei colori di Odoo.
+export const UPDATE_STATUS: Record<string, { label: string; dot: string }> = {
+  on_track: { label: "In pista", dot: "bg-emerald-500" },
+  at_risk: { label: "A rischio", dot: "bg-amber-400" },
+  off_track: { label: "Fuori pista", dot: "bg-red-600" },
+  on_hold: { label: "In attesa", dot: "bg-sky-500" },
+  done: { label: "Completato", dot: "bg-violet-500" },
+  to_define: { label: "Da definire", dot: "bg-gray-300" },
+};
+
+// Milestone non raggiunte con scadenza già passata (solo progetti attivi,
+// stessa regola del controllo "milestone-scadute" di getDataChecks).
+export function overdueMilestones(g: Group, todayISO: string): Milestone[] {
+  if (!g.active) return [];
+  return (g.milestones || []).filter((m) => !m.is_reached && !!m.deadline && m.deadline < todayISO);
+}
+
+// Progetto chiuso: archiviato in Odoo o in fase "Completato". Di default la
+// tabella del Portfolio li nasconde (pulsante "Mostra completati/archiviati").
+export function isClosedGroup(g: Group): boolean {
+  return !g.active || g.stage === "Completato";
+}
+
+// Giornate pianificate e spese del mese corrente per un gruppo.
+export function currentMonthPlanVsSpent(g: Group, monthlyDays: Record<string, number>, todayISO: string): { planned: number; spent: number } {
+  const m = todayISO.slice(0, 7);
+  const planned = (g.planning_future?.by_resource || []).reduce((a, r) => a + (r.days[m] || 0), 0);
+  return { planned, spent: monthlyDays[m] || 0 };
+}
+
+// Criticità di un cliente (somma dei suoi progetti), usata per ordinare la
+// tabella: milestone scadute, ricavo medio/gg forecast sotto soglia, giornate
+// spese nel mese corrente oltre il pianificato (o spese senza pianificazione).
+export interface ClientCriticality {
+  overdueMilestones: number;
+  lowForecastRate: boolean;
+  overPlan: boolean;
+  score: number;
+}
+
+export function clientCriticality(
+  groups: Group[],
+  monthlyDaysByGroupId: Record<number, Record<string, number>>,
+  todayISO: string
+): ClientCriticality {
+  const overdue = groups.reduce((a, g) => a + overdueMilestones(g, todayISO).length, 0);
+  const actDays = groups.reduce((a, g) => a + (g.act_days || 0), 0);
+  const planDays = groups.reduce((a, g) => a + (g.plan_days || 0), 0);
+  const fcRev = groups.reduce((a, g) => a + (g.fc_rev || 0), 0);
+  const fcAvg = actDays + planDays ? fcRev / (actDays + planDays) : null;
+  let planned = 0;
+  let spent = 0;
+  for (const g of groups) {
+    const r = currentMonthPlanVsSpent(g, monthlyDaysByGroupId[g.id] || {}, todayISO);
+    planned += r.planned;
+    spent += r.spent;
+  }
+  const lowForecastRate = isLowRevenueRate(fcAvg);
+  const overPlan = spent > planned;
+  return { overdueMilestones: overdue, lowForecastRate, overPlan, score: (overdue > 0 ? 1 : 0) + (lowForecastRate ? 1 : 0) + (overPlan ? 1 : 0) };
+}
+
 // Soglia di attenzione sul ricavo medio giornaliero (§5.1 del prompt di
 // handoff): sotto 700€/gg il valore va mostrato in rosso con un pallino.
 export const LOW_REVENUE_THRESHOLD = 700;
@@ -71,6 +140,10 @@ export function getDataChecks(g: Group, todayISO: string): DataCheck[] {
   }
   if (g.act_rev > 0 && g.act_days === 0) {
     checks.push({ key: "fatturato-senza-ore", label: "Fatturato presente ma nessuna ora registrata" });
+  }
+
+  if (g.baseline_missing?.length) {
+    checks.push({ key: "baseline-mancante", label: `Prezzo in proposta non compilato: ${g.baseline_missing.join(", ")}` });
   }
 
   const unreached = (g.milestones || []).filter((m) => !m.is_reached);

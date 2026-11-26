@@ -7,9 +7,11 @@ import {
   aggregateDaysBarInfo,
   buildMonthlyCalendarForClient,
   buildMonthlyCalendarForGroup,
+  clientCriticality,
   computeSharedStartMonth,
   computeYearScopedMetrics,
   daysBarInfo,
+  fmtDate,
   fmtDays,
   fmtEUR,
   fmtMonth,
@@ -17,9 +19,13 @@ import {
   getDataChecks,
   groupAndSortByClient,
   isBeforeNormalWindow,
+  isClosedGroup,
   odooProjectUrl,
+  overdueMilestones,
+  stageBadgeClass,
+  UPDATE_STATUS,
 } from "../lib/logic";
-import { GroupDetail } from "../../report-progetti/components/GroupRow";
+import { CashflowCards, ConsuntiviMark, GroupDetail } from "../../report-progetti/components/GroupRow";
 import MonthCell from "./MonthCell";
 
 const COLUMN_WIDTH = 112;
@@ -32,7 +38,7 @@ const FROZEN_WIDTH = 660;
 // pagina separata: contiene già tutto quello che serve (controlli sui dati,
 // nota di analisi, schede economiche, fatture, milestone, documenti).
 export default function MonthlyCalendarTable({
-  groups,
+  groups: allGroups,
   monthlyDaysByGroupId,
   todayISO,
   analysisNoteByGroupId,
@@ -52,10 +58,21 @@ export default function MonthlyCalendarTable({
 }) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [expandedId, setExpandedId] = useState<number | null>(null);
+  const [showClosed, setShowClosed] = useState(false);
+
+  // Di default solo i progetti aperti: completati/archiviati con il pulsante.
+  const closedCount = allGroups.filter(isClosedGroup).length;
+  const visibleGroups = showClosed ? allGroups : allGroups.filter((g) => !isClosedGroup(g));
+  const groups = visibleGroups;
 
   const { startMonth, extended } = computeSharedStartMonth(groups, todayISO);
   const calendarOptions = yearFilter ? { yearFilter } : { forcedStartMonth: startMonth };
-  const clientGroups = groupAndSortByClient(groups);
+  // Clienti più critici in alto (milestone scadute, €/gg forecast sotto
+  // soglia, mese corrente oltre il pianificato); a parità resta l'ordine per
+  // forecast di groupAndSortByClient (il sort è stabile).
+  const clientGroups = groupAndSortByClient(groups)
+    .map((c) => ({ ...c, criticality: clientCriticality(c.groups, monthlyDaysByGroupId, todayISO) }))
+    .sort((a, b) => b.criticality.score - a.criticality.score);
 
   const currentYear = Number(todayISO.slice(0, 4));
   const earliestYear = groups.reduce((min, g) => {
@@ -64,14 +81,6 @@ export default function MonthlyCalendarTable({
   }, currentYear);
   const availableYears: number[] = [];
   for (let y = currentYear; y >= earliestYear; y--) availableYears.push(y);
-
-  if (!groups.length) {
-    return (
-      <div className="rounded-lg border border-gray-200 bg-white p-10 text-center text-sm text-gray-500 shadow-sm">
-        Nessun progetto da mostrare con questo filtro.
-      </div>
-    );
-  }
 
   // Intestazioni mese: calcolate una sola volta da un calendario "modello"
   // (qualunque riga va bene, le colonne sono le stesse per costruzione).
@@ -91,8 +100,28 @@ export default function MonthlyCalendarTable({
 
   useEffect(() => {
     scrollRef.current?.scrollTo({ left: currentMonthScrollLeft });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [yearFilter, currentMonthScrollLeft]);
+
+  // Dopo tutti gli hook (regola degli hook di React: nessun return prima).
+  if (!allGroups.length) {
+    return (
+      <div className="rounded-lg border border-gray-200 bg-white p-10 text-center text-sm text-gray-500 shadow-sm">
+        Nessun progetto da mostrare con questo filtro.
+      </div>
+    );
+  }
+
+  const closedToggle = closedCount > 0 && (
+    <button
+      type="button"
+      onClick={() => setShowClosed((v) => !v)}
+      className={`rounded-full px-2.5 py-1 text-[11px] font-semibold ${
+        showClosed ? "bg-violet-600 text-white" : "border border-gray-300 bg-white text-gray-600 hover:border-violet-400 hover:text-violet-700"
+      }`}
+    >
+      {showClosed ? "Nascondi" : "Mostra"} completati / archiviati ({closedCount})
+    </button>
+  );
 
   return (
     <div>
@@ -121,7 +150,15 @@ export default function MonthlyCalendarTable({
             {y}
           </button>
         ))}
+        <span className="mx-1 h-4 w-px bg-gray-300" aria-hidden />
+        {closedToggle}
       </div>
+
+      {!groups.length && (
+        <div className="mb-2 rounded-lg border border-gray-200 bg-white p-6 text-center text-sm text-gray-500">
+          Nessun progetto aperto: usa &quot;Mostra completati / archiviati&quot; per vedere gli altri.
+        </div>
+      )}
 
       {yearFilter === null && (
         <div className="mb-2 flex items-center gap-2">
@@ -169,7 +206,7 @@ export default function MonthlyCalendarTable({
             ))}
           </div>
 
-          {clientGroups.map(({ clientName, groups: clientProjects }) => {
+          {clientGroups.map(({ clientName, groups: clientProjects, criticality }) => {
             const clientCalendar = buildMonthlyCalendarForClient(clientProjects, monthlyDaysByGroupId, todayISO, calendarOptions);
             const clientYearScoped = yearFilter
               ? clientProjects.map((g) => computeYearScopedMetrics(g, monthlyDaysByGroupId[g.id] || {}, yearFilter))
@@ -192,18 +229,32 @@ export default function MonthlyCalendarTable({
             const fcRev = clientYearScoped
               ? clientYearScoped.reduce((a, s) => a + s.fcRev, 0)
               : clientProjects.reduce((a, g) => a + (g.fc_rev || 0), 0);
+            const draftRev = clientYearScoped
+              ? clientYearScoped.reduce((a, s) => a + s.draftRev, 0)
+              : clientProjects.reduce((a, g) => a + (g.draft_rev || 0), 0);
+            const planDays = clientYearScoped
+              ? clientYearScoped.reduce((a, s) => a + s.planDays, 0)
+              : clientProjects.reduce((a, g) => a + (g.plan_days || 0), 0);
+            const clientConsuntivi = clientProjects.reduce((a, g) => a + (g.fc_consuntivi || 0), 0);
             const barColor =
               bar.className === "good" ? "bg-emerald-600" : bar.className === "warning" ? "bg-amber-500" : bar.className === "critical" ? "bg-red-600" : "bg-gray-300";
 
             return (
               <div key={clientName}>
-                {/* Riga di totale cliente */}
-                <div className="flex border-t border-gray-200 bg-gray-50/70">
-                  <div className="sticky left-0 z-10 flex shrink-0 items-center bg-gray-50/70" style={{ width: FROZEN_WIDTH }}>
+                {/* Riga di totale cliente: linea viola spessa per separare un cliente dal precedente */}
+                <div className="flex border-t-4 border-violet-500 bg-violet-50">
+                  <div className="sticky left-0 z-10 flex shrink-0 items-center bg-violet-50" style={{ width: FROZEN_WIDTH }}>
                     <div className="w-6" />
                     <div className="flex-1 px-2 py-2.5">
                       <span className="font-semibold text-gray-900">{clientName}</span>
                       <span className="ml-1.5 text-[11px] text-gray-500">{clientProjects.length} progett{clientProjects.length === 1 ? "o" : "i"}</span>
+                      <div className="mt-1 flex flex-wrap gap-1 empty:hidden">
+                        {criticality.overdueMilestones > 0 && (
+                          <span className="rounded-full bg-red-100 px-2 py-0.5 text-[10.5px] font-bold text-red-700">
+                            ⚠ {criticality.overdueMilestones} milestone scadut{criticality.overdueMilestones === 1 ? "a" : "e"}
+                          </span>
+                        )}
+                      </div>
                     </div>
                     <div className="w-[70px] px-2 py-2.5" />
                     <div className="w-[150px] px-2 py-2.5">
@@ -215,13 +266,44 @@ export default function MonthlyCalendarTable({
                         {bar.ratio != null ? ` (${Math.round(bar.ratio * 100)}%)` : ""}
                       </div>
                     </div>
-                    <div className="w-[90px] px-2 py-2.5 text-right font-mono tabular-nums text-gray-700">{fmtEUR(propPrice)}</div>
-                    <div className="w-[90px] px-2 py-2.5 text-right font-mono tabular-nums text-gray-700">{fmtEUR(actRev)}</div>
-                    <div className="w-[90px] px-2 py-2.5 text-right font-mono tabular-nums text-gray-700">{fmtEUR(fcRev)}</div>
+                    <div className="w-[90px] px-2 py-2.5 whitespace-nowrap text-right font-mono tabular-nums text-gray-700">{fmtEUR(propPrice)}</div>
+                    <div className="w-[90px] px-2 py-2.5 whitespace-nowrap text-right font-mono tabular-nums text-gray-700">{fmtEUR(actRev)}</div>
+                    <div className="w-[90px] px-2 py-2.5 whitespace-nowrap text-right font-mono tabular-nums text-gray-700">
+                      {fmtEUR(fcRev)}
+                      {clientConsuntivi > 0 && <ConsuntiviMark note={`Include ${fmtEUR(clientConsuntivi)} di previsioni da consuntivi`} />}
+                    </div>
                   </div>
                   {clientCalendar.columns.map((c) => (
                     <MonthCell key={c.month} column={c} />
                   ))}
+                </div>
+                {/* Recap cliente: sempre visibile, somma dei progetti mostrati */}
+                <div className="sticky left-0 z-10 w-[100cqw] border-t border-violet-200 bg-violet-50 shadow-sm">
+                  <div className="border-b border-violet-200 bg-violet-100 px-4 py-2.5">
+                    <span className="text-sm font-semibold text-gray-900">
+                      Recap cliente · {clientName}
+                      <span className="ml-1.5 text-xs font-normal text-gray-500">somma di {clientProjects.length} progett{clientProjects.length === 1 ? "o" : "i"}</span>
+                    </span>
+                  </div>
+                  <div className="space-y-3 px-4 py-4">
+                    <CashflowCards
+                      values={{
+                        prop_price: propPrice,
+                        prop_days: propDays,
+                        act_rev: actRev,
+                        act_days: actDays,
+                        draft_rev: draftRev,
+                        plan_days: planDays,
+                        fc_rev: fcRev,
+                        toDoLabel: true,
+                        fc_consuntivi: clientConsuntivi,
+                      }}
+                      highlightKpis
+                    />
+                    <p className="text-xs text-gray-500">
+                      Progetti inclusi: {clientProjects.map((p) => p.name).join(" · ")}
+                    </p>
+                  </div>
                 </div>
 
                 {/* Progetti del cliente */}
@@ -267,6 +349,7 @@ export default function MonthlyCalendarTable({
                           </div>
                           <div className="flex-1 px-2 py-3">
                             <div className="flex flex-wrap items-center gap-1">
+                              <StatusDot status={g.update_status} />
                               <span className="font-medium text-gray-900">{g.name}</span>
                               <a
                                 href={odooProjectUrl(g.id)}
@@ -297,7 +380,7 @@ export default function MonthlyCalendarTable({
                             )}
                           </div>
                           <div className="w-[70px] px-2 py-3">
-                            <span className={`rounded-full px-2 py-0.5 text-[10px] font-semibold ${g.stage === "Completato" ? "bg-emerald-50 text-emerald-700" : "bg-blue-50 text-blue-700"}`}>
+                            <span className={`rounded-full px-2 py-0.5 text-[10px] font-semibold ${stageBadgeClass(g.stage)}`}>
                               {g.stage}
                             </span>
                             {!g.active && <div className="mt-1 rounded-full bg-gray-100 px-2 py-0.5 text-[10px] font-semibold text-gray-500">Archiviato</div>}
@@ -311,9 +394,12 @@ export default function MonthlyCalendarTable({
                               {gBar.ratio != null ? ` (${Math.round(gBar.ratio * 100)}%)` : ""}
                             </div>
                           </div>
-                          <div className="w-[90px] px-2 py-3 text-right font-mono tabular-nums text-gray-700">{fmtEUR(displayGroup.prop_price)}</div>
-                          <div className="w-[90px] px-2 py-3 text-right font-mono tabular-nums text-gray-700">{fmtEUR(displayGroup.act_rev)}</div>
-                          <div className="w-[90px] px-2 py-3 text-right font-mono tabular-nums text-gray-700">{fmtEUR(displayGroup.fc_rev)}</div>
+                          <div className="w-[90px] px-2 py-3 whitespace-nowrap text-right font-mono tabular-nums text-gray-700">{fmtEUR(displayGroup.prop_price)}</div>
+                          <div className="w-[90px] px-2 py-3 whitespace-nowrap text-right font-mono tabular-nums text-gray-700">{fmtEUR(displayGroup.act_rev)}</div>
+                          <div className="w-[90px] px-2 py-3 whitespace-nowrap text-right font-mono tabular-nums text-gray-700">
+                            {fmtEUR(displayGroup.fc_rev)}
+                            {!!g.fc_consuntivi && <ConsuntiviMark note={`Include ${fmtEUR(g.fc_consuntivi)} di previsioni da consuntivi`} />}
+                          </div>
                         </div>
                         {calendar.columns.map((c) => (
                           <MonthCell key={c.month} column={c} />
@@ -322,7 +408,8 @@ export default function MonthlyCalendarTable({
                       {open && (
                         <div className="sticky left-0 z-10 w-[100cqw] border-t border-violet-200 bg-white shadow-sm">
                           <div className="flex items-center justify-between border-b border-gray-100 bg-violet-50/60 px-4 py-2.5">
-                            <span className="flex items-center gap-1.5 text-sm font-semibold text-gray-900">
+                            <span className="flex flex-wrap items-center gap-1.5 text-sm font-semibold text-gray-900">
+                              <StatusDot status={g.update_status} />
                               {g.name}
                               <a
                                 href={odooProjectUrl(g.id)}
@@ -333,6 +420,25 @@ export default function MonthlyCalendarTable({
                               >
                                 ↗ Odoo
                               </a>
+                              <span className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ${stageBadgeClass(g.stage)}`} title="Fase del progetto in Odoo">
+                                {g.stage}
+                              </span>
+                              {g.update_status && UPDATE_STATUS[g.update_status] && (
+                                <span className="rounded-full border border-gray-200 bg-white px-2 py-0.5">
+                                  <StatusDot status={g.update_status} withLabel />
+                                </span>
+                              )}
+                              {!g.active && <span className="rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-semibold text-gray-500">Archiviato</span>}
+                              {(() => {
+                                const overdue = overdueMilestones(g, todayISO);
+                                return overdue.length > 0 ? (
+                                  <span className="rounded-full bg-red-100 px-2.5 py-0.5 text-xs font-semibold text-red-700">
+                                    ⚠ {overdue.length} milestone scadut{overdue.length === 1 ? "a" : "e"}
+                                  </span>
+                                ) : (
+                                  <span className="rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-medium text-emerald-700">Nessuna milestone scaduta</span>
+                                );
+                              })()}
                             </span>
                             <button
                               type="button"
@@ -344,10 +450,19 @@ export default function MonthlyCalendarTable({
                           </div>
                           <div className="space-y-3 px-4 py-4">
                             {(() => {
-                              const checks = getDataChecks(g, todayISO);
+                              // Le milestone scadute hanno il loro riquadro rosso qui sotto
+                              // (e il badge nell'intestazione): niente chip "ⓘ" doppio.
+                              const checks = getDataChecks(g, todayISO).filter((c) => c.key !== "milestone-scadute");
+                              const overdue = overdueMilestones(g, todayISO);
                               const note = analysisNoteByGroupId[g.id];
                               return (
                                 <>
+                                  {overdue.length > 0 && (
+                                    <div className="rounded-md border-l-4 border-red-500 bg-red-50 px-3.5 py-2.5 text-sm text-red-800">
+                                      <b>Milestone scadute:</b>{" "}
+                                      {overdue.map((m) => `${m.name} (${fmtDate(m.deadline)})`).join(" · ")}
+                                    </div>
+                                  )}
                                   {checks.length > 0 && (
                                     <div className="flex flex-wrap gap-1.5">
                                       {checks.map((c) => (
@@ -372,7 +487,15 @@ export default function MonthlyCalendarTable({
                                 sull&apos;intera vita del progetto, non hanno una data mese per mese).
                               </p>
                             )}
-                            <GroupDetail group={displayGroup} />
+                            <GroupDetail
+                              group={displayGroup}
+                              highlightKpis
+                              planningFromMonthStart
+                              spentByMonth={monthlyDaysByGroupId[g.id] || {}}
+                              currentMonth={todayISO.slice(0, 7)}
+                              milestonesFirst
+                              todayISO={todayISO}
+                            />
                           </div>
                         </div>
                       )}
@@ -388,6 +511,18 @@ export default function MonthlyCalendarTable({
   );
 }
 
+// Bollino dello stato di avanzamento Odoo davanti al nome del progetto.
+export function StatusDot({ status, withLabel = false }: { status?: string | null; withLabel?: boolean }) {
+  const s = status ? UPDATE_STATUS[status] : null;
+  if (!s) return null;
+  return (
+    <span className="inline-flex items-center gap-1" title={`Stato Odoo: ${s.label}`}>
+      <span className={`inline-block h-2.5 w-2.5 shrink-0 rounded-full ${s.dot}`} aria-label={s.label} />
+      {withLabel && <span className="text-xs font-medium text-gray-600">{s.label}</span>}
+    </span>
+  );
+}
+
 function Legend() {
   const items: { swatch: string; label: string }[] = [
     { swatch: "bg-emerald-600", label: "Fatturato confermato" },
@@ -397,6 +532,7 @@ function Legend() {
     { swatch: "bg-violet-600", label: "Milestone futura" },
     { swatch: "bg-red-700", label: "Milestone scaduta" },
     { swatch: "bg-gray-400", label: "Giornate pianificate" },
+    ...["on_track", "at_risk", "off_track", "on_hold"].map((k) => ({ swatch: UPDATE_STATUS[k].dot, label: `Stato: ${UPDATE_STATUS[k].label}` })),
   ];
   return (
     <div className="mb-3 flex flex-wrap items-center gap-x-3.5 gap-y-1 text-[11px] text-gray-500">
